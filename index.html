@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文心墨韵 - 古诗文学习 (AI增强版)</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Inter和Noto Serif SC字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 自定义字体，优先使用 Noto Serif SC 以获得更好的古典中文展示效果 */
+        body {
+            font-family: 'Inter', 'Noto Serif SC', serif;
+            background-color: #fdfaf6;
+            color: #3a3a3a;
+        }
+        .font-serif-sc {
+            font-family: 'Noto Serif SC', serif;
+        }
+        /* 玻璃拟态效果 */
+        .backdrop-blur-custom {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        /* AI功能按钮渐变 */
+        .ai-button-gradient {
+            background-image: linear-gradient(to right, #ef4444, #db2777, #9333ea);
+        }
+        /* Modal 过渡效果 */
+        .modal-enter {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        .modal-enter-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: all 0.3s ease-out;
+        }
+        .modal-leave-active {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 0.2s ease-in;
+        }
+        /* 确保长内容可滚动 */
+        .modal-content {
+            max-height: 85vh;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- 头部导航栏 (已简化) -->
+    <header class="sticky top-0 z-50 shadow-sm backdrop-blur-custom border-b border-gray-200/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <!-- 网站Logo和标题 -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM2 10a8 8 0 1116 0 8 8 0 01-16 0zm2.25-4.25a.75.75 0 000 1.5h11.5a.75.75 0 000-1.5H4.25zM4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10zm0 3.25a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H4z" clip-rule="evenodd" /></svg>
+                        <span class="text-xl font-bold font-serif-sc text-gray-800">文心墨韵</span>
+                    </a>
+                </div>
+                <!-- 桌面端导航链接 -->
+                <nav class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="#home" class="text-sm text-gray-600 hover:text-red-700 transition-colors duration-300">首页</a>
+                    <a href="#featured" class="text-sm text-gray-600 hover:text-red-700 transition-colors duration-300">诗词推荐</a>
+                    <a href="#ai-tools" class="text-sm text-gray-600 hover:text-red-700 transition-colors duration-300">智能工具</a>
+                    <a href="#authors" class="text-sm text-gray-600 hover:text-red-700 transition-colors duration-300">文学名家</a>
+                </nav>
+                 <!-- 移动端菜单按钮 -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-red-700 focus:outline-none"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/80 backdrop-blur-lg">
+            <a href="#home" class="block py-3 px-4 text-sm text-gray-600 hover:bg-red-50 hover:text-red-700">首页</a>
+            <a href="#featured" class="block py-3 px-4 text-sm text-gray-600 hover:bg-red-50 hover:text-red-700">诗词推荐</a>
+            <a href="#ai-tools" class="block py-3 px-4 text-sm text-gray-600 hover:bg-red-50 hover:text-red-700">智能工具</a>
+            <a href="#authors" class="block py-3 px-4 text-sm text-gray-600 hover:bg-red-50 hover:text-red-700">文学名家</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (已修改) -->
+        <section id="home" class="bg-stone-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold font-serif-sc mb-4 leading-tight text-gray-800">中学古诗文学习网</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-600">专为中学生备考设计，AI 智能剖析古诗文，轻松掌握中高考核心考点。</p>
+                <a href="#featured" class="mt-8 inline-block bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105">开始学习</a>
+            </div>
+        </section>
+
+        <!-- 推荐诗词 -->
+        <section id="featured" class="py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif-sc text-gray-800">每周推荐</h2>
+                    <p class="text-lg text-gray-500 mt-2">精选名篇，温故知新，AI 助你深度解读</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 诗词卡片 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover-effect border border-gray-100 flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="text-2xl font-bold font-serif-sc text-gray-900">静夜思</h3>
+                                <p class="text-sm text-gray-500">【唐】李白</p>
+                            </div>
+                            <p class="mt-6 text-lg leading-relaxed text-gray-600 font-serif-sc">床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 text-right">
+                             <a href="javascript:void(0)" onclick="openPoemModal('静夜思', '【唐】李白', '床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。')" class="text-red-600 hover:text-red-800 font-semibold">阅读与赏析 &rarr;</a>
+                        </div>
+                    </div>
+                     <!-- 诗词卡片 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover-effect border border-gray-100 flex flex-col">
+                        <div class="p-8 flex-grow">
+                             <div class="flex justify-between items-baseline">
+                                <h3 class="text-2xl font-bold font-serif-sc text-gray-900">登高</h3>
+                                <p class="text-sm text-gray-500">【唐】杜甫</p>
+                            </div>
+                            <p class="mt-6 text-lg leading-relaxed text-gray-600 font-serif-sc">风急天高猿啸哀，<br>渚清沙白鸟飞回。<br>无边落木萧萧下，<br>不尽长江滚滚来。</p>
+                        </div>
+                         <div class="p-6 bg-gray-50 text-right">
+                            <a href="javascript:void(0)" onclick="openPoemModal('登高', '【唐】杜甫', '风急天高猿啸哀，\n渚清沙白鸟飞回。\n无边落木萧萧下，\n不尽长江滚滚来。\n万里悲秋常作客，\n百年多病独登台。\n艰难苦恨繁霜鬓，\n潦倒新停浊酒杯。')" class="text-red-600 hover:text-red-800 font-semibold">阅读与赏析 &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- 诗词卡片 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover-effect border border-gray-100 flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex justify-between items-baseline">
+                                <h3 class="text-2xl font-bold font-serif-sc text-gray-900">念奴娇·赤壁怀古</h3>
+                                <p class="text-sm text-gray-500">【宋】苏轼</p>
+                            </div>
+                            <p class="mt-6 text-lg leading-relaxed text-gray-600 font-serif-sc">大江东去，浪淘尽，<br>千古风流人物。<br>故垒西边，人道是，<br>三国周郎赤壁。</p>
+                        </div>
+                         <div class="p-6 bg-gray-50 text-right">
+                            <a href="javascript:void(0)" onclick="openPoemModal('念奴娇·赤壁怀古', '【宋】苏轼', '大江东去，浪淘尽，千古风流人物。\n故垒西边，人道是，三国周郎赤壁。\n乱石穿空，惊涛拍岸，卷起千堆雪。\n江山如画，一时多少豪杰。\n\n遥想公瑾当年，小乔初嫁了，雄姿英发。\n羽扇纶巾，谈笑间，樯橹灰飞烟灭。\n故国神游，多情应笑我，早生华发。\n人生如梦，一尊还酹江月。')" class="text-red-600 hover:text-red-800 font-semibold">阅读与赏析 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI 智能工具 -->
+        <section id="ai-tools" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif-sc text-gray-800">AI 智能学习工具</h2>
+                    <p class="text-lg text-gray-500 mt-2">让 AI 成为你的专属文言文老师</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-red-50 to-rose-100 p-8 rounded-2xl shadow-lg border border-red-200/50">
+                        <h3 class="text-2xl font-bold font-serif-sc text-gray-800">✨ 智能诗词赏析</h3>
+                        <p class="mt-4 text-gray-600">遇到难解的诗句？只需轻轻一点，AI 即可为你提供详尽的白话翻译、创作背景、主旨大意和艺术手法分析，助你扫清学习障碍。</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-fuchsia-100 p-8 rounded-2xl shadow-lg border border-purple-200/50">
+                        <h3 class="text-2xl font-bold font-serif-sc text-gray-800">✨ AI 命题作诗 (即将上线)</h3>
+                        <p class="mt-4 text-gray-600">输入关键词或主题，选择你喜欢的诗人风格，AI 就能为你创作一首独一无二的古风诗词。激发你的创作灵感，体验诗歌创作的乐趣。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 文学名家 (已修改头像) -->
+        <section id="authors" class="py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold font-serif-sc text-gray-800">文学名家</h2><p class="text-lg text-gray-500 mt-2">了解诗人生平，感受大家风范</p></div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+                    <div class="group flex flex-col items-center"><img class="h-32 w-32 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-red-200 transition-all duration-300" src="https://placehold.co/128x128/a855f7/ffffff?text=AI动漫-李白" alt="李白AI动漫风格头像"><h3 class="mt-4 text-xl font-semibold text-gray-800 font-serif-sc">李白</h3><p class="text-gray-500">诗仙</p></div>
+                    <div class="group flex flex-col items-center"><img class="h-32 w-32 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-red-200 transition-all duration-300" src="https://placehold.co/128x128/3b82f6/ffffff?text=AI动漫-杜甫" alt="杜甫AI动漫风格头像"><h3 class="mt-4 text-xl font-semibold text-gray-800 font-serif-sc">杜甫</h3><p class="text-gray-500">诗圣</p></div>
+                    <div class="group flex flex-col items-center"><img class="h-32 w-32 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-red-200 transition-all duration-300" src="https://placehold.co/128x128/ef4444/ffffff?text=AI动漫-苏轼" alt="苏轼AI动漫风格头像"><h3 class="mt-4 text-xl font-semibold text-gray-800 font-serif-sc">苏轼</h3><p class="text-gray-500">东坡居士</p></div>
+                    <div class="group flex flex-col items-center"><img class="h-32 w-32 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-red-200 transition-all duration-300" src="https://placehold.co/128x128/f97316/ffffff?text=AI动漫-辛弃疾" alt="辛弃疾AI动漫风格头像"><h3 class="mt-4 text-xl font-semibold text-gray-800 font-serif-sc">辛弃疾</h3><p class="text-gray-500">稼轩居士</p></div>
+                    <div class="group flex flex-col items-center"><img class="h-32 w-32 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-red-200 transition-all duration-300" src="https://placehold.co/128x128/ec4899/ffffff?text=AI动漫-李清照" alt="李清照AI动漫风格头像"><h3 class="mt-4 text-xl font-semibold text-gray-800 font-serif-sc">李清照</h3><p class="text-gray-500">易安居士</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500">
+                <p>&copy; 2024 文心墨韵. 融合 Gemini AI 技术. 版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI 赏析 Modal -->
+    <div id="poem-modal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden modal-enter">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden modal-content">
+            <div class="p-6 sm:p-8 overflow-y-auto">
+                <!-- 头部 -->
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h2 id="modal-title" class="text-3xl font-bold font-serif-sc text-gray-900"></h2>
+                        <p id="modal-author" class="text-md text-gray-500 mt-1"></p>
+                    </div>
+                    <button onclick="closePoemModal()" class="text-gray-400 hover:text-gray-600 transition">&times;</button>
+                </div>
+                <!-- 诗词原文 -->
+                <div class="bg-stone-100 p-6 rounded-lg">
+                    <pre id="modal-content" class="text-lg leading-relaxed text-gray-700 font-serif-sc whitespace-pre-wrap"></pre>
+                </div>
+                
+                <!-- AI 赏析按钮 -->
+                <div class="text-center my-6">
+                    <button id="ai-analysis-button" onclick="getAIAnalysis()" class="ai-button-gradient text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                        ✨ AI 智能赏析
+                    </button>
+                </div>
+
+                <!-- AI 赏析结果 -->
+                <div id="ai-analysis-result" class="mt-4 space-y-4 text-gray-600 leading-relaxed hidden">
+                    <!-- 加载动画 -->
+                    <div id="loader" class="text-center py-4">
+                         <div class="flex justify-center items-center space-x-2">
+                            <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+                            <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse [animation-delay:0.2s]"></div>
+                            <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse [animation-delay:0.4s]"></div>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-2">正在请求 AI 大脑，请稍候...</p>
+                    </div>
+                    <!-- 结果容器 -->
+                    <div id="ai-content-container" class="prose max-w-none prose-p:my-2 prose-h3:font-serif-sc prose-h3:text-gray-800 prose-h3:mb-2 prose-h3:mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const poemModal = document.getElementById('poem-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalAuthor = document.getElementById('modal-author');
+        const modalContent = document.getElementById('modal-content');
+        const aiAnalysisResult = document.getElementById('ai-analysis-result');
+        const aiAnalysisButton = document.getElementById('ai-analysis-button');
+        const aiContentContainer = document.getElementById('ai-content-container');
+        const loader = document.getElementById('loader');
+
+        // --- State ---
+        let currentPoem = { title: '', author: '', content: '' };
+
+        // --- Mobile Menu Logic ---
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        }
+
+        // --- Modal Logic ---
+        function openPoemModal(title, author, content) {
+            currentPoem = { title, author, content };
+            modalTitle.textContent = title;
+            modalAuthor.textContent = author;
+            modalContent.textContent = content;
+
+            // Reset AI section
+            aiAnalysisResult.classList.add('hidden');
+            aiContentContainer.innerHTML = '';
+            aiAnalysisButton.disabled = false;
+            aiAnalysisButton.classList.remove('opacity-50', 'cursor-not-allowed');
+
+            poemModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // Prevent background scrolling
+            
+            // For transition effect
+            setTimeout(() => {
+                poemModal.classList.add('modal-enter-active');
+            }, 10);
+        }
+
+        function closePoemModal() {
+            poemModal.classList.remove('modal-enter-active');
+            poemModal.classList.add('modal-leave-active');
+            setTimeout(() => {
+                poemModal.classList.add('hidden');
+                poemModal.classList.remove('modal-leave-active');
+                document.body.classList.remove('overflow-hidden');
+            }, 200);
+        }
+        
+        // Close modal on outside click
+        poemModal.addEventListener('click', (event) => {
+            if (event.target === poemModal) {
+                closePoemModal();
+            }
+        });
+
+        // --- Gemini API Logic ---
+        async function getAIAnalysis() {
+            aiAnalysisResult.classList.remove('hidden');
+            loader.classList.remove('hidden');
+            aiContentContainer.innerHTML = '';
+            aiAnalysisButton.disabled = true;
+            aiAnalysisButton.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            const prompt = `请你作为一位经验丰富的语文老师，帮我详细赏析这首古诗。
+            诗名：《${currentPoem.title}》
+            作者：${currentPoem.author}
+            内容：
+            ${currentPoem.content}
+
+            请从以下几个方面进行分析，并用清晰的格式呈现：
+            1.  **【逐句翻译】**：用现代白话文逐句或分节翻译诗词。
+            2.  **【创作背景】**：简要介绍这首诗的创作时期、背景和诗人的经历。
+            3.  **【主旨大意】**：概括这首诗的核心思想和情感。
+            4.  **【艺术赏析】**：分析诗中使用的主要艺术手法（如比喻、拟人、对偶、用典等），并解释它们如何增强诗歌的意境和感染力。
+            
+            请用中文回答。`;
+
+            try {
+                // Gemini API Call
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = "" // API key is handled by the environment
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API 请求失败，状态码: ${response.status}`);
+                }
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    let text = result.candidates[0].content.parts[0].text;
+                    // Basic Markdown to HTML conversion
+                    text = text.replace(/\*\*(.*?)\*\*/g, '<h3>$1</h3>') // Bold to h3 for section titles
+                               .replace(/\n/g, '<br>'); // Newlines to <br>
+                    aiContentContainer.innerHTML = text;
+                } else {
+                    aiContentContainer.textContent = '抱歉，AI 未能生成赏析内容。请稍后再试。';
+                    console.error('Unexpected API response structure:', result);
+                }
+
+            } catch (error) {
+                console.error('获取 AI 赏析时出错:', error);
+                aiContentContainer.innerHTML = `<p class="text-red-500">获取赏析失败。请检查网络连接或稍后再试。错误: ${error.message}</p>`;
+            } finally {
+                loader.classList.add('hidden');
+                aiAnalysisButton.disabled = false;
+                aiAnalysisButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        }
+    </script>
+</body>
+</html>
