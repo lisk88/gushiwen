@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滁州西涧 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">滁州西涧</h1>
+            <div class="poem-author">作者：韦应物</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 971</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 14</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>独怜幽草涧边生，上有黄鹂深树鸣。</p><p>春潮带雨晚来急，野渡无人舟自横。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我喜爱生长在涧边的幽草，黄莺在幽深的树丛中啼鸣。<br>春潮夹带着暮雨流的湍急，惟有无人的小船横向江心。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>滁州：在今安徽滁州以西。西涧：在滁州城西，俗名称上马河。　<br>独怜：唯独喜欢。幽草：幽谷里的小草。幽，一作“芳”。生：一作“行”。<br>深树：枝叶茂密的树。深，《才调集》作“远”。树，《全唐诗》注“有本作‘处’”。<br>春潮：春天的潮汐。<br>野渡：郊野的渡口。横：指随意飘浮。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>作者任滁州剌史时，游览至滁州西涧，写下了这首诗情浓郁的小诗。诗里写的虽然是平常的景物，但经诗人的点染，却成了一幅意境幽深的有韵之画，还蕴含了诗人一种不在其位，不得其用的无奈与忧伤情怀，也就是作者对自己怀才不遇的不平。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：倪其心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首山水诗的名篇，也是韦应物的代表作之一。诗写于唐德宗建中二年（781）诗人出任滁州刺史期间。唐滁州治所即今安徽滁州市，西涧在滁州城西郊野。这诗写春游西涧赏景和晚雨野渡所见。诗人以情写景，借景述意，写自己喜爱与不喜爱的景物，说自己合意与不合意的情事，而其胸襟恬淡，情怀忧伤，便自然流露出来。但是诗中有无寄托，寄托何意，历来争论不休。有人认为它通首比兴，是刺“君子在下，小人在上”；有人认为“此偶赋...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：倪其心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首山水诗的名篇，也是韦应物的代表作之一。诗写于唐德宗建中二年（781）诗人出任滁州刺史期间。唐滁州治所即今安徽滁州市，西涧在滁州城西郊野。这诗写春游西涧赏景和晚雨野渡所见。诗人以情写景，借景述意，写自己喜爱与不喜爱的景物，说自己合意与不合意的情事，而其胸襟恬淡，情怀忧伤，便自然流露出来。但是诗中有无寄托，寄托何意，历来争论不休。有人认为它通首比兴，是刺“君子在下，小人在上”；有人认为“此偶赋...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>在中国山水诗诗史上，这是一首久负盛名的写景佳作。唐德宗建中二年（781）诗人出任滁州刺史，这首诗就是这一时期所写。通篇富有“野美”情趣。<br> <br>作者游览至人迹罕至的滁州西涧，野外的风物打动了久在世俗夹缝中求生存的诗人。涧边无声无息生长的幽草，深林中自由自在欢叫的黄鸾，都引起诗人的无限诗心。这是自然的色彩与动听的百籁交织成的幽雅景致。“独怜”是偏爱的意思，偏爱幽草，流露出诗人恬淡的胸怀。凡俗之人也许不...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>在中国山水诗诗史上，这是一首久负盛名的写景佳作。唐德宗建中二年（781）诗人出任滁州刺史，这首诗就是这一时期所写。通篇富有“野美”情趣。</p><p>作者游览至人迹罕至的滁州西涧，野外的风物打动了久在世俗夹缝中求生存的诗人。涧边无声无息地生长的幽草，深林中自由自在的黄莺的欢叫，都引起诗人的无限诗心。这是自然的色彩与动听的百籁交织成的幽雅景致。“独怜”是偏爱的意思，偏爱幽草，流露出诗人恬淡的胸怀。凡俗之人也许...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>在中国山水诗诗史上，这是一首久负盛名的写景佳作。唐德宗建中二年（781）诗人出任滁州刺史，这首诗就是这一时期所写。通篇富有“野美”情趣。</p><p>作者游览至人迹罕至的滁州西涧，野外的风物打动了久在世俗夹缝中求生存的诗人。涧边无声无息地生长的幽草，深林中自由自在的黄莺的欢叫，都引起诗人的无限诗心。这是自然的色彩与动听的百籁交织成的幽雅景致。“独怜”是偏爱的意思，偏爱幽草，流露出诗人恬淡的胸怀。凡俗之人也许...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：倪其心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首山水诗的名篇，也是韦应物的代表作之一。诗写于唐德宗建中二年(781)诗人出任滁州刺史期间。唐滁州治所即今安徽滁州市，西涧在滁州城西郊野。这诗写春游西涧赏景和晚雨野渡所见。诗人以情写景，借景述意，写自己喜爱与不喜爱的景物，说自己合意与不合意的情事，而其胸襟恬淡，情怀忧伤，便自然流露出来。<br>诗的前二句，在春天繁荣景物中，诗人独爱自甘寂寞的涧边幽草，而无意于深树上鸣声诱人的黄莺儿，置之陪衬，以相...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/35950.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

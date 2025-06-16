@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪淘沙 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">浪淘沙</h1>
+            <div class="poem-author">作者：刘禹锡</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 389</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 6</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>九曲黄河万里沙，浪淘风簸自天涯。</p><p>如今直上银河去，同到牵牛织女家。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>九曲黄河从遥远的地方蜿蜒奔腾而来，一路裹挟着万里的黄沙。你从天边而来，如今好像要直飞上高空的银河，请你带上我扶摇直上，汇集到银河中去，一同到牛郎和织女的家里做客吧。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>浪淘沙：唐教坊曲名。创自刘禹锡、白居易，其形式为七言绝句。后又用为词牌名。<br>九曲：自古相传黄河有九道弯。形容弯弯曲曲的地方很多。<br>万里沙：黄河在流经各地时挟带大量泥沙。<br>浪淘风簸：黄河卷着泥沙，风浪滚动的样子。浪淘，波浪淘洗；簸，掀翻、上下簸动。<br>自天涯：来自天边。李白有一首诗中说：「黄河之水天上来」。古人认为黄河的源头和天上的银河相通<br>如今：到今天。<br>直：径直。<br>去：不是到什么地方去，而是离开此地。<br>牵牛织女：银河系的两个星座名。自古相传，织女为天上仙女，下凡到人间，和牛郎结为夫妇。后西王母召回织女，牛郎追上天，西王母罚他们隔河相望，只准每年七月七日的夜晚相会一次。牵牛，即传说中的牛郎。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>永贞元年，刘禹锡初贬为连州（今广东连县）刺史，行至江陵，再贬朗州司马。一度奉诏后还京后，他又因《游玄都观》触怒当朝权贵而被贬连州刺史，后历任和州刺史。他没有沉沦，而是以积极乐观的态度面对世事的变迁。这首诗正是表达了他的这种情感。<br>这首绝句模仿淘金者的口吻，表明他们对淘金生涯的厌恶和对美好生活的向往。同是在河边生活，牛郎织女生活的天河恬静而优美，黄河边的淘金者却整天在风浪泥沙中讨生活。直上银河，同访牛郎织女，寄托了他们心底对宁静的田园牧歌生活的憧憬。这种浪漫的理想，以豪迈的口语倾吐出来，有一种朴素无华的美。<br>诗人歌咏九曲黄河中的万里黄沙，赞扬它们冲风破浪，一往无前的顽强性格。我们引用时可取其象征意义，歌颂与它们有着共同特点的事物或人们。<br>「九曲黄河万里沙，浪淘风簸自天涯。如今直上银河去，同到牵牛织女家。」这是唐代诗人刘禹锡见黄河后留下的感慨，也是他对宁静生活的一种向往，而时间让世事变得复杂，追逐静已是现代人的一种精神渴求。九曲黄河沉积下来的是一种文化，而这种文化最大的特点就是静，它们深埋在河水转弯处的山坳里，在浮华背后深深地拽住民族的根，使我们在追逐中不会迷失方向。<br>唐代大诗人刘禹锡一阕《浪淘沙》，生动形象地写出了滔滔黄河的来龙去脉和雄伟气势。其中，还诗情画意地联想到随着层层波浪，去美丽传说中的天仙佳侣之家做客。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：陈炜琦</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>刘禹锡仕途坎坷，永贞革新失败后被贬官，长年流落于“巴山楚水凄凉地”。在贬谪期间，他创作的《杨柳枝词》《竹枝词》《浪淘沙》等，吸收了当地民歌的特色，活泼清新，在唐诗中别开生面。<br>前两句诗描写黄河壮美的景象。黄河河道迂回曲折，又因泥沙多而呈现浑黄水色，首句“九曲黄河万里沙”，精炼准确地抓住了黄河这两个特征，更以万里极言其长，引出下文的“天涯”。“浪淘风簸自天涯”，诗人笔下的黄河，带着颠簸起伏的风浪，从...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/3691266.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

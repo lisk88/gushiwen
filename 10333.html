@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石钟山记 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">石钟山记</h1>
+            <div class="poem-author">作者：苏轼</div>
+            <div class="poem-dynasty">宋朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 63</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 5</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>《水经》云：「彭蠡之口有石钟山焉。」郦元以为下临深潭，微风鼓浪，水石相搏，声如洪钟。是说也，人常疑之。今以钟磬置水中，虽大风浪不能鸣也，而况石乎！至唐李渤始访其遗踪，得双石于潭上，扣而聆之，南声函胡，北音清越，桴止响腾，余韵徐歇。自以为得之矣。然是说也，余尤疑之。石之铿然有声者，所在皆是也，而此独以钟名，何哉？</p><p>元丰七年六月丁丑，余自齐安舟行适临汝，而长子迈将赴铙之德兴尉，送之至湖口，因得观所谓石钟者。寺僧使小童持斧，于乱石间，择其一二扣之，硿硿焉。余固笑而不信也。至暮夜月明，独与迈乘小舟，至绝壁下。大石侧立千尺，如猛兽奇鬼，森然欲搏人，而山上栖鹘，闻人声亦惊起，磔磔云霄间；又有若老人咳且笑于山谷中者，或曰：「此鹳鹤也。」余方心动欲还，而大声发于水上，噌洪如钟鼓不绝，舟人大恐。徐而察之，则山下皆石穴罅，不知其浅深，微波入焉，涵澹澎湃而为此也。舟回至两山间，将入港口，有大石当中流，可坐百人，空中而多窍，与风水相吞吐，窾坎镗鞳之声，与向之噌吰者相应，如乐作焉。因笑谓迈曰：「汝识之乎？噌吰者，周景王之无射也；款坎镗嗒者，魏庄子之歌钟也。古之人不余欺也。」</p><p>事不目见耳闻，而臆断其有无，可乎？郦元之所见闻殆与余同，而言之不详；士大夫终不肯以小舟夜泊绝壁之下，故莫能知；而渔工水师虽知而不能言，此世所以不传也。而陋者乃以斧斤考击而求之，自以为得其实，余是以记之，盖叹郦元之简，而笑李渤之陋也。</p></div>
+            </div>
+
+            
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>石钟山，在江西湖口鄱阳湖东岸，有南、北二山，在县城南边的叫上钟山，在县城北边的叫下钟山。明清时有人认为苏轼关于石钟山得名由来的说法也是错误的，正确的说法是：「盖全山皆空，如钟覆地，故得钟名。」今人经过考察，认为石钟山之所以得名，是因为它具有钟之「声」，又具有钟之「形」。<br>彭蠡：鄱阳湖的又一名称。<br>郦元：即郦道元，《水经注》的作者。<br>鼓：振动。<br>搏：击，拍。<br>洪钟：大钟。<br>是说：这个说法。<br>磬（qìng）：古代打击乐器，形状像曲尺，用玉或石制成。<br>李渤：唐朝洛阳人，写过一篇《辨石钟山记》。<br>遗踪：旧址，陈迹。这里指所在地。<br>南声函胡：南边（那座山石）的声音重浊而模糊。函胡，通「含糊」。<br>北音清越：北边（那座山石）的声音清脆而响亮。越，高扬。<br>桴（fú）止响腾：鼓槌停止了（敲击），声音还在传播。腾，传播。<br>余韵徐歇：馀音慢慢消失。韵，这里指声音。徐，慢。<br>得之：找到了这个（原因）。之，指石钟山命名的原因。<br>尤：更加。<br>铿（kēng）然：敲击金石所发出的响亮的声音。<br>所在皆是：到处都（是）这样。是，这样。<br>元丰：宋神宗的年号。<br>六月丁丑：农历六月初九。<br>齐安：在今湖北黄州。<br>临汝：即汝州（今河南临汝）。<br>赴：这里是赴任、就职的意思。<br>湖口：今江西湖口。<br>硿（kōng）硿焉：硿硿地（发出响声）。焉，相当于「然」。<br>莫（mù）夜：晚上。莫，通「暮」。<br>森然：形容繁密直立。<br>搏人：捉人，打人。<br>栖鹘（hú）：宿巢的老鹰。鹘，鹰的一种。<br>磔（zhé）磔：鸟鸣声。<br>鹳鹤：水鸟名，似鹤而顶不红，颈和嘴都比鹤长。<br>心动：这里是心惊的意思。<br>噌吰（chēnghóng）：这里形容钟声洪亮。<br>舟人：船夫。<br>罅（xià）：裂缝。<br>涵澹澎湃：波浪激荡。涵澹，水波动荡。澎湃，波浪相激。<br>为此：形成这种声音。<br>中流：水流的中心。<br>空中：中间是空的。<br>窍：窟窿。<br>窾（kuǎn）坎镗（táng）鞳（tà）：窾坎，击物声。镗鞳，钟鼓声。<br>汝识（zhì）之乎：你知道那些（典故）吗？识，知道。<br>周景王之无射（yì）：《国语》记载，周景王二十三年（前522）铸成「无射」钟。<br>魏庄子之歌钟：《左传》记载，鲁襄公十一年（前561）郑人以歌钟和其他乐器献给晋侯，晋侯分一半赐给晋大夫魏绛。庄子，魏绛的谥号。歌钟，古乐器。<br>古之人不余欺也：古人（称这山为「石钟山」）没有欺骗我啊！不余欺，就是「不欺余」。<br>臆断：根据主观猜测来判断。臆，胸。<br>殆：大概。<br>终：终究。<br>渔工水师：渔人（和）船工。<br>言：指用文字表述、记载。<br>此世所以不传也：这（就是）世上没有流传下来（石钟山得名由来）的缘故。<br>陋者：浅陋的人。<br>以斧斤考击而求之：用斧头敲打石头的办法来寻求（石钟山得名的）原因。考，敲击。<br>实：指事情的真相。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《石钟山记》是北宋文学家苏东坡于宋神宗元丰七年（公元1084年）游石钟山后所写的一篇考察性的游记。文章通过记叙对石钟山得名由来的探究，强调要正确判断一件事物，必须要深入实际，认真调查。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：王思宇</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元丰七年（1084）正月，神宗出手札命苏轼由黄州（今湖北黄冈）移任汝州（今河南汝州）团练副使本州安置。三月文书到，四月离黄州，计划走水路经长江、淮河入洛赴任所，先至江西，游庐山，五月至筠州（今江西高安）别其弟子由（时监筠州盐酒税），六月送长子迈赴饶州德兴（今属江西）县尉任，途经湖口，游石钟山，写了这篇游记。文中将议论和叙述相结合，通过夜游石钟山的实地考查，对郦道元和李渤关于石钟山得名的说法进行了分...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">苏轼诗文鉴赏辞典</span>
+                    <span class="author-name">作者：王思宇</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元丰七年（1084）正月，神宗出手札命苏轼由黄州（今湖北黄冈）移任汝州（今河南临汝）团练副使本州安置。三月文书到，四月离黄州，计划走水路经长江、淮河入洛赴任所，先至江西，游庐山，五月至筠州（今江西高安）别其弟子由（时监筠州盐酒税），六月送长子迈赴饶州德兴（今属江西）县尉任，途经湖口，游石钟山，写了这篇游记。文中将议论和叙述相结合，通过夜游石钟山的实地考查，对郦道元和李渤关于石钟山得名的说法进行了分...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：王思宇</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元丰七年(1084)正月，神宗出手札命苏轼由黄州（今湖北黄冈）移任汝州（今河南汝州）团练副使本州安置。三月文书到，四月离黄州，计划走水路经长江、淮河入洛赴任所，先至江西，游庐山，五月至筠州（今江西高安）别其弟子由（时监筠州盐酒税），六月送长子迈赴饶州德兴（今属江西）县尉任，途经湖口，游石钟山，写了这篇游记。文中将议论和叙述相结合，通过夜游石钟山的实地考察，对郦道元和李渤关于石钟山得名的说法进行了分...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/118646.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

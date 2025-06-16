@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长沙过贾谊宅 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">长沙过贾谊宅</h1>
+            <div class="poem-author">作者：刘长卿</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 158</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 3</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>三年谪宦此栖迟，万古惟留楚客悲。</p><p>秋草独寻人去后，寒林空见日斜时。</p><p>汉文有道恩犹薄，湘水无情吊岂知？</p><p>寂寂江山摇落处，怜君何事到天涯！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>你被贬于此寂寞地住了三载，万古留下你客居楚地的悲哀。<br>踏着秋草独自寻觅你的足迹，只有黯淡的斜阳映照着寒林。<br>为何明君却独对你恩疏情薄，湘水无情怎知我对你的深情？<br>江山已经冷落草木已经凋零，可怜你究竟何故被贬此地呢！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>贾谊：西汉文帝时政治家、文学家。后被贬为长沙王太傅，长沙有其故址。<br>谪宦：贬官。栖迟：淹留。像鸟儿那样的敛翅歇息，飞不起来。<br>楚客：流落在楚地的客居，指贾谊。长沙旧属楚地，故有此称。一作「楚国」。<br>独：一作「渐」。<br>汉文：指汉文帝。<br>摇落处：一作「正摇落」。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>诗似是作者赴潘州（今广东茂名市）贬所，路过长沙时所作。首联写贾谊三所谪官，落得「万古」留悲。明写贾谊，暗寓自身迁谪。颔联写古宅萧条冷落的景色，「秋草」、「寒林」、「人去」、「日斜」，一派黯然气象。颈联写贾谊见疏，当年凭吊屈子。隐约联系自己而今凭吊贾谊。尾联写宅前徘徊，暮色更浓，秋色更深，抒发放逐天涯的哀惋叹喟。全诗虽是吊古，实在伤今，借怜贾以自怜。语言含蓄蕴藉，感情哀楚动人。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：徐竹心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一篇堪称唐诗精品的七律。诗的内容，与作者的迁谪生涯有关。刘长卿“刚而犯上，两遭迁谪”（唐高仲武《中兴间气集》）。第一次迁谪在唐肃宗至德三年（758）春天，由苏州长洲县尉被贬为潘州南巴（今广东茂名南）县尉；第二次在唐代宗大历八年（773）至十二年间的一个深秋，因被诬陷，由淮西鄂岳转运留后被贬为睦州（浙江建德）司马。从这首诗所描写的深秋景象来看，诗当作于第二次迁谪来到长沙的时候，那时正是秋冬之交，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：徐竹心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一篇堪称唐诗精品的七律。诗的内容，与作者的迁谪生涯有关。刘长卿“刚而犯上，两遭迁谪”（唐高仲武《中兴间气集》）。第一次迁谪在唐肃宗至德三年（758）春天，由苏州长洲县尉被贬为潘州南巴（今广东茂名南）县尉；第二次在唐代宗大历八年（773）至十二年间的一个深秋，因被诬陷，由淮西鄂岳转运留后被贬为睦州（浙江建德）司马。从这首诗所描写的深秋景象来看，诗当作于第二次迁谪来到长沙的时候，那时正是秋冬之交，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：董镇菲</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>在一个深秋的傍晚，刘长卿只身于秋风萧瑟荒草凄迷中，独自来“过”访贾谊旧宅。看着这荒草遍地、荒凉寂寞的故宅，刘长卿不禁思绪万千。贾谊是汉文帝时著名的政论家、文学家，才华横溢，深受文帝器重，因遭守旧大臣的妒忌和中伤，被贬为长沙王太傅。他的不幸遭遇，引得多少贤人志士为之悲痛。悲其世道昏暗，痛其直臣被贬。</p><p>刘长卿轻轻踱步于宅院之中，彷徨瞻顾。稀疏的秋草划过裤角，又有阵阵秋风袭面，他顿了顿步，不禁黯然长叹...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：董镇菲</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>在一个深秋的傍晚，刘长卿于秋风萧瑟荒草凄迷中，独自来“过”访追悼贾谊旧宅，看着这荒草遍地、荒凉寂寞的故宅，刘长卿的思绪不禁萦绕向贾谊。回想西汉文帝时，贾谊是著名的政治家，才华横溢，深受文帝器重，因遭守旧大臣的妒忌和中伤，被贬出使为长沙王太傅。他的不幸遭遇，引得多少贤人志士为之悲痛。悲其世道昏暗，痛其直臣被贬。</p><p>刘长卿轻轻踱步于宅院之中，彷徨瞻顾。稀疏的秋草划过裤角，又有阵阵秋风袭面，他顿了顿步，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：董镇菲</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>在一个深秋的傍晚，刘长卿于秋风萧瑟荒草凄迷中，独自来“过”访追悼贾谊旧宅，看着这荒草遍地、荒凉寂寞的故宅，刘长卿的思绪不禁萦绕向贾谊。回想西汉文帝时，贾谊是著名的政治家，才华横溢，深受文帝器重，因遭守旧大臣的妒忌和中伤，被贬出使为长沙王太傅。他的不幸遭遇，引得多少贤人志士为之悲痛。悲其世道昏暗，痛其直臣被贬。</p><p>刘长卿轻轻踱步于宅院之中，彷徨瞻顾。稀疏的秋草划过裤角，又有阵阵秋风袭面。他顿了顿步，...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/383574.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

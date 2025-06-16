@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周亚夫军细柳 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">周亚夫军细柳</h1>
+            <div class="poem-author">作者：司马迁</div>
+            <div class="poem-dynasty">汉朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 9</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 2</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>文帝之后六年，匈奴大入边。乃以宗正刘礼为将军，军霸上；祝兹侯徐厉为将军，军棘门；以河内守亚夫为将军，军细柳：以备胡。</p><p>上自劳军。至霸上及棘门军，直驰入，将以下骑送迎。已而之细柳军，军士吏被甲，锐兵刃，彀弓弩，持满。天子先驱至，不得入。先驱曰：“天子且至！”军门都尉曰：“将军令曰：‘军中闻将军令，不闻天子之诏’。”居无何，上至，又不得入。于是上乃使使持节诏将军：“吾欲入劳军。”亚夫乃传言开壁门。壁门士吏谓从属车骑曰：“将军约，军中不得驱驰。”于是天子乃按辔徐行。至营，将军亚夫持兵揖曰：“介胄之士不拜，请以军礼见。”天子为动，改容式车。使人称谢：“皇帝敬劳将军。”成礼而去。</p><p>既出军门，群臣皆惊。文帝曰：“嗟乎，此真将军矣！曩者霸上、棘门军，若儿戏耳，其将固可袭而虏也。至于亚夫，可得而犯邪！”称善者久之。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>汉文帝后元六年，匈奴大规模侵入汉朝边境。于是，朝廷委派宗正官刘礼为将军，驻军在霸上；委派祝兹侯徐厉为将军，驻军在棘门；委派河内郡太守周亚夫为将军，驻军细柳，以防备匈奴侵扰。<br>皇上亲自去慰劳军队。到了霸上和棘门的军营，直接驱车而入，将军及其属下都骑着马迎送。随即来到了细柳军营，只见官兵都披戴盔甲，手持锋利的兵器，开弓搭箭，弓拉满月，戒备森严。皇上的先行卫队到了营前，不准进入。先行的卫队说：“皇上将要驾到。”镇守军营的将官回答：“将军有令：‘军中只听从将军的命令，不听从天子的命令。’”过了不久，皇上驾到，也不让入军营。于是皇上就派使者拿符节去告诉将军：“我要进营慰劳军队。”周亚夫这才传令打开军营大门。守卫营门的官兵对跟从皇上的武官说：“将军规定，军营中不准驱车奔驰。”于是皇上的车队也只好拉住缰绳，慢慢前行。到了大营前，将军周亚夫手持兵器，双手抱拳行礼说：“我是盔甲在身的将士，不便跪拜，请允许我按照军礼参见。”皇上因此而感动，脸上的神情也改变了，俯身扶着横木上，派人致意说：“皇帝敬重地慰劳将军。”劳军礼仪完毕后辞去。<br>出了细柳军营的大门，许多大臣都深感惊诧。文帝感叹地说：“啊！这才是真正的将军。先前的霸上、棘门的军营，简直就像儿戏一样，匈奴是完全可以通过偷袭而俘虏那里的将军，至于周亚夫，岂是能够侵犯他吗？”长时间对周亚夫赞叹不已。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>文帝之后六年：指汉文帝后元六年。<br>匈奴：我国古代北方民族之一。<br>大：大规模，大举。<br>入边：侵入边境。<br>宗正：掌管皇族事务的官员。<br>军霸上：驻军霸上。霸上，地名，译做“灞上”，因地处灞水西岸高原而得名，在今陕西西安东。<br>祝兹侯：封号。<br>棘门：地名，原为秦宫门，在今陕西咸阳东北。<br>河内守：河内郡的郡守。河内，郡名，今河南北部地区。守，郡守，是汉代郡一级的行政长官。<br>备：防备，戒备。<br>胡：胡人，古代对北方少数民族的泛称，此指匈奴。<br>上：特指皇帝。<br>劳：慰问。<br>军：军营<br>已而：不久。<br>之：到，往。<br>被：通“披”，穿着。<br>锐兵刃：这里指刀出鞘。<br>彀（gòu）：张开。<br>弩（nǔ）：用机械发箭的弓。<br>持满：把弓拉满。<br>先驱：先行引导的人员。<br>且：将要。<br>军门都尉：守卫军营的将官，职位低于将军。<br>诏（zhào）：皇帝发布的命令。<br>居无何：过了不久。居，经过，表示相隔一段时间。无何，不久。<br>持节：手持符节。节，符节，皇帝派遣使者或调动军队的凭证。<br>壁：营垒。<br>车骑：车马。<br>驱驰：策马疾驰。<br>按辔：控制住车马。辔，马缰绳。<br>徐：慢，缓慢。<br>持兵揖（yi）：手持兵器行礼。揖，拱手行礼。<br>介胄之士不拜：穿戴着盔甲之将不行跪拜礼。介胄，铠甲和头盔，这里用作动词，指披甲戴盔。士，将领。<br>为动：被感动。<br>改容式车：表情严肃起来，扶着车前横木俯下身子，表示敬意。式，同“轼”。这里用作动词，指扶轼。<br>称谢：向人致意，表示问候。<br>既：已经。<br>嗟乎：叹词，表示慨叹。<br>曩（nǎng）：先前。<br>固：必，一定。<br>邪（yé）：语气词，表示反问。<br>之：助词。在句中只起调节音节的作用，无实意。</p></div></div>
+            
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：赖汉屏</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这篇文字节选自《史记·绛侯周勃世家》。周勃是汉代开国元戎，他死后由其长子周胜之袭封侯爵。后胜之因犯罪削封，汉文帝才选周勃诸子中的贤者、当时担任河内守的周亚夫作爵位的继承人。文帝后元六年（前158），匈奴入寇，亚夫奉命领军防守长安，驻军细柳。其实这次匈奴入侵，历时不过一个多月，因汉军戒备森严，以匈奴引兵退却而结束，对长安仅仅是一场虚惊。按照《史记》笔法，只须在头一段“以备胡”的后面，加上“居一月，虏...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

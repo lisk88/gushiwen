@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论语·为政篇 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">论语·为政篇</h1>
+            <div class="poem-author">作者：孔子</div>
+            <div class="poem-dynasty">周朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 4</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 1</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>子曰：“为政以德，譬如北辰，居其所而众星共之。”</p><p>子曰：“《诗》三百，一言以蔽之，曰：‘思无邪’。”</p><p>子曰：“道之以政，齐之以刑，民免而无耻。道之以德，齐之以礼，有耻且格。”</p><p>子曰：“吾十有五而志于学，三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲，不逾矩。”</p><p>孟懿子问孝，子曰：“无违。”樊迟御，子告之曰：“孟孙问孝于我，我对曰‘无违’。”樊迟曰：“何谓也？”子曰：“生，事之以礼；死，葬之以礼，祭之以礼。”</p><p>孟武伯问孝。子曰：“父母唯其疾之忧。”</p><p>子游问孝。子曰：“今之孝者，是谓能养。至于犬马皆能有养；不敬，何以别乎？”</p><p>子夏问孝。子曰：“色难。有事，弟子服其劳；有酒食，先生馔，曾是以为孝乎？”</p><p>子曰：“吾与回言终日，不违，如愚。退而省其私，亦足以发，回也不愚。”</p><p>子曰：“视其所以，观其所由，察其所安，人焉廋哉？人焉廋哉？”</p><p>子曰：“温故而知新，可以为师矣。”</p><p>子曰：“君子不器。”</p><p>子贡问君子。子曰：“先行其言而后从之。”</p><p>子曰：“君子周而不比，小人比而不周。”</p><p>子曰：“学而不思则罔，思而不学则殆。”</p><p>子曰：“攻乎异端，斯害也已！”</p><p>子曰：“由，诲汝知之乎！知之为知之，不知为不知，是知也。”</p><p>子张学干禄。子曰：“多闻阙疑，慎言其余，则寡尤；多见阙殆，慎行其余，则寡悔。言寡尤，行寡悔，禄在其中矣。”</p><p>哀公问曰：“何为则民服？”孔子对曰：“举直错诸枉，则民服；举枉错诸直，则民不服。”</p><p>季康子问：“使民敬、忠以劝，如之何？”子曰：“临之以庄，则敬；孝慈，则忠；举善而教不能，则劝。”</p><p>或谓孔子曰：“子奚不为政？”子曰：“《书》云：‘孝乎惟孝，友于兄弟，施于有政。’是亦为政，奚其为为政？”</p><p>子曰：“人而无信，不知其可也。大车无輗，小车无軏，其何以行之哉？”</p><p>子张问：“十世可知也？”子曰：“殷因于夏礼，所损益，可知也；周因于殷礼，所损益，可知也。其或继周者，虽百世，可知也。”</p><p>子曰：“非其鬼而祭之，谄也；见义不为，无勇也。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>孔子说：“（周君）以道德教化来治理政事，就会像北极星那样，自己居于一定的方位，而群星都会环绕在它的周围。”<br>孔子说：“《诗经》三百篇，可以用一句话来概括它，就是‘思想纯正’。”<br>孔子说：“用法制禁令去引导百姓，使用刑法来约束他们，老百姓只是求得免于犯罪受惩，却失去了廉耻之心；用道德教化引导百姓，使用礼制去统一百姓的言行，百姓不仅会有羞耻之心，而且也就守规矩了。”<br>孔子说：“我十五岁立志于学习；三十岁能够自立；四十岁能不被外界事物所迷惑；五十岁懂得了天命；六十岁能正确对待各种言论，不觉得不顺；七十岁能随心所欲而不越出规矩。”<br>孟懿子问什么是孝，孔子说：“孝就是不要违背礼。”后来樊迟给孔子驾车，孔子告诉他：“孟孙问我什么是孝，我回答他说不要违背礼。”樊迟说：“不要违背礼是什么意思呢？”孔子说：“父母活着的时候，要按礼侍奉他们；父母去世后，要按礼埋葬他们、祭祀他们。”<br>孟武伯向孔子请教孝道。孔子说：“对父母，要特别为他们的疾病担忧。（这样做就可以算是尽孝了。）”<br>子游问什么是孝，孔子说：“如今所谓的孝，只是说能够赡养父母便足够了。然而，就是犬马都能够得到饲养。如果不存心孝敬父母，那么赡养父母与饲养犬马又有什么区别呢？”<br>子夏问什么是孝，孔子说：“（当子女的要尽到孝），最不容易的就是对父母和颜悦色，仅仅是有了事情，儿女需要替父母去做，有了酒饭，让父母吃，难道能认为这样就可以算是孝了吗？”<br>孔子说：“我整天给颜回讲学，他从来不提反对意见和疑问，像个蠢人。等他退下之后，我考察他私下的言论，发现他对我所讲授的内容有所发挥，可见颜回其实并不蠢。”<br>孔子说：“（要了解一个人），应看他言行的动机，观察他所走的道路，考察他安心干什么，这样，这个人怎样能隐藏得了呢？这个人怎样能隐藏得了呢？”<br>孔子说：“在温习旧知识时，能有新体会、新发现、就可以当老师了。”<br>孔子说：“君子不像器具那样，（只有某一方面的用途）。”<br>子贡问怎样做一个君子。孔子说：“对于你要说的话，先实行了，再说出来，（这就够说是一个君子了）。”<br>孔子说：“君子合群而不与人勾结，小人与人勾结而不合群。<br>孔子说：“只读书学习，而不思考问题，就会罔然无知而没有收获；只空想而不读书学习，就会疑惑而不能肯定。“<br>孔子说：“要整理整顿那些异端，（因为）他们对天下的危害太大了！”<br>孔子说：“由，我教给你怎样做的话，你明白了吗？知道的就是知道，不知道就是不知道，这就是智慧啊！”<br>子张要学谋取官职的办法。孔子说：“要多听，有怀疑的地方先放在一旁不说，其余有把握的，也要谨慎地说出来，这样就可以少犯错误；要多看，有怀疑的地方先放在一旁不做，其余有握的，也要谨慎地去做，就能减少后悔。说话少过失，做事少后悔，官职俸禄就在这里了。”<br>鲁哀公问：“怎样才能使百姓服从呢？”孔子回答说：“把正直无私的人提拔起来，把邪恶不正的人置于一旁，老百姓就会服从了；把邪恶不正的人提拔起来，把正直无私的人置于一旁，老百姓就不会服从统治了。”<br>季康子问道：“要使老百姓对当政的人尊敬、尽忠而努力干活，该怎样去做呢？”孔子说：“你用庄重的态度对待老百姓，他们就会尊敬你；你对父母孝顺、对子弟慈祥，百姓就会尽忠于你；你选用善良的人，又教育能力差的人，百姓就会互相勉励，加倍努力了。”<br>有人对孔子说：“你为什么不去从事政治呢？”孔子回答说：“《尚书》上说，‘孝就是孝敬父母，友爱兄弟。’把这孝悌的道理施于政事，也就是从事政治，又要怎样才能算是为政呢？”<br>孔子说：“一个人不讲信用，是根本不可以的。就好像大车没有輗、小车没有軏一样，它靠什么行走呢？”<br>子张问孔子：“今后十世（的礼仪制度）可以预先知道吗？”孔子回答说：“商朝继承了夏朝的礼仪制度，所减少和所增加的内容是可以知道的；周朝又继承商朝的礼仪制度，所废除的和所增加的内容也是可以知道的。将来有继承周朝的，就是一百世以后的情况，也是可以预先知道的。”<br>孔子说：“不是你应该祭的鬼神，你却去祭它，这就是谄媚。见到应该挺身而出的事情，却袖手旁观，就是怯懦。”</p></div></div>
+            
+            
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古代志怪小说鉴赏辞典</span>
+                    <span class="author-name">作者：盛巽昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本篇写的是东晋某孝子因杀狸受到陷害，但他坚持己见，实事求是，终于真相大白的故事。<br>这位孝子没有一点儿迂腐气，他自始至终不为狸幻所迷惑。化作妇人的狸，以及后来扭住他送官府要偿命的老狸，都难以迷惑于他。<br>在大千世界中，丑恶和虚伪往往是披着美丽和真诚的面纱进入人际双向活动的。大奸似忠，天使和魔鬼只是心灵的差别。所以认识世界、认识社会在某种意义上说，最难的是具有那种知人之明。识人如辨色，《老子》说：“五色...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诸子百家名句鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这里的“共”同“拱”。孔子主张以德治国，他认为统治者的个人行为和治国的大小举措都应当合乎道德，这样，就会像北极星那样，居于一定的方位，群星都环绕在它的周围运行。</p><p>与地球相对而言，北极星的位置是不变动的，但是天空无数星球却有条不紊地围绕着它运行，孔子仰望这一天象，心想人间的统治秩序如能这样就好了。他用北极星的隐喻表达一种无为而治的政治主张。他希望用北极星的隐喻，告诉统治者不要自作聪明，抛弃礼制，胡...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诸子百家名句鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>人到老年，常常以深沉的感情回顾自己一生所走的道路，孔子这段著名的话语正是他在垂暮之年对自己一生的一个概括和总结。孔子一生经历了许多磨难，但是在他晚年时期，鲁国统治者把他视为国师，常到他府上问政咨询；他的弟子遍天下，有的已经在一些诸侯国担任要职；而在社会上，他被人们当成圣人，被公认为知识广博的学者。因此，我们在孔子回顾一生的话语中能够感受到他的欣慰之情。正像明代学者、政治家杨起元所说：“圣人履历，从...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诸子百家名句鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“周”是合群的意思，“比”意为勾结。这两个字都有关系好的意思，但是，“周”有周遍的含义，就是说不与一些人特别密切，而同另外一些人有意疏远。也就是没有宗派主义，不党同伐异，而“比”表示两者靠得特别紧，关系特别密切，因此在这句话中就有勾结的含义。</p><p>孔子用“周”与“比”来概括君子之交与小人之交的根本区别，来规定有道德的人应当遵循的交友之道。“周”与“比”之间的不同首先表现在是以坦诚、友好、善意的态度对...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诸子百家名句鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孔子重视学是无人不知的，《论语》中我们到处可以看到学字，全书用得最多的概念就是仁、礼、学。但是，他同样也强调思维的重要性。学是了解别人的认识，思是寻求自己的认识。“君子求诸己，小人求诸人”（《卫灵公》）一句不仅是指反躬自问、依靠自己，而且也是要求在思想认识上得之于己，自我创新。他从来反对死读书，食古不化，所以提出“温故而知新”（《为政》）。从《论语》我们可以看到，他一直有意识地着力培养学生的思维能...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">四书五经鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：夏乃儒</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孔子一生从事的实践活动，主要有两类：一是政治活动，另一是教育活动。前者的时间比较短。在他五十岁的时候，曾任鲁国的中都宰、司空，后又升迁为司寇。孔子在五十五岁时被迫离开鲁国，开始长达十四年的周游列国的活动，宣传他的政治主张，但终不见用。他从事教育活动的时间相当长，经历了他一生中的三个时期。从“三十而立”到三十五岁期间，收受了最早的一批弟子；从三十七岁到五十岁期间，他的弟子已遍及各诸侯国；其后返鲁后的...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

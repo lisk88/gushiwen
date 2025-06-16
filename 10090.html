@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渔家傲 · 秋思 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">渔家傲 · 秋思</h1>
+            <div class="poem-author">作者：范仲淹</div>
+            <div class="poem-dynasty">宋朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>词</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 2007</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 20</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>塞下秋来风景异，衡阳雁去无留意。四面边声连角起，千嶂里，长烟落日孤城闭。</p><p>浊酒一杯家万里，燕然未勒归无计。羌管悠悠霜满地，人不寐，将军白发征夫泪。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>秋天到了，西北边塞的风光和江南不同。大雁又飞回衡阳了，一点也没有停留之意。黄昏时，军中号角一吹，周围的边声也随之而起。层峦叠嶂里，暮霭沉沉，山衔落日，孤零零的城门紧闭。<br>饮一杯浊酒，不由得想起万里之外的家乡，未能像窦宪那样战胜敌人，刻石燕然，不能早作归计。悠扬的羌笛响起来了，天气寒冷，霜雪满地。夜深了，将士们都不能安睡：将军于战士为操持军事，须发都变白了，久戍边塞，也流下了伤时的眼泪。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>渔家傲：又名《吴门柳》、《忍辱仙人》、《荆溪咏》、《游仙关》。<br>塞：边界要塞之地，这里指西北边疆。<br>衡阳雁去：传说秋天北雁南飞，至湖南衡阳回雁峰而止，不再南飞。<br>边声：边塞特有的声音，如大风、号角、羌笛、马啸的声音。<br>千嶂：绵延而峻峭的山峰；崇山峻岭。<br>燕然：即燕然山，今名杭爱山，在今蒙古国境内。<br>燕然未勒：指战事未平，功名未立。据《后汉书·窦宪传》记载，东汉窦宪率兵追击匈奴单于，去塞三千馀里，登燕然山，刻石勒功而还。<br>羌管：即羌笛，出自古代西部羌族的一种乐器。<br>悠悠：形容声音飘忽不定。<br>寐：睡，不寐就是睡不着。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《渔家傲·秋思》是由范仲淹创作，过去认为是其任陕西经略副使兼知延州（今陕西延安市）时写的一首抒怀词，而实际查找文献考订发现其实是在庆州写的。整首词表现将士们的英雄气概及艰苦生活，意境开阔苍凉，形象生动鲜明。上阕描绘边地的荒凉景象，下阕写戍边战士厌战思归的心情。范文正的《渔家傲》变低沉婉转之调而为慷慨雄放之声，把有关国家、社会的重大问题反映到词里，可谓大手笔。从词史上说，此词沉雄开阔的意境和苍凉悲壮的气概，对苏东坡、辛稼轩等也有影响。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：李廷先</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>北宋在仁宗即位之后，国家积弱积贫之势益加明显，表面上一片升平，实际上危机四伏，而文风、词风仍在沿袭着晚唐、五代的余习发展。有远见的政治家、文学家都已觉察到问题的严重性，“庆历新政”和古文运动先后发生在这个时期，不是偶然现象，而是当时政治现实、社会现实的客观要求。在词的方面，豪放词开始兴起，一变低沉婉转之调，而为慷慨雄放之声，把有关国家、社会的重大问题反映到词里。范仲淹的《渔家傲》可算是这方面的代表...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：李廷先</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>北宋，仁宗即位之后，国家逐渐形成积弱积贫之势，表面上一片升平，实际上危机四伏，而文风、词风仍在沿袭着晚唐、五代的余习发展。有远见的政治家、文学家都已觉察到问题的严重性，“庆历新政”和古文运动先后发生在这个时期，不是偶然现象，而是当时政治现实、社会现实的客观要求。在词的方面，豪放词开始兴起，一变低沉婉转之调，而为慷慨雄放之声，把有关国家、社会的重大问题反映到词里。范仲淹的《渔家傲》可算是这方面的代表...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首</span>
+                    <span class="author-name">作者：李廷先</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>北宋，仁宗即位之后，国家逐渐形成积弱积贫之势，表面上一片升平，实际上危机四伏，而文风、词风仍在沿袭着晚唐、五代的余习发展。有远见的政治家、文学家都已觉察到问题的严重性，“庆历新政”和古文运动先后发生在这个时期，不是偶然现象，而是当时政治现实、社会现实的客观要求。在词的方面，豪放词开始兴起，一变低沉婉转之调，而为慷慨雄放之声，把有关国家、社会的重大问题反映到词里。范仲淹的《渔家傲》可算是这方面的代表...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首鉴赏辞典</span>
+                    <span class="author-name">作者：鲁智勇　乐云</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>宋仁宗康定元年（1040）八月，西夏人扰边，范仲淹被调任为陕西经略安抚副使兼知延州（治所在今陕西延安），随军亲临前线。庆历元年（1041）四月，范仲淹调任耀州（治所在今陕西耀县）知州。这首《渔家傲》就写在词人多年戍边征战的营帐里。</p><p>纵贯全词，意境开阔，语调铿锵，所写景色奇特瑰丽，形象生动鲜明，慷慨雄放，气郁沉潜，是词人边塞生活与心境的真实写照，无愧为宋代豪放词之先声。</p><p>上阕着重写景，首句即开门...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典</span>
+                    <span class="author-name">作者：鲁智勇　乐云</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>宋仁宗康定元年（1040）八月，西夏人扰边，范仲淹被调任为陕西经略安抚副使兼知延州（治所在今陕西延安），随军亲临前线。庆历元年（1041）四月，范仲淹调任耀州（治所在今陕西耀州）知州。这首《渔家傲》就写在词人多年戍边征战的营帐里。</p><p>纵贯全词，意境开阔，语调铿锵，所写景色奇特瑰丽，形象生动鲜明，慷慨雄放，气郁沉潜，是词人边塞生活与心境的真实写照，无愧为宋代豪放词之先声。</p><p>上阕着重写景，首句即开门...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：鲁智勇　乐云</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>宋仁宗康定元年（1040）八月，西夏人扰边，范仲淹被调任为陕西经略安抚副使兼知延州（治所在今陕西延安），随军亲临前线。庆历元年（1041）四月，范仲淹调任耀州（治所在今陕西铜川耀州区）知州。这首《渔家傲》就写在词人多年戍边征战的营帐里。<br>纵贯全词，意境开阔，语调铿锵，所写景色奇特瑰丽，形象生动鲜明，慷慨雄放，气郁沉潜，是词人边塞生活与心境的真实写照，无愧为宋代豪放词之先声。<br>上阕着重写景，首句即开...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：李廷先</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“浊酒一杯家万里”，这是词人的自抒怀抱。他身负重任，防守危城，天长日久，难免起乡关之思。这“一杯”与“万里”之间形成了悬殊的对比，也就是说，一杯浊酒，销不了浓重的乡愁，造语雄浑有力。乡愁由何而来呢？“燕然未勒归无计”，这句是用典。燕然，山名，即杭爱山，在今蒙古国境内。汉和帝永元元年(89)，窦宪大破北匈奴，穷追北单于，曾登此山，“刻石勒功而还”（《后汉书·和帝纪》）。词意是说，战争没有取得胜利，还...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/1341214.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

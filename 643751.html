@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富贵不能淫 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">富贵不能淫</h1>
+            <div class="poem-author">作者：孟子</div>
+            <div class="poem-dynasty">周朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 41</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 2</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>景春曰：“公孙衍、张仪岂不诚大丈夫哉？一怒而诸侯惧，安居而天下熄。”</p><p>孟子曰：“是焉得为大丈夫乎？子未学礼乎？丈夫之冠也，父命之；女子之嫁也，母命之，往送之门，戒之曰：‘往之女家，必敬必戒，无违夫子！’以顺为正者，妾妇之道也。居天下之广居，立天下之正位，行天下之大道。得志，与民由之；不得志，独行其道。富贵不能淫，贫贱不能移，威武不能屈，此之谓大丈夫。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>景春说：“公孙衍、张仪难道不是真正的有志气、作为的大丈夫吗？他们一发怒，连诸侯都害怕，他们安静下来，天下就太平无事。”<br>孟子说：“这哪里能算是有志气有作为的男子呢？你没有学过礼吗？男子行加冠礼时，父亲给予训导；女子出嫁时，母亲给予训导，送她到门口，告诫她说：‘到了你的丈夫的家里，一定要恭敬，一定要谨慎，不要违背你的丈夫！’以顺从为做人原则的，是妾妇之道。居住在天下最宽广的住宅‘仁’里，站立在天下最正确的位置‘礼’上，行走在天下最宽广的道路‘义’上。能实现理想时，就同人民一起走这条正道；不能实现理想时，就独自行走在这条正道上。富贵不能使他的思想迷惑，贫贱不能使他的操守动摇，威武不能使他的意志屈服，这才叫作有志气有作为的大丈夫。”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>景春：与孟子同时代的人，纵横家。<br>公孙衍：战国时期魏国人，纵横家。曾在秦国为相，又曾佩五国相印。<br>张仪：战国时期魏国人，纵横家，秦惠王时为相，游说六国连横以服从秦国。<br>诚：真正，确实。<br>大丈夫：指有大志、有作为、有气节的男子。<br>惧：害怕。<br>安居：安静。<br>熄：同“息”，平息，指战火熄灭，天下太平。<br>是：这，这个。<br>焉：怎么，哪里。<br>子：你。<br>未学：没有学。<br>之：“丈夫之冠也”及下文“女子之嫁也”中的“之”都是主谓之间取消句子独立性，不译。<br>丈夫之冠：男子举行加冠礼的时候。冠：古代男子到成年则举行加冠礼，叫做冠。古人二十岁既为加冠。<br>父命之：父亲给予训导；父亲开导他。命：教导、训诲。<br>母命之：母亲给予训导。<br>嫁：出嫁。<br>往：去，到。<br>戒：告诫。<br>女（rǔ）：同“汝”，你。<br>必敬必戒；必：一定。敬：恭敬。戒：留神，当心，谨慎。<br>违：违背。<br>乱：扰乱。<br>夫子：旧时称自己的丈夫。<br>以：把。<br>顺：顺从。<br>为：作为。<br>正：正理，及基本原则。<br>道：方法。<br>居天下之广居：第一个“居”：居住。第二个“居”居所，住宅。<br>广居、正位、大道：朱熹注释为：广居，仁也；正位，礼也；大道，义也。<br>立：站，站立。<br>正：正大。<br>大道：光明的大道。<br>得：实现。<br>志：志向。<br>由：遵循。<br>独行其道：独自走自己的道路。独：独自。行：这里是固守；坚持的意思。道：原则，行为准则。<br>淫：惑乱，迷惑。使动用法。<br>移：改变，动摇。使动用法。<br>屈：屈服。使动用法。</p></div></div>
+            
+            
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白雪歌送武判官归京 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">白雪歌送武判官归京</h1>
+            <div class="poem-author">作者：岑参</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 861</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 16</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>北风卷地白草折，胡天八月即飞雪。</p><p>忽如一夜春风来，千树万树梨花开。</p><p>散入珠帘湿罗幕，狐裘不暖锦衾薄。</p><p>将军角弓不得控，都护铁衣冷难着。</p><p>瀚海阑干百丈冰，愁云惨淡万里凝。</p><p>中军置酒饮归客，胡琴琵琶与羌笛。</p><p>纷纷暮雪下辕门，风掣红旗冻不翻。</p><p>轮台东门送君去，去时雪满天山路。</p><p>山回路转不见君，雪上空留马行处。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>北风席卷大地吹折白草，仲秋八月胡地飘降大雪。<br>仿佛一夜之间春风吹来，树上有如梨花竞相开放。<br>雪花飘入帘笼沾湿帐幕，就是穿狐皮袍也不暖和。<br>将军兽角弓冻得拉不开，都护的铠甲冷得难穿上。<br>无边沙漠结成百丈坚冰，忧愁的阴云凝结在长空。<br>帐中摆酒为回京人送行，助兴的是琵琶羌笛胡琴。<br>黄昏时辕门外大雪纷飞，冻硬的红旗风吹不飘动。<br>在轮台东门外送你回京，临行时茫茫白雪布满山。<br>山路曲折不见你的身影，雪地上空留马蹄的印迹。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>武判官：名不详，当是封常清幕府中的判官。判官，官职名。唐代节度使等朝廷派出的持节大使，可委任幕僚协助判处公事，称判官，是节度使、观察使一类的僚属。<br>白草折（zhé）：白草：西北的一种牧草，晒干后变白。<br>胡天：指塞北的天空。胡，古代汉民族对北方各民族的通称。<br>梨花：春天开放，花作白色。这里比喻雪花积在树枝上，像梨花开了一样。<br>珠帘：用珍珠串成或饰有珍珠的帘子。形容帘子的华美。罗幕：用丝织品做成的帐幕。形容帐幕的华美。这句说雪花飞进珠帘，沾湿罗幕。“珠帘”“罗幕”都属于美化的说法。<br>狐裘：狐皮袍子。<br>锦衾：锦缎做的被子。<br>锦衾薄：丝绸的被子（因为寒冷）都显得单薄了。形容天气很冷。<br>角弓：两端用兽角装饰的硬弓，一作“雕弓”。<br>不得控：（天太冷而冻得）拉不开（弓）。控，拉开。<br>都护：镇守边镇的长官此为泛指，与上文的“将军”是互文。铁衣：铠甲。<br>难着：一作“犹着”。着，亦写作“著”。<br>瀚海：沙漠。这句说大沙漠里到处都结着很厚的冰。<br>阑干：纵横交错的样子。<br>百丈：一作“百尺”，一作“千尺”。<br>惨淡：昏暗无光。<br>中军：称主将或指挥部。古时分兵为中、左、右三军，中军为主帅的营帐。<br>饮归客：宴饮归京的人，指武判官。饮，动词，宴饮。<br>胡琴琵琶与羌笛：胡琴等都是当时西域地区兄弟民族的乐器。这句说在饮酒时奏起了乐曲。羌笛，羌族的管乐器。<br>辕门：军营的门。古代军队扎营，用车环围，出入处以两车车辕相向竖立，状如门。这里指帅衙署的外门。<br>风掣：红旗因雪而冻结，风都吹不动了。一言旗被风往一个方向吹，给人以冻住之感。掣，拉、扯。<br>轮台：唐轮台在今新疆维吾尔自治区米泉县境内，与汉轮台不是同一地方。天山：一名祁连山，横亘新疆东西，长六千余里。<br>满：铺满。形容词活用为动词。<br>山回路转：山势回环，道路盘旋曲折。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗描写西域八月飞雪的壮丽景色，抒写塞外送别、雪中送客之情，表现离愁和乡思，却充满奇思异想，并不令人感到伤感。诗中所表现出来的浪漫理想和壮逸情怀使人觉得塞外风雪变成了可玩味欣赏的对象。全诗内涵丰富宽广，色彩瑰丽浪漫，气势浑然磅礴，意境鲜明独特，具有极强的艺术感染力，堪称盛世大唐边塞诗的压卷之作。其中“忽如一夜春风来，千树万树梨花开”等诗句已成为千古传诵的名句。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：周啸天</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>此诗是一首咏雪送人之作。天宝十三载（754），岑参再度出塞，充任安西北庭节度使封常清的判官。武某或即其前任。为送他归京，写下此诗。“岑参兄弟皆好奇”（杜甫《渼陂行》），读此诗处处不要忽略一个“奇”字。<br>此诗开篇就奇突。未及白雪而先传风声，所谓“笔所未到气已吞”——全是飞雪之精神。大雪必随刮风而来，“北风卷地”四字，妙在由风而见雪。“白草”，据《汉书·西域传》颜师古注，乃西北一种草名，王先谦补注谓其...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：周啸天</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>此诗是一首咏雪送人之作。天宝十三载（754），岑参再度出塞，充任安西北庭节度使封常清的判官。武某或即其前任。为送他归京，写下此诗。“岑参兄弟皆好奇”（杜甫《渼陂行》），读此诗处处不要忽略一个“奇”字。</p><p>此诗开篇就奇突。未及白雪而先传风声，所谓“笔所未到气已吞”——全是飞雪之精神。大雪必随刮风而来，“北风卷地”四字，妙在由风而见雪。“白草”，据《汉书·西域传》颜师古注，乃西北一种草名，王先谦补注谓...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：杨军</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>天宝十三载（754），岑参再度出塞，在安西北庭节度使封长清幕任判官。武判官是他的同僚，要回京述职，故在中军帐里摆开酒宴，为武判官饯行，于是产生了这首咏雪送人之作。诗以咏雪起，在咏雪中暗寓别情。以送人结，展现了雪中送人的奇景和深情，再现了边地瑰丽的自然风光和戍边将士的精神风貌。</p><p>诗从西北边塞的气候特点落墨：这里风大，一刮起来铺天盖地，连坚韧的白草也要折断；这里雪早，一到八月便下雪了。这不仅和内地形...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：杨军</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>天宝十三载（754），岑参再度出塞，在安西北庭节度使封常清幕任判官，武判官是他的同僚，要回京述职，在中军帐里摆开酒宴，为武判官饯行，于是产生了这首咏雪送人之作。诗以咏雪起，在咏雪中暗寓别情。以送人结，展现了雪中送人的奇景和深情，再现了边地瑰丽的自然风光和戍边将士的精神风貌。</p><p>诗从西北边塞的气候特点落墨：这里风大，一刮起来铺天盖地，连坚韧的白草也要折断；这里雪早，一交八月便下雪了。这不仅和内地形成...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：杨军</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>天宝十三年（754），岑参再度出塞，在安西北庭节度使封常清幕任判官。武判官是他的同僚，要回京述职，在中军帐里摆开酒宴，为武判官饯行，于是产生了这首咏雪送人之作。诗以咏雪起，在咏雪中暗寓别情。以送人结，展现了雪中送人的奇景和深情，再现了边地瑰丽的自然风光和戍边将士的精神风貌。</p><p>诗从西北边塞的气候特点落墨：这里风大，一刮起来铺天盖地，连坚韧的白草也要折断；这里雪早，一交八月便下雪了。这不仅和内地形成...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：周啸天</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>塞外苦寒，北风一吹，大雪纷飞。诗人以“春风”使梨花盛开，比拟“北风”使雪花飞舞，极为新颖贴切。“忽如”二字下得甚妙，不仅写出了“胡天”变幻无常，大雪来得急骤，而且，再次传出了诗人惊喜好奇的神情。“千树万树梨花开”的壮美意境，颇富有浪漫色彩。南方人见过梨花盛开的景象，那雪白的花不仅是一朵一朵，而且是一团一团，花团锦簇，压枝欲低，与雪压冬林的景象极为神似。春风吹来梨花开，竟至“千树万树”，重叠的修辞表...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/155283.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

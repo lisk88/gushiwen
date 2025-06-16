@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝天子 · 咏喇叭 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">朝天子 · 咏喇叭</h1>
+            <div class="poem-author">作者：王磐</div>
+            <div class="poem-dynasty">明朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>曲</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 187</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 8</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>喇叭和唢呐，<br>吹的曲子虽短，声音却很响亮。<br>官船来往频繁如乱糟糟的麻，全凭借你抬高名誉地位。<br>军队听了军队发愁，百姓听了百姓害怕。<br>哪里会去辨别什么真和假？<br>眼看着使有的人家倾家荡产，使有的人家元气大伤，<br>直吹得水流干鹅飞跑，家破人亡啊！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>朝天子：曲牌名。<br>喇叭：铜制管乐器，上细下粗，最下端的口部向四周扩张，可以扩大声音。<br>唢呐：一作“锁呐”，管乐器，管身正面有七孔，背面一孔。前接一个喇叭形扩声器。民乐中常用。<br>曲儿小：（吹的）曲子很短。腔儿大：（吹出的）声音很响。曲儿小腔儿大是喇叭、唢呐的特征。本事很小、官腔十足是宦官的特征。<br>官船：官府衙门的船只。乱如麻：形容来往频繁，出现次数很多。<br>仗：倚仗，凭借。你：指喇叭、唢呐。抬：抬高。声价：指名誉地位。（宦官装腔作势，声价全靠喇叭来抬。而喇叭其所以能抬声价，又因为它传出的是皇帝的旨意。矛头所指，更深一层。也暗示其狐假虎威的嘴脸。）<br>军：指军队。愁：发愁。因受搅扰而怨忿。旧时皇帝为了加强对军队统帅的控制，常派宦官监军，以牵制军队长官的行动，十分讨厌。<br>哪里：同“那里”。辨：分辨、分别。甚么：同“什么”，疑问代词。共：和。<br>眼见的：眼看着。吹翻了这家：意思是使有的人家倾家荡产。<br>吹伤了那家：使有的人家元气大伤。<br>水尽鹅飞罢：水干了，鹅也飞光了。比喻民穷财尽，家破人亡。这是宦官害民的严重后果。水尽鹅飞，“官船”就不能长久来往，这也是对最高统治者的警告，比喻家破人亡。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《朝天子·咏喇叭》是明代王磐的散曲。明朝正德年间，宦官当权，欺压百姓，行船时常吹起号头来壮大声势，这支散曲就是为了讽刺宦官而作。诗中表面上写的是喇叭和唢呐，实则处处写的都是宦官。“曲儿”比喻宦官的地位低下，“腔大”比喻他们的仗势欺人；“军愁”“民怕”说明他们走到哪里，就给哪里带来灾难；“水尽鹅飞”则形容他们把百姓欺压得倾家荡产。整首曲子虽然没有正面提到一个宦官的字样，但是却活画出了他们的丑态，在轻俏诙谐中充满了对宦官的鄙视和愤慨，道出了百姓的心声。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：陈虎阚</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>王磐是生活于明代中期的一位文学家，字鸿渐，号西楼，高邮（今属江苏）人。他厌弃科举，一生隐居乡里，不曾为官，而纵情于山水诗画之间，尤其是在散曲创作方面成就突出，被誉为“明曲之冠”。《朝天子·咏喇叭》选自他的散曲集《王西楼乐府》，这首散曲是如此脍炙人口，以至于惜字如金的《辞海》在介绍作者王磐时，都为它留下了不小的篇幅：“正德间，宦官擅权，船到高邮，辄吹喇叭以征丁役，骚扰民间，磐因作《朝天子·咏喇叭》一...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/item/朝天子·咏喇叭" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

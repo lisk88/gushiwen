@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>永州八记 · 其四 · （至小丘西）小石潭记 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">永州八记 · 其四 · （至小丘西）小石潭记</h1>
+            <div class="poem-author">作者：柳宗元</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 365</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 14</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>从小丘西行百二十步，隔篁竹，闻水声，如鸣珮环，心乐之。伐竹取道，下见小潭，水尤清冽。全石以为底，近岸，卷石底以出，为坻，为屿，为嵁，为岩。青树翠蔓，蒙络摇缀，参差披拂。</p><p>潭中鱼可百许头，皆若空游无所依，日光下澈，影布石上。佁然不动，俶尔远逝，往来翕忽，似与游者相乐。</p><p>潭西南而望，斗折蛇行，明灭可见。其岸势犬牙差互，不可知其源。</p><p>坐潭上，四面竹树环合，寂寥无人，凄神寒骨，悄怆幽邃。以其境过清，不可久居，乃记之而去。</p><p>同游者：吴武陵，龚古，余弟宗玄。隶而从者，崔氏二小生，曰恕己，曰奉壹。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>从小丘向西走一百二十多步，隔着竹林，可以听到流水的声音，好像人身上佩带的玉佩、玉环相互碰击发出的声音，心里十分高兴。砍伐竹子，开辟道路，向下看见一个小潭，水格外清澈。小潭以整块石头为底，靠近岸边的地方，石底有些部分翻卷出来，露出水面，成为水中的高地，像是水中的小岛，也有高低不平的石头和小岩石（露了出来）。青葱的树木，翠绿的藤蔓，覆盖缠绕，摇动连结，参差不齐，随风飘拂。<br>潭中的鱼大约有百多条，都好像在空中游动，什么依靠也没有。阳光直照到水底，鱼的影子映在水底的石上。鱼儿呆呆地一动不动，忽然向远处游去，来来往往，轻快敏捷，好像在和游玩的人逗玩。<br>向小石潭的西南方望去，溪岸像北斗七星一样曲折，像蛇爬行一样弯曲，望过去一段看得见，一段看不见。溪岸的形状像狗的牙齿那样参差不齐，不能知道溪水的源头在哪里。<br>我坐在潭边，四下里竹林和树木包围着，寂静没有旁人。使人感到心神凄凉，寒气透骨，幽静深远，弥漫着忧伤的气息。因为那种环境太过凄清，不能长时间停留，于是记录下了此地就离开。<br>一同去游览的人有吴武陵、龚古、我的弟弟宗玄。我带着一同去的，有姓崔的两个年轻人。一个名叫恕己，一个名叫奉壹。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>从：自，由。<br>小丘：小山丘（在小石潭东边）。<br>西：向西，名词作状语。<br>行：走。<br>篁（huáng）竹：成林的竹子。<br>如鸣珮环：好像人身上佩戴的佩环相碰击发出的声音。鸣，使……发出声音；珮、环，玉质装饰物。<br>乐：以……为乐，对……感到快乐（意动用法）。<br>伐：砍伐。<br>取：这里指开辟。<br>下见小潭：向下看就看见一个小潭。见，看见；下，向下。<br>水尤清冽：水格外（特别）清澈。尤，格外、特别；冽，凉。清冽，清凉。<br>全石以为底：即以全石为底（潭）把整块石头当作底部。以，把；为，当作。<br>「近岸，卷石底以出」句：靠近岸的地方，石底有些部分翻卷过来露出水面。近，靠近；岸，岸边；卷，弯曲；以，相当于「而」，表修饰，不译。<br>「为坻（chí），为屿，为嵁（kān），为岩」句：成为坻、屿、嵁、岩各种不同的形状。坻，水中高地；屿，小岛；嵁，不平的岩石；岩，悬崖。<br>翠蔓：翠绿的藤蔓。<br>「蒙络摇缀，参差披拂」句：覆盖缠绕，摇动下垂，参差不齐，随风飘动。<br>可百许头：大约有一百来条。文中指小潭里的鱼大约有一百来条。可，大约；许，用在数词后表示约数，相当于同样用法的「来」。<br>皆若空游无所依：都好像在空中游动，什么依托也没有。空：在空中，名词作状语；皆：全、都。<br>「日光下澈，影布石上」句：阳光向下直照到水底，鱼的影子好像映在水底的石头上。下，向下照射；布，照映、分布；澈，一作「彻」，穿透。<br>佁（yǐ）然不动：（鱼影）呆呆地一动不动。佁然，呆呆的样子。<br>俶（chù）尔远逝：忽然间向远处游去了。俶尔，忽然。<br>往来翕（xī）忽：来来往往，轻快敏捷。翕忽，轻快敏捷的样子；翕，迅疾。<br>斗折：像北斗七星那样曲折。<br>蛇行：像蛇爬行那样弯曲。<br>明灭可见：若隐若现。灭，暗、看不见。<br>「斗折蛇行，明灭可见」句：（溪水）曲曲折折，（望过去）一段看得见，一段又看不见。<br>犬牙差（cī）互：像狗的牙齿那样互相交错。犬牙，像狗的牙齿一样；差互，互相交错。<br>「凄神寒骨，悄（qiǎo）怆（chuàng）幽邃（suì）」句：使人感到心神凄凉，寒气透骨，幽静深远，弥漫着忧伤的气息。凄、寒，使动用法，使……感到凄凉，使……感到寒冷；悄怆，凄凉的样子；邃，深。<br>以其境过清：因为那种环境太过凄清。以，因为；其，那；清，凄清。<br>「不可久居，乃记之而去」句：不能长时间停留，于是记下小石潭的情况就离开了。居，待、停留；乃，于是……就；之，代游小石潭这件事；去，离开。<br>吴武陵：作者的朋友，也被贬在永州。<br>龚古：作者的朋友。<br>宗玄：作者的堂弟。<br>「隶而从者，崔氏二小生」句：跟着我一同去的，有姓崔的两个年轻人。隶而从，跟着同去的；隶，作为随从，动词；崔氏，指柳宗元姐夫崔简；小生，年轻人。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>柳宗元于唐顺宗永贞元年（公元805年）因拥护王叔文的改革，被贬为永州司马，王叔文被害。政治上的失意，使他寄情于山水，柳宗元贬官之后，为排解内心的愤懑之情，常常不避幽远，伐竹取道，探山访水，并通过对景物的具体描写，抒发自己的不幸遭遇，此间共写了八篇山水游记，后称《永州八记》。<br>《小石潭记》保持了《永州八记》一贯的行文风格，察其微，状其貌，传其神。是一篇充满了诗情画意、情景交融的山水游记散文。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是《永州八记》的第四篇。题中有个“至”字，第一段即紧承上篇《钴鉧潭西小丘记》，写从小丘西行“至”小石潭的经过。“隔篁竹，闻水声，如鸣珮环”，于是“心乐之”，欲寻声而往，一窥究竟；但为丛篁所隔，无路可通，便下决心“伐竹取道”。“伐竹取道”四字，用行动写心情，坐实了前边的“乐”字。到了“下见小潭，水尤清冽”，见得力气没有白费，其“乐”更不待言。这几句，既与前篇联系，点出小石潭的环境，又表现了发现小石...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">柳宗元诗文鉴赏辞典</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是《永州八记》的第三篇。开头几句，照应前两篇，点出西山、钴[插图]潭和小丘的发现经过及其位置，并为后面“不匝旬而得异地者二”预留伏线。接下去，即抓住小丘的“异”处，描绘满布丘上的嶙嶙奇石。在一般人看来，那些毫无生命的石头本来就暴露在那里；但在作者眼中，却是“突怒偃蹇、负土而出、争为奇状”。这是说：那埋于泥土之中，不见天日的石头，不甘埋没，愤然突破地面，顶土而出，争作奇状，以显示自己的存在。构思何...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">柳宗元诗文鉴赏辞典</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是《永州八记》的第四篇。题中有个“至”字，第一段即紧承上篇《钴[插图]潭西小丘记》，写从小丘西行“至”小石潭的经过。“隔篁竹，闻水声，如鸣珮环”，于是“心乐之”，欲寻声而往，一窥究竟；但为丛篁所隔，无路可通，便下决心“伐竹取道”。“伐竹取道”四字，用行动写心情，坐实了前边的“乐”字。到了“下见小潭，水尤清冽”，见得力气没有白费，其“乐”更不待言。这几句，既与前篇联系，点出小石潭的环境，又表现了发...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是《永州八记》的第四篇。第一段即紧承上篇《钴鉧潭西小丘记》，写从小丘西行至小石潭的经过。“隔篁竹，闻水声，如鸣珮环”，于是“心乐之”，欲寻声而往，一窥究竟；但为丛篁所隔，无路可通，便下决心“伐竹取道”。“伐竹取道”四字，用行动写心情，坐实了前边的“乐”字。到了“下见小潭，水尤清冽”，见得力气没有白费，其“乐”更不待言。这几句，既与前篇联系，点出小石潭的环境，又表现了发现小石潭的喜悦心情。未见小潭...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/47562.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜雨寄北 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">夜雨寄北</h1>
+            <div class="poem-author">作者：李商隐</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 2649</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 18</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>君问归期未有期，巴山夜雨涨秋池。</p><p>何当共剪西窗烛，却话巴山夜雨时。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>你问我什么时候回去，我还没有确定的日子。此刻巴山的夜雨淅淅沥沥，雨水涨满了秋天的河池。<br>什么时候我才能回到家乡，在西窗下我们一边剪烛一边谈心，那时我再对你说说，今晚在巴山作客听着绵绵夜雨的心情。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>寄北：写诗寄给北方的人。诗人当时在巴蜀（现在四川省），他的亲友在长安，所以说“寄北”。这首诗表达了诗人对亲友的深刻怀念。<br>君：对对方的尊称，等于现代汉语中的“您”。<br>归期：指回家的日期。<br>巴山：指大巴山，在陕西南部和四川东北交界处。这里泛指巴蜀一带。<br>秋池：秋天的池塘。<br>何当：什么时候<br>剪西窗烛：剪烛，剪去燃焦的烛芯，使灯光明亮。这里形容深夜秉烛长谈。“西窗话雨”“西窗剪烛”用作成语，所指也不限于夫妇，有时也用以写朋友间的思念之情。<br>却话：回头说，追述。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《夜雨寄北》是晚唐诗人李商隐身居异乡巴蜀，写给远在长安的妻子（一说友人）的一首抒情七言绝句，是诗人给对方的复信。诗的开头两句以问答和对眼前环境的抒写，阐发了孤寂的情怀和对妻子深深的思念。后两句即设想来日重逢谈心的欢悦，反衬今夜的孤寂。这首诗即兴写来，写出了诗人刹那间情感的曲折变化。语言朴实，在遣词、造句上看不出修饰的痕迹。与李商隐的大部分诗词表现出来的辞藻华美，用典精巧，长于象征、暗示的风格不同，这首诗却质朴、自然，同样也具有“寄托深而措辞婉”的艺术特色。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，宋洪迈《万首唐人绝句》题作《夜雨寄内》，“内”就是“内人”——妻子；今传李诗各本题作《夜雨寄北》，“北”就是北方的人，可以指妻子，也可以指朋友。有人经过考证，认为它作于作者的妻子王氏去世之后，因而不是“寄内”诗，而是写赠长安友人的。但从诗的内容看，按“寄内”理解，似乎更确切一些。<br>第一句一问一答，先停顿，后转折，跌宕有致，极富表现力。翻译一下，那就是：“你问我回家的日期；唉，回家的日期嘛，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，宋洪迈《万首唐人绝句》题作《夜雨寄内》，“内”就是“内人”——妻子；今传李诗各本题作《夜雨寄北》，“北”就是北方的人，可以指妻子，也可以指朋友。有人经过考证，认为它作于作者的妻子王氏去世之后，因而不是“寄内”诗，而是写赠长安友人的。但从诗的内容看，按“寄内”理解，似乎更确切一些。</p><p>第一句一问一答，先停顿，后转折，跌宕有致，极富表现力。翻译一下，那就是：“你问我回家的日期；唉，回家的日期嘛...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>一、二句谓妻问我何日回家，我还回答不上；巴山一夜的秋雨涨满了池塘。三、四句说何时还乡与妻在西窗下挑灯夜话？再聊叙巴山夜雨时的九曲回肠。语浅情深，是寄内之作。此夜羁情无处说，转从他日话今宵。</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：杨军</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗是作者在四川梓州做幕僚时怀念妻子之作。首句点题，说明这首诗是以诗代书。是妻子在分手时“尚未登程，先问归期”呢，还是在诗人到达任所后来信询问——诗中没有交代，但“问归期”说明她盼他回去心切；诗一开头就提归期，也说明诗中人同样把归期时时在念，他也在思念妻子。非常遗憾的是这封代书诗却带给妻子以“未有期”的坏消息。抱歉而又无可奈何之情，欲归不能的无限愁苦跃然纸上。七个字先停顿，后转折，跌宕有致。</p><p>...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：杨军</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗是作者在四川梓州做幕僚时怀念妻子之作。首句点题，说明这首诗是以诗代书。是妻子在分手时“尚未登程，先问归期”呢，还是在诗人到达任所后来信询问——诗中没有交代，但“问归期”说明她盼他回去心切；诗一开头就提归期，也说明诗中人同样把归期时时在念，他也在思念妻子。非常遗憾的是这封代书诗却带给妻子以“未有期”的坏消息。抱歉而又无可奈何之情，欲归不能的无限愁苦跃然纸上。七个字先停顿，后转折，跌宕有致。</p><p>...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：杨军</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗是作者在四川梓州做幕僚时怀念妻子之作。首句点题，说明这首诗是以诗代书。是妻子在分手时“尚未登程，先问归期”呢，还是在诗人到达任所后来信询问——诗中没有交代，但“问归期”说明她盼他回去心切；诗一开头就提归期，也说明诗中人同样把归期时时在念，他也在思念妻子。非常遗憾的是这封代书诗却带给妻子以“未有期”的坏消息。抱歉而又无可奈何之情，欲归不能的无限愁苦跃然纸上。七个字先停顿，后转折，跌宕有致。<br>第...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗文鉴赏辞典</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，宋洪迈《万首唐人绝句》题作《夜雨寄内》，“内”就是“内人”——妻子；今传李诗各本题作《夜雨寄北》，“北”就是北方的人，可以指妻子，也可以指朋友。有人经过考证，认为它作于作者的妻子王氏去世之后，因而不是“寄内”诗，而是写赠长安友人的。但从诗的内容看，按“寄内”理解，似乎更确切一些。</p><p>第一句一问一答，先停顿，后转折，跌宕有致，极富表现力。翻译一下，那就是：“你问我回家的日期；唉，回家的日期嘛...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，宋洪迈《万首唐人绝句》题作《夜雨寄内》，“内”就是“内人”———妻子；今传李诗各本题作《夜雨寄北》，“北”就是北方的人，可以指妻子，也可以指朋友。有人经过考证，认为它作于作者的妻子王氏去世之后，因而不是“寄内”诗，而是写赠长安友人的。但从诗的内容看，按“寄内”理解，似乎更确切一些。<br>第一句一问一答，先停顿，后转折，跌宕有致，极富表现力。翻译一下，那就是：“你问我回家的日期；唉，回家的日期嘛...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/4412.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

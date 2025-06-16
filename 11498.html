@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>别云间 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">别云间</h1>
+            <div class="poem-author">作者：夏完淳</div>
+            <div class="poem-dynasty">明朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 202</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 11</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>三年羁旅客，今日又南冠。</p><p>无限山河泪，谁言天地宽？</p><p>已知泉路近，欲别故乡难。</p><p>毅魄归来日，灵旗空际看。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>【韵译】<br>三年为抗清兵东走西飘荡，今天兵败被俘作囚入牢房。<br>无限美好河山失陷伤痛泪，谁还敢说天庭宽阔地又广。<br>已经知道黄泉之路相逼近，想到永别故乡实在心犯难。<br>鬼雄魂魄等到归来那一日，灵旗下面要将故乡河山看。<br>【散译】<br>三年来我奔走四海，今天却又成为了俘虏。我为了这河山流了多少泪，谁又说天地宽广四海为家？<br>我已经知道自己的长辞之日不远了，想要与故乡诀别却又难舍。<br>待到我英魂归来的那一天，拭目以待抗清的义旗在空中飘扬。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>云间：上海松江区古称云间，是作者家乡。南明永历元年（公元一六四七年），他在这里被逮捕。<br>三年：作者自南明弘光元年（公元一六四五年）起，参加抗清斗争，出入于太湖及其周围地区，至南明永历元年（公元一六四七年），共三年。<br>羁（jī）旅：寄居他乡，生活飘泊不定。羁，停留。<br>南冠（guān）：被囚禁的人。语出《左传》。楚人锺仪被俘，晋侯见他戴着楚国的帽子，问左右的人：「南冠而絷（zhí）者，谁也？」后世以「南冠」代被俘。<br>泉路：黄泉路，死路。泉，黄泉，置人死后埋葬的地穴。<br>毅魄，坚强不屈的魂魄，语出屈原《九歌。国殇》：「身即死兮神以灵，魂魄毅兮为鬼雄。」。<br>灵旗：又叫魂幡，古代招引亡魂的旗子。这里指后继者的队伍。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《别云间》是明代少年抗清英雄，著名诗人夏完淳的作品，该诗是诗人在故乡松江府华亭县（今上海松江）被清兵逮捕时，写就的一首绝命诗，诗人最终不屈而死，年仅十七岁。全诗思路流畅清晰，感情跌宕豪壮。起笔叙艰苦卓绝的飘零生涯，承笔发故土沦丧、山河破碎之悲愤慨叹，转笔抒眷念故土、怀恋亲人之深情，结笔盟誓志恢复之决心。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元明清诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：潘啸龙</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>永历元年（1647）秋，夏完淳因倡议反清，上表鲁王事泄，终于在家乡被捕，时距陈子龙壮烈殉国不到二月。被捕时，诗人意气从容，慨然而呼：“天下岂有畏人避祸夏存古（诗人之字）哉！”“我得归骨于高皇帝孝陵，千载无恨。”此诗就是在他拜别故乡（松江古称“云间”）、押解上路时吟成的。<br>全诗在抚今追昔的深沉慨叹中开篇。自1645年南京陷落，诗人以十五之龄投入反清复明事业，算来已经“三年”。而今，复国大业未竟，自身...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元明清诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：潘啸龙</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>永历元年（1647）秋，夏完淳因倡议反清，上表鲁王事泄，终于在家乡被捕，时距陈子龙壮烈殉国不到二月。被捕时，诗人意气从容，慨然而呼：“天下岂有畏人避祸夏存古（诗人之字）哉！”“我得归骨于高皇帝孝陵，千载无恨。”此诗就是在他拜别故乡（松江古称“云间”）、押解上路时吟成的。</p><p>全诗在抚今追昔的深沉慨叹中开篇。自1645年南京陷落，诗人以十五之龄投入反清复明事业，算来已经“三年”。而今，复国大业未竟，自...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代励志诗鉴赏：生当作人杰</span>
+                    <span class="author-name">作者：潘啸龙</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>永历元年（1647）秋，夏完淳因倡议反清，上表鲁王事泄，终于在家乡被捕，时距陈子龙壮烈殉国不到二月。被捕时，诗人意气从容，慨然而呼：“天下岂有畏人避祸夏存古（诗人之字）哉！”“我得归骨于高皇帝孝陵，千载无恨。”此诗就是在他拜别故乡（松江古称“云间”）、押解上路时吟成的。</p><p>全诗在抚今追昔的深沉慨叹中开篇。自1645年南京陷落，诗人以十五之龄投入反清复明事业，算来已经“三年”。而今，复国大业未竟，自...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/133907.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

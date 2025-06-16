@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月夜忆舍弟 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">月夜忆舍弟</h1>
+            <div class="poem-author">作者：杜甫</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 609</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 8</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>戍鼓断人行，边秋一雁声。</p><p>露从今夜白，月是故乡明。</p><p>有弟皆分散，无家问死生。</p><p>寄书长不达，况乃未休兵。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>戍楼上响起禁止通行的鼓声，秋季的边境传来孤雁的哀鸣。<br>今天是白露节更怀念家里人，还是觉得家乡的月亮更明亮。<br>虽有兄弟但都离散各去一方，已经无法打听到他们的消息。<br>寄书信询问也不知送往何处，何况天下依旧战乱不能太平。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>舍弟：家弟。杜甫有四弟：杜颍、杜观、杜丰、杜占。<br>戍鼓：戍楼上用以报时或告警的鼓声。断人行：指鼓声响起后，就开始宵禁。<br>边秋：一作“秋边”，秋天边远的地方，此指秦州。一雁：孤雁。古人以雁行比喻兄弟，一雁，比喻兄弟分散。<br>露从今夜白：指在气节“白露”的一个夜晚。<br>分散：一作“羁旅”。<br>无家：杜甫在洛阳附近的老宅已毁于安史之乱。<br>长：一直，老是。不达：收不到。达，一作“避”。<br>况乃：何况是。未休兵：此时叛将史思明正与唐将李光弼激战。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这首诗托物咏怀，层次井然。首联和颔联写景，烘托出战争的氛围。颈联和尾联在此基础上写兄弟因战乱而离散，居无定处，杳无音信，于是思念之情油然而生，特别是在入秋以后的白露时节，在戍楼上的鼓声和失群孤雁的哀鸣声的映衬之下，这种思念之情越发显得深沉和浓烈。全诗语句精工，格调沉郁哀伤，真挚感人。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：张明非</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗是乾元二年（759）秋杜甫在秦州（治所在今甘肃天水）所作。这年九月，史思明从范阳引兵南下，攻陷汴州，西进洛阳，山东、河南都处于战乱之中。当时，杜甫的几个弟弟正分散在这一带，由于战事阻隔，音信不通，引起他强烈的忧虑和思念。《月夜忆舍弟》即是他当时思想感情的真实记录。在古典诗歌中，思亲怀友是常见的题材，这类作品要力避平庸，不落俗套，单凭作者生活体验是不够的，还必须在表现手法上匠心独运。杜甫正是在...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：张明非</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗是乾元二年（759）秋杜甫在秦州（治所在今甘肃天水）所作。这年九月，史思明从范阳引兵南下，攻陷汴州，西进洛阳，山东、河南都处于战乱之中。当时，杜甫的几个弟弟正分散在这一带，由于战事阻隔，音信不通，引起他强烈的忧虑和思念。《月夜忆舍弟》即是他当时思想感情的真实记录。在古典诗歌中，思亲怀友是常见的题材，这类作品要力避平庸，不落俗套，单凭作者生活体验是不够的，还必须在表现手法上匠心独运。杜甫正是在...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>一个清冷的夜晚，耳畔传来了单调的更鼓声，不由让人的心绪也变得单调、沉闷了。一位孤单的满怀愁绪的诗人，此时正月夜独坐，头脑一片空白。蓦然响起的更鼓声刹那间惊醒了他，突然，他感到了一丝清冷，猛然意识到，又是秋令时节了！</p><p>在这样一个夜晚，伴随沉闷的更鼓之声，诗人感到了分外的寂寞。这不，路上连一个行人也没有，偌大的天地似乎只有诗人自己孤单地呼吸着寂寞的空气。不！不只他一人！还有秋雁呢！听，那不是它们欢快...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>一个清冷的夜晚，耳畔传来了单调的更鼓声，不由让人的心绪也变得单调、沉闷了。一位孤单的满怀愁绪的诗人，此时正月夜独坐，头脑一片空白。蓦然响起的更鼓声刹那间惊醒了他，突然，他感到了一丝清冷，猛然意识到，又是秋令时节了！</p><p>在这样一个夜晚，伴随沉闷的更鼓之声，诗人感到了分外的寂寞。这不，路上连一个行人也没有，偌大的天地似乎只有诗人自己孤单地呼吸着寂寞的空气。不！不只他一人！还有秋雁呢！听，那不是它们欢快...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>一个清冷的夜晚，耳畔传来了单调的更鼓声，不由让人的心绪也变得单调、沉闷了。一位孤单的满怀愁绪的诗人，此时正月夜独坐，头脑一片空白。蓦然响起的更鼓声刹那间惊醒了他，突然，他感到了一丝清冷，猛然意识到，又是秋令时节了！</p><p>在这样一个夜晚，伴随沉闷的更鼓之声，诗人感到了分外的寂寞。这不，路上连一个行人也没有，偌大的天地似乎只有诗人自己孤单地呼吸着寂寞的空气。不！不只他一人！还有秋雁呢！听，那不是它们欢快...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">杜甫诗歌鉴赏辞典</span>
+                    <span class="author-name">作者：张明非</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗是乾元二年（759）秋杜甫在秦州（治所在今甘肃天水）所作。这年九月，史思明从范阳引兵南下，攻陷汴州，西进洛阳，山东、河南都处于战乱之中。当时，杜甫的几个弟弟正分散在这一带，由于战事阻隔，音信不通，引起他强烈的忧虑和思念。《月夜忆舍弟》即是他当时思想感情的真实记录。在古典诗歌中，思亲怀友是常见的题材，这类作品要力避平庸，不落俗套，单凭作者生活体验是不够的，还必须在表现手法上匠心独运。杜甫正是在...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/155719.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

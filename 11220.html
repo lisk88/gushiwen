@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三峡 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">三峡</h1>
+            <div class="poem-author">作者：郦道元</div>
+            <div class="poem-dynasty">南北朝朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 378</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 13</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>自三峡七百里中，两岸连山，略无阙处。重岩叠嶂，隐天蔽日。自非亭午夜分，不见曦月。</p><p>至于夏水襄陵，沿溯阻绝。或王命急宣，有时朝发白帝，暮到江陵，其间千二百里，虽乘奔御风，不以疾也。</p><p>春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间，清荣峻茂，良多趣味。</p><p>每至晴初霜旦，林寒涧肃，常有高猿长啸，属引凄异，空谷传响，哀转久绝。故渔者歌曰：「巴东三峡巫峡长，猿鸣三声泪沾裳。」</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>在三峡七百里（的沿途）中，两岸都是连绵的高山，没有一点中断的地方；重重叠叠的悬崖峭壁，遮挡了天空和太阳。如果不是正午，就看不到太阳，如果不是半夜就看不到月亮。<br>到了夏天江水漫上山陵，上行和下行的航路都被阻断。有时皇帝的命令要紧急传达，这时只要早晨从白帝城出发，傍晚就到了江陵，中间相距一千二百里，即使骑上飞奔的快马，驾着疾风，也不如它快。<br>等到春天和冬天的时候，就可以看见激起白色浪花的急流里有回旋的清波，碧绿的潭水里倒映着景物的影子。极高的山峰上，大多生长着许多奇形怪状的松柏，悬泉瀑布在山峰之间飞流冲荡。水清，树荣，山峻，草盛，实在是趣味无穷。<br>（在秋天）每到天刚放晴的时候或下霜的早晨，树林和山涧显出一片清凉和寂静，经常有猿猴在高处拉长声音鸣叫，声音持续不断，（显得）非常凄凉怪异，在空荡的山谷里传来猿叫的回声，悲哀婉转，很久才消失。所以三峡中渔民的歌谣唱道：「巴东三峡巫峡长，猿鸣三声泪沾裳。」</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>自：在、从。<br>三峡：指长江上游重庆、湖北两个省级行政单位间的瞿塘峡、巫峡和西陵峡。三峡全长实际只有四百多里。<br>两岸连山，略无阙处：江岸两边一个山峰连着一个山峰，一点儿也没有中断的地方。略无，毫无。<br>阙（quē），通「缺」，中断，空缺。<br>嶂（zhàng）：形势高险像屏障一样的山峰。<br>隐：遮蔽。<br>自非：如果不是。自，如果；非，不是。<br>亭午：正午。<br>夜分：半夜。<br>曦（xī）月：日月，曦，日光，这里指太阳。<br>夏水襄（xiāng）陵：夏天大水涨上了高陵之上。襄陵，指水漫上山陵。出自《尚书·尧典》：「荡荡怀山襄陵，浩浩滔天。」襄，动词，上，冲上。陵，大的土山，这里泛指山陵。<br>沿：顺流而下。<br>溯：逆流而上。<br>或：有时。<br>王命：皇帝的命令。<br>宣：宣布、传播、传达。<br>白帝：城名，在重庆奉节县东。<br>朝发白帝：早上从白帝城出发。朝，早晨；<br>江陵：今湖北江陵。<br>其间：指从白帝城到江陵之间。<br>千二百里：一千二百里，约合现在的三百五十公里。<br>虽：连词，表示假设的让步，相当于「即使」。<br>奔：指飞奔的骏马。<br>御：驾驭。<br>以：这样。<br>素湍（tuān）：白色的急流。素，白色；湍，急流的水。<br>绿潭：碧绿的深水。潭，深水。<br>回清倒影：回旋的清波，倒映出（各种景物）的影子。<br>绝？（yǎn）：极高的山峰。绝，极，？，极高的山峰。（？本身就指极高的山峰，此处用绝表强调修饰）<br>怪柏：形状奇特的柏树。<br>悬泉：从山顶飞流而下的泉水。<br>飞漱：急流沖荡。漱，沖荡。<br>清荣峻茂：水清，树荣（茂盛），山高，草盛。<br>良多趣味：的确有很多趣味（趣味无穷）。良，的确，确实。<br>晴初：天刚晴。<br>霜旦：下霜的早晨，指秋季。<br>林寒：山林中气候寒冷。<br>涧肃：山沟里气候清冷。涧，夹在两山之间的水沟。肃，清冷。<br>啸：动物拉长声音叫。<br>属（zhǔ）：动词，连接。<br>引：延长。<br>凄异：凄凉怪异。<br>响：回声。<br>哀转久绝：悲哀婉转，很久才消失。<br>巴东：汉郡名，在今重庆东部云阳，奉节，巫山一带。<br>三声：几声。这里不是确数。<br>沾：打湿。<br>裳（cháng）：衣服。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《三峡》节选自南北朝北魏地理学家郦道元所著的《水经注·江水注》，是著名山水散文。全篇只用一百五十五个字，既描写了三峡错落有致的自然风貌，又写三峡不同季节的壮丽景色，展示了祖国河山的雄伟奇丽、无限壮阔的景象。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：张, 巍</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>在诗人、画家的眼中，流动的江河，挺峙的山峦，都是有生命的。他们常与明月对饮，同清风闲谈，故出现在笔下的山水草木，也大多清新可爱，带着许多灵气。就如北魏的郦道元，他以地理学家的目光探寻自然，又以文学家的心灵感受自然，因此他的《水经注》虽是一部地理学巨著，又同时能带给人们以艺术上的莫大享受。《三峡》正是其中最具魅力的篇章之一。它仿佛是一轴瑰奇多彩的山水画长卷，令人于赏观之际不胜惊奇，不胜喜悦！<br>你看它...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：张巍</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>在诗人、画家的眼中，流动的江河，挺峙的山峦，都是有生命的。他们常与明月对饮，同清风闲谈，故出现在笔下的山水草木，也大多清新可爱，带着许多灵气。就如北魏的郦道元，他以地理学家的目光探寻自然，又以文学家的心灵感受自然，因此他的《水经注》虽是一部地理学巨著，又同时能带给人们以艺术上的莫大享受。《三峡》正是其中最具魅力的篇章之一。它仿佛是一轴瑰奇多彩的山水画长卷，令人于赏观之际不胜惊奇，不胜喜悦！<br>你看它...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/5261/6949885.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

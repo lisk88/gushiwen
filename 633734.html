@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>答谢中书书 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">答谢中书书</h1>
+            <div class="poem-author">作者：陶弘景</div>
+            <div class="poem-dynasty">南北朝朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 215</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 9</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>山川之美，古来共谈。高峰入云，清流见底。两岸石壁，五色交辉。青林翠竹，四时俱备。晓雾将歇，猿鸟乱鸣；夕日欲颓，沉鳞竞跃。实是欲界之仙都。自康乐以来，未复有能与其奇者。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>山川景色的美丽，自古以来就是文人雅士共同欣赏赞叹的。巍峨的山峰耸入云端，明净的溪流清澈见底。两岸的石壁色彩斑斓，交相辉映。青葱的林木，翠绿的竹丛，四季常存。清晨的薄雾将要消散的时候，传来猿、鸟此起彼伏的鸣叫声；夕阳快要落山的时候，潜游在水中的鱼儿争相跳出水面。这里实在是人间的仙境啊。自从南朝的谢灵运以来，就再也没有人能够欣赏这种奇丽的景色了。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>答：回复。<br>谢中书：即谢徵，字元度，陈郡阳夏（河南太康）人。曾任中书鸿胪（掌朝廷机密文书），所以称之为谢中书。<br>书：即书信，古人的书信又叫「尺牍」或「信札」，是一种应用性文体，多记事陈情。<br>山川：山河。<br>共谈：共同谈赏的。<br>五色交辉：这里形容石壁色彩斑斓。五色，古代以青黄黑白赤为正色；交辉，指交相辉映。<br>青林：青葱的树林。<br>翠竹：翠绿的竹子。<br>四时：四季。<br>俱：都。<br>歇：消。<br>乱：此起彼伏。<br>夕日欲颓：太阳快要落山了。颓，坠落。<br>沉鳞竞跃：潜游在水中的鱼争相跳出水面。沉鳞，潜游在水中的鱼。竞跃，竞相跳跃。<br>实：确实，的确。<br>欲界：佛家语，佛教把世界分为欲界，色界、无色界。欲界是没有摆脱世俗的七情六欲的众生所处境界，即指人间。<br>欲界之仙都：即人间仙境。仙都，仙人生活在其中的美好世界。<br>康乐：指南朝著名山水诗人谢灵运，他继承他祖父的爵位，被封为康乐公。是南朝文学家。<br>复：又。<br>与（yù）：参与，这里有欣赏领略之意。<br>奇：指山水之奇异。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此文是南朝文学家陶弘景写给朋友谢中书的一封书信。文章以感慨发端：「山川之美，古来共谈」，有高雅情怀的人才可能品味山川之美，将内心的感受与友人交流，是人生一大乐事，反映了作者娱情山水的思想。<br>作者正是将谢中书当作能够谈山论水的朋友，同时也期望与古往今来的林泉高士相比肩。此文称道江南山水之美，笔笼山川，纸纳四时，文辞清丽，堪称六朝山水小品名作。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：魏明安</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《答谢中书书》是陶弘景俊赏山林、心灵净化之后所写。它是六朝书札名篇，与吴均的《与宋元思书》可称双璧。谢中书即谢微，与陶弘景皆卒于大同二年（536）。谢微任中书舍人的后限是公元526年，任中书郎在公元532年，都在陶弘景七十岁以后。故此篇当为陶弘景晚年所作。<br>这篇骈文山水小札，引起后世选家的普遍注意，是因它清丽明净而富于含蕴，与充斥在齐、梁文坛上那些繁缛浮艳、内容空虚的骈体文大异其趣，也与作者早年所...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：魏明安</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>陶弘景早年游历访道时足迹遍及江浙的名山胜水，三十七岁退隐茅山，后在江南佳丽的山水中度过了四十四个春秋。《答谢中书书》中凝聚了他激赏江南山林的情韵。这情韵，首先表现为作者山水意识的强烈与深湛。“山川之美，古来共谈”，看似平平叙说，实则包孕很广。自从孔子说了“智者乐水，仁者乐山”（《论语·雍也》）以后，山水在人们的眼里常有性格的隐现。接着庄周更讲了“山林与！皋壤（原野）与！使我欣欣然而乐与？”（《庄子...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/529714.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

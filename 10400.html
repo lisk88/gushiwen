@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>临江仙 · 夜登小阁，忆洛中旧游 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">临江仙 · 夜登小阁，忆洛中旧游</h1>
+            <div class="poem-author">作者：陈与义</div>
+            <div class="poem-dynasty">宋朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>词</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 365</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 4</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>忆昔午桥桥上饮，坐中多是豪英。长沟流月去无声。杏花疏影里，吹笛到天明。</p><p>二十余年如一梦，此身虽在堪惊。闲登小阁看新晴。古今多少事，渔唱起三更。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>忆昔日洛阳桥聚会宴饮，到会在坐多是豪杰英雄。月影好像河水静静流去。在杏花稀疏的影子里面，不停吹奏笛子直到天明。二十多年岁月犹如一梦，身躯虽健在但令人心惊。闲登上阁楼看雨后初晴。想那古今多少兴亡事迹，不如听三更犹唱的渔歌。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>临江仙：词牌名，又称《鸳鸯梦》、《雁后归》、《庭院深深》。双调，上阕五句，押三平韵，三十字；下阕同，共六十字。<br>午桥：在洛阳南面。<br>“忆昔午桥桥上饮，坐中多是豪英。”句：想从前在午桥桥头饮宴，在一起喝酒的都是英雄好汉。<br>长沟流月：月光随着流水悄悄地消逝。此句即杜甫《旅夜书怀》“月涌大江流”之意，谓时间如流水般逝去。<br>去无声：表示月亮西沉，夜深了。<br>“杏花疏影里，吹笛到天明。”句：在杏花稀疏的影子里吹起短笛，一直欢乐到天明。疏影，稀疏的影子。<br>二十余年：二十多年来的经历（包括北宋亡国的大变乱）。<br>“二十余年如一梦，此身虽在堪惊。”句：二十多年好像一场春梦，我亲身经历了亡国的变乱，自己虽然还活着，回想起来总是胆战心惊。<br>渔唱：打鱼人编的歌儿。<br>三更：古代漏记时，自黄昏至指晓分为五刻，即五更，三更正是午夜。<br>“闲登小阁看新晴。古今多少事，渔唱起三更。”句：百无聊赖地登上小楼，看看雨后初晴的月夜景色。古往今来多少大事，也不过让打鱼的人编作歌儿在三更半夜里唱唱罢了。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词是北宋文人陈去非晚年追忆洛中朋友和旧游而作的。上阕写对已经沦落敌国之手的家乡以及早年自在快乐生活的回顾。下阕宕开笔墨回到现实，概括词人从踏上仕途所经历的颠沛流离和国破家亡的痛苦生活，结句将古今悲慨、国恨家愁，都融入“渔唱”之中，将沉挚的悲感化为旷达的襟怀。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：缪, 钺</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>陈与义（1090—1138）字去非，是北宋末南宋初的著名诗人，也善于填词。他生平致力于诗，所作甚多，约六百余首，而其词作则仅有《无住词》十八首，不及其诗的二十分之一，可见他是以余事填词的。他的《无住词》十八首，其中绝大部分都是在他晚年奉祠退居湖州青墩镇寿圣院僧舍时所作，青墩僧舍有“无住庵”，陈与义曾在这里住过，故遂以“无住”名词。<br>这首《临江仙》词大概是在高宗绍兴五年（1135）或六年陈与义退居青...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：缪, 钺</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>陈与义字去非（1090—1138），是北宋末南宋初的著名诗人，也善于填词。他生平致力于诗，所作甚多，约六百余首，而其词作则仅有《无住词》十八首，不及其诗的二十分之一，可见他是以馀事填词的。他的《无住词》十八首，其中绝大部分都是在他晚年奉祠退居湖州青墩镇寿圣院僧舍时所作，青墩僧舍有“无住庵”，陈与义曾在这里住过，故遂以“无住”名词。<br>这首《临江仙》词大概是在高宗绍兴五年（1135）或六年陈与义退居青...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首</span>
+                    <span class="author-name">作者：缪　钺</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>陈与义，字去非（1090—1138），是北宋末南宋初的著名诗人，也善于填词。他生平致力于诗，所作甚多，约六百余首，而其词作则仅有《无住词》十八首，不及其诗的二十分之一，可见他是以余事填词的。他的《无住词》十八首，其中绝大部分都是在他晚年奉祠退居湖州青墩镇寿圣院僧舍时所作，青墩僧舍有“无住庵”，陈与义曾在这里住过，故遂以“无住”名词。</p><p>这首《临江仙》词大概是在高宗绍兴五年（1135）或六年陈与义退...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首鉴赏辞典</span>
+                    <span class="author-name">作者：刘晓亮</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>陈与义的诗流传下来的有600多首，但其词却只存有《无住词》18首，与宋代大多数词家相比，数量相对较少；与大多数南渡文人的词表现波澜壮阔的场景相比，他的词反映的社会现实生活面也比较狭窄。按题材分类的话，忆旧、怀古六首，闲情致逸四首，孤独无奈、有志难伸的四首，此外，还有三首仙词，一首别词。整体上来说，大多局限于自己的小天地里吟咏着自己的哀怜，但却并不妨碍他词艺术上的高超和精美。</p><p>虽然建炎四年（113...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典</span>
+                    <span class="author-name">作者：刘晓亮</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>对于南宋人来说，靖康之耻常常萦绕在他们的梦中，搅得他们无法安睡。但也有一些畏缩胆小的人，过着“直把杭州作汴州”的生活，而不再回望黄河冀北。于是，在战与和、攻与守的对垒中，即使有人高唱悲歌，但有时不免黯然落泪。</p><p>因宰相王黼获罪而受牵连被贬陈留监酒税的陈与义，第二年又赶上了靖康之难，于是他避难南奔，五年多的时间，流离漂泊于豫、鄂、湘、桂、粤、闽、浙，最后在绍兴元年才到达了会稽。这首《临江仙》按其《年...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典</span>
+                    <span class="author-name">作者：刘晓亮</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>陈与义的诗流传下来的有600多首，但其词却只存有《无住词》18首，与宋代大多数词家相比，数量相对较少；与大多数南渡文人的词表现波澜壮阔的场景相比，他的词反映的社会现实生活面也比较狭窄。按题材分类的话，忆旧、怀古六首，闲情致逸四首，孤独无奈、有志难伸的四首，此外，还有三首仙词，一首别词。整体上来说，大多局限于自己的小天地里吟咏着自己的哀怜，但却并不妨碍他词艺术上的高超和精美。</p><p>虽然建炎四年（113...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：刘晓亮</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>陈与义的诗流传下来的有六百多首，但其词却只存有《无住词》18首，与宋代大多数词家相比，数量相对较少；与大多数南渡文人的词表现波澜壮阔的场景相比，他的词反映的社会现实生活面也比较狭窄。按题材分类的话，忆旧、怀古六首，闲情致逸四首，孤独无奈、有志难伸的四首，此外，还有三首仙词，一首别词。整体上来说，大多局限于自己的小天地里吟咏着自己的哀怜，但却并不妨碍他词艺术上的高超和精美。<br>虽然建炎四年（1130）...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/2557590.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

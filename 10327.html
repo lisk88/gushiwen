@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">无题</h1>
+            <div class="poem-author">作者：李商隐</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 1824</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 16</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>相见时难别亦难，东风无力百花残。</p><p>春蚕到死丝方尽，蜡炬成灰泪始干。</p><p>晓镜但愁云鬓改，夜吟应觉月光寒。</p><p>蓬山此去无多路，青鸟殷勤为探看。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>见面的机会真是难得，分别时更是难舍难分，况且又兼东风将收的暮春天气，百花残谢，更加使人伤感。<br>春蚕结茧到死时丝才吐完，蜡烛要燃尽成灰时像泪一样的蜡油才能滴干。<br>女子早晨妆扮照镜，只担忧丰盛如云的鬓发改变颜色，青春的容颜消失。男子晚上长吟不寐，必然感到冷月侵人。<br>对方的住处就在不远的蓬莱山，却无路可通，可望而不可及。希望有青鸟一样的使者殷勤地为我去探看情人。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>无题：唐代以来，有的诗人不愿意标出能够表示主题的题目时，常用“无题”作诗的标题。<br>东风无力百花残：这里指百花凋谢的暮春时节。东风，春风。残，凋零。<br>丝方尽：丝，与“思”谐音，以“丝”喻“思”，含相思之意。<br>蜡炬：蜡烛。<br>泪始干：泪，指燃烧时的蜡烛油，这里取双关义，指相思的眼泪。<br>晓镜：早晨梳妆照镜子。镜，用作动词，照镜子的意思。<br>云鬓：女子多而美的头髮，这里比喻青春年华。<br>应觉：设想之词。<br>月光寒：指夜渐深。<br>蓬山：蓬莱山，传说中海上仙山，指仙境。<br>青鸟：神话中为西王母传递音讯的信使。<br>殷勤：情谊恳切深厚。<br>探看（kān）：探望。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗是一首唐代诗人李商隐以男女离别为题材的爱情诗。以句中的“别”字为通篇文眼，描写了一对情人离别的痛苦和别后的思念，抒发了无比真挚的相思离别之情，但其中也流露出诗人政治上失意和精神上的闷苦，具有浓郁的伤感色彩，极写凄怨之深、哀婉之痛，并借神话传说表达了对心中恋人的无比挚爱、深切思念。诗中融入了诗人切身的人生感受。<br>整首诗的内容围绕着第一句，尤其是“别亦难”三字展开。三、四句是相互忠贞不渝、海誓山盟的写照。五、六句则分别描述两人因不能相见而惆怅、怨虑，倍感清冷以至衰颜的情状。唯一可以盼望的是七、八两句中的设想：但愿青鸟频频传递相思情。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>玉谿生的这首《无题》，全以首句“别”字为通篇主眼。南朝梁江淹《别赋》说：“黯然销魂者，唯别而已矣！”他以此句领起一篇惊心动魄而又美丽的赋；而“黯然”二字，也正是玉谿此诗所表达的整个情怀与气氛。<br>乐聚恨别，人之常情；离亭分首，河桥洒泪。——这是古代所常见描述的情景。离别之怀，非可易当；但如相逢未远，重会不难，那么分别自然也就无所用其魂销凄黯了。玉谿一句点破说：惟其相见之不易，故而离别之尤难。——惟其...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>玉谿生的这首《无题》，全以首句“别”字为通篇主眼。南朝梁江淹《别赋》说：“黯然销魂者，唯别而已矣！”他以此句领起一篇惊心动魄而又美丽的赋；而“黯然”二字，也正是玉谿此诗所表达的整个情怀与气氛。</p><p>乐聚恨别，人之常情；离亭分首，河桥洒泪。——这是古代所常见描叙的情景。离别之怀，非可易当；但如相逢未远，重会不难，那么分别自然也就无所用其魂销凄黯了。玉谿一句点破说：惟其相见之不易，故而离别之尤难。——惟...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>李商隐的诗歌以“无题”命篇的共有十七首，“万里风波一叶舟”一首之外，十六首都是写男女爱情的，或是有与爱情相关的内容。本篇是商隐最早的爱情诗，诗人对一位少女产生爱慕之情，因爱而生怜悯，不能不忧心她的前途，故采取民歌形式描写这位少女聪明美丽，才艺俱佳，然而她的命运并不掌握在自己手中，至待嫁之年，悄然生悲，黯然泣下。这首小诗有仿效古诗《焦仲卿妻》之痕迹，概括了中国封建社会绝大多数妇女的共同命运，因此具有...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>本篇所写女性既非诗人之妻王氏，亦非刘、余《集解》所谓“作者之化身”。学者多以为一二句是义山试博学宏词失败之后抒写心中不平之语，此说无据。参加宏博试在开成三年春天，当时尚未与王氏结婚，何来“锦书”？，以宏词试为“弹棋”，义山恐怕不如此打比方。只有《柳枝五首》之二所云“玉作弹棋局，中心亦不平”与本篇的尾联相近。本篇亦为柳枝而作，前半写其花容月貌，打扮轻巧；后半为她的前途而忧虑。柳枝被东诸侯娶去之后，心...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>诗中所谓仙人宝灯，本是诗人想望爱慕之女冠，欲与之饮宴，久候未至，故曰云液成冰。后二句说，值此雪月交辉之夜，她竟有约不来，却独居高阁，令人失望。诗人直把道观描写成冰清玉洁的琼瑶仙境，将女冠视为神仙丽人。格调奇高，词采华茂。</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>本篇是义山爱情诗中最为传诵的名篇。它表达了最真诚、最执著的典型的爱情心理，具有不朽的艺术魅力和深刻的哲理意义。首联谓离别时的难堪情景。昔人只说“别易会难”，而义山独曰“别亦难”，一语道尽难分难舍的深切感受。次联谓一息尚存，志不稍懈，地老天荒，爱心不死。此联胜过一切言语如表达，真可以惊天地，泣鬼神。英国19世纪诗人彭斯的《红红的玫瑰》有云：“哪怕大海干枯水流尽，哪怕太阳把岩石烧作灰尘。”古代也有“海...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>本篇原编集外诗，原题失去，编录者署以《无题》，实与其他《无题》诗迥不相侔。义山于大中二年三月自桂州罢幕北归，五月至潭州，在李回幕作短期逗留，然后出洞庭至夏口稍稍停驻，即溯江西上至江陵，并且到达三峡、巴东一带地方。本篇当作于淹滞荆巴之时。首联谓万里风波，孤舟一叶，桂幕初罢，思归心切。心知令狐绹对自己深怀不满，回长安求职的机会不多，故于归途中徘徊淹滞，希望在江湘或巴蜀谋一幕职。颔联紧承上联而来，即谓巴...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：林妙芝</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>此诗以一多情柔美女子的口吻回忆与情郎见面的情景，淋漓尽致地展示女子相思之苦及无法言表的复杂心理，是古代闺怨诗的典范，也是商隐情诗的代表作，尽显李商隐诗歌情深缠绵、伤感朦胧的风格。</p><p>首联回忆见面场景，渲染暮春悲伤哀婉气氛，也写这对情人分别时的不舍。春风渐减，百花凋零，两人终于见面了。可是这一次见面之后，又要等多长时间才能再会呢？也或许此次相见之后再无相见之时了，如落红归去碾作尘。珍惜吧珍惜吧，珍惜...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗文鉴赏辞典</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>玉谿生的这首《无题》，全以首句“别”字为通篇主眼。南朝梁江淹《别赋》说：“黯然销魂者，唯别而已矣！”他以此句领起一篇惊心动魄而又美丽的赋；而“黯然”二字，也正是玉谿此诗所表达的整个情怀与气氛。</p><p>乐聚恨别，人之常情；离亭分首，河桥洒泪。——这是古代所常见描述的情景。离别之怀，非可易当；但如相逢未远，重会不难，那么分别自然也就无所用其魂销凄黯了。玉谿一句点破说：惟其相见之不易，故而离别之尤难。——惟...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>玉谿生的这首《无题》，全以首句“别”字为通篇主眼。南朝梁江淹《别赋》说：“黯然销魂者，唯别而已矣！”他以此句领起一篇惊心动魄而又美丽的赋；而“黯然”二字，也正是玉谿此诗所表达的整个情怀与气氛。<br>乐聚恨别，人之常情；离亭分首，河桥洒泪。———这是古代所常见描述的情景。离别之怀，非可易当；但如相逢未远，重会不难，那么分别自然也就无所用其魂销凄黯了。玉谿一句点破说：唯其相见之不易，故而离别之尤难。———...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/3251151.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

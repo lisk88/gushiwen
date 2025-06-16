@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宿建德江 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">宿建德江</h1>
+            <div class="poem-author">作者：孟浩然</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 1066</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 12</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>移舟泊烟渚，日暮客愁新。</p><p>野旷天低树，江清月近人。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>把小船停靠在烟雾迷蒙的小洲，日暮时分新愁又涌上客子心头。<br>旷野无边无际远天比树还低沉，江水清清明月来和人相亲相近。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>建德江：指新安江流经建德（今属浙江）西部的一段江水。<br>移舟：划动小船。泊：停船靠岸。烟渚（zhǔ）：指江中雾气笼罩的小沙洲。烟：一作“幽”。渚：水中小块陆地。《尔雅·释水》：“水中可居者曰洲，小洲曰渚。”<br>客：指作者自己。愁：为思乡而忧思不堪。<br>野：原野。旷：空阔远大。天低树：天幕低垂，好像和树木相连。<br>月近人：倒映在水中的月亮好像来靠近人。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这是一首刻画秋江暮色的诗，是唐人五绝中的写景名篇。作者把小船停靠在烟雾迷蒙的江边想起了以往的事情，因而以舟泊暮宿作为自己的抒发感情的归宿，写出了作者羁旅之思。第一句点题，也为下面写景抒情作了准备；第二句中“日暮”是“客愁新”的原因；最后两句，因为“野旷”所以天低于树，因为“江清”所以月能近人，天和树、人和月的关系，写得恰切逼真。此诗前两句为触景生情，后两句为借景抒情，描写了清新的秋夜，突出表现了细微的景物特点。全诗淡而有味，含而不露，自然流出，风韵天成，颇有特色。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：赵其钧</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首抒写羁旅之思的诗。建德江，指新安江流经建德（今属浙江）的一段江水。这首诗不以行人出发为背景，也不以船行途中为背景，而是以舟泊暮宿为背景。它虽然露出一个“愁”字，但立即又将笔触转到景物描写上去了。可见它在选材和表现上都是颇有特色的。<br>诗的起句“移舟泊烟渚”，“移舟”，就是移舟近岸的意思；“泊”，这里有停船宿夜的含意。行船停靠在江中的一个烟雾朦胧的小洲边，这一面是点题，另一面也就为下文的写景抒...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：赵其钧</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首抒写羁旅之思的诗。建德江，指新安江流经建德（今属浙江）的一段江水。这首诗不以行人出发为背景，也不以船行途中为背景，而是以舟泊暮宿为背景。它虽然露出一个“愁”字，但立即又将笔触转到景物描写上去了。可见它在选材和表现上都是颇有特色的。</p><p>诗的起句“移舟泊烟渚”，“移舟”，就是移舟近岸的意思；“泊”，这里有停船宿夜的含意。行船停靠在江中的一个烟雾朦胧的小洲边，这一面是点题，另一面也就为下文的写景...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>客舟行驶在新安江上，现在是在建德地界了。天色将晚，江面烟水迷蒙，靠岸找个地方歇歇脚吧。可上岸后往哪走？去哪里歇脚呢？此处人生地不熟，吃住不会很贵吧？想想这些，真是发愁啊。</p><p>光是愁也解决不了问题，在暂时没有想好去处之前，索性看看此处的风景吧。岸上旷野无垠，天地相接，透过树底能看到远处的天边。水面风平浪静，江天一色，水中月亮的倒影清晰可见，人仿佛伸手可触。“野旷天低树，江清月近人”为千古名句。在常识...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>客舟行驶在新安江上，现在是在建德地界了。天色将晚，江面烟水迷蒙，靠岸找个地方歇歇脚吧。可上岸后往哪走？去哪里歇脚呢？此处人生地不熟，吃住不会很贵吧？想想这些，真是发愁啊。</p><p>光是愁也解决不了问题，在暂时没有想好去处之前，索性看看此处的风景吧。岸上旷野无垠，天地相接，透过树底能看到远处的天边。水面风平浪静，江天一色，水中月亮的倒影清晰可见，人仿佛伸手可触。“野旷天低树，江清月近人”为千古名句。在常识...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>客舟行驶在新安江上，现在是在建德地界了。天色将晚，江面烟水迷蒙，靠岸找个地方歇歇脚吧。可上岸后往哪走？去哪里歇脚呢？此处人生地不熟，吃住不会很贵吧？想想这些，真是发愁啊。<br>光是愁也解决不了问题，在暂时没有想好去处之前，索性看看此处的风景吧。岸上旷野无垠，天地相接，透过树底能看到远处的天边。水面风平浪静，江天一色，水中月亮的倒影清晰可见，人仿佛伸手可触。“野旷天低树，江清月近人。”为千古名句。在常识...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/155061.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

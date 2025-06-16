@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书湖阴先生壁二首 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">书湖阴先生壁二首</h1>
+            <div class="poem-author">作者：王安石</div>
+            <div class="poem-dynasty">宋朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 385</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 6</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>【其一】</p><p>茅檐长扫净无苔，花木成畦手自栽。</p><p>一水护田将绿绕，两山排闼送青来。</p><p>【其二】</p><p>桑条索漠楝花繁，风敛余香暗度垣。</p><p>黄鸟数声残午梦，尚疑身属半山园。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>【其一】<br>茅草房庭院经常打扫，洁净得没有一丝青苔。花草树木成行成垄，都是主人亲手栽种。<br>庭院外一条小河保护着农田，并且环绕着农田；两座大山打开门来为人们送去绿色。<br>【其二】<br>桑树枝叶萧疏，楝花十分繁盛。清风吹送楝花馀香，悄悄地送过墙头。<br>黄莺几声清脆的啼叫，惊醒了我的午觉。一梦醒来，我恍恍惚惚还觉得自己好像仍然在旧日所住的半山园中。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>书：书写、题诗。<br>湖阴先生：本名杨德逢，隐居之士，是王安石晚年居住金陵紫金山（今江苏南京）时的邻居。<br>茅檐：茅屋檐下，这里指庭院。<br>无苔：没有青苔。<br>成畦（qí）：成垄成行。畦。经过修整的一块块田地。<br>护田：这里指护卫环绕着园田。语出《汉书·西域传序》：“自敦煌西至盐泽，往往起亭，而轮台、渠犁，皆有田卒数百人，置使者校尉领护。”<br>排闼（tà）：开门。语出《汉书·樊哙传》：“高帝尝病，恶见人，卧禁中，诏户者无得入群臣。哙乃排闼直入。”闼，小门；送青来，送来绿色。<br>楝（liàn）花：“二十四番花信”里的楝花，指的就是北方常见的苦楝花。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗前两句写他家的环境，洁净清幽，暗示主人生活情趣的高雅；后两句转到院外，写山水对湖阴先生的深情，暗用“护田”与“排闼”两个典故，把山水化成了具有生命感情的形象，山水主动与人相亲，正是表现人的高洁。全诗既赞美了主人朴实勤劳，又表达了诗人退休闲居的恬淡心境，从田园山水和与平民交往中领略到无穷的乐趣。诗中虽然没有正面写人，但写山水就是写人，景与人处处照应，句句关合，融化无痕。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：陈文新</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是王安石题在杨骥屋壁上的一首诗。杨骥字德逢，别号湖阴先生，是作者退居金陵（今江苏南京）时的邻居和经常往来的朋友。<br>首二句赞美杨家庭院的清幽。“茅檐”代指庭院。“静”即净。怎样写净呢？诗人摒绝一切平泛的描绘，而仅用“无苔”二字，举重若轻，真可谓别具手眼。何以见得？江南地湿，又时值初夏多雨季节，这对青苔的生长比之其他时令都更为有利。况且，青苔性喜阴暗，总是生长在僻静之处，较之其他杂草更难于扫除。而今...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">王安石诗文鉴赏辞典</span>
+                    <span class="author-name">作者：陈文新</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是王安石题在杨骥屋壁上的一首诗。杨骥字德逢，别号湖阴先生，是作者退居金陵（今江苏南京）时的邻居和经常往来的朋友。</p><p>首二句赞美杨家庭院的清幽。“茅檐”代指庭院。“静”即净。怎样写净呢？诗人摒绝一切平泛的描绘，而仅用“无苔”二字，举重若轻，真可谓别具手眼。何以见得？江南地湿，又时值初夏多雨季节，这对青苔的生长比之其他时令都更为有利。况且，青苔性喜阴暗，总是生长在僻静之处，较之其他杂草更难于扫除。而...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：陈文新</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是王安石题在杨德逢屋壁上的一首诗。杨德逢，别号湖阴先生，是作者退居金陵（今江苏南京）时的邻居和经常往来的朋友。</p><p>首二句赞美杨家庭院的清幽。“茅檐”代指庭院。“静”即净。怎样写净呢？诗人摒绝一切平泛的描绘，而仅用“无苔”二字，举重若轻，真可谓别具手眼。何以见得？江南地湿，又时值初夏多雨季节，这对青苔的生长比之其他时令都更为有利。况且，青苔性喜阴暗，总是生长在僻静之处，较之其他杂草更难于扫除。而今...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：陈文新</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是王安石题在杨骥屋壁上的一首诗。杨骥字德逢，别号湖阴先生，是作者退居金陵（今江苏南京）时的邻居和经常往来的朋友。<br>“一水护田”加以“绕”字，正见得那小溪曲折生姿，环绕着绿油油的农田，这不恰像一位母亲双手护着小孩的情景吗？著一“护”字，“绕”的神情明确显示。至于“送青”之前冠以“排闼”二字，更是神来之笔。它既写出了山色不只是深翠欲滴，也不只是可掬，而竟似扑向庭院而来！这种描写给予读者的美感极为新鲜...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/246847.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

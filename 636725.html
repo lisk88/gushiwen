@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论语 · 子张篇 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">论语 · 子张篇</h1>
+            <div class="poem-author">作者：孔子</div>
+            <div class="poem-dynasty">周朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>文</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 24</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 2</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>子张曰：“士见危致命，见得思义，祭思敬，丧思哀，其可已矣。”</p><p>子张曰：“执德不弘，信道不笃，焉能为有？焉能为亡？”</p><p>子夏之门人问交于子张，子张曰：“子夏云何？”对曰：“子夏曰：‘可者与之，其不可者拒之。’”子张曰：“异乎吾所闻。君子尊贤而容众，嘉善而矜不能。我之大贤与，于人何所不容？我之不贤与，人将拒我，如之何其拒人也？”</p><p>子夏曰：“虽小道必有可观者焉，致远恐泥，是以君子不为也。”</p><p>子夏曰：“日知其所亡，月无忘其所能，可谓好学也已矣。”</p><p>子夏曰：“博学而笃志，切问而近思，仁在其中矣。”</p><p>子夏曰：“百工居肆以成其事，君子学以致其道。”</p><p>子夏曰：“小人之过也必文。”</p><p>子夏曰：“君子有三变：望之俨然，即之也温，听其言也厉。”</p><p>子夏曰：“君子信而后劳其民，未信，则以为厉己也；信而后谏，未信，则以为谤己也。”</p><p>子夏曰：“大德不逾闲，小德出入可也。”</p><p>子游曰：“子夏之门人小子，当洒扫应对进退则可矣。抑末也，本之则无，如之何？”子夏闻之，曰：“噫，言游过矣！君子之道，孰先传焉？孰后倦焉？譬诸草木，区以别矣。君子之道焉可诬也？有始有卒者，其惟圣人乎！”</p><p>子夏曰：“仕而优则学，学而优则仕。”</p><p>子游曰：“丧致乎哀而止。”</p><p>子游曰：“吾友张也为难能也，然而未仁。”</p><p>曾子曰：“堂堂乎张也，难与并为仁矣。”</p><p>曾子曰：“吾闻诸夫子，人未有自致者也，必也亲丧乎！”</p><p>曾子曰：“吾闻诸夫子，孟庄子之孝也，其他可能也；其不改父之臣与父之政，是难能也。”</p><p>孟氏使阳肤为士师，问于曾子。曾子曰：“上失其道，民散久矣。如得其情，则哀矜而勿喜！”</p><p>子贡曰：“纣之不善，不如是之甚也。是以君子恶居下流，天下之恶皆归焉。”</p><p>子贡曰：“君子之过也，如日月之食焉。过也人皆见之，更也人皆仰之。”</p><p>卫公孙朝问于子贡曰：“仲尼焉学？”子贡曰：“文武之道未坠于地，在人。贤者识其大者，不贤者识其小者，莫不有文武之道焉，夫子焉不学？而亦何常师之有？”</p><p>叔孙武叔语大夫于朝曰：“子贡贤于仲尼。”子服景伯以告子贡，子贡曰：“譬之宫墙，赐之墙也及肩，窥见室家之好；夫子之墙数仞，不得其门而入，不见宗庙之美、百官之富。得其门者或寡矣，夫子之云不亦宜乎！”</p><p>叔孙武叔毁仲尼，子贡曰：“无以为也，仲尼不可毁也。他人之贤者，丘陵也，犹可逾也；仲尼，日月也，无得而逾焉。人虽欲自绝，其何伤于日月乎？多见其不知量也。”</p><p>陈子禽谓子贡曰：“子为恭也，仲尼岂贤于子乎？”子贡曰：“君子一言以为知，一言以为不知，言不可不慎也。夫子之不可及也，犹天之不可阶而升也。夫子之得邦家者，所谓立之斯立，道之斯行，绥之斯来，动之斯和。其生也荣，其死也哀，如之何其可及也？”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>子张说：“士遇见危险时能献出自己的生命，看见有利可得时能考虑是否符合义的要求，祭祀时能想到是否严肃恭敬，居丧的时候想到自己是否哀伤，这样就可以了。”<br>子张说：“实行德而不能发扬光大，信仰道而不忠实坚定，（这样的人）怎么能说有，又怎么说他没有？”<br>子夏的学生向子张寻问怎样结交朋友。子张说：“子夏是怎么说的？”答道：“子夏说：‘可以相交的就和他交朋友，不可以相交的就拒绝他。’”子张说：“我所听到的和这些不一样：君子既尊重贤人，又能容纳众人；能够赞美善人，又能同情能力不够的人。如果我是十分贤良的人，那我对别人有什么不能容纳的呢？我如果不贤良，那人家就会拒绝我，又怎么谈能拒绝人家呢？”<br>子夏说：“即使是小技艺，也一定有可取之处，但执着钻研这些小技艺，恐怕会妨碍从事远大的事业，所以君子不做这些事。”<br>子夏说：“每天学到一些过去所不知道的东西，每月都不能忘记已经学会的东西，这就可以叫做好学了。”<br>子夏说：“博览群书广泛学习而已记得牢固，就与切身有关的问题提出疑问并且去思考，仁就在其中了。”<br>子夏说：“各行各业的工匠住在作坊里来完成自己的工作，君子通过学习来掌握道理。”<br>子夏说：“小人犯了过错一定要掩饰。”<br>子夏说：“君子有三变：远看他的样子庄严可怕，接近他又温和可亲，听他说话语言严厉不苟。”<br>子夏说：“君子必须取得信任之后才去役使百姓，否则百姓就会以为是在虐待他们。要先取得信任，然后才去规劝；否则，（君主）就会以为你在诽谤他。”<br>子夏说：“大节上不能超越界限，小节上有些出入是可以的。”<br>子游说：“子夏的学生，做些打扫和迎送客人的事情是可以的，但这些不过是末节小事，根本的东西却没有学到，这怎么行呢？”子夏听了，说：“唉，子游错了。君子之道先传授哪一条，后传授哪一条，这就像草和木一样，都是分类区别的。君子之道怎么可以随意歪曲，欺骗学生呢？能按次序有始有终地教授学生们，恐怕只有圣人吧！”<br>子夏说：“做官还有余力的人，就可以去学习，学习有余力的人，就可以去做官。”<br>子游说：“丧事做到尽哀也就可以了。”<br>子游说：“我的朋友子张可以说是难得的了，然而还没有做到仁。”<br>曾子说：“子张外表堂堂，难于和他一起做到仁的。”<br>曾子说：“我听老师说过，人不可能自动地充分发挥感情，（如果有，）一定是在父母死亡的时候。”<br>曾子说：“我听老师说过，孟庄子的孝，其他人也可以做到，但他不更换父亲的旧臣及其政治措施，这是别人难以做到的。”<br>孟氏任命阳肤做典狱官，阳肤向曾子请教。曾子说：“在上位的人离开了正道，百姓早就离心离德了。你如果能弄清他们的情况，就应当怜悯他们，而不要自鸣得意。”<br>子贡说：“纣王的不善，不像传说的那样厉害。所以君子憎恨处在下流的地方，使天下一切坏名声都归到他的身上。”<br>子贡说：“君子的过错好比日月蚀。他犯过错，人们都看得见；他改正过错，人们都仰望着他。”<br>卫国的公孙朝问子贡说：“仲尼的学问是从哪里学来的？”子贡说：“周文王武王的道，并没有失传，还留在人们中间。贤能的人可以了解它的根本，不贤的人只了解它的末节，没有什么地方无文王武王之道。我们老师何处不学，又何必要有固定的老师传播呢？”<br>叔孙武叔在朝廷上对大夫们说：“子贡比仲尼更贤。”子服景伯把这一番话告诉了子贡。子贡说：“拿围墙来作比喻，我家的围墙只有齐肩高，老师家的围墙却有几仞高，如果找不到门进去，你就看不见里面宗庙的富丽堂皇，和房屋的绚丽多彩。能够找到门进去的人并不多。叔孙武叔那么讲，不也是很自然吗？”<br>叔孙武叔诽谤仲尼。子贡说：“（这样做）是没有用的！仲尼是毁谤不了的。别人的贤德好比丘陵，还可超越过去，仲尼的贤德好比太阳和月亮，是无法超越的。虽然有人要自绝于日月，对日月又有什么损害呢？只是表明他不自量力而已。”<br>陈子禽对子贡说：“你是谦恭了，仲尼怎么能比你更贤良呢？”子贡说：“君子的一句话就可以表现他的智识，一句话也可以表现他的不智，所以说话不可以不慎重。夫子的高不可及，正像天是不能够顺着梯子爬上去一样。夫子如果得国而为诸侯或得到采邑而为卿大夫，那就会像人们说的那样，教百姓立于礼，百姓就会立于礼，要引导百姓，百姓就会跟着走；安抚百姓，百姓就会归顺；动员百姓，百姓就会齐心协力。（夫子）活着是十分荣耀的，（夫子）死了是极其可惜的。我怎么能赶得上他呢？”</p></div></div>
+            
+            
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：钟, 陵</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>南宋末年的著名词人张炎，字叔夏，号玉田，又号乐笑翁，著有词集《山中白云词》八卷，词论专著《词源》二卷。张炎出身于世代贵显之家。六世祖张俊，为南宋初年大将。曾祖张镃，父亲张枢，都是诗词创作方面的行家。词人的青少年时代是在南宋度过的，而后半生则生活在元朝统治之下。戴表元的这篇文章写于元大德三年（1299），叙写了这位曾是贵族公子的风流词人在社会巨变中的变化，抒写了深沉的沧桑之感。<br>序文从忆旧开始，追写...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">明清小说鉴赏辞典</span>
+                    <span class="author-name">作者：郝薇莉</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>翩翩书剑事长征，欲别相看不忍行。砧急万家催别泪，月明千里共离情。鸣鸡野店征人梦，落照荒城画角声。回首秋风知鹗荐[6]，白头吟就暮云横。<br>仆一识荆[45]，遽以为欢欣偕老，不意为友拉之赴试，竟致身病长安，家生反意之变。藉使归日，非叔先知，仆或必罹虎口。然犹冀叔幸秋闱，得以申舌，而今已矣。郭、桃势焰，力实不堪支也。近隐身令表兄处，因得以前托沈婆，今又蒙令表兄慨许臂力，是以附达。万望女郎鉴仆，无他以图，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">四书五经鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：施忠连</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本篇辑录的多为孔子弟子的言行，这说明《论语》一书成于孔子诸弟子及再传弟子之手。他们的言行所反映的思想与孔子的观念相一致，属于孔学范畴。他们的言论中特别值得注意的是子贡对孔子的评价，它们是孔子弟子中具有代表性的观点，对孔子在中国思想史上地位的确立产生了深远的影响。</p><p>子贡被称为孔子的四大弟子之一，他与孔子接触很多，关系密切。从《论语》可知，他的领悟能力强，对孔子所说能举一反三，触类旁通，孔子表扬他能...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

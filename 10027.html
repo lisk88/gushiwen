@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锦瑟 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">锦瑟</h1>
+            <div class="poem-author">作者：李商隐</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 3408</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 10</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>锦瑟无端五十弦，一弦一柱思华年。</p><p>庄生晓梦迷蝴蝶，望帝春心托杜鹃。</p><p>沧海月明珠有泪，蓝田日暖玉生烟。</p><p>此情可待成追忆？只是当时已惘然。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>精美的瑟为什么竟有五十根弦，一弦一柱都叫我追忆青春年华。<br>庄周翩翩起舞睡梦中化为蝴蝶，望帝把自己的哀怨托身于杜鹃。<br>明月沧海鲛人流下了滴滴眼泪，蓝田日暖玉石才能够化作青烟。<br>此时此景为什么要现在才追忆？只因为当时心中只是一片茫然。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>锦瑟：装饰华美的瑟。瑟，拨弦乐器，通常二十五弦。<br>无端：犹何故。怨怪之词。<br>五十弦：这里是托古之词。作者的原意，当也是说锦瑟本应是二十五弦。<br>「庄生晓梦迷蝴蝶」句：《庄子·齐物论》：「庄周梦为蝴蝶，栩栩然蝴蝶也；自喻适志与！不知周也。俄然觉，则蘧蘧然周也。不知周之梦为蝴蝶与？蝴蝶之梦为周与。」李商隐此引庄周梦蝶故事，以言人生如梦，往事如烟之意。<br>「望帝春心托杜鹃」句：《华阳国志·蜀志》：「杜宇称帝，号曰望帝。……其相开明，决玉垒山以除水害，帝遂委以政事，法尧舜禅授之义，遂禅位于开明。帝升西山隐焉。时适二月，子鹃鸟鸣，故蜀人悲子鹃鸟鸣也。」子鹃即杜鹃，又名子规。<br>珠有泪：《博物志》：「南海外有鲛人，水居如鱼，不废绩织，其眼泣则能出珠。」<br>蓝田：《元和郡县志》：「关内道京兆府蓝田县：蓝田山，一名玉山，在县东二十八里。」<br>只是：犹「止是」、「仅是」，有「就是」、「正是」之意。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《锦瑟》是唐朝诗人李商隐的代表作。诗题「锦瑟」，但并非咏物，不过是按古诗的惯例以篇首二字为题，实是借瑟以隐题的一首无题诗。<br>诗人一生经历，有难言之痛，至苦之情，郁结中怀，发为诗句，往复低回。如谓锦瑟之诗中有生离死别之恨，恐怕也并非臆断。诗人追忆了自己的青春年华，伤感自己不幸的遭遇，寄托了悲慨、愤懑的心情。全诗运用比兴，善用典故，词藻华美，含蓄深沉，情真意长，感人至深。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《锦瑟》，是李商隐的代表作，爱诗的无不乐道喜吟，堪称最享盛名；然而它又是最不易讲解的一篇难诗，自宋元以来，揣测纷纷，莫衷一是。<br>诗题“锦瑟”，是用了起句的头二个字。旧说中，原有认为这是咏物诗的，但近来注解家似乎都主张：这首诗与瑟事无关，实是一篇借瑟以隐题的“无题”之作。我以为，它确是不同于一般的咏物体，可也并非只是单纯“截取首二字”以发端比兴而与字面毫无交涉的无题诗。它所写的情事分明是与瑟相关...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《锦瑟》，是李商隐的代表作，爱诗的无不乐道喜吟，堪称最享盛名；然而它又是最不易讲解的一篇难诗，自宋元以来，揣测纷纷，莫衷一是。</p><p>诗题“锦瑟”，是用了起句的头二个字。旧说中，原有认为这是咏物诗的，但近来注解家似乎都主张：这首诗与瑟事无关，实是一篇借瑟以隐题的“无题”之作。我以为，它确是不同于一般的咏物体，可也并非只是单纯“截取首二字”以发端比兴而与字面毫无交涉的无题诗。它所写的情事分明是与瑟相...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗全集</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>《锦瑟》一诗是义山的压卷之作，历来对它的解释分歧很大。元好问《论诗》绝句曰：“望帝春心托杜鹃，佳人锦瑟怨华年。诗家总爱西昆好，独恨无人作郑笺。”王渔洋也有“一篇锦瑟解人难”的慨叹。北宋刘放的《中山诗话》谓锦瑟是令狐楚家婢女的名字，义山与她有过秘密恋爱，故借其名字为题，追忆旧情。接着黄朝英的《缃素杂记》托言黄庭坚与苏轼的问答谓本诗专为咏瑟，表达瑟声具有适、怨、清、和的情趣。清代朱鹤龄、冯浩等多人认为...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：张力</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗当是李商隐晚年回顾平生遭遇，感慨身世的作品。句意隐晦，故素称难解，歧说纷纷。然首联云“思华年”，故揣度全篇应是表达对逝去的美好年华不胜伤感之情。</p><p>全诗由见锦瑟而心生怨恨写起，起得突兀。传说古瑟本为五十根弦，后改为二十五弦。诗人听到弦柱之间所奏出的悲声，引起了对往日美好年华的追思，顿觉年华易逝，身世飘零，故而触物生悲，埋怨锦瑟没来由地却有这么多弦，奏出如此悲声，引逗身世之感。又或以锦瑟的五十...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：张力</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗当是李商隐晚年回顾平生遭遇，感慨身世的作品。句意隐晦，故素称难解，歧说纷纷。然首联云“思华年”，故揣度全篇应是表达对逝去的美好年华不胜伤感之情。</p><p>全诗由见锦瑟而心生怨恨写起，起得突兀。传说古瑟本为五十根弦，后改为二十五弦。诗人听到弦柱之间所奏出的悲声，引起了对往日美好年华的追思，顿觉年华易逝，身世飘零，故而触物生悲，埋怨锦瑟没来由地却有这么多弦，奏出如此悲声，引逗身世之感。又或以锦瑟的五十...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：张力</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗当是李商隐晚年回顾平生遭遇，感慨身世的作品。句意隐晦，故素称难解，歧说纷纷。然首联云“思华年”，故揣度全篇应是表达对逝去的美好年华不胜伤感之情。<br>全诗由见锦瑟而心生怨恨写起，起得突兀。传说古瑟本为五十根弦，后改为二十五弦。诗人听到弦柱之间所奏出的悲声，引起了对往日美好年华的追思，顿觉年华易逝，身世飘零，故而触物生悲，埋怨锦瑟没来由地却有这么多弦，奏出如此悲声，引逗身世之感。又或以锦瑟的五十根...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李商隐诗文鉴赏辞典</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《锦瑟》，是李商隐的代表作，爱诗的无不乐道喜吟，堪称最享盛名；然而它又是最不易讲解的一篇难诗，自宋元以来，揣测纷纷，莫衷一是。</p><p>诗题“锦瑟”，是用了起句的头二个字。旧说中，原有认为这是咏物诗的，但近来注解家似乎都主张：这首诗与瑟事无关，实是一篇借瑟以隐题的“无题”之作。我以为，它确是不同于一般的咏物体，可也并非只是单纯“截取首二字”以发端比兴而与字面毫无交涉的无题诗。它所写的情事分明是与瑟相...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：周汝昌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《锦瑟》，是李商隐的代表作，爱诗的无不乐道喜吟，堪称最享盛名；然而它又是最不易讲解的一篇难诗，自宋元以来，揣测纷纷，莫衷一是。<br>诗题“锦瑟”，是用了起句的头两个字。旧说中，原有认为这是咏物诗的，但近来注解家似乎都主张：这首诗与瑟事无关，实是一篇借瑟以隐题的“无题”之作。我以为，它确是不同于一般的咏物体，可也并非只是单纯“截取首二字”以发端比兴而与字面毫无交涉的无题诗。它所写的情事分明是与瑟相关...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/17583/5000399.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

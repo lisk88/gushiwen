@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山坡羊 · 骊山怀古 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">山坡羊 · 骊山怀古</h1>
+            <div class="poem-author">作者：张养浩</div>
+            <div class="poem-dynasty">元朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>曲</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 174</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 7</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>骊山四顾，阿房一炬，当时奢侈今何处？只见草萧疏，水萦纡。至今遗恨迷烟树。列国周齐秦汉楚。赢，都变做了土；输，都变做了土。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>站在骊山上我四处张望，（雄伟瑰丽的）阿房宫已被付之一炬，当年奢侈的场面现在到哪里去了呢？<br>只见衰草萧疏，水波旋绕。<br>到现在那些遗恨已消失在烟雾弥漫的树林中了。<br>（想想）自周、齐、秦、汉、楚等国至今。<br>那些战胜了的国家，都化作为了土；<br>（那些）战败了的国家，（也）都化作为了土。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>山坡羊：曲牌名。<br>骊山：在今陕西临潼县东南。杜牧《阿房宫赋》：「骊山北构而西折，直走咸阳。」<br>阿房：阿房宫，秦宫殿名，故址在今陕西西安市西南阿房村。《三辅黄图》：「阿房宫，亦曰阿城，惠文王造宫未而亡，始皇广其宫，规恢三百馀里，离宫别馆，弥山跨谷，辇道两属，阁道通骊山八百馀里。」又《史记·秦始皇本纪》：「先作前殿阿房，东西五十步，南北五十丈，上可以坐万人，下可以建五丈旗。」<br>一炬：指公元前206年12月，项羽引兵屠咸阳，「烧秦宫室，火三月不灭」（《史记·项羽本纪》）。故杜牧有「楚人一炬，可怜焦土。」（《阿房宫赋》）之叹息。<br>萦纡：形容水流回旋迂曲的样子。<br>列国：各国，即周、齐、秦、汉、楚。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《山坡羊·骊山怀古》为张养浩途经骊山有所感受而创作的一首散曲，六七句讽刺后人都已遗忘了前朝败亡的教训，结尾两句显示了一位封建文人对历史兴亡的大彻大悟。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元曲鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：董乃斌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>明代朱权评张养浩散曲的风格“如玉树临风”（《太和正音谱》）。这对于张氏挂冠家居后所作的那些表现逃名弃世思想、以飘逸放旷为特色的作品，无疑相当切合；但却不适合于张氏的怀古之作。张氏怀古之作的基本风格是高屋建瓴、视野阔大、气势苍莽雄浑、感慨痛切深沉，其用笔不像前者那样潇洒轻灵，而以质朴重拙为主。这种基本风格在《骊山怀古》曲中体现得十分鲜明。<br>这首小令虽以“骊山怀古”为题，但作者感怀、议论的范围却不仅限...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元曲三百首</span>
+                    <span class="author-name">作者：董乃斌</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>明代朱权评张养浩散曲的风格“如玉树临风”（《太和正音谱》）。这对于张氏挂冠家居后所作的那些表现逃名弃世思想、以飘逸放旷为特色的作品，无疑相当切合；但却不适合于张氏的怀古之作。张氏怀古之作的基本风格是高屋建瓴、视野阔大、气势苍莽雄浑、感慨痛切深沉，其用笔不像前者那样潇洒轻灵，而以质朴重拙为主。这种基本风格在《骊山怀古》曲中体现得十分鲜明。</p><p>这首小令虽以“骊山怀古”为题，但作者感怀、议论的范围却不仅...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>关中，曾经有西周、秦、西汉、前赵、前秦、后秦、西魏、北周、隋、唐等十个王朝在那里建都，历时达千年之久。那些都城，可以统称“西都”。在本曲中，张养浩仅举“秦汉”，以代表在那里建都的所有王朝。当他“望西都”之时，由于想到了那许多王朝的兴亡带给老百姓的苦难，心情很沉重，所以接着说：“意踌蹰”。踌蹰，本指犹豫不决，徘徊不前。这里在前面加一“意”字，形象地表现了心潮起伏，思想上找不到出路的苦闷。<br>“意踌蹰”...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/529561.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

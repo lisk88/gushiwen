@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登幽州台歌 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">登幽州台歌</h1>
+            <div class="poem-author">作者：陈子昂</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 2641</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 15</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>前不见古人，后不见来者。</p><p>念天地之悠悠，独怆然而涕下！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>向前看不见古之贤君，向后望不见当今明主。<br>一想到天地无穷无尽，我倍感凄凉独自落泪。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>幽州：古十二州之一，现今北京市。<br>幽州台：即黄金台，又称蓟北楼，故址在今北京市大兴，是燕昭王为招纳天下贤士而建。<br>前：过去。.<br>古人：古代那些能够礼贤下士的圣君。<br>后：未来。<br>来者：后世那些重视人才的贤明君主。<br>念：想到。<br>悠悠：形容时间的久远和空间的广大。<br>怆（chuàng）然：悲伤凄恻的样子。<br>涕：古时指眼泪。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这是一首吊古伤今的生命悲歌，从中可以看出诗人孤独遗世、独立苍茫的落寞情怀。此诗通过描写登楼远眺，凭今吊古所引起的无限感慨，抒发了诗人抑郁已久的悲愤之情，深刻地揭示了封建社会中那些怀才不遇的知识分子遭受压抑的境遇，表达了他们在理想破灭时孤寂郁闷的心情，具有深刻的典型社会意义。全诗语言苍劲奔放，富有感染力，结构紧凑连贯，又留有充分的空间：前二句俯仰古今，写出时间漫长；第三句登楼眺望，写出空间辽阔；在广阔无垠的时空背景中，第四句描绘了诗人孤独寂寞苦闷的情绪，两相映照，分外动人，读来酣畅淋漓又余音缭绕。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：王运熙</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《登幽州台歌》这首短诗，由于深刻地表现了诗人怀才不遇、寂寞无聊的情绪，语言苍劲奔放，富有感染力，成为历来传诵的名篇。<br>陈子昂是一个具有政治见识和政治才能的文人。他直言敢谏，对武后朝的不少弊政，常常提出批评意见，不为武则天采纳，并曾一度因“逆党”株连而下狱。他的政治抱负不能实现，反而受到打击，这使他心情非常苦闷。<br>武则天万岁通天元年（696），契丹李尽忠、孙万荣等攻陷营州。武则天委派武攸宜率军征讨，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：王运熙</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《登幽州台歌》这首短诗，由于深刻地表现了诗人怀才不遇、寂寞无聊的情绪，语言苍劲奔放，富有感染力，成为历来传诵的名篇。</p><p>陈子昂是一个具有政治见识和政治才能的文人。他直言敢谏，对武后朝的不少弊政，常常提出批评意见，不为武则天采纳，并曾一度因“逆党”株连而下狱。他的政治抱负不能实现，反而受到打击，这使他心情非常苦闷。</p><p>武则天万岁通天元年（696），契丹李尽忠、孙万荣等攻陷营州。武则天委派武攸宜率军征...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：黄鸣</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>武则天万岁通天元年（696），陈子昂任武攸宜幕府参谋，随同武攸宜出征契丹。次年，因武攸宜不识机变，轻率冒进，被契丹李尽忠和孙万荣等人击败，情况危急。陈子昂屡次建言，武攸宜不但不听，还将他降为军曹。在这种逆境中，诗人登上幽州台，写下了这首震烁千古的名作。</p><p>幽州古属燕地，战国时代的燕国国小民贫，被齐国攻击，几至亡国。燕昭王励精图治，巩黄金台以招揽贤士，礼遇乐毅、郭槐等人，终于在良臣谋士的帮助下成功复...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：黄鸣</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>武则天万岁通天元年（696），陈子昂任武攸宜幕府参谋，随同武攸宜出征契丹。次年，因武攸宜不识机变，轻率冒进，被契丹李尽忠和孙万荣等人击败，情况危急。陈子昂屡次建言，武攸宜不但不听，还将他降为军曹。在这种逆境中，诗人登上幽州台，写下了这首流传千古的名作。<br>幽州古属燕地，战国时代的燕国国小民贫，被齐国攻击，几至亡国。燕昭王励精图治，礼遇乐毅、郭隗等人，终于在良臣谋士的帮助下成功复仇。陈子昂本以游侠知名...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：黄鸣</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>武则天万岁通天元年（696），陈子昂任武攸宜幕府参谋，随同武攸宜出征契丹。次年，因武攸宜不识机变，轻率冒进，被契丹李尽忠和孙万荣等人击败，情况危急。陈子昂屡次建言，武攸宜不但不听，还将他降为军曹。在这种逆境中，诗人登上幽州台，写下了这首震烁千古的名作。<br>幽州古属燕地，战国时期的燕国国小民贫，被齐国攻击，几至亡国。燕昭王励精图治，礼遇乐毅、郭隗等人，终于在良臣谋士的帮助下成功复仇。陈子昂本以游侠知名...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：王运熙</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>武则天万岁通天元年(696)，契丹李尽忠、孙万荣等攻陷营州。武则天委派武攸宜率军征讨，陈子昂在武攸宜幕府担任参谋，随同出征。武为人轻率，少谋略。次年兵败，情况紧急，陈子昂请求遣万人作前驱以击敌，武不允。稍后，陈子昂又向武进言，不听，反把他降为军曹。诗人接连受到挫折，眼看报国宏愿成为泡影，因此登上蓟北楼（即幽州台，遗址在今北京市），慷慨悲吟，写下了《登幽州台歌》以及《蓟丘览古赠卢居士藏用七首》等诗篇...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/29192.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

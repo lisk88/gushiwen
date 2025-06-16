@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>燕歌行 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">燕歌行</h1>
+            <div class="poem-author">作者：高适</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 195</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 7</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>汉家烟尘在东北，汉将辞家破残贼。</p><p>男儿本自重横行，天子非常赐颜色。</p><p>摐金伐鼓下榆关，旌旆逶迤碣石间。</p><p>校尉羽书飞瀚海，单于猎火照狼山。</p><p>山川萧条极边土，胡骑凭陵杂风雨。</p><p>战士军前半死生，美人帐下犹歌舞！</p><p>大漠穷秋塞草腓，孤城落日斗兵稀。</p><p>身当恩遇常轻敌，力尽关山未解围。</p><p>铁衣远戍辛勤久，玉箸应啼别离后。</p><p>少妇城南欲断肠，征人蓟北空回首。</p><p>边庭飘飖那可度，绝域苍茫更何有！</p><p>杀气三时作阵云，寒声一夜传刁斗。</p><p>相看白刃血纷纷，死节从来岂顾勋？</p><p>君不见沙场征战苦，至今犹忆李将军。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>唐玄宗开元二十六年，有个随从主帅出塞回来的人，写了《燕歌行》诗一首给我看。我感慨于边疆战守的事，因而写了这首《燕歌行》应和他。<br>唐朝边境举烟火狼烟东北起尘土，唐朝将军辞家去欲破残忍之边贼。<br>战士们本来在战场上就所向无敌，皇帝又特别给予他们丰厚的赏赐。<br>锣声响彻重鼓棰声威齐出山海关，旌旗迎风又逶迤猎猎碣石之山间。<br>校尉紧急传羽书飞奔浩瀚之沙海，匈奴单于举猎火光照已到我狼山。<br>山河荒芜多萧条满目凄凉到边土，胡人骑兵仗威力兵器声里夹风雨。<br>战士拼鬭军阵前半数死去半生还，美人却在营帐中还是歌来还是舞！<br>时值深秋大沙漠塞外百草尽凋枯，孤城一片映落日战卒越斗越稀少。<br>身受皇家深恩义常思报国轻寇敌，边塞之地尽力量尚未破除匈奴围。<br>身穿铁甲守边远疆场辛勤已长久，珠泪纷落挂双目丈夫远去独啼哭。<br>少妇孤单住城南泪下凄伤欲断肠，远征军人驻蓟北望家园空自回头。<br>边境飘渺多遥远怎可轻易来奔赴，绝远之地尽苍茫更是人烟何所有。<br>杀气春夏秋三季腾起阵前似乌云，一夜寒风声声里如泣更声惊耳鼓。<br>互看白刃乱飞舞夹杂着鲜血纷飞，从来死节为报国难道还求著功勋？<br>你没看见拼杀在沙场战鬭多惨苦，现在还在思念有勇有谋的李将军。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>燕歌行：乐府《相和歌辞·平调曲》旧题，曹丕、萧绎、庾信所作，多为思妇怀念征夫之意。<br>张公：指张守珪，开元二十三年因与契丹作战有功，拜辅国大将军兼御史大夫。<br>汉家：借指唐朝。<br>烟尘：战地的烽烟和飞尘，此指战争警报。开元十八年（公元730年）五月，契丹及奚族叛唐，此后唐与契、奚之间战事不断。<br>汉将：指张守珪将领。<br>「非常赐颜色」句：破格赐予荣耀。赐，一作「借」。<br>摐（chuāng）金伐鼓：军中鸣金击鼓。摐金，敲锣。<br>榆关：山海关。<br>逶迤：曲折行进貌。碣石：山名，在今河北昌黎县北。此借指东北沿海一带。<br>尉：武官，官阶次于将军。<br>羽书：羽檄，插有羽毛的紧急军事文书。<br>瀚海：大沙漠。<br>单于：秦汉时匈奴君主的称号，此指敌酋。<br>猎火：狩猎时所举之火。<br>狼山：阴山山脉西段，在今内蒙古自治区中部。此外借瀚海、狼山泛指当时战场。<br>凭陵：逼压、凭信威力侵凌别人。<br>穷秋：深秋。<br>腓（féi）：一作「衰」，病，枯萎。隋·虞世基《陇头吟》：「穷秋塞草腓，塞外胡尘飞。」<br>「身当恩遇恒轻敌，力尽关山未解围。」句：一写主帅受皇恩而轻敌；一写战士拼死苦战也未能冲破敌人的包围。常轻敌，一作「恒轻敌」。<br>铁衣：借指将士。《木兰辞》：「寒光照铁衣」。<br>玉箸：即玉筯、玉筷，白色的筷子，借喻眼泪，這里指思妇的泪水如注。刘孝威《独不见》：「谁怜双玉箸，流面复流襟。」<br>城南：长安住宅区在城南，故云。沈佺期《独不见》：「丹凤城南秋夜长。」<br>蓟北：蓟州、幽州一带，今河北省北部地区。此泛指东北战场。<br>边庭飘飖（yáo）：一作「边风飘飘」，指形势动荡、险恶。<br>那可度：一作「那可越」。<br>绝域：更遥远的边陲。<br>苍茫：一作「苍黄」。<br>更何有：一作「何所有」，更加荒凉不毛。<br>三时：早、午、晚。一作「三日」。<br>阵云：战云。<br>寒声：一作「寒风」。<br>血纷纷：一作「雪纷纷」、一作「徒纷纷」。<br>刁斗：古代军中煮饭用的铜锅，夜里可用作巡更敲击报时的铜器。<br>李将军：指李广。善用兵，爱惜士卒，守右北平，匈奴畏之不敢南侵，称为飞将军。事见《史记·李将军传》。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗主要是揭露主将骄逸轻敌，不恤士卒，致使战事失利。全篇大体可分四段：首段八句写出师。其中前四句说战尘起于东北，将军奉命征讨，天子特赐光彩，已见得宠而骄，为后文轻敌伏笔；后四句接写出征阵容。旌旗如云，鼓角齐鸣，一路上浩浩荡荡，大模大样开赴战地，为失利时狼狈情景作反衬。第二段八句写战鬭经过。其中前四句写战初敌人来势凶猛，唐军伤亡惨重，后四句说至晚已兵少力竭，不得解围。第三段八句写征人，思妇两地相望，重会无期。末段四句，两句写战士在生还无望的处境下，已决心以身殉国；两句诗人感慨，对战士的悲惨命运深寄同情。全诗气势畅达，笔力矫健，气氛悲壮淋漓，主旨深刻含蓄。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：徐永年</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《燕歌行》不仅是高適的“第一大篇”（近人赵熙评语），而且是整个唐代边塞诗中的杰作，千古传诵，良非偶然。<br>开元十五年（727），高適曾北上蓟门。二十年，信安王李祎征讨奚、契丹，他又北去幽燕，希望到信安王幕府效力，未能如愿：“岂无安边书，诸将已承恩。惆怅孙吴事，归来独闭门”（《蓟中作》）。可见他对东北边塞军事，下过一番研究工夫。开元二十一年后，幽州节度使张守珪经略边事，初有战功。但二十四年，张让平卢讨...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：徐永年</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《燕歌行》不仅是高适的“第一大篇”（近人赵熙评语），而且是整个唐代边塞诗中的杰作，千古传诵，良非偶然。</p><p>开元十五年（727），高适曾北上蓟门。二十年，信安王李祎征讨奚、契丹，他又北去幽燕，希望到信安王幕府效力，未能如愿：“岂无安边书，诸将已承恩。惆怅孙吴事，归来独闭门”（《蓟中作》）。可见他对东北边塞军事，下过一番研究工夫。开元二十一年后，幽州节度使张守珪经略边事，初有战功。但二十四年，张让平卢...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：褚菊萍</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>开元年间，契丹屡屡入侵犯边，东北边境烽烟四起，百姓处于水深火热之中。坐镇东北的是辅国大将军兼御史大夫张守珪，战功卓著。但开元二十四年（736），张让平卢讨击使安禄山讨奚、契丹，禄山恃勇轻进而败北。开元二十六年（738），张守珪部将赵堪、白真陀罗假借张之命令，逼令平卢军使乌知义奔击叛奚余部于潢水之北，先胜后败，但是“守珪隐其状，而妄奏克获之功”（《旧唐书•张守珪传》）。根据诗前小序可知，诗人当是据此...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：褚菊萍</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>开元年间，契丹屡屡入侵，东北边境烽烟四起，尘土弥漫，老百姓处于水深火热之中。好男儿挺身而出，为讨伐入侵的贼敌，辞家上了前线。当时坐镇东北的是御史大夫兼大将军张守珪，他率领将士纵横驰骋，英勇杀敌，势不可挡，屡建战功。皇帝对此非常满意，重重封赏了他们。</p><p>开元二十六年（738），张守珪部将赵堪、白真陀罗假借张之命令，逼令平卢军使乌知义奔击叛奚。当时出征的军队，浩浩荡荡，气势雄壮。敲锣打鼓，队伍雄赳赳开...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：褚菊萍</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>开元年间，契丹屡屡入侵，东北边境烽烟四起，尘土弥漫，老百姓处于水深火热之中。好男儿挺身而出，为讨伐入侵的贼敌，辞家上了前线。当时坐镇东北的是大将军兼御史大夫张守珪，他率领将士纵横驰骋，英勇杀敌，势不可挡，屡建战功。皇帝对此非常满意，重重封赏了他们。</p><p>二十六年（738），张守珪部将赵堪、白真陀罗假借张之命令，逼令平卢军使乌知义奔击叛奚。当时出征的军队，浩浩荡荡，气势雄壮。敲锣打鼓，队伍雄赳赳开出山...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：徐永年</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《燕歌行》不仅是高适的“第一大篇”（近人赵熙评语），而且是整个唐代边塞诗中的杰作，千古传诵，良非偶然。<br>开元十五年(727)，高适曾北上蓟门。二十年，信安王李祎征讨奚、契丹，他又北去幽燕，希望到信安王幕府效力，未能如愿：“岂无安边书，诸将已承恩。惆怅孙吴事，归来独闭门”（《蓟中作》）。可见他对东北边塞军事，下过一番研究工夫。开元二十一年后，幽州节度使张守珪经略边事，初有战功。但二十四年，张让平卢讨...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/160276/5062208.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

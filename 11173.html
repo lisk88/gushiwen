@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咏柳 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">咏柳</h1>
+            <div class="poem-author">作者：贺知章</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 2065</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 11</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>碧玉妆成一树高，万条垂下绿丝绦。</p><p>不知细叶谁裁出，二月春风似剪刀。</p></div>
+            </div>
+
+            
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>碧玉：碧绿色的玉。这里用以比喻春天嫩绿的柳叶。<br>妆：装饰，打扮。<br>一树：满树。一：满，全。在中国古典诗词和文章中，数量词在使用中并不一定表示确切的数量。下一句的“万”，就是表示很多的意思。<br>绦（tāo）：用丝编成的绳带。这里指像丝带一样的柳条。<br>裁：裁剪。<br>似：如同，好像。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这首诗是一首咏物诗。诗的前两句连用两个新美的喻象，描绘春柳的勃勃生气，葱翠袅娜；后两句更别出心裁地把春风比喻为“剪刀”，将视之无形不可捉摸的“春风”形象地表现出来，不仅立意新奇，而且饱含韵味。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：马茂元</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首咏物诗，写的是早春二月的杨柳。<br>写杨柳，该从哪儿着笔呢？毫无疑问，它的形象美是在于那曼长披拂的枝条。一年一度，它长出了嫩绿的新叶，丝丝下垂，在春风吹拂中，有着一种迷人的意态。这是谁都能欣赏的。古典诗词中，借用这种形象美来形容、比拟美人苗条的身段，婀娜的腰肢，也是我们所经常看到的。这诗别出新意，翻转过来。“碧玉妆成一树高”，一开始，杨柳就化身为美人而出现；“万条垂下绿丝绦”，这千条万缕的垂丝...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：马茂元</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首咏物诗，写的是早春二月的杨柳。</p><p>写杨柳，该从哪儿着笔呢？毫无疑问，它的形象美是在于那曼长披拂的枝条。一年一度，它长出了嫩绿的新叶，丝丝下垂，在春风吹拂中，有着一种迷人的意态。这是谁都能欣赏的。古典诗词中，借用这种形象美来形容、比拟美人苗条的身段，婀娜的腰肢，也是我们所经常看到的。这诗别出新意，翻转过来。“碧玉妆成一树高”，一开始，杨柳就化身为美人而出现；“万条垂下绿丝绦”，这千条万缕的垂...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：黄鸣</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是一首有名的咏柳诗。</p><p>柳树是中国古诗中常见的意象。南朝梁简文帝萧纲有《柳》诗云：“垂阴满上路，结束早知春。花絮时随鸟，风枝屡拂尘。欲散依依采，时要歌吹人。”初唐“文章四友”中的李峤亦有《柳》诗，中有“庭前花类雪，楼际叶如云。列宿分龙影，芳池写凤文。短箫何以奏，攀折为思君”之语。这些诗往往从客观物态的角度来描写，虽曲尽其形，但却有形无质，没有写出柳树的风神来。贺知章的这首《咏柳》诗比他们前进了一...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：黄鸣</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是一首有名的咏柳诗。<br>柳树是中国古诗中常见的意象。南朝梁简文帝萧纲有《柳》诗云：“垂阴满上路，结束早知春。花絮时随鸟，风枝屡拂尘。欲散依依采，时要歌吹人。”初唐“文章四友”中的李峤亦有《柳》诗，中有“庭前花类雪，楼际叶如云。列宿分龙影，芳池写凤文。短箫何以奏，攀折为思君”之语。这些诗往往从客观物态的角度来描写，虽曲尽其形，但却有形无质，没有写出柳树的风神来。贺知章的这首《咏柳》诗比他们前进了一大...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文208篇（小学、初中）</span>
+                    <span class="author-name">作者：马茂元</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首咏物诗，写的是早春二月的杨柳。<br>写杨柳，该从哪儿着笔呢？毫无疑问，它的形象美是在于那曼长披拂的枝条。一年一度，它长出了嫩绿的新叶，丝丝下垂，在春风吹拂中，有着一种迷人的意态。这是谁都能欣赏的。古典诗词中，借用这种形象美来形容、比拟美人苗条的身段，婀娜的腰肢，也是我们所经常看到的。这诗别出新意，翻转过来。“碧玉妆成一树高”，一开始，杨柳就化身为美人而出现；“万条垂下绿丝绦”，这千条万缕的垂丝...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：马茂元</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首咏物诗，写的是早春二月的杨柳。<br>写杨柳，该从哪儿着笔呢？毫无疑问，它的形象美是在于那曼长披拂的枝条。一年一度，它长出了嫩绿的新叶，丝丝下垂，在春风吹拂中，有着一种迷人的意态。这是谁都能欣赏的。古典诗词中，借用这种形象美来形容、比拟美人苗条的身段，婀娜的腰肢，也是我们所经常看到的。这诗别出新意，翻转过来。“碧玉妆成一树高”，一开始，杨柳就化身为美人而出现；“万条垂下绿丝绦”，这千条万缕的垂丝...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/35077/4924141.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

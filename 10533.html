@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渡荆门送别 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">渡荆门送别</h1>
+            <div class="poem-author">作者：李白</div>
+            <div class="poem-dynasty">唐朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 1228</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 14</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>渡远荆门外，来从楚国游。</p><p>山随平野尽，江入大荒流。</p><p>月下飞天镜，云生结海楼。</p><p>仍怜故乡水，万里送行舟。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我乘舟渡江来到遥远的荆门外，来到战国时期楚国的境内游览。<br>高山渐渐隐去平野慢慢舒展开，江水一片仿佛流进广阔的莽原。<br>波中月影宛如天上飞来的明镜，空中彩云结成绮丽的海市蜃楼。<br>但我还是更爱恋故乡滔滔江水，它奔流不息陪伴着我万里行舟。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>荆门：山名，位于今湖北省宜都县西北长江南岸，与北岸虎牙山对峙，地势险要，自古即有楚蜀咽喉之称。<br>远：远自。<br>楚国：楚地，指湖北一带，春秋时期属楚国。<br>平野：平坦广阔的原野。<br>江：长江。<br>大荒：广阔无际的田野。<br>月下飞天镜：明月映入江水，如同飞下的天镜。下，移下。<br>海楼：海市蜃楼，这里形容江上云霞的美丽景象。<br>仍：依然。<br>怜：怜爱。一本作「连」。<br>故乡水：指从四川流来的长江水。因诗人从小生活在四川，把四川称作故乡。<br>万里：喩行程之远。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗是唐代伟大诗人李白青年时期在出蜀漫游的途中写下的一首五言律诗。诗由写远游点题始，继写沿途见闻和观感，后以思念作结，全诗意境高远，风格雄健，形象奇伟，想象瑰丽，以其卓越的绘景取胜，景象雄浑壮阔，表现了作者少年远游、倜傥不群的个性及浓浓的思乡之情。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：何国治</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗是李白出蜀时所作。荆门，即荆门山，位于今湖北宜都县西北，长江南岸，与北岸虎牙山隔江对峙，形势险要，自古即有楚蜀咽喉之称。<br>李白这次出蜀，由水路乘船远行，经巴渝，出三峡，直向荆门山之外驶去，目的是到湖北、湖南一带楚国故地游览。“渡远荆门外，来从楚国游”，指的就是这一壮游。这时候的青年诗人，兴致勃勃，坐在船上沿途纵情观赏巫山两岸高耸云霄的峻岭。一路看来，眼前景色逐渐变化，船过荆门一带，已是平原旷...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：何国治</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗是李白出蜀时所作。荆门，即荆门山，位于今湖北宜都西北，长江南岸，与北岸虎牙山隔江对峙，形势险要，自古即有楚蜀咽喉之称。</p><p>李白这次出蜀，由水路乘船远行，经巴渝，出三峡，直向荆门山之外驶去，目的是到湖北、湖南一带楚国故地游览。“渡远荆门外，来从楚国游”，指的就是这一壮游。这时候的青年诗人，兴致勃勃，坐在船上沿途纵情观赏巫山两岸高耸云霄的峻岭。一路看来，眼前景色逐渐变化，船过荆门一带，已是平原旷...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：鲁林华</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>青春年少的李白终于出川而来了。家乡之外的风物景色，从百家之书中他获得过基本印象，从种种传闻故事中他知道了大致轮廓，而想象的翅膀又曾多少次飞跃山川，进入楚天吴地。如今，放舟东来，顺流而下，一日千里，外面的世界即将出现在眼前，年轻的诗人怎能不激动万分？幽深的峡谷中，湍急的江面上，小舟如离弦之箭，两岸风光纷至沓来，层见叠出，令人眼花缭乱。</p><p>冲出西陵峡，江流平缓，江面开阔，风景与峡中迥然不同。《水经注•...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：鲁林华</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>青春年少的李白终于出川而来了。家乡之外的风物景色，从百家之书中他获得过基本印象，从种种传闻故事中他知道了大致轮廓，而想象的翅膀又曾多少次飞跃山川，进入楚天吴国。如今，放舟东来，顺流而下，一日千里，外面的世界即将出现在眼前，年轻的诗人怎能不激动万分。幽深的峡谷中，湍急的江面上，小舟如离弦之箭，两岸风光纷至沓来，层见叠出，令人眼花缭乱。<br> <br>冲出西陵峡，江流平缓，江面开阔，风景与峡中迥然不同。《水经注...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：鲁林华</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>青春年少的李白终于出川而来了。家乡之外的风物景色，他从百家之书中获得过基本印象，从种种传闻故事中知道了大致轮廓，而想象的翅膀又曾多少次飞跃山川，进入楚天吴国。如今，放舟东来，顺流而下，一日千里，外面的世界即将出现在眼前，年轻的诗人怎能不激动万分。幽深的峡谷中，湍急的江面上，小舟如离弦之箭，两岸风光纷至沓来，层见叠出，令人眼花缭乱。</p><p>冲出西陵峡，江流平缓，江面开阔，风景与峡中迥然不同。《水经注·江...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李白诗歌鉴赏辞典</span>
+                    <span class="author-name">作者：何国治</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗是李白出蜀时所作。荆门，即荆门山，位于今湖北宜都县西北，长江南岸，与北岸虎牙山隔江对峙，形势险要，自古即有楚蜀咽喉之称。</p><p>李白这次出蜀，由水路乘船远行，经巴渝，出三峡，直向荆门山之外驶去，目的是到湖北、湖南一带楚国故地游览。“渡远荆门外，来从楚国游”，指的就是这一壮游。这时候的青年诗人，兴致勃勃，坐在船上沿途纵情观赏巫山两岸高耸云霄的峻岭。一路看来，眼前景色逐渐变化，船过荆门一带，已是平原...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/143065.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

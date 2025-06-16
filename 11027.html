@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饮湖上初晴后雨（其二） - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">饮湖上初晴后雨（其二）</h1>
+            <div class="poem-author">作者：苏轼</div>
+            <div class="poem-dynasty">宋朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 895</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 13</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>水光潋滟晴方好，山色空蒙雨亦奇。</p><p>欲把西湖比西子，淡妆浓抹总相宜。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>晴天，西湖水波荡漾，在阳光照耀下，光彩熠熠，美极了。下雨时，远处的山笼罩在烟雨之中，时隐时现，眼前一片迷茫，这朦胧的景色也是非常漂亮的。如果把美丽的西湖比作美人西施，那么淡妆也好，浓妆也罢，总能很好地烘托出她的天生丽质和迷人神韵。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>潋滟：水波荡漾、波光闪动的样子。方好：正显得美。<br>空蒙：细雨迷蒙的样子。蒙，一作「濛」。<br>亦：也。<br>奇：奇妙。<br>欲：可以；如果。<br>西子：即西施，春秋时代越国著名的美女。<br>总相宜：总是很合适，十分自然。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗不是描写西湖的一处之景、一时之景，而是对西湖美景的全面描写概括品评，尤其是后二句，被认为是对西湖的恰当评语。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>苏轼于神宗熙宁四年（1071）到七年在杭州任通判期间，曾写了大量咏西湖景物的诗。这是最脍炙人口的一首。<br>诗的上半首既写了西湖的水光山色，也写了西湖的晴姿雨态。首句写晴日照射下荡漾的湖波；次句写雨幕笼罩下缥缈的山影。联系诗题《饮湖上，初晴后雨》来看，两句所描摹的正是当天先后呈现在诗人眼前的真实景观。联系同题第一首诗的前两句“朝曦迎客艳重冈，晚雨留人入醉乡”来看，那一天，诗人在西湖游宴终日，早晨阳光明...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">苏轼诗文鉴赏辞典</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>苏轼于神宗熙宁四年（1071）到七年在杭州任通判期间，曾写了大量咏西湖景物的诗。这是最脍炙人口的一首。</p><p>诗的上半首既写了西湖的水光山色，也写了西湖的晴姿雨态。首句写晴日照射下荡漾的湖波；次句写雨幕笼罩下缥缈的山影。联系诗题《饮湖上，初晴后雨》来看，两句所描摹的正是当天先后呈现在诗人眼前的真实景观。联系同题第一首诗的前两句“朝曦迎客艳重冈，晚雨留人入醉乡”来看，那一天，诗人在西湖游宴终日，早晨阳光...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>苏轼于神宗熙宁四年（1071）到七年在杭州任通判期间，曾写了大量咏西湖景物的诗。这是最脍炙人口的一首。</p><p>诗的上半首既写了西湖的水光山色，也写了西湖的晴姿雨态。首句写晴日照射下荡漾的湖波；次句写雨幕笼罩下缥缈的山影。联系诗题《饮湖上，初晴后雨》来看，两句所描摹的正是当天先后呈现在诗人眼前的真实景观。联系同题第一首诗的前两句“朝曦迎客艳重冈，晚雨留人入醉乡”来看，那一天，诗人在西湖游宴终日，早晨阳光...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代山水诗鉴赏：江山留胜迹</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>苏轼于神宗熙宁四年（1071）到七年在杭州任通判期间，曾写了大量咏西湖景物的诗。这是最脍炙人口的一首。</p><p>诗的上半首既写了西湖的水光山色，也写了西湖的晴姿雨态。首句写晴日照射下荡漾的湖波；次句写雨幕笼罩下缥缈的山影。联系诗题《饮湖上，初晴后雨》来看，两句所描摹的正是当天先后呈现在诗人眼前的真实景观。联系同题第一首诗的前两句“朝曦迎客艳重冈，晚雨留人入醉乡”来看，那一天，诗人在西湖游宴终日，早晨阳光...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/865834.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>己亥杂诗 · 其五 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem; font-style: italic; }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">己亥杂诗 · 其五</h1>
+            <div class="poem-author">作者：龚自珍</div>
+            <div class="poem-dynasty">清朝</div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span>诗</span>
+                </div>
+                <div class="meta-item"><span>👁️</span><span>阅读 481</span></div>
+                <div class="meta-item"><span>❤️</span><span>收藏 15</span></div>
+            </div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>浩荡离愁白日斜，吟鞭东指即天涯。</p><p>落红不是无情物，化作春泥更护花。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>浩浩荡荡的离别愁绪向着日落西斜的远处延伸，离开北京，马鞭向东一挥，感觉就是人在天涯一般。我辞官归乡，有如从枝头上掉下来的落花，但它却不是无情之物，化成了春天的泥土，还能起着培育下一代的作用。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>浩荡离愁：离别京都的愁思浩如水波，也指作者心潮不平。浩荡：无限。<br>吟鞭：诗人的马鞭。东指：东方故里。天涯：指离别京都的距离。<br>落红：落花。花朵以红色者为尊贵，因此落花又称为落红。<br>花：比喻国家。即：到。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这首诗是清代诗人龚自珍写的组诗《己亥杂诗》中的第五首，写诗人离京的感受。全诗分前后两部分，前两句为第一部分，后两句为第二部分。在第一部分里，诗人以天涯、日暮、落花写出一片浩荡的离愁，以落花自况，赋予自己的身世之感；第二部分以落花为过渡，从落花、春泥展开联想，把自己变革现实的热情和不甘寂寞消沉的意志移情落花，然后代落花立言，向春天宣誓，倾吐了深曲的旨意。全诗意象单纯，而情景浑成，比兴无端，而心迹昭然，短短二十八字，展示了诗人博大的胸怀，揭示了一种难能可贵的生命价值观，具有涵包天地的思想和感情容量，堪称定庵诗的压卷之作。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元明清诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：铁, 明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《红楼梦》中黛玉葬花词云：“依今葬花人笑痴，他年葬侬知是谁？”林黛玉面对满地落花，不禁联想到自己的红颜薄命。无独有偶，一代才人龚自珍也是以落花自喻身世，在《己亥杂诗》（其五）中吟出了挚切深情的诗句。<br>龚自珍于道光十九年己亥（1839）离开京都辞官南归。正值暮春时节，万花纷谢，残红满地。这景象惹起诗人一股浓浓的离情，他情不自禁地在马上唱出了上面这首歌。“浩荡离愁白日斜”，诗人心中的离愁啊，多么深广，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元明清诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：铁明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《红楼梦》中黛玉葬花词云：“侬今葬花人笑痴，他年葬侬知是谁？”林黛玉面对满地落花，不禁联想到自己的红颜薄命。无独有偶，一代才人龚自珍也是以落花自喻身世，在《己亥杂诗》（其五）中吟出了挚切深情的诗句。</p><p>龚自珍于道光十九年己亥（1839）离开京都辞官南归。正值暮春时节，万花纷谢，残红满地。这景象惹起诗人一股浓浓的离情，他情不自禁地在马上唱出了上面这首歌。“浩荡离愁白日斜”，诗人心中的离愁啊，多么深广...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：铁明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>龚自珍于道光十九年己亥(1839)离开京都辞官南归。正值暮春时节，万花纷谢，残红满地。这景象惹起诗人一股浓浓的离情，他情不自禁地在马上唱出了上面这首歌。<br>从这首诗的头两句，我们不难想象当时诗人悄然出京的情景。作者曾自述此次离京时“不携眷属兼从，雇两车，以一车自载，一车载文集百卷出都。”再联系到这两句诗的描写可知诗人是只身骑着马走出北京城的，这时已“白日斜”了，他满怀着“浩荡离愁”，在那北方郊野的大...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/3677257.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>
