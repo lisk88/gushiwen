@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送杨少尹序 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">送杨少尹序</h1>
+            <div class="poem-author">【唐】韩愈</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>昔疏广、受二子以年老，一朝辞位而去，于时公卿设供张，祖道都门外，车数百两，道路观者多叹息泣下，共言其贤。汉史既传其事，而后世工画者又图其迹，至今照人耳目，赫赫若前日事。国子司业杨君巨源，方以能诗训后进，一旦以年满七十，亦白丞相去归其乡。世常说古今人不相及，今杨与二疏其意岂异也？</p><p>予忝在公卿后，遇病不能出，不知杨侯去时，城门外送者几人？车几两？马几匹？道旁观者亦有叹息知其为贤以否？而太史氏又能张大其事为传继二疏踪迹否？不落莫否？见今世无工画者，而画与不画固不论也。然吾闻杨侯之去，丞相有爱而惜之者，白以为其都少尹，不绝其禄，又为歌诗以劝之，京师之长于诗者，亦属而和之。又不知当时二疏之去，有是事否？古今人同不同，未可知也。</p><p>中世士大夫以官为家，罢则无所于归。杨侯始冠，举于其乡，歌《鹿鸣》而来也。今之归，指其树曰：“某树吾先人之所种也，某水某邱吾童子时所钓游也。”乡人莫不加敬，诫子孙以杨侯不去其乡为法。古之所谓“乡先生没而可祭于社”者，其在斯人欤，其在斯人欤！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>古时候疏广、疏受叔侄二人，因为年老，同一天辞掉职位离去。当时，朝廷中的公卿摆设宴席，在京都门外为他们饯行，车驾有数百辆之多；道路上旁观的，有很多人为之感叹并流下了眼泪，无不称赞他们贤明。汉代的史书既记载了他们的事迹，而后世擅长绘画的人，又画下了他们的形象，到今天依然光彩照人，清清楚楚的仿佛是前不久发生的事情。<br>国子监司业杨巨源，正以他善于写诗来教育学生，一旦到了七十岁，也禀白丞相离职回归他的故乡。世上常说古时的人和现今的人是不能并论的，而今杨巨源与疏氏二人，他们的思想难道有什么差异吗？<br>我攀附于公卿之末，恰逢生病不能出去送行。不知道杨少尹走的时候，都城门外送行的有多少人？车有多少辆？马有多少匹？道边的旁观者，也有为他的行为感叹，知道他是贤者的，还是没有呢？而史官能不能铺张渲染他的事迹，写成传记以做为疏氏二人的事迹的继续呢？不会冷落寂寞吧？我看到现在世上没有擅长绘画的，而画还是不画，也就不必考虑了！<br>然而我听说杨侯的辞归，丞相中有敬重而怜惜他的，奏明皇上任命他为其故乡河中府的少尹，以便不断绝他的俸禄；又亲自写诗来慰勉他。京城中擅长写诗的人，也作诗来应和。又不知道古时候疏氏二人的归乡，有这样的事吗？古人与今人相同还是不同，不得而知啊！<br>中古以后的士大夫，往往依靠官俸来养家，罢官之后就无归宿之处。杨侯刚成年，便在他的家乡被荐举，参加了《鹿鸣》宴而来到朝廷的。现在回到故乡，指着乡间的树说：“那些树是我的先人种的。”“那条溪流，那座山丘，是我小时候钓鱼、游戏的地方。”故乡的人没有不对他表示敬意的，人们告诫子孙要以杨侯不舍弃故土的美德做为榜样。古人所谓“乡先生”，逝去之后能够在乡里社庙中享受祭祀的，大概就是这样的人吧？</p></div></div>
+            
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《送杨少尹序》是韩愈所作的一篇赠序。杨少尹（少尹是官名），名巨源，字景山，以能诗称。唐贞元五年进士。长庆中，年七十，致仕归。朝官作诗送行，时文公为吏部侍郎，为之序。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：周啸天</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>毛先舒的《戴文进传》下笔就一锤定音：“明画手以戴进为第一”。其实，这个结论能否得到普遍的赞同并不重要，重要的是这里表明了一种感情态度，也可以说个人偏好。且看篇末又特别喊明叫响：“予钦进”！通览不过三百余字的传文，使人觉得作者于传主事迹特有感悟，才有为之作传的冲动。他并不要像研究者一样为戴画师编年谱———而年谱之无文学价值，乃在于太客观、太实录、太冷静而又太繁琐；他是要为笔下人物传神，希图读者亦有所...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">明清小说鉴赏辞典</span>
+                    <span class="author-name">作者：王恒展</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本篇采自曾衍东文言小说集《小豆棚》。<br>曾衍东舟车海内，曾为幕僚、知县，亲见当时政治黑暗、社会腐败，尤其是官吏的贪污和官场的逢迎，加之生性孤直，有志干预，所以在《小豆棚》中写下了不少不满当时吏治，揭露、抨击时政的文言短篇小说，本文便是较有代表性的一篇。作品不但描写了鼋怪窃冒湖州太守杨汝虔异常贪婪，是非颠倒，迎合上官，卑躬折节等种种劣行丑态，而且曲折巧妙地写出了造成吏治腐败的具体原因——“会边戍需储，...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="https://baike.baidu.com/item/%E9%80%81%E6%9D%A8%E5%B0%91%E5%B0%B9%E5%BA%8F/4023225?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

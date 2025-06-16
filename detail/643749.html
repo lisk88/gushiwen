@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咏雪 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">咏雪</h1>
+            <div class="poem-author">【南北朝】刘义庆</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“未若柳絮因风起。”公大笑乐。即公大兄无奕女，左将军王凝之妻也。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>谢安在寒冷的雪天举行家庭聚会，给子侄辈的人讲解诗文。不久，雪下得大了，太傅高兴地说：“这纷纷扬扬的白雪像什么呢？”他哥哥的长子谢朗说：“在空中撒盐差不多可以相比。”另一个哥哥的女儿说：“不如比作柳絮凭借着风飞舞。”太傅大笑起来。她就是谢奕的女儿谢道韫，左将军王凝之的妻子。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>谢太傅：即谢安（.320年－385年），字安石，晋朝陈郡阳夏（现在河南太康）人。做过吴兴太守、侍 中、吏部尚书、中护军等官职。死后追赠为太傅。<br>内集：家庭聚会。<br>儿女：子侄辈。<br>讲论文义：讲解诗文。<br>俄而：不久，不一会儿。<br>骤：急，紧。<br>欣然：高兴的样子。<br>何所似：像什么。何，什么；似，像。<br>胡儿：即谢朗。谢朗，字长度，谢安哥哥的长子。做过东阳太守。<br>差可拟：差不多可以相比。差，大致，差不多；拟，相比。<br>未若：倒不如。<br>因：凭借。<br>即：是。<br>无奕女：指谢道韫（yùn），东晋有名的才女，以聪明有才著称。无奕，指谢奕，字无奕。<br>王凝之：字叔平，大书法家王羲之的第二个儿子，做过江州刺史、左将军、会稽内史等。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>始出于东晋谢安与其子侄辈们的一段即兴对话。言简意赅地勾勒了疾风骤雪、纷纷扬扬的下雪天，谢家子女即景赋诗咏雪的情景，展示了古代家庭文化生活轻松和谐的画面。文章通过神态描写和身份补叙，赞赏谢道韫的文学才华，并因此而流传千古，成为一段佳话。《咏雪》作为清谈名士的教科书，特别注意传达魏晋清谈家的独特的语言形象，重视人物语言的润饰，“读其语言，晋人面目气韵，恍忽生动，而简约玄澹，真致不穷，古今绝唱也。”</p><p>“谢太傅寒雪日内集，与儿女讲论文义。”文章第一句交代咏雪的背景。短短的十五个字，涵盖的内容相当多。东晋的谢氏家族是个赫赫有名的诗礼簪缨之家，为首的是谢太傅即谢安。在这样的家族里，遇到雪天无法外出，才有“讲论文义”的雅兴。召集人兼主讲人自然是谢安，听众是“儿女”们。时间、地点、人物、事件全都说到了。 接着写主要事件咏雪。其实是主讲人出题考听众。主讲人何以有此雅兴？原来是天气发生了变化：“俄而雪骤”，早先也有雪，但不大，而此刻变成了纷纷扬扬的鹅毛大雪。这使主讲人感到很高兴，于是“公欣然曰：‘白雪纷纷何所似？’兄子胡儿曰：‘撒盐空中差可拟。’兄女曰：‘未若柳絮因风起。’”答案可能不少，但作者只录下了两个：一个是谢朗说的“撒盐空中”；另一个是谢道韫说的“柳絮因风起”。主讲人对这两个答案的优劣未做评定，只是“大笑乐”而已，十分耐人寻味。作者也没有表态，却在最后补充交代了谢道韫的身份，“即公大兄无奕女，左将军王凝之妻也。”这是一个有力的暗示，表明他欣赏及赞扬谢道韫的才气，并写出了谢道韫是“咏絮才”。</p><p>为何说谢道韫作的词句更好呢？柳絮，作为春时景物，有似花非花，因风而起，飘忽无根，满天飞舞的特征。晋伍辑之《柳花赋》曾形容：“扬零花而雪飞，或风回而游薄，或雾乱而飙零，野净秽而同降，物均色而齐明。”谢道韫将此来比拟北风吹起漫天飞雪，堪称契合无间。取柳絮可比其形言其大，点明当时的“雪骤”之景，而“因风起”更指出它随风飘舞，漫无边际的自然特点。（宋代的贺铸《青玉案》词有“满城风絮”句。）由此较之，雪花柳絮，可谓是异迹而同趣了。如此再看“撒盐空中”的比方，则未免有局促见肘之诮了。比喻更讲究神似：盐在空中唰唰地撒，重重地下落，躲都来不及，何谈欣赏？无美感可言。比作柳絮，一扫滞重之感，因风而起，漫天飘飞，这才是大自然的造化。而且柳絮飘飞的季节是春暖花开之时，冬季之冷景，以春季之暖景写出，更见诗意。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

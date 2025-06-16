@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>礼记 · 檀弓 · 曾子易箦 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">礼记 · 檀弓 · 曾子易箦</h1>
+            <div class="poem-author">【秦】无名氏</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>曾子寝疾，病。乐正子春坐于床下，曾元、曾申坐于足，童子隅坐而执烛。童子曰：「华而睆，大夫之箦与？」子春曰：「止！」曾子闻之，瞿然曰：「呼！」曰：「华而睆，大夫之箦与？」曾子曰：「然。斯季孙之赐也，我未之能易也。元，起易箦。」曾元曰：「夫子之病革矣，不可以变。幸而至于旦，请敬易之。」曾子曰：「尔之爱我也不如彼。君子之爱人也以德，细人之爱人也以姑息。吾何求哉？吾得正而毙焉斯已矣。」举扶而易之。反席未安而没。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>曾子躺在床上，病危。曾子的弟子子春坐在床旁边，曾元、曾申坐在床脚下，童仆坐在角落拿着蜡烛。童仆说：「华美而光洁，（那是）大夫（才能享用）的竹席啊！」子春说：「住嘴！」曾子听见这话，惊惧地说：「啊！」（童仆又）说：「华美而光洁，（那是）大夫（才能享用）的竹席啊！」曾子说：「是的。那是季孙送的，我没有啊。（曾）元，（扶我）起来换竹席。」曾元说：「您的病非常严重啊，不能移动（您的身体啊）。（如果）幸运地到了早晨，一定遵从您的意思换了它。」曾子说：「你爱我不如他（童仆）。按照道德标准去爱护人，小人爱人以无原则迁就。我还有什么苛求啊？我能得到（封建礼教的）正道而死去，也就足够了。」（曾元）扶着抬起（他的身体）然后更换竹席，把他送回席子，还没躺好就死了。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>曾子：即曾参，孔子弟子。<br>寝疾：病倒，卧病，此偏向于病倒。寝，睡卧。疾，小病。<br>乐正子春：曾参的弟子。<br>曾元、曾申：都是曾子的儿子。<br>隅：名词作状语，在角落。<br>华而睆（huǎn）：华美，光滑。<br>箦（zé）：席子。<br>瞿然：惊叹的样子。<br>季孙︰鲁国大夫；曾子受其赐箦，非礼也。<br>革：通「亟」，指病重。<br>变：在此指移动<br>姑息：无原则的宽容<br>正而毙︰谓合于正礼而殁。<br>反：同「返」。<br>没：同：「殁」，死。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>曾子易箦选自《礼记》檀弓上，《古文观止》中亦有收录。曾子，姓曾，名参，字子舆，春秋末年鲁国南武城（现山东省今济宁市嘉祥县）人。孔子弟子之一。曾子是一个视守礼法甚于生命的人，他没有做过大夫，无意中用了大夫专用的席子。假如他死在大夫专用的席子上，那就是「非礼」了，哪怕是处于弥留之际，也依然命令儿子给他更换席子，刚换完，他就无憾而终了。文中曾子的形象惟妙惟肖，他以身护礼，言行一致的学者的风度得以充分的表现。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：周本淳</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这三则小故事选自《礼记·檀弓》。《礼记》是西汉戴圣编纂的儒家关于礼的一些文字，过去列为儒家的经典。《檀弓》分上下二篇。郑玄解释这个篇名说：“名曰檀弓者，以其善于礼，故著姓名以显之，檀姓，弓名。”清孙希旦《礼记集解》不赞成郑玄这个解释说：“愚谓此篇盖七十子之弟子所作。篇首记檀弓事，故以檀弓名篇，非因其善礼著之也。”现在从孙说较多。<br>第一则选自《檀弓上》。也有的选本加个名字叫《曾子易箦》。故事先写曾子...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="https://baike.baidu.com/item/%E6%9B%BE%E5%AD%90%E6%98%93%E7%AE%A6/7804241?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

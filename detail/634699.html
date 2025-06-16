@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>应科目时与人书 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">应科目时与人书</h1>
+            <div class="poem-author">【唐】韩愈</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>月日，愈再拜：</p><p>天池之滨，大江之濆，曰有怪物焉，盖非常鳞凡介之品汇匹俦也。其得水，变化风雨，上下于天不难也；其不及水，盖寻常尺寸之间耳。无高山大陵旷途绝险为之关隔世，然其穷涸不能自致乎水，为㺍獭之笑者，盖十八九矣。如有力者哀其穷而运转之，盖一举手一投足之劳也。然是物也，负其异于众也，且曰烂死于沙泥，吾宁乐之？若俯首帖耳摇尾而乞怜者，非我之志也。是以有力者遇之，熟视之若无睹也。其死其生，固不可知也。今又有有力者当其前矣，聊试仰首一鸣号焉。庸讵知有力者不哀其穷，而忘一举手一投足之劳而转之清波乎？其哀之，命也；其不哀之，命也；知其在命而且鸣号之者，亦命也。愈今者实有类于是，是以忘其疏愚之罪，而有是说焉。阁下其亦怜察之！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>某月某日，韩愈再拜（书信用语，表示自谦）：<br>天池的边上，大江的水边，传说：有怪物存在，大概不是平常鱼类水兽等动物可以比得上的。它得了水，就能呼风唤雨，上天下地都很容易。如果得不到水，也就是寻常所见的那种形状，不用广阔险峻的高山土丘就能把它困住。然而它在没有水的时候，不能自己造出水来。它们十次有八九次被獱獭（一般的水兽）之流嘲笑。如果碰到有力量的人，可怜它们的窘境而把它们运输转移（到有水的地方），只不过是举手之劳。但是这种怪物，报负和一般东西不同，它会说：“就算烂死在沙泥里，我也高兴。如果俯首帖耳，摇尾乞怜，不是我的志向。”因此有能力帮它的人遇到他们，熟视无睹，就像没看见一般。他的死活，我们也无从知道了。<br>如今又有一个有能力的人走到它的面前，姑且试着抬头鸣叫一声（因为有能力的人已经对他们习惯而视而不见了），哪里知道有能力的人不可怜它的窘境，而忘记了举手之劳，把它转移到水里边？别人可怜它，是它的命。别人不可怜它，也是它的命。知道生死有命还鸣号求助的，也是它的命。我（韩愈）如今确实有点类似于它，所以不顾自己的浅陋，而写下这些话，希望阁下您垂怜并理解我！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>应科目时与人书：本文为贞元九年（公元793年）韩愈参加博学宏词科考试时写给别人的求荐信。<br>濆（fén）：水边。<br>常鳞凡介（cháng lín fán jiè）：解释一般的鱼类、贝类。比喻平凡的人。<br>品汇匹俦：指同一类东西。<br>獱（biān）獭：水獭，半水栖动物。<br>於（yú）：多作为介词，是古汉语中用的很多的虚词。<br>庸讵：通“岂、怎么、何以”。<br>忘：通“无、没有”。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《应科目时与人书》作于贞元九年（公元793年）。韩愈以进士出身参加博学宏词科考试时写给韦舍人的信，目的是希望能帮他做些宣传，以扩大影响。但并不直言其事，而是通过生动的比喻，巧妙地把自己的处境、心性、要求和对方的身份、作用，深刻具体地表现了出来。行文气势磅薄，曲折多变；态度不卑不亢，很有分寸。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：汤贵仁</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>贞元八年（792）韩愈中进士，随后，连续三应宏词科而不中。这篇《应科目时与人书》当是他应宏词科考试时求人荐举而作。写信托物以喻，曾国藩说事类滑稽，其实是韩愈的一大发明创造，将难于言说之词，托比兴抒发，颇见文采风流。<br>书信正文，首出“天池之滨，大江之濆，曰有怪物焉”，飘然而来，出人不意。濆与滨，皆水边。水边怪物，自与水相关，故下文就围绕着水和怪物的关系铺叙。不过，韩愈每故作腾挪，以掀波浪，在“有怪物...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">韩愈诗文鉴赏辞典</span>
+                    <span class="author-name">作者：汤贵仁</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>贞元八年（792）韩愈中进士，随后，连续三应宏词科而不中。这篇《应科目时与人书》当是他应宏词科考试时求人荐举而作。写信托物以喻，曾国藩说事类滑稽，其实是韩愈的一大发明创造，将难于言说之词，托比兴抒发，颇见文采风流。<br>书信正文，首出“天池之滨，大江之[插图]，曰有怪物焉”，飘然而来，出人不意。[插图]与滨，皆水边。水边怪物，自与水相关，故下文就围绕着水和怪物的关系铺叙。不过，韩愈每故作腾挪，以掀波浪...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="https://baike.baidu.com/item/%E5%BA%94%E7%A7%91%E7%9B%AE%E6%97%B6%E4%B8%8E%E4%BA%BA%E4%B9%A6/2983996?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

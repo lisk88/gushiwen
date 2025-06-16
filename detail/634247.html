@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送孟东野序 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">送孟东野序</h1>
+            <div class="poem-author">【唐】韩愈</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>大凡物不得其平则鸣：草木之无声，风挠之鸣；水之无声，风荡之鸣。其跃也或激之，其趋也或梗之，其沸也或炙之。金石之无声，或击之鸣。人之于言也亦然，有不得已者而后言，其歌也有思，其哭也有怀，凡出乎口而为声者，其皆有弗平者乎！乐也者，郁于中而泄于外者也，择其善鸣者而假之鸣：金、石、丝、竹、匏、土、革、木八者，物之善鸣者也。维天之于时也亦然，择其善鸣者而假之鸣。是故以鸟鸣春，以雷鸣夏，以虫鸣秋，以风鸣冬，四时之相推敓，其必有不得其平者乎！</p><p>其于人也亦然。人声之精者为言，文辞之于言，又其精也，尤择其善鸣者而假之鸣。其在唐虞，咎陶、禹其善鸣者也，而假以鸣。夔弗能以文辞鸣，又自假于《韶》以鸣。夏之时，五子以其歌鸣。伊尹鸣殷，周公鸣周。凡载于《诗》《书》六艺，皆鸣之善者也。周之衰，孔子之徒鸣之，其声大而远。《传》曰：“天将以夫子为木铎。”其弗信矣乎！其末也，庄周以其荒唐之辞鸣。楚，大国也，其亡也，以屈原鸣。臧孙辰、孟轲、荀卿，以道鸣者也。杨朱、墨翟、管夷吾、晏婴、老聃、申不害、韩非、昚到、田骈、邹衍、尸佼、孙武、张仪、苏秦之属，皆以其术鸣。秦之兴，李斯鸣之。汉之时，司马迁、相如、扬雄，最其善鸣者也。其下魏、晋氏，鸣者不及于古，然亦未尝绝也。就其善鸣者，其声清以浮，其节数以急，其词淫以哀，其志弛以肆，其为言也，乱杂而无章。将天丑其德，莫之顾耶？何为乎不鸣其善鸣者也？</p><p>唐之有天下，陈子昂、苏源明、元结、李白、杜甫、李观，皆以其所能鸣。其存而在下者，孟郊东野，始以其诗鸣，其高出魏晋，不懈而及于古，其他浸淫乎汉氏矣。从吾游者，李翱、张籍其尤也。三子者之鸣信善矣，抑不知天将和其声而使鸣国家之盛耶？抑将穷饿其身，思愁其心肠而使自鸣其不幸耶？三子者之命，则悬乎天矣。其在上也奚以喜，其在下也奚以悲？东野之役于江南也，有若不释然者，故吾道其命于天者以解之。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>大概各种东西不能处于平静就会发出声音。草木本来是没有声响的，风吹动它，它就发出声响。水本来是没有声响的，风激荡它，它就发出声响。水浪跳跃，是有东西在阻遏水势，水流快速，是有东西阻塞了它。水沸腾了，是有东西在烧它。钟、磐一类乐器本来是没有声音的，有人敲击它就会发出声响。人在言论上也是这样，有了不可抑制的感情然后才表达出来，他们歌唱是有了思念的感情，他们痛哭是有所怀念。凡是从口中发出来成为声音的，大概都是有不平的原因吧！<br>音乐，是由在心里郁结的情感然后向外发泄出来的，它常常借用那些发音最好的东西来发出声音。金、石、丝、竹、匏、土、革、木八种乐器，是各种器物中发音最好的。自然界对于时令的变化也是这样，选择那些发音最好的东西借以发出声音。所以用鸟声表示春天，用雷声表示夏天，用虫声表示秋天，用风声表示冬天，四季的推移变化，那必定是有不得平静的原因吧！<br>对于人来说也是这样。人的声音的精华是语言，文辞对于语言来说，又是其中的精华，尤其要选择善于用文辞发音的人，来借他们发音。在唐尧、虞舜时代，咎陶、夏禹是最善于用文辞发音的，就借他们来发出时代的声音。夔不能用文辞发音，自己就借着《韶》乐来发音。夏朝时，太康的五个弟弟用他们的歌来发音。伊尹为商朝发出了声音，周公为周朝发出了声音。凡是记载在《诗经》、《尚书》等六经上的文辞，都是文辞中发音发得最好的。周朝衰落时，孔子一班人发出了声音，他们的声音宏大而且传得长远。《论语》说：“上天要让孔子成为宣扬教化的人。”难道不是真的吗？周朝末期，庄周用他广大无边的文辞来发出声音。楚，是一个大国，到了灭亡时屈原用楚辞来发出声音。臧孙辰、孟轲、荀卿用儒道学说来发出声音。杨朱、墨翟、管夷吾、晏婴、老聃、申不害、韩非、昚到、田骈、邹衍、尸佼、孙武、张仪、苏秦一类人，都用他们各自的学说来发出声音。秦朝兴起时，李斯用文辞来发出声音。汉朝时，司马迁、司马相如、扬雄等是最善于用文辞发出声音的。这以下到魏、晋两朝，用文辞发出声音的人都赶不上古代，但也从来没有中断过。就其中好的来说，他们用文辞发出的声音清丽而浮华，节奏频繁而急促，语言放荡而哀婉，思想松弛而放纵，他们作的文章，杂乱而没有法度。这大概是上天认为他们德行不好而不肯照顾他们吧！为什么不让发音最好的人来发出声音呢？<br>唐朝得到天下以后，陈子昂、苏源明、元结、李白、杜甫、李观，都是用他们的才能、用文辞来发出声音的。那些活在世上晚于他们的人中间，孟郊开始用他的诗来发出声音。他的诗超过魏晋的作品，其中精妙的已经赶得上古代作品，其它作品也逐渐接近汉朝作品的水平了。同我一起交游的人中，李翱和张籍是其中突出的。这三个人用文辞发出声音的确是很好的，但是不知道上天要使他们的声音和谐，而使他们为国家的兴盛发出声音呢？还是要使他们穷困饥饿、心情悲伤愁苦，让他们为自己的不幸发出声音呢？这三个人的命运，就决定于上天了。他们身居高位，有什么可高兴呢，身居下位，又有什么可悲哀呢！东野这次到江南去任职，好像心里放不开似的，所以我讲了命运由上天决定的道理来安慰他。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>挠：摇动。<br>荡：振动、振荡。<br>跃：飞溅。<br>激：在此意为阻遏。<br>趋：快走，此指水流迅速。<br>梗：堵塞。<br>炙：烧。<br>思：思虑。<br>怀：感伤。<br>乐：音乐。<br>郁：郁结、蓄积。<br>假：借助。<br>金、石、丝、竹、匏、土、革，木八者：我国古代制作乐器的八种材料，一般用来指代各种乐器。金，指钟；石，指磬；丝，指琴、瑟；竹，指箫、笛；匏，指笙、竽；土，指埙；革，指鼗、鼓；木，指祝、敔。<br>时：季节。<br>推敓（duó）：推移、交替。敓，同“夺”。<br>唐：帝尧的国号，<br>虞：帝舜的国号。<br>咎陶：又作“皋陶”、“咎繇”。舜的臣子，掌管司法，制定法律。<br>禹：原为舜臣，后来成为夏代第一个国王。<br>夔：舜时乐官。<br>《韶》：相传为舜时乐曲名，由夔制作。<br>五子：夏王太康的五个弟弟，作《五子之歌》。太康以淫佚失国，五子作歌陈述大禹的警戒。<br>伊尹：商代的贤相，作《伊训》、《太甲》等文。<br>周公：即姬旦，周武王弟，成王之叔，作《大诰》、《多士》、《无逸》等，相传制定了《周礼》、《仪礼》。<br>《诗》：《诗经》。<br>《书》：《尚书》。<br>六艺：指《诗经》、《尚书》、《易》、《礼》、《乐》、《春秋》六经。<br>孔子：儒家创始人，他的弟子将他的言论集为《论语》一书。<br>木铎：木舌的铃。<br>庄周：战国时哲学家，思想家，道家代表人物，著《庄子》。<br>荒：广大。<br>唐：空阔。<br>屈原：战国时楚人，我国古代著名诗人，著有《离骚》、《九歌》、《九章》等诗篇。<br>臧孙辰：春秋时鲁国人，其言论见《国语》，《左传》。<br>孟轲：战国时人，儒家代表人物，其言行见《孟子》。<br>荀卿：战国时人，其言行见《荀子》。<br>杨朱：战国时思想家。墨翟：战国时人，墨家学派创始人，其言行见《墨子》，管夷吾：春秋时政治家，其言论见《管子》。<br>晏婴：春秋时齐国大夫，其言行见《晏子春秋》。<br>老聃：即李耳，春秋时人，道家学派创始人，著有《道德经》。<br>韩非：战国末人，法家著名代表人物，著有《韩非子》。<br>昚到：战国人，作有《昚子》、已佚。昚，古同“慎”。<br>田骈：战国时人，著有《田子》，已佚。<br>邹衍：又作驺衍，战国末人，阴阳家，著有《终始》、《大圣》。<br>尸佼：战国人，著有《尸子》。<br>孙武：春秋时著名军事家，著有《孙子》。<br>张仪、苏秦：战国时纵横家，分别著有《张子》、《苏子》，已佚。<br>李斯：战国末人，曾任秦国丞相，著有《谏逐客书》、《论督责书》，见于《史记》。<br>司马迁：西汉时人，著名史学家，文学家，著有《史记》。相如：即司马相如，西汉著名辞赋家。<br>扬雄：西汉著名儒学家兼辞赋家，著有《太玄》、《法言》等。<br>魏、晋氏：魏、晋两朝。<br>节：音节、节拍。<br>数：频繁、细密。<br>弛：松懈。<br>肆：放肆。<br>无章：没有法度。<br>丑：厌恶。形容词用如动词。<br>陈子昂等：均为唐代著名文学家。<br>浸淫：渗透，接近。<br>从吾游者：指跟作者学习的人。<br>尤：特出、杰出。<br>奚以：何以。<br>役：股役，此指“供职”。<br>释然：舒畅、开心。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《送孟东野序》是唐代文学家韩愈为孟郊去江南就任溧阳县尉而作的一篇赠序。全文主要针对孟郊“善鸣”而终生困顿的遭遇进行论述，作者表面上说这是由天意决定的，实则是一种委婉其辞的含蓄表达，是指斥当时的社会和统治者不重视人才，而不是在宣扬迷信。文章屡用排比句式，抑扬顿挫，波澜层叠，气势奔放；而立论卓异不凡，寓意深刻，是议论文中的佳制。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：钱伯城</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孟郊（751—814），字东野，著名诗人，韩愈敬爱的朋友。他五十岁成进士，又四年，选为溧阳尉，即序末所说的“役于江南”；去一个小县份做一个小官，对有才能的人来说不是得意的事，故序中说他“有若不释然者”，所以韩愈作此序赠行，为他解譬。又序中与孟郊并列提到的李翱与张籍二人，都从韩愈学古文，受到韩愈的器重，后来都成为有名的学者、诗人。韩愈作此文在唐德宗贞元十八年（802），年三十五岁。孟郊比他年长十九岁...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">韩愈诗文鉴赏辞典</span>
+                    <span class="author-name">作者：钱伯城</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孟郊（751—814），字东野，著名诗人，韩愈敬爱的朋友。他五十岁成进士，又四年，选为溧阳尉，即序末所说的“役于江南”；去一个小县份做一个小官，对有才能的人来说不是得意的事，故序中说他“有若不释然者”，所以韩愈作此序赠行，为他解譬。又序中与孟郊并列提到的李翱与张籍二人，都从韩愈学古文，受到韩愈的器重，后来都成为有名的学者、诗人。韩愈作此文在唐德宗贞元十八年（802），年三十五岁。孟郊比他年长十九岁...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/876323.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

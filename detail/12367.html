@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石灰吟 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">石灰吟</h1>
+            <div class="poem-author">【明】于谦</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>千锤万凿出深山，烈火焚烧若等闲。</p><p>粉骨碎身浑不怕，要留清白在人间。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>（石灰石）只有经过千万次锤打才能从深山里开采出来。它把熊熊烈火的焚烧当作很平常的一件事，即使粉身碎骨也毫不惧怕，甘愿把一身清白留在人世间。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>石灰吟：赞颂石灰。吟，吟颂，指古代诗歌体裁的一种名称（古代诗歌的一种形式）。<br>千锤万凿：无数次的锤击开凿，形容开采石灰非常艰难。千、万：虚词，形容很多；锤，锤打；凿，开凿。<br>若等闲：好像很平常的事情。若，好像、好似；等闲，平常、轻松。<br>浑不怕：一作「全不惜」、一作「全不怕」、一作「全不顾」。<br>清白：指石灰洁白的本色，又喻高尚的节操。<br>人间：人世间。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这首托物言志诗的咏物诗，采用象征手法，字面上是咏石灰，实际藉物喻人，托物寄怀，表现了诗人高洁的理想。整首诗笔法凝炼，一气呵成，语言质朴自然，不事雕琢，感染力很强；尤其是作者那积极进取的人生态度和大无畏的凛然正气更给人以启迪和激励。<br>这是一首托物言志诗，若只是事物的机械实录而不寄寓作者的深意，那就没有多大价值。这首诗的价值就在于处处以石灰自喻，咏石灰即是咏自己磊落的襟怀和崇高的人格。<br>首句「千锤万凿出深山」是形容开采石灰石很不容易。次句「烈火焚烧若等闲」。「烈火焚烧」，当然是指烧炼石灰石。加「若等闲」三字，又使人感到不仅是在写烧炼石灰石，它似乎还象征着志士仁人无论面临着怎样严峻的考验，都从容不迫，视若等闲。第三句「粉身碎骨浑不怕」。「粉身碎骨」极形象地写出将石灰石烧成石灰粉，而「全不怕」三字又使我们联想到其中可能寓有不怕牺牲的精神。至于最后一句「要留清白在人间」更是作者在直抒情怀，立志要做纯洁清白的人。作者于谦为官廉洁正直，曾平反冤狱，救灾赈荒，深受百姓爱戴。明英宗时，瓦剌入侵，英宗被俘。于谦议立景帝，亲自率兵固守北京，击退瓦剌，使人民免遭蒙古贵族再次野蛮统治。但英宗复辟后却以「谋逆罪」诬杀了这位民族英雄。这首《石灰吟》可以说是于谦生平和人格的真实写照。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元明清诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：铁, 明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“日月双悬于氏墓，乾坤半壁岳家祠”（张煌言诗），于谦是一位与岳飞齐名的民族英雄，又是一位廉洁、正直的清官，可与包拯、海瑞同垂青史。他十七岁时写了一首石灰的赞歌：《石灰吟》，通过对石灰制作过程的拟人化的描绘，表达了他不怕艰险、勇于牺牲的大无畏精神和为人清白正直的崇高志向。<br>“千锤万击出深山，烈火焚烧若等闲”。石灰是由石灰岩烧制而成。第一句写石灰岩的开采，要经过石工们“千锤万击”，将整块整块的岩石凿开...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">元明清诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：铁明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“日月双悬于氏墓，乾坤半壁岳家祠”（张煌言诗），于谦是一位与岳飞齐名的民族英雄，又是一位廉洁、正直的清官，可与包拯、海瑞同垂青史。他十七岁时写了一首石灰的赞歌：《石灰吟》，通过对石灰制作过程的拟人化的描绘，表达了他不怕艰险、勇于牺牲的大无畏精神和为人清白正直的崇高志向。</p><p>“千锤万击出深山，烈火焚烧若等闲”。石灰是由石灰岩烧制而成。第一句写石灰岩的开采，要经过石工们“千锤万击”，将整块整块的岩石凿...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：铁明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“千锤万凿出深山，烈火焚烧若等闲。”石灰是由石灰岩烧制而成。第一句写石灰岩的开采，要经过石工们“千锤万凿”，将整块整块的岩石凿开击碎，然后将它们运出云封雾锁、险峻陡峭的深山。石灰岩之“出深山”，要经受“千锤万凿”，说明这种山石具有何等坚硬的质地！当然，“出深山”还仅仅是开始，一个主要制作过程是：石灰岩要投入石灰窑中煅烧，而且要用高达九百多度的“烈火”才能煅烧成坚硬的生石灰。如果石灰岩有知，遭受如此...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代励志诗鉴赏：生当作人杰</span>
+                    <span class="author-name">作者：张铁明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“日月双悬于氏墓，乾坤半壁岳家祠”（张煌言诗），于谦是一位与岳飞齐名的民族英雄，又是一位廉洁、正直的清官，可与包拯、海瑞同垂青史。他十七岁时写了一首石灰的赞歌：《石灰吟》，通过对石灰制作过程的拟人化的描绘，表达了他不怕艰险、勇于牺牲的大无畏精神和为人清白正直的崇高志向。</p><p>“千锤万击出深山，烈火焚烧若等闲”。石灰是由石灰岩烧制而成。第一句写石灰岩的开采，要经过石工们“千锤万击”，将整块整块的岩石凿...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/166807.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

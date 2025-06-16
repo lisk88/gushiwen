@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蹇叔哭师 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">蹇叔哭师</h1>
+            <div class="poem-author">【周】左丘明</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>杞子自郑使告于秦曰：“郑人使我掌其北门之管，若潜师以来，国可得也。”穆公访诸蹇叔。蹇叔曰：“劳师以袭远，非所闻也。师劳力竭，远主备之，无乃不可乎？师之所为，郑必知之。勤而无所，必有悖心。且行千里，其谁不知？”公辞焉。召孟明、西乞、白乙使出师于东门之外。蹇叔哭之曰：“孟子！吾见师之出而不见其入也。”公使谓之曰：“尔何知！中寿，尔墓之木拱矣！”</p><p>蹇叔之子与师，哭而送之，曰：“晋人御师必于崤，崤有二陵焉。其南陵，夏后皋之墓也；其北陵，文王之所辟风雨也，必死是间，余收尔骨焉！”秦师遂东。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>秦国大夫杞子从郑国派人向秦国报告说：“郑国人让我掌管他们国都北门的钥匙，如果悄悄派兵前来，就可以占领他们的国都。”秦穆公向秦国老臣蹇叔征求意见。蹇叔说：“让军队辛勤劳苦地偷袭远方的国家，我从没听说有过。军队辛劳精疲力竭，远方国家的君主又有防备，这样做恐怕不行吧？军队的一举一动，郑国必定会知道。军队辛勤劳苦而一无所得，一定会产生叛逆念头。再说行军千里，有谁不知道呢？”秦穆公没有听从蹇叔的意见。他召见了孟明视，西乞术和白乙丙三位将领，让他们从东门外面出兵。蹇叔哭他们说：“孟明啊，我看着大军出发，却看不见他们回来了！”秦穆公派人对蹇叔说：“你知道什么？要是你蹇叔只活个中寿就去世的话，你坟上的树都有两手合抱一般粗了。”<br>蹇叔的儿子跟随军队一起出征，他哭着送儿子说：“晋国人必定在崤山抗击我军，崤有两座山头。南面的山头是夏王皋的坟墓，北面的山头是周文王避过风雨的地方。你们一定会战死在这两座山之间，我到那里收拾你的尸骨吧。”于是秦国军队东行。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>杞子：秦国大夫。<br>掌：掌管。管，钥匙。<br>潜：秘密地。<br>国：国都。<br>访：询问，征求意见。<br>远主：指郑君。<br>勤：劳苦。无所：一无所得。<br>悖（bèi）心：违逆之心，反感。<br>孟明：秦国大夫，姜姓，百里氏，名视，字孟明。秦国元老百里奚之子。西乞：秦国大夫，字西乞，名术。秦国元老蹇叔之子。白乙：秦国大夫，字白乙，名丙。秦国元老蹇叔之子。这三人都是秦国将军。<br>中（zhōng）寿：有两种解释。1.参见中寿。2.中等年纪。不管哪种解释，就句意，均为秦穆王讽刺蹇叔现已年老昏聩，要是你蹇叔只活个差不多就去世的话，你坟上的树都有两手合抱一般粗了。<br>拱：两手合抱。<br>肴（xiáo）：同崤，山名，在今河南洛宁西北。<br>陵：大山。崤山有两陵，南陵和北陵，相距三十里，地势险要。<br>夏后皋：夏代君主，名皋，夏桀的祖父。后：国君。<br>尔骨：你的尸骨，焉：在那里。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·僖公三十二年》。公元前627年，秦穆公发兵攻打郑国，他打算和安插在郑国的奸细里应外合，夺取郑国都城。秦伯向蹇叔咨询。他凭着自己漫长的阅历和丰富的政治经验，根据秦、晋、郑三方情况，将潜在的危险无不一一道出，对“劳师以袭远”的违反常识的愚蠢行径作了彻底的否定，指出袭郑必败无疑。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：张, 敏</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>鲁僖公三十三年（前627），在晋国发生了著名的殽之战。使后世人们得以了解这场战争始末的，就是记事散文《秦晋殽之战》。<br>提起战争，似乎就意味着厮杀；许多记述战争的文字也大都写了这些。《秦晋殽之战》不然，它没有一处从正面描述这次大战，只写了这样一些场景：<br>晋文公显灵。公元前628年冬天，晋文公死了。移灵出国都绛的时候，忽然棺材里发出如牛的吼声。卜筮之官名偃的立即叫众大臣拜伏在地，说：“君命大事，将有西...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>惠崇春江晚景（其一） - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">惠崇春江晚景（其一）</h1>
+            <div class="poem-author">【宋】苏轼</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>竹外桃花三两枝，春江水暖鸭先知。</p><p>蒌蒿满地芦芽短，正是河豚欲上时。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>竹林外两三枝桃花初放，鸭子在水中游戏，它们最先察觉了初春江水的回暖。河滩上已经满是蒌蒿，芦笋也开始抽芽，而河豚此时正要逆流而上，从大海回游到江河里来了。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>惠崇（亦为慧崇）：福建建阳僧，宋初九僧之一，能诗能画。<br>《春江晚景》：惠崇所作画名，共两幅，一幅是鸭戏图，一幅是飞雁图。钱锺书《宋诗选注》中为「晓景」。诸多注本，有用「晓景」、有用「晚景」，此从《东坡全集》及清以前注本用「晚景」。这两诗是作者元丰八年春天在靖江欲南返时江边情景的写照。<br>蒌蒿：草名，有青蒿、白蒿等种。《诗经》「呦呦鹿鸣，食野之蒿。」<br>芦芽：芦苇的幼芽，可食用。<br>河豚：鱼的一种，学名「鲀」，肉味鲜美，但是卵巢和肝脏有剧毒。产于我国沿海和一些内河。每年春天逆江而上，在淡水中产卵。<br>上：指逆江而上。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这首诗成功地写出了早春时节的春江景色，苏轼以其细致、敏锐的感受，捕捉住季节转换时的景物特征，抒发对早春的喜悦和礼赞之情。全诗春意浓郁、生机蓬勃，给人以清新，舒畅之感。诗人苏轼提出「诗画本一律，天工与清新」（《书鄢陵王主簿所画折枝二首》），「诗中有画，画中有诗」（《东坡题跋·卷五·书摩诘蓝田烟雨图》），在他的这首题画诗《惠崇春江晚景》中得到了很好的验证。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，一题作《惠崇春江晚景》，或题作《书衮仪所藏惠崇画》，是苏轼于神宗元丰八年（1085）在汴京（今河南开封）写的一首题画诗。一首好的题画诗，既要点明画面，使人如见其画，又要跳出画面，使人画外见意，从而既再现了画境，又扩展和深化了画境。<br>惠崇是能诗善画的僧人，郭若虚《图画见闻志》称其“工画鹅、雁、鹭鹚，尤工小景，善为寒汀远渚，萧洒虚旷之象”。这首诗所题的惠崇画，是一幅以早春景物为背景的春江鸭戏图...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">苏轼诗文鉴赏辞典</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，一题作《惠崇春江晚景》，或题作《书衮仪所藏惠崇画》，是苏轼于神宗元丰八年（1085）在汴京（今河南开封）写的一首题画诗。一首好的题画诗，既要点明画面，使人如见其画，又要跳出画面，使人画外见意，从而既再现了画境，又扩展和深化了画境。</p><p>惠崇是能诗善画的僧人，郭若虚《图画见闻志》称其“工画鹅、雁、鹭鹚，尤工小景，善为寒汀远渚，萧洒虚旷之象”。这首诗所题的惠崇画，是一幅以早春景物为背景的春江鸭戏...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，一题作《惠崇春江晚景》，或题作《书衮仪所藏惠崇画》，是苏轼于神宗元丰八年（1085）在汴京（今河南开封）写的一首题画诗。一首好的题画诗，既要点明画面，使人如见其画，又要跳出画面，使人画外见意，从而既再现了画境，又扩展和深化了画境。</p><p>惠崇是能诗善画的僧人，郭若虚《图画见闻志》称其“工画鹅、雁、鹭鹚，尤工小景，善为寒汀远渚，潇洒虚旷之象”。这首诗所题的惠崇画，是一幅以早春景物为背景的春江鸭戏...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>欣赏一幅画，如果只局限在目所能见的范围之内，那么，画笔所描摹、画面所展示的只是景物的色彩、形态、位置、数量、体积。就惠崇的这幅画而言，只画出了桃花之盛开、春江之溶漾、桃枝之在竹外、鸭群之在水上、蒌蒿之密、芦芽之短，这是画家在自然界所能见到的，也是欣赏画的人在画幅上所能见到的。但是，苏轼的这首题画诗，却还写了要凭触觉才能感到的水之“暖”、要用思维才能想出的鸭之“知”、要靠经验和判断才能预言的河豚之“...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代咏春诗鉴赏：春江花月夜</span>
+                    <span class="author-name">作者：陈邦炎</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗，一题作《惠崇春江晚景》，或题作《书衮仪所藏惠崇画》，是苏轼于神宗元丰八年（1085 ）在汴京（今河南开封）写的一首题画诗。</p><p>惠崇是能诗善画的僧人，郭若虚《图画见闻志》称其“工画鹅、雁、鹭鸶，尤工小景，善为寒汀远渚，潇洒虚旷之象”。这首诗所题的惠崇画，是一幅以早春景物为背景的春江鸭戏图。诗的前三句写了六样景物：竹子和竹外开放的桃花、江水和水上浮游的鸭子、布满地面的蒌蒿和新出嫩芽的芦苇。这些...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/9329393.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

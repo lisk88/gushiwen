@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列子 · 汤问 · 愚公移山 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">列子 · 汤问 · 愚公移山</h1>
+            <div class="poem-author">【晋】张湛</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>太行、王屋二山，方七百里，高万仞，本在冀州之南，河阳之北。</p><p>北山愚公者，年且九十，面山而居。惩山北之塞，出入之迂也，聚室而谋曰：「吾与汝毕力平险，指通豫南，达于汉阴，可乎？」杂然相许。其妻献疑曰：「以君之力，曾不能损魁父之丘，如太行、王屋何？且焉置土石？」杂曰：「投诸渤海之尾，隐土之北。」遂率子孙荷担者三夫，叩石垦壤，箕畚运于渤海之尾。邻人京城氏之孀妻有遗男，始龀，跳往助之。寒暑易节，始一反焉。</p><p>河曲智叟笑而止之曰：「甚矣，汝之不惠！以残年余力，曾不能毁山之一毛，其如土石何？」北山愚公长息曰：「汝心之固，固不可彻，曾不若孀妻弱子。虽我之死，有子存焉。子又生孙，孙又生子；子又有子，子又有孙；子子孙孙无穷匮也，而山不加增，何苦而不平？」河曲智叟亡以应。</p><p>操蛇之神闻之，惧其不已也，告之于帝。帝感其诚，命夸娥氏二子负二山，一厝朔东，一厝雍南。自此，冀之南，汉之阴，无陇断焉。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>传说中的太行、王屋两座山，周围七百里，高七八千丈，本来在冀州南边，黄河北岸以北（的地方）。<br>北山下面有个名叫愚公的人，年纪接近九十，向着山居住。他苦于山区北部的阻塞，出来进去都要绕道，就召集全家人商量说：「我跟你们尽力挖平险峻的大山，（使道路）一直通到豫州南部，到达汉水南岸，可以吗？」家人纷纷表示赞同。他的妻子提出疑问说：「凭你的力气，连魁父这座小山都不能削平，能把太行、王屋怎么样呢？况且把土石放到哪里去呢？」众人说：「把它扔到渤海的边上，隐土的北边。」于是愚公率领儿孙中能挑担子的三个人上了山，凿石头，挖土，用簸箕运到渤海边上。邻居京城氏的寡妇有个孤儿，刚七八岁，蹦蹦跳跳地去帮助他。冬夏换季，才能往返一次。<br>河湾上的智叟讥笑愚公，阻止他干这件事，说：「你太不聪明了！就凭借你残余的岁月、剩下的力气连山上的一棵草都动不了，又能把泥土石头怎么样呢？」北山愚公长叹说：「你的思想真顽固，顽固得无法改变，连孤儿寡妇都比不上。即使我死了，还有儿子在呀；儿子又生孙子，孙子又生儿子；儿子又有儿子，儿子又有孙子；子子孙孙无穷无尽，可是山却不会增高，还怕挖不平吗？」河岸上的智叟无话可答。<br>握着蛇的山神听说了这件事，怕他不停地挖下去，就向天帝报告了。天帝被愚公的诚心感动，命令大力神夸娥氏的两个儿子背走了那两座山，一座放在朔方的东部，一座放在雍州的南部。从此以後，冀州的南部直到汉水南岸，再也没有高山阻隔了。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>太行山：在黄土高原和华北平原之间。<br>王屋山：在山西阳城、垣曲与河南济源之间。<br>方：方圆，指面积，这里指周围的意思。<br>仞（rèn）：古代长度单位，以七尺或八尺为一仞。<br>冀州：古地名，包括现在河北省，山西省，河南省黄河以北，辽宁省辽河以西的地区。<br>河阳：黄河北岸。山的北面和江河的南面叫做阴，山的南面和江河的北面叫做阳。<br>且：副词，将近。<br>面山而居：面对着山居住，即住在山北。<br>惩（chéng）：戒，这里是「苦于、为什么所苦」的意思。<br>塞（sè）：阻塞。<br>迂（yū）：曲折、绕远。<br>聚室而谋：集合全家来商量。室，家。<br>汝：你。这里做複数看，为「你们」的意思。<br>毕力平险：尽全力铲除险峻的大山。<br>指通豫南：一直通向豫州的南部。指，直；豫州，古地名，在今河南省黄河以南。<br>汉阴：汉，就是汉水；阴，山的北面或水的南面叫阴。<br>献疑：提出疑问。<br>以：凭借。<br>杂然相许：纷纷表示赞成。杂然，纷纷的样子；许，赞同。<br>损：削减。<br>曾（zēng）：副词，加强否定语气，可译为「连……也……」，常与「不」连用。<br>魁（kuí）父：古代一座小山的名称，在现今河南省开封县陈留镇境内。<br>丘：土堆。<br>且：况且。<br>置：安放。<br>焉：疑问代词，哪里。<br>荷（hè）：扛的意思。<br>夫：成年男子。<br>箕畚（jīběn）：簸箕，一种用竹片或柳条编成的器具。这里是用箕畚装土石的意思。<br>孀（shuāng）：孀妻，寡妇。<br>遗男：遗孤，单亲孤儿，遗腹子。<br>龀（chèn）：儿童换牙齿，乳齿脱落後重新长恒齿。这里始龀表示年龄，约七八岁。龀，换牙。<br>寒暑易节：冬夏换季，指一年的时间。易，交换；节，季节。<br>始一反焉：才往返一次。反，通「返」往返；焉，语气助词。<br>河曲：古地名，在今山西省芮城县西。<br>叟（sǒu）：老头。<br>惠：同「慧」，聪明。不惠，指愚蠢。<br>其：在「如什么何」前面加强反问语气。<br>长息：长叹。<br>一毛：一草一木，地面所生的草木，这里指山的一小部分。<br>汝心之固，固不可彻：你思想顽固，顽固到了不可改变的地步。彻，通。<br>匮（kuì）：竭尽的意思。一作“尽”。<br>虽我之死：即使我死了。虽，即使；之，用在主谓之间，无实意。<br>苦：愁。<br>亡（wú）以应：没有话来回答。亡，通「无」。<br>操蛇之神：神话中的山神，手里拿着蛇，所以叫操蛇之神。操，持。<br>惧其不已：怕他不停地干下去。其，愚公；已，停止。<br>帝：神话中的天帝。<br>感其诚：被他的诚心所感动。感，被什么感动。<br>夸娥氏：神话中力气很大的神。<br>负：背。<br>厝（cuò）：同「措」，放置。<br>朔东：就是朔方以东地区，指山西省的东部。<br>雍：就是雍州，在现今陕西、甘肃省一带地区。<br>陇断：即垄断，山冈高地。陇，通「垄」。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《愚公移山》选自《列子·汤问》，作者是春秋战国的列禦寇。讲述了愚公不畏艰难，坚持不懈，挖山不止，最终感动天帝而将山挪走的故事。愚公家门前有两座大山挡着路，他决心把山平掉，另一个「聪明」的智叟笑他太傻，认为不能。愚公说：「我死了有儿子，儿子死了还有孙子，子子孙孙无穷无尽的，又何必担心挖不平呢？」後因感动天帝，所以天帝命夸娥氏的两个儿子搬走两座山。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代赋鉴赏辞典</span>
+                    <span class="author-name">作者：刘竞飞</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本赋所敷衍的愚公移山的故事，人人耳熟能详。其本出于《列子·汤问》，是夏革向殷汤所讲述的十数个充满奇幻色彩的故事之一。<br>“太行、王屋二山，方七百里，高万仞”，《列子·汤问》起首说山，本赋便也从山写起：“止万物者艮”，艮是《易经》中的卦名，象征着山，山高则意味着阻断，故其曰“止万物”。而和《汤问》不同的是，赋者紧接着跟了一句“会万灵者人”。这样，只通过一组对句，赋者便构建起了一种自然（山）与人的二元关...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://www.baike.baidu.com/view/29280.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

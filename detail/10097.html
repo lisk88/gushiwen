@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茅屋为秋风所破歌 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">茅屋为秋风所破歌</h1>
+            <div class="poem-author">【唐】杜甫</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>八月秋高风怒号，卷我屋上三重茅。茅飞渡江洒江郊，高者挂罥长林梢，下者飘转沉塘坳。</p><p>南村群童欺我老无力，忍能对面为盗贼。公然抱茅入竹去，唇焦口燥呼不得，归来倚杖自叹息。</p><p>俄顷风定云墨色，秋天漠漠向昏黑。布衾多年冷似铁，娇儿恶卧踏里裂。床头屋漏无干处，雨脚如麻未断绝。自经丧乱少睡眠，长夜沾湿何由彻！</p><p>安得广厦千万间，大庇天下寒士俱欢颜！风雨不动安如山。呜呼！何时眼前突兀见此屋，吾庐独破受冻死亦足！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>八月里秋深，狂风怒号，狂风卷走了我屋顶上好几层茅草。茅草乱飞，渡过浣花溪，散落在对岸江边。飞得高的茅草缠绕在高高的树梢上，飞得低的飘飘洒洒沉落到池塘和洼地里。<br>南村的一群儿童欺负我年老没力气，竟忍心这样当面做「贼」抢东西，毫无顾忌地抱着茅草跑进竹林去了。我嘴唇干燥也喝止不住，回来后拄着拐杖，独自叹息。<br>一会儿风停了，天空中乌云像墨一样黑，深秋天空阴沉迷蒙渐渐黑下来了。布被盖了多年，又冷又硬，像铁板似的。孩子睡觉姿势不好，把被子蹬破了。一下雨屋顶漏水，屋内没有一点儿干燥的地方，房顶的雨水像麻线一样不停地往下漏。自从安史之乱之后，我睡眠的时间很少，长夜漫漫，屋漏床湿，怎能挨到天亮。<br>如何能得到千万间宽敞高大的房子，普遍地庇覆天下间贫寒的读书人，让他们开颜欢笑，房子在风雨中也不为所动，安稳得像是山一样？唉！什么时候眼前出现这样高耸的房屋，到那时即使我的茅屋被秋风所吹破，我自己受冻而死也心甘情愿！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>秋高：秋深。<br>怒号（háo）：大声吼叫。<br>三重（chóng）茅：几层茅草。三，泛指多。<br>挂罥（juàn）：挂着，挂住。罥，挂。<br>长（cháng）：高。<br>塘坳（ào）：低洼积水的地方（即池塘）。塘，一作“堂”。坳，水边低地。<br>忍能对面为盗贼：竟忍心这样当面做“贼”。忍能，忍心如此。对面，当面。为，做。<br>入竹去：进入竹林。<br>呼不得：喝止不住。<br>俄顷（qǐng）：不久，一会儿，顷刻之间。<br>秋天漠漠向昏黑（古音念hè）：指秋季的天空阴沉迷蒙，渐渐黑了下来。<br>布衾（qīn）：布质的被子。衾，被子。<br>娇儿恶卧踏里裂：孩子睡相不好，把被里都蹬坏了。恶卧，睡相不好。裂，使动用法，使……裂。<br>床头屋漏无干处：意思是，整个房子都没有干的地方了。屋漏，根据《辞源》释义，指房子西北角，古人在此开天窗，阳光便从此处照射进来。「床头屋漏」，泛指整个屋子。<br>雨脚如麻：形容雨点不间断，像下垂的麻线一样密集。雨脚，雨点。<br>丧（sāng）乱：战乱，指安史之乱。<br>沾湿：潮湿不干。何由彻：如何才能挨到天亮。彻，彻晓。<br>安得：如何能得到。<br>广厦（shà）：宽敞的大屋。<br>大庇（bì）：全部遮盖、掩护起来。庇，遮盖，掩护。<br>寒士：“士”原指士人，即文化人，但此处是泛指贫寒的士人们。<br>欢颜：喜笑颜开。<br>呜呼：书面感叹词，表示叹息，相当于“唉”。<br>突兀（wù）：高耸的样子，这里用来形容广厦。见（xiàn）：通“现”，出现。<br>庐：茅屋。<br>亦：一作“意”。<br>足：值得。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗是唐代伟大诗人杜甫旅居四川成都草堂期间创作的一首歌行体古诗。此诗叙述作者的茅屋被秋风所破以致全家遭雨淋的痛苦经历，抒发了自己内心的感慨，体现了诗人忧国忧民的崇高思想境界，是杜诗中的典范之作。全篇可分为四段，第一段写面对狂风破屋的焦虑；第二段写面对群童抱茅的无奈；第三段写遭受夜雨的痛苦；第四段写期盼广厦，将苦难加以升华。前三段是写实式的叙事，诉述自家之苦，情绪含蓄压抑；后一段是理想的升华，直抒忧民之情，情绪激越轩昂。前三段的层层铺叙，为后一段的抒情奠定了坚实的基础，如此抑扬曲折的情绪变换，完美地体现了杜诗”沉郁顿挫“的风格。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>乾元三年（760）的春天，杜甫求亲告友，在成都浣花溪边盖起了一座茅屋，总算有了一个栖身之所。不料到了八月，大风破屋，大雨又接踵而至。诗人长夜难眠，感慨万千，写下了这篇脍炙人口的诗篇。诗写的是自己的数间茅屋，表现的却是忧国忧民的情感。<br>这首诗可分为四节。第一节五句，句句押韵，“号”、“茅”、“郊”、“梢”、“坳”五个开口呼的平声韵脚传来阵阵风声。“八月秋高风怒号，卷我屋上三重茅。”起势迅猛。“风怒号...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>乾元三年（760）的春天，杜甫求亲告友，在成都浣花溪边盖起了一座茅屋，总算有了一个栖身之所。不料到了八月，大风破屋，大雨又接踵而至。诗人长夜难眠，感慨万千，写下了这篇脍炙人口的诗篇。诗写的是自己的数间茅屋，表现的却是忧国忧民的情感。</p><p>这首诗可分为四节。第一节五句，句句押韵，“号”“茅”“郊”“梢”“坳”五个开口呼的平声韵脚传来阵阵风声。“八月秋高风怒号，卷我屋上三重茅。”起势迅猛。“风怒号”三字...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>读惯了老杜的诗作，则没有人会觉得这是一首矫情之作。</p><p>这是一首用血泪写就的诗篇，字字催人泪下，读完痛彻肺腑。老杜一生，坎坷多难，居无定所，曾衣不得暖，食不能饱，遍尝人世艰辛。乱世磨砺了他，也造就了他，是为今日之诗圣“杜甫”。</p><p>“八月秋高风怒号，卷我屋上三重茅。”诗人苦心盖造了一座茅屋，好不容易告别了天为被、地为床的日子，本想安享几日宁静。不料，八月秋至，狂风怒吼，这座茅屋却经受不了风雨的侵袭，在...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>读惯了老杜的诗作，则没有人会觉得这是一首矫情之作。</p><p>这是一首用血泪写就的诗篇，字字催人泪下，读完痛彻肺腑。老杜一生，坎坷多难，居无定所，曾衣不得暖，食不能饱，遍尝人世艰辛。乱世磨砺了他，也造就了他，是为今日之诗圣“杜甫”。</p><p>“八月秋高风怒号，卷我屋上三重茅。”诗人苦心盖造了一座茅屋，好不容易告别了天为被、地为床的日子，本想安享几日宁静。不料，八月秋至，狂风怒吼，这座茅屋却经受不了风雨的侵袭，在...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">杜甫诗歌鉴赏辞典</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>乾元三年（760）的春天，杜甫求亲告友，在成都浣花溪边盖起了一座茅屋，总算有了一个栖身之所。不料到了八月，大风破屋，大雨又接踵而至。诗人长夜难眠，感慨万千，写下了这篇脍炙人口的诗篇。诗写的是自己的数间茅屋，表现的却是忧国忧民的情感。</p><p>这首诗可分为四节。第一节五句，句句押韵，“号”、“茅”、“郊”、“梢”、“坳”五个开口呼的平声韵脚传来阵阵风声。“八月秋高风怒号，卷我屋上三重茅。”起势迅猛。“风怒...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>乾元三年(760)的春天，杜甫求亲告友，在成都浣花溪边盖起了一座茅屋，总算有了一个栖身之所。不料到了八月，大风破屋，大雨又接踵而至。诗人长夜难眠，感慨万千，写下了这篇脍炙人口的诗篇。诗写的是自己的数间茅屋，表现的却是忧国忧民的情感。<br>“安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山”，前后用七字句，中间用九字句，句句蝉联而下，而表现阔大境界和愉快情感的词儿如“广厦”“千万间”“大庇”“天下”“...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/155844.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诗经 · 郑风 · 子衿 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">诗经 · 郑风 · 子衿</h1>
+            <div class="poem-author">【周】无名氏</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>青青子衿，悠悠我心。纵我不往，子宁不嗣音？</p><p>青青子佩，悠悠我思。纵我不往，子宁不来？</p><p>挑兮达兮，在城阙兮。一日不见，如三月兮！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>青青的是你的衣领，悠悠的是我的心境。纵然我不曾去会你，难道你就此断音信？<br>青青的是你的佩带，悠悠的是我的情怀。纵然我不曾去会你，难道你不能主动来？<br>来来往往张眼望啊，在这高高城楼上啊。一天不见你的面啊，好像已有三月长啊！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>子衿：周代读书人的服装。子，男子的美称，这里即指「你」。衿：即襟，衣领。<br>嗣（sì）音：接续，继续。<br>佩：这里指系珮之绶带。<br>挑（tāo）兮达（tà）兮：独自走来走去的样子。挑，《康熙字典》：「《康熙字典》：「《唐韵》：『土刀切』《集韵》《韵会》《正韵》：『他刀切』，？音叨。《诗·郑风》：『挑兮达兮。』《毛传》：『往来相见貌。』《朱传》：『挑，独自徘徊的样子。』」<br>城阙：城门两边的观楼。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗是《诗经》中的一首诗，描写一个女子思念她的心上人。每当看到颜色青青的东西，女子就会想起心上人青青的衣领和青青的佩玉。于是她登上城门楼，就是想看见心上人的踪影。如果有一天看不见，她便觉得如隔三月。全诗充分描写了女子单相思的心理活动，惟妙惟肖，而且意境很美，是一首难得的优美的情歌，成为中国文学史上描写相思之情的经典之作，其中「一日不见，如三月兮」更是千古名句。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">先秦诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：陈如江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>由于孔子曾说过“《诗》三百，一言以蔽之，曰思无邪”（《论语》），经学家便将《诗经》的每首诗都套上“思无邪”的灵光圈，致使一部《诗经》竟成了儒家的道德教科书。如本篇《子衿》，《毛诗序》认为“刺学校废也，乱世则学校不修焉”。孔颖达疏进一步解释说：“郑国衰乱不修学校，学者分散，或去或留，故陈其留者恨责去者之辞，以刺学校之废也。经三章皆陈留者责去者之辞也。”可是我们在诗中实在看不出什么“学校废”的迹象。朱...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是男子亲迎而女子未随之诗。<br>全诗四章。一对青年，本已缔结了婚约。然而待到男方驾车前往亲迎时，情况却起了变化。首二章写女子因这场风波而起的内心悔恨。从诗中看，这一对青年本来是有情的。小伙子长得挺不错，他不仅体魄健壮，而且相貌堂堂。这“丰”“昌”二字从女子口中唱出，说明她是很爱这个小伙子的。然而临到关键时刻，女方却反悔了这门亲事。引起婚姻变故的原因，当是由于女子父母变心。就这样，一场圆满的婚姻被破坏...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是女子焦灼地等候情人之诗。<br>全诗三章。热恋中的青年男女时常为一些细小的缘故而引出层层的心理波澜。此诗中的女子也正处在这种心态之中。从诗中看，在此之前，她与男友的交往是亲密的，感情是融洽的。他俩经常相会，互倾情愫。然而不知何故，这对恋人之间似乎有了一点小的曲折和误会，闹了一点小别扭。她终于有些沉不住气了，于是来到以前他俩时常幽会的地方，希望能重见他的身影。<br>一、二章写女子思望之情。她在城阙上等了一...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是歌咏猎人之诗。<br>全诗三章。诗中写了两个猎人。甲猎人称赞乙猎人为“还”，为“茂”，为“昌”。仅此三字便将乙猎人敏捷、健美、强壮的英姿再现了出来。他俩在峱山相遇，并马追逐野兽，猎取野物。打猎结束时，乙猎人拱手作揖，并称赞甲猎人为“儇”，为“好”，为“臧”。也仅此三字，便将甲猎人利落、壮美、善射的雄姿勾勒了出来。方玉润《诗经原始》说：“章潢曰：子之还兮，己誉人也。谓我儇兮，人誉己也。并驱，则人己皆与...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经三百篇鉴赏辞典</span>
+                    <span class="author-name">作者：陈如江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>由于孔子曾说过“《诗》三百，一言以蔽之，曰思无邪”（《论语》），经学家便将《诗经》的每首诗都套上“思无邪”的灵光圈，致使一部《诗经》竟成了儒家的道德教科书。如本篇《子衿》，《毛诗序》认为“刺学校废也，乱世则学校不修焉”。孔颖达疏进一步解释说：“郑国衰乱不修学校，学者分散，或去或留，故陈其留者恨责去者之辞，以刺学校之废也。经三章皆陈留者责去者之辞也。”可是我们在诗中实在看不出什么“学校废”的迹象。朱...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">四书五经鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：张传友</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>古往今来，一个“情”字，多少人拿得起，却放不下，从而为后人留下了几多风流佳话；多少青春女子，为一个“情”字，在史书上谱写了几多刚烈多情的篇章。《子衿》出自《郑风》，诗中表达的正是多情少女对恋人的深深思念。所以朱熹这位老学究看不惯，斥之为“淫奔之诗”。在他看来，似乎女人要自由表达自己的爱情，就是神经不正常，不过这从反面承认了诗中女子所具有的大胆、泼辣，远远超出了一般男子的想象。对这首诗，《毛诗序》还...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/3655275.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

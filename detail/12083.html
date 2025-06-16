@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小儿垂钓 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">小儿垂钓</h1>
+            <div class="poem-author">【唐】胡令能</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>蓬头稚子学垂纶，侧坐莓苔草映身。</p><p>路人借问遥招手，怕得鱼惊不应人。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>一个头发蓬乱、面孔稚嫩的小孩在河边学钓鱼，侧着身子坐在草丛中，野草掩映了他的身影。<br>路人想问路，小儿向路人招招手，生怕惊动了鱼儿，不敢回应过路人。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>蓬头：形容小孩可爱。<br>稚子：年龄小的、懵懂的孩子。<br>垂纶：钓鱼。纶，钓鱼用的丝线。<br>莓：一种野草。<br>苔：苔藓植物。<br>映：遮映。<br>借问：向人打听。<br>鱼惊：鱼儿受到惊吓。<br>应：回应，答应，理睬。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗描写一个小孩子在水边聚精会神钓鱼的情景。诗人通过描写典型细节，极其传神地再现了儿童那种认真、天真的童心和童趣。前两句叙述、描写，从外形着笔，是实写；后两句诗侧重神态来写。全诗从形神两方面刻画了垂钓小儿栩栩如生的形象，言辞流畅，清新活泼，寥寥数语便绘出一幅童趣盎然的图画，颇具生活情趣。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：陈志明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首以儿童生活为题材的诗作。在唐诗中，写儿童的题材很少，因而显得可贵。<br>一、二句重在写形。“纶”是钓丝，“垂纶”即题目中的“垂钓”，也就是钓鱼。诗人对这垂钓小儿的形貌不加粉饰，直写出山野孩子头发蓬乱的本来面目，使人觉得自然可爱与真实可信。“侧坐”带有随意坐下的意思。这也可以想见小儿不拘形迹地专心致志于钓鱼的情景。“莓苔”，泛指贴着地面生长在阴湿地方的植物。从“莓苔”不仅可以知道小儿选择钓鱼的地...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：陈志明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首以儿童生活为题材的诗作。在唐诗中，写儿童的题材很少，因而显得可贵。</p><p>一、二句重在写形。“纶”是钓丝，“垂纶”即题目中的“垂钓”，也就是钓鱼。诗人对这垂钓小儿的形貌不加粉饰，直写出山野孩子头发蓬乱的本来面目，使人觉得自然可爱与真实可信。“侧坐”带有随意坐下的意思。这也可以想见小儿不拘形迹地专心致志于钓鱼的情景。“莓苔”，泛指贴着地面生长在阴湿地方的植物。从“莓苔”不仅可以知道小儿选择钓鱼的...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：张春晓</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>古诗中写钓鱼的颇多，写孩童垂钓的就很少见。钓鱼诗通常免不了描写隐逸之情，往往在字面以外有更深层次的情感流动。这首诗因为是写儿童垂钓，就显得很单纯，反倒形神俱备地写出了儿童的天真专注。</p><p>一、二句写一个小孩子学钓鱼的形态。蓬头稚子，点明小孩子的年纪尚幼。头发乱蓬蓬的，显出孩子的质朴无邪。小朋友活泼好动，很难安坐，为了表示要学习钓鱼特意坐下，但仍难老老实实的，而是十分随性地侧坐着。莓苔，青苔。坐在青苔...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：张春晓</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>古诗中写钓鱼的颇多，写孩童垂钓的就很少见。钓鱼诗通常免不了描写隐逸之情，往往在字面以外有更深层次的情感流动。这首诗因为是写儿童垂钓，就显得很单纯，反倒形神俱备地写出了儿童的天真专注。</p><p>一、二句写一个小孩子学钓鱼的形态。蓬头稚子，点明小孩子的年纪尚幼。头发乱蓬蓬的，显出孩子的质朴无邪。小朋友活泼好动，很难安坐，为了表示要学习钓鱼特意坐下，但仍难老老实实的，而是十分随性地侧坐着。莓苔，青苔。坐在青苔...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：陈志明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首以儿童生活为题材的诗作。在唐诗中，写儿童的题材很少，因而显得可贵。<br>一、二句重在写形。“纶”是钓丝，“垂纶”即题目中的“垂钓”，也就是钓鱼。诗人对这垂钓小儿的形貌不加粉饰，直写出山野孩子头发蓬乱的本来面目，使人觉得自然可爱与真实可信。“侧坐”带有随意坐下的意思。这也可以想见小儿不拘形迹地专心致志于钓鱼的情景。“莓苔”，泛指贴着地面生长在阴湿地方的植物。从“莓苔”不仅可以知道小儿选择钓鱼的地...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/220919.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

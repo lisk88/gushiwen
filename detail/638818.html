@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世说新语 · 谗险第三十二 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">世说新语 · 谗险第三十二</h1>
+            <div class="poem-author">【南北朝】刘义庆</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>王平子形甚散朗，内实劲侠。</p><p>袁悦有口才，能短长说，亦有精理。始作谢玄参军，颇被礼遇。后丁艰，服除还都，唯赍战国策而已。语人曰：“少年时读论语、老子，又看庄、易，此皆是病痛事，当何所益邪？天下要物，正有战国策。”既下，说司马孝文王，大见亲待，几乱机轴。俄而见诛。</p><p>孝武甚亲敬王国宝、王雅。雅荐王珣于帝，帝欲见之。尝夜与国宝、雅相对，帝微有酒色，令唤珣。垂至，已闻卒传声，国宝自知才出珣下，恐倾夺要宠，因曰：“王珣当今名流，陛下不宜有酒色见之，自可别诏也。”帝然其言，心以为忠，遂不见珣。</p><p>王绪数谗殷荆州于王国宝，殷甚患之，求术于王东亭。曰：“卿但数诣王绪，往辄屏人，因论它事，如此，则二王之好离矣。”殷从之。国宝见王绪问曰：“比与仲堪屏人何所道？”绪云：“故是常往来，无它所论。”国宝谓绪于己有隐，果情好日疏，谗言以息。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>王平子外表非常潇洒、爽朗，内心却实在刚烈、狭隘。<br>袁悦有口才，擅长游说，道理也很精辟。最初任谢玄的参军。得到颇为隆重的待遇。后来，遇到父母的丧事，在家守孝，除服后回到京都，只带着一部《战国策》罢了。他告诉别人说：“年轻时读《论语）《老子》，又看《庄子》《周易》，拄些都是讲的小事，会增加什么好处呢！天下重要的书籍，只有《战国策）。”到了京都以后，去游说会稽王司马道子，受到了特别亲切的款待，几乎扰乱了朝政。不久就被杀了。<br>晋孝武帝很亲近并且尊重王国室和王雅。王雅向孝武帝推荐王珣，孝武帝想要召见他。有一夜，孝武帝和王国宝、王雅对坐喝酒，孝武帝脸上略带点酒色，便下令召见王珣。王珣将到，已经听到了吏卒传话的声音，王国宝知道自己的才能在王珣之下，恐怕王珣会争夺显职和宠幸，就对孝武帝说：“王珣是当代的著名人土，陛下不宜带着酒色召见他，本来可以另外召见的。”孝武帝认为他的话说得对，心里认为他是忠心，终于没有召见王珣。<br>王绪屡次茬王自宝面前说荆州刺史殷仲堪的坏话，殷仲堪对这事很担忧，向东亭侯王珣讨教对付他的办法。王珣说：“你只要一次又一次地去拜访王绪，一去就叫手下的人退出去，于是谈别的事情；这样，二王的交情就疏远了。”殷仲堪照他所说的做去。后来王国宝见到王绪，问道：“你近来和殷仲堪在一起，赶走随从，都说些什么呢？”王绪回答说：“只不过是一般往来，没看谈别的什么事。”王国宝认为王绪对自己有隐瞒，果然两人的感情日渐疏远了，谗言这才平息下来。</p></div></div>
+            
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>谗险，指奸诈阴险。本篇所载，或进谗言，或用奸计，都有其阴险用心。例如第2 则记用奸计游说，“几乱机轴”，以求宠幸。第3 则记用阴险手段阻止皇帝召见别人，以防夫宠。第4 则记因受谗言毁谤而用阴险手段离间进谗的人，等等。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世说新语 · 轻诋第二十六 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">世说新语 · 轻诋第二十六</h1>
+            <div class="poem-author">【南北朝】刘义庆</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>王太尉问眉子：“汝叔名士，何以不相推重？”眉子曰：“何有名士终日妄语？”</p><p>庾元规语周伯仁：“诸人皆以君方乐。”周曰：“何乐？谓乐毅邪？”庾曰：“不尔。乐令耳！”周曰：“何乃刻画无盐，以唐突西子也。”</p><p>深公云：“人谓庾元规名士，胸中柴棘三斗许。”</p><p>庾公权重，足倾王公。庾在石头，王在冶城坐。大风扬尘，王以扇拂尘曰：“元规尘污人！”</p><p>王右军少时甚涩讷，在大将军许，王、庾二公后来，右军便起欲去。大将军留之曰：“尔家司空、元规，复可所难？”</p><p>王丞相轻蔡公，曰：“我与安期、千里共游洛水边，何处闻有蔡充儿？”</p><p>褚太傅初渡江，尝入东，至金昌亭。吴中豪右，燕集亭中。褚公虽素有重名，于时造次不相识别。敕左右多与茗汁，少箸粽，汁尽辄益，使终不得食。褚公饮讫，徐举手共语云：“褚季野！”于是四座惊散，无不狼狈。</p><p>王右军在南，丞相与书，每叹子侄不令。云：“虎（犬屯）、虎犊，还其所如。”</p><p>褚太傅南下，孙长乐于船中视之。言次，及刘真长死，孙流涕，因讽咏曰：“人之云亡，邦国殄瘁。”褚大怒曰：“真长平生，何尝相比数，而卿今日作此面向人！”孙回泣向褚曰：“卿当念我！”时咸笑其才而性鄙。</p><p>谢镇西书与殷扬州，为真长求会稽。殷答曰：“真长标同伐异，侠之大者。常谓使君降阶为甚，乃复为之驱驰邪？”</p><p>桓公入洛，过淮、泗，践北境，与诸僚属登平乘楼，眺瞩中原，慨然曰：“遂使神州陆沈，百年丘墟，王夷甫诸人，不得不任其责！”袁虎率而对曰：“运自有废兴，岂必诸人之过？”桓公懔然作色，顾谓四坐曰：“诸君颇闻刘景升不？有大牛重千斤，啖刍豆十倍于常牛，负重致远，曾不若一羸牸。魏武入荆州，烹以飨士卒，于时莫不称快。”意以况袁。四坐既骇，袁亦失色。</p><p>袁虎、伏滔同在桓公府。桓公每游燕，辄命袁、伏，袁甚耻之，恒叹曰：“公之厚意，未足以荣国士！与伏滔比肩，亦何辱如之？”</p><p>高柔在东，甚为谢仁祖所重。既出，不为王、刘所知。仁祖曰：“近见高柔，大自敷奏，然未有所得。”真长云：“故不可在偏地居，轻在角（角弱）中，为人作议论。”高柔闻之，云：“我就伊无所求。”人有向真长学此言者，真长曰：“我寔亦无可与伊者。”然游燕犹与诸人书：“可要安固？”安固者，高柔也。</p><p>刘尹、江虨、王叔虎、孙兴公同坐，江、王有相轻色。虨以手歙叔虎云：“酷吏！”词色甚强。刘尹顾谓：“此是瞋邪？非特是丑言声，拙视瞻。”</p><p>孙绰作列仙商丘子赞曰：“所牧何物？殆非真猪。傥遇风云，为我龙摅。”时人多以为能。王蓝田语人云：“近见孙家儿作文，道何物、真猪也。”</p><p>桓公欲迁都，以张拓定之业。孙长乐上表，谏此议甚有理。桓见表心服，而忿其为异，令人致意孙云：“君何不寻遂初赋，而强知人家国事？”</p><p>孙长乐兄弟就谢公宿，言至款杂。刘夫人在壁后听之，具闻其语。谢公明日还，问：“昨客何似？”刘对曰：“亡兄门，未有如此宾客！”谢深有愧色。</p><p>简文与许玄度共语，许云：“举君、亲以为难。”简文便不复答。许去后而言曰：“玄度故可不至于此！”</p><p>谢万寿春败后，还，书与王右军云：“惭负宿顾。”右军推书曰：“此禹、汤之戒。”</p><p>蔡伯喈睹睐笛椽，孙兴公听妓，振且摆折。王右军闻，大嗔曰：“三祖寿乐器，虺瓦吊，孙家儿打折。”</p><p>王中郎与林公绝不相得。王谓林公诡辩，林公道王云：“箸腻颜帢，（糸翕）布单衣，挟左传，逐郑康成车后，问是何物尘垢囊！”</p><p>孙长乐作王长史诔云：“余与夫子，交非势利，心犹澄水，同此玄味。”王孝伯见曰：“才士不逊，亡祖何至与此人周旋！”</p><p>谢太傅谓子侄曰：“中郎始是独有千载！”车骑曰：“中郎衿抱未虚，复那得独有？”</p><p>庾道季诧谢公曰：“裴郎云：‘谢安谓裴郎乃可不恶，何得为复饮酒？’裴郎又云：‘谢安目支道林，如九方皋之相马，略其玄黄，取其俊逸。’”谢公云：“都无此二语，裴自为此辞耳！”庾意甚不以为好，因陈东亭经酒垆下赋。读毕，都不下赏裁，直云：“君乃复作裴氏学！”于此语林遂废。今时有者，皆是先写，无复谢语。</p><p>王北中郎不为林公所知，乃箸论沙门不得为高士论。大略云：“高士必在于纵心调畅，沙门虽云俗外，反更束于教，非情性自得之谓也。”</p><p>人问顾长康：“何以不作洛生咏？”答曰：“何至作老婢声！”</p><p>殷顗、庾恒并是谢镇西外孙。殷少而率悟，庾每不推。尝俱诣谢公，谢公熟视殷曰：“阿巢故似镇西。”于是庾下声语曰：“定何似？”谢公续复云：“巢颊似镇西。”庾复云：“颊似，足作健不？”</p><p>旧目韩康伯：将肘无风骨。</p><p>符宏叛来归国。谢太傅每加接引，宏自以有才，多好上人，坐上无折之者。适王子猷来，太傅使共语。子猷直孰视良久，回语太傅云：“亦复竟不异人！”宏大惭而退。</p><p>支道林入东，见王子猷兄弟。还，人问：“见诸王何如？”答曰：“见一群白颈乌，但闻唤哑哑声。”</p><p>王中郎举许玄度为吏部郎。郗重熙曰：“相王好事，不可使阿讷在坐。”</p><p>王兴道谓：谢望蔡霍霍如失鹰师。</p><p>桓南郡每见人不快，辄嗔云：“君得哀家梨，当复不烝食不？”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>太尉王衍问眉子说：“你叔父是名士，你为什么不推重他？”眉子说：“哪有名士整天胡言乱语的呢！”<br>庾元规告诉周伯仁说：“大家都拿你和乐氏并列。”周伯仁问道：“是哪个乐氏？是指的乐毅吗？”庾元规说：“不是这样，是乐令啊。”周伯仁说：“怎么竟美化无盐来亵渎西施呢？”<br>竺法深说：“有人评论庾元规是名士，可是他心里隐藏的柴棘，恐怕有三斗之多！”<br>庾元规权势很大，足以超过王导。庾元规在石头城，王导在冶城坐镇。一次，大风扬起了尘土，王导用扇子扇掉尘土说：“元规的尘土玷污人。”<br>右军将军王菱之少年时很不善于说话。他在大将军王敦府上，王导和庾元规两人后到，王羲之便站起来要走。王敦挽留他，说：“是你家的司空和元规两人，又为难什么呢！”<br>丞相王导轻视蔡谟，说：“我和安期、千里一道在洛水之滨游览时，哪里听说有蔡充的儿子呢！”<br>太傅褚季野刚到江南时，曾经到吴郡去，到了金昌亭，吴地的豪门大族，正在亭中聚会宴饮。褚季野虽然一向有很高的名声，可是当时那些富豪匆忙中不认识他，就另外吩咐手下人多给他茶水，少摆上粽子，茶喝完了就添上，让他始终也吃不上。褚季野喝完茶，慢慢和大家作揖、谈话，说：“我是褚季野。”于是满座的人惊慌地散开，个个进退两难。<br>右军将军王羲之在南方，丞相王导给他写信，常常慨叹子侄辈才质平庸，说：“虎豚、虎犊，正像他们的名字一样。”<br>太傅褚季野到南方去镇守京口，长乐侯孙绰到船上去看望他。言谈之间说到刘真长之死，孙绰流着眼泪，就背诵道：“人之云亡，邦国殄瘁。褚季野很生气他说：“真长平生何尝和他们相提并论，而你今天装出这付面孔对着我！”孙绰收泪对褚季野说：“你应该同情我！”当时人都笑话他虽有才学可本性庸俗。<br>镇西将军谢尚写信给扬州刺史殷浩，推荐刘真长主管会稽郡，殷浩回信说：“真长党同伐异，是个大侠士。他曾说刺史降级是很严重的事，你怎么竟然为他奔走呢？”<br>桓温进兵洛阳，经过淮水、泗水，踏上北方地区，和下属们登上船楼，遥望中原，感慨地说道：“终于使国土沦陷，长时间成为废墟，王夷甫等人不能不承担这一罪责！”袁虎轻率地回答说：“国家的命运本来有兴有衰，难道一走是他们的过错？”桓温神色威严，面露怒容，环顾满座的人说：”诸位多少都听说过刘景升吧？他有一条千斤重的大牛，吃的草料，比普通牛多十倍，可是拉起重载走远路，简直连一头瘦弱的母牛都不如。魏武帝进入荆州后，把大牛杀了来慰劳士兵，当时没有人不叫好。”桓温本意是用大牛来比拟袁虎。满座的人都震惊了，袁虎也大惊失色。<br>袁虎和伏滔一同在桓温的大司马府中任职。桓温每逢游乐宴饮，就叫袁虎和伏滔陪同。袁虎对此感到非常羞愧，常常对桓温叹息说：“您的深厚情意，不足以使国士感到光荣；把我和伏滔同等看待，还有什么耻辱比得上这个呢！”<br>高柔在东边，深为谢仁祖所敬重。到京都以后，不被王濛、刘真长所赏识。仁祖说：“近来看见高柔大力地呈上奏章，然而没有什么效果。”刘真长说：“本来就不能在偏僻的地方居住，随便地住在一个角落，不过是被人当作议论的对象。”高柔听到这句话，说：“我和他交往并不图什么。”有人拿这句话向刘真长学舌，刘真长说：“我实在也没有什么东西可给他。”然而游乐宴饮时还是给各位写信说：“可以邀请安固。”安固，就是高柔。<br>丹阳尹刘惔、江虨、王叔虎、孙兴公坐在一起，江虨和王叔虎露出互相轻视的神色。江虨用手捅一下王叔虎说：“残暴的官吏！”辞色很强硬。刘惔看着他说：“这是生气吗？不只是说话难听，眼神拙劣吧！”<br>孙绰作《列仙传•商丘子赞》，其中写道：“所放牧的是什么？恐怕不是真正的猪。假使遇到风云变化，会载着我像龙一样飞腾而去。”当时的人大都认为他有才能。蓝田侯王述告诉别人说：“近来看见孙家那小子写文章，说什么何物。真猪呢。”<br>桓温想迁都洛阳，来发展扩充疆土，安定国家的事业。长乐侯孙绰上奏章谏阻，他的主张很有道理。桓温看到奏章以后心里很服气，可是恨他持异议，就叫人向孙绰转达自己的想法说：“您为什么不重温《遂初赋》，而硬要去过问别人的家国大事呢！”<br>长乐侯孙绰兄弟到谢安家住宿，言谈非常空洞、杂乱。谢安妻子刘夫人在隔壁听，全都听到了他们的谈话。谢安第二天回到内室，问刘夫人昨晚的客人怎么样，刘夫人回答说：“亡兄家里从来没有过这样的宾客。”谢安脸色很羞愧。<br>简文帝和许玄度在一起谈话，许玄度说：“我认为选拔忠孝两全的人是困难的。”简文帝便不再回答，许玄度离开以后才说：“玄度本来可以不说这种话。”<br>谢万在寿春失败后，回来，给右军将军王羲之写信说：“我很惭愧，辜负了你一向对我的关怀照顾。”王羲之推开信说：“这是夏禹、商汤那种警诫自己的话。”<br>蔡伯喈观察竹椽子而做成竹笛，孙兴公听伎乐时用来打拍子，抖动摇晃，折断了。右军将军王羲之听说，非常生气地说：“祖上三代保存的乐器，没有心肝的东西！竟被孙家那小子打断了。”<br>北中郎将王坦之和支道林非常合不来。王坦之认为支道林只会诡辩，支道林批评王坦之说：“戴着油腻的古帽，穿着布制单衣，夹着《左传》，跟在郑康成的车子后面跑。试问这是什么尘垢口袋！”<br>长乐侯孙绰给司徒左长史王濛写诔文，说：“余与夫子，交非势利；心犹澄水，同此玄味。”王孝伯看后说：“文人不谦虚，亡祖何至于跟这种人交往！”<br>太傅谢安对子侄们说：“中郎才是千百年来独一无二的。”车骑将军谢玄说：“中郎胸怀不够开阔，又怎么能算是独一无二的！”<br>庾道季告诉谢安说：“裴郎说‘谢安认为裴郎却是不错，怎么会又喝酒！’裴郎又说：‘谢安评论支道林如同九方皋相马一样，不去看马的毛色，只注意马的非凡善跑。”谢安说：“根本没有说过这两句话，是裴启自己编造的呀。”庾道季心里很不以为然，便读出东亭侯王珣《经酒垆下赋》。朗读完了，谢安一点也不评论好坏，只是说：“你竟然做起裴氏的学问！”从此《语林》便不再流传了。现在流传下来的，都是先前的抄本，再也没有谢安的话。<br>北中郎将王但之不被支道林所赏识，便著述《沙门不得为高士论》。大致说：“隐士一定处在随心所欲、心境谐调舒畅的境界。和尚虽然是置身世外，反而更加受到宗教的束缚，说明他们的本性并非悠闲自得。”<br>有人问顾长康：“为什么不模仿洛阳书生读书的声音来咏诗呢？”顾长康回答说：“何至于模仿老女仆的声音！”<br>殷（岂页）、庾恒都是镇西将军谢尚的外孙。殷（岂页）年少时就很直爽，有悟性，庾恒常常不推重他。有一次他们都去拜访谢安，谢安仔细看着殷（岂页）说：“阿巢原来像镇西。”于是，庾恒低声问道：“到底哪里像？”谢安接着又说：“阿巢脸蛋儿像镇西。”庾恒又问：“脸蛋儿像，就能成为强者吗？”<br>过去人们评论韩康伯是：即使捏着他的胳膊肘儿，也没有一点刚气、骨头。<br>苻宏逃跑出来归降晋国，太傅谢安常常加以接待、推荐。苻宏自认为有才能，经常喜欢压倒别人，座上宾客没有人能折服他。恰好王子猷来，谢安让他们一起交谈。王子猷只是仔细打量了他好久，回头对谢安说：“终究和别人没有什么不同。”苻宏深为惭愧，便告辞了。<br>支道林到会稽去，见到了王子猷兄弟。他回到京都，有人问：“你看王氏兄弟怎么样？”支道林回答说：“看见一群白脖子乌鸦，只听到哑哑叫。”<br>从事中郎王坦之推荐许玄度任吏部郎，郗重熙说：“相王喜欢管事，不可让阿讷在座。”<br>王兴道评论望蔡公谢琰说：“来去匆匆像个丢了鹰的鹰师。”<br>南郡公桓玄每当看见别人不痛快，就生气说：“您得到哀家的梨，该不会蒸着吃吧？”</p></div></div>
+            
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>轻诋，指轻视诋毁。对人有所不满，或当面、或背地里说出，其中有批评，有指摘，有责问，有讥讽，这就是本篇所搜集的主要事例。篇内一般记述说话的环境，能让人了解是在什么情况下说出的话。有少数条目所述情况太简单，甚至只是一两旬评论，不易让人了解轻低哪一方面。个别条目是记述一些恶作剧的做法，如第7 则。<br>轻诋的着眼点是多方面的，有言论、文章、行为、本性、胸怀等，甚至形貌、语音不正都会受到轻蔑，总之是对什么不满就说什么。其中有一些事例对了解哪个时代还是有启发的。例如第1 则记王眉子对他叔父王澄的批评，王澄以善于品评人物而成为名士，王眉子却认为他的品评是妄语。可知把士人弄得如醉如痴的品评，在另一些人看来却是胡说。又如第2 则记周伯仁轻视乐广，其实据《晋书》所载，两人在当时俱有重名，所不同的是周伯仁袭父爵武城侯，而乐广却门第寒微，少孤贫。可见轻诋的是门第，是为了维护门阀制度。又如第11 则记桓温斥责清谈名士王夷甫误国，可知当时就有人认识到清谈的危害。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古代志怪小说鉴赏辞典</span>
+                    <span class="author-name">作者：唐葆祥</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本文通过庾某死而复生的一段经历，揭露了封建统治者草菅人命、冤案迭起的黑暗统治。故事中两个黑衣差役，其实是世间一切鹰犬的代表。他们狐假虎威，为所欲为，任意抓人，而一抓就是一条人命！庾某被抓，一命呜呼，当阴间的府君发现抓错时，并不追究责任，只是轻描淡写地说一句“此人算尚未尽”，放回了事。同时，这个故事也反映了敲榨勒索、索贿成风的封建吏治。门吏明明是索贿，但不明说，推说什么“须覆白，然后得出”，故意刁难...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

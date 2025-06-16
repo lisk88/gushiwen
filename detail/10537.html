@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月夜 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">月夜</h1>
+            <div class="poem-author">【唐】杜甫</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>今夜鄜州月，闺中只独看。</p><p>遥怜小儿女，未解忆长安。</p><p>香雾云鬟湿，清辉玉臂寒。</p><p>何时倚虚幌，双照泪痕干。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>今夜里鄜州上空那轮圆月，只有你在闺房中独自遥看。<br>可怜我那些鄜州的小儿女，不理解你思念长安的心思。<br>染香的雾气打湿你的鬓发，明月的清光使你玉臂生寒。<br>何时能并肩坐在薄帷帐下，月光照你我尽把泪痕擦干。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>鄜（fū）州：今陕西省富县。当时杜甫的家属在鄜州的羌村，杜甫在长安。<br>闺中：内室。看，读平声kān。<br>怜：想。<br>未解：尚不懂得。<br>香雾云鬟（huán）湿，清辉玉臂寒：写想象中妻独自久立，望月怀人的形象。香雾：雾本来没有香气，因为香气从涂有膏沐的云鬟中散发出来，所以说“香雾”。望月已久，雾深露重，故云鬟沾湿，玉臂生寒。杨慎谓：“雨未尝有香，而无微之诗云：‘雨香云淡觉微和。’云未尝有香，而卢象诗云：‘云气香流水。’今按：雾本无香，香从鬟中膏沐生耳。如薛能诗‘和花香雪九重城’，则以香雪借形柳花也。梁章隐《咏素馨花》诗：‘细花穿弱缕，盘向绿云鬟。’”云鬟，古代妇女的环形发饰。<br>清辉：阮籍诗《咏怀》其十四：“明月耀清晖。”<br>虚幌：透明的窗帷。幌，帷幔。<br>双照：与上面的"独看"对应，表示对未来团聚的期望。泪痕：隋宫诗《叹疆场》“泪痕犹尚在。”</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>天宝十五载（756年）春，安禄山由洛阳攻潼关。五月，杜甫从奉先移家至潼关以北的白水（今陕西白水县）的舅父处。六月，长安陷落，玄宗逃蜀，叛军入白水，杜甫携家逃往鄜州羌村。七月，肃宗在灵武（今宁夏灵武县）即位，杜甫获悉即从鄜州只身奔向灵武，不料途中被安史叛军所俘，押回长安。八月，作者被禁长安望月思家而作此诗。诗中借助想象，抒写妻子对自己的思念，也写出自己对妻子的思念。全诗构想新奇，情真意切，深婉动人。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>天宝十五载（756）六月，安史叛军攻进潼关，杜甫带着妻小逃到鄜州（今陕西富县），寄居羌村。七月，肃宗即位于灵武（今属宁夏）。杜甫便于八月间离家北上延州（今陕西延安），企图赶到灵武，为平叛效力。但当时叛军势力已膨胀到鄜州以北，他启程不久，就被叛军捉住，送到沦陷后的长安；望月思家，写下了这首千古传诵的名作。<br>题为《月夜》，作者看到的是长安月。如果从自己方面落墨，一入手应该写“今夜长安月，客中只独看”。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>天宝十五载（756）六月，安史叛军攻进潼关，杜甫带着妻小逃到鄜州（今陕西富县），寄居羌村。七月，肃宗即位于灵武（今属宁夏）。杜甫便于八月间离家北上延州（今陕西延安），企图赶到灵武，为平叛效力。但当时叛军势力已膨胀到鄜州以北，他启程不久，就被叛军捉住，送到沦陷后的长安；望月思家，写下了这首千古传诵的名作。</p><p>题为《月夜》，作者看到的是长安月。如果从自己方面落墨，一入手应该写“今夜长安月，客中只独看”...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>天宝十五载（756）六月，安史叛军攻进长安，杜甫携家逃难，寄居鄜州（今陕西富县）。七月，肃宗即位于灵武，杜甫前往投效，途中为叛军所俘，被带到长安。幸因官职卑微，未被囚禁。身处沦陷的长安，望月思家，心有所触，写下这首情感细腻深厚的《月夜》。</p><p>身处长安，按常理，诗人应写长安之月，但诗人却转移笔墨，写鄜州之月。面对同一洒下清辉的明月，一是客中独看，一是闺中独看，共把怀思与挂念遥寄对方。诗人不从自己着墨...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>天宝十五载（756）六月，安史叛军攻进长安，杜甫携家逃难，寄居鄜州（今陕西富县）。七月，肃宗即位于灵武（今宁夏回族自治区灵武县），杜甫前往投效，途中为叛军所俘，带到长安。幸因官职卑微，未被囚禁。身处沦陷的长安，望月思家，心有所触，写下这首情感细腻深厚的《月夜》。</p><p>作者身处长安，按常理，诗人应写长安之月，但诗人却转移笔墨，透过一层，写鄜州之月。面对同一洒下清辉的明月，一是客中独看，一是闺中独看，共...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：刘琴</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>天宝十五载（756）六月，安史叛军攻进长安，杜甫携家逃难，寄居鄜州（今陕西富县）。七月，肃宗即位于灵武（今宁夏回族自治区灵武县），杜甫前往投效，途中为叛军所俘，带到长安。幸因官职卑微，未被囚禁。身处沦陷的长安，望月思家，心有所触，写下这首情感细腻深厚的《月夜》。</p><p>作者身处长安，按常理，诗人应写长安之月，但诗人却转移笔墨，透过一层，写鄜州之月。面对同一洒下清辉的明月，一是客中独看，一是闺中独看，共...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">杜甫诗歌鉴赏辞典</span>
+                    <span class="author-name">作者：霍松林</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>天宝十五载（756）六月，安史叛军攻进潼关，杜甫带着妻小逃到鄜州（今陕西富县），寄居羌村。七月，肃宗即位于灵武（今属宁夏）。杜甫便于八月间离家北上延州（今陕西延安），企图赶到灵武，为平叛效力。但当时叛军势力已膨胀到鄜州以北，他启程不久，就被叛军捉住，送到沦陷后的长安；望月思家，写下了这首千古传诵的名作。</p><p>题为《月夜》，作者看到的是长安月。如果从自己方面落墨，一入手应该写“今夜长安月，客中只独看”...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/155613/4876214.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

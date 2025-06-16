@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>望洞庭湖赠张丞相 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">望洞庭湖赠张丞相</h1>
+            <div class="poem-author">【唐】孟浩然</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>八月湖水平，涵虚混太清。</p><p>气蒸云梦泽，波撼岳阳城。</p><p>欲济无舟楫，端居耻圣明。</p><p>坐观垂钓者，徒有羡鱼情。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>八月洞庭湖水暴涨几与岸平，水天一色交相辉映迷离难辨。<br>云梦大泽水气蒸腾白白茫茫，波涛汹涌似乎把岳阳城撼动。<br>想要渡湖却苦于找不到船只，圣明时代闲居又觉愧对明君。<br>坐看垂钓之人多么悠闲自在，可惜只能空怀一片羡鱼之情。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>洞庭湖：中国第二大淡水湖，在今湖南省北部。<br>张丞相：指张九龄，唐玄宗时宰相。<br>涵虚：包含天空，指天空倒映在水中。涵，包容；虚，虚空、空间。<br>混太清：与天混为一体。清，指天空。<br>云梦泽：古代云梦泽分为云泽和梦泽，指湖北南部、湖南北部一带低洼地区。洞庭湖是它南部的一角。<br>撼：一作“动”。<br>岳阳城：在洞庭湖东岸。<br>气蒸云梦泽，波撼岳阳城：云梦大泽水汽蒸腾，洞庭湖的波涛摇撼着岳阳城。<br>济：渡。<br>楫：划船用具，船桨。<br>欲济无舟楫：想渡湖而没有船只，比喻想做官而无人引荐。<br>端居：闲居。<br>圣明：指太平盛世，古时认为皇帝圣明，社会就会安定。<br>端居耻圣明：生在太平盛世自己却闲居在家，因此感到羞愧。<br>坐观：一作“徒怜”。<br>徒：只能。一作“空”。<br>羡鱼：《淮南子·说林训》中说：“临河而羡鱼，不如归家织网。”</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>玄宗开元二十一年（公元733年），张九龄为丞相，作者西游长安，以此诗献之，以期录用。前两联描绘洞庭湖壮丽阔大而充满活力的景色；后两联抒情，表达了作者希望有人援引他入仕从政的理想。全诗“体物写志”，诗人托物抒怀，曲笔擒旨，于浩淼阔大、汹涌澎湃的自然之景中流露了心声。此诗含蓄委婉，独标风韵，不落俗套，艺术上自有特色。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：刘逸生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首干谒诗。唐玄宗开元二十一年（733），孟浩然西游长安，写了这首诗赠当时在相位的张九龄，目的是想得到张的赏识和录用，只是为了保持一点身分，才写得那样委婉，极力泯灭那干谒的痕迹。<br>秋水盛涨，八月的洞庭湖涨得满满的，和岸上几乎平接。远远望去，水天一色，洞庭湖和天空接合成了完完整整的一块。开头两句，写得洞庭湖极开朗也极涵浑，汪洋浩阔，与天相接，润泽着广袤大地，容纳了大大小小的河流。<br>三、四句实写湖...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：刘逸生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首干谒诗。唐玄宗开元二十一年（733），孟浩然西游长安，写了这首诗赠当时在相位的张九龄，目的是想得到张的赏识和录用，只是为了保持一点身份，才写得那样委婉，极力泯灭那干谒的痕迹。</p><p>秋水盛涨，八月的洞庭湖涨得满满的，和岸上几乎平接。远远望去，水天一色，洞庭湖和天空接合成了完完整整的一块。开头两句，写得洞庭湖极开朗也极涵浑，汪洋浩阔，与天相接，润泽着广袤大地，容纳了大大小小的河流。</p><p>三、四句实...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>唐代人要进入仕途，往往需贵人引荐，写诗作文给有名望的人看，以期得到赏识提携，时称干谒。这首诗主要表现了孟浩然积极入世的思想和希望在政治上得到援引的心情。孟浩然一生中的绝大多数时间都在隐居，政治上不得意。因此，他迫切需要贵人的引荐，故作了这首有名的干谒诗。</p><p>八月的洞庭湖水高涨，水面几乎与湖岸持平。湖面浩渺无边，水天相接，含混一片。云梦二泽水气蒸腾，波涛汹涌，似乎要把岳阳城撼动。想渡水却苦于找不到船...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>唐代人要进入仕途，往往需贵人引荐，写诗作文给有名望的人看，以期得到赏识提携，时称干谒。这首诗主要表现了孟浩然积极入世的思想和希望在政治上得到援引的心情。孟浩然一生中的绝大多数时间都在隐居，政治上不得意。因此，他迫切需要贵人的引荐，这首诗就是一首有名的干谒诗。</p><p>八月的洞庭湖水高涨，水面几乎与湖岸持平。湖面浩渺无边，水天相接，含混一片。云梦泽水气蒸腾，波涛汹涌似乎要把岳阳城撼动。想渡水却苦于找不到船...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>唐代人要进入仕途，往往需贵人引荐，写诗作文给有名望的人看，以期得到赏识提携，时称干谒。这首诗主要表现了孟浩然积极入世的思想和希望在政治上得到援引的心情。孟浩然一生中的绝大多数时间都在隐居，政治上不得意。因此，他迫切需要贵人的引荐，这首诗就是一首有名的干谒诗。<br>八月的洞庭湖水高涨，水面几乎与湖岸持平。湖面浩渺无边，水天相接，含混一片。云梦二泽水气蒸腾，波涛汹涌似乎要把岳阳城撼动。想渡水却苦于找不到船...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/155044.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

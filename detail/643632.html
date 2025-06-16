@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑庄公戒饬守臣 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">郑庄公戒饬守臣</h1>
+            <div class="poem-author">【周】左丘明</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>秋七月，公会齐侯、郑伯伐许。庚辰，傅于许。颍考叔取郑伯之旗蝥弧以先登，子都自下射之，颠。瑕叔盈又以蝥弧登，周麾而呼曰：“君登矣！”郑师毕登。壬午，遂入许。许庄公奔卫。齐侯以许让公。公曰：“君谓许不共，故从君讨之。许既伏其罪矣。虽君有命，寡人弗敢与闻。”乃与郑人。</p><p>郑伯使许大夫百里奉许叔以居许东偏，曰：“天祸许国，鬼神实不逞于许君，而假手于我寡人，寡人唯是一二父兄不能共亿，其敢以许自为功乎？寡人有弟，不能和协，而使糊其口于四方，其况能久有许乎？吾子其奉许叔以抚柔此民也，吾将使获也佐吾子。若寡人得没于地，天其以礼悔祸于许，无宁兹许公复奉其社稷，唯我郑国之有请谒焉，如旧昏媾，其能降以相从也。无滋他族实逼处此，以与我郑国争此土也。吾子孙其覆亡之不暇，而况能禋祀许乎？寡人之使吾子处此，不惟许国之为，亦聊以固吾圉也。”乃使公孙获处许西偏，曰：“凡而器用财贿，无置于许。我死，乃亟去之！吾先君新邑于此，王室而既卑矣，周之子孙日失其序。夫许，大岳之胤也。天而既厌周德矣，吾其能与许争乎？”</p><p>君子谓郑庄公“于是乎有礼。礼，经国家，定社稷，序人民，利后嗣者也。许，无刑而伐之，服而舍之，度德而处之，量力而行之，相时而动，无累后人，可谓知礼矣。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>鲁隐公十一年秋天七月，鲁隐公会合齐侯、郑伯讨伐许国。初一这一天，三国的军队逼近许国城下。颍考叔举着郑国的蝥弧旗，首先登上了城墙，子都（郑大夫，公孙阏）从下面射他，颍考叔跌下来死了。瑕叔盈又举起蝥弧爬上城墙，挥舞旗帜并呼喊道：“我们国君登城啦！”郑国的军队全部登上城墙。初三这一天，便攻入许国。许庄公逃到卫国去了。齐侯要把许国让给鲁隐公。鲁隐公说：“您说许国不交纳贡物，又不履行诸侯的职责，所以跟随您讨伐它。现在许国已经受到应有的惩罚了，虽然您有命令，我也不敢参与这事的。”于是就把许国给了郑庄公。<br>郑庄公让许国大夫百里侍奉许庄公的弟弟许叔住在许国的东部边邑，对他说：“上天降祸给许国，鬼神也不满意许君，所以借我的手来惩罚他，我有少数的几个同姓臣子，尚且不能同心协力，哪里还敢拿打败许国作为自己的功劳呢？我有个弟弟（共叔段），还不能和睦相处，致使他到处流浪，在四方奔走寄食，又怎么能长久占有许国呢？你侍奉许叔安抚这里的百姓，我将派公孙获来帮助你。如果我能得到善终而长眠于地下，上天施恩，懊悔前日对许的降祸，难道许公就不能再来掌管他的国家？只是我们郑国请求时，希望相亲相近像老亲家一样，能屈尊降贵答应我们。<br>千万不要助长他族，使他族逼近、居住在这里，来和我郑国争夺这地方。如果那样，我的子孙连自己挽救郑国自己的危亡都无暇照顾，又怎能祭祀许国的山川呢？我之所以让你住在这里，不单是为许国着想，也借以巩固我们郑国的边防啊。”<br>于是又派公孙获驻扎在许国西部边境，对他说：“凡是你的器物钱财，不要放在许国。我死了，你就马上离开许国！先君是新近在这里建成都邑，眼看周王室的地位权力一天天衰微，周的子孙也一天天的失掉所继承的祖先功业。许国是太岳后代。上天既然厌弃周朝的气运了，我们是周的子孙，怎么能和许国相争呢？”<br>君子认为：“郑庄公在这件事上是符合礼制的。礼制，是可以治理国家，稳定政权，安抚百姓，并有利于后世子孙的。许国不守法度就去讨伐它，伏罪了就宽恕它，度量自己的德行去处理问题，估量自己的实力去行事，看清形势而后行动，不连累后人，可以说是知礼了。”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>公︰鲁隐公。齐侯︰齐僖公。郑伯︰郑庄公。<br>许︰国名，在今河南许昌县。<br>傅：同“附”，靠近。蝥弧︰旗名。<br>子都︰郑国大夫。子都与颍考叔有争车之怨，故射之以报怨。<br>瑕叔盈︰郑国大夫。<br>共︰同“供”。<br>百里︰许国大夫。<br>许叔︰许庄公之弟。<br>父兄：父老兄弟。指同姓臣子。共亿：相安无事。<br>吾子：二人谈话时对对方的敬称。<br>获︰指郑国大夫公孙获。<br>昏媾︰昏同“婚”，婚姻；结亲。<br>禋祀︰祭天神之礼。<br>圉︰边境。<br>亟：急切。<br>而︰代词，你；你的。<br>贿︰货财。金玉称货，布帛称贿。<br>乃︰汝；你。<br>序︰同“绪”，前人的功业。<br>大岳︰传说尧舜时的四方部落首领。<br>胤︰后嗣。<br>经︰治理。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·隐公十一年》。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

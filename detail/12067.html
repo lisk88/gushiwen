@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蝉 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">蝉</h1>
+            <div class="poem-author">【唐】虞世南</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>垂緌饮清露，流响出疏桐。</p><p>居高声自远，非是藉秋风。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>萧疏梧桐之上，蝉儿低饮清露，蝉声清脆响亮，回荡树林之间。<br>身居高枝之上，可以傲视群虫，不用借助秋风，传声依然遥远。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>垂緌（ruí）：古代官帽打结下垂的部分，蝉的头部有伸出的触须，形状好像下垂的冠缨。也指蝉的下巴上与帽带相似的细嘴。清露：清纯的露水。饮清露：古人认为蝉生性高洁，栖高饮露，其实是刺吸植物的汁液。<br>流：发出。流响：指蝉长鸣不已，声音传的很远。疏桐：高大的梧桐。<br>居高：指栖息在高处，语意双关。<br>藉（jiè）：凭借、依赖。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《蝉》是唐代诗人虞世南创作的一首五言古诗，是首托物寓意的诗。作者托物寓意，一、二句以蝉的栖高饮露、蝉声远传暗喻人的清朗俊秀、高标逸韵；三、四句分别用一“自”字、“非”字，正反相生，充满张力，表达出对人的内在品格的热情赞美和高度自信。全诗简练传神，比兴巧妙，以秋蝉高洁傲世的品格自况，耐人寻味。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：刘学锴</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首托物寓意的小诗，是唐人咏蝉诗中年代最早的一首，很为后世人称道。<br>首句“垂緌饮清露”，“緌”是古人结在颔下的帽带下垂部分，蝉的头部有伸出的触须，形状好像下垂的冠缨，故说“垂緌”。古人认为蝉生性高洁，栖高饮露，故说“饮清露”。这一句表面上是写蝉的形状与食性，实际上处处含比兴象征。“垂緌”暗示显宦身分（古代常以“冠缨”指代贵宦）。这显贵的身分地位在一般人心目中，是和“清”有矛盾甚至不相容的，但在作者...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>诗为心声，虞世南的这首五言绝句描绘出一幅高洁脱俗，立意高远的人生志气图。该诗托物言志，咏的是蝉，寄托的却是自己的高远志向和脱俗品格。在历代咏蝉诗中，这是时代较早的一首，素为后人称道。</p><p>首句“垂缕饮清露”，用拟人的手法。“缕”是古人帽带下垂部分，蝉的头部的触须形状与此近似，故说“垂缕”。“清露”之“清”字喻“蝉”之品性高洁，居高饮清露，有超脱尘俗、众人皆醉我独醒之意。表面上是写蝉，写蝉的形状与食性...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>诗为心声，虞世南的这首五言绝句描绘出一幅高洁脱俗，立意高远的人生志气图。该诗托物言志，咏的是蝉，抒的却是自己的高远志向和脱俗品格。在历代咏蝉诗中，这是时代较早的一首，素为后人称道。</p><p>首句“垂缕饮清露”，用拟人的手法。“缕”是古人帽带下垂部分，蝉的头部的触须形状与此近似，故说“垂缕”。“清露”之“清”字喻“蝉”之品性高洁，居高吸清露，有超脱尘俗、众人皆醉我独醒之意。表面上是写蝉，写蝉的形状与食性，...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/21638/5309336.htm#viewPageContent" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

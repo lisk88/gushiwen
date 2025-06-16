@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祭石曼卿文 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">祭石曼卿文</h1>
+            <div class="poem-author">【宋】欧阳修</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>维治平四年七月日，具官欧阳修，谨遣尚书都省令史李昜至于太清，以清酌庶羞之奠，致祭于亡友曼卿之墓下，而吊之以文曰：</p><p>呜呼曼卿！生而为英，死而为灵。其同乎万物生死，而复归于无物者，暂聚之形；不与万物共尽，而卓然其不朽者，后世之名。此自古圣贤，莫不皆然。而著在简册者，昭如日星。</p><p>呜呼曼卿！吾不见子久矣，犹能仿佛子之平生。其轩昂磊落，突兀峥嵘，而埋藏于地下者，意其不化为朽壤，而为金玉之精。不然，生长松之千尺，产灵芝而九茎。奈何荒烟野蔓，荆棘纵横，风凄露下，走磷飞萤；但见牧童樵叟，歌吟而上下，与夫惊禽骇兽，悲鸣踯躅而咿嘤！今固如此，更千秋而万岁兮，安知其不穴藏狐貉与鼯鼪？此自古圣贤亦皆然兮，独不见夫累累乎旷野与荒城！</p><p>呜呼曼卿！盛衰之理，吾固知其如此，而感念畴昔，悲凉凄怆，不觉临风而陨涕者，有愧乎太上之忘情。尚飨！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>在英宗治平四年七月某日，备具官爵履历的欧阳修，差遣尚书都省令史李到太清之下，以清酒和各种美味的菜肴作奠仪，致祭于亡友石曼卿的墓前，并作一篇文章吊祭说：<br>“唉！曼卿，在世时是英雄，死后成为神灵。他同万物一道生死，最后又回归到无物的地方。他是暂时相聚的形体，不与万物一道灭亡。他卓越挺立，永垂不朽，给后世留下英名。这从古至今，都是这样的，留著于史册，像日月星辰一样明亮。<br>唉！曼卿，我没有看见你已经很久了，还能仿佛记得你生前的容貌。你气宇轩昂，襟怀坦白，光明磊落，高大英俊，虽然埋藏在地下，想来不会腐朽化为泥土，而会变成金玉的精华。如果不是这样，此地为什么生长着高达千尺的松树，出产有九根茎的灵芝草。无奈荒烟野草，藤蔓缠绕，荆棘纵横；风雨凄凉，霜露下降；磷火飘动，飞萤明灭；只见牧童与老樵夫唱着山歌，上上下下；惊恐的飞禽与害怕的野兽，前后徘徊，发出悲切的鸣叫呼声。今天已经是这样，再过了千秋万岁，怎知道不是穴洞里面，深藏着狐狸貉子、鼯鼠和黄鼠狼？而自古以来，圣贤都是这样，单单看不到累累相连的旷野和荒城么！<br>唉！曼卿，古今盛衰的道理，我本来就知道是这样的，而思念从前的情景，悲凉凄惨，不觉得要面临着风而流泪，但对‘太上忘情’这句话，很有些惭愧。希望你来享用这祭礼！”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>维治平四年七月日：公元1067年7月某日。维，发语词。<br>具官：唐宋以来，官吏在奏疏、函牍及其他应酬文字中，常把应写明的官职爵位，写作具官，表示谦敬。欧阳修写作此文时官衔是观文殿学士刑部尚书亳州军州事。<br>尚书都省：即尚书省，管理全国行政的官署。<br>令史：管理文书工作的官。<br>李易：其人不详。<br>太清：地名，在今河南商丘东南，是石曼卿葬地。欧阳修《石曼卿墓表》：“既卒之三十七日，葬于太清之先茔。”<br>清酌庶羞：清酌，祭奠时所用之酒。庶，各种；羞，通“馐”，食品，这指祭品。<br>生而为英，死而为灵：活着的时候是人世间的英杰，死之后化为神灵。英，英雄、英杰；灵，神灵。<br>暂聚之形：指肉体生命。<br>简册：指史籍。<br>仿佛：依稀想见。<br>轩昂磊落：形容石曼卿的不凡气度和高尚人格。<br>突兀峥嵘：高迈挺拔，比喻石曼卿的特出才具。<br>朽壤：腐朽的土壤。<br>精：精华。<br>产灵芝而九茎：灵芝，一种菌类药用植物，古人认为是仙草，九茎一聚者更被当作珍贵祥瑞之物。《汉书·宣帝纪》：“金芝九茎，产于涵德殿池中。”而，一作“之”。<br>燐：即磷，一种非金属元素。动物尸体腐烂后产生的磷化氢，在空气中自动燃烧，并发出蓝色火焰，夜间常见于坟间及荒野。俗称之为鬼火。<br>牧童樵叟：放牧和砍柴之人。<br>上下：来回走动。<br>悲鸣踯躅而咿嘤：这里指野兽来回徘徊，禽鸟悲鸣惊叫。<br>狐貉：兽名，形似狐狸。<br>鼯：鼠的一种，亦称飞鼠。<br>鼪：黄鼠狼。<br>盛衰：此指生死。<br>畴昔：往昔，从前。<br>陨涕：落泪。<br>有愧乎太上之忘情：意思是说自己不能像圣人那样忘情。太上，最高，也指圣人。忘情，超脱了人世一切情感。《世说新语·伤逝》：“圣人忘情，最下不及情，情之所钟，正在我辈。”<br>尚飨：祭文套语，表示希望死者鬼神来享用祭品之意。尚，这里是希望的意思。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《祭石曼卿文》为唐宋八大家之一欧阳修所作。是作者为悼念诗友石曼卿而作的一篇祭文。作者避免了一般祭文的呆板格式，内容不是为死者作平生概括，而是通过三呼曼卿，先称赞其声名不朽，再写其死后凄凉，特别是渲染墓地的悲凉景象，表达出作者对死者强烈的哀悼之情。文章大体押韵，句式灵活，情调凄婉，体现出作者真挚的感情。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：赵其钧</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>石曼卿（994—1041），名延年，曼卿为其字，宋州宋城（今河南商丘）人，一生怀才不遇，颓然自放。欧阳修与曼卿相识是在景祐元年（1034），当时两人同官馆阁校勘，欧阳修二十八岁，曼卿四十岁。不到一年，他俩就分别了，一别就是四五年。再度相逢时，曼卿已心老貌癯。不久，四十七岁的曼卿就过早地去世了。欧阳修在《哭曼卿》一诗中说：“嗟我识君晚，君时犹壮夫。信哉天下奇，落落不可拘。……朐山顷岁出，我亦斥江湖。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">欧阳修诗文鉴赏辞典（珍藏本）</span>
+                    <span class="author-name">作者：赵其钧</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>石曼卿(994—1041)，名延年，曼卿为其字，宋州宋城（今河南商丘）人，一生怀才不遇，颓然自放。欧阳修与曼卿相识是在景祐元年(1034)，当时两人同官馆阁校勘，欧阳修二十八岁，曼卿四十岁。不到一年，他俩就分别了，一别就是四五年。再度相逢时，曼卿已心老貌癯。不久，四十七岁的曼卿就过早地去世了。欧阳修在《哭曼卿》一诗中说：“嗟我识君晚，君时犹壮夫。信哉天下奇，落落不可拘。……朐山顷岁出，我亦斥江湖。...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/item/祭石曼卿文" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卜算子 · 咏梅 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">卜算子 · 咏梅</h1>
+            <div class="poem-author">【宋】陆游</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。</p><p>无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>驿站外断桥旁。梅花寂寞地开放、孤孤单单，无人来欣赏。黄昏里独处已够愁苦，又遭到风吹雨打而飘落四方。它花开在百花之首，却无心同百花争享春光，只任凭百花去嫉妒。即使花片飘落被碾作尘泥，也依然有永久的芬芳留在人间。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>卜算子：词牌名。相传是借用唐代诗人骆观光的绰号。骆观光写诗好用数字取名，人称「卜算子」。北宋时盛行此曲。明末清初·万红友《词律·卷三·卜算子》：「毛氏云：『骆义乌诗，用数名，人谓为「卜算子」，故牌名取之。』按山谷词『似扶著卖卜算』，盖取义以今卖卜算命之人也。又因秦湛词有『极目烟中百尺楼』之句，故《图谱》删『卜算子』而名『百尺楼』；然『卜算子』之名，得知较早也。」元高拭词注「仙吕调」。苏东坡词有「缺月挂疏桐」句，名《缺月挂疏桐》。秦处度词有「极目烟中百尺楼」句，名《百尺楼》。僧皎词有「目断楚天遥」句，名《楚天遥》。无名氏词有「蹙破眉峰碧」句，名《眉峰碧》。双调，四十四字，上下阕各两仄韵。两结亦可酌增衬字，化五言句为六言句，于第三字豆。宋教坊复演为慢曲，《乐章集》入「歇指调」，八十九字，前阕四仄韵，后阕五仄韵。<br>驿（yì）外：指荒僻、冷清之地。驿，驿站，供驿马或官吏中途休息的专用建筑。<br>断桥：一说「断」，通「簖」，簖桥乃是古时在为拦河捕鱼蟹而设簖之处所建之桥。<br>寂寞：孤单冷清。<br>无主：自生自灭，无人照管和玩赏。<br>更著（zhuó）：又遭到。著，同“着”，遭受，承受。<br>零落：凋谢、陨落。<br>碾（niǎn）：轧烂、压碎。<br>作尘：化作灰土。<br>香如故：香气依旧存在。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词是南宋爱国诗人陆放翁所作。这首词以清新的笔调写傲然不屈的梅花，暗喻自己的坚贞不屈，笔致细腻，意味深隽，是咏梅词中的绝唱。此时放翁正处在人生的低谷，主战派士气低落，因而十分悲观，整首词十分悲凉，渲染了一种不畏强权的精神。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：艾治平</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《卜算子》，作者自注“咏梅”，可是，它意在言外，像“独爱莲之出淤泥而不染，濯清涟而不妖”的濂溪先生（周敦颐）以莲花自喻一样，作者正是以梅花自喻的。<br>陆游曾经称赞梅花“雪虐风饕愈凛然，花中气节最高坚”（《落梅》）。梅花如此清幽绝俗，出于众花之上，可是如今竟开在郊野的驿站外面，紧临着破败不堪的“断桥”，自然是人迹绝少、寂寥荒寒、备受冷落了。从这一句可知它既不是官府中的梅，也不是名园中的梅，而是一株...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：艾治平</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《卜算子》，作者自注“咏梅”，可是，它意在言外，像“独爱莲之出淤泥而不染，濯清涟而不妖”的濂溪先生（周敦颐）以莲花自喻一样，作者正是以梅花自喻的。<br>陆游曾经称赞梅花“雪虐风饕愈凛然，花中气节最高坚”（《落梅》）。梅花如此清幽绝俗，出于众花之上，可是如今竟开在郊野的驿站外面，紧临着破败不堪的“断桥”，自然是人迹绝少、寂寥荒寒、倍受冷落了。从这一句可知它既不是官府中的梅，也不是名园中的梅，而是一株...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首</span>
+                    <span class="author-name">作者：艾治平</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首《卜算子》，作者自注“咏梅”，可是，它意在言外，像“独爱莲之出淤泥而不染，濯清涟而不妖”的濂溪先生（周敦颐）以莲花自喻一样，作者正是以梅花自喻的。</p><p>陆游曾经称赞梅花“雪虐风饕愈凛然，花中气节最高坚”（《落梅》）。梅花如此清幽绝俗，出于众花之上，可是如今竟开在郊野的驿站外面，紧临着破败不堪的“断桥”，自然是人迹绝少、寂寥荒寒、备受冷落了。从这一句可知它既不是官府中的梅，也不是名园中的梅，而是一...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">毛泽东诗词鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>以上四句是说，那梅花本来无心与百花争夺春光，因此，任凭她们嫉妒而毫不在意。她的花瓣将随着风雨飘零，化为泥土并被过往的车轮碾作尘埃，唯有她那清幽的香气永不改变。前两句写照了词人不屑于媚俗邀宠、有别于一般官僚政客们的傲岸品格；后两句正凸显出他即便粉身碎骨也还是要坚持爱国理想、民族气节、君子操守的顽强意志。</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首鉴赏辞典</span>
+                    <span class="author-name">作者：江俊伟</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>陆游一生爱梅，传世诗词作品中，与梅花相关者达一百六十余首。在他的笔下，梅花犹如大自然所孕育的花中精灵，既有“广寒宫中第一仙”（陆游《梅花》）的清雅，也有“得道自保冰雪颜”（陆游《梅》）的清高，更有“雪虐风饕愈凛然”（陆游《落梅》）的刚烈。曾许下“何方可化身千亿，一树梅花一放翁”（陆游《梅花绝句》）宏愿的陆游，真可算是对梅花情有独钟了。这阕《卜算子·咏梅》，便是其咏梅作品中最负盛名的一篇。</p><p>这首词...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典</span>
+                    <span class="author-name">作者：江俊伟</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>陆游一生爱梅，传世诗词作品中，与梅花相关者达一百六十余首。在他的笔下，梅花犹如大自然所孕育的花中精灵，既有“广寒宫中第一仙”（陆游《梅花》）的清雅，也有“得道自保冰雪颜”（陆游《梅》）的清高，更有“雪虐风饕愈凛然”（陆游《落梅》）的刚烈。曾许下“何方可化身千亿，一树梅花一放翁”（陆游《梅花绝句》）宏愿的陆游，真可算是对梅花情有独钟了。这阕《卜算子·咏梅》，便是其咏梅作品中最负盛名的一篇。</p><p>这首词...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：江俊伟</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>陆游一生爱梅，传世诗词作品中，与梅花相关者达一百六十余首。在他的笔下，梅花犹如大自然所孕育的花中精灵，既有“广寒宫中第一仙”（陆游《梅花》）的清雅，也有“得道自保冰雪颜”（陆游《梅》）的清高，更有“雪虐风饕愈凛然”（陆游《落梅》）的刚烈。曾许下“何方可化身千亿，一树梅花一放翁”（陆游《梅花绝句》）宏愿的陆游，真可算是对梅花情有独钟了。这阕《卜算子·咏梅》，便是其咏梅作品中最负盛名的一篇。<br>这首词所...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/328650/4912436.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

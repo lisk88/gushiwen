@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>望洞庭 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">望洞庭</h1>
+            <div class="poem-author">【唐】刘禹锡</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>湖光秋月两相和，潭面无风镜未磨。</p><p>遥望洞庭山水翠，白银盘里一青螺。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>秋夜明月清辉，遍洒澄净湖面，湖面平静无风，犹如铁磨铜镜。遥望美丽洞庭的湖光山色。真的令人浮想联翩。那翠绿的君山，真像银盘里的一枚玲珑青螺。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>洞庭：湖名，在今湖南省北部。<br>湖光：湖面的波光。<br>两：指湖光和秋月。<br>和：和谐。指水色与月光互相辉映。<br>潭面：指湖面。<br>镜未磨：古人的镜子用铜制作、磨成。这里一说是湖面无风，水平如镜；一说是远望湖中的景物，隐约不清，如同镜面没打磨时照物模糊。<br>山水翠：也作「山水色」。山，指洞庭湖中的君山。<br>白银盘：形容平静而又清的洞庭湖面。白银，一作「白云」。<br>青螺：这里用来形容洞庭湖中的君山。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《望洞庭》是唐代文学家刘禹锡所作的一首七绝。此诗描写了秋夜月光下洞庭湖的优美景色。首句描写湖水与素月交相辉映的景象，第二句描绘无风时湖面平静的情状，第三、四句集中描写湖中的君山。全诗极富有浪漫色彩的奇思壮采，通过对洞庭湖高旷清超的描写，充分表现出诗人的奇思异采，表达了诗人对洞庭湖的喜爱和赞美之情。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：周笃文高志忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>刘禹锡在《历阳书事七十韵》序中称：“长庆四年八月，予自夔州刺史转历阳（和州），浮岷江，观洞庭，历夏口，涉浔阳而东。”刘禹锡贬逐南荒，二十年间去来洞庭，据文献可考的约有六次。其中只有转任和州（今安徽和县）这一次，是在秋天。本诗则是这次行脚的生动记录。<br>宋代范仲淹在《岳阳楼记》中不无感慨地说：“予观夫巴陵胜状，在洞庭一湖。衔远山，吞长江，浩浩汤汤，横无际涯；朝晖夕阴，气象万千。此则岳阳楼之大观也。前人...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：周笃文, 高志忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>刘禹锡在《历阳书事七十韵》序中称：“长庆四年八月，予自夔州刺史转历阳（和州），浮岷江，观洞庭，历夏口，涉浔阳而东。”刘禹锡贬逐南荒，二十年间去来洞庭，据文献可考的约有六次。其中只有转任和州（今安徽和县）这一次，是在秋天。本诗则是这次行脚的生动记录。</p><p>宋代范仲淹在《岳阳楼记》中不无感慨地说：“予观夫巴陵胜状，在洞庭一湖。衔远山，吞长江，浩浩汤汤，横无际涯；朝晖夕阴，气象万千。此则岳阳楼之大观也。前...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：卢欢</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>洞庭湖，一个美丽而偏远的地方，她总是不经意地出现在文人的笔墨下，“吴楚东南坼，乾坤日夜浮”（杜甫《登岳阳搂》），“气蒸云梦泽，波撼岳阳城”（孟浩然《望洞庭湖赠张丞相》），“衔远山，吞长江，浩浩汤汤，横无际涯，朝晖夕阴，气象万千”（范仲淹《岳阳楼记》）。而皓月当空，碧水无澜，此情此景，又是另一番洞庭景象。<br>又是一个秋日，落日的余晖还没褪尽，远处的青山此时已呈现出一种墨绿色，虫子、青蛙在远处的山水里低...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：周笃文, 高志忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>历来描写洞庭景色的诗文很多，要写得别开生面，独树一帜是十分不易的。刘禹锡这首《望洞庭》选择了月夜遥望的角度，把千里洞庭尽收眼底，抓住最有代表性的湖光和山色，轻轻着笔，通过丰富的想象，巧妙的比喻，独出心裁地把洞庭美景再现于纸上，表现出惊人的艺术功力。<br>在皓月银辉之下，洞庭山愈显青翠，洞庭水愈显清澈，山水浑然一体，望去如同一只雕镂透剔的银盘里，放了一颗小巧玲珑的青螺，十分惹人喜爱。三、四两句诗想象丰富...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代山水诗鉴赏：江山留胜迹</span>
+                    <span class="author-name">作者：周笃文, 高志忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>刘禹锡在《历阳书事七十韵》序中称：“长庆四年八月，予自夔州刺史转历阳（和州），浮岷江，观洞庭，历夏口，涉浔阳而东。”刘禹锡贬逐南荒，二十年间去来洞庭，据文献可考的约有六次。其中只有转任和州这一次，是在秋天。而本诗则是这次行脚的生动记录。</p><p>宋代文学家范仲淹在《岳阳楼记》中不无感慨地说：“予观夫巴陵胜状，在洞庭一湖。衔远山，吞长江，浩浩汤汤，横无际涯；朝晖夕阴，气象万千。此则岳阳楼之大观也。前人之述...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/248386.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

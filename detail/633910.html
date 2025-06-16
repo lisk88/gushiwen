@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄冈竹楼记 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">黄冈竹楼记</h1>
+            <div class="poem-author">【宋】王禹偁</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>黄冈之地多竹，大者如椽。竹工破之，刳去其节，用代陶瓦。比屋皆然，以其价廉而工省也。</p><p>子城西北隅，雉堞圮毁，蓁莽荒秽，因作小楼二间，与月波楼通。远吞山光，平挹江濑，幽阒辽夐，不可具状。夏宜急雨，有瀑布声；冬宜密雪，有碎玉声。宜鼓琴，琴调虚畅；宜咏诗，诗韵清绝；宜围棋，子声丁丁然；宜投壶，矢声铮铮然；皆竹楼之所助也。</p><p>公退之暇，被鹤氅衣，戴华阳巾，手执《周易》一卷，焚香默坐，消遣世虑。江山之外，第见风帆沙鸟，烟云竹树而已。待其酒力醒，茶烟歇，送夕阳，迎素月，亦谪居之胜概也。彼齐云、落星，高则高矣；井干、丽谯，华则华矣；止于贮妓女，藏歌舞，非骚人之事，吾所不取。</p><p>吾闻竹工云：“竹之为瓦，仅十稔；若重覆之，得二十稔。”噫！吾以至道乙未岁，自翰林出滁上，丙申，移广陵；丁酉又入西掖；戊戌岁除日，新旧岁之交，即除夕，有齐安之命；己亥闰三月到郡。四年之间，奔走不暇；未知明年又在何处，岂惧竹楼之易朽乎！幸后之人与我同志，嗣而葺之，庶斯楼之不朽也！</p><p>咸平二年八月十五日记。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>黄冈地方盛产竹子，大的粗如椽子。竹匠剖开它，削去竹节，用来代替陶瓦。家家房屋都是这样，因为竹瓦价格便宜而且又省工。<br>子城的西北角上，矮墙毁坏，长着茂密的野草，一片荒秽，我于是就地建造小竹楼两间，与月波楼相接连。登上竹楼，远眺可以尽览山色，平视可以将江滩、碧波尽收眼底。那清幽静谧、辽阔绵远的景象，实在无法一一描述出来。夏天宜有急雨，人在楼中如听到瀑布声；冬天遇到大雪飘零也很相宜，好像碎琼乱玉的敲击声；这里适宜弹琴，琴声清虚和畅；这里适宜吟诗，诗的韵味清雅绝妙；这里适宜下棋，棋子声丁丁动听，这里适宜投壶，箭声铮铮悦耳。这些都是竹楼所促成的。<br>公务办完后的空闲时间，披着鹤氅，戴着华阳巾，手执一卷《周易》，焚香默坐于楼中，能排除世俗杂念。这里江山形胜之外，只见轻风扬帆，沙上禽鸟，云烟竹树一片而已。等到酒醒之后，茶炉的烟火已经熄灭，送走落日，迎来皓月，这也是谪居生活中的一大乐事。<br>那齐云、落星两楼，高是算高的了；井干、丽谯两楼，华丽也算是非常华丽了，可惜只是用来蓄养妓女，安顿歌儿舞女，那就不是风雅之士的所作所为了，我是不赞成的。<br>我听竹匠说：“竹制的瓦只能用十年，如果铺两层，能用二十年。”唉，我在至道元年，由翰林学士被贬到滁州，至道二年调到扬州，至道三年重返中书省，咸平元年除夕又接到贬往齐安的调令，今年闰三月来到齐安郡。四年当中，奔波不息，不知道明年又在何处，我难道还怕竹楼容易败坏吗？希望接任我的人与我志趣相同，继我爱楼之意而常常修缮它，那么这座竹楼就不会朽烂了。<br>咸平二年八月十五日撰记。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>黄冈：今属湖北。<br>椽（chuán）：椽子，架在屋顶承受屋瓦的木条。<br>刳（kū）：削剔，挖空。<br>陶瓦：用泥烧制的瓦。<br>比屋：挨家挨户。比，紧挨、靠近。<br>子城：城门外用于防护的半圆形城墙。<br>雉堞圮（diépǐ）毁：城上矮墙倒塌毁坏。雉堞，城上的矮墙。圮毁，倒塌毁坏。<br>月波楼：黄州的一座城楼。<br>吞：容纳。<br>濑：沙滩上的流水。<br>幽阒（qù）辽夐（xiòng）：幽静辽阔。幽阒，清幽静寂；夐，远、辽阔。<br>丁丁（zhēng）：形容棋子敲击棋盘时发出的清脆悠远之声。<br>投壶：古人宴饮时的一种游戏。以矢投壶中，投中次数多者为胜。胜者斟酒使败者饮。<br>助：得力于。<br>公退：办完公事，退下休息。<br>鹤氅（chǎng）衣：用鸟羽制的披风。<br>华阳巾：道士所戴的头巾。<br>胜概：美好的生活状况。胜，美好的；概，状况，此指生活状况。<br>齐云、落星：均为古代名楼。<br>井干、丽谯：亦为古代名楼。<br>骚人：屈原曾作《离骚》，故后人称诗人为“骚人”，亦指风雅之士。<br>稔（rěn）：谷子一熟叫作一稔，引申指一年。<br>至道乙未岁，自翰林出滁上：宋太宗至道元年（公元955年），作者因讪谤朝廷罪由翰林学士贬至滁州。<br>广陵：即现在的扬州。<br>又入西掖：指回京复任刑部郎中知制诰。西掖，中书省。<br>戊戌，宋真宗咸平元年（公元998年）。<br>岁除日：新旧岁之交，即除夕。<br>齐安：黄州。<br>己亥：宋真宗咸平二年（999年）。<br>嗣而葺（qì）之：继我之意而常常修缮它。嗣，接续、继承；葺，修整。<br>庶：表示期待或可能。<br>谪：封建王朝官吏降职或远调。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这篇散文写于作者被贬黄州期间。作者借谪居之乐，抒写屡遭贬谪的不满之情。这种宦途失意、寄情山水的情怀，在封建时代具有一定的代表性。<br>本以竹楼为核心，先记叙黄冈多竹，可以用来代替陶瓦，且价廉工省。继而描写在竹楼上可观山水、听急雨、赏密雪、鼓琴、咏诗、下棋、投壶，极尽人间之享乐；亦可手执书卷，焚香默坐，赏景、饮酒、品茶、送日、迎月，尽得谪居的胜概。藉齐云、落星、井干、丽谯各名楼反衬竹楼的诗韵，表明作者甘居清苦、鄙夷声色的高尚情怀。继而写奔走不暇，眷恋竹楼之意。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：朱良志</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>题目《黄州新建小竹楼记》系原题，一般选本皆作《黄冈竹楼记》。宋真宗咸平元年（998）除夕，作者被贬为黄州（今湖北黄冈）刺史，次年三月二十七日到达任所，不久修建竹楼二间，同年八月十五日作文以记。<br>王安石曾谓“《竹楼记》胜《醉翁亭记》”（王若虚《滹南遗老集》卷三十六）。欧阳修的《醉翁亭记》被公认为天下妙文，而王氏却以为此文超过《醉翁亭记》，其妙处又何在呢？<br>首先妙在其对竹楼这一描写对象进行了深入开掘。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：朱良志</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>宋真宗咸平元年(998)除夕，作者被贬为黄州（今湖北黄冈）刺史，次年三月二十七日到达任所，不久修建竹楼二间，同年八月十五日作文以记。<br>王安石曾谓“《竹楼记》胜《醉翁亭记》”（王若虚《滹南遗老集》卷三十六）。欧阳修的《醉翁亭记》被公认为天下妙文，而王氏却以为此文超过《醉翁亭记》，其妙处又何在呢？<br>首先妙在其对竹楼这一描写对象进行了深入开掘。竹对于中华民族来说，实在不是一种平凡的植物，它常常作为一种人...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/1060499.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

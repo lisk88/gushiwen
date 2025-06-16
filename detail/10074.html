@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沁园春 · 雪 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">沁园春 · 雪</h1>
+            <div class="poem-author">【当代】毛泽东</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>北国风光，千里冰封，万里雪飘。望长城内外，惟余莽莽；大河上下，顿失滔滔。山舞银蛇，原驰蜡象，欲与天公试比高。须晴日，看红装素裹，分外妖娆。</p><p>江山如此多娇，引无数英雄竞折腰。惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。一代天骄，成吉思汗，只识弯弓射大雕。俱往矣，数风流人物，还看今朝。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>北方的风光，千里冰封冻，万里雪花飘。望长城内外，只剩下无边无际白茫茫一片；宽广的黄河上下，顿时失去了滔滔水势。山岭好像银白色的蟒蛇在飞舞，高原上的丘陵好像许多白象在奔跑，它们都想与老天爷比比高。要等到晴天的时候，看红艳艳的阳光和白皑皑的冰雪交相辉映，分外美好。<br>江山如此媚娇，引得无数英雄竞相倾倒。只可惜秦始皇、汉武帝，略差文学才华；唐太宗、宋太祖，稍逊文治功劳。称雄一世的人物成吉思汗，只知道拉弓射大雕。这些人物全都过去了，称得上能建功立业的英雄人物，还要看今天的人们。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>北国：该词源于中国古代的分裂时期，如东晋称十六国等为北国，南北朝时代南方的各朝代称在北方与之对抗的各朝代为北国等。毛泽东诗中的“北国”使人在不觉中产生出一种中国疆土广大的民族自豪感。<br>雪：此词作于红一方面军1936年2月由陕北准备东渡黄河进入山西省西部的时候。作者在1945年10月7日给柳亚子信中说，此词作于“初到陕北看见大雪时”。<br>馀：剩下。此字一作“余”，但刊出的书法作品中写作“馀”，以此为准。<br>莽莽：无边无际。<br>大河上下：大河，指黄河。大河上下，犹言整条黄河。<br>山舞银蛇，原驰蜡象：群山好像（一条条）银蛇在舞动。高原（上的丘陵）好像（许多）白象在奔跑。“原”指高原，即秦晋高原。蜡象，白色的象。<br>天公：指天，即命运。<br>红装素裹：形容雪后天晴，红日和白雪交相辉映的壮丽景色。红装，原指妇女的艳装，这里指红日为大地披上了红装。素裹，原指妇女的淡装，这里指皑皑白雪覆盖着大地。<br>竞折腰：折腰，倾倒，躬着腰侍候。这里是说争着为江山奔走操劳。<br>风骚：本指《诗经》里的《国风》和《楚辞》里的《离骚》，后来泛指文章辞藻。<br>一代天骄：指可以称雄一世的英雄人物，泛指非常著名，有才能的人物。天骄，“天之骄子”的省略语。意思是上天所骄纵宠爱的人，成吉思汗即是。汉时匈奴自称。后来也泛称强盛的少数民族或其首领。<br>俱往矣：都已经过去了。俱，都。<br>数：数得着、称得上。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>该词的创作有2种说法：<br>第一种：1936年2月，毛泽东等率领红军东征抗日先锋军东渡黄河、突破阎军防线后，踏雪沿官道山行进，顺利到达山西省石楼县留村，并在此写下了著名诗篇《沁园春·雪》；<br>第二种：1936年2月，毛泽东率红军抗日，来到西北高原。在陕西省清涧县高杰村附近的袁家沟，写下壮丽的《沁园春·雪》。<br>《沁园春·雪》最早发表于1945年11月14日重庆《新民报晚刊》，后正式发表于《诗刊》1957年1月号。<br>诗词分上下两阕，上阕描写乍暖还寒的北国雪景，展现伟大祖国的壮丽山河；下阕由毛泽东主席对祖国山河的壮丽而感叹，并引出秦皇汉武等英雄人物，纵论历代英雄人物。<br>此词不仅赞美了祖国山河的雄伟和多娇，更重要的是赞美了今朝的革命英雄，抒发毛泽东伟大的抱负及胸怀。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">毛泽东诗词鉴赏辞典</span>
+                    <span class="author-name">作者：（周啸天）</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词最早发表在《诗刊》一九五七年一月号。</p><p>在这以前，一九四五年十月，毛泽东在重庆曾把这首词书赠柳亚子，因而被重庆《新民报晚刊》在十一月十四日传抄发表，以后别的报纸陆续转载，但多有讹误，不足为据。</p><p>无论从何种角度着眼，《沁园春·雪》都说得上是毛泽东诗词的压卷之作。这决不是个人的意见，而是几乎所有评论家的共识。</p><p>这首词的写作背景不同寻常。作者在给柳亚子的一封信中，称此词为“初到陕北看见大雪时”...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/78040.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

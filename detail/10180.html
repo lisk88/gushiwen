@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扬州慢 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">扬州慢</h1>
+            <div class="poem-author">【宋】姜夔</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>淮左名都，竹西佳处，解鞍少驻初程。过春风十里，尽荠麦青青。自胡马窥江去后，废池乔木，犹厌言兵。渐黄昏，清角吹寒，都在空城。</p><p>杜郎俊赏，算而今，重到须惊。纵豆蔻词工，青楼梦好，难赋深情。二十四桥仍在，波心荡，冷月无声。念桥边红药，年年知为谁生？</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>淳熙年丙申月冬至这天，我经过扬州。夜雪初晴，放眼望去，全是荠草和麦子。进入扬州，一片萧条，河水碧绿凄冷，天色渐晚，城中响起凄凉的号角。我内心悲凉，感慨于扬州城今昔的变化，于是自创了这支曲子。千岩老人认为这首词有《黍离》的悲凉意蕴。<br>扬州是淮河东边著名的大都，在竹西亭美好的住处，解下马鞍少为停留，这是最初的路程。过去是十里春风一派繁荣景色，而我如今看到却长满荠麦叶草一片青青。金兵侵略长江流域地区，二次洗劫扬州后，到处都是废毁的池台和残存的古树。至今还讨厌说起旧日用兵。天气渐渐进入黄昏，凄凉的号角吹起了冷寒，这都是在劫后的扬州城。<br>杜牧有卓越的鉴赏，料想今天，重来此地一定吃惊。即使「豆蔻」词语精工，青楼美梦的诗意很好，也很难表达出深厚的感情。二十四桥仍然还在，却桥下江中的波浪浩荡，凄冷的月色，处处寂静无声。怀念桥边的红芍药，可每一年知道它替什么人开花繁生！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>扬州慢：词牌名，又名《郎州慢》，上下阕，九十八字，平韵。此调为姜白石自度曲，后人多用以抒发怀古之思。<br>淳熙丙申：淳熙三年（西元一一七六年）。<br>至日：冬至。<br>维扬：即扬州（今属江苏）。<br>荠麦：荠菜和野生的麦。<br>弥望：满眼。<br>戍角：军营中发出的号角声。<br>千岩老人：南宋诗人萧德藻，字东夫，自号千岩老人。姜白石曾跟他学诗，又是他的姪婿。<br>黍离：《诗经·王风》篇名。据说周平王东迁后，周大夫经过西周故都，看见宗庙毁坏，尽为禾黍，彷徨不忍离去，就做了此诗。后以「黍离」表示故国之思。<br>淮左名都：指扬州。宋朝的行政区设有淮南东路和淮南西路，扬州是淮南东路的首府，故称淮左名都。左，古人方位名，面朝南时，东为左，西为右；名都，著名的都会。<br>解鞍：解下马鞍。<br>少驻：稍作停留。<br>初程：初段行程。<br>春风十里：唐杜牧《赠别》诗：「春风十里扬州路，捲上珠帘总不如。」这里用以借指扬州。<br>胡马窥江：指金兵侵略长江流域地区，洗劫扬州。这里应指第二次洗劫扬州。<br>废池乔木：废毁的池台和残存的古树。二者都是乱后馀物，表明城中荒芜，人烟萧条。<br>渐：向，到。<br>清角：悽清的号角声。<br>杜郎：即杜牧。唐文宗大和七年到九年，杜牧在扬州任淮南节度使掌书记。<br>俊赏：俊逸清赏。锺仲伟《诗品序》：「近彭城刘士章，俊赏才士。」<br>豆蔻词工：唐·杜牧《赠别》：「娉娉袅袅十三馀，豆蔻梢头二月初。」豆蔻，形容少女美艳。<br>青楼梦好：唐杜牧《遣怀》诗：「十年一觉扬州梦，赢得青楼薄倖名。」青楼，妓院。<br>二十四桥：扬州城内古桥，即吴家砖桥，也叫红药桥。此处非实指。<br>红药：红芍药花，是扬州繁华时期的名花。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词开头三句点明扬州昔日名满国中的繁华景象，以及自己对传闻中扬州的深情向往；接着二句写映入眼帘的只是无边的荠麦，与昔日盛况截然不同；「自胡马」三句，言明眼前的残败荒凉完全是金兵南侵造成的，在人们心灵上留下不可磨灭的创伤；「渐黄昏」二句，以回荡于整座空城之上的凄凉呜咽的号角声，进一步烘托今日扬州的荒凉落寞。下片化用杜牧系列诗意，抒写自己哀时伤乱、怀昔感今的情怀。「杜郎」成为词人的化身，词的表面是咏史、写古人，更深一层是写己与叹今。<br>全词洗尽铅华，用雅洁洗练的语言，描绘出凄淡空蒙的画面，笔法空灵，寄寓深长，声调低婉，具有清刚峭拔之气势，冷僻幽独之情怀。它既控诉了金朝统治者发动掠夺战争所造成的灾难，又对南宋王朝的偏安政策有所谴责，有一定的积极意义。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：刘文忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词写于宋孝宗淳熙三年（1176）冬至日，词前的小序对写作时间、地点及写作动因均作了交代。姜夔因路过扬州，目睹了战争洗劫后扬州的萧条景象，抚今追昔，悲叹今日的荒凉，追忆昔日的繁华，发为吟咏，以寄托对扬州昔日繁华的怀念和对今日山河残破的哀思。<br>这首词在艺术表现上的一个显著特点是写景物带有浓厚的感情色彩，景中含情，化景物为情思。它的写景，不俗不滥，紧紧围绕着一个统一的主题，即为抒发“黍离之悲”服务。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：刘文忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词写于宋孝宗淳熙三年（1176）冬至日，词前的小序对写作时间、地点及写作动因均作了交待。姜夔因路过扬州，目睹了战争洗劫后扬州的萧条景象，抚今追昔，悲叹今日的荒凉，追忆昔日的繁华，发为吟咏，以寄托对扬州昔日繁华的怀念和对今日山河残破的哀思。<br>这首词在艺术表现上的一个显著特点是写景物带有浓厚的感情色彩，景中含情，化景物为情思。它的写景，不俗不滥，紧紧围绕着一个统一的主题，即为抒发“黍离之悲”服务。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首</span>
+                    <span class="author-name">作者：刘文忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词写于宋孝宗淳熙三年（1176）冬至日，词前的小序对写作时间、地点及写作动因均作了交待。姜夔因路过扬州，目睹了战争洗劫后扬州的萧条景象，抚今追昔，悲叹今日的荒凉，追忆昔日的繁华，发为吟咏，以寄托对扬州昔日繁华的怀念和对今日山河残破的哀思。</p><p>这首词在艺术表现上的一个显著特点是写景物带有浓厚的感情色彩，景中含情，化景物为情思。它的写景，不俗不滥，紧紧围绕着一个统一的主题，即为抒发“黍离之悲”服务...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首鉴赏辞典</span>
+                    <span class="author-name">作者：陈庆之</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>《扬州慢》词牌为姜夔首创。词人路过扬州，目睹曾经的名都扬州，此时经过战争之乱，已是荒芜残破，词人百感交集，自度此曲，以抒发其感怀河山破败之伤。姜夔有十七首自度曲，这是写得最早的一首，时年姜夔二十二岁。<br>词的上片，姜夔先从自己的行踪写起。这是他第一次来到扬州城，他在著名的竹西亭解鞍下马，驻足观看，走在漫长的扬州道上，词人满眼所见到的是长势旺盛而齐整的荠麦，而曾经繁华无比的那个大城市扬州已经不见踪影。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典</span>
+                    <span class="author-name">作者：陈庆之</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>扬州慢》词牌为姜夔首创。词人路过扬州，目睹曾经的名都扬州，此时经过战乱，已是荒芜残破。词人百感交集，自度此曲，以抒发其感怀河山破败之伤。姜夔有十七首自度曲，这是写得最早的一首，时年二十二岁。</p><p>词的上片，姜夔先从自己的行踪写起。这是他第一次来到扬州城，他在著名的竹西亭解鞍下马，驻足观看，走在漫长的扬州道上，词人满眼所见到的是长势旺盛而齐整的荠麦，而曾经繁华无比的那个大城市扬州已经不见踪影。胡马窥江...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：陈庆之</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>《扬州慢》词牌为姜夔首创。词人路过扬州，目睹曾经的名都扬州，此时经过战乱，已是荒芜残破。词人百感交集，自度此曲，以抒发其感怀河山破败之伤。姜夔有十七首自度曲，这是写得最早的一首，时年姜夔二十二岁。<br>词的上片，姜夔先从自己的行踪写起，这是他第一次来到扬州城，他在著名的竹西亭解鞍下马，驻足观看，走在漫长的扬州道上，词人满眼所见到的是长势旺盛而齐整的荠麦，而曾经繁华无比的那个大城市扬州已经不见踪影。胡马...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">姜夔诗词鉴赏辞典</span>
+                    <span class="author-name">作者：刘文忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词写于宋孝宗淳熙三年（1176）冬至日，词前的小序对写作时间、地点及写作动因均作了交代。姜夔因路过扬州，目睹了战争洗劫后扬州的萧条景象，抚今追昔，悲叹今日的荒凉，追忆昔日的繁华，发为吟咏，以寄托对扬州昔日繁华的怀念和对今日山河残破的哀思。</p><p>这首词在艺术表现上的一个显著特点是写景物带有浓厚的感情色彩，景中含情，化景物为情思。它的写景，不俗不滥，紧紧围绕着一个统一的主题，即为抒发“黍离之悲”服务...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：刘文忠</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词写于宋孝宗淳熙三年(1176 )冬至日，词前的小序对写作时间、地点及写作动因均作了交代。姜夔因路过扬州，目睹了战争洗劫后扬州的萧条景象，抚今追昔，悲叹今日的荒凉，追忆昔日的繁华，发为吟咏，以寄托对扬州昔日繁华的怀念和对今日山河残破的哀思。<br>这首词在艺术表现上的一个显著特点是写景物带有浓厚的感情色彩，景中含情，化景物为情思。它的写景，不俗不滥，紧紧围绕着一个统一的主题，即为抒发“黍离之悲”服务...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/2753818.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

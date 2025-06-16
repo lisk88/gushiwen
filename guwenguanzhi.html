@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古文观止 - 中华古诗文典藏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,255,0.95) 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-bottom: 3px solid #f39c12;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #34495e;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .nav a:hover, .nav a.active {
+            color: #f39c12;
+            background: rgba(52, 73, 94, 0.05);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 3rem;
+        }
+        
+        .page-title h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-title p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            color: #7f8c8d;
+        }
+        
+        .content-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            background: transparent;
+            padding: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            background: transparent;
+            border: none;
+            color: #7f8c8d;
+            padding: 1rem 2rem;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+        
+        .tab-button.active {
+            background: #ffffff;
+            color: #3498db;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .tab-button:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.8);
+            color: #34495e;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .articles-list {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .article-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            text-decoration: none;
+            color: #2c3e50;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        .article-item:last-child {
+            border-bottom: none;
+        }
+
+        .article-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .item-title {
+            font-weight: bold;
+            flex: 1;
+            padding-right: 1rem;
+        }
+
+        .item-author {
+            color: #7f8c8d;
+            white-space: nowrap;
+        }
+        
+        .search-section {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+        
+        .search-box { display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; }
+        .search-input { flex: 1; padding: 1rem; border: 1px solid #ddd; border-radius: 25px; font-size: 1rem; background: #fff; }
+        .search-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3); border-color: #3498db; }
+        .search-button { background: linear-gradient(135deg, #3498db, #2980b9); color: white; border: none; padding: 1rem 2rem; border-radius: 25px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }
+        .search-button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2); }
+        
+        @media (max-width: 768px) {
+            .container { padding: 2rem 1rem; }
+            .page-title h1 { font-size: 2.5rem; }
+            .content-tabs { flex-direction: column; border-radius: 20px; background: rgba(255, 255, 255, 0.9); }
+            .search-box { flex-direction: column; }
+            .tab-button { margin: 0.25rem; }
+            .search-input { margin-bottom: 1rem; width: 100%;}
+            .article-item {
+                padding: 1rem 1.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">网站首页</a>
+            <a href="guwen.html" class="active">古文观止</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="page-title">
+            <h1>📜 古文观止</h1>
+            <p>文辞的海洋，智慧的殿堂</p>
+        </div>
+        
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索文章标题或作者...">
+                <button class="search-button" onclick="searchArticles()">🔍 搜索</button>
+            </div>
+        </div>
+        
+        <div class="content-tabs" id="volume-tabs">
+            <!-- 卷次标签将通过JavaScript动态生成 -->
+        </div>
+        
+        <div id="content-container">
+             <!-- 内容将通过JavaScript动态生成 -->
+        </div>
+        
+    </div>
+    
+    <script>
+        const guwenGuanzhi = {
+            volume1: { 
+                name: "卷一 · 周文",
+                articles: [
+                    {id: 643619, title: "郑伯克段于鄢", author: "左丘明"}, {id: 643629, title: "周郑交质", author: "左丘明"}, {id: 643630, title: "石碏谏宠州吁", author: "左丘明"}, {id: 643631, title: "臧僖伯谏观鱼", author: "左丘明"}, {id: 643632, title: "郑庄公戒饬守臣", author: "左丘明"}, {id: 643633, title: "臧哀伯谏纳郜鼎", author: "左丘明"}, {id: 643634, title: "季梁谏追楚师", author: "左丘明"}, {id: 643635, title: "曹刿论战", author: "左丘明"}, {id: 643636, title: "齐桓公伐楚盟屈完", author: "左丘明"}, {id: 643637, title: "宫之奇谏假道", author: "左丘明"}, {id: 640592, title: "齐桓下拜受胙", author: "左丘明"}, {id: 643641, title: "阴饴甥对秦伯", author: "左丘明"}, {id: 643642, title: "子鱼论战", author: "左丘明"}, {id: 643646, title: "寺人披见文公", author: "左丘明"}, {id: 643647, title: "介之推不言禄", author: "左丘明"}, {id: 643648, title: "展喜犒师", author: "左丘明"}, {id: 643649, title: "烛之武退秦师", author: "左丘明"}, {id: 643650, title: "蹇叔哭师", author: "左丘明"}, {id: 643651, title: "郑子家告赵宣子", author: "左丘明"}, {id: 643652, title: "王孙满对楚子", author: "左丘明"}, {id: 643653, title: "齐国佐不辱命", author: "左丘明"}, {id: 643654, title: "楚归晋知罃", author: "左丘明"}, {id: 643655, title: "吕相绝秦", author: "左丘明"}, {id: 643656, title: "驹支不屈于晋", author: "左丘明"}, {id: 643657, title: "祁奚请免叔向", author: "左丘明"}, {id: 643658, title: "子产告范宣子轻币", author: "左丘明"}, {id: 643659, title: "晏子不死君难", author: "左丘明"}, {id: 643660, title: "季札观周乐", author: "左丘明"}, {id: 643661, title: "子产坏晋馆垣", author: "左丘明"}, {id: 643662, title: "子产论尹何为邑", author: "左丘明"}, {id: 643663, title: "子产却楚逆女以兵", author: "左丘明"}, {id: 643664, title: "子革对灵王", author: "左丘明"}, {id: 643665, title: "子产论政宽猛", author: "左丘明"}, {id: 643666, title: "吴许越成", author: "左丘明"}, {id: 636808, title: "国语 · 祭公谏征犬戎", author: "左丘明"}, {id: 636814, title: "国语 ·  邵公谏厉王弭谤", author: "左丘明"}, {id: 636812, title: "国语 ·  襄王不许请隧", author: "左丘明"}, {id: 636809, title: "国语 ·  单子知陈必亡", author: "左丘明"}, {id: 636810, title: "国语 ·  展禽论祀爰居", author: "左丘明"}, {id: 636811, title: "国语 ·  里革断罟匡君", author: "左丘明"}, {id: 636815, title: "国语 ·  敬姜论劳逸", author: "左丘明"}, {id: 636816, title: "国语 ·  叔向贺贫", author: "左丘明"}, {id: 636817, title: "国语 ·  王孙圉论楚宝", author: "左丘明"}, {id: 636818, title: "国语 ·  诸稽郢行成于吴", author: "左丘明"}, {id: 636819, title: "国语 ·  申胥谏许越成", author: "左丘明"}, {id: 636820, title: "公羊传 · 春王正月", author: "公羊高"}, {id: 633846, title: "公羊传  ·  宋人及楚人平", author: "公羊高"}, {id: 636822, title: "公羊传 · 吴子使札来聘", author: "公羊高"}, {id: 636823, title: "穀梁传 · 郑伯克段于鄢", author: "穀梁子"}, {id: 636844, title: "穀梁传 · 虞师晋师灭夏阳", author: "穀梁子"}, {id: 636845, title: "礼记 · 檀弓 · 晋献公杀世子申生", author: "无名氏"}, {id: 636846, title: "礼记 · 檀弓 · 曾子易箦", author: "无名氏"}, {id: 636847, title: "礼记 · 檀弓 · 有子之言似夫子", author: "无名氏"}, {id: 636848, title: "礼记 · 檀弓 · 公子重耳对秦客", author: "无名氏"}, {id: 636849, title: "礼记 · 檀弓 · 杜蒉扬觯", author: "无名氏"}, {id: 636850, title: "礼记 · 檀弓 · 晋献文子成室", author: "无名氏"},
+                ]
+            },
+            volume2: {
+                name: "卷二 · 秦汉文",
+                articles: [
+                    {id: 12044, title: "战国策 · 苏秦以连横说秦", author: "刘向"}, {id: 636871, title: "战国策 · 司马错论伐蜀", author: "刘向"}, {id: 12046, title: "战国策 · 范雎说秦王", author: "刘向"}, {id: 12047, title: "战国策 · 邹忌讽齐王纳谏", author: "刘向"}, {id: 633854, title: "战国策 · 齐宣王见颜斶", author: "刘向"}, {id: 12048, title: "战国策 · 冯谖客孟尝君", author: "刘向"}, {id: 636873, title: "战国策 · 赵威后问齐使", author: "刘向"}, {id: 635144, title: "战国策 · 庄辛论幸臣", author: "刘向"}, {id: 12049, title: "战国策 · 触龙说赵太后", author: "刘向"}, {id: 636874, title: "战国策 · 鲁仲连义不帝秦", author: "刘向"}, {id: 633841, title: "战国策 · 鲁共公择言", author: "刘向"}, {id: 12061, title: "战国策 · 唐雎说信陵君", author: "刘向"}, {id: 12050, title: "战国策 · 唐雎不辱使命", author: "刘向"}, {id: 12051, title: "战国策 · 乐毅报燕王书", author: "刘向"}, {id: 11887, title: "谏逐客书", author: "李斯"}, {id: 636875, title: "卜居", author: "屈原"}, {id: 633848, title: "对楚王问", author: "宋玉"}, {id: 636927, title: "史记 · 七十列传 · 管晏列传", author: "司马迁"}, {id: 633502, title: "史记 · 七十列传 · 游侠列传", author: "司马迁"}, {id: 636931, title: "史记 · 太史公自序", author: "司马迁"}, {id: 10249, title: "报任安书", author: "司马迁"}, {id: 643603, title: "高帝求贤诏", author: "刘邦"}, {id: 637027, title: "文帝议佐百姓诏", author: "刘恒"}, {id: 637028, title: "景帝令二千石修职诏", author: "刘启"}, {id: 637029, title: "武帝求茂才异等诏", author: "刘彻"}, {id: 11756, title: "过秦论", author: "贾谊"}, {id: 633941, title: "治安策", author: "贾谊"}, {id: 633494, title: "论贵粟疏", author: "晁错"}, {id: 636396, title: "狱中上梁王书", author: "邹阳"}, {id: 634872, title: "上书谏猎", author: "司马相如"}, {id: 12452, title: "答苏武书", author: "李陵"}, {id: 637032, title: "尚德缓刑书", author: "路温舒"}, {id: 637033, title: "报孙会宗书", author: "杨恽"}, {id: 637034, title: "光武帝临淄劳耿弇", author: "刘秀"},
+                ]
+            },
+            volume3: {
+                name: "卷三 · 六朝唐文",
+                articles: [
+                    {id: 12077, title: "诫兄子严、敦书", author: "马援"}, {id: 10065, title: "前出师表", author: "诸葛亮"}, {id: 10066, title: "后出师表", author: "诸葛亮"}, {id: 11522, title: "陈情表", author: "李密"}, {id: 10093, title: "兰亭集序", author: "王羲之"}, {id: 10277, title: "归去来兮辞", author: "陶渊明"}, {id: 10036, title: "桃花源记", author: "陶渊明"}, {id: 10092, title: "五柳先生传", author: "陶渊明"}, {id: 636072, title: "北山移文", author: "孔稚珪"}, {id: 11760, title: "谏太宗十思疏", author: "魏征"}, {id: 10134, title: "为徐敬业讨武曌檄", author: "骆宾王"}, {id: 10094, title: "滕王阁序", author: "王勃"}, {id: 633475, title: "与韩荆州书", author: "李白"}, {id: 10313, title: "春夜宴从弟桃花园序", author: "李白"}, {id: 634018, title: "吊古战场文", author: "李华"}, {id: 10172, title: "陋室铭", author: "刘禹锡"}, {id: 11272, title: "阿房宫赋", author: "杜牧"}, {id: 634227, title: "原道", author: "韩愈"}, {id: 634843, title: "原毁", author: "韩愈"}, {id: 634702, title: "获麟解", author: "韩愈"}, {id: 12365, title: "杂说 · 其一 · 龙说", author: "韩愈"}, {id: 12368, title: "马说", author: "韩愈"}, {id: 11271, title: "师说", author: "韩愈"}, {id: 11907, title: "进学解", author: "韩愈"}, {id: 634703, title: "圬者王承福传", author: "韩愈"}, {id: 634248, title: "讳辩", author: "韩愈"}, {id: 634704, title: "争臣论", author: "韩愈"}, {id: 634700, title: "后十九日复上宰相书", author: "韩愈"}, {id: 634701, title: "后廿九日复上宰相书", author: "韩愈"}, {id: 634692, title: "与于襄阳书", author: "韩愈"}, {id: 634691, title: "与陈给事书", author: "韩愈"}, {id: 634699, title: "应科目时与人书", author: "韩愈"}, {id: 634247, title: "送孟东野序", author: "韩愈"}, {id: 634114, title: "送李愿归盘谷序", author: "韩愈"}, {id: 634306, title: "送董邵南游河北序", author: "韩愈"}, {id: 634689, title: "送杨少尹序", author: "韩愈"}, {id: 634688, title: "送石处士序", author: "韩愈"}, {id: 634687, title: "送温处士赴河阳军序", author: "韩愈"}, {id: 11731, title: "祭十二郎文", author: "韩愈"}, {id: 634690, title: "祭鳄鱼文", author: "韩愈"}, {id: 634053, title: "柳子厚墓志铭", author: "韩愈"}, {id: 634668, title: "驳复仇议", author: "柳宗元"}, {id: 634732, title: "桐叶封弟辨", author: "柳宗元"}, {id: 634733, title: "箕子碑", author: "柳宗元"}, {id: 11730, title: "捕蛇者说", author: "柳宗元"}, {id: 12461, title: "种树郭橐驼传", author: "柳宗元"}, {id: 12459, title: "梓人传", author: "柳宗元"}, {id: 633997, title: "愚溪诗序", author: "柳宗元"}, {id: 635224, title: "永州韦使君新堂记", author: "柳宗元"}, {id: 634251, title: "永州八记 · 其三 · 钴鉧潭西小丘记", author: "柳宗元"}, {id: 634255, title: "永州八记 · 其八 · 小石城山记", author: "柳宗元"}, {id: 637063, title: "贺进士王参元失火书", author: "柳宗元"},
+                ]
+            },
+            volume4: {
+                name: "卷四 · 宋文",
+                articles: [
+                    {id: 634140, title: "待漏院记", author: "王禹偁"}, {id: 633910, title: "黄冈竹楼记", author: "王禹偁"}, {id: 634520, title: "洛阳名园记", author: "李格非"}, {id: 634974, title: "严先生祠堂记", author: "范仲淹"}, {id: 10089, title: "岳阳楼记", author: "范仲淹"}, {id: 635221, title: "谏院题名记", author: "司马光"}, {id: 635223, title: "义田记", author: "钱公辅"}, {id: 637064, title: "袁州州学记", author: "李觏"}, {id: 634935, title: "朋党论", author: "欧阳修"}, {id: 635220, title: "纵囚论", author: "欧阳修"}, {id: 634265, title: "释秘演诗集序", author: "欧阳修"}, {id: 635023, title: "梅圣俞诗集序", author: "欧阳修"}, {id: 634680, title: "送杨寘序", author: "欧阳修"}, {id: 11661, title: "新五代史 · 伶官传序", author: "欧阳修"}, {id: 635225, title: "新五代史 · 宦者传论", author: "欧阳修"}, {id: 11953, title: "相州昼锦堂记", author: "欧阳修"}, {id: 633637, title: "丰乐亭记", author: "欧阳修"}, {id: 10088, title: "醉翁亭记", author: "欧阳修"}, {id: 11190, title: "秋声赋", author: "欧阳修"}, {id: 634670, title: "祭石曼卿文", author: "欧阳修"}, {id: 633473, title: "泷冈阡表", author: "欧阳修"}, {id: 11729, title: "管仲论", author: "苏洵"}, {id: 12058, title: "辨奸论", author: "苏洵"}, {id: 11728, title: "心术", author: "苏洵"}, {id: 634976, title: "张益州画像记", author: "苏洵"}, {id: 633771, title: "刑赏忠厚之至论", author: "苏轼"}, {id: 12053, title: "范增论", author: "苏轼"}, {id: 11912, title: "留侯论", author: "苏轼"}, {id: 12054, title: "贾谊论", author: "苏轼"}, {id: 12055, title: "晁错论", author: "苏轼"}, {id: 633790, title: "上梅直讲书", author: "苏轼"}, {id: 11868, title: "喜雨亭记", author: "苏轼"}, {id: 633782, title: "凌虚台记", author: "苏轼"}, {id: 633777, title: "超然台记", author: "苏轼"}, {id: 633783, title: "放鹤亭记", author: "苏轼"}, {id: 10333, title: "石钟山记", author: "苏轼"}, {id: 633775, title: "潮州韩文公庙碑", author: "苏轼"}, {id: 637069, title: "乞校正陆贽奏议进御札子", author: "苏轼"}, {id: 640908, title: "前赤壁赋", author: "苏轼"}, {id: 11697, title: "后赤壁赋", author: "苏轼"}, {id: 634648, title: "三槐堂铭", author: "苏轼"}, {id: 633784, title: "方山子传", author: "苏轼"}, {id: 633642, title: "六国论", author: "苏辙"}, {id: 11733, title: "上枢密韩太尉书", author: "苏辙"}, {id: 11666, title: "黄州快哉亭记", author: "苏辙"}, {id: 634337, title: "寄欧阳舍人书", author: "曾巩"}, {id: 634336, title: "赠黎安二生序", author: "曾巩"}, {id: 633931, title: "读《孟尝君传》", author: "王安石"}, {id: 634139, title: "同学一首别子固", author: "王安石"}, {id: 11361, title: "游褒禅山记", author: "王安石"}, {id: 635237, title: "泰州海宁县主簿许君墓志铭", author: "王安石"},
+                ]
+            },
+            volume5: {
+                name: "卷五 · 明文",
+                articles: [
+                    {id: 637070, title: "送天台陈庭学序", author: "宋濂"}, {id: 634043, title: "阅江楼记", author: "宋濂"}, {id: 637072, title: "司马季主论卜", author: "刘基"}, {id: 634041, title: "卖柑者言", author: "刘基"}, {id: 633495, title: "深虑论", author: "方孝孺"}, {id: 635071, title: "豫让论", author: "方孝孺"}, {id: 636239, title: "亲政篇", author: "王鏊"}, {id: 634318, title: "尊经阁记", author: "王守仁"}, {id: 634317, title: "象祠记", author: "王守仁"}, {id: 633492, title: "瘗旅文", author: "王守仁"}, {id: 637073, title: "信陵君救赵论", author: "唐顺之"}, {id: 637074, title: "报刘一丈书", author: "宗臣"}, {id: 11657, title: "吴山图记", author: "归有光"}, {id: 635238, title: "沧浪亭记", author: "归有光"}, {id: 637075, title: "青霞先生文集序", author: "茅坤"}, {id: 633934, title: "蔺相如完璧归赵论", author: "王世贞"}, {id: 634526, title: "徐文长传", author: "袁宏道"}, {id: 633988, title: "五人墓碑记", author: "张溥"},
+                ]
+            }
+        };
+
+        let currentVolume = 'volume1';
+        
+        function createArticleListItem(article) {
+            return `
+                <a href="detail/${article.id}.html" class="article-item" title="点击阅读《${article.title}》">
+                    <span class="item-title">${article.title.replace(/<[^>]+>/g, '').replace(/·/g, ' · ')}</span>
+                    <span class="item-author">${article.author}</span>
+                </a>
+            `;
+        }
+        
+        function renderArticles(volumeKey) {
+            const volumeData = guwenGuanzhi[volumeKey];
+            if (!volumeData) return;
+
+            const container = document.getElementById(`${volumeKey}-articles`);
+            if (!container) return;
+            
+            container.innerHTML = volumeData.articles.map(createArticleListItem).join('');
+        }
+        
+        function showVolume(volumeKey) {
+            currentVolume = volumeKey;
+            
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`.tab-button[onclick="showVolume('${volumeKey}')"]`).classList.add('active');
+            
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(volumeKey).classList.add('active');
+            
+            renderArticles(volumeKey);
+        }
+
+        function searchArticles() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            const volumeData = guwenGuanzhi[currentVolume];
+            if (!volumeData) return;
+
+            const container = document.getElementById(`${currentVolume}-articles`);
+            const searchResult = volumeData.articles.filter(article => 
+                article.title.toLowerCase().replace(/<[^>]+>/g, '').includes(searchTerm) ||
+                article.author.toLowerCase().includes(searchTerm)
+            );
+
+            if (searchResult.length === 0) {
+                 container.innerHTML = `<div style="text-align: center; padding: 3rem; color: #7f8c8d;"><h3>😔 未找到相关文章</h3><p>请尝试其他关键词或切换分卷</p></div>`;
+            } else {
+                container.innerHTML = searchResult.map(createArticleListItem).join('');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabsContainer = document.getElementById('volume-tabs');
+            const contentContainer = document.getElementById('content-container');
+
+            // Create tabs and content divs
+            Object.keys(guwenGuanzhi).forEach(key => {
+                tabsContainer.innerHTML += `<button class="tab-button" onclick="showVolume('${key}')">${guwenGuanzhi[key].name}</button>`;
+                contentContainer.innerHTML += `<div id="${key}" class="tab-content"><div class="articles-list" id="${key}-articles"></div></div>`;
+            });
+            
+            // Activate the first tab by default
+            showVolume('volume1');
+
+            document.getElementById('searchInput').addEventListener('keypress', e => {
+                if (e.key === 'Enter') {
+                    e.preventDefault(); // Prevent form submission
+                    searchArticles();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

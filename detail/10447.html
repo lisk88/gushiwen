@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题破山寺后禅院 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">题破山寺后禅院</h1>
+            <div class="poem-author">【唐】常建</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>清晨入古寺，初日照高林。</p><p>曲径通幽处，禅房花木深。</p><p>山光悦鸟性，潭影空人心。</p><p>万籁此都寂，但余钟磬音。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>大清早我走进这古老寺院，旭日初升映照着山上树林。<br>竹林掩映小路通向幽深处，禅房前后花木繁茂又缤纷。<br>山光明媚使飞鸟更加欢悦，潭水清澈也令人爽神净心。<br>此时此刻万物都沉默静寂，只留下了敲鐘击磬的声音。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>破山寺：即兴福寺，在今江苏常熟市西北虞山上。南朝齐邑人郴州刺史倪德光舍宅所建。<br>清晨：早晨。<br>入：进入。<br>古寺：指破山寺。<br>初日：早上的太阳。<br>照：照耀。<br>高林：高树之林。<br>曲径：一作「竹径」、又作「一径」。<br>通：一作「遇」。<br>幽：幽静。<br>禅房：僧人居住修行的地方。<br>悦：此处为使动用法，使……高兴。<br>潭影：清澈潭水中的倒影。<br>空：此处为使动用法，使……空。此句意思是，潭水空明清澈，临潭照影，令人俗念全消。<br>万籁（lài）：各种声音。籁，从孔穴里发出的声音，泛指声音。<br>此：在此，即在后禅院。<br>都：一作「俱」。<br>但余：只留下。一作「惟余」、又作「唯闻」。<br>钟磬（qìng）：佛寺中召集众僧的打击乐器。磬，古代用玉或金属制成的曲尺形的打击乐器。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗是唐代诗人常建的一首题壁诗，载于《全唐诗·卷一四四》，并入选《唐诗三百首》。此诗抒写清晨游寺后禅院的观感，以凝炼简洁的笔触描写了一个景物独特、幽深寂静的境界，表达了诗人游览名胜的喜悦和对高远境界的强烈追求。全诗笔调古朴，层次分明，兴象深微，意境浑融，简洁明净，感染力强，艺术上相当完整，是唐代山水诗中独具一格的名篇。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：倪其心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>破山在今江苏常熟，寺指兴福寺，是南齐时郴州刺史倪德光施舍宅园改建的，到唐代已属古寺。诗中抒写清晨游寺后禅院的观感，笔调古朴，描写省净，兴象深微，意境浑融，艺术上相当完整，是盛唐山水诗中独具一格的名篇。<br>这首诗题咏的是佛寺禅院，抒发的是寄情山水的隐逸胸怀。诗人在清晨登破山，入兴福寺，旭日初升，光照山上树林。佛家称僧徒聚集的处所为“丛林”，所以“高林”兼有称颂禅院之意，在光照山林的景象中显露着礼赞佛宇...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：倪其心</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>破山在今江苏常熟，寺指兴福寺，是南齐时郴州刺史倪德光施舍宅园改建的，到唐代已属古寺。诗中抒写清晨游寺后禅院的观感，笔调古朴，描写省净，兴象深微，意境浑融，艺术上相当完整，是盛唐山水诗中独具一格的名篇。</p><p>这首诗题咏的是佛寺禅院，抒发的是寄情山水的隐逸胸怀。诗人在清晨登破山，入兴福寺，旭日初升，光照山上树林。佛家称僧徒聚集的处所为“丛林”，所以“高林”兼有称颂禅院之意，在光照山林的景象中显露着礼赞佛...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：易文翔</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>常建的这首《题破山寺后禅院》曾被，宋代洪驹父誉为“全篇皆工”（《宋诗话辑佚》）。常建一生仕途失意，所以寄情山水，写了一些山水田园诗，《题破山寺后禅院》就是诗人游览名山古刹、寻幽探胜之作，也是他的代表作。</p><p>破山寺又叫兴福寺，是由六朝齐代郴州刺史倪德光舍宅改建的，宋代学者朱长文《吴郡图经续记》称之“为海虞之胜处”。诗中抒写清晨游寺后禅院的观感，笔调古朴，描写省净，兴象深微，意境浑融，艺术上相当完整，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：易文翔</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>常建的这首《题破山寺后禅院》曾被宋代洪驹父誉为“全篇皆工”（见《宋诗话辑佚》），这首五言律诗也是他的代表作。常建一生仕途失意，所以寄情山水，写了一些山水田园诗，《题破山寺后禅院》就是诗人游览名山古刹，寻幽探胜之作。</p><p>破山寺又叫兴福寺，是由六朝齐代郴州刺史倪德光舍宅改建的，宋代学者朱长文《吴郡图经续记》称之“为海虞之胜处”。诗中抒写清晨游寺后禅院的观感，笔调古朴，描写省净，兴象深微，意境浑融，艺术...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：易文翔</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>常建的这首《题破山寺后禅院》曾被宋代洪驹父誉为“全篇皆工”（见《宋诗话辑佚》），这首五言律诗也是他的代表作。常建一生仕途失意，所以寄情山水，写了一些山水田园诗。《题破山寺后禅院》就是诗人游览名山古刹，寻幽探胜之作。</p><p>破山寺又叫兴福寺，是由六朝齐代郴州刺史倪德光舍宅改建的，宋代学者朱长文《吴郡图经续记》称之“为海虞之胜处”。诗中抒写清晨游寺后禅院的观感，笔调古朴，描写省净，兴象深微，意境浑融，艺术...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/162686.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

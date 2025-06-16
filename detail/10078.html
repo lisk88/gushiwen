@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春晓 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">春晓</h1>
+            <div class="poem-author">【唐】孟浩然</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>春眠不觉晓，处处闻啼鸟。</p><p>夜来风雨声，花落知多少。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>春天睡醒不觉天已大亮，到处是鸟儿清脆的叫声。<br>回想昨夜的阵阵风雨声，吹落了多少芳香的春花。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>不觉晓：不知不觉天就亮了。晓：早晨，天明，天刚亮的时候。<br>闻：听见。啼鸟：鸟啼，鸟的啼叫声。<br>“夜来”句：一作“欲知昨夜风”。<br>“花落”句：一作“花落无多少”。知多少：不知有多少。知：不知，表示推想。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《春晓》是唐代诗人孟浩然隐居在鹿门山时所作，诗人抓住春天的早晨刚刚醒来时的一瞬间展开联想，描绘了一幅春天早晨绚丽的图景，抒发了诗人热爱春天、珍惜春光的美好心情。全诗语言平易浅近，自然天成，言浅意浓，景真情真，深得大自然的真趣。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：张燕瑾</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《春晓》这首小诗，初读似觉平淡无奇，反复读之，便觉诗中别有天地。它的艺术魅力不在于华丽的辞藻，不在于奇绝的艺术手法，而在于它的韵味。整首诗的风格就像行云流水一样平易自然，然而悠远深厚，独臻妙境。千百年来，人们传诵它，探讨它，仿佛在这短短的四行诗里，蕴涵着开掘不完的艺术宝藏。<br>自然而无韵致，则流于浅薄；若无起伏，便失之平直。《春晓》既有优美的韵致，行文又起伏跌宕，所以诗味醇永。诗人要表现他喜爱春天的...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：张燕瑾</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《春晓》这首小诗，初读似觉平淡无奇，反复读之，便觉诗中别有天地。它的艺术魅力不在于华丽的辞藻，不在于奇绝的艺术手法，而在于它的韵味。整首诗的风格就像行云流水一样平易自然，然而悠远深厚，独臻妙境。千百年来，人们传诵它，探讨它，仿佛在这短短的四行诗里，蕴涵着开掘不完的艺术宝藏。</p><p>自然而无韵致，则流于浅薄；若无起伏，便失之平直。《春晓》既有优美的韵致，行文又起伏跌宕，所以诗味醇永。诗人要表现他喜爱春天...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>此诗短短二十字，却韵味无穷，古今诗评家都推崇备至，乃至儿童学诗，开口就念“春眠不觉晓”。《王孟诗评》云：“风流闲美，正不在多。”诚哉！</p><p>诗文贵曲，委曲才有味。“春眠不觉晓”，诗一开始就给人无限玄想。为什么会“不觉晓”呢？春天懒床？昨夜苦读？日来劳作？……作者没有说，又尽在不言中。诗的第三句，已有所披露，并由此引出下句“花落知多少”的悬念。正因诗没直言说尽，更能给人留下想象的余地。《唐诗解》云：“...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>此诗短短二十字，却韵味无穷，古今诗评家都推崇备至，乃至儿童学诗，开口就念“春眠不觉晓”。《王孟诗评》云：“风流闲美，正不在多。”诚哉！</p><p>诗文贵曲，委曲才有味。“春眠不觉晓”，诗一开始就给人无限玄想，为什么会“不觉晓”呢？春天晚起？昨夜苦读？日来劳作？……作者没有说，又尽在不言中。诗的第三句，已有所披露，并由此引出下句“花落知多少”的悬念。正因诗没直言说尽，更能给人留下想象的余地。《唐诗解》云：“...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：吴中胜</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>此诗短短二十字，却韵味无穷，古今诗评家都推崇备至，乃至儿童学诗，开口就念“春眠不觉晓”。《王孟诗评》云：“风流闲美，正不在多。”诚哉！<br>诗文贵曲，委曲才有味。“春眠不觉晓”，诗一开始就给人无限悬想。为什么会“不觉晓”呢？春天懒床？昨夜苦读？日来劳作？……作者没有说，又尽在不言中。诗的第三句，已有所披露，并由此引出下句“花落知多少”的悬念。正因诗没直言说尽，更能给人留下想象的余地。<br>《唐诗解》云：“...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：张燕瑾</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>春天，有迷人的色彩，有醉人的芬芳，诗人都不去写。他只是从听觉角度着笔，写春之声：那处处啼鸟，那潇潇风雨。鸟声婉转，悦耳动听，是美的。加上“处处”二字，啁啾起落，远近应和，就更使人有置身山阴道上，应接不暇之感。春风春雨，纷纷洒洒，但在静谧的春夜，这沙沙声响却也让人想见那如烟似梦般的凄迷意境，和微雨后的众卉新姿。这些都只是诗人在室内的耳闻，然而这阵阵春声却逗露了无边春色，把读者引向了广阔的大自然，使读...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代咏春诗鉴赏：春江花月夜</span>
+                    <span class="author-name">作者：张燕瑾</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《春晓》这首小诗，初读似觉平淡无奇，反复读之，便觉诗中别有天地。它的艺术魅力不在于华丽的辞藻，不在于奇绝的艺术手法，而在于它的韵味。整首诗的风格就像行云流水一样平易自然，然而悠远深厚，独臻妙境。千百年来，人们传诵它、探讨它，仿佛在这短短的四行诗里，蕴涵着开掘不完的艺术宝藏。自然而无韵致，则流于浅薄；若无起伏，便失之平直。《春晓》既有悠美的韵致，行文又起伏跌宕，所以诗味醇永。诗人要表现他喜爱春天的感...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/25467/7920388.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

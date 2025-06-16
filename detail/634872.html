@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上书谏猎 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">上书谏猎</h1>
+            <div class="poem-author">【汉】司马相如</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>臣闻物有同类而殊能者，故力称乌获，捷言庆忌，勇期贲、育。臣之愚，窃以为人诚有之，兽亦宜然。今陛下好陵阻险，射猛兽，卒然遇轶材之兽，骇不存之地，犯属车之清尘，舆不及还辕，人不暇施巧，虽有乌获、逢蒙之伎，力不得用，枯木朽株尽为害矣。是胡越起于毂下，而羌夷接轸也，岂不殆哉！虽万全无患，然本非天子之所宜也。</p><p>且夫清道而后行，中路而后驰，犹时有御橛之变，而况涉乎蓬蒿，驰乎丘坟，前有利兽之乐，而内无存变之意，其为祸也不亦难矣！夫轻万乘之重不以为安，而乐出于万有一危之途以为娱，臣窃以为陛下不取也。</p><p>盖明者远见于未萌，而智者避危于无形，祸固多藏于隐微而发于人之所忽者也。故鄙谚曰：「家累千金者，坐不垂堂。」此言虽小，可以喻大。臣愿陛下之留意幸察。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我听说有种类相同而能力不同的事物，所以力大当称乌获，敏捷就数庆忌，勇猛必推孟贲、夏育。我愚昧，私下认为人确实有这种情况，兽也应该是这样的。现在陛下喜欢跨越险阻，射猎猛兽，如果突然遇到特别凶猛的野兽，被死亡的处境威骇，就会冲击随从车辆，那时车来不及回转，人无暇施展技巧，即使有力士乌获、射手逢蒙那样的本领，也不能施展，枯树朽木就都会造成危害了。这就等于匈奴人和南越人在车边夹攻，羌人在车后追击，难道不危险吗？即使万分安全没有祸患，然而打猎也本来不是天子适宜干的事。<br>况且扫清道路之后才行进，只在道路中线行驶，还时常有车马出差错的突发事件，更何况在蓬蒿中跋涉，在高山上奔驰，眼前有贪图野兽的乐趣，而内心没有存在突变的预料，恐怕发生祸患也就难免了！轻视帝王之尊不感到安逸，却乐于出现在有突发意外危险的路途上去感受快乐，我私下认为陛下不应该这样选择。<br>明智的人在事物还没有萌芽时就早已预见到了，在危害还没显形时就预先避免了。祸患本来大多隐藏在难以察觉的地方，发生在人容易疏忽的时候。因此俗话说：「家里积有千金的人，应该坐不下堂地防备。」这话虽微不足道，却可以说明大问题。我希望陛下留心明察。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>乌获：战国时秦武王力士，能举千钧。<br>庆忌：春秋时吴王僚之子，以勇武著称。<br>贲、育：孟贲、夏育，皆勇士。孟贲，齐国人，传说他能生拔牛角，水行不避蛟龙，陆行不避兕虎。夏育，卫国人，传说他能生拔牛尾。<br>陵：通「凌」，登，跨越。<br>卒：通「猝」。<br>轶才：超群才能，指凶猛。<br>不存：不能生存。<br>犯：侵犯，冲击。<br>属车：从属车驾，如借左右代所称之人，表示尊敬。此代武帝。清：尊敬颂扬之词，<br>尘：车尘，代车，委婉语。<br>还辕：回车。<br>逢蒙：夏代善射者，传说学箭于羿。<br>毂：车轮中心安插轴的圆木，代车。<br>轸：车后横木，代车尾。<br>中：相对于两边。<br>中路：道路中线。<br>御橛：御马之具。《史记》「索隐」引《舆服志》：「钩逆上者为橛。橛在衔中，以铁为之，大如鸡子。」《韩非子·奸劫弑臣》：「无捶楚之威，御橛之备，虽造父不能以服马。」御，通「衔」；橛，马爵子。<br>丘坟：山丘高地。《礼记·曲礼》郑注：「土之高者曰坟。」<br>利：贪。<br>垂堂：下堂，离堂。一说靠近堂边，有檐瓦坠中之虞，则「垂」释为「边」，「靠边」。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《上书谏猎》选自《汉书》，作者司马相如。这是一篇规劝汉武帝不要亲冒危险，「自击熊、豕」的奏章。汉武帝虽有雄才大略的一面，但在迷信神仙、奢靡侈费、贪恋女色、沉湎于游猎等方面，并不输于昏君。司马相如为郎时，曾作为武帝的随从行猎长杨宫，武帝不仅迷恋驰逐野兽的游戏，还喜欢亲自搏击熊和野猪。司马相如写了这篇谏猎书呈上，由于行文委婉，劝谏与奉承结合得相当得体，武帝看了也称「善」。</p></div></div>
+            
+            <div class="section"><a href="https://baike.baidu.com/item/%E4%B8%8A%E4%B9%A6%E8%B0%8F%E7%8C%8E/9072023?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

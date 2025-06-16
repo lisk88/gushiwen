@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游子吟 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">游子吟</h1>
+            <div class="poem-author">【唐】孟郊</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>慈母手中线，游子身上衣。</p><p>临行密密缝，意恐迟迟归。</p><p>谁言寸草心，报得三春晖。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>慈母用手中的针线，为远行的儿子赶制身上的衣衫。<br>临行前一针针密密地缝缀，怕的是儿子回来得晚衣服破损。<br>有谁敢说，子女像小草那样微弱的孝心，能够报答得了像春晖普泽的慈母恩情呢？</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>游子：指诗人自己，以及各个离乡的游子。<br>临：将要。<br>意恐：担心。归：回来，回家。<br>谁言：一作“难将”。言：说。寸草：小草。这里比喻子女。心：语义双关，既指草木的茎干，也指子女的心意。<br>报得：报答。三春晖：春天灿烂的阳光，指慈母之恩。三春：旧称农历正月为孟春，二月为仲春，三月为季春，合称三春。晖（huī）：阳光。形容母爱如春天温暖、和煦的阳光照耀着子女。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本诗是唐代诗人孟郊的五言古诗，属于古体诗。全诗共六句三十字，采用白描的手法，通过回忆一个看似平常的临行前缝衣的场景，凸显并歌颂了母爱的伟大与无私，表达了诗人对母爱的感激以及对母亲深深的爱与尊敬。此诗情感真挚自然，千百年来广为传诵。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：左成文</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孟郊一生窘困潦倒，直到五十岁时才得到了一个溧阳（今属江苏）县尉的卑微之职。诗人自然不把这样的小官放在心上，仍然放情于山水吟咏，公务则有所废弛，县令就只给他半俸。本篇题下作者自注：“迎母溧上作。”当是他居官溧阳时的作品。诗中亲切而真淳地吟颂了一种普通而伟大的人性美——母爱，因而引起了无数读者的共鸣，千百年来一直脍炙人口。<br>深挚的母爱，无时无刻不在沐浴着儿女们。然而对于孟郊这位常年颠沛流离、居无定所的...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：左成文</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孟郊一生窘困潦倒，直到五十岁时才得到了一个溧阳（今属江苏）县尉的卑微之职。诗人自然不把这样的小官放在心上，仍然放情于山水吟咏，公务则有所废弛，县令就只给他半俸。本篇题下作者自注：“迎母溧上作。”当是他居官溧阳时的作品。诗中亲切而真淳地吟颂了一种普通而伟大的人性美——母爱，因而引起了无数读者的共鸣，千百年来一直脍炙人口。</p><p>深挚的母爱，无时无刻不在沐浴着儿女们。然而对于孟郊这位常年颠沛流离、居无定所...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：陈鹏</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>《全唐诗》这首诗题下有一个小注：“自注：迎母溧上作。”孟郊一生窘困潦倒，直到五十岁时才得到了溧阳县尉这样一个卑微的职务。若依这个小注，那么该诗应作于其居官溧阳迎接母亲而作。但全诗分明是写儿子出门远游，临行前母亲为儿子缝制衣服，儿子有感而作。由此看来这个小注不是很可信。</p><p>母爱普通而伟大，表现在很多方面。诗人独具匠心，选取母亲为游子缝制衣衫这一极平常而又最足以表达母子之情的场景加以刻画。开头两句“慈...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：陈鹏</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>《全唐诗》这首诗题下有一个小注自注：“迎母溧上作。”孟郊一生窘困潦倒，直到五十岁时才得到了溧阳县尉这样一个卑微的职务。若依这个小注，那么该诗应作于其居官溧阳迎接母亲而作。但全诗分明是写儿子出门远游，临行前母亲为儿子缝制衣服，儿子有感而作。看来这个小注不是很可信。</p><p>母爱普通而伟大，表现在很多方面。诗人独具匠心，选取母亲为游子缝制衣衫这一极平常而又最足以表达母子之情的场景加以刻画。开头两句“慈母手中...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：陈鹏</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>《全唐诗》这首诗题下有一个小注：“自注，迎母溧上作。”孟郊一生窘困潦倒，直到五十岁时才得到了溧阳县尉这样一个卑微的职务。若依这个小注，那么该诗应作于其居官深阳迎接母亲而作。但全诗分明是写儿子出门远游，临行前母亲为儿子缝制衣服，儿子有感而作。看来这个小注不是很可信。</p><p>母爱普通而伟大，表现在很多方面。诗人独具匠心，选取母亲为游子缝制衣衫这一极平常而又最足以表达母子之情的场景加以刻画。开头两句“慈母手...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：左成文</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>深挚的母爱，无时无刻不在沐浴着儿女们。然而对于孟郊这位常年颠沛流离、居无定所的游子来说，最值得回忆的，莫过于母子分离的痛苦时刻了。此诗描写的就是这种时候慈母缝衣的普通场景，而表现的，却是诗人深沉的内心情感。<br>开头两句“慈母手中线，游子身上衣”，实际上是两个词组，而不是两个句子。这样写就从人到物，突出了两件最普通的东西，写出了母子相依为命的骨肉之情。紧接两句写出人的动作和意态，把笔墨集中在慈母上。行...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/47162/16514015.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

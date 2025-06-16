@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杂说 · 其一 · 龙说 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">杂说 · 其一 · 龙说</h1>
+            <div class="poem-author">【唐】韩愈</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>龙嘘气成云，云固弗灵于龙也。然龙乘是气，茫洋穷乎玄间，薄日月，伏光景，感震电，神变化，水下土，汩陵谷，云亦灵怪矣哉!</p><p>云，龙之所能使为灵也；若龙之灵，则非云之所能使为灵也。然龙弗得云，无以神其灵矣。失其所凭依，信不可欤！</p><p>异哉！其所凭依，乃其所自为也。《易》曰：“云从龙。”既曰：龙，云从之矣。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>龙吐出的气形成云，云本来不比龙灵异。但是龙乘着这股云气，可以在茫茫的太空中四处遨游，接近日月，遮蔽它的光芒，震撼起雷电，变化神奇莫测，雨水降落在大地，使得山谷沉沦。这云也是很神奇灵异的呢！<br>云，是龙的能力使它有灵异的。至于龙的灵异，却不是云的能力使它这样子的。但是龙没有云，就不能显示出它的灵异。失去它所凭借的云，实在是不行的啊。多么奇怪啊，龙所凭借依靠的，正是它自己造成的云。《周易》说：“云跟随着龙。”那么既然叫做龙，就应该有云跟随着它啊！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>杂说：论说文的一种。这是韩愈写的一组托物寓意的短杂文的第一篇。<br>嘘气：呼气，吐气。<br>灵:显灵<br>茫洋：此处通“徜徉”，自由自在地往来。<br>穷：极，尽。这里有周游的意思。<br>乎：同“于”，在。<br>玄间：太空。<br>薄：逼迫。<br>伏：遮盖，掩蔽。<br>光景：日月的辉。<br>感（han）：通“撼”，摇动，震动。<br>震电：雷电。《诗经。小雅。十月之交》：“烨烨震电。”<br>神：作动词用，使神奇。<br>水：作动词用。用水浸润。<br>下土：地。《诗经。邶风。日月》：“日居月诸，照临下土。”<br>汩（gǔ）：水奔流的样子，这里指淹没了山谷。<br>矣哉：“矣”和“哉”连用靠近，表示终了和感叹的语气。<br>固：原来，本来。于：比。<br>薄：通“迫”<br>伏：遮。蔽。<br>感：通“撼”，摇动，震动。<br>神：产生神妙。<br>使为灵：即“使之为灵”，中间省去指代云的“之”。<br>神：作动词用。这里是显示的意思。<br>矣：用在句末，表示终结的语气。<br>凭依：凭借，依托。<br>信：实在，真的。<br>哉：用在句末，表示感叹语气。<br>乃：竟，居然。<br>《易》：即《易经》。它是我国古代的一部卜筮用的书。云从龙：语出《易经·干》卦。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这是一篇杂文，以龙和云的关系来说明君臣之间必须相互依赖，贤臣不可没有圣君，圣君也须依靠贤臣。写作目的在于提醒君主重用贤臣。但文章写得很含蓄委婉，其真正用意在文中始终没有明确点出。<br>文章仅百余字，但波澜起伏，富于变化。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：李露蕾</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>韩愈的《杂说》是一组通篇设喻的杂文，共四篇。这是其中的第一篇。这篇根据典籍和传说写的杂感，用意很明显：以龙喻君，以云喻臣。君虽圣明，若无贤臣，无以显其德；臣虽贤良，若无圣君，无以成其用。这也就是说，圣君是要依靠贤臣来建功立业的，贤臣又是要仰仗圣君的识拔才能荷重行远的。君臣之间，务必声气相应，才可相得益彰。<br>这个辩证的道理，如果直说，实很平常；韩愈却换了一种艺术的处理手法，以龙云为喻，专从一个“灵”...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">韩愈诗文鉴赏辞典</span>
+                    <span class="author-name">作者：李露蕾</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>韩愈的《杂说》是一组通篇设喻的杂文，共四篇。这是其中的第一篇。这篇根据典籍和传说写的杂感，用意很明显：以龙喻君，以云喻臣。君虽圣明，若无贤臣，无以显其德；臣虽贤良，若无圣君，无以成其用。这也就是说，圣君是要依靠贤臣来建功立业的，贤臣又是要仰仗圣君的识拔才能荷重行远的。君臣之间，务必声气相应，才可相得益彰。<br>这个辩证的道理，如果直说，实很平常；韩愈却换了一种艺术的处理手法，以龙云为喻，专从一个“灵”...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/11157451.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

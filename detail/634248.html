@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讳辩 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">讳辩</h1>
+            <div class="poem-author">【唐】韩愈</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>愈与李贺书，劝贺举进士。贺举进士有名，与贺争名者毁之曰：“贺父名晋肃，贺不举进士为是，劝之举者为非。”听者不察也，和而唱之，同然一辞，皇甫湜曰：“若不明白，子与贺且得罪。”愈曰：“然”。</p><p>《律》曰：“二名不偏讳。”释之者曰：谓若言“征”不称“在”，言“在”不称“征”是也。《律》曰：“不讳嫌名。”释之者曰：谓若“禹”与 “雨”，“邱”与“蓲”之类是也。今贺父名晋肃，贺举进士，为犯“二名律”乎？为犯“嫌名律”乎？父名晋肃，子不得举进士，若父名“仁”，子不得为人乎？</p><p>夫讳始于何时？作法制以教天下者，非周公孔子欤？周公作诗不讳，孔子不偏讳二名，《春秋》不讥不讳嫌名，康王钊之孙实为昭王，曾参之父名皙，曾子不讳“昔”。周之时有骐期，汉之时有杜度，此其子宜如何讳？将讳其嫌，遂讳其姓乎？将不讳其嫌者乎？汉讳武帝名彻为“通”，不闻又讳“车辙”之“辙”为某字也；讳吕后名雉为“野鸡”，不闻又讳“治天下”之“治”为某字也。今上章及诏，不闻讳“浒”、“势”、“秉”。“机”也。惟宦者宫妾，乃不敢言“谕”及 “机”，以为触犯。士君子言语行事，宜何所法守也？今考之于经，质之于律，稽之以国家之典，贺举进士为可耶，为不可耶？</p><p>凡事父母得如曾参，可以无讥矣，作人得如周公、孔子，亦可以止矣。今世之士，不务行曾参、周公、孔子之行，而讳亲之名则务胜于曾参、周公、孔子，亦见其惑也。夫周公、孔子、曾参卒不可胜；胜周公、孔子、曾参，乃比于宦者宫妾：则是宦者宫妾之孝于其亲，贤于周公、孔子、曾参者耶？</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我写信给李贺，劝他参加进士科的考试。李贺如去参加进士科考试就会考中，所以和他争名的人就攻击这件事情，说：“李贺父亲名晋肃，李贺不参加进士科的考试才是对的，劝他考进士的人是不对的。”听到这种议论的人没有仔细想，就异口同声，跟着附和。皇甫湜对我说：“如果不把这件事说清楚，你和李贺将要蒙受坏名声。”我说：“是这样的”。<br>《礼记》上的规定说：“名字的两个字不必都避讳。”解释的人说：“孔子的母亲名‘征在’，这是说如果说‘征’就不说‘在’，说到‘在’就不说‘征’。”《礼记》上的规定又说：“不避讳声音相近的字。”解释的人说：“说的是像‘禹’和‘雨’、‘丘’和‘蓲’之类的字就是这样。”现在李贺的父亲名晋肃，李贺去参加进士科的考试，是违犯了名字的两个字不必都避讳的规定呢？还是违犯了声音相近的字不避讳的规定呢？父亲的名字叫晋肃，儿子就不能参加进士科的考试，假如父亲名“仁”，儿子就不能做人吗？<br>避讳这个规定从什么时候开始的呢？制定礼法制度来教化天下的人，不就是周公、孔子吗？周公作诗不避讳，孔子对人名的两个字也不都避讳，《春秋》也不讥讽不避讳人名声音相近的字。周康王钊的孙子，实际上就是昭王。曾参的父亲名晳，曾参不避讳“昔”字。周朝时有个人叫骐期，汉朝时有个人叫杜度，他们的儿子应怎样避讳？是为了避讳和名字声音相近的字，就连他们的姓也避讳了呢，还是不避讳和名字声音相近的字呢？汉朝避讳武帝的名，把“彻”改为“通”，但没有听说为避讳把车辙的“辙”改作别的字。避讳吕后的名，把“雉”叫做“野鸡”，可没有听说为避讳把治天下的“治”改作别的字。现在上奏章和下诏谕，没有听说避讳“浒”、“势”、“秉”和“饥”字。只有宦官宫妾才不敢说“谕”字和“机”字，认为说了就是触犯皇上。君子著书做事，应该遵守什么礼法呢？现在考察经典，查对规定，考核前代避讳的规定，李贺参加进士科的考试，是可以呢？还是不可以呢？<br>凡是侍奉父母，能做到像曾参那样，就能不被人指责了。做人能像周公、孔子那样，也可以说是到顶点了。现在世上的一些人，不去努力学习曾参、周公、孔子的品行，而要在避讳父母名字的事情上，却一定要超过曾参、周公、孔子，这也可以看出他们是糊涂的。周公、孔子、曾参，毕竟是不可能超过的。在避讳上超过了周公、孔子、曾参，就只能和宦官、宫妾一样了。那么这些宦官、宫妾对父母的孝顺，能比周公、孔子、曾参还好吗？</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>李贺：唐河南昌谷人，字长吉，中唐时期重要诗人。他是唐宗室的远亲，郑王李亮之后，家世早已没落。其父李晋肃官职低微，早死。他少能文，为韩愈、皇甫湜等所激赏。但他终生郁郁不得志，只做过奉礼郎和协律郎等小官。相传他经常背着锦囊骑驴外出，途中得佳句，即书投囊中，及暮归，整理成篇。其诗想象丰富，炼词琢句，险峭幽诡，但因过于矜奇，有时流于晦涩；尤长于乐府，能合之絃管。卒年仅二十七岁。有诗二百三十三首。<br>进士：唐制，士人应礼部考试，考中的叫进士。<br>毁：毁谤、攻击。<br>察：仔细看。<br>和而倡之：此唱彼和，结成一气。<br>皇甫湜：字持正。唐宪宗元和年间进士，曾从韩愈学古文。<br>明白：说清楚，辩明是非。<br>且：将要。<br>得罪：蒙受坏名声。<br>律：这里指《礼记》。<br>二名不偏讳：两个字的名字可以不避讳其中的一个字；即下文所说的“二名律”。<br>“为……乎？为……乎？”：相当于现代汉语的“是……吗？还是……吗？”的反诘句。<br>夫：用在句首，表示阐发议论的语气。<br>周公：姓姬，名旦，周文王之子，周武王之弟，西周初政治家，相传周朝的典章制度都是他制定的。<br>孔子：名丘，字仲尼，春秋时鲁国陬邑（今山东曲阜）人，著名的思想家、教育家，儒家学派的创始人。<br>周公作诗不讳：其父文王名昌，其兄武王名发，周公作诗不讳“昌”字、“发”字，《诗经·周颂》就首“燕及皇天，克昌厥后”，“骏发尔私，终三十里”等句。<br>《春秋》不讥不讳嫌名：《春秋》不讥讽不避讳声音相近的字；如卫桓公名完，“完”与“桓”同音，属于嫌名，《春秋》不讥。<br>康王钊之孙实为昭王：周康王，姓姬，名钊；其子周昭王，名瑕；“昭”和“钊”同音，周人不讳；原文“孙”应作“子”。<br>曾参之父名晳，曾子不讳“昔”：曾参，即曾子，春秋时鲁人，孔子的学生，对父亲极为孝顺；其父名点，字晳，也是孔子的学生；《论语》记述曾子的话：“昔者吾友，尝从事于斯矣。”“昔”和“晳”同音，曾子不讳；原文“名”应作“字”。<br>骐期：春秋时楚国人。杜度：汉朝人。这两个人的姓和名同音，如避讳同音字，连他们的姓也不能说了。<br>“将……乎？将不……者乎？”：表示选择关系的疑问句，相当于现代汉语的“还是……呢？还是不……的呢？”<br>汉武帝：姓刘，名彻，当时为避武帝讳，把“彻侯”改为“通侯”等。<br>吕后：名雉，汉高祖刘邦的皇后，曾临朝称制，当时为避吕后讳，称“雉”为“野鸡”。<br>浒、势、秉、机：唐太祖名虎，太宗名世民，世祖名昞，玄宗名隆基，“浒”、“势”、“秉”、“机”四个字分别同“虎”、“世”、“昞”、“基”四个字同音。<br>乃：竟。<br>谕：唐代宗名豫，“谕”、“豫”二字同音。<br>士君子：古时候指有志操和学问的人。<br>法守：效法和遵守。<br>考：考察。<br>质：询问、对照。<br>稽：考核、考查。<br>典：文献典籍。<br>讥：指责、非难。<br>止：到顶。<br>务：致力。<br>“不务行曾参、周公、孔子之行”句：前一个“行”是动词，实行、学习；后一个“行”是名词，品行、品德。<br>卒：终于、到底。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《讳辩》是唐代文学家韩愈的一篇议论文。当时的著名诗人李贺因避父亲的名讳而不能参加进士科考，像其他读书人那样取得功名，以致前途受到影响。韩愈对此十分愤慨，于是写下这篇文章来论述此事，表达他反对将“避讳”搞得太泛滥的主张。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：钱伯城</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>读《讳辩》这篇文章，最好先了解一点背景材料。<br>李贺，现在大家都知道，是唐朝一位有名的天才诗人。但在唐朝最先赏识并为之扬名的，正是韩愈。《新唐书·文艺传》说，李贺“七岁能辞章，韩愈、皇甫湜始闻未信，过其家，使贺赋诗，援笔辄就，如素构，自目曰《高轩过》。二人大惊，自是有名”。所以韩愈鼓励李贺举进士是有来由的。皇甫湜也是赞成李贺举进士的。此其一。<br>其二，唐朝律法确有规定，府号、官称犯祖、父名者禁止居官。...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">韩愈诗文鉴赏辞典</span>
+                    <span class="author-name">作者：钱伯城</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>读《讳辩》这篇文章，最好先了解一点背景材料。<br>李贺，现在大家都知道，是唐朝一位有名的天才诗人。但在唐朝最先赏识并为之扬名的，正是韩愈。《新唐书·文艺传》说，李贺“七岁能辞章，韩愈、皇甫湜始闻未信，过其家，使贺赋诗，援笔辄就，如素构，自目曰《高轩过》。二人大惊，自是有名”。所以韩愈鼓励李贺举进士是有来由的。皇甫湜也是赞成李贺举进士的。此其一。<br>其二，唐朝律法确有规定，府号、官称犯祖、父名者禁止居官。...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/874100.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论语·述而篇 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">论语·述而篇</h1>
+            <div class="poem-author">【周】孔子</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>子曰：“述而不作，信而好古，窃比于我老彭。”</p><p>子曰：“默而识之，学而不厌，诲人不倦，何有于我哉？”</p><p>子曰：“德之不修，学之不讲，闻义不能徙，不善不能改，是吾忧也。”</p><p>子之燕居，申申如也，夭夭如也。</p><p>子曰：“甚矣吾衰也！久矣吾不复梦见周公。”</p><p>子曰：“志于道，据于德，依于仁，游于艺。”</p><p>子曰：“自行束脩以上，吾未尝无诲焉。”</p><p>子曰：“不愤不启，不悱不发，举一隅不以三隅反，则不复也。”</p><p>子食于有丧者之侧，未尝饱也。</p><p>子于是日哭，则不歌。</p><p>子谓颜渊曰：“用之则行，舍之则藏，惟我与尔有是夫！”子路曰：“子行三军，则谁与？”子曰：“暴虎冯河，死而无悔者，吾不与也。必也临事而惧，好谋而成者也。”</p><p>子曰：“富而可求也，虽执鞭之士，吾亦为之。如不可求，从吾所好。”</p><p>子之所慎：齐，战，疾。</p><p>子在齐闻《韶》，三月不知肉味，曰：“不图为乐之至于斯也。”</p><p>冉有曰：“夫子为卫君乎？”子贡曰：“诺，吾将问之。”入，曰：“伯夷、叔齐何人也？”曰：“古之贤人也。”曰：“怨乎？”曰：“求仁而得仁，又何怨？”出，曰：“夫子不为也。”</p><p>子曰：“饭疏食饮水，曲肱而枕之，乐亦在其中矣。不义而富且贵，于我如浮云。”</p><p>子曰：“加我数年，五十以学《易》，可以无大过矣。”</p><p>子所雅言，《诗》、《书》、执礼，皆雅言也。</p><p>叶公问孔子于子路，子路不对。子曰：“女奚不曰：其为人也，发愤忘食，乐以忘忧，不知老之将至云尔。”</p><p>子曰：“我非生而知之者，好古，敏以求之者也。”</p><p>子不语怪、力、乱、神。</p><p>子曰：“三人行，必有我师焉。择其善者而从之，其不善者而改之。”</p><p>子曰：“天生德于予，桓魋其如予何？”</p><p>子曰：“二三子以我为隐乎？吾无隐乎尔！吾无行而不与二三子者，是丘也。”</p><p>子以四教：文，行，忠，信。</p><p>子曰：“圣人，吾不得而见之矣；得见君子者斯可矣。”子曰：“善人，吾不得而见之矣，得见有恒者斯可矣。亡而为有，虚而为盈，约而为泰，难乎有恒乎。”</p><p>子钓而不纲，弋不射宿。</p><p>子曰：“盖有不知而作之者，我无是也。多闻，择其善者而从之；多见而识之，知之次也。”</p><p>互乡难与言，童子见，门人惑。子曰：“与其进也，不与其退也，唯何甚？人洁己以进，与其洁也，不保其往也。”</p><p>子曰：“仁远乎哉？我欲仁，斯仁至矣。”</p><p>陈司败问：“昭公知礼乎？”孔子曰：“知礼。”孔子退，揖巫马期而进之，曰：“吾闻君子不党，君子亦党乎？君取于吴，为同姓，谓之吴孟子。君而知礼，孰不知礼？”巫马期以告，子曰：“丘也幸，苟有过，人必知之。”</p><p>子与人歌而善，必使反之，而后和之。</p><p>子曰：“文，莫吾犹人也。躬行君子，则吾未之有得。”</p><p>子曰：“若圣与仁，则吾岂敢？抑为之不厌，诲人不倦，则可谓云尔已矣。”公西华曰：“正唯弟子不能学也。”</p><p>子疾病，子路请祷。子曰：“有诸？”子路对曰：“有之。《诔》曰：‘祷尔于上下神祇。’”子曰：“丘之祷久矣。”</p><p>子曰：“奢则不孙，俭则固。与其不孙也，宁固。”</p><p>子曰：“君子坦荡荡，小人长戚戚。”</p><p>子温而厉，威而不猛，恭而安。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>孔子说：“只阐述而不创作，相信而且喜好古代的东西，我私下把自己比做老彭。”<br>孔子说：“默默地记住（所学的知识），学习不觉得厌烦，教人不知道疲倦，这对我能有什么因难呢？”<br>孔子说：“（许多人）对品德不去修养，学问不去讲求，听到义不能去做，有了不善的事不能改正，这些都是我所忧虑的事情。”<br>孔子闲居在家里的时候，衣冠楚楚，仪态温和舒畅，悠闲自在。<br>孔子说：“我衰老得很厉害了，我好久没有梦见周公了。”<br>孔子说：“以道为志向，以德为根据，以仁为凭藉，活动于（礼、乐等）六艺的范围之中。”<br>孔子说：“只要自愿拿着十余干肉为礼来见我的人，我从来没有不给他教诲的。”<br>孔子说：“教导学生，不到他想弄明白而不得的时候，不去开导他；不到他想出来却说不出来的时候，不去启发他。教给他一个方面的东西，他却不能由此而推知其他三个方面的东西，那就不再教他了。”<br>孔子在有丧事的人旁边吃饭，不曾吃饱过。<br>孔子在这一天为吊丧而哭泣，就不再唱歌。<br>孔子对颜渊说：“用我呢，我就去干；不用我，我就隐藏起来，只有我和你才能做到这样吧！”子路问孔子说：“老师您如果统帅三军，那么您和谁在一起共事呢？”孔子说：“赤手空拳和老虎搏斗，徒步涉水过河，死了都不会后悔的人，我是不会和他在一起共事的。我要找的，一定要是遇事小心谨慎，善于谋划而能完成任务的人。”<br>孔子说：“如果富贵合乎于道就可以去追求，虽然是给人执鞭的下等差事，我也愿意去做。如果富贵不合于道就不必去追求，那就还是按我的爱好去干事。”<br>孔子所谨慎小心对待的是斋戒、战争和疾病这三件事。<br>孔子在齐国听到了《韶》乐，有很长时间尝不出肉的滋味，他说，“想不到《韶》乐的美达到了这样迷人的地步。”<br>冉有（问子贡）说：“老师会帮助卫国的国君吗？”子贡说：“嗯，我去问他。”于是就进去问孔子：“伯夷、叔齐是什么样的人呢？”（孔子）说：“古代的贤人。”（子贡又）问：“他们有怨恨吗？”（孔子）说：“他们求仁而得到了仁，为什么又怨恨呢？”（子贡）出来（对冉有）说：“老师不会帮助卫君。”<br>孔子说：“吃粗粮，喝白水，弯着胳膊当枕头，乐趣也就在这中间了。用不正当的手段得来的富贵，对于我来讲就像是天上的浮云一样。”<br>孔子说：“再给我几年时间，到五十岁学习《易》，我便可以没有大的过错了。”<br>孔子有时讲雅言，读《诗》、念《书》、赞礼时，用的都是雅言。<br>叶公向子路问孔子是个什么样的人，子路不答。孔子（对子路）说：“你为什么不样说，他这个人，发愤用功，连吃饭都忘了，快乐得把一切忧虑都忘了，连自己快要老了都不知道，如此而已。”<br>孔子说：“我不是生来就有知识的人，而是爱好古代的东西，勤奋敏捷地去求得知识的人。”<br>孔子不谈论怪异、暴力、变乱、鬼神。<br>孔子说：“三个人一起走路，其中必定有人可以作我的老师。我选择他善的品德向他学习，看到他不善的地方就作为借鉴，改掉自己的缺点。”<br>孔子说：“上天把德赋予了我，桓魋能把我怎么样？”<br>孔子说：“学生们，你们以为我对你们有什么隐瞒的吗？我是丝毫没有隐瞒的。我没有什么事不是和你们一起干的。我孔丘就是这样的人。”<br>孔子以文、行、忠、信四项内容教授学生。<br>孔子说：“圣人我是不可能看到了，能看到君子，这就可以了。”孔子又说：“善人我不可能看到了，能见到始终如一（保持好的品德的）人，这也就可以了。没有却装作有，空虚却装作充实，穷困却装作富足，这样的人是难于有恒心（保持好的品德）的。”<br>孔子只用（有一个鱼钩）的钓竿钓鱼，而不用（有许多鱼钩的）大绳钓鱼。只射飞鸟，不射巢中歇宿的鸟。<br>孔子说：“有这样一种人，可能他什么都不懂却在那里凭空创造，我却没有这样做过。多听，选择其中好的来学习；多看，然后记在心里，这是次一等的智慧。”<br>（孔子认为）很难与互乡那个地方的人谈话，但互乡的一个童子却受到了孔子的接见，学生们都感到迷惑不解。孔子说：“我是肯定他的进步，不是肯定他的倒退。何必做得太过分呢？人家改正了错误以求进步，我们肯定他改正错误，不要死抓住他的过去不放。”<br>孔子说：“仁难道离我们很远吗？只要我想达到仁，仁就来了。”<br>陈司败问：“鲁昭公懂得礼吗？”孔子说：“懂得礼。”孔子出来后，陈司败向巫马其作了个揖，请他走近自己，对他说：“我听说，君子是没有偏私的，难道君子还包庇别人吗？鲁君在吴国娶了一个同姓的女子为做夫人，是国君的同姓，称她为吴孟子。如果鲁君算是知礼，还有谁不知礼呢？”巫马期把这句话告诉了孔子。孔子说：“我真是幸运。如果有错，人家一定会知道。”<br>孔子与别人一起唱歌，如果唱得好，一定要请他再唱一遍，然后和他一起唱。<br>孔子说：“就书本知识来说，大约我和别人差不多，做一个身体力行的君子，那我还没有做到。”<br>孔子说：“如果说到圣与仁，那我怎么敢当！不过（向圣与仁的方向）努力而不感厌烦地做，教诲别人也从不感觉疲倦，则可以这样说的。”公西华说：“这正是我们学不到的。”<br>孔子病情严重，子路向鬼神祈祷。孔子说：“有这回事吗？”子路说：“有的。《诔》文上说：‘为你向天地神灵祈祷。’”孔子说：“我很久以来就在祈祷了。”<br>孔子说：“奢侈了就会越礼，节俭了就会寒酸。与其越礼，宁可寒酸。<br>孔子说：“君子心胸宽广，小人经常忧愁。”<br>孔子温和而又严厉，威严而不凶猛，庄重而又安祥。</p></div></div>
+            
+            
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">四书五经鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：夏乃儒</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本篇有两个重点：孔子的自我评价和孔子的教育思想。关于孔子对自己的评价，在别的篇章中也有所见，但是不如本篇如此集中地记载。关于孔子的教育思想部分，可以看作是对第二篇有关部分的继续展开。</p><p>历史上对孔子的评价，有时褒，有时贬。其中有不少背离了实事求是精神。其中原因很多，不过有一点是共同的——全然不顾孔子曾多次作过的自我评价，造成了评论偏颇，就毫不奇怪了。</p><p>本篇中孔子对自己评价可分为五类：</p><p>第一类，...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

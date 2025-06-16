@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>念奴娇 · 过洞庭 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">念奴娇 · 过洞庭</h1>
+            <div class="poem-author">【宋】张孝祥</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>洞庭青草，近中秋，更无一点风色。玉鉴琼田三万顷，着我扁舟一叶。素月分辉，明河共影，表里俱澄澈。悠然心会，妙处难与君说。</p><p>应念岭海经年，孤光自照，肝肺皆冰雪。短发萧骚襟袖冷，稳泛沧浪空阔。尽挹西江，细斟北斗，万象为宾客。扣舷独啸，不知今夕何夕。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>洞庭湖与青草湖相连，浩瀚无垠，在这个中秋将至的时候，没有一丝风过的痕迹。是玉的世界，还是琼的原野？三万顷明镜般的湖水，载着我一叶细小的扁舟。皎洁的明月和灿烂的银河，在这浩瀚的玉镜中映出她们的芳姿，水面上下一片明亮澄澈。体会着万物的空明，却不知如何道出，与君分享。<br>感怀这一轮孤光自照的明月啊，多少年徘徊于岭海之间，胸襟仍像冰雪一样透明。而此刻的我，正披着萧瑟幽冷的鬚髮和衣袂，平静的泛舟在这广阔浩淼的苍溟之中。让我捧尽西江清澈的江水，细细的斟在北斗星做成的酒勺中，请天地万象统统来做我的宾客，我尽情的拍打着我的船舷，独自的放声高歌啊，怎能记得此时是何年！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>洞庭：湖名，在湖南岳阳西南。<br>素月：洁白的月亮。<br>明河：一作「银河」，天河。<br>表里：里里外外。此处指天上月亮和银河的光辉映入湖中，上下一片澄明。<br>岭海：一作「岭表」，岭外，即五岭以南的两广地区，作者此前为官广西。<br>经年：经过一年。<br>孤光：指月光。<br>肝肺：一作「肝胆」。<br>冰雪：比喻心地光明磊落像冰雪般纯洁。<br>萧骚：一作「萧疏」，稀疏。<br>襟袖冷：形容衣衫单薄。<br>沧浪：一作「沧溟」，青苍色的水。<br>挹（yì）：一作「吸」，舀。<br>西江：长江连通洞庭湖，中上游在洞庭以西，故称西江。<br>北斗：星座名。由七颗星排成像舀酒的斗的形状。<br>万象：万物。<br>扣：一作「叩」，敲击。<br>啸：一作「笑」，撮口作声。<br>「不知今夕何夕」句：赞叹夜色美好，使人沉醉，竟忘掉一切（包括时间）。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词是南宋文学家张于湖泛舟洞庭湖时即景抒怀之作，藉洞庭夜月之景，抒发了作者的髙洁忠贞和豪迈气概，同时隐隐透露出作者被贬谪之悲凉。<br>人们比较熟悉稼轩与东坡之间的继承和发展关系，但却较少有人注意于湖在苏、辛之间所起到的过渡性作用。于湖实际是南宋豪放词派重要奠基人之一。这首《念奴娇》就是广泛传诵的于湖代表作。宋孝宗乾道二年（西元一一六六年），于湖因受政敌谗害而被免职。他从桂林北归，途经洞庭湖，卽景生情而作。这是一首寓情於景之作。它以生动的笔墨，描绘了中秋节前夕洞庭湖雄伟壮阔、晴明澄澈的绚丽画面，抒写了作者光明磊落、冰肝雪胆般纯洁髙尚的情操，反映了作者对投降派之蔑视。<br>词的上阕写湖上美景。开篇三句点地域与节候的特点，点明了一个接近中秋、风平浪静的洞庭湖之夜。「玉鉴琼田三万顷，着我扁舟一葉」是词中壮丽的佳句，它形象地槪括出洞庭湖广阔无涯、优美而又平静的特点，抒发了作者泛舟湖上所得的乐趣。字里行间透露出作者以世间万物的主人翁而自居的思想境界。「素月分辉，明河共影，表里俱澄澈」三句旣是对洞庭湖的夜景加以补充，同时又是作者爱国抗金这一髙尚人格的具体写照，暗地里还反映了作者对南宋小朝廷腐朽黑暗政治的憎恶和不满。「悠然心会，妙处难与君说」两句，以虚带实，含而不露，似合而实起，引出下阕。<br>下阕以「应」字领起，似承而转。作者回忆起「岭表经年」的为宦生涯，并以「孤光自照，肝胆皆冰雪」来象徵自己纯正无私和洁身自好，这对谗害自己的政敌，无疑是一有力回击。在结构上，它又与上阕「表里俱澄澈」的意境上呼下应。「短髮萧疏襟袖冷，稳泛沧溟空阔」承上，进一步抒发积郁于胸的堂堂正气，暗示出尽管屡遭谗害，环境险恶，但自己依然两袖清风，稳操航向，安如泰山。不仅如此，词人还由此而产生出一段浪漫主义的幻想。「尽挹西江，细斟北斗，万象为宾客」三句是词中传神之笔，它进一步突现出作者襟怀坦荡、识见超迈与乐观豪爽的性格，颇有居髙临下，对投降派不屑一顾的气势。煞尾，以「扣舷独啸，不知今夕何夕」结束全篇，更觉神馀言外。<br>这首词画面开阔，意境优美，大气磅礴，具有鲜明的浪漫主义特色，艺术感染力很强。其特点集中表现在以下三个方面：一是恰当的比喻。词中用「玉鉴琼田」来形容波平浪静与水晶般透明的洞庭湖，反衬出「扁舟一葉」之中的作者人格的纯洁髙尚。「孤光自照，肝胆皆冰雪」喩词人心地纯净，俯仰无愧。二是奇特的想象。词中幕天席地、友月交风的意境固然来自现实生活，但是，如果没有充分的、大胆的想象，决不会写得如此生动感人。至于同中写到的吸江酌斗、宾客万象的境界，则纯係想象之词了。正是由于作者把现实生活中不可能出现的事物写得惟妙惟肖，生动传神，才反映出作者强烈的爱憎与美的理想。作者正是通过想象这一心灵的眼睛去探察客观事物内部的奥秘，凭藉想象这一心灵的翅膀向着理想的境界起飞。三是豪放的风格。古代描写洞庭湖的佳作层出不穷。如孟襄陽《望洞庭湖赠张丞相》、杜少陵《登岳阳楼》是著名的律诗，范文正《岳阳楼记》是著名的散文。它们都以自己的特点和豐富的内容而千古不朽。但就平静的洞庭湖之夜并把自己置身湖上舟中来抒发豪情逸兴的佳篇，却并不多见。这一点充分显示出作者艺术上的独创性。这首词句句有人，笔笔含情，「情以物动，辞以情发」，在艺术上达到了内情与外景水乳交融的妙境。词中那种豪放的风格，也由此产生。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：杨海明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>宋孝宗乾道元年（1165），张孝祥出知静江府（治所在今广西桂林），兼广南西路经略安抚使，七月到任。次年六月，被谗落职北归，途经湖南洞庭湖（词中的“洞庭”、“青草”二湖相通，总称洞庭湖）。时近中秋的平湖秋月之夜，诱发了词人深邃的“宇宙意识”和勃然诗兴，使他援笔写下了这首词。<br>说到诗歌表现“宇宙意识”，我们便会想到唐人诗中的《春江花月夜》和《登幽州台歌》。不过，宋词所表现的“宇宙意识”和唐诗比较起来，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：杨海明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>宋孝宗乾道元年（1165），张孝祥出知静江府（治所在今广西桂林），兼广南西路经略安抚使，七月到任。次年六月，被谗落职北归，途经湖南洞庭湖（词中的“洞庭”、“青草”二湖相通，总称洞庭湖）。时近中秋的平湖秋月之夜，诱发了词人深邃的“宇宙意识”和勃然诗兴，使他援笔写下了这首词。<br>说到诗歌表现“宇宙意识”，我们便会想到唐人诗中的《春江花月夜》和《登幽州台歌》。不过，宋词所表现的“宇宙意识”和唐诗比较起来，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">宋词三百首</span>
+                    <span class="author-name">作者：杨海明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>宋孝宗乾道元年（1165），张孝祥出知静江府（治所在今广西桂林），兼广南西路经略安抚使，七月到任。次年六月，被谗落职北归，途经湖南洞庭湖（词中的“洞庭”“青草”二湖相通，总称洞庭湖）。时近中秋的平湖秋月之夜，诱发了词人深邃的“宇宙意识”和勃然诗兴，使他援笔写下了这首词。</p><p>说到诗歌表现“宇宙意识”，我们便会想到唐人诗中的《春江花月夜》和《登幽州台歌》。不过，宋词所表现的“宇宙意识”和唐诗比较起来，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：杨海明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>宋孝宗乾道元年(1165)，张孝祥出知静江府（治所在今广西桂林），兼广南西路经略安抚使，七月到任。次年六月，被谗落职北归，途经湖南洞庭湖（词中的“洞庭”“青草”二湖相通，总称洞庭湖）。时近中秋的平湖秋月之夜，诱发了词人深邃的“宇宙意识”和勃然诗兴，使他援笔写下了这首词。<br>词的开头三句即在我们面前展现了一个静谧、开阔的画面。“气蒸云梦泽，波撼岳阳城”，现实中的八月洞庭湖，可以说是极少会风平浪静的。因...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代山水诗鉴赏：江山留胜迹</span>
+                    <span class="author-name">作者：曹济平</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首词是张孝祥在孝宗乾道四年（1168），由知潭州（今湖南长沙）调知荆南（荆州，今湖北江陵）兼荆湖北路安抚使时，沿湘江入洞庭湖所作。他前年为言官所劾，罢桂林任北归，也曾泛湘江至洞庭，作《念奴娇·过洞庭》词，有“孤光自照，肝胆皆冰雪。短发萧骚襟袖冷”等语，流露出一种不谐于世的情绪。这一首写得心气平和多了。他从长沙出发，舟行至洞庭湖，前一段路程以“行尽潇湘”一笔带过，“到洞庭”三字领出下文。“楚天阔处...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/384002.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世说新语 · 企羡第十六 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">世说新语 · 企羡第十六</h1>
+            <div class="poem-author">【南北朝】刘义庆</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>王丞相拜司空，桓廷尉作两髻、葛群、策杖，路边窥之，叹曰：“人言阿龙超，阿龙故自超。”不觉至台门。</p><p>王丞相过江，自说昔在洛水边，数与裴成公、阮千里诸贤共谈道。羊曼曰：“人久以此许卿，何须复尔？”王曰：“亦不言我须此，但欲尔时不可得耳！”</p><p>王右军得人以兰亭集序方金谷诗序，又以已敌石崇，甚有欣色。</p><p>王司州先为庾公记室参军，后取殷浩为长史。始到，庾公欲遣王使下都。王自启求住曰：“下官希见盛德，渊源始至，犹贪与少日周旋。”</p><p>郗嘉宾得人以己比符坚，大喜。</p><p>孟昶未达时，家在京口。尝见王恭乘高舆，被鹤氅裘。于时微雪，昶于篱间窥之，叹曰：“此真神仙中人！”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>丞相王导受任为司空，就任的时候，廷尉桓彝梳起两个发髻，穿着葛裙，拄着拐杖，在路边观察他。赞叹说：“人们说阿龙出众，阿龙确实出众！”不觉跟随到官府大门口。<br>丞相王导到江南后，自己说起以前在洛水岸边，经常和裴 、阮千里诸贤达一起谈道。羊曼说：“人们早就因为这件事称赞你，哪里还需要再说呢！”王导说：“也不是说我需要这个，只是想到那样的时刻不会再有啊！”<br>右军将军王羲之得知人们把《兰亭集序》和《金谷诗序》并列，又认为自己和石崇相当，神色非常欣喜。<br>司州刺史玉胡之先任庾亮的记室参军，后来庾亮又调殷浩来任长史。殷浩刚到，庾亮想派王胡之带使命到京都，王胡之表白心愿，请求留下，说：“下官很少见到德高望重的人，渊源刚来，我还贪恋着和他叙谈几天呢。”<br>郗嘉宾得知人们把自己比做苻坚，非常高兴。<br>孟昶还没有显贵时，家住京口。有一次看见王恭坐着高车，穿着鹤氅裘。当时下着零星小雪，孟昶在竹篱后偷着看他，赞叹说：“这真是神仙中人！”</p></div></div>
+            
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>企羡，举踵仰慕，同于企慕，指敬仰思慕。仰慕什么？人、事、物都可以，诸如出众的、善于清谈的，博学多才的、超尘脱俗的人物，太平盛世，吟咏盛事，这都在企羡之列。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

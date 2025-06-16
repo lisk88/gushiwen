@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世说新语 · 巧艺第二十一 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">世说新语 · 巧艺第二十一</h1>
+            <div class="poem-author">【南北朝】刘义庆</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>弹棋始自魏宫内，用妆奁戏。文帝于此戏特妙，用手巾角拂之，无不中。有客自云能，帝使为之。客箸葛巾角，低头拂棋，妙逾于帝。</p><p>陵云台楼观精巧，先称平众木轻重，然后造构，乃无锱铢相负揭。台虽高峻，常随风摇动，而终无倾倒之理。魏明帝登台，惧其势危，别以大材扶持之，楼即颓坏。论者谓轻重力偏故也。</p><p>韦仲将能书。魏明帝起殿，欲安榜，使仲将登梯题之。既下，头鬓皓然，因敕儿孙：“勿复学书。”</p><p>钟会是荀济北从舅，二人情好不协。荀有宝剑，可直百万，常在母钟夫人许。会善书，学荀手迹，作书与母取剑，仍窃去不还。荀勖知是钟而无由得也，思所以报之。后钟兄弟以千万起一宅，始成，甚精丽，未得移住。荀极善画，乃潜往画钟门堂，作太傅形象，衣冠状貌如平生。二钟入门，便大感恸，宅遂空废。</p><p>羊长和博学工书，能骑射，善围棋。诸羊后多知书，而射、奕余艺莫逮。</p><p>戴安道就范宣学，视范所为：范读书亦读书，范钞书亦钞书。唯独好画，范以为无用，不宜劳思于此。戴乃画南都赋图；范看毕咨嗟，甚以为有益，始重画。</p><p>谢太傅云：“顾长康画，有苍生来所无。”</p><p>戴安道中年画行像甚精妙。庾道季看之，语戴云：“神明太俗，由卿世情未尽。”戴云：“唯务光当免卿此语耳。”</p><p>顾长康画裴叔则，颊上益三毛。人问其故？顾曰：“裴楷俊朗有识具，正此是其识具。”看画者寻之，定觉益三毛如有神明，殊胜未安时。</p><p>王中郎以围棋是坐隐，支公以围棋为手谈。</p><p>顾长康好写起人形。欲图殷荆州，殷曰：“我形恶，不烦耳。”顾曰：“明府正为眼尔。但明点童子，飞白拂其上，使如轻云之蔽日。”</p><p>顾长康画谢幼舆在岩石妙。人问其所以？顾曰：“谢云：‘一丘一壑，自谓过之。’此子宜置丘壑中。”</p><p>顾长康画人，或数年不点目精。人问其故？顾曰：“四体妍蚩，本无关于妙处；传神写照，正在阿堵中。”</p><p>顾长康道：“画手挥五弦易，目送归鸿难。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>弹棋是从魏代后宫开始出现的，用梳妆的镜匣来游戏。魏文帝对这种游戏特别精通，能用手巾角去弹起棋子，没有弹不中的。有位客人自称能这样做，文帝就叫他试一试。客人戴着葛中，就低着头用葛巾角去拨动棋子，比文帝做得更妙。<br>陵云台楼台精巧，建造之前先称过所有木材的轻重，使四面所用木材的重量相等，然后才筑台，因此四面重量不差分毫。楼台虽然高峻，常随风摇摆，可是始终不可能倒塌。魏明帝登上陵云台，害怕它情况危险，另外用大木头支撑着它，楼台随即就倒塌了。舆论认为是重心偏向一边的缘故。<br>韦仲将擅长书法。魏明帝修建宫殿，想挂个匾，就派仲将登上梯子去题匾。下来后，鬓发全白了。因此便告诫子孙不要再学习书法。<br>钟会是济北公荀勖的叔伯舅父，两人感情不和。荀勖有一把宝剑，约值一百万，经常放在他母亲钟夫人那里。钟会擅长书法，就模仿荀勖笔迹，写了一封信给他母亲要宝剑，于是就偷去不还回来。荀勖知道是钟会干的事，可是没有办法要回来，就想法报复他。后来钟家兄弟花了一千万修建一所住宅，刚落成，非常精美，还没有搬进去年。荀勖很擅长绘画，就偷偷地到钟会的新居去，画上钟繇的像，衣帽、相貌都和生前一模一样。钟毓和钟会兄弟进门看见，就大为感伤哀痛，不能住进去，房子于是闲置不用。<br>羊长和学识广博，擅长书法，能骑马射箭，长于下围棋。羊家后代多懂书法，可是射箭、下棋这些技能，却没有谁能赶上羊长和。<br>戴安道登门向范宣学习，处处模仿范宣的做法，范宣读书，他也读书，范宣抄书，他也抄书。唯独喜欢绘画，范宣认为没有用处，不应该在这方面费心劳神。戴安道于是画了《南都赋图》，范宣看了，赞叹不已，认为很有好处，这才重视绘画。<br>太傅谢安说：“顾长康的画，是自有人类以来所没有的。”<br>戴安道中年时画行像，画得非常精妙。庚道季看了他的画，对他说：“神像画得太俗气，这是因为你还没有完全摆脱世俗之情。”戴安道说：“只有务光才能避免受到你这样的评论啊。”<br>顾长康给裴叔则画像，脸颊上多画了三根胡子。有人间他是什么原因，顾长康说：“裴楷俊逸爽朗，很有才识，这恰恰是表现他的才识。”看画的人寻味起画像来，确实觉得增加了三根胡子才更有气韵，远远胜过还没有添上的时候。<br>北中郎将王坦之认为下围棋是座上隐居，支道林把下围棋看做用手交谈。<br>顾长康喜欢人物写生。他想画荆州刺史殷仲堪，仲堪说：“我的相貌不好看，不麻烦你了。”顾长康说：“明府只是因为眼睛罢了。只要明显地点出瞳人，用飞白笔法轻轻掠过上面，让它像一抹轻云遮住太阳一样，这不很好吗。”<br>顾长康画谢幼舆的像，把他安置在山崖乱石中。有人问他什么原因，顾长康说：“谢幼舆说过：‘在一山一水间游乐，自以为超过他。’这位先生就该安置在山崖沟壑里。”<br>顾长康画人像，有的几年不点眼睛。有人问他什么原因，他说：“形体的美丑，本来和神妙之处没有什么关系；画像要能传神。正是在这里面。”<br>顾长康谈论作画时说：“要画出手挥五弦的动作很容易，要画出目送归鸿的神态就很难。”</p></div></div>
+            
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>巧艺，指精巧的技艺，这里的艺主要指棋琴书画、建筑、骑射等技巧性。技术性的技能。篇内有一些条目是记述一些能工巧匠的高超技艺的。例如第2则记工匠所造楼台之巧，“台虽高峻，常随风摇动，而终无倾倒之理”。从中可以看出古代建筑技术的高度成就。有一些条日记述、赞扬画家、书法家们特出的艺术造诣以及他们对技艺的执著追求，例如第7、11、12、13、14则所记大画家顾长康的故事，第3则所记韦仲将书榜的事。其中一些内容如“颊上益三毛”、“传神写照，正在阿堵中”及评绘画的“手挥五弦易，目送归鸿难”等，已经被引伸、凝炼成为名言而流传后世。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

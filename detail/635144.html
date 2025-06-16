@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>战国策 · 庄辛论幸臣 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">战国策 · 庄辛论幸臣</h1>
+            <div class="poem-author">【汉】刘向</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>「臣闻鄙语曰：『见兔而顾犬，未为晚也；亡羊而补牢，未为迟也。』臣闻昔汤、武以百里昌，桀、纣以天下亡。今楚国虽小，绝长续短，犹以数千里，岂特百里哉？」</p><p>「王独不见夫蜻蛉乎？六足四翼，飞翔乎天地之间，俯啄蚊虻而食之，仰承甘露而饮之，自以为无患，与人无争也。不知夫五尺童子，方将调鈆胶丝，加己乎四仞之上，而下为蝼蚁食也。蜻蛉其小者也，黄雀因是以。俯噣白粒，仰栖茂树，鼓翅奋翼，自以为无患，与人无争也。不知夫公子王孙，左挟弹，右摄丸，将加己乎十仞之上，以其类为招。昼游乎茂树，夕调乎酸咸，倏忽之间，坠于公子之手。」</p><p>「夫雀其小者也，黄鹄因是以。游于江海，淹乎大沼，府噣䱧鲤，仰啮陵衡，奋其六翮，而凌清风，飘摇乎高翔，自以为无患，与人无争也。不知夫射者，方将修其磻卢，治其缯缴，将加己乎百仞之上。彼礛磻，引微缴，折清风而抎矣。故昼游乎江河，夕调乎鼎鼐。」</p><p>「夫黄鹄其小者也，蔡圣侯之事因是以。南游乎高陂，北陵乎巫山，饮茹溪流，食湘波之鱼，左抱幼妾，右拥嬖女，与之驰骋乎高蔡之中，而不以国家为事。不知夫子发方受命乎宣王，系己以朱丝而见之也。」</p><p>「蔡圣侯之事其小者也，君王之事因是以。左州侯，右夏侯，辇从鄢陵君与寿陵君，饭封禄之粟，而载方府之金，与之驰骋乎云梦之中，而不以天下国家为事。不知夫穰侯方受命乎秦王，填黾塞之内，而投己乎黾塞之外。」</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我听俗语说：“看到兔子后，才想到呼唤猎犬捕捉。也不算太晚。在一些羊逃跑之后，立即去补修羊圈，也还不算太迟”。我过去听说汤王，武王。起初只有一百多里的地方，而能够兴盛起来；桀、纣有了天下，而免不了要灭亡。今楚国的地方虽然小，但是截长补短，一共算起来，还有好几千里，何止一百里呢？”<br>“大王您难道没看见蜻蜓么？六只脚，四只翼，在天地之间盘旋飞翔，俯身捉食蚊、虻，仰头承饮甘露，它自己以为没有灾难，与哪个也不相争了。可是没想到那五尺高的小孩子，正要调好黏糖，粘在丝绳上，加在它身上，将它从空中粘下来，给蚂蚁吃了。”<br>“蜻蜓的事还是其中的小事啊，黄雀也是这样。向下啄食米粒，向上栖息在树上，展翅奋飞，它自己以为没有灾难，与哪个也不相争了。可是没想到那王孙公子，左手拿着弹弓，右手按上弹丸，拉紧弓弦，要在很高的地方射击它，正把黄雀的颈作为弹射的目标。白天还在树上游玩，晚上被人加上酸醎的作料做成菜肴了。顷刻间就落到了公子手里。”<br>“黄雀的遭遇还是其中的小事啊，天鹅也是这样。它在江、海遨游，在大水池边停留休息，低头啄食水中的鰋、鲤，抬头吃菱角和水草，举起它的翅膀，驾着清风，在空中安详高飞，它自己以为没有灾难，与哪个也不相争了。可是没想到那射手正准备他石制的箭头和黑弓，整治他系有生丝线的箭，要在很高很高的地方射击它，它带着锐利的青石做成的箭头，拖着箭上的细丝绳，在清风中翻转了一下身子就掉下来了。因此，白天在江湖中遨游，晚上就放在鼎鼐中烹调了。”<br>“天鹅的遭遇还是其中的小事啊，蔡灵侯也是这样。他南游高丘，北登巫山，在茹溪河畔饮马，吃湘江的鲜鱼。他左手抱着年轻的爱妾，右手搂着心爱的美女，和她们一起奔驰在高蔡的路上，而不把国家的安危当作正事。可是没想到子发正从楚王那里接受了攻打蔡国的命令，最后他自己被红绳拴上去见楚王。”<br>“蔡灵侯的遭遇还是其中的小事啊，君王也是这样。左边有州侯，右边有夏侯，辇车后面还跟着鄢陵君和寿灵君，吃着由封邑进奉来的粮食，载着四方府库所供纳的金银，和他们一起驾着车子奔驰在云梦的路上，而不把天下国家的安危当作正事，没想到穰侯魏冉正从秦王那里接受了攻打楚国的命令，陈兵在黾塞（河南省平靖关）之内，而把自己驱逐在黾塞（河南省平靖关）之外了。”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>庄辛论幸臣：该文节选自《战国策·楚策四》。<br>庄辛：楚臣，楚庄王的后代。<br>楚襄王：即楚顷襄王，名横，怀王之子，怀王被骗死在秦国，襄王继位，“淫逸侈靡，不顾国政”，庄辛于是进谏。幸臣：君主宠爱的臣子。<br>蜻蛉：即蜻蜓。<br>方：正。<br>鈆：同“铅”。<br>加：加害。<br>仞：八尺，或说七尺。<br>因是以：仍然是这样啊。因，犹；是，此；以，通“已”，语助词。<br>黄雀因是以：即不以蜻蜓为鉴。<br>噣：同“啄”。<br>白粒：米。<br>以其类为招：自身成为射击的目标。类，同类；招，招诱，即靶子。<br>调乎酸咸：用酸咸调味，指被烹煮。<br>“倏忽之间，坠于公子之手。”句：清人王念孙认为是“後人妄加”的。<br>黄鹄：俗名天鹅。<br>衡：通“蘅”，水草。<br>六翮（hé）：翅膀。翮，本指羽毛的茎，代指鸟翼。<br>磻（bō）卢：石键。即石制箭头。卢，上了黑漆的弓。<br>矰缴（zēngzhuó）：捕鸟的用具。<br>被：遭，受。<br>礛（jiān）：锋利。<br>磻（bō）：同“碆”，石镞。<br>抎（yǔn）：同“陨”，坠落。<br>鼎：古代烧煮食物的器具。<br>鼐（nài）：大型的鼎。<br>蔡灵侯：蔡国的国君，名班公元前53年被楚灵王诱杀。蔡国在今河南省上蔡县。<br>茹溪：源出巫山，在四川省巫山县以北。<br>高蔡：上蔡。<br>子发：楚大夫。<br>穣侯：魏冉，秦昭王舅父封于穰。<br>秦王：指秦昭王。<br>黾塞：在今河南信阳县西南平靖关，当时是楚国北部的要塞。所以黾塞之内是指楚国境内，黾塞之外是指秦国。<br>“填黾塞之内，而投己乎黾塞之外。”句，秦国将要用重兵进攻黾塞以南，把楚王俘虏送到黾塞以北却秦国去。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《庄辛论幸臣》是《战国策·楚策四》中的一篇短文。讲述的是庄辛见到楚襄王，大胆直言，规劝襄王终日与幸臣为伍，淫逸奢靡，不顾国政，郢都必危。襄王不但不听庄辛的忠言劝告，反而恶语相向，庄辛预料楚国必亡，于是避祸于赵国。秦果然攻克鄢、郢、巫、上蔡、陈之地，襄王流亡藏匿在城阳，楚国几乎遭到亡国之祸。于是，楚王派人招回了庄辛。庄辛以由小而大，由物及人的比喻，层层深入地告诫楚襄王为王的道理。庄辛最终说服了楚襄王。楚襄王封庄辛为成陵君，并用庄辛之计重新收复了淮北之地。<br>这篇文章的主旨是庄辛以浅显生动、寓含深刻的层层比喻，以及前喻后正的手法，告诫楚襄王不能只图享乐，而应励精图治，"以天下国家为事"，否则必将招致严重后患的道理。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代赋鉴赏辞典</span>
+                    <span class="author-name">作者：赵逵夫</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>庄辛的《谏楚襄王》，以往各种选本都据《战国策》选入，其实《新序》所录保留了原文历史真实性与地域特色，更能反映战国时文学的特色。据马王堆出土帛书《战国纵横家书》，这类材料原本为书信、上书、谏说辞令底稿追记稿，多无主名。《战国策》《说苑》《新序》所收在开头、结尾加了主名和有关背景及有关事情发展结果的文字，这都是汇编者所加，所以有的将人名弄错。据此《谏楚襄王》应是庄辛所写文章献于楚襄王者，传抄者加了开头...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/item/庄辛论幸臣" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

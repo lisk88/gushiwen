@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王孙满对楚子 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">王孙满对楚子</h1>
+            <div class="poem-author">【周】左丘明</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>楚子伐陆浑之戎，遂至于雒，观兵于周疆。定王使王孙满劳楚子。楚子问鼎之大小轻重焉。</p><p>对曰：“在德不在鼎。昔夏之方有德也，远方图物，贡金九牧，铸鼎象物，百物而为之备，使民知神奸。故民入川泽山林，不逢不若。螭魅罔两，莫能逢之。用能协于上下，以承天休。桀有昏德，鼎迁于商，载祀六百。商纣暴虐，鼎迁于周。德之休明，虽小，重也。其奸回昏乱，虽大，轻也。天祚明德，有所底止。成王定鼎于郏鄏，卜世三十，卜年七百，天所命也。周德虽衰，天命未改。鼎之轻重，未可问也。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>楚庄王攻打陆浑之戎，于是来到雒水，在周朝的疆界内检阅军队。周定王派王孙满去慰劳楚庄王。楚庄王问起九鼎的大小轻重。<br>王孙满回答说：“这决定于君主的德行而不在于鼎的本身。往昔夏朝开始实行德政的时候，远方的人们把各种事物都绘制成图像，九州的长官贡献了铜，铸成九鼎，把各种奇形异状的神怪图像都铸在鼎上，万物皆备，让人民认识神物与妖怪。因此，人民进入川泽山林，就不会碰上有危害的东西。山林水泽中的妖怪，都不会遇上。因而能使上上下下的人们和睦相处，以承受上天的保佑。夏桀德行败坏昏乱，九鼎迁移到商朝，经历了六百年。商纣王暴虐无道，九鼎又迁到周朝。德行如果美好光明，鼎虽小，分量却很重；如果奸邪昏乱，鼎虽大，分量也是轻的。上天赐福给有美德的人，总有终止的日子。成王把九鼎固定在郏鄏，占卜的结果是传世三十代，享国七百年，这是天命所决定的。周朝的德行虽然衰减了，天命并没有改变。九鼎的轻重，是不能问的。”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>王孙满：周大夫，周共王的玄孙。对：回答。楚子：楚庄王，公元前613年至前591年在位。<br>陆浑之戎：古戎人的一支。也叫允姓之戎。原在秦晋的西北，春秋时，被秦晋诱迫，迁到伊川（今河南伊河流域），周景王二十年（公元前525年）为晋所并。雒（luò）：指雒水，今作洛水。发源于陕西，经河南流入黄河。观兵：检阅军队以显示军威。疆：边境。<br>定王：襄王的孙子，名瑜，周朝第二十一位王，公元前606年至前586年在位。劳：慰劳。<br>鼎：即九鼎。相传夏禹收九牧所贡金铸成九个大鼎，象征九州，三代时奉为传国之宝，也是王权的象征。楚庄王问鼎的大小轻重，反映他对王权的觊觎。<br>图：画。贡：把物品进献给天子。金：指青铜。九牧：即九州。传说古代把天下分为九州，州的长官叫牧。贡金九牧，是“九牧贡金”的倒装，犹言天下贡金。铸鼎象物：用九州的贡金铸成鼎，把画下来的各种东西的图象铸在鼎上。百物；万物。备：具备神奸：鬼神怪异之物。<br>不逢不若：不会遇到不顺的东西。逢，遇。若，顺，顺从。<br>螭魅（chi mèi）：也作“魑魅”。传说山林里能害人的妖怪。罔两（wǎng liǎng）：传说中河川里的精怪。<br>用：因。协：和协。休：荫庇，保佑。<br>昏德：昏乱的行为。祀：年。与“载”同义。<br>德之休明：犹言德若休明。休明，美善光明。<br>奸回；奸恶邪僻。<br>祚（zuò）：赐福，保佑。明德：美德。这里指明德的人。止：限度，极限。<br>成王：周成王。定鼎：定都。九鼎为古代传国的重器，王都所在，即鼎之所在。郏鄏（jiá rǔ）：地名。周王城所在，在今河南洛阳市西。卜世（bǔ）：谓预卜周朝能传至几代。卜，占卜。古人用火灼龟甲，根据灼开的裂纹来预测未来吉凶。世，父子相继为一世。卜年：谓所得之年。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·宣公三年》。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

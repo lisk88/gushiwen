@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登岳阳楼 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">登岳阳楼</h1>
+            <div class="poem-author">【唐】杜甫</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>昔闻洞庭水，今上岳阳楼。</p><p>吴楚东南坼，乾坤日夜浮。</p><p>亲朋无一字，老病有孤舟。</p><p>戎马关山北，凭轩涕泗流。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>早早就闻知洞庭湖的盛名，今天终于登上了岳阳楼观看。<br>吴楚被大至分为东南两地，日月星辰都漂浮在洞庭湖上。<br>亲朋好友个个都音信全无，我年老多病仿佛一叶孤舟。<br>北边的关山战火不曾停息，我扶窗远眺不禁涕泪交流。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>洞庭水：即洞庭湖，在今湖南北部，长江南岸，是中国第二淡水湖。<br>岳阳楼：即岳阳城西门楼，在湖南省岳阳市，下临洞庭湖，为游览胜地。<br>坼（chè）：分裂。<br>乾坤：指日、月。<br>浮：日月星辰和大地昼夜都飘浮在洞庭湖上。<br>「吴楚东南坼，乾坤日夜浮。」句：吴楚两地在我国东南。<br>无一字：音讯全无。字，这里指书信。<br>老病：杜少陵时年五十七岁，身患肺病，风痹，右耳已聋。<br>有孤舟：唯有孤舟一叶飘零无定。<br>戎马：指战争。<br>关山北：北方边境。<br>凭轩：靠着窗户。<br>涕泗（sì）流：眼泪禁不住地流淌。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>唐代宗大历三年（西元七六八年）之后，杜少陵出峡漂泊两湖，此诗是登岳阳楼而望故乡，触景感怀之作。开头写早闻洞庭盛名，然而到暮年纔实现目睹名湖的愿望，表面看有初登岳阳楼之喜悦，其实意在抒发早年抱负至今未能实现之情。二联是洞庭的浩瀚无边。三联写政治生活坎坷，漂泊天涯，怀才不遇的心情。末联写眼望国家动荡不安，自己报国无门的哀伤。写景虽衹二句，却显技巧精湛，抒情虽暗淡落寞，却吞吐自然，毫不费力。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：傅庚生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗的意境是十分宽阔宏伟的。<br>诗的颔联“吴楚东南坼，乾坤日夜浮”，是说广阔无边的洞庭湖水，划分开吴国和楚国的疆界，日月星辰都像是整个地飘浮在湖水之中一般。只用了十个字，就把洞庭湖水势浩瀚、无边无际的巨大形象特别逼真地描画出来了。<br>杜甫到了晚年，已经是“漂泊西南天地间”，没有一个安居之所，只好“以舟为家”了。所以下边接着写：“亲朋无一字，老病有孤舟。”亲戚朋友们这时连音信都没有了，只有年老多病的诗...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：傅庚生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗的意境是十分宽阔宏伟的。</p><p>诗的颔联“吴楚东南坼，乾坤日夜浮”，是说广阔无边的洞庭湖水，划分开吴国和楚国的疆界，日月星辰都像是整个地飘浮在湖水之中一般。只用了十个字，就把洞庭湖水势浩瀚、无边无际的巨大形象特别逼真地描画出来了。</p><p>杜甫到了晚年，已经是“漂泊西南天地间”，没有一个安居之所，只好“以舟为家”了。所以下边接着写：“亲朋无一字，老病有孤舟。”亲戚朋友们这时连音信都没有了，只有年老多病...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：黄鸣</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>本诗作于大历三年（768），杜甫漂泊于江湘流域时所作。</p><p>此诗笔力雄浑，力压群伦，此前此后，唯一可与之相比的题岳阳楼诗，唯有孟浩然《望洞庭湖赠张丞相》的“气蒸云梦泽，波撼岳阳城”一联，然孟诗比之于杜诗，亦稍有所缺，不能像杜诗如此浑成。</p><p>“昔闻洞庭水，今上岳阳楼”，起句平易。“昔闻”与“今上”，是常见的闻其名而终至的格局。杜甫唯有晚年，才漂泊在江、湘之上，与江水和洞庭相亲，是为与实。</p><p>颔联气象陡...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">杜甫诗歌鉴赏辞典</span>
+                    <span class="author-name">作者：傅庚生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗的意境是十分宽阔宏伟的。</p><p>诗的颔联“吴楚东南坼，乾坤日夜浮”，是说广阔无边的洞庭湖水，划分开吴国和楚国的疆界，日月星辰都像是整个地飘浮在湖水之中一般。只用了十个字，就把洞庭湖水势浩瀚、无边无际的巨大形象特别逼真地描画出来了。</p><p>杜甫到了晚年，已经是“漂泊西南天地间”，没有一个安居之所，只好“以舟为家”了。所以下边接着写：“亲朋无一字，老病有孤舟。”亲戚朋友们这时连音信都没有了，只有年老多病...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：傅庚生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗的意境是十分宽阔宏伟的。<br>诗的颔联“吴楚东南坼，乾坤日夜浮”，是说广阔无边的洞庭湖水，划分开吴国和楚国的疆界，日月星辰都像是整个地飘浮在湖水之中一般。只用了十个字，就把洞庭湖水势浩瀚、无边无际的巨大形象特别逼真地描画出来了。<br>杜甫到了晚年，已经是“漂泊西南天地间”，没有一个安居之所，只好“以舟为家”了。所以下边接着写：“亲朋无一字，老病有孤舟。”亲戚朋友们这时连音信都没有了，只有年老多病的诗...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代山水诗鉴赏：江山留胜迹</span>
+                    <span class="author-name">作者：傅庚生</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这首诗的意境是十分广阔宏伟的。</p><p>诗的颔联“吴楚东南坼，乾坤日夜浮”，是说广阔无边的洞庭湖水，划分开吴国和楚国的疆界，日月星辰都像是整个地飘浮在湖水之中一般。只用了十个字，就把洞庭湖水势浩瀚、无边无际的巨大形象特别逼真地描画出来了。</p><p>杜甫到了晚年，已经是“漂泊西南天地间”，没有一个定居之所，只好“以舟为家”了。所以下边接着写：“亲朋无一字，老病有孤舟。”亲戚朋友们这时连音信都没有了，只有年老多病...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/156032/4966977.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

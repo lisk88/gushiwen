@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>永州韦使君新堂记 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">永州韦使君新堂记</h1>
+            <div class="poem-author">【唐】柳宗元</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>将为穹谷峭岩渊池于郊邑之中，则必辇山石，沟涧壑，淩绝峰阻，疲极人力，乃可以有为也。然而求天作地生之状，咸无得焉。逸其人，因其地，全其天，昔之所难，今于是乎在。</p><p>永州实惟九疑之麓，其始度土者，环山为城。有石焉，翳于奥草；有泉焉，伏于土涂。蛇虺之所蟠，狸鼠之所游，茂树恶木，嘉葩毒卉，乱杂而争植，号为秽墟。韦公之来既逾月，理甚无事，望其他，且异之。始命芟其芜，行其涂，积之丘如，蠲之浏如。既焚既酾，奇势迭出，清浊辨质，美恶异位。视其植，则清秀敷舒；视其蓄，则溶漾纤馀。怪石森然，周于四隅，或列或跪，或立或仆，窍穴逶邃，堆阜突怒。乃作栋宇，以为观游。凡其物类，无不合形辅势，效伎于堂庑之下。外之连山高原，林麓之崖，间厕隐显。迩延野绿，远混天碧，咸会于谯门之外。</p><p>已乃延客入观，继以宴娱。或赞且贺曰：「见公之作，知公之志。公之因土而得胜，岂不欲因俗以成化？公之择恶而取美，岂不欲除残而佑仁？公之蠲浊而流清，岂不欲废贪而立廉？公之居高以望远，岂不欲家抚而户晓？夫然，则是堂也，岂独草木土石水泉之适欤？山原林麓之观欤？将使继公之理者，视其细，知其大也。」宗元请志诸石，措诸壁，编以为二千石楷法。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>如果打算在城邑营造幽谷、峭壁和深池，那就必须运载山石，开凿山涧沟壑，逾越险阻，耗尽人力，才可能办到。可是要想有那种天造地设的景致，则不能做到。而不必耗费民力，顺应地形，且能保持天然之美，这种在过去很难办到的事情，如今在这里出现了。<br>永州在九嶷山麓，最初在这里测量规划的人，也曾环绕着山麓建起了城市。这里有山石，却被茂密的草丛遮蔽着；这里有清泉，却埋藏在污泥之下，成了毒蛇盘踞，狸鼠出没有地方。嘉树和恶木，鲜花与毒草，混杂一处，竞相疯长。因此被称为荒凉的地方。<br>韦公来到永州，过了一个月，州政大治，没有多少事情。望着这块土地，感到它很不平常，才让人铲除荒草，挖去污泥。铲下来的草堆积如山，疏通后的泉水晶莹清澈。烧掉了杂草，疏通了清泉，奇特的景致层出不穷。清秀和污浊分开了，美景代替了荒凉。看那树木，则清秀挺拔，枝叶舒展；看那湖水，则微波荡漾，曲折萦回。怪石森然繁密，环绕四周。有的排列成行，有的如同跪拜，有的站立，有的卧倒。石洞曲折幽深，石山突兀高耸。于是在此建造厅堂，作为观赏游玩的地方。所有的怪石无不适应地形地势，献技于堂庑之下。新堂的外边，高原和山连接，林木覆盖的山脚悬崖，穿插交错，或隐或现。绿色的原野从近处伸向远方，跟碧蓝的天空连成了一体。这一切，都汇集在门楼之内。<br>新堂盖好后，使君便邀请客人前来参观，接着又设宴娱乐。有的边赞誉，边祝贺说：“看到您修建这新堂，便知道您的心志。您随着地势开辟出胜景，难道不就是想顺着当地的风俗来形成教化吗？您铲除恶木毒草而保留嘉树鲜花，难道不就是想铲除凶暴而保护仁者吗？您挖除污泥而使清泉流淌，难道不就是想除去贪污而提倡廉洁吗？您登临高处而纵目远望，难道不就是想让每个家庭都安定和富饶吗？既然这样，那么建这个新堂难道仅仅是为了草木土石清泉流水怡人心意，或是为了观赏山峦、原野和树林的景色吗？该是希望继使君后治理这个州的人，能够通过这件小事，懂得治民的大道理啊。”宗元请求把这篇记文镌刻在石板上，嵌在墙里，编入书中，作为刺史的楷模法式。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>韦使君：即韦宙，元和七、八年（公元812-813年）间任永州刺史。<br>穹谷：深谷。<br>嵁（kān）岩：峭壁。<br>渊池：深地。<br>辇（niǎn）：人推或拉的车，这里用如动词，用车装载的意思。<br>沟通：开凿的意思。沟，这里作动词。<br>陵绝：超越。<br>九疑：即九疑山，在今湖南宁远县境内。<br>度（duó）：量度，这里有勘测规划的意思。<br>翳（yì）：遮蔽。<br>奥草：深草。<br>涂：污泥。<br>蛇虺（huí）：一种毒蛇。<br>蟠：盘屈而伏。<br>葩（pā）：花。<br>卉（huì）：草。<br>理：治理。<br>芟：割除。芜：荒草。<br>行：流通，流动。这里是疏导的意思。<br>蠲（juān）：清洁，使动用法。<br>浏如：水清澈的样子。<br>酾（shī）：疏导。<br>蓄：指积蓄的湖水。<br>溶漾：水动荡的样子。<br>纡（yū）馀：曲折萦绕。<br>四隅：这里指四方。<br>窍穴：这里指山洞。<br>逶邃（suì）曲折深远。<br>栋宇：堂屋。<br>庑（wǔ）：堂下四周的屋子。<br>间厕：参加，这里是交错的意思。<br>迩：近。<br>谯（qiáo）门：古代建筑在门楼上用以了望的楼。<br>延：邀请。<br>择：应作“释”，舍弃。<br>晓：另本应作“饶”，富裕。<br>措：放置。这里是嵌置的意思。<br>编：指编入书籍。<br>二千石：汉代郡守的俸禄为二千石，后来习惯也称州郡一级的长官为二千石，这里指州刺史。<br>“宗元请志诸石，措诸壁，编以为二千石楷法。”句：《柳宗元集》作“宗元请志诸石，措诸屋漏，以为二千石楷法。”。屋漏，西北隅之谓也。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《永州韦使君新堂记》是唐代文学家柳宗元的古文名篇之一，作于公元812年（元和七年）。当时作者任永州司马，刺史韦宙是他的顶头上司。在韦使君新堂落成的时候，作者以其生花的妙笔，道出了韦使君的乔迁之喜，清明之治，让人心生一种顺应自然的美感，积极向上的激情。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：顾伟列</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>唐宪宗元和七年（812），韦中丞出任永州刺史，到任月余，即营造新堂。落成时，设宴招待官绅。时柳宗元正谪任永州司马。韦素知柳宗元善文，便请他为新堂作记，柳宗元遂写下这篇写景状物曲尽其妙、运思谋篇深具匠心的《永州韦使君新堂记》。<br>全文由三部分组成。第一部分发端先撇开新堂，另起端绪，指出在城市或郊野营造穹谷嵁岩渊池等景致，一则耗尽人力，二则难得天然之美。如此开篇，文章避免了入题平板，而给人劈空而来，波澜...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">柳宗元诗文鉴赏辞典</span>
+                    <span class="author-name">作者：顾伟列</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>唐宪宗元和七年（812），韦中丞出任永州刺史，到任月余，即营造新堂。落成时，设宴招待官绅。时柳宗元正谪任永州司马。韦素知柳宗元善文，便请他为新堂作记，柳宗元遂写下这篇写景状物曲尽其妙、运思谋篇深具匠心的《永州韦使君新堂记》。<br>全文由三部分组成。第一部分发端先撇开新堂，另起端绪，指出在城市或郊野营造穹谷嵁岩渊池等景致，一则耗尽人力，二则难得天然之美。如此开篇，文章避免了入题平板，而给人劈空而来，波澜...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="https://baike.baidu.com/item/%E6%B0%B8%E5%B7%9E%E9%9F%A6%E4%BD%BF%E5%90%9B%E6%96%B0%E5%A0%82%E8%AE%B0" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

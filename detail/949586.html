@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>离骚（节选） - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">离骚（节选）</h1>
+            <div class="poem-author">【周】屈原</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>帝高阳之苗裔兮，朕皇考曰伯庸。摄提贞于孟陬兮，惟庚寅吾以降。皇览揆余初度兮，肇锡余以嘉名。名余曰正则兮，字余曰灵均。</p><p>纷吾既有此内美兮，又重之以修能。扈江离与辟芷兮，纫秋兰以为佩。汩余若将不及兮，恐年岁之不吾与。朝搴阰之木兰兮，夕揽洲之宿莽。日月忽其不淹兮，春与秋其代序。惟草木之零落兮，恐美人之迟暮。不抚壮而弃秽兮，何不改乎此度？乘骐骥以驰骋兮，来吾道夫先路！</p><p>……</p><p>长太息以掩涕兮，哀民生之多艰。余虽好修姱以鞿羁兮，謇朝谇而夕替。既替余以蕙纕兮，又申之以揽茝。亦余心之所善兮，虽九死其犹未悔。怨灵修之浩荡兮，终不察夫民心。众女嫉余之蛾眉兮，谣诼谓余以善淫。固时俗之工巧兮，偭规矩而改错。背绳墨以追曲兮，竞周容以为度。忳郁邑余侘傺兮，吾独穷困乎此时也。宁溘死以流亡兮，余不忍为此态也！鸷鸟之不群兮，自前世而固然。何方圜之能周兮，夫孰异道而相安？屈心而抑志兮，忍尤而攘诟。伏清白以死直兮，固前圣之所厚。</p><p>悔相道之不察兮，延伫乎吾将反。回朕车以复路兮，及行迷之未远。步余马于兰皋兮，驰椒丘且焉止息。进不入以离尤兮，退将复修吾初服。制芰荷以为衣兮，集芙蓉以为裳。不吾知其亦已兮，苟余情其信芳。高余冠之岌岌兮，长余佩之陆离。芳与泽其杂糅兮，唯昭质其犹未亏。忽反顾以游目兮，将往观乎四荒。佩缤纷其繁饰兮，芳菲菲其弥章。民生各有所乐兮，余独好修以为常。虽体解吾犹未变兮，岂余心之可惩？</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我是古帝高阳氏的子孙，我已去世的父亲字伯庸。<br>岁星在寅那年的孟春月，正当庚寅日那天我降生。<br>父亲仔细揣测我的生辰，于是赐给我相应的美名：<br>父亲把我的名取为正则，同时把我的字叫作灵均。<br>天赋给我很多良好素质，我不断加强自己的修养。<br>我把江离芷草披在肩上，把秋兰结成索佩挂身旁。<br>光阴似箭我好像跟不上，岁月不等待人令我心慌。<br>早晨我在大坡采集木兰，傍晚在小洲中摘取宿莽。<br>时光迅速逝去不能久留，四季更相代谢变化有常。<br>我想到草木已由盛到衰，恐怕自己身体逐渐衰老。<br>何不利用盛时扬弃秽政，为何还不改变这些法度？<br>乘上千里马纵横驰骋吧，来呀，我在前引导开路！<br>……<br>我揩着眼泪啊声声长叹，可怜人生道路多么艰难。<br>我虽爱好修洁严于责己，早晨被辱骂晚上又丢官。<br>他们攻击我佩带蕙草啊，又指责我爱好采集茝兰。<br>这是我心中追求的东西，就是多次死亡也不后悔。<br>怨就怨楚王这样糊涂啊，他始终不体察别人心情。<br>那些女人妒忌我的丰姿，造谣诬蔑说我妖艳好淫。<br>庸人本来善于投机取巧，背弃规矩而又改变政策。<br>违背是非标准追求邪曲，争着苟合取悦作为法则。<br>忧愁烦闷啊我失意不安，现在孤独穷困多么艰难。<br>宁可马上死去魂魄离散，媚俗取巧啊我坚决不干。<br>雄鹰不与那些燕雀同群，原本自古以来就是这般。<br>方和圆怎能够互相配合，志向不同何能彼此相安。<br>宁愿委曲心志压抑情感，宁把斥责咒骂统统承担。<br>保持清白节操死于直道，这本为古代圣贤所称赞！<br>后悔当初不曾看清前途，迟疑了一阵我又将回头。<br>调转我的车走回原路啊，趁着迷途未远赶快罢休。<br>我打马在兰草水边行走，跑上椒木小山暂且停留。<br>既然进取不成反而获罪，那就回来把我旧服重修。<br>我要把菱叶裁剪成上衣，我并用荷花把下裳织就。<br>没有人了解我也就罢了，只要内心真正馥郁芳柔。<br>把我的帽子加得高高的，把我的佩带增得长悠悠。<br>虽然芳洁污垢混杂一起，只有纯洁品质不会腐朽。<br>我忽然回头啊纵目远望，我将游观四面遥远地方。<br>佩着五彩缤纷华丽装饰，散发出一阵阵浓郁清香。<br>人们各有自己的爱好啊，我独爱好修饰习以为常。<br>即使粉身碎骨也不改变，难道我能受警戒而彷徨！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>高阳：颛顼之号。<br>苗裔（yì）：苗，初生的禾本植物。裔，衣服的末边。此苗裔连用，喻指子孙后代。<br>朕：我。<br>皇：美。<br>考：已故的父亲。<br>摄提：太岁在寅时为摄提格。此指寅年。<br>贞：正。<br>孟：开始。<br>陬（zōu）：正月。<br>庚寅（gēngyín）：指庚寅之日。古以干支相配来纪日。<br>降（hōng）：降生。<br>揆（kuí）：推理揣度。<br>肇（zhào）：开始。<br>锡（sì）：通「赐」，给予；赐给。《集韻》：「斯義切，音‘瀃（sì）’」。<br>予也。本作賜。<br>名：命名。<br>字：表字，这里活用作动词，起个表字。<br>内美：内在的美好品质。<br>重（chóng）：再。<br>扈（hù）：楚方言，披挂。<br>江离、芷：均为香草名。<br>纫（rèn）：一作「纽」，草有茎叶可做绳索。<br>秋兰：香草名。即泽兰，秋季开花。<br>汩（yù）：水疾流的样子，此处用以形容时光飞逝。<br>不吾与：宾语前置，即「不与吾」，不等待我。<br>搴（qiān）：拔取。<br>揽（lǎn）：采摘。<br>宿莽：草名，经冬不死。<br>忽：迅速的样子。<br>代序：指不断更迭。<br>惟：思虑。<br>迟暮：衰老。<br>抚：趁。<br>何不改乎：一作「何不改」。<br>此度：指现行的政治法度。<br>骐骥（qíjì）：骏马。<br>道：通「导」，引导。<br>……<br>民生：一作「人生」，万民的生存。<br>艰：难。<br>修姱（kuā）：洁净而美好。<br>谇（suì）：进谏。<br>替：废。<br>纕（xiāng）：佩带。<br>申：重複。<br>悔：怨恨。<br>灵修：指楚怀王。<br>民心：一作「人心」。<br>众女：喻群臣。<br>谣：诋毁。<br>诼（zhuó）：诽谤。<br>偭（miǎn）：违背。<br>改：更改。<br>错：通「措」，措施，指先圣之法。<br>绳墨：正曲直之具。<br>曲：斜曲。<br>周容：苟合取容，指以求容媚为常法。<br>侘傺（chàchì）：失志貌。<br>流亡：随水漂流而去。<br>此态：苟合取容之态。<br>不群：指不与众鸟同群。<br>前世：一作「前代」，古代。<br>异道：不同的道路。<br>屈：委屈。<br>尤：过错。<br>攘：除去。<br>诟（gòu）：耻辱。<br>伏：通「服」，保持，坚守。<br>厚：厚待。<br>相道：观看。<br>延：长。<br>回：调转。<br>行迷：指迷途。<br>步：徐行。<br>皋（gāo）：水边高地。<br>止息：休息一下。<br>尤：罪过。<br>修吾初服：指修身洁行。<br>制：裁制。<br>芙蓉：莲花。<br>不吾知：宾语前置，即「不知吾」，不了解我。<br>苟：如果。<br>高：指帽高。<br>陆离：修长而美好的样子。<br>芳：指芬芳之物。<br>惟：通「唯」，只有。<br>游目：纵目瞭望。<br>往观：前去观望。<br>缤纷：极言多。<br>章：明显。<br>民生：一作「人生」。<br>常：恒常之法。<br>犹：尚且。<br>惩：惧怕。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《离骚》是战国诗人屈原创作的文学作品。「离骚」，东汉王逸释为：「离，别也；骚，愁也。」《离骚》以理想与现实的冲突为主线，以花草禽鸟的比兴和瑰奇迷幻的「求女」神境作象征，借助于自传性回忆中的情感激荡，和複沓纷至、倏生倏灭的幻境交替展开全诗。作品倾诉了对楚国命运和人民生活的关心，「哀民生之多艰」，叹奸佞之当道。主张「举贤而授能」，「循绳墨而不颇」。提出「皇天无私阿」，对天命论进行批判。作品中大量的比喻和丰富的想像，表现出积极浪漫主义精神，并开创了中国文学上的「骚」体诗歌形式，对后世有深远影响。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">先秦诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：赵逵夫</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“夏后启制作了《九辩》、《九歌》之曲，<br>宋代著名史学家、词人宋祁说：“《离骚》为词赋之祖，后人为之，如至方不能加矩，至圆不能过规。”这就是说，《离骚》不仅开辟了一个广阔的文学领域，而且是中国诗赋方面永远不可企及的典范。<br>《离骚》作于楚怀王二十四、二十五年（前305、前304）屈原被放汉北后的两三年中。汉北其地即汉水在郢都以东折而东流一段的北面，现今天门、应城、京山、云梦县地，即汉北云梦。怀王十六年...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：赵逵夫</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>宋代词人宋祁说：“《离骚》为词赋之祖，后人为之，如至方不能加矩，至圆不能过规。”这就是说，《离骚》不仅开辟了一个广阔的文学领域，而且是中国诗赋方面永远不可企及的典范。<br>《离骚》作于楚怀王二十四、二十五年（前305、前304）屈原被放汉北后的两三年中。汉北其地即汉水在郢都以东折而东流一段的北面，现今天门、应城、京山、云梦县地，即汉北云梦。怀王十六年屈原因草拟宪令、主张变法和主张联齐抗秦，被内外反对力...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

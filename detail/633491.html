@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>满江红 · 小住京华 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">满江红 · 小住京华</h1>
+            <div class="poem-author">【当代】秋瑾</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>小住京华，早又是中秋佳节。为篱下黄花开遍，秋容如拭。四面歌残终破楚，八年风味徒思浙。苦将侬，强派作蛾眉，殊未屑！</p><p>身不得，男儿列，心却比，男儿烈。算平生肝胆，因人常热。俗子胸襟谁识我？英雄末路当磨折。莽红尘，何处觅知音？青衫湿！</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我在京城小住时日，转眼间就又到了中秋佳节。篱笆下面的菊花都已盛开，秋色明净，就像刚刚擦洗过一般。四面的歌声渐歇，我也终如汉之破楚，突破了家庭的牢笼，如今一个人思量着在浙江时那八年的生活况味。他们苦苦地想让我做一个贵妇人，其实，我是多么的不屑啊！<br>今生我虽然不能身为男子，加入他们的行列。但是我的心，要比男子的心还要刚烈。想想平日，我的一颗心，常为别人而热。那些俗人，心胸狭窄，怎么能懂我呢？英雄在无路可走的时候，难免要经受磨难挫折。在这莽莽红尘之中，哪里才能觅到知音呢？眼泪打湿了我的衣襟。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>小住京华：到京不久。小住，暂时居住；京华，京城的美称，这里指北京。<br>秋容如拭：秋色明净，就像刚刚擦洗过一般。<br>四面歌残终破楚：列强逼近，中国前途危殆。此处用《史记·项羽本纪》「夜闻汉军四面皆楚歌，项王乃大惊」故事。<br>八年风味徒思浙：八年来空想着故乡浙江的风味。八年，作者光绪二十二年在湖南结婚，到作词时恰好八年；徒，空，徒然。<br>苦将侬：苦苦地让我。<br>蛾眉：美女的代称，这里指女子。<br>殊未屑：仍然不放在心上。殊，还，仍然；未，不；屑，顾惜，介意。<br>烈：刚正，不轻易屈服。<br>因人常热：为别人而屡屡激动。热，激动。<br>末路：路途的终点，比喻失意潦倒或没有前途的境地。<br>莽（mǎng）：广大。<br>青衫湿：失意伤心。用唐白居易《琵琶行》「座中泣下谁最多？江州司马青衫湿」诗义。青衫，唐代文官八品、九品服以青，为官职最低的服色。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>该词作于清光绪二十九年（公元1903年）。词的基调高昂，语言刚健清新。通过层层表述，曲折地反映了革命者参加革命前的复杂矛盾的心情，真切感人。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代女性诗词鉴赏辞典</span>
+                    <span class="author-name">作者：曾庆雨</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>光绪二十二年（1896年），秋瑾遵父命嫁湖南湘潭的富家子弟王廷钧。王家属于旧式家庭，规矩很多；而王廷钧其人，亦被秋瑾认为“纨绔”习气极重（见《致秋誉章书》其五）。1900年前后，王廷钧纳捐得户部主事一职，全家遂搬往北京。夫妇本非同道，到京之后，独立门户，家庭琐屑之事渐多，矛盾也日益加深，并于1903年秋天最终激化。据秋瑾挚友徐自华《炉边琐忆》所述，王廷钧原计划在家宴客，并嘱秋瑾准备，谁知傍晚却被人...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：曾庆雨</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>光绪二十二年（1896年），秋瑾遵父命嫁湖南湘潭的富家子弟王廷钧。王家属于旧式家庭，规矩很多；而王廷钧其人，亦被秋瑾认为“纨绔”习气极重（见《致秋誉章书》其五）。1900年前后，王廷钧纳捐得户部主事一职，全家遂搬往北京。夫妇本非同道，到京之后，独立门户，家庭琐屑之事渐多，矛盾也日益加深，并于1903年秋天最终激化。据秋瑾挚友徐自华《炉边琐忆》所述，王廷钧原计划在家宴客，并嘱秋瑾准备，谁知傍晚却被人...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/4694635.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

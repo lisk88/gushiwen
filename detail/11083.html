@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国风 · 邶风 · 静女 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">国风 · 邶风 · 静女</h1>
+            <div class="poem-author">【周】无名氏</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>静女其姝，俟我于城隅。爱而不见，搔首踟蹰。</p><p>静女其娈，贻我彤管。彤管有炜，说怿女美。</p><p>自牧归荑，洵美且异。匪女之为美，美人之贻。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>娴静姑娘真漂亮，约我等在城角旁。视线遮蔽看不见，搔头徘徊心紧张。<br>娴静姑娘真娇艳，送我新笔红笔管。鲜红笔管有光彩，爱它好容颜。<br>远自郊野赠柔荑，诚然美好又珍异。不是荑草长得美，美人相赠厚情意。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>静女：贞静娴雅之女。马瑞辰《毛诗传笺通释》：「静当读靖，谓善女，犹云淑女、硕女也。」<br>姝（shū）：美好。<br>俟：等待，此处指约好地方等待。<br>城隅：城角隐蔽处。<br>爱：「薆」的假借字。隐蔽，躲藏。<br>踟蹰（chíchú）：徘徊不定。<br>娈（luán）：面目姣好。<br>贻（yí）：赠。<br>彤管：不详何物。一说红管的笔，一说和荑应是一物。有的植物初生时或者才发芽不久时呈红色，不仅颜色鲜亮，有的还可吃。如是此意，就与下文的“荑”同类。但是也可能是指涂了红颜色的管状乐器等。<br>有：形容词词头。<br>炜（wěi）：红而发光。<br>说怿（yuèyì）：喜悦。<br>女：同“汝”，你。<br>牧：野外。<br>归：借作“馈”，赠。<br>荑（tí）：白茅，茅之始生也。象征婚媾。<br>洵美且异：确实美得特别。洵，实在、诚然。异，特殊。<br>匪：非。<br>贻：赠与。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>全诗三章，每章四句。此诗写青年男女的幽会，表现了男子对恋人温柔娴静的称赞以及对她的深深情意，体现出年轻男女之间纯美爱情的美好。全诗充满了幽默和健康快乐的情绪，尤其是对于青年人恋爱的心理描写惟妙惟肖。《诗经》是汉族文学史上第一部诗歌总集。对后代诗歌发展有深远的影响。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">先秦诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：庞, 坚</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《静女》一诗，向来为选家所注目。现代学者一般都认为此诗写的是男女青年的幽期密约，也就是说，它是一首爱情诗。而旧时的各家之说，则多有曲解，未得其真旨。最早《毛诗序》云：“《静女》，刺时也。卫君无道，夫人无德。”郑笺释云：“以君及夫人无道德，故陈静女遗我以彤管之法。德如是，可以易之，为人君之配。”而《易林》有“季姬踟蹰，结衿待时；终日至暮，百两不来”、“季姬踟蹰，望我城隅；终日至暮，不见齐侯，居室无忧...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是刺虐之诗。<br>春秋时代，卫国政治十分黑暗，时局异常动荡。统治者荒淫暴虐，残酷地压榨百姓。百姓不堪暴政，为了避免祸患，不得不背井离乡，大批逃亡。<br>全诗三章。一、二章以北风、下雪为喻，三章以狐狸、乌鸦为喻。诗以北风寒凉而猛烈、下雪浓密而纷飞，比喻卫国政治黑暗、时局动荡；诗以没有红的不是狐狸、没有黑的不是乌鸦，比喻统治者都是一样的残酷暴虐。在这种肃杀的氛围之中，诗人号召相互友爱的人们，携手同行，逃离家...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是情人幽会之诗。<br>全诗三章。此诗写得生动逼真，情趣盎然。一章写按时赴约。一个善良美丽的姑娘与男友相约在“城隅”幽会。姑娘早就来到幽会之地，她为了逗乐，悄悄地躲了起来。男友来后却不见姑娘，害得他焦灼不安，抓着头皮，来回走动。“爱而不见，搔首踟蹰”二句写得极为传神，它将姑娘故意逗乐、男子焦灼不安的神情，刻画得活灵活现。二、三章写幽会乐趣。这个姑娘突然露面了，男友顿时转忧为喜。姑娘赠给男友一件礼物——...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是贵族男子迎亲之诗。<br>全诗三章。此诗描写了一位光彩照人的新郎形象。这位新郎形象，是通过新娘的眼睛打量出来的，是通过新娘的口吻歌咏出来的。因而话语之中饱含叹赏之情，称美之意，读来别有风味。一章说：新郎迎亲等候在门槛，帽子两旁垂着白色的丝带，还缀有一种绚丽的红玉。二章说：新郎迎亲等候在前庭，帽子两旁垂着青色的丝带，还缀有一种晶莹的红玉。三章说：新郎迎亲等候在堂上，帽子两旁垂着黄色的丝带，还缀有一种漂...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经三百篇鉴赏辞典</span>
+                    <span class="author-name">作者：庞坚</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《静女》一诗，向来为选家所注目。现代学者一般都认为此诗写的是男女青年的幽期密约，也就是说，它是一首爱情诗。而旧时的各家之说，则多有曲解，未得其真旨。最早《毛诗序》云：“《静女》，刺时也。卫君无道，夫人无德。”郑笺释云：“以君及夫人无道德，故陈静女遗我以彤管之法。德如是，可以易之，为人君之配。”而《易林》有“季姬踟蹰，结衿待时；终日至暮，百两不来”、“季姬踟蹰，望我城隅；终日至暮，不见齐侯，居室无忧...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（高中）</span>
+                    <span class="author-name">作者：庞坚</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《静女》一诗，向来为选家所注目。现代学者一般都认为此诗写的是男女青年的幽期密约，也就是说，它是一首爱情诗。<br>诗是从男子一方来写的，但通过他对恋人外貌的赞美，对她待自己情义之深的宣扬，也可见出未直接在诗中出现的那位女子的人物形象，甚至不妨说她的形象在男子的第一人称叙述中显得更为鲜明。而这又反过来使读者对小伙子的痴情加深了印象。<br>诗的第一章是即时的场景：有一位娴雅而又美丽的姑娘，与小伙子约好在城墙角落...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/3616469.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

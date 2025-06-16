@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送友人 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">送友人</h1>
+            <div class="poem-author">【唐】李白</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>青山横北郭，白水绕东城。</p><p>此地一为别，孤蓬万里征。</p><p>浮云游子意，落日故人情。</p><p>挥手自兹去，萧萧班马鸣。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>青翠的山峦横卧在城墙的北面，波光粼粼的流水围绕着城的东边。<br>在此地我们相互道别，你就像孤蓬那样随风飘荡，到万里之外远行去了。<br>浮云像游子一样行踪不定，夕阳徐徐下山，似乎有所留恋。<br>挥挥手从此分离，友人骑的那匹将要载他远行的马萧萧长鸣，似乎不忍离去。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>郭：古代在城外修筑的一种外墙。<br>白水：清澈的水。<br>一：助词，加强语气。名做状。<br>别：告别。<br>蓬：古书上说的一种植物，乾枯后根株断开，遇风飞旋，也称「飞蓬」。诗人用「孤蓬」喻指远行的朋友。<br>征：远行。<br>浮云游子意：曹丕《杂诗》：「西北有浮云，亭亭如车盖。惜哉时不遇，适与飘风会。吹我东南行，行行至吴会。」后世用为典实，以浮云飘飞无定喻游子四方漂游。浮云，飘动的云；游子，离家远游的人。<br>兹：声音词。此。<br>萧萧：马的呻吟嘶叫声。<br>班马：离群的马，这里指载人远离的马。班，一作「斑」，分别、离别。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗是唐代诗人李白创作的一首充满诗情画意的送别诗，写得新颖别致，不落俗套。诗中青山，流水，红日，白云，相互映衬，色彩璀璨。班马长鸣，形象新鲜活泼，组成了一幅有声有色的画面。自然美与人情美交织在一起，写得有声有色，气韵生动，画面中流荡着无限温馨的情意，感人肺腑。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：何国治</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首充满诗情画意的送别诗，诗人与友人策马辞行，情意绵绵，动人肺腑。<br>首联“青山横北郭，白水绕东城”，点出告别的地点。诗人已经送友人来到了城外，然而两人仍然并肩缓辔，不愿分离。只见远处，青翠的山峦横亘在外城的北面，波光粼粼的流水绕城东潺潺而过。这两句，“青山”对“白水”，“北郭”对“东城”，首联即写成工丽的对偶句，确是别开生面；而且“青”、“白”相间，色彩明丽。“横”字勾勒青山的静姿，“绕”字描...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：何国治</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首充满诗情画意的送别诗，诗人与友人策马辞行，情意绵绵，动人肺腑。</p><p>首联“青山横北郭，白水绕东城”，点出告别的地点。诗人已经送友人来到了城外，然而两人仍然并肩缓辔，不愿分离。只见远处，青翠的山峦横亘在外城的北面，波光粼粼的流水绕城东潺潺而过。这两句，“青山”对“白水”，“北郭”对“东城”，首联即写成工丽的对偶句，确是别开生面；而且“青”“白”相间，色彩明丽。“横”字勾勒青山的静姿，“绕”字描...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：闵泽平</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>友人即将远行，诗人不忍遽然相别，一路相送，直至东门之外。抬头眺望，横亘在城郭北侧的青山阻挡了诗人的视线；低头顾视，波光粼粼的流水绕城东潺潺而过，又阻挡着他们前行的步伐。送君千里，终有一别。两人并肩缓辔，低声喁语。友人此行，将如同孤飞的蓬草一样随风飘转，飞越万里之外。其行踪飘忽不定，又如天空中的白云。这次离别，不知何日才能再相见。聚散两依依，心中满是离情愁思，眼前景色也都沾染着离别的思绪。即将落山的...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：闲泽平</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>友人即将远行，诗人不忍遽然相别，一路相送，直至东门之外。抬头眺望，横亘在城郭北侧的青山阻挡了诗人的视线；低头顾视，波光粼粼的流水绕城东潺潺而过，又阻挡着他们前行的步伐。送君千里，终有一别。两人并肩缓辔，低声喁语。友人此行，将如同孤飞的蓬草一样随风飘转，飞越万里之外。其行踪飘忽不定，又如天空中的白云。这次离别，不知何日才能再相见。聚散两依依，心中满是离情愁思，眼前景色也都沾染着离别的思绪。即将落山的...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：闵泽平</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>友人即将远行，诗人不忍遽然相别，一路相送，直至东门之外。抬头眺望，横亘在城郭北侧的青山阻挡了诗人的视线；低头顾视，波光粼粼的流水绕城东潺潺而过，又阻挡着他们前行的步伐。送君千里，终有一别。两人并肩缓辔，低声喁语。友人此行，将如同孤飞的蓬草一样随风飘转，飞越万里之外。其行踪飘忽不定，又如天空中的白云。这次离别，不知何日才能再相见。聚散两依依，心中满是离情愁思，眼前景色也都沾染着离别的思绪。即将落山的...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">李白诗歌鉴赏辞典</span>
+                    <span class="author-name">作者：何国治</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是一首充满诗情画意的送别诗，诗人与友人策马辞行，情意绵绵，动人肺腑。</p><p>首联“青山横北郭，白水绕东城”，点出告别的地点。诗人已经送友人来到了城外，然而两人仍然并肩缓辔，不愿分离。只见远处，青翠的山峦横亘在外城的北面，波光粼粼的流水绕城东潺潺而过。这两句，“青山”对“白水”，“北郭”对“东城”，首联即写成工丽的对偶句，确是别开生面；而且“青”、“白”相间，色彩明丽。“横”字勾勒青山的静姿，“绕”字...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/172276/5767490.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

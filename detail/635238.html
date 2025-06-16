@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沧浪亭记 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">沧浪亭记</h1>
+            <div class="poem-author">【明】归有光</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>浮图文瑛居大云庵，环水，即苏子美沧浪亭之地也。亟求余作《沧浪亭记》，曰：“昔子美之记，记亭之胜也。请子记吾所以为亭者。”</p><p>余曰：“昔吴越有国时，广陵王镇吴中，治南园于子城之西南；其外戚孙承祐，亦治园于其偏。迨淮海纳土，此园不废。苏子美始建沧浪亭，最后禅者居之：此沧浪亭为大云庵也。有庵以来二百年，文瑛寻古遗事，复子美之构于荒残灭没之馀：此大云庵为沧浪亭也。</p><p>夫古今之变，朝市改易。尝登姑苏之台，望五湖之渺茫，群山之苍翠，太伯、虞仲之所建，阖闾、夫差之所争，子胥、仲、蠡之所经营，今皆无有矣。庵与亭何为者哉？虽然，钱镠因乱攘窃，保有吴越，国富兵强，垂及四世。诸子姻戚，乘时奢僭，宫馆苑囿，极一时之盛。而子美之亭，乃为释子所钦重如此。可以见士之欲垂名于千载，不与其澌然而俱尽者，则有在矣。文瑛读书喜诗，与吾徒游，呼之为沧浪僧云。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>文瑛和尚居住在大云庵，那里四面环水，从前是苏子美建造沧浪亭的地方。文瑛曾多次请我写篇《沧浪亭记》，说：“过去苏子美的《沧浪亭记》，是写亭子的胜景，您就记述我修复这个亭子的缘由吧。”<br>我说：从前吴越建国时，广陵王镇守吴中，曾在内城的西南修建了一个园子，他的外戚孙承佑，也在它的旁边修了园子。到吴越被宋国灭亡时，这个园子还没有荒废。最初苏子美在园中造了沧浪亭，后来人们又在沧浪亭的遗址上修建了大云庵，住进了和尚。这是从沧浪亭到大云庵的演变过程。大云庵至今已有二百年的历史了。文瑛寻访亭子的遗迹，又在废墟上按原来的样子修复了沧浪亭。这是从大云庵到沧浪亭的演变过程。<br>历史在变迁，朝代在改易。我曾经登上姑苏台，远眺浩渺的五湖，苍翠的群山，那太伯、虞仲建立的国家，阖闾、夫差争夺的对象，子胥、文种、范蠡筹划的事业，如今都已消失殆尽了，大云庵和沧浪亭的兴废，又算得了什么呢？虽然如此，钱镠趁天下动乱，窃据权位，占有吴越，国富兵强，传了四代，他的子孙亲戚，也借着权势大肆挥霍，广建宫馆园囿，盛极一时，而子美的沧浪亭，却被和尚如此钦重。可见士人要想垂名千载，不与吴越一起迅速消失，是有原因的。文瑛好读书，爱做诗，常与我们郊游，我们称他为沧浪僧。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>浮图：即浮屠，梵语音译，指佛。这里是指信奉佛事的僧人，也叫和尚。<br>文瑛：生平不详。<br>庵：小庙，多为女尼所居。<br>苏子美：苏舜钦，字子美，北宋诗人。他曾建沧浪亭，自号沧浪翁。该亭在今江苏省苏州市。<br>亟：屡次。<br>吴越：指吴越王，即唐末钱镠，官拜节度使。后拥兵自重，建国吴越，称吴越国王，是五代十国时的十国之一，辖地包括今浙江、江苏西南、福建东北部地区。<br>有国时：国家存在的时候。<br>广陵王：指吴越王钱镠的儿子钱元瓘。<br>吴中：指苏州一带地区。<br>治南园：辟建南园。<br>子城：附属于大城的小城，这里指内城。<br>外戚：指帝王的母族或妻族。<br>孙承祐：钱镠的孙子钱俶的岳父，故说为“外戚”。<br>迨：到，等到。<br>淮海纳土：指吴越国主钱俶献其地于宋。纳土，指将国土贡献给了宋王朝。<br>禅者：指信奉佛教的人，即佛教徒。<br>遗事：前人或前代留下来的事迹。<br>复：恢复。<br>构：指建筑。<br>朝市：人世，尘市。<br>改易：改变，变化。<br>姑苏之台：姑苏台，在今苏州城西南。据传是春秋末期由吴王阖闾、夫差两代君主所建，工程浩大。越灭吴，被焚毁。<br>五湖：这是泛指包括太湖在内附近所有的湖泊。<br>渺茫：形容一望无际。<br>太伯：周代太王古公亶父的长子。<br>虞仲：古公亶父的次子。传说太子准备将幼子季历立为王，于是长子太伯、次子虞仲就远避江南，遂为当地君长，成了春秋时吴国的开国者。<br>阖闾：春秋时吴国的国王（公元前514－公元前496年）。<br>夫差：阖闾的儿子，吴国的国王（公元前496－公元前475年）。<br>子胥：姓伍，名员，字子胥，春秋时楚国人。他的父亲伍奢、哥哥伍尚，被楚平王杀害，他投奔到吴国，曾辅助吴王夫差伐越。<br>仲：文种，春秋末年越国大夫，楚人；<br>蠡：范蠡。春秋末年楚人，曾辅助越王灭吴。<br>钱镠：吴越国的建立者，在位有二十五年（公元907－公元932年）。<br>四世：四代。吴越国共历五主，故云。<br>姻戚：因婚姻关系而结成的亲戚。<br>乘时：趁机。<br>奢僭（jiàn）：奢侈豪华过度而不合礼制法度。僭，超越本分。<br>释子：佛教徒的通称。因出家修行的人，都舍弃了俗姓，以佛释迦为姓，又取其弟子之意，故称为释子。<br>澌（sī）然而俱尽：犹一同消亡。澌，冰块消融的样子。<br>有在：犹言就在这个地方。<br>徒：门生，学生。<br>游：交游。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《沧浪亭记》是明代文学家归有光创作的一篇散文。这篇文章是作者应佛徒文瑛的请求而写的一篇专记。全文以不到三百字的篇幅，记述了沧浪亭的历史变迁，并通过古今对比，抒发了作者对世事变化的感慨，表现了自己对名利等的淡泊胸怀。</p></div></div>
+            
+            <div class="section"><a href="http://baike.baidu.com/item/沧浪亭记/9127861" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

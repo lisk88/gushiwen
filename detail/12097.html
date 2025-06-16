@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国风 · 周南 · 芣苢 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">国风 · 周南 · 芣苢</h1>
+            <div class="poem-author">【周】无名氏</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>采采芣苢，薄言采之。</p><p>采采芣苢，薄言有之。</p><p>采采芣苢，薄言掇之。</p><p>采采芣苢，薄言捋之。</p><p>采采芣苢，薄言袺之。</p><p>采采芣苢，薄言襭之。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>采呀采呀采芣苢，采呀采呀采起来。采呀采呀采芣苢，采呀采呀采得来。<br>采呀采呀采芣苢，一片一片摘下来。采呀采呀采芣苢，一把一把捋下来。<br>采呀采呀采芣苢，提起衣襟兜起来。采呀采呀采芣苢，掖起衣襟兜回来。</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>采采：采而又采。<br>芣苢（fúyǐ）：野生植物名，可食。一说即车前子，其叶和种子都可以入药，有明显的利尿作用，并且其穗状花序结籽特别多，可能与当时的多子信仰有关。<br>薄言：发语词，无义。这里主要起补充音节的作用。<br>有：取得。<br>掇（duō）：拾取，伸长了手去采。<br>捋（luō）：顺着茎滑动成把地采取。<br>袺（jié）：一手提着衣襟兜着。<br>襭（xié）：把衣襟扎在衣带上，再把东西往衣里面塞裹。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《国风·周南·芣苢》是中国古代第一部诗歌总集《诗经》中的一首诗。这是一曲劳动的欢歌，是当时人们采芣苢（即车前草）时所唱的歌谣。全诗三章，每章四句，全是重章叠句，仅仅只变换了少数几个动词，其余一概不变，反复地表达劳动的过程，劳动成果的由少至多也就表达出来，充满了劳动的欢欣，洋溢着劳动的热情。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">先秦诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：骆玉明, 顾, 伊</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>“芣苢”（犳ú狔ǐ）即车前草，这是当时人们采车前时所唱的歌谣。<br>《诗经》中的民间歌谣，有很多用重章叠句的形式，但像《芣苢》这篇重叠得如此厉害却也是绝无仅有的。先以第一章为例：“采采”二字，以《诗经》各篇的情况而论，可以解释为“采而又采”，亦可解释为“各种各样”。有人觉得用前一种解释重复过甚，故取第二种。然而说车前草是“各种各样”的，也不合道理，应该还是“采而又采”。到了第二句，“薄言”是无意义的语...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">先秦诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：陈志明</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>本篇是甲骨卜辞，题目为笔者所拟。甲骨卜辞通常称为甲骨文。殷商王朝时，常用龟甲、兽骨占卜吉凶，又常在甲骨上写刻卜辞以及和占卜有关的记事文字。甲骨文出土于河南安阳的殷墟，是盘庚迁殷到纣亡二百七十三年间的遗物。卜辞中的贞辞是记录占卜人的问题的，一般采用一事两贞法，即将一件事的正反两面各问一次；也有采用一事多贞法的。这里所选的《今日雨》即属于后者。从卜辞的性质、内容以及一事两问或多问的例行格式来看，卜辞当...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是妇女们采摘芣苢之诗。<br>芣苢，俗名车前子。关于芣苢的药用说法不一。一说“宜怀妊”，一说可“安胎”，一说可治妇女难产，一说可治男子“恶疾”。总之，芣苢是一种极有用的药草，无怪乎妇女们乐于去采摘。<br>全诗三章。此诗描绘出妇女们采摘劳动的全过程。这一过程是由“采”、“有”、“掇”、“捋”、“袺”、“襭”六个动词表现出来的。初夏时节，原野上长满茂盛的芣苢。妇女们三三五五来到原野，唱出了这首欢快的采摘芣苢之...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是美天子赐命诸侯之诗。<br>全诗五章。诗中的“天子”，有的说是“康王”，有的说是“宣王”。究竟指谁，这虽难详考，但揣之国情，当以后说为宜。厉王之世，由于诸侯反叛，天下大乱，故宣王即位之后赐命诸侯，当是一件大事，于是诗人作此诗以美之。<br>首章写天子赏赐诸侯。诗以“采菽”必以“筐”“莒”盛之，兴比诸侯来朝必以宝物赐之。下六句正是写天子赏赐诸侯之事。首先设问：“诸侯来朝，赐予他什么呢？”诗接下去未立即回答，...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经鉴赏辞典</span>
+                    <span class="author-name"></span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这是美宋公微子朝周助祭之诗。<br>全诗一章十二句。首四句写客至。“有客”指宋公微子。何以知之？据史书记载，殷人尚白，不仅旗是白的，车是白的，而且连马也是白的。由此可知那骑着白马的“有客”定是宋公微子。在微子的身旁还有众多的随从，这些随从一个个威仪隆盛，彬彬有礼。中四句写留客。由于微子大贤，周王惧其离去，故而挽留再三。微子一行已住了一夜二夜，已住了三夜四夜，但周王还唯恐微子猝然离去，依然盛意相留。这“授...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">诗经三百篇鉴赏辞典</span>
+                    <span class="author-name">作者：骆玉明, 顾伊</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>《诗经》中的民间歌谣，有很多用重章叠句的形式，但像《芣苢》这篇重叠得如此厉害却也是绝无仅有的。先以第一章为例：“采采”二字，以《诗经》各篇的情况而论，可以解释为“采而又采”，亦可解释为“各种各样”。有人觉得用前一种解释重复过甚，故取第二种。然而说车前草是“各种各样”的，也不合道理，应该还是“采而又采”。到了第二句，“薄言”是无意义的语助词，“采之”在意义上与前句无大变化。第三句重复第一句，第四句又...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/view/6425688.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世说新语 - 中华古诗文典藏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,255,0.95) 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-bottom: 3px solid #f39c12;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #34495e;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .nav a:hover, .nav a.active {
+            color: #f39c12;
+            background: rgba(52, 73, 94, 0.05);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 3rem;
+        }
+        
+        .page-title h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-title p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            color: #7f8c8d;
+        }
+        
+        .articles-list {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .article-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            text-decoration: none;
+            color: #2c3e50;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        .article-item:last-child {
+            border-bottom: none;
+        }
+
+        .article-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .item-title {
+            font-weight: bold;
+            flex: 1;
+            padding-right: 1rem;
+        }
+
+        .item-author {
+            color: #7f8c8d;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 2rem 1rem; }
+            .page-title h1 { font-size: 2.5rem; }
+            .article-item {
+                padding: 1rem 1.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">网站首页</a>
+            <a href="shishuo.html" class="active">世说新语</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="page-title">
+            <h1>🗣️ 世说新语</h1>
+            <p>魏晋风流，言谈的艺术</p>
+        </div>
+        
+        <div class="articles-list" id="articles-container">
+             <!-- 内容将通过JavaScript动态生成 -->
+        </div>
+        
+    </div>
+    
+    <script>
+        const shishuoXinyuArticles = [
+            {id: 638769, title: "世说新语 · 德行第一", author: "刘义庆"}, {id: 638770, title: "世说新语 · 言语第二", author: "刘义庆"}, {id: 638771, title: "世说新语 · 政事第三", author: "刘义庆"}, {id: 638772, title: "世说新语 · 文学第四", author: "刘义庆"}, {id: 638773, title: "世说新语 · 方正第五", author: "刘义庆"}, {id: 638774, title: "世说新语 · 雅量第六", author: "刘义庆"}, {id: 638775, title: "世说新语 · 识鉴第七", author: "刘义庆"}, {id: 638776, title: "世说新语 · 赏誉第八", author: "刘义庆"}, {id: 638777, title: "世说新语 · 品藻第九", author: "刘义庆"},
+            {id: 638778, title: "世说新语 · 规箴第十", author: "刘义庆"}, {id: 638779, title: "世说新语 · 捷悟第十一", author: "刘义庆"}, {id: 638780, title: "世说新语 · 夙惠第十二", author: "刘义庆"}, {id: 638781, title: "世说新语 · 豪爽第十三", author: "刘义庆"}, {id: 638782, title: "世说新语 · 容止第十四", author: "刘义庆"}, {id: 638783, title: "世说新语 · 自新第十五", author: "刘义庆"}, {id: 638784, title: "世说新语 · 企羡第十六", author: "刘义庆"}, {id: 638786, title: "世说新语 · 伤逝第十七", author: "刘义庆"}, {id: 638787, title: "世说新语 · 栖逸第十八", author: "刘义庆"},
+            {id: 638788, title: "世说新语 · 贤媛第十九", author: "刘义庆"}, {id: 638789, title: "世说新语 · 术解第二十", author: "刘义庆"}, {id: 638807, title: "世说新语 · 巧艺第二十一", author: "刘义庆"}, {id: 638808, title: "世说新语 · 宠礼第二十二", author: "刘义庆"}, {id: 638809, title: "世说新语 · 任诞第二十三", author: "刘义庆"}, {id: 638810, title: "世说新语 · 简傲第二十四", author: "刘义庆"}, {id: 638811, title: "世说新语 · 排调第二十五", author: "刘义庆"}, {id: 638812, title: "世说新语 · 轻诋第二十六", author: "刘义庆"}, {id: 638813, title: "世说新语 · 假谲第二十七", author: "刘义庆"},
+            {id: 638814, title: "世说新语 · 黜免第二十八", author: "刘义庆"}, {id: 638815, title: "世说新语 · 俭啬第二十九", author: "刘义庆"}, {id: 638816, title: "世说新语 · 汰侈第三十", author: "刘义庆"}, {id: 638817, title: "世说新语 · 忿狷第三十一", author: "刘义庆"}, {id: 638818, title: "世说新语 · 谗险第三十二", author: "刘义庆"}, {id: 638819, title: "世说新语 · 尤悔第三十三", author: "刘义庆"}, {id: 638820, title: "世说新语 · 纰漏第三十四", author: "刘义庆"}, {id: 638821, title: "世说新语 · 惑溺第三十五", author: "刘义庆"}, {id: 638822, title: "世说新语 · 仇隙第三十六", author: "刘义庆"}
+        ];
+        
+        function createArticleListItem(article) {
+            return `
+                <a href="detail/${article.id}.html" class="article-item" title="点击阅读《${article.title}》">
+                    <span class="item-title">${article.title.replace(/<[^>]+>/g, '').replace(/·/g, ' · ')}</span>
+                    <span class="item-author">${article.author}</span>
+                </a>
+            `;
+        }
+        
+        function renderArticles(articles) {
+            const container = document.getElementById('articles-container');
+            if (!container) return;
+            
+            if (articles.length === 0) {
+                 container.innerHTML = `<div style="text-align: center; padding: 3rem; color: #7f8c8d;"><h3>😔 未找到相关章节</h3><p>请尝试其他关键词</p></div>`;
+            } else {
+                container.innerHTML = articles.map(createArticleListItem).join('');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            renderArticles(shishuoXinyuArticles);
+        });
+    </script>
+</body>
+</html>

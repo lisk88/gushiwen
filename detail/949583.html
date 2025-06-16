@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《论语》十二章 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">《论语》十二章</h1>
+            <div class="poem-author">【周】孔子</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>子曰：“人而不仁，如礼何？人而不仁，如乐何？”</p><p>子曰：“朝闻道，夕死可矣。”</p><p>子曰：“君子喻于义，小人喻于利。”</p><p>子曰：“见贤思齐焉，见不贤而内自省也。”</p><p>子曰：“质胜文则野，文胜质则史。文质彬彬，然后君子。”</p><p>曾子曰：“士不可以不弘毅，任重而道远。仁以为己任，不亦重乎？死而后已，不亦远乎？”</p><p>子曰：“譬如为山，未成一篑，止，吾止也；譬如平地，虽覆一篑，进，吾往也。”</p><p>子曰：“知者不惑，仁者不忧，勇者不惧。”</p><p>子贡问曰：“有一言而可以终身行之者乎？”</p><p>子曰：“其恕乎！己所不欲，勿施于人。”</p><p>子曰：“小子何莫学夫《诗》？《诗》可以兴，可以观，可以群，可以怨。迩之事父，远之事君，多识于鸟兽草木之名。”</p><p>子曰：“君子食无求饱，居无求安，敏于事而慎于言，就有道而正焉。可谓好学也已。”</p><p>颜渊问仁，子曰：“克己复礼为仁。一日克己复礼，天下归仁焉。为仁由己，而由人乎哉？”颜渊曰：“请问其目？”</p><p>子曰：“非礼勿视，非礼勿听，非礼勿言，非礼勿动。”颜渊曰：“回虽不敏，请事斯语矣。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>孔子说：“做人如果没有仁德，怎么对待礼仪制度呢？做人如果没有仁德，怎么对待音乐呢？”<br>孔子说：“早晨能够得知真理，即使当晚死去，也没有遗憾。”<br>孔子说：“君子懂得大义，小人只懂得小利。”<br>孔子说：“看见有才能的人（德才兼备的人）就向他学习，希望能向他看齐；看见不贤的人，就反省自己有没有和他一样的缺点，有要改正。”<br>孔子说：“质朴多于文采就难免显得粗野，文采超过了质朴又难免流于虚浮，文采和质朴完美地结合在一起，这才能成为君子。”<br>曾子说：“有抱负的人不可以不志向远大，意志坚强，因为他肩负着重大的使命（或责任），路途又很遥远。把实现‘仁’的理想看作自己的使命，不也很重大吗？直到死才停止，这不也是很遥远吗？”<br>孔子说：“好比堆土成山，只差一筐土就完成了，这时停下来，是我自己要停下来的。又好比平整土地，虽然只倒下一筐土，如果决心继续，还是要自己去干的。”<br>孔子说：“智慧的人不疑惑，仁德的人不忧愁，勇敢的人不畏惧。”<br>子贡问道：“有没有可以终身奉行的一个字呢？”<br>孔子说：“那大概就是‘恕’字吧！自己不喜欢的事物，不要强行加于别人身上。”<br>孔子说：“学生们，为什么不学习《诗》呢？学《诗》可以激发志气，可以观察天地万物及人间的盛衰与得失，可以使人懂得合群的必要，可以使人懂得怎样去讽谏上级。近可以用来侍奉父母，远可以侍奉君主。还可以多知道一些鸟兽草木的名字。”<br>孔子说：“君子饮食不贪图奢糜，居住不贪图安逸，在做事时机敏还在说话时谨慎，靠近道德规范就使自身正派了——可以称得上是喜好学习的人。”<br>颜渊请教如何行仁，孔子说：“能够克制和约束一己私欲，让自己的行为回复到礼的要求上，就是仁（的做法）。一旦人这样做了，那么天下人间的人都会赞许他是仁人。做仁义的事情是完全靠自己的，难道还能靠别人吗？”颜渊说：“希望指点一些具体做法。”孔子说：“不合乎礼的不去看，不合乎礼的不去听，不合乎礼的不去说，不合乎礼的不去做。”颜渊说：“我虽不够聪敏，请你允许我去实行这番话。”</p></div></div>
+            
+            
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：陈炜琦</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>孔子是儒家创始人，在春秋时期，他与弟子周游列国，传播以“仁”为核心的思想，主张推行德治，反对苛政。自汉代以来，儒家思想作为我国传统文化的主流思想，流传千年，深入人心。《论语》是儒家经典，为孔子及其弟子的言行记录。这里选取了《论语》中十二则片段，大多是孔子对为学与修身方面的论述，言约而意深，今天我们读来亦能得到启示。<br>孔子把学习看成一件快乐的（“不亦说乎”）事，在他心中，懂得学习的人、喜爱学习的人，...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            
+        </div>
+    </div>
+</body>
+</html>

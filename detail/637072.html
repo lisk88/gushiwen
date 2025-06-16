@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>司马季主论卜 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">司马季主论卜</h1>
+            <div class="poem-author">【明】刘基</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>东陵侯既废，过司马季主而卜焉。季主曰：“君侯何卜也？”东陵侯曰：“久卧者思起，久蛰者思启，久懑者思嚏。吾闻之：‘蓄极则泄，闷极则达，热极则风，壅极则通。一冬一春，靡屈不伸；一起一伏，无往不复。’仆窃有疑，愿受教焉。”季主曰：“若是，则君侯已喻之矣，又何卜为？”东陵侯曰：“仆未究其奥也，愿先生卒教之。”</p><p>季主乃言曰：“呜呼！天道何亲？惟德之亲；鬼神何灵？因人而灵。夫蓍，枯草也；龟，枯骨也；物也。人，灵于物者也，何不自听而听于物乎？且君侯何不思昔者也！有昔者必有今日。是故碎瓦颓垣，昔日之歌楼舞馆也；荒榛断梗，昔日之琼蕤玉树也；露蚕风蝉，昔日之‘凤笙’、‘龙笛’也；鬼磷萤火，昔日之金缸华烛也；秋荼春荠；昔日之象白驼峰也；丹枫白荻，昔日之蜀锦齐纨也。昔日之所无，今日有之不为过；昔日之所有，今日无之不为不足。是故一昼一夜，华开者谢；一春一秋，物故者新；激湍之下必有深潭，高丘之下必有浚谷。君侯亦知之矣，何以卜为！”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>东陵侯被废黜以后，到司马季主那里去占卜。<br>司马季主问道：“君侯您要占卜什么事呢？”东陵侯答：“久卧在床的人总想起床，长期冬眠的动物想要醒来，长期郁闷的人总想要发泄。我听说蓄积太多就需要发泄，郁闷久了就需要通达，热得太厉害就需要吹风，堵塞到了极致就需要通畅。一冬一春之间，不会总是屈而不伸的，事物间总是一起一伏，没有去而不复的。我内心对此还是有疑惑，希望得到你的指教。”司马季主说道：“照你刚才这么说，说明君侯您已经很懂得事理了，何必还要来占卜呢？”东陵侯说：“我还是觉得我还没有懂得其中的奥秘，恳请先生就此好好开导我一下。”<br>司马季主这才说道：“唉！天道会亲近什么人啊？它只会亲近那些有德行的人！鬼神有什么灵验呢？鬼神只是靠人事才显示出灵验来！占卜用的蓍草，只不过是枯草，龟甲也只不过是枯骨，它们都只不过是物罢了。人，总比物要有灵性，为什么不相信自己而去相信物呢？况且，君侯您为什么不想想过去呢？有一种过去就有一种今天。因而，那些碎瓦断墙，曾经是过去的舞台歌榭，那些荒木断枝，也曾经是过去的玉树琼枝。今天在风露中哀鸣的蟋蟀和蝉，也曾是以往的华美的笙笛之音，幽暗的磷光鬼火，正是过去的金灯华烛，那秋日的苦菜和春天的荠菜，也正是过去的象白驼峰，那丹枫白荻，也是过去的蜀锦齐纨。以往没有的，今天有了，这并不为过，而以往有的，今天失去了也并非显得不足。因此，一日一夜之间，花开又花落，一春一秋之间，万物凋零又复苏。湍急的流水下必定有深潭，高山之下必有深谷。这些道理，君侯您是明白的，那么您何必占卜呢？”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>东陵侯：秦人邵平曾被封为东陵侯。秦亡，其于长安东种瓜为生。<br>司马季主：西汉初年人，以占卜闻名。卜：占卜，指古人用龟甲、蓍草等预测吉凶的活动。<br>蛰：虫类冬眠。启：开，出来。<br>懑：闷。嚏（ti）：打喷嚏。<br>靡：无；没有。<br>仆：自称谦词。<br>喻：明了，明白。<br>天道：上天的意志。<br>蓍：草名，古人用其茎进行占卜。<br>龟：即龟甲，亦为古人占卜之用具。<br>榛：树丛。梗：草木枯枝。<br>蕤：原意为花朵下垂貌，这里指花朵。<br>风笙龙笛：并为乐器名。因像龙凤之形或饰有龙凤彩绘，故称。这里指悦耳的音乐。<br>鬼磷：即磷火。夜间火焰呈淡绿色，旧时人有的认为它是鬼火。<br>金缸：金属容器，古时用来作灯照明。<br>荼：菜名，味苦。<br>荠：菜名，味甘。<br>象白：即象鼻。白，古“鼻”字。<br>驼峰：骆驼的肉峰。<br>枫：即枫树，叶经霜变红，故称丹枫。<br>荻：草名，其花白色，故称白荻。<br>蜀锦齐纨：指四川出产的锦和山东出产的纨。纨：绢。<br>华：花。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《司马季主论卜》是一篇王顾左右而言他的文章，是讲“升沉应已定，不必问君平”（唐诗），实际讲的是元代末年的种种腐败都是从前胡作非为恶性发展的结果。在现代看来，这篇对话也是对当时统治者的一声警钟。</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">古文鉴赏辞典</span>
+                    <span class="author-name">作者：羊春秋</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>这是《郁离子·天道》中的一篇，它通过寓言的形式，设为问答之辞，表达了鬼神何灵、变化不居的进步思想，阐述了一切事物无不向其对立面转化的辩证观点。刘基“慷慨有大节，论天下安危，义形于色”（《明史》本传），对元末统治集团采取不合作的态度。《郁离子》是他弃官归隐时的创作，思想上受到农民起义的影响，往往通过他所勾勒的艺术形象，从不同的侧面对元末的暴政和世风，展开了深刻的批判。这里所勾勒的两个艺术形象，选择了...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E5%AD%A3%E4%B8%BB%E8%AE%BA%E5%8D%9C/304890?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

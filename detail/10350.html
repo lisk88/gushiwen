@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄鹤楼 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">黄鹤楼</h1>
+            <div class="poem-author">【唐】崔颢</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>昔人已乘黄鹤去，此地空余黄鹤楼。</p><p>黄鹤一去不复返，白云千载空悠悠。</p><p>晴川历历汉阳树，芳草萋萋鹦鹉洲。</p><p>日暮乡关何处是？烟波江上使人愁。</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>昔日的仙人已乘着黄鹤飞去，这地方只留下空荡的黄鹤楼。<br>黄鹤一去再也没有返回这里，千万年来只有白云飘飘悠悠。<br>汉阳晴川的碧树历历可辨，更能看清芳草繁茂的鹦鹉洲。<br>时至黄昏不知何处是我家乡？看江面烟波渺渺更使人烦愁！</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>黄鹤楼：三国吴黄武二年修建。为古代名楼，旧址在湖北武昌黄鹤矶上，俯见大江，面对大江彼岸的龟山。<br>昔人已乘黄鹤去：一作“乘白云”。<br>悠悠：飘荡的样子。<br>晴川：阳光照耀下的原野。川，平原。<br>历历：清楚可数。<br>萋萋：形容草木茂盛。<br>鹦鹉洲：在湖北省武昌县西南，据《后汉书》载，汉黄祖任江夏太守时，在此大宴宾客，有人献上鹦鹉，故称鹦鹉洲。<br>乡关：故乡家园。<br>烟波：暮霭沉沉的江面，一作“烟花”。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《黄鹤楼》是唐代诗人崔颢创作的一首七言律诗，被选入《唐诗三百首》。此诗描写了在黄鹤楼上远眺的美好景色，是一首吊古怀乡之佳作。前四句写登临怀古，後四句写站在黄鹤楼上的所见所思。诗虽不协律，但音节浏亮而不拗口。信手而就，一气呵成，成为历代所推崇的珍品。<br>这首诗在当时就很有名，传说李白登黄鹤楼，有人请李白题诗，他说：「眼前有景道不得，崔颢题诗在上头。」严羽《沧浪诗话》评：「唐人七言律诗，当以崔颢《黄鹤楼》为第一。」</p></div></div>
+            
+    <div class="section" id="appreciationsSection">
+        <div class="section-title">🎨 赏析</div>
+        <div class="section-content appreciations">
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典（新一版）</span>
+                    <span class="author-name">作者：蔡义江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元人辛文房《唐才子传》记李白登黄鹤楼本欲赋诗，因见崔颢此作，为之敛手，说：“眼前有景道不得，崔颢题诗在上头。”传说或出于后人附会，未必真有其事。然李白确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗亦是明显地摹学此诗。为此，说诗者众口交誉，如宋代严羽《沧浪诗话》谓：“唐人七言律诗，当以崔颢《黄...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首</span>
+                    <span class="author-name">作者：蔡义江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元人辛文房《唐才子传》记李白登黄鹤楼本欲赋诗，因见崔颢此作，为之敛手，说：“眼前有景道不得，崔颢题诗在上头。”传说或出于后人附会，未必真有其事。然李白确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗亦是明显地摹学此诗。为此，说诗者众口交誉，如宋代严羽《沧浪诗话》谓：“唐人七言律诗，当以崔颢《黄...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗三百首鉴赏辞典</span>
+                    <span class="author-name">作者：易文翔</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗是崔颢的代表作。据元代辛文房《唐才子传》记载，李白登黄鹤楼本欲题诗，因为见到崔颢的这首题诗，停笔不作，叹曰：“眼前有景道不得，崔颢题诗在上头。”传说或许是后人附会，未必真有其事。然而李白的确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗也明显摹学此诗。论诗之人对崔颢此诗也是赞誉有加，如严...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗鉴赏辞典</span>
+                    <span class="author-name">作者：易文翔</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗是崔颢的代表作。据元代辛文房《唐才子传》记载，李白登黄鹤楼本欲题诗，因为见到崔颢的这首题诗，停笔不作，叹曰：“眼前有景道不得，崔颢题诗在上头。”传说或许是后人附会，未必真有其事。然而李白的确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗也明显摹学此诗。论诗之人对崔颢此诗也是赞誉有加，如严...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">唐诗宋词鉴赏辞典</span>
+                    <span class="author-name">作者：易文翔</span>
+                </div>
+                <span class="press-name">崇文书局</span>
+            </div>
+            <div><p>这首诗是崔颢的代表作。据元代辛文房《唐才子传》记载，李白登黄鹤楼本欲题诗，因为见到崔颢的这首题诗，停笔不作，叹曰：“眼前有景道不得，崔颢题诗在上头。”传说或许是后人附会，未必真有其事。然而李白的确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗也明显摹学此诗。论诗之人对崔颢此诗也是赞誉有加，如严...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">中小学生必背古诗文（小学、初中）</span>
+                    <span class="author-name">作者：蔡义江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>前人有“文以气为主”之说，此诗前四句看似随口说出，一气旋转，顺势而下，绝无半点滞碍。“黄鹤”二字再三出现，却因其气势奔腾直下，使读者“手挥五弦，目送飞鸿”，急忙读下去，无暇觉察到它的重复出现，而这是律诗格律上之大忌，诗人好像忘记了是在写“前有浮声，后须切响”、字字皆有定声的七律。试看：首联的五、六字同出“黄鹤”；第三句几乎全用仄声；第四句又用“空悠悠”这样的三平调煞尾；亦不顾什么对仗，用的全是古体...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代山水诗鉴赏：江山留胜迹</span>
+                    <span class="author-name">作者：蔡义江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元人辛文房《唐才子传》记李白登黄鹤楼本欲赋诗，因见崔颢此作，为之敛手，说：“眼前有景道不得，崔颢题诗在上头。”传说或出于后人附会，未必真有其事。然李白确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗亦是明显地摹学此诗。为此，说诗者众口交誉，如严羽《沧浪诗话》谓：“唐人七言律诗，当以崔颢《黄鹤楼...</p></div>
+        </div>
+        
+        <div class="appreciation-item">
+            <div class="appreciation-meta">
+                <div>
+                    <span class="book-title">历代山水诗鉴赏：江山留胜迹</span>
+                    <span class="author-name">作者：蔡义江</span>
+                </div>
+                <span class="press-name">上海辞书出版社</span>
+            </div>
+            <div><p>元人辛文房《唐才子传》记李白登黄鹤楼本欲赋诗，因见崔颢此作，为之敛手，说：“眼前有景道不得，崔颢题诗在上头。”传说或出于后人附会，未必真有其事。然李白确曾两次作诗拟此诗格调。其《鹦鹉洲》诗前四句说：“鹦鹉东过吴江水，江上洲传鹦鹉名。鹦鹉西飞陇山去，芳洲之树何青青。”与崔诗如出一辙。又有《登金陵凤凰台》诗亦是明显地摹学此诗。为此，说诗者众口交誉，如严羽《沧浪诗话》谓：“唐人七言律诗，当以崔颢《黄鹤楼...</p></div>
+        </div>
+        </div>
+    </div>
+    
+            <div class="section"><a href="http://baike.baidu.com/subview/1981/11206842.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

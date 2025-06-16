@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晏子不死君难 - 中学古诗文学习网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
+        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
+        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
+        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
+        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
+        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
+        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
+        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
+        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
+        .poem-text p { margin-bottom: 1rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
+        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
+        .section-content p { margin-bottom: 1em; }
+        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
+        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
+        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
+        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
+        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
+        .appreciation-item:last-child { margin-bottom: 0; }
+        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .book-title { font-weight: bold; color: #9b59b6; }
+        .author-name { font-style: italic; }
+        .press-name { color: #95a5a6; }
+        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
+        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .poem-title { font-size: 2.2rem; }
+            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
+            .container { padding: 2rem 1rem; }
+            .poem-content { padding: 2rem; }
+            .poem-text { font-size: 1.2rem; }
+            .appreciation-meta { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title">晏子不死君难</h1>
+            <div class="poem-author">【周】左丘明</div>
+            <div class="poem-dynasty"></div>
+        </div>
+
+        <div class="poem-content">
+            <div class="section">
+                <div class="section-title">📜 原文</div>
+                <div class="poem-text"><p>崔武子见棠姜而美之，遂取之。庄公通焉。崔子弑之。</p><p>晏子立于崔氏之门外。其人曰：“死乎？”曰：“独吾君也乎哉，吾死也？”曰：“行乎？”曰：“吾罪也乎哉，吾亡也？”曰：“归乎？”曰：“君死，安归？君民者，岂以陵民？社稷是主。臣君者，岂为其口实？社稷是养。故君为社稷死，则死之；为社稷亡，则亡之。若为己死，而为己亡，非其私暱，谁敢任之？且人有君而弑之，吾焉得死之？而焉得亡之？将庸何归？”门启而入，枕尸股而哭。兴，三踊而出。人谓崔子：“必杀之。”崔子曰：“民之望也，舍之得民。”</p></div>
+            </div>
+
+            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>崔杼看见棠公的遗孀棠姜容貌妍丽，便迎娶她为妻。后来齐庄公与她私通，崔杼便杀害了齐庄公。<br>晏子站在崔家的门外，晏子左右的家臣问：“您打算死吗？”晏子说：“国君只是我一人的君主吗，我为何要死？”家臣说：“您打算离开齐国吗？”晏子说：“我有什么罪，我为什么要逃亡？”家臣说：“回家吗？”晏子说：“君主都已不在，还能回哪里呢？作为民众的君主，难道是凌驾于民众之上的君主？君主的职责是社稷。作为君主的臣下，难道是为了得到他的俸禄吗？臣子的职责是保护国家。国君为了社稷去死，死得其所，我们就应该与之共同赴难；如果君王为社稷而死，百姓当然可以和君主同死。如果是为自己而死或者为自己逃亡，不是他的私密昵友，谁去担这份责啊？况且他人立了君主却要将他杀死，我怎么能随他去死，随他去逃亡呢？我将回什么地方啊？”崔大夫家的门打开后晏子进入，将君主的尸体放在腿上痛哭，哭完后站起来，一再顿足离去。有人对崔杼说：“你一定会杀了他。”崔杼说：“他为百姓所敬仰，释放他反而能得到民心。”</p></div></div>
+            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>崔武子：齐卿，即崔杼。棠姜：棠公的妻子。棠公是齐国棠邑大夫。<br>取：同“娶”。棠公死，崔杼去吊丧，见棠姜美，就娶了她。<br>庄公：齐庄公。通：私通。<br>弑：臣杀君、子杀父为弑。<br>晏子：即晏婴，字平仲，齐国大夫。历仕灵公、庄公、景公三世。<br>其人：晏子左右的家臣。<br>君民者：做君主的人。<br>实：指俸禄。<br>昵：亲近。<br>庸何：即“何”，哪里。<br>兴：起立。三踊：跳跃了三下，表示哀痛。<br>望：为人所敬仰。<br>舍：释放，宽大处理。</p></div></div>
+            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·襄公二十五年》。齐庄公因私通被臣子弑杀，晏子既不为他而死，也不因他而逃亡。在他看来，无论国君和臣子，都应为国家负责。如果国君失职，臣子就不必为他尽忠。这在当时是很有进步意义的。文章三问三答，答中有反问，最后归结到“社稷”二字，波澜起伏，论旨鲜明。</p></div></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
