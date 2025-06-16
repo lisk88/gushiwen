@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古诗文详情 - 中学古诗文学习网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .nav a:hover {
+            color: #ff6b6b;
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .poem-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: rgba(255,255,255,0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .poem-title {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        
+        .poem-author {
+            font-size: 1.4rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .poem-dynasty {
+            font-size: 1.2rem;
+            color: #95a5a6;
+        }
+        
+        .poem-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #7f8c8d;
+            background: rgba(103, 126, 234, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        
+        .poem-content {
+            background: rgba(255,255,255,0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error {
+            text-align: center;
+            padding: 3rem;
+            color: #e74c3c;
+            font-size: 1.2rem;
+            background: rgba(231, 76, 60, 0.1);
+            border-radius: 15px;
+            border: 2px solid rgba(231, 76, 60, 0.2);
+        }
+        
+        .poem-text {
+            font-size: 1.4rem;
+            line-height: 2.2;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-family: '华文楷体', '楷体', serif;
+        }
+        
+        .poem-text p {
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+        
+        .section-content {
+            font-size: 1.1rem;
+            color: #34495e;
+            line-height: 1.8;
+        }
+        
+        .translation {
+            background: rgba(103, 126, 234, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .annotation {
+            background: rgba(46, 204, 113, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .intro {
+            background: rgba(230, 126, 34, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #e67e22;
+        }
+        
+        .appreciations {
+            background: rgba(155, 89, 182, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #9b59b6;
+        }
+        
+        .appreciation-item {
+            background: rgba(255,255,255,0.7);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(155, 89, 182, 0.1);
+        }
+        
+        .appreciation-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .appreciation-meta {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .book-title {
+            font-weight: bold;
+            color: #9b59b6;
+        }
+        
+        .author-name {
+            font-style: italic;
+        }
+        
+        .press-name {
+            color: #95a5a6;
+        }
+        
+        .retry-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .retry-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .external-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(103, 126, 234, 0.1);
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .external-link:hover {
+            background: rgba(103, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .poem-title {
+                font-size: 2.2rem;
+            }
+            
+            .poem-meta {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+            
+            .poem-content {
+                padding: 2rem;
+            }
+            
+            .poem-text {
+                font-size: 1.2rem;
+            }
+            
+            .appreciation-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="javascript:history.back()">← 返回上页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="index.html">网站首页</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="poem-header">
+            <h1 class="poem-title" id="poemTitle">加载中...</h1>
+            <div class="poem-author" id="poemAuthor" style="display: none;"></div>
+            <div class="poem-dynasty" id="poemDynasty" style="display: none;"></div>
+            <div class="poem-meta">
+                <div class="meta-item">
+                    <span>📚</span>
+                    <span id="poemType">-</span>
+                </div>
+                <div class="meta-item" id="postsCountItem" style="display: none;">
+                    <span>👁️</span>
+                    <span id="postsCount">-</span>
+                </div>
+                <div class="meta-item" id="collectionsCountItem" style="display: none;">
+                    <span>❤️</span>
+                    <span id="collectionsCount">-</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="poem-content">
+            <div id="loadingMessage" class="loading">
+                <div class="loading-spinner"></div>
+                正在加载古诗文内容，请稍候...
+            </div>
+            
+            <div id="errorMessage" class="error" style="display: none;">
+                <h3>😔 加载失败</h3>
+                <p>抱歉，无法加载该古诗文的详细内容。</p>
+                <p>请检查网络连接或稍后重试。</p>
+                <button class="retry-btn" onclick="loadPoemContent()">重新加载</button>
+            </div>
+            
+            <div id="poemContent" style="display: none;">
+                <!-- 原文 -->
+                <div class="section">
+                    <div class="section-title">📜 原文</div>
+                    <div class="poem-text" id="poemText"></div>
+                </div>
+                
+                <!-- 译文 -->
+                <div class="section" id="translationSection" style="display: none;">
+                    <div class="section-title">📖 译文</div>
+                    <div class="section-content translation" id="poemTranslation"></div>
+                </div>
+                
+                <!-- 注释 -->
+                <div class="section" id="annotationSection" style="display: none;">
+                    <div class="section-title">📝 注释</div>
+                    <div class="section-content annotation" id="poemAnnotation"></div>
+                </div>
+                
+                <!-- 简介 -->
+                <div class="section" id="introSection" style="display: none;">
+                    <div class="section-title">💡 简介</div>
+                    <div class="section-content intro" id="poemIntro"></div>
+                </div>
+                
+                <!-- 赏析 -->
+                <div class="section" id="appreciationsSection" style="display: none;">
+                    <div class="section-title">🎨 赏析</div>
+                    <div class="section-content appreciations" id="poemAppreciations"></div>
+                </div>
+                
+                <!-- 外部链接 -->
+                <div class="section" id="externalLinkSection" style="display: none;">
+                    <a id="baiduWikiLink" class="external-link" target="_blank">
+                        <span>🔗</span>
+                        <span>查看百度百科</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentPoemId = null;
+        let currentPoemType = null;
+        
+        // 获取URL参数
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                id: params.get('id'),
+                type: params.get('type')
+            };
+        }
+        
+        // 获取类型标签
+        function getTypeLabel(type) {
+            const labels = {
+                'shi': '诗',
+                'ci': '词', 
+                'wen': '文',
+                'qu': '曲'
+            };
+            return labels[type] || type;
+        }
+        
+        // 调用接口获取古诗文内容
+        async function loadPoemContent() {
+            if (!currentPoemId) return;
+            
+            // 显示加载状态
+            document.getElementById('loadingMessage').style.display = 'block';
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('poemContent').style.display = 'none';
+            
+            try {
+                const response = await fetch(`http://115.190.96.140/api/v1/gw/guwen/content?id=${currentPoemId}`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    mode: 'cors'
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                
+                // 隐藏加载状态
+                document.getElementById('loadingMessage').style.display = 'none';
+                
+                // 检查返回的数据格式
+                if (result && result.code === 1000 && result.data) {
+                    displayPoemContent(result.data);
+                } else {
+                    throw new Error(result.message || '数据格式错误');
+                }
+                
+            } catch (error) {
+                console.error('加载古诗文内容失败:', error);
+                
+                // 显示错误信息
+                document.getElementById('loadingMessage').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'block';
+                
+                // 根据错误类型显示不同的错误信息
+                const errorElement = document.getElementById('errorMessage');
+                if (error.name === 'TypeError' && error.message.includes('fetch')) {
+                    errorElement.innerHTML = `
+                        <h3>🌐 网络连接问题</h3>
+                        <p>无法连接到服务器，请检查网络连接。</p>
+                        <p>如果问题持续存在，可能是服务器暂时不可用。</p>
+                        <button class="retry-btn" onclick="loadPoemContent()">重新加载</button>
+                    `;
+                } else {
+                    errorElement.innerHTML = `
+                        <h3>😔 加载失败</h3>
+                        <p>抱歉，无法加载该古诗文的详细内容。</p>
+                        <p>错误信息：${error.message}</p>
+                        <button class="retry-btn" onclick="loadPoemContent()">重新加载</button>
+                    `;
+                }
+            }
+        }
+        
+        // 显示古诗文内容
+        function displayPoemContent(data) {
+            // 更新标题和基本信息
+            if (data.title) {
+                document.getElementById('poemTitle').textContent = data.title;
+                document.title = `${data.title} - 中学古诗文学习网站`;
+            }
+            
+            if (data.author) {
+                document.getElementById('poemAuthor').textContent = `作者：${data.author}`;
+                document.getElementById('poemAuthor').style.display = 'block';
+            }
+            
+            if (data.dynasty) {
+                document.getElementById('poemDynasty').textContent = `${data.dynasty}朝`;
+                document.getElementById('poemDynasty').style.display = 'block';
+            }
+            
+            // 更新类型信息
+            if (data.kindCn) {
+                document.getElementById('poemType').textContent = data.kindCn;
+            }
+            
+            // 显示统计信息
+            if (data.postsCount) {
+                document.getElementById('postsCount').textContent = `阅读 ${data.postsCount}`;
+                document.getElementById('postsCountItem').style.display = 'flex';
+            }
+            
+            if (data.collectionsCount) {
+                document.getElementById('collectionsCount').textContent = `收藏 ${data.collectionsCount}`;
+                document.getElementById('collectionsCountItem').style.display = 'flex';
+            }
+            
+            // 显示原文
+            if (data.content) {
+                document.getElementById('poemText').innerHTML = formatPoemText(data.content);
+            }
+            
+            // 显示译文
+            if (data.translation) {
+                document.getElementById('poemTranslation').innerHTML = formatText(data.translation);
+                document.getElementById('translationSection').style.display = 'block';
+            }
+            
+            // 显示注释
+            if (data.annotation) {
+                document.getElementById('poemAnnotation').innerHTML = formatText(data.annotation);
+                document.getElementById('annotationSection').style.display = 'block';
+            }
+            
+            // 显示简介
+            if (data.intro) {
+                document.getElementById('poemIntro').innerHTML = formatText(data.intro);
+                document.getElementById('introSection').style.display = 'block';
+            }
+            
+            // 显示赏析
+            if (data.appreciations && Array.isArray(data.appreciations) && data.appreciations.length > 0) {
+                displayAppreciations(data.appreciations);
+                document.getElementById('appreciationsSection').style.display = 'block';
+            }
+            
+            // 显示百度百科链接
+            if (data.baiduWiki) {
+                document.getElementById('baiduWikiLink').href = data.baiduWiki;
+                document.getElementById('externalLinkSection').style.display = 'block';
+            }
+            
+            // 显示内容区域
+            document.getElementById('poemContent').style.display = 'block';
+        }
+        
+        // 显示赏析内容
+        function displayAppreciations(appreciations) {
+            const container = document.getElementById('poemAppreciations');
+            container.innerHTML = '';
+            
+            appreciations.forEach(appreciation => {
+                const item = document.createElement('div');
+                item.className = 'appreciation-item';
+                
+                const meta = document.createElement('div');
+                meta.className = 'appreciation-meta';
+                
+                const bookInfo = document.createElement('div');
+                bookInfo.innerHTML = `
+                    <span class="book-title">${appreciation.bookTitle || '未知书籍'}</span>
+                    ${appreciation.authors && appreciation.authors.length > 0 ? 
+                        `<span class="author-name">作者：${appreciation.authors.join(', ')}</span>` : ''}
+                `;
+                
+                const pressInfo = document.createElement('div');
+                if (appreciation.pressName) {
+                    pressInfo.innerHTML = `<span class="press-name">${appreciation.pressName}</span>`;
+                }
+                
+                meta.appendChild(bookInfo);
+                if (appreciation.pressName) {
+                    meta.appendChild(pressInfo);
+                }
+                
+                const content = document.createElement('div');
+                content.innerHTML = formatText(appreciation.shortContent || '暂无内容');
+                
+                item.appendChild(meta);
+                item.appendChild(content);
+                container.appendChild(item);
+            });
+        }
+        
+        // 格式化诗文文本
+        function formatPoemText(text) {
+            if (!text) return '';
+            
+            // 处理换行符，将每行作为一个段落
+            return text
+                .split(/\r\n|\r|\n/)
+                .filter(line => line.trim())
+                .map(line => `<p>${line.trim()}</p>`)
+                .join('');
+        }
+        
+        // 格式化普通文本
+        function formatText(text) {
+            if (!text) return '';
+            
+            // 处理换行符
+            return text
+                .replace(/\r\n/g, '\n')
+                .replace(/\r/g, '\n')
+                .split('\n\n')
+                .filter(para => para.trim())
+                .map(para => `<p>${para.trim().replace(/\n/g, '<br>')}</p>`)
+                .join('');
+        }
+        
+        // 根据已知数据查找标题（备用方案）
+        function findPoemTitle(id) {
+            const knownTitles = {
+                '10083': '步出夏门行 · 其一 · 观沧海',
+                '10973': '闻王昌龄左迁龙标遥有此寄',
+                '10445': '次北固山下',
+            };
+            
+            return knownTitles[id] || `古诗文详情`;
+        }
+        
+        // 初始化页面
+        function initPage() {
+            const params = getUrlParams();
+            
+            if (!params.id) {
+                document.getElementById('loadingMessage').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('errorMessage').innerHTML = `
+                    <h3>❌ 参数错误</h3>
+                    <p>缺少必要的古诗文ID参数</p>
+                    <a href="junior.html" class="retry-btn" style="text-decoration: none; display: inline-block;">返回古诗文列表</a>
+                `;
+                return;
+            }
+            
+            currentPoemId = params.id;
+            currentPoemType = params.type;
+            
+            // 设置类型信息
+            if (currentPoemType) {
+                document.getElementById('poemType').textContent = getTypeLabel(currentPoemType);
+            }
+            
+            // 设置备用标题
+            document.getElementById('poemTitle').textContent = findPoemTitle(currentPoemId);
+            
+            // 加载内容
+            loadPoemContent();
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', initPage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高中古诗文 - 中学古诗文学习网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .nav a:hover {
+            color: #ff6b6b;
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .page-title h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .page-title p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .grade-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50px;
+            padding: 0.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .tab-button {
+            background: transparent;
+            border: none;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0 0.5rem;
+        }
+        
+        .tab-button.active {
+            background: rgba(255,255,255,0.9);
+            color: #667eea;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .tab-button:hover:not(.active) {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .grade-content {
+            display: none;
+        }
+        
+        .grade-content.active {
+            display: block;
+        }
+        
+        .poems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .poem-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            border: 2px solid transparent;
+        }
+        
+        .poem-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            border-color: #667eea;
+        }
+        
+        .poem-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        .poem-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .poem-type {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .poem-id {
+            color: #7f8c8d;
+            font-size: 0.8rem;
+            font-family: monospace;
+        }
+        
+        .poem-preview {
+            color: #34495e;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: #667eea;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .read-more:hover {
+            color: #ff6b6b;
+            gap: 1rem;
+        }
+        
+        .stats-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 3rem;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-item {
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .search-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+        
+        .search-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .search-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-button.active {
+            background: rgba(255,255,255,0.9);
+            color: #667eea;
+        }
+        
+        .filter-button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+            
+            .page-title h1 {
+                font-size: 2.5rem;
+            }
+            
+            .grade-tabs {
+                flex-direction: column;
+                border-radius: 20px;
+            }
+            
+            .tab-button {
+                margin: 0.25rem 0;
+                border-radius: 15px;
+            }
+            
+            .poems-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .search-input {
+                margin-bottom: 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">网站首页</a>
+            <a href="junior.html">初中古诗文</a>
+            <a href="senior.html" style="color: #ff6b6b;">高中古诗文</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="page-title">
+            <h1>🎓 高中古诗文</h1>
+            <p>传承千年文化，品味经典诗篇</p>
+        </div>
+        
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索古诗文标题...">
+                <button class="search-button" onclick="searchPoems()">🔍 搜索</button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-button active" onclick="filterByType('all')">全部</button>
+                <button class="filter-button" onclick="filterByType('shi')">诗</button>
+                <button class="filter-button" onclick="filterByType('ci')">词</button>
+                <button class="filter-button" onclick="filterByType('wen')">文</button>
+                <button class="filter-button" onclick="filterByType('qu')">曲</button>
+                <button class="filter-button" onclick="filterByType('fu')">赋</button>
+            </div>
+        </div>
+        
+        <div class="grade-tabs">
+            <button class="tab-button active" onclick="showGrade('grade1')">高一</button>
+            <button class="tab-button" onclick="showGrade('grade2')">高二</button>
+            <button class="tab-button" onclick="showGrade('grade3')">高三</button>
+        </div>
+        
+        <!-- 高一内容 -->
+        <div id="grade1" class="grade-content active">
+            <div class="poems-grid" id="grade1-poems">
+                <!-- 高一古诗文将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 高二内容 -->
+        <div id="grade2" class="grade-content">
+            <div class="poems-grid" id="grade2-poems">
+                <!-- 高二古诗文将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 高三内容 -->
+        <div id="grade3" class="grade-content">
+            <div class="poems-grid" id="grade3-poems">
+                <!-- 高三古诗文将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <h2 style="color: white; margin-bottom: 1rem;">📊 高中古诗文统计</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalCount">0</span>
+                    <span class="stat-label">总篇数</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="shiCount">0</span>
+                    <span class="stat-label">诗</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="ciCount">0</span>
+                    <span class="stat-label">词</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="wenCount">0</span>
+                    <span class="stat-label">文</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="quCount">0</span>
+                    <span class="stat-label">曲</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="fuCount">0</span>
+                    <span class="stat-label">赋</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 高中古诗文数据
+        const seniorPoems = {
+            grade1: [
+                {id: 10071, title: "沁园春 · 长沙", type: "ci"},
+                {id: 12097, title: "国风 · 周南 · 芣苢", type: "shi"},
+                {id: 625850, title: "文氏外孙入村收麦", type: "shi"},
+                {id: 10084, title: "短歌行", type: "shi"},
+                {id: 10068, title: "归园田居（其一）", type: "shi"},
+                {id: 10208, title: "梦游天姥吟留别", type: "shi"},
+                {id: 10359, title: "登高", type: "shi"},
+                {id: 10319, title: "琵琶行", type: "shi"},
+                {id: 10741, title: "念奴娇 · 赤壁怀古", type: "ci"},
+                {id: 10215, title: "永遇乐 · 京口北固亭怀古", type: "ci"},
+                {id: 10145, title: "声声慢", type: "ci"},
+                {id: 641181, title: "劝学", type: "wen"},
+                {id: 11271, title: "师说", type: "wen"},
+                {id: 640908, title: "前赤壁赋", type: "wen"},
+                {id: 633564, title: "登泰山记", type: "wen"},
+                {id: 11083, title: "国风 · 邶风 · 静女", type: "shi"},
+                {id: 11136, title: "古诗十九首 · 涉江采芙蓉", type: "shi"},
+                {id: 10128, title: "虞美人·春花秋月何时了", type: "ci"},
+                {id: 10321, title: "鹊桥仙", type: "ci"},
+                {id: 643945, title: "子路、曾晳、冉有、公西华侍坐", type: "wen"},
+                {id: 634645, title: "孟子 · 第一卷 · 梁惠王上 · 第七节", type: "wen"},
+                {id: 949600, title: "庖丁解牛", type: "wen"},
+                {id: 643649, title: "烛之武退秦师", type: "wen"},
+                {id: 643763, title: "鸿门宴", type: "wen"},
+                {id: 69489, title: "窦娥冤 · 滚绣球", type: "qu"},
+                {id: 11887, title: "谏逐客书", type: "wen"},
+                {id: 633626, title: "与妻书", type: "wen"},
+                {id: 634145, title: "聊斋志异 · 卷四 · 促织", type: "wen"},
+                {id: 11760, title: "谏太宗十思疏", type: "wen"},
+                {id: 633930, title: "答司马谏议书", type: "wen"},
+                {id: 11272, title: "阿房宫赋", type: "wen"},
+                {id: 11311, title: "六国论", type: "wen"},
+                {id: 10358, title: "登岳阳楼", type: "shi"},
+                {id: 10264, title: "桂枝香 · 金陵怀古", type: "ci"},
+                {id: 10192, title: "念奴娇 · 过洞庭", type: "ci"},
+                {id: 251289, title: "皂罗袍 · 商调 · 游园", type: "qu"}
+            ],
+            grade2: [
+                {id: 949583, title: "《论语》十二章", type: "wen"},
+                {id: 640909, title: "大学", type: "wen"},
+                {id: 642572, title: "孟子 · 第三卷 · 公孙丑上 · 第六节", type: "wen"},
+                {id: 633684, title: "道德经（第三十三章）", type: "wen"},
+                {id: 10241, title: "庄子 · 内篇 · 逍遥游", type: "wen"},
+                {id: 633766, title: "墨子 · 第十四章 · 兼爱（上）", type: "wen"},
+                {id: 12198, title: "国风 · 秦风 · 无衣", type: "shi"},
+                {id: 10103, title: "春江花月夜", type: "shi"},
+                {id: 10214, title: "将进酒", type: "shi"},
+                {id: 10040, title: "江城子 · 乙卯正月二十日夜记梦", type: "ci"},
+                {id: 637596, title: "史记 · 七十列传 · 屈原贾生列传", type: "wen"},
+                {id: 643761, title: "苏武传（节选）", type: "wen"},
+                {id: 11756, title: "过秦论", type: "wen"},
+                {id: 11661, title: "新五代史 · 伶官传序", type: "wen"},
+                {id: 10515, title: "燕歌行", type: "shi"},
+                {id: 10421, title: "李凭箜篌引", type: "shi"},
+                {id: 10027, title: "锦瑟", type: "shi"},
+                {id: 10262, title: "书愤", type: "shi"}
+            ],
+            grade3: [
+                {id: 12134, title: "国风 · 卫风 · 氓", type: "shi"},
+                {id: 949586, title: "离骚（节选）", type: "shi"},
+                {id: 10392, title: "古诗为焦仲卿妻作 · 孔雀东南飞", type: "shi"},
+                {id: 10216, title: "蜀道难", type: "shi"},
+                {id: 10599, title: "蜀相", type: "shi"},
+                {id: 10365, title: "望海潮", type: "ci"},
+                {id: 10180, title: "扬州慢", type: "ci"},
+                {id: 11522, title: "陈情表", type: "wen"},
+                {id: 10019, title: "项脊轩志", type: "wen"},
+                {id: 10093, title: "兰亭集序", type: "wen"},
+                {id: 10277, title: "归去来兮辞", type: "fu"},
+                {id: 12461, title: "种树郭橐驼传", type: "wen"},
+                {id: 10333, title: "石钟山记", type: "wen"},
+                {id: 640079, title: "论语 · 八佾篇 · 第二十四章", type: "wen"},
+                {id: 636724, title: "论语 · 微子篇", type: "wen"},
+                {id: 636720, title: "论语 · 宪问篇", type: "wen"},
+                {id: 636725, title: "论语 · 子张篇", type: "wen"},
+                {id: 639846, title: "论语 · 子罕篇 · 第十一章", type: "wen"},
+                {id: 645006, title: "论语·述而篇", type: "wen"},
+                {id: 636721, title: "论语 · 卫灵公篇", type: "wen"},
+                {id: 636723, title: "论语 · 阳货篇", type: "wen"},
+                {id: 639997, title: "论语 · 雍也篇 · 第二十八章", type: "wen"},
+                {id: 10113, title: "论语 · 雍也篇 · 第十一章", type: "wen"},
+                {id: 10067, title: "论语 · 先进篇 · 第二十六章", type: "wen"},
+                {id: 639980, title: "论语 · 雍也篇 · 第十章", type: "wen"},
+                {id: 645005, title: "论语·雍也篇", type: "wen"},
+                {id: 645004, title: "论语·为政篇", type: "wen"},
+                {id: 643759, title: "寡人之于国也", type: "wen"},
+                {id: 642534, title: "孟子 · 第一卷 · 梁惠王上 · 第一节", type: "wen"},
+                {id: 642811, title: "孟子 · 第十四卷 · 尽心下 · 第十四节", type: "wen"}
+            ]
+        };
+        
+        let currentFilter = 'all';
+        let currentGrade = 'grade1';
+        
+        // 获取类型标签
+        function getTypeLabel(type) {
+            const labels = {
+                'shi': '诗',
+                'ci': '词', 
+                'wen': '文',
+                'qu': '曲',
+                'fu': '赋'
+            };
+            return labels[type] || type;
+        }
+        
+        // 获取类型颜色
+        function getTypeColor(type) {
+            const colors = {
+                'shi': 'linear-gradient(135deg, #ff6b6b, #ee5a52)',
+                'ci': 'linear-gradient(135deg, #4ecdc4, #44a08d)',
+                'wen': 'linear-gradient(135deg, #45b7d1, #96c93d)',
+                'qu': 'linear-gradient(135deg, #f093fb, #f5576c)',
+                'fu': 'linear-gradient(135deg, #ffecd2, #fcb69f)'
+            };
+            return colors[type] || 'linear-gradient(135deg, #667eea, #764ba2)';
+        }
+        
+        // 获取预览文本
+        function getPreviewText(title, type) {
+            const previews = {
+                '沁园春 · 长沙': '独立寒秋，湘江北去，橘子洲头...',
+                '短歌行': '对酒当歌，人生几何！譬如朝露，去日苦多...',
+                '归园田居（其一）': '少无适俗韵，性本爱丘山...',
+                '梦游天姥吟留别': '海客谈瀛洲，烟涛微茫信难求...',
+                '登高': '风急天高猿啸哀，渚清沙白鸟飞回...',
+                '琵琶行': '浔阳江头夜送客，枫叶荻花秋瑟瑟...',
+                '念奴娇 · 赤壁怀古': '大江东去，浪淘尽，千古风流人物...',
+                '声声慢': '寻寻觅觅，冷冷清清，凄凄惨惨戚戚...',
+                '劝学': '君子曰：学不可以已...',
+                '师说': '古之学者必有师。师者，所以传道受业解惑也...',
+                '前赤壁赋': '壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下...',
+                '春江花月夜': '春江潮水连海平，海上明月共潮生...',
+                '将进酒': '君不见，黄河之水天上来，奔流到海不复回...',
+                '蜀道难': '噫吁嚱，危乎高哉！蜀道之难，难于上青天！...',
+                '离骚（节选）': '帝高阳之苗裔兮，朕皇考曰伯庸...',
+                '孔雀东南飞': '孔雀东南飞，五里一徘徊...',
+                '兰亭集序': '永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭...',
+                '归去来兮辞': '归去来兮，田园将芜胡不归？...'
+            };
+            
+            return previews[title] || `这是一篇${getTypeLabel(type)}，点击查看详细内容...`;
+        }
+        
+        // 创建古诗文卡片
+        function createPoemCard(poem) {
+            return `
+                <div class="poem-card" onclick="viewPoem(${poem.id}, '${poem.type}')">
+                    <div class="poem-meta">
+                        <span class="poem-type" style="background: ${getTypeColor(poem.type)}">${getTypeLabel(poem.type)}</span>
+                        <span class="poem-id">#${poem.id}</span>
+                    </div>
+                    <h3 class="poem-title">${poem.title}</h3>
+                    <p class="poem-preview">${getPreviewText(poem.title, poem.type)}</p>
+                    <a href="#" class="read-more">
+                        阅读全文 <span>→</span>
+                    </a>
+                </div>
+            `;
+        }
+        
+        // 渲染古诗文列表
+        function renderPoems(grade) {
+            const container = document.getElementById(`${grade}-poems`);
+            const poems = seniorPoems[grade];
+            
+            let filteredPoems = poems;
+            if (currentFilter !== 'all') {
+                filteredPoems = poems.filter(poem => poem.type === currentFilter);
+            }
+            
+            container.innerHTML = filteredPoems.map(createPoemCard).join('');
+        }
+        
+        // 显示年级
+        function showGrade(grade) {
+            currentGrade = grade;
+            
+            // 更新标签状态
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // 显示对应内容
+            document.querySelectorAll('.grade-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(grade).classList.add('active');
+            
+            // 重新渲染当前年级的诗文
+            renderPoems(grade);
+        }
+        
+        // 按类型筛选
+        function filterByType(type) {
+            currentFilter = type;
+            
+            // 更新筛选按钮状态
+            document.querySelectorAll('.filter-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // 重新渲染当前年级的诗文
+            renderPoems(currentGrade);
+        }
+        
+        // 搜索功能
+        // 搜索功能
+        function searchPoems() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (!searchTerm) {
+                // 如果搜索框为空，显示当前年级的所有诗文
+                renderPoems(currentGrade);
+                return;
+            }
+            
+            // 在当前年级中搜索
+            const poems = seniorPoems[currentGrade];
+            const filteredPoems = poems.filter(poem => 
+                poem.title.toLowerCase().includes(searchTerm)
+            );
+            
+            // 应用类型筛选
+            let finalPoems = filteredPoems;
+            if (currentFilter !== 'all') {
+                finalPoems = filteredPoems.filter(poem => poem.type === currentFilter);
+            }
+            
+            const container = document.getElementById(`${currentGrade}-poems`);
+            
+            if (finalPoems.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: #7f8c8d;">
+                        <h3>😔 未找到相关古诗文</h3>
+                        <p>请尝试其他关键词或切换到其他年级</p>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = finalPoems.map(createPoemCard).join('');
+            }
+        }
+        
+        // 查看古诗文详情
+        function viewPoem(id, type) {
+            window.location.href = `detail.html?id=${id}&type=${type}`;
+        }
+        
+        // 计算统计数据
+        function calculateStats() {
+            const allPoems = [
+                ...seniorPoems.grade1,
+                ...seniorPoems.grade2,
+                ...seniorPoems.grade3
+            ];
+            
+            const stats = {
+                total: allPoems.length,
+                shi: allPoems.filter(p => p.type === 'shi').length,
+                ci: allPoems.filter(p => p.type === 'ci').length,
+                wen: allPoems.filter(p => p.type === 'wen').length,
+                qu: allPoems.filter(p => p.type === 'qu').length,
+                fu: allPoems.filter(p => p.type === 'fu').length
+            };
+            
+            // 更新统计显示
+            document.getElementById('totalCount').textContent = stats.total;
+            document.getElementById('shiCount').textContent = stats.shi;
+            document.getElementById('ciCount').textContent = stats.ci;
+            document.getElementById('wenCount').textContent = stats.wen;
+            document.getElementById('quCount').textContent = stats.qu;
+            document.getElementById('fuCount').textContent = stats.fu;
+        }
+        
+        // 搜索框回车事件
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchPoems();
+            }
+        });
+        
+        // 实时搜索（可选）
+        document.getElementById('searchInput').addEventListener('input', function() {
+            // 延迟搜索，避免频繁触发
+            clearTimeout(this.searchTimeout);
+            this.searchTimeout = setTimeout(() => {
+                searchPoems();
+            }, 300);
+        });
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 渲染高一古诗文（默认）
+            renderPoems('grade1');
+            
+            // 计算并显示统计数据
+            calculateStats();
+            
+            // 添加数字动画效果
+            animateNumbers();
+        });
+        
+        // 数字动画效果
+        function animateNumbers() {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 50; // 50步完成动画
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        }
+        
+        // 添加页面滚动效果
+        window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.poem-card');
+            
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (cardTop < windowHeight * 0.8) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        
+        // 初始化卡片动画
+        function initCardAnimations() {
+            const cards = document.querySelectorAll('.poem-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                card.style.transitionDelay = `${index * 0.1}s`;
+            });
+            
+            // 触发动画
+            setTimeout(() => {
+                cards.forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                });
+            }, 100);
+        }
+        
+        // 重写渲染函数以包含动画
+        const originalRenderPoems = renderPoems;
+        renderPoems = function(grade) {
+            originalRenderPoems(grade);
+            setTimeout(initCardAnimations, 50);
+        };
+    </script>
+</body>
+</html>
+ 
