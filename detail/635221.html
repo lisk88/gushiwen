@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>谏院题名记 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>谏院题名记 - 司马光 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="谏院题名记是宋朝诗人司马光的经典作品。本页面提供谏院题名记的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="谏院题名记,司马光,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="谏院题名记 - 司马光 - 宋朝古诗文">
+    <meta property="og:description" content="谏院题名记是宋朝诗人司马光的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="谏院题名记 - 司马光 - 宋朝古诗文">
+    <meta name="twitter:description" content="谏院题名记是宋朝诗人司马光的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "谏院题名记",
+      "author": {
+        "@type": "Person",
+        "name": "司马光"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "谏院题名记是宋朝诗人司马光的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">谏院题名记</h1>
-            <div class="poem-author">【宋】司马光</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">司马光</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>古者谏无官，自公卿大夫，至于工商，无不得谏者。汉兴以来，始置官。</p><p>夫以天下之政，四海之众，得失利病，萃于一官；使言之，其为任亦重矣。居是官者，当志其大，舍其细；先其急，后其缓；专利国家而不为身谋。彼汲汲于名者，犹汲汲于利也，其间相去何远哉？</p><p>天禧初，真宗诏置谏官六员，责其职事。庆历中，钱君始书其名于版，光恐久而漫灭。嘉祐八年，刻于石。后之人将历指其名而议之曰：「某也忠，某也诈，某也直，某也曲。」呜呼！可不惧哉！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>在古代没有专门来规劝君王的官职，从官居高位的公卿大夫到市井百姓从事手工业和从商的人，都可以规劝君王。（等到）汉朝兴盛开始，才有了谏官的称号。<br>将天下所有的政事，四海之内的百姓，国家社稷的得与失，优势和弊病，都交萃于谏官身上，让他正确地将一切说出来。（谏官）的责任相当重啊！当谏官的人，（应当）注意重要的方面，舍弃细微的地方；把情况紧急的事放在前面，把不要紧的事放在后面；只为国家作贡献而不要把自己放在国家前面。那些在名声方面急切的人，一定会在利益方面贪图。（如果这样成为一个谏官的话）那其中的差距又相差多远呢？<br>天禧初年的时候，真宗下诏设立谏官六名，来监督皇帝的行为。庆历中的时候，钱君开始将谏官的名字书写在专门的文书上，我恐怕日子长了名字会磨灭掉。（于是）在嘉祐八年时，将谏官的名字刻在石头上。后来的人将会逐个指着他们的姓名，议论他们说：某人忠诚，某人奸诈，某人正直，某人邪恶”哎，真是令人警戒啊！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>汲汲：急切的样子。<br>去：距离。<br>诏：名词活用作动词，下诏。<br>责：监督。<br>天禧：宋真宗（赵恒）年号。<br>庆历：宋仁宗（赵祯）的第六个年号。<br>漫：模糊。<br>灭：消失。<br>嘉祐：宋仁宗（赵祯）最后一个年号。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文论述了谏官的职责与重要性。作者认为向皇帝进谏是很重要的事情，所以要设立谏官。因为谏官的责任重大，为此官者必须谨慎和忠诚，还要将谏官的名字刻在石上让当时和后来的人监督。<br>本文体现了作者敢于直谏，不阿谀奉承；举忠斥奸，不为身谋的精神。在《谏院题名记》中，他要求做谏官的“当志其大，舍其细，先其急，后其缓；专利国家，而不为身谋。彼汲汲名者，犹汲汲利也。其间相去何远哉！”他曾经说自己平生所作所为，没有一件事是不能对人讲的。他廉洁奉公、以节俭为乐的品德更是一直被众传颂。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>古者谏无官，自公卿大夫，至于工商，无不得谏者。汉兴以来，始置官。</p><p>夫以天下之政，四海之众，得失利病，萃于一官；使言之，其为任亦重矣。居是官者，当志其大，舍其细；先其急，后其缓；专利国家而不为身谋。彼汲汲于名者，犹汲汲于利也，其间相去何远哉？</p><p>天禧初，真宗诏置谏官六员，责其职事。庆历中，钱君始书其名于版，光恐久而漫灭。嘉祐八年，刻于石。后之人将历指其名而议之曰：「某也忠，某也诈，某也直，某也曲。」呜呼！可不惧哉！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>在古代没有专门来规劝君王的官职，从官居高位的公卿大夫到市井百姓从事手工业和从商的人，都可以规劝君王。（等到）汉朝兴盛开始，才有了谏官的称号。<br>将天下所有的政事，四海之内的百姓，国家社稷的得与失，优势和弊病，都交萃于谏官身上，让他正确地将一切说出来。（谏官）的责任相当重啊！当谏官的人，（应当）注意重要的方面，舍弃细微的地方；把情况紧急的事放在前面，把不要紧的事放在后面；只为国家作贡献而不要把自己放在国家前面。那些在名声方面急切的人，一定会在利益方面贪图。（如果这样成为一个谏官的话）那其中的差距又相差多远呢？<br>天禧初年的时候，真宗下诏设立谏官六名，来监督皇帝的行为。庆历中的时候，钱君开始将谏官的名字书写在专门的文书上，我恐怕日子长了名字会磨灭掉。（于是）在嘉祐八年时，将谏官的名字刻在石头上。后来的人将会逐个指着他们的姓名，议论他们说：某人忠诚，某人奸诈，某人正直，某人邪恶”哎，真是令人警戒啊！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>汲汲：急切的样子。<br>去：距离。<br>诏：名词活用作动词，下诏。<br>责：监督。<br>天禧：宋真宗（赵恒）年号。<br>庆历：宋仁宗（赵祯）的第六个年号。<br>漫：模糊。<br>灭：消失。<br>嘉祐：宋仁宗（赵祯）最后一个年号。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文论述了谏官的职责与重要性。作者认为向皇帝进谏是很重要的事情，所以要设立谏官。因为谏官的责任重大，为此官者必须谨慎和忠诚，还要将谏官的名字刻在石上让当时和后来的人监督。<br>本文体现了作者敢于直谏，不阿谀奉承；举忠斥奸，不为身谋的精神。在《谏院题名记》中，他要求做谏官的“当志其大，舍其细，先其急，后其缓；专利国家，而不为身谋。彼汲汲名者，犹汲汲利也。其间相去何远哉！”他曾经说自己平生所作所为，没有一件事是不能对人讲的。他廉洁奉公、以节俭为乐的品德更是一直被众传颂。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

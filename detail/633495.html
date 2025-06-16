@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>深虑论 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>深虑论 - 方孝孺 - 明朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="深虑论是明朝诗人方孝孺的经典作品。本页面提供深虑论的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="深虑论,方孝孺,明朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="深虑论 - 方孝孺 - 明朝古诗文">
+    <meta property="og:description" content="深虑论是明朝诗人方孝孺的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="深虑论 - 方孝孺 - 明朝古诗文">
+    <meta name="twitter:description" content="深虑论是明朝诗人方孝孺的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "深虑论",
+      "author": {
+        "@type": "Person",
+        "name": "方孝孺"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "深虑论是明朝诗人方孝孺的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">深虑论</h1>
-            <div class="poem-author">【明】方孝孺</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【明】<span itemprop="name">方孝孺</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>虑天下者，常图其所难而忽其所易；备其所可畏而遗其所不疑。然而祸常发于所忽之中，而乱常起于不足疑之事。岂其虑之未周欤？盖虑之所能及者，人事之宜然；而出于智力之所不及者，天道也。</p><p>当秦之世，而灭诸侯，一天下；而其心以为周之亡，在乎诸侯之强耳。变封建而为郡县，方以为兵革可不复用，天子之位可以世守；而不知汉帝起陇亩之中，而卒亡秦之社稷。汉惩秦之孤立，于是大建庶孽而为诸侯，以为同姓之亲，可以相继而无变；而七国萌篡弑之谋。武宣以后，稍剖析之而分其势，以为无事矣；而王莽卒移汉祚。光武之惩哀平，魏之惩汉，晋之惩魏，各惩其所由亡而为之备，而其亡也，盖出于所备之外。</p><p>唐太宗闻武氏之杀其子孙，求人于疑似之际而除之，而武氏日侍其左右而不悟。宋太祖见五代方镇之足以制其君，尽释其兵权，使力弱而易制，而不知子孙卒困于敌国。此其人皆有出人之智，盖世之才，其于治乱存亡之几，思之详而备之审矣。虑切于此而祸兴于彼，终至乱亡者，何哉？盖智可以谋人，而不可以谋天。良医之子，多死于病；良巫之子，多死于鬼；岂工于活人而拙于谋子也哉？乃工于谋人而拙于谋天也。</p><p>古之圣人，知天下后世之变，非智虑之所能周，非法术之所能制；不敢肆其私谋诡计，而唯积至诚、用大德，以结乎天心；使天眷其德，若慈母之保赤子而不忍释。故其子孙，虽有至愚不肖者足以亡国，而天卒不忍遽亡之，此虑之远者也。夫苟不能自结于天，而欲以区区之智，笼络当世之务，而必后世之无危亡，此理之所必无者，而岂天道哉！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>筹划国家大事的人，常注重艰难危险的一面，而忽略素常容易的一面，防范随时会出现的可怕事件，而遗漏不足疑虑的事件。然而，灾祸常常在疏忽之际发生，变乱常常在不加疑虑的事上突起。难道是考虑得不周到吗？大凡智力所能考虑到的，都是人事发展理应出现的情况，而超出智力所能达到的范围，那是天道的安排呀！<br>秦始皇剿灭诸侯，统一天下后，认为周朝的灭亡在于诸侯的强大，于是改封建制为郡县制。满以为这样一来就会根除战争动乱，天子的尊位可以代代安享，却不知汉高祖在乡野间崛起，最终颠覆了秦朝的江山。汉王室鉴于秦朝的孤立无辅，大肆分封兄弟、子侄为诸侯，自以为凭着同胞骨肉的亲情，可以共辅江山，不生变乱，然而吴王刘濞等七国还是萌生了弑君篡位的阴谋野心。汉武帝、汉宣帝之后，逐渐分割诸侯王的土地，削弱他们的势力，这样便以为平安无事了，没想到外戚王莽最终夺取了汉家的皇位。光武帝刘秀借鉴了西汉（哀、平）的教训，曹魏借鉴了东汉的教训，西晋借鉴了曹魏的教训，各自借鉴其前代的教训而进行防备，可他们灭亡的根由，都在防备的范围之外。<br>唐太宗听传言说：将有带“武”字的人杀戮唐室子孙，便将可疑之人找出来统统杀掉。可武则天每天侍奉在他身边，却怎么也没想到她。宋太祖看到五代的节度可以制伏君王，便收回节度使的兵权，使其力量削弱，容易对付，哪料想子孙后代竟在敌国的困扰下逐步衰亡。这些人都有着超人的智慧，盖世的才华，对国家乱亡的诱因，他们可谓考虑得细致，防范得周密了，然而，思虑的重心在这边，灾祸却在那边产生，最终免不了灭亡，为什么呢？或许智力谋划的只是人事的因素，却无法预测天道的安排。良医的儿子难免会病死，良巫的儿子难免死于神鬼，难道是善于救助别人而不善于救自己的子女吗？这是善于谋划人事而不善于谋利天道啊！<br>古代的圣人，知道国家将来的变化，不是人的智谋能考虑周全的，也不是政治手段能控制的，不敢滥用限谋诡计，只是积累真诚，用大德来感动天心，使上天顾念他（对百姓）的恩德，像慈母保护初生婴儿那样不忍心舍弃。尽管他的子孙有愚笨不贤良足以使国家灭亡的，而上天却不忍心立即灭其家国，这才是思虑得深远呀！假如不能用大德赢得天心，仅凭着微不足道的智谋，包揽天下的事务，想使国家没有希望危亡，这从道理上是讲不过去的，难道天意会如此安排吗？</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>常图其所难而忽其所易：对自己认为困难的事能认真考虑，而对自己觉得容易的事就疏忽了。图，考虑；忽，忽视。<br>备其所可畏而遗其所不疑：对自己认为可怕的事有所防备，而对自己觉得无疑之事就忽视了。备，防备；遗，遗忘。<br>未周：不周全，不全面。<br>及：至，达到。<br>人事：人的力量所能及的事。<br>不及：达不到。<br>天道：上天的意旨。<br>一天下：统一天下。一，动词，统一。<br>封建：封邦建国。即古代帝王把爵位或土地分赐给亲戚或功臣，使之在其领地里建立邦国。<br>郡县：即郡县制，把国家分为郡和县，由中央朝廷统一掌管。<br>兵革可不复用：战争再不会发生。兵革，代指武器铠甲。<br>世守：一代传一代，永远拥有。<br>汉帝：指汉高祖刘邦。<br>陇亩：草野。<br>卒：终于，最终。<br>社稷：社为土神，稷为谷神，亦以社稷为国家的代称。<br>惩：以前失为鉴戒。<br>建：犹设置。<br>庶孽：妃妾所生之子。<br>相继而无变：互相帮助而不会发生变故。<br>七国：指汉景帝时吴、楚、赵、胶西、济南、淄川、胶东等七个诸侯国，于公元前145年同时发动叛乱，史称“七国之乱”。<br>篡弑：狱君而夺其帝位。<br>武、宣：指汉武帝、汉宣帝。<br>稍：逐渐。<br>削析：划分，此处指削减。<br>王莽（公元前45年—公元28年）：字巨君，汉元帝皇后侄，后毒死汉平帝，于初始元年（公元8年）称帝，改国号为“新”。<br>汉柞：汉朝的帝位。<br>光武：即汉光武帝刘秀（公元前6年—公元57年），字文叔，南阳蔡阳（今湖北枣阳西南）人，东汉王朝的建立者。<br>哀、平：即汉哀帝刘欣、汉平帝刘衎。<br>所由亡：所灭亡的原因。<br>而武氏日侍其左右而不悟：据载，唐贞观二十二年，唐太宗密问太史令李淳风：“据传说有个女主武氏，代唐有天下之事，这是真的吗？”李淳风回答说：“仰观天象，俯察历数，此人已在宫中，不过三十年当王天下，其兆己成。”唐太宗要把怀疑对象全杀掉，但是被李淳风劝止。其实武则天就在身边，唐太宗却没有察觉。<br>宋太祖：即赵匡胤（公元927年—公元976年），宋王朝的建立者，公元960—976年在位。<br>五代：指后梁、后唐、后晋、后汉、后周。<br>方镇：指掌握兵权、镇守一方的军事长官。<br>尽释其兵权：宋太祖两次宴请掌有兵权的重臣，以高官厚禄为条件，解除了他们的兵权，加强了中央集权统治，后人称之为“杯酒释兵权”。<br>此其人：这里所列举的人。<br>出人之智：超出常人的智慧。<br>盖世之才：形容才能居当代之首。<br>几：事物变化的前兆、迹象。<br>审：周全细致。<br>切：贴近、切近。<br>兴：产生。<br>“盖智可以谋人，而不可以谋天”句：人的智慧只能为人事而谋虑，却不能为天意去谋虑。<br>工：擅长、善于。<br>活人：救活他人。<br>拙：“工”的反义词。<br>谋子：为自己子女考虑。<br>周：遍及。<br>法术：此处指策略、方法。<br>制：控制。<br>肆：不顾一切地施行。<br>私谋诡计：同“阴谋诡计”。私，暗中，不公开。<br>至诚：极诚挚的心意。<br>大德：高尚的品德。<br>眷：顾念，垂爱。<br>赤子：婴儿。<br>释：犹丢下、放下。<br>至愚：极端愚笨。<br>不肖：不成材。<br>遽：立即、马上。<br>亡之：使之灭亡。<br>苟：假如。<br>区区之智：此谓很浅薄的智慧。<br>笼络：犹控制。<br>理：此谓世间的道理。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《深虑论》是明代方孝孺创作的一篇史论。作者列举历代兴亡的史实，指出历代君王仅仅片面地吸取前代灭亡的教训而忽略了另外一些被掩盖的问题，但却将原因归结为非人智能所虑及的天意。论证“祸常发于所忽之中，而乱常起于不足疑之事”，目的在于给明代统治者提供历史教训，使之“深虑”长治久安的道理，并采取相应的办法。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>虑天下者，常图其所难而忽其所易；备其所可畏而遗其所不疑。然而祸常发于所忽之中，而乱常起于不足疑之事。岂其虑之未周欤？盖虑之所能及者，人事之宜然；而出于智力之所不及者，天道也。</p><p>当秦之世，而灭诸侯，一天下；而其心以为周之亡，在乎诸侯之强耳。变封建而为郡县，方以为兵革可不复用，天子之位可以世守；而不知汉帝起陇亩之中，而卒亡秦之社稷。汉惩秦之孤立，于是大建庶孽而为诸侯，以为同姓之亲，可以相继而无变；而七国萌篡弑之谋。武宣以后，稍剖析之而分其势，以为无事矣；而王莽卒移汉祚。光武之惩哀平，魏之惩汉，晋之惩魏，各惩其所由亡而为之备，而其亡也，盖出于所备之外。</p><p>唐太宗闻武氏之杀其子孙，求人于疑似之际而除之，而武氏日侍其左右而不悟。宋太祖见五代方镇之足以制其君，尽释其兵权，使力弱而易制，而不知子孙卒困于敌国。此其人皆有出人之智，盖世之才，其于治乱存亡之几，思之详而备之审矣。虑切于此而祸兴于彼，终至乱亡者，何哉？盖智可以谋人，而不可以谋天。良医之子，多死于病；良巫之子，多死于鬼；岂工于活人而拙于谋子也哉？乃工于谋人而拙于谋天也。</p><p>古之圣人，知天下后世之变，非智虑之所能周，非法术之所能制；不敢肆其私谋诡计，而唯积至诚、用大德，以结乎天心；使天眷其德，若慈母之保赤子而不忍释。故其子孙，虽有至愚不肖者足以亡国，而天卒不忍遽亡之，此虑之远者也。夫苟不能自结于天，而欲以区区之智，笼络当世之务，而必后世之无危亡，此理之所必无者，而岂天道哉！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>筹划国家大事的人，常注重艰难危险的一面，而忽略素常容易的一面，防范随时会出现的可怕事件，而遗漏不足疑虑的事件。然而，灾祸常常在疏忽之际发生，变乱常常在不加疑虑的事上突起。难道是考虑得不周到吗？大凡智力所能考虑到的，都是人事发展理应出现的情况，而超出智力所能达到的范围，那是天道的安排呀！<br>秦始皇剿灭诸侯，统一天下后，认为周朝的灭亡在于诸侯的强大，于是改封建制为郡县制。满以为这样一来就会根除战争动乱，天子的尊位可以代代安享，却不知汉高祖在乡野间崛起，最终颠覆了秦朝的江山。汉王室鉴于秦朝的孤立无辅，大肆分封兄弟、子侄为诸侯，自以为凭着同胞骨肉的亲情，可以共辅江山，不生变乱，然而吴王刘濞等七国还是萌生了弑君篡位的阴谋野心。汉武帝、汉宣帝之后，逐渐分割诸侯王的土地，削弱他们的势力，这样便以为平安无事了，没想到外戚王莽最终夺取了汉家的皇位。光武帝刘秀借鉴了西汉（哀、平）的教训，曹魏借鉴了东汉的教训，西晋借鉴了曹魏的教训，各自借鉴其前代的教训而进行防备，可他们灭亡的根由，都在防备的范围之外。<br>唐太宗听传言说：将有带“武”字的人杀戮唐室子孙，便将可疑之人找出来统统杀掉。可武则天每天侍奉在他身边，却怎么也没想到她。宋太祖看到五代的节度可以制伏君王，便收回节度使的兵权，使其力量削弱，容易对付，哪料想子孙后代竟在敌国的困扰下逐步衰亡。这些人都有着超人的智慧，盖世的才华，对国家乱亡的诱因，他们可谓考虑得细致，防范得周密了，然而，思虑的重心在这边，灾祸却在那边产生，最终免不了灭亡，为什么呢？或许智力谋划的只是人事的因素，却无法预测天道的安排。良医的儿子难免会病死，良巫的儿子难免死于神鬼，难道是善于救助别人而不善于救自己的子女吗？这是善于谋划人事而不善于谋利天道啊！<br>古代的圣人，知道国家将来的变化，不是人的智谋能考虑周全的，也不是政治手段能控制的，不敢滥用限谋诡计，只是积累真诚，用大德来感动天心，使上天顾念他（对百姓）的恩德，像慈母保护初生婴儿那样不忍心舍弃。尽管他的子孙有愚笨不贤良足以使国家灭亡的，而上天却不忍心立即灭其家国，这才是思虑得深远呀！假如不能用大德赢得天心，仅凭着微不足道的智谋，包揽天下的事务，想使国家没有希望危亡，这从道理上是讲不过去的，难道天意会如此安排吗？</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>常图其所难而忽其所易：对自己认为困难的事能认真考虑，而对自己觉得容易的事就疏忽了。图，考虑；忽，忽视。<br>备其所可畏而遗其所不疑：对自己认为可怕的事有所防备，而对自己觉得无疑之事就忽视了。备，防备；遗，遗忘。<br>未周：不周全，不全面。<br>及：至，达到。<br>人事：人的力量所能及的事。<br>不及：达不到。<br>天道：上天的意旨。<br>一天下：统一天下。一，动词，统一。<br>封建：封邦建国。即古代帝王把爵位或土地分赐给亲戚或功臣，使之在其领地里建立邦国。<br>郡县：即郡县制，把国家分为郡和县，由中央朝廷统一掌管。<br>兵革可不复用：战争再不会发生。兵革，代指武器铠甲。<br>世守：一代传一代，永远拥有。<br>汉帝：指汉高祖刘邦。<br>陇亩：草野。<br>卒：终于，最终。<br>社稷：社为土神，稷为谷神，亦以社稷为国家的代称。<br>惩：以前失为鉴戒。<br>建：犹设置。<br>庶孽：妃妾所生之子。<br>相继而无变：互相帮助而不会发生变故。<br>七国：指汉景帝时吴、楚、赵、胶西、济南、淄川、胶东等七个诸侯国，于公元前145年同时发动叛乱，史称“七国之乱”。<br>篡弑：狱君而夺其帝位。<br>武、宣：指汉武帝、汉宣帝。<br>稍：逐渐。<br>削析：划分，此处指削减。<br>王莽（公元前45年—公元28年）：字巨君，汉元帝皇后侄，后毒死汉平帝，于初始元年（公元8年）称帝，改国号为“新”。<br>汉柞：汉朝的帝位。<br>光武：即汉光武帝刘秀（公元前6年—公元57年），字文叔，南阳蔡阳（今湖北枣阳西南）人，东汉王朝的建立者。<br>哀、平：即汉哀帝刘欣、汉平帝刘衎。<br>所由亡：所灭亡的原因。<br>而武氏日侍其左右而不悟：据载，唐贞观二十二年，唐太宗密问太史令李淳风：“据传说有个女主武氏，代唐有天下之事，这是真的吗？”李淳风回答说：“仰观天象，俯察历数，此人已在宫中，不过三十年当王天下，其兆己成。”唐太宗要把怀疑对象全杀掉，但是被李淳风劝止。其实武则天就在身边，唐太宗却没有察觉。<br>宋太祖：即赵匡胤（公元927年—公元976年），宋王朝的建立者，公元960—976年在位。<br>五代：指后梁、后唐、后晋、后汉、后周。<br>方镇：指掌握兵权、镇守一方的军事长官。<br>尽释其兵权：宋太祖两次宴请掌有兵权的重臣，以高官厚禄为条件，解除了他们的兵权，加强了中央集权统治，后人称之为“杯酒释兵权”。<br>此其人：这里所列举的人。<br>出人之智：超出常人的智慧。<br>盖世之才：形容才能居当代之首。<br>几：事物变化的前兆、迹象。<br>审：周全细致。<br>切：贴近、切近。<br>兴：产生。<br>“盖智可以谋人，而不可以谋天”句：人的智慧只能为人事而谋虑，却不能为天意去谋虑。<br>工：擅长、善于。<br>活人：救活他人。<br>拙：“工”的反义词。<br>谋子：为自己子女考虑。<br>周：遍及。<br>法术：此处指策略、方法。<br>制：控制。<br>肆：不顾一切地施行。<br>私谋诡计：同“阴谋诡计”。私，暗中，不公开。<br>至诚：极诚挚的心意。<br>大德：高尚的品德。<br>眷：顾念，垂爱。<br>赤子：婴儿。<br>释：犹丢下、放下。<br>至愚：极端愚笨。<br>不肖：不成材。<br>遽：立即、马上。<br>亡之：使之灭亡。<br>苟：假如。<br>区区之智：此谓很浅薄的智慧。<br>笼络：犹控制。<br>理：此谓世间的道理。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《深虑论》是明代方孝孺创作的一篇史论。作者列举历代兴亡的史实，指出历代君王仅仅片面地吸取前代灭亡的教训而忽略了另外一些被掩盖的问题，但却将原因归结为非人智能所虑及的天意。论证“祸常发于所忽之中，而乱常起于不足疑之事”，目的在于给明代统治者提供历史教训，使之“深虑”长治久安的道理，并采取相应的办法。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/1293625.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

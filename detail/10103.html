@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>春江花月夜 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>春江花月夜 - 张若虚 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="春江花月夜是唐朝诗人张若虚的经典作品。本页面提供春江花月夜的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="春江花月夜,张若虚,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="春江花月夜 - 张若虚 - 唐朝古诗文">
+    <meta property="og:description" content="春江花月夜是唐朝诗人张若虚的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="春江花月夜 - 张若虚 - 唐朝古诗文">
+    <meta name="twitter:description" content="春江花月夜是唐朝诗人张若虚的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "春江花月夜",
+      "author": {
+        "@type": "Person",
+        "name": "张若虚"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "春江花月夜是唐朝诗人张若虚的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">春江花月夜</h1>
-            <div class="poem-author">【唐】张若虚</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">张若虚</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>春江潮水连海平，海上明月共潮生。</p><p>滟滟随波千万里，何处春江无月明！</p><p>江流宛转绕芳甸，月照花林皆似霰。</p><p>空里流霜不觉飞，汀上白沙看不见。</p><p>江天一色无纤尘，皎皎空中孤月轮。</p><p>江畔何人初见月？江月何年初照人？</p><p>人生代代无穷已，江月年年望相似。</p><p>不知江月待何人，但见长江送流水。</p><p>白云一片去悠悠，青枫浦上不胜愁。</p><p>谁家今夜扁舟子？何处相思明月楼？</p><p>可怜楼上月徘徊，应照离人妆镜台。</p><p>玉户帘中卷不去，捣衣砧上拂还来。</p><p>此时相望不相闻，愿逐月华流照君。</p><p>鸿雁长飞光不度，鱼龙潜跃水成文。</p><p>昨夜闲潭梦落花，可怜春半不还家。</p><p>江水流春去欲尽，江潭落月复西斜。</p><p>斜月沉沉藏海雾，碣石潇湘无限路。</p><p>不知乘月几人归，落月摇情满江树。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>春天的江潮水势浩荡，与大海连成一片，一轮明月从海上升起，好像与潮水一起涌出来。<br>月光照耀着春江，随着波浪闪耀千万里，所有地方的春江都有明亮的月光。<br>江水曲曲折折地绕着花草丛生的原野流淌，月光照射着开遍鲜花的树林好像细密的雪珠在闪烁。<br>月色如霜，所以霜飞无从觉察。洲上的白沙和月色融合在一起，看不分明。<br>江水、天空成一色，没有一点微小灰尘，明亮的天空中只有一轮孤月高悬空中。<br>江边上什么人最初看见月亮，江上的月亮哪一年最初照耀着人？<br>人生一代代地无穷无尽，只有江上的月亮一年年地总是相像。<br>不知江上的月亮等待着什么人，只见长江不断地一直运输着流水。<br>游子像一片白雲缓缓地离去，只剩下思妇站在离别的青枫浦不胜忧愁。<br>哪家的游子今晚坐着小船在漂流？什么地方有人在明月照耀的楼上相思？<br>可怜楼上不停移动的月光，应该照耀着离人的梳妆台。<br>月光照进思妇的门帘，卷不走，照在她的捣衣砧上，拂不掉。<br>这时互相望着月亮可是互相听不到声音，我希望随着月光流去照耀着您。<br>鸿雁不停地飞翔，而不能飞出无边的月光；月照江面，鱼龙在水中跳跃，激起阵阵波纹。<br>昨天夜里梦见花落闲潭，可惜的是春天过了一半自己还不能回家。<br>江水带着春光将要流尽，水潭上的月亮又要西落。<br>斜月慢慢下沉，藏在海雾里，碣石与潇湘的离人距离无限遥远。<br>不知有几人能趁着月光回家，唯有那西落的月亮摇荡着离情，洒满了江边的树林。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>滟（yàn）滟：波光荡漾的样子。<br>芳甸（diàn）：芳草丰茂的原野。甸，郊外之地。<br>霰（xiàn）：天空中降落的白色不透明的小冰粒。形容月光下春花晶莹洁白。<br>流霜：飞霜，古人以为霜和雪一样，是从空中落下来的，所以叫流霜。在这里比喻月光皎洁，月色朦胧、流荡，所以不觉得有霜霰飞扬。<br>汀（tīng）：水边平地，小洲。<br>纤尘：微细的灰尘。<br>月轮：指月亮，因为月圆时象车轮，所以称为月轮。<br>穷已：穷尽。<br>望相似：又作「祇相似」、「秖相似」，「祇」、「秖」同「只（zhǐ）」。<br>但见：只见、仅见。<br>悠悠：渺茫、深远。<br>青枫浦上：青枫浦，地名。今湖南浏阳县境内有青枫浦。这里泛指游子所在的地方。暗用《楚辞·招魂》：「湛湛江水兮上有枫，目极千里兮伤春心。」浦上：水边。《九歌·河伯》：「送美人兮南浦。」因而此句隐含离别之意。<br>扁舟子：飘荡江湖的游子。扁舟，小舟。<br>明月楼：月夜下的闺楼。这里指闺中思妇。曹植《七哀诗》：「明月照高楼，流光正徘徊。上有愁思妇，悲叹有馀哀。」<br>月徘徊：指月光偏照闺楼，徘徊不去，令人不胜其相思之苦。徘徊，一作「裴回」。<br>离人：此处指思妇。<br>妆镜台：梳妆台。<br>玉户：形容楼阁华丽，以玉石镶嵌。<br>捣衣砧（zhēn）：捣衣石、捶布石。<br>相闻：互通音信。<br>逐：追随。<br>月华：月光。<br>文：同「纹」。<br>闲潭：幽静的水潭。<br>潇湘：湘江与潇水。<br>碣（jié）石、潇湘：一南一北，暗指路途遥远，相聚无望。<br>无限路：极言离人相距之远。<br>乘月：趁着月光。<br>摇情：激荡情思，犹言牵情。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗共三十六句，每四句一换韵，以富有生活气息的清丽之笔，创造性地再现了江南春夜的景色，如同月光照耀下的万里长江画卷，同时寄寓着游子思归的离别相思之苦。诗篇意境空明，缠绵悱恻，洗净了六朝宫体的浓脂腻粉，词清语丽，韵调优美，脍炙人口，乃千古绝唱，素有「孤篇盖全唐」之誉。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>春江潮水连海平，海上明月共潮生。</p><p>滟滟随波千万里，何处春江无月明！</p><p>江流宛转绕芳甸，月照花林皆似霰。</p><p>空里流霜不觉飞，汀上白沙看不见。</p><p>江天一色无纤尘，皎皎空中孤月轮。</p><p>江畔何人初见月？江月何年初照人？</p><p>人生代代无穷已，江月年年望相似。</p><p>不知江月待何人，但见长江送流水。</p><p>白云一片去悠悠，青枫浦上不胜愁。</p><p>谁家今夜扁舟子？何处相思明月楼？</p><p>可怜楼上月徘徊，应照离人妆镜台。</p><p>玉户帘中卷不去，捣衣砧上拂还来。</p><p>此时相望不相闻，愿逐月华流照君。</p><p>鸿雁长飞光不度，鱼龙潜跃水成文。</p><p>昨夜闲潭梦落花，可怜春半不还家。</p><p>江水流春去欲尽，江潭落月复西斜。</p><p>斜月沉沉藏海雾，碣石潇湘无限路。</p><p>不知乘月几人归，落月摇情满江树。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>春天的江潮水势浩荡，与大海连成一片，一轮明月从海上升起，好像与潮水一起涌出来。<br>月光照耀着春江，随着波浪闪耀千万里，所有地方的春江都有明亮的月光。<br>江水曲曲折折地绕着花草丛生的原野流淌，月光照射着开遍鲜花的树林好像细密的雪珠在闪烁。<br>月色如霜，所以霜飞无从觉察。洲上的白沙和月色融合在一起，看不分明。<br>江水、天空成一色，没有一点微小灰尘，明亮的天空中只有一轮孤月高悬空中。<br>江边上什么人最初看见月亮，江上的月亮哪一年最初照耀着人？<br>人生一代代地无穷无尽，只有江上的月亮一年年地总是相像。<br>不知江上的月亮等待着什么人，只见长江不断地一直运输着流水。<br>游子像一片白雲缓缓地离去，只剩下思妇站在离别的青枫浦不胜忧愁。<br>哪家的游子今晚坐着小船在漂流？什么地方有人在明月照耀的楼上相思？<br>可怜楼上不停移动的月光，应该照耀着离人的梳妆台。<br>月光照进思妇的门帘，卷不走，照在她的捣衣砧上，拂不掉。<br>这时互相望着月亮可是互相听不到声音，我希望随着月光流去照耀着您。<br>鸿雁不停地飞翔，而不能飞出无边的月光；月照江面，鱼龙在水中跳跃，激起阵阵波纹。<br>昨天夜里梦见花落闲潭，可惜的是春天过了一半自己还不能回家。<br>江水带着春光将要流尽，水潭上的月亮又要西落。<br>斜月慢慢下沉，藏在海雾里，碣石与潇湘的离人距离无限遥远。<br>不知有几人能趁着月光回家，唯有那西落的月亮摇荡着离情，洒满了江边的树林。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>滟（yàn）滟：波光荡漾的样子。<br>芳甸（diàn）：芳草丰茂的原野。甸，郊外之地。<br>霰（xiàn）：天空中降落的白色不透明的小冰粒。形容月光下春花晶莹洁白。<br>流霜：飞霜，古人以为霜和雪一样，是从空中落下来的，所以叫流霜。在这里比喻月光皎洁，月色朦胧、流荡，所以不觉得有霜霰飞扬。<br>汀（tīng）：水边平地，小洲。<br>纤尘：微细的灰尘。<br>月轮：指月亮，因为月圆时象车轮，所以称为月轮。<br>穷已：穷尽。<br>望相似：又作「祇相似」、「秖相似」，「祇」、「秖」同「只（zhǐ）」。<br>但见：只见、仅见。<br>悠悠：渺茫、深远。<br>青枫浦上：青枫浦，地名。今湖南浏阳县境内有青枫浦。这里泛指游子所在的地方。暗用《楚辞·招魂》：「湛湛江水兮上有枫，目极千里兮伤春心。」浦上：水边。《九歌·河伯》：「送美人兮南浦。」因而此句隐含离别之意。<br>扁舟子：飘荡江湖的游子。扁舟，小舟。<br>明月楼：月夜下的闺楼。这里指闺中思妇。曹植《七哀诗》：「明月照高楼，流光正徘徊。上有愁思妇，悲叹有馀哀。」<br>月徘徊：指月光偏照闺楼，徘徊不去，令人不胜其相思之苦。徘徊，一作「裴回」。<br>离人：此处指思妇。<br>妆镜台：梳妆台。<br>玉户：形容楼阁华丽，以玉石镶嵌。<br>捣衣砧（zhēn）：捣衣石、捶布石。<br>相闻：互通音信。<br>逐：追随。<br>月华：月光。<br>文：同「纹」。<br>闲潭：幽静的水潭。<br>潇湘：湘江与潇水。<br>碣（jié）石、潇湘：一南一北，暗指路途遥远，相聚无望。<br>无限路：极言离人相距之远。<br>乘月：趁着月光。<br>摇情：激荡情思，犹言牵情。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>此诗共三十六句，每四句一换韵，以富有生活气息的清丽之笔，创造性地再现了江南春夜的景色，如同月光照耀下的万里长江画卷，同时寄寓着游子思归的离别相思之苦。诗篇意境空明，缠绵悱恻，洗净了六朝宫体的浓脂腻粉，词清语丽，韵调优美，脍炙人口，乃千古绝唱，素有「孤篇盖全唐」之誉。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -167,7 +198,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/29752/5072069.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

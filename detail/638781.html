@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>世说新语 · 豪爽第十三 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>世说新语 · 豪爽第十三 - 刘义庆 - 南北朝朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="世说新语 · 豪爽第十三是南北朝朝诗人刘义庆的经典作品。本页面提供世说新语 · 豪爽第十三的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="世说新语 · 豪爽第十三,刘义庆,南北朝朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="世说新语 · 豪爽第十三 - 刘义庆 - 南北朝朝古诗文">
+    <meta property="og:description" content="世说新语 · 豪爽第十三是南北朝朝诗人刘义庆的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="世说新语 · 豪爽第十三 - 刘义庆 - 南北朝朝古诗文">
+    <meta name="twitter:description" content="世说新语 · 豪爽第十三是南北朝朝诗人刘义庆的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "世说新语 · 豪爽第十三",
+      "author": {
+        "@type": "Person",
+        "name": "刘义庆"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "世说新语 · 豪爽第十三是南北朝朝诗人刘义庆的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">世说新语 · 豪爽第十三</h1>
-            <div class="poem-author">【南北朝】刘义庆</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【南北朝】<span itemprop="name">刘义庆</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>王大将军年少时，旧有田舍名，语音亦楚。武帝唤时贤共言伎蓺事。人皆多有所知，唯王都无所关，意色殊恶，自言知打鼓吹。帝令取鼓与之，于坐振袖而起，扬槌奋击，音节谐捷，神气豪上，傍若无人。举坐叹其雄爽。</p><p>王处仲世许高尚之目，尝荒恣于色，体为之敝。左右谏之，处仲曰：“吾乃不觉尔。如此者，甚易耳！”乃开后合，驱诸婢妾数十人出路，任其所之，时人叹焉。</p><p>王大将军自目：“高朗疏率，学通左氏。”</p><p>王处仲每酒后辄咏“老骥伏枥，志在千里。烈士暮年，壮心不已”。以如意打唾壶，壶口尽缺。</p><p>晋明帝欲起池台，元帝不许。帝时为太子，好养武士。一夕中作池，比晓便成。今太子西池是也。</p><p>王大将军始欲下都处分树置，先遣参军告朝廷，讽旨时贤。祖车骑尚未镇寿春，瞋目厉声语使人曰：“卿语阿黑：何敢不逊！催摄面去，须臾不尔，我将三千兵，槊脚令上！”王闻之而止。</p><p>庾稚恭既常有中原之志，文康时权重，未在己。及季坚作相，忌兵畏祸，与稚恭历同异者久之，乃果行。倾荆、汉之力，穷舟车之势，师次于襄阳。大会参佐，陈其旌甲，亲授弧矢曰：“我之此行，若此射矣！”遂三起三叠，徒众属目，其气十倍。</p><p>桓宣武平蜀，集参僚置酒于李势殿，巴、蜀缙绅，莫不来萃。桓既素有雄情爽气，加尔日音调英发，叙古今成败由人，存亡系才。其状磊落，一坐叹赏。既散，诸人追味余言。于时寻阳周馥曰：“恨卿辈不见王大将军。”</p><p>桓公读高士传，至於陵仲子，便掷去曰：“谁能作此溪刻自处！”</p><p>桓石虔，司空豁之长庶也。小字镇恶。年十七八未被举，而童隶已呼为镇恶郎。尝住宣武斋头。从征枋头，车骑冲没陈，左右莫能先救。宣武谓曰：“汝叔落贼，汝知不？”石虔闻之，气甚奋。命朱辟为副，策马于数万众中，莫有抗者，径致冲还，三军叹服。河朔后以其名断疟。</p><p>陈林道在西岸，都下诸人共要至牛渚会。陈理既佳，人欲共言折。陈以如意拄颊，望鸡笼山叹曰：“孙伯符志业不遂！”于是竟坐不得谈。</p><p>王司州在谢公坐，咏“入不言兮出不辞，乘回风兮载云旗”。语人云：“当尔时，觉一坐无人。”</p><p>桓玄西下，入石头。外白：“司马梁王奔叛。”玄时事形已济，在平乘上笳鼓并作，直高咏云：“箫管有遗音，梁王安在哉？”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>大将军王敦年轻时，原来就有乡巴佬这个外号，说的话也是土话。晋武帝召来当时的名流一起谈论技艺的事，别人大多都懂得一些，只有王敦一点也不关心这些事，无话可说，神态、脸色都很不好，自称只懂得打鼓。武帝叫人拿鼓给他，他马上从座位上振臂站起，扬起鼓槌，精神振奋地击起鼓来，鼓音急促和谐，气概豪迈，旁若无人。满座的人都赞叹他的威武豪爽。<br>王处仲，世人赞许以高尚来品评他。他曾经沉迷女色，身体也因此很疲惫。身边的人规劝他，他说：“我却不觉得怎么样，既然这样，也很容易解决呀。”于是打开侧门，把几十个婢妾都放出去，打发上路，任凭她们爱到哪里就到哪里。当时的人很赞赏他。<br>大将军王敦评论自己高尚开朗，通达直爽，学有专长，精通《左传》。<br>王处仲每逢酒后，就吟咏“老骥伏枥，志在千里；烈士暮年，壮心不已。”还拿如意敲着唾壶打拍子，壶口全给敲缺了。<br>晋明帝想挖池塘，修亭台，他父亲元帝不答应。当时明帝还是太子，喜欢招养武士。有一晚半夜叫这些人挖池塘，到天亮就挖成了。这就是现在的太子西池。<br>大将军王敦起初想领兵东下京都，要处理朝臣，安插亲信，便先派参军去报告朝廷，并且向当时的贤达暗示自己的意图。那时车骑将军祖巡还没有移到寿春镇守，他瞪起眼睛声色俱厉地告诉王敦的使者说：“你去告诉阿黑，怎么敢这样傲慢无礼！叫他收起老脸躲开！如果不马上走，我就要率领三千兵马用长矛戳他的脚赶他回去。”王敦听说后，就打消了念头。<br>庾稚恭早就有收复中原的志向，可是他哥哥庾亮当政时，大权不在自己手里。等到庾季坚作丞相时，害怕兵祸，和稚恭经过了长时间的不同意见的争论，才决定出兵北伐。庾稚恭出动荆州、汉水一带的全部力量，调集了所有的车船，率领军队驻扎到襄阳；在襄阳，召集所有下属开会，摆开军队的阵势，亲自把武器发下去，说：“我这一次出征，结果如何，就看我的箭了！”于时连发三箭，三发三中。士兵们全神贯注，大为振奋，士气顿时增长了十倍。<br>桓温平定蜀地后，在李势原先的宫殿里设酒和下属聚会，巴、蜀一带的大官全都邀请来聚会。桓温不但一向有豪放的性情、直爽的气概，加以这一天的谈话语调英气勃勃，畅谈古今成败在人，存亡的关键在于人才，他仪态俊伟，满座的人都很赞赏。散会以后，大家还在回忆、玩味他的话，这时寻阳人周馥说：“遗憾的是你们没有见过王大将军！”<br>桓温读《高士传》时，读到放陵仲子的传记，便把书抛开，说：“谁能用这种苛刻的、不近情理的做法来对待自己！”。<br>桓石虔是司空桓豁的庶出长子，小名叫镇恶。十七八岁了，身分地位还没有得到承认，而奴仆们已经称呼他为镇恶郎了。他曾住在桓温家里。后来跟随桓温出征到枋头，在一次战斗中，车骑将军桓冲陷入敌阵，他手下的人没有谁能抢先去救他。桓温告诉石虔说：“你叔父落入敌人阵里、你知道吗？”石虏听了，勇气倍增，命令朱辟做副手，跃马扬鞭冲入几万敌军的重围中，没有谁能抵挡他，他径直把桓冲救了回来，全军都十分称赞佩服。后来黄河以北的居民就拿他的名字来驱赶疟鬼。<br>陈林道驻守在江北，京都诸友人一起邀他到牛渚山聚会。陈林道谈玄理谈得很好，大家想一同和他辩论，要驳倒他。陈林道却拿如意支着腮，远望鸡笼山感叹地说：“孙伯符志向、事业都没有如愿！”于是大家坐到散时也没机会谈论。<br>司州刺史王胡之有一次在谢安家作客，朗诵起“入不言兮出不辞，乘回风兮载云旗”的诗句。他告诉别人说：“在这个时候，就好像四周没有一个人。”<br>桓玄从西边直下，攻入石头城，外面的人报告说司马梁王叛逃了。这时桓玄大局已定，在舰船上鼓乐齐鸣，并不看重他的逃亡，只是高声朗诵道：“萧管有遗音，梁王安在哉！”</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>王大将军年少时，旧有田舍名，语音亦楚。武帝唤时贤共言伎蓺事。人皆多有所知，唯王都无所关，意色殊恶，自言知打鼓吹。帝令取鼓与之，于坐振袖而起，扬槌奋击，音节谐捷，神气豪上，傍若无人。举坐叹其雄爽。</p><p>王处仲世许高尚之目，尝荒恣于色，体为之敝。左右谏之，处仲曰：“吾乃不觉尔。如此者，甚易耳！”乃开后合，驱诸婢妾数十人出路，任其所之，时人叹焉。</p><p>王大将军自目：“高朗疏率，学通左氏。”</p><p>王处仲每酒后辄咏“老骥伏枥，志在千里。烈士暮年，壮心不已”。以如意打唾壶，壶口尽缺。</p><p>晋明帝欲起池台，元帝不许。帝时为太子，好养武士。一夕中作池，比晓便成。今太子西池是也。</p><p>王大将军始欲下都处分树置，先遣参军告朝廷，讽旨时贤。祖车骑尚未镇寿春，瞋目厉声语使人曰：“卿语阿黑：何敢不逊！催摄面去，须臾不尔，我将三千兵，槊脚令上！”王闻之而止。</p><p>庾稚恭既常有中原之志，文康时权重，未在己。及季坚作相，忌兵畏祸，与稚恭历同异者久之，乃果行。倾荆、汉之力，穷舟车之势，师次于襄阳。大会参佐，陈其旌甲，亲授弧矢曰：“我之此行，若此射矣！”遂三起三叠，徒众属目，其气十倍。</p><p>桓宣武平蜀，集参僚置酒于李势殿，巴、蜀缙绅，莫不来萃。桓既素有雄情爽气，加尔日音调英发，叙古今成败由人，存亡系才。其状磊落，一坐叹赏。既散，诸人追味余言。于时寻阳周馥曰：“恨卿辈不见王大将军。”</p><p>桓公读高士传，至於陵仲子，便掷去曰：“谁能作此溪刻自处！”</p><p>桓石虔，司空豁之长庶也。小字镇恶。年十七八未被举，而童隶已呼为镇恶郎。尝住宣武斋头。从征枋头，车骑冲没陈，左右莫能先救。宣武谓曰：“汝叔落贼，汝知不？”石虔闻之，气甚奋。命朱辟为副，策马于数万众中，莫有抗者，径致冲还，三军叹服。河朔后以其名断疟。</p><p>陈林道在西岸，都下诸人共要至牛渚会。陈理既佳，人欲共言折。陈以如意拄颊，望鸡笼山叹曰：“孙伯符志业不遂！”于是竟坐不得谈。</p><p>王司州在谢公坐，咏“入不言兮出不辞，乘回风兮载云旗”。语人云：“当尔时，觉一坐无人。”</p><p>桓玄西下，入石头。外白：“司马梁王奔叛。”玄时事形已济，在平乘上笳鼓并作，直高咏云：“箫管有遗音，梁王安在哉？”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>大将军王敦年轻时，原来就有乡巴佬这个外号，说的话也是土话。晋武帝召来当时的名流一起谈论技艺的事，别人大多都懂得一些，只有王敦一点也不关心这些事，无话可说，神态、脸色都很不好，自称只懂得打鼓。武帝叫人拿鼓给他，他马上从座位上振臂站起，扬起鼓槌，精神振奋地击起鼓来，鼓音急促和谐，气概豪迈，旁若无人。满座的人都赞叹他的威武豪爽。<br>王处仲，世人赞许以高尚来品评他。他曾经沉迷女色，身体也因此很疲惫。身边的人规劝他，他说：“我却不觉得怎么样，既然这样，也很容易解决呀。”于是打开侧门，把几十个婢妾都放出去，打发上路，任凭她们爱到哪里就到哪里。当时的人很赞赏他。<br>大将军王敦评论自己高尚开朗，通达直爽，学有专长，精通《左传》。<br>王处仲每逢酒后，就吟咏“老骥伏枥，志在千里；烈士暮年，壮心不已。”还拿如意敲着唾壶打拍子，壶口全给敲缺了。<br>晋明帝想挖池塘，修亭台，他父亲元帝不答应。当时明帝还是太子，喜欢招养武士。有一晚半夜叫这些人挖池塘，到天亮就挖成了。这就是现在的太子西池。<br>大将军王敦起初想领兵东下京都，要处理朝臣，安插亲信，便先派参军去报告朝廷，并且向当时的贤达暗示自己的意图。那时车骑将军祖巡还没有移到寿春镇守，他瞪起眼睛声色俱厉地告诉王敦的使者说：“你去告诉阿黑，怎么敢这样傲慢无礼！叫他收起老脸躲开！如果不马上走，我就要率领三千兵马用长矛戳他的脚赶他回去。”王敦听说后，就打消了念头。<br>庾稚恭早就有收复中原的志向，可是他哥哥庾亮当政时，大权不在自己手里。等到庾季坚作丞相时，害怕兵祸，和稚恭经过了长时间的不同意见的争论，才决定出兵北伐。庾稚恭出动荆州、汉水一带的全部力量，调集了所有的车船，率领军队驻扎到襄阳；在襄阳，召集所有下属开会，摆开军队的阵势，亲自把武器发下去，说：“我这一次出征，结果如何，就看我的箭了！”于时连发三箭，三发三中。士兵们全神贯注，大为振奋，士气顿时增长了十倍。<br>桓温平定蜀地后，在李势原先的宫殿里设酒和下属聚会，巴、蜀一带的大官全都邀请来聚会。桓温不但一向有豪放的性情、直爽的气概，加以这一天的谈话语调英气勃勃，畅谈古今成败在人，存亡的关键在于人才，他仪态俊伟，满座的人都很赞赏。散会以后，大家还在回忆、玩味他的话，这时寻阳人周馥说：“遗憾的是你们没有见过王大将军！”<br>桓温读《高士传》时，读到放陵仲子的传记，便把书抛开，说：“谁能用这种苛刻的、不近情理的做法来对待自己！”。<br>桓石虔是司空桓豁的庶出长子，小名叫镇恶。十七八岁了，身分地位还没有得到承认，而奴仆们已经称呼他为镇恶郎了。他曾住在桓温家里。后来跟随桓温出征到枋头，在一次战斗中，车骑将军桓冲陷入敌阵，他手下的人没有谁能抢先去救他。桓温告诉石虔说：“你叔父落入敌人阵里、你知道吗？”石虏听了，勇气倍增，命令朱辟做副手，跃马扬鞭冲入几万敌军的重围中，没有谁能抵挡他，他径直把桓冲救了回来，全军都十分称赞佩服。后来黄河以北的居民就拿他的名字来驱赶疟鬼。<br>陈林道驻守在江北，京都诸友人一起邀他到牛渚山聚会。陈林道谈玄理谈得很好，大家想一同和他辩论，要驳倒他。陈林道却拿如意支着腮，远望鸡笼山感叹地说：“孙伯符志向、事业都没有如愿！”于是大家坐到散时也没机会谈论。<br>司州刺史王胡之有一次在谢安家作客，朗诵起“入不言兮出不辞，乘回风兮载云旗”的诗句。他告诉别人说：“在这个时候，就好像四周没有一个人。”<br>桓玄从西边直下，攻入石头城，外面的人报告说司马梁王叛逃了。这时桓玄大局已定，在舰船上鼓乐齐鸣，并不看重他的逃亡，只是高声朗诵道：“萧管有遗音，梁王安在哉！”</p></div></div>
             
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>豪爽指豪放直爽。魏晋时代，士族阶层讲究豪爽的风姿气度，他们待人或处事，喜欢表现出一种宏大的气魄，直截了当，无所顾忌。本篇所记载的主要是气概方面的豪爽。他们或者一往无前，出入于数万敌兵之中，威震敌胆，如第10 则所记。或者有所动作，而大刀阔斧，气势磅礴，如第5 则记晋明帝驱使武士挖池塘，一夜就完工。或者有所触而长吟，意气风发，旁着无人，如第12 则所记。或者纵论古今，豪清满怀，慷慨激昂，如第8 则所记。或者声讨乱臣赋子，正言厉色，痛快淋漓，如第6 则所记。有时随兴会之所至，想干什么就干什么，无所拘束，这也是性格豪放的表现，第11 则就是说的这一点。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>豪爽指豪放直爽。魏晋时代，士族阶层讲究豪爽的风姿气度，他们待人或处事，喜欢表现出一种宏大的气魄，直截了当，无所顾忌。本篇所记载的主要是气概方面的豪爽。他们或者一往无前，出入于数万敌兵之中，威震敌胆，如第10 则所记。或者有所动作，而大刀阔斧，气势磅礴，如第5 则记晋明帝驱使武士挖池塘，一夜就完工。或者有所触而长吟，意气风发，旁着无人，如第12 则所记。或者纵论古今，豪清满怀，慷慨激昂，如第8 则所记。或者声讨乱臣赋子，正言厉色，痛快淋漓，如第6 则所记。有时随兴会之所至，想干什么就干什么，无所拘束，这也是性格豪放的表现，第11 则就是说的这一点。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

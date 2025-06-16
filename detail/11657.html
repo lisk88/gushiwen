@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>吴山图记 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>吴山图记 - 归有光 - 明朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="吴山图记是明朝诗人归有光的经典作品。本页面提供吴山图记的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="吴山图记,归有光,明朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="吴山图记 - 归有光 - 明朝古诗文">
+    <meta property="og:description" content="吴山图记是明朝诗人归有光的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="吴山图记 - 归有光 - 明朝古诗文">
+    <meta name="twitter:description" content="吴山图记是明朝诗人归有光的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "吴山图记",
+      "author": {
+        "@type": "Person",
+        "name": "归有光"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "吴山图记是明朝诗人归有光的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">吴山图记</h1>
-            <div class="poem-author">【明】归有光</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【明】<span itemprop="name">归有光</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>吴、长洲二县，在郡治所，分境而治；而郡西诸山，皆在吴县。</p><p>其最高者：穹窿、阳山、邓尉、西脊、铜井，而灵岩，吴之故宫在焉。尚有西子之遗迹；若虎丘、剑池及天平、尚方、支硎，皆胜地也；而太湖汪洋三万六千顷，七十二峰沉浸其间，则海内之奇观矣。余同年友魏君用晦为吴县，未及三年，以高第召入为给事中。君之为县有惠爱，百姓扳留之不能得，而君亦不忍于其民；由是好事者绘《吴山图》以为赠。</p><p>夫令之于民诚重矣。令诚贤也，其地之山川草木，亦被其泽而有荣也；令诚不贤也，其地之山川草木，亦被其殃而有辱也。君于吴之山川，盖增重矣。异时吾民将择胜于岩峦之间，尸祝于浮屠老子之宫也，固宜。而君则亦既去矣，何复惓惓于此山哉。</p><p>昔苏子瞻称韩魏公去黄州四十余年，而思之不忘，至以为《思黄州》诗；子瞻为黄人刻之于石。然后知贤者于其所至，不独使其人之不忍忘而已，亦不能自忘于其人也。君今去县已三年矣。一日，与余同在内庭，出示此图，展玩太息，因命余记之。噫！君之于吾吴有情如此，如之何而使吾民能忘之也！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>吴县、长洲二县，都在吴郡郡治所在地而划界分治的。郡的西面有许多山，都在吴县境内。其中最高的有穹窿、阳山、邓尉、西脊、铜井等山。而灵岩山，曾经是当年吴国宫殿所在的地方，那里至今还保存着西施的遗迹。至于说到虎丘、剑池，以及天平、尚方、支硎，都是风景美好的地方。而三万六千顷浩瀚的太湖中，有七十二峰坐落其间，则更称得上天下奇观了。<br>我的同年好友魏用晦君任吴县长官不到三年，就因为政绩赫赫而被朝廷召入任给事中。魏君治理吴县时对百姓很有恩惠，百姓苦留不得，魏君也不忍离去，于是有热心人就画了一幅《吴县图》，来作为临别留念赠给他。<br>县令对于百姓确实是很重要的。如果县令贤能，那当地的山川草木也会受到他的恩泽，荣耀一方；如果县令不贤能，就会祸及当地的山川草木，使其受到耻辱。魏君对吴县的山川草木，算是增加了它们的光彩吧？有朝一日这里的百姓将在山间选择一处风景优美之地，在佛堂和道观里祭祀他，这本来也是在情理之中。可是魏君已经离开了吴县，为什么仍然会眷恋当地的山川呢？过去苏子瞻称道韩魏公离开黄州任上已经四十多年，往事依然时时不忘，以致写下了思念黄州的诗，苏子瞻为黄州的人把这首诗刻在石碑上。这以后人们才明白贤能的人对于他所到的地方，不仅使那里的百姓不忍忘怀自己，而且连他自己也不会忘记那里的百姓。<br>如今魏君离开吴县已经三年了，有一天他和我同在内庭，拿出这幅《吴山图》，边欣赏边感叹，于是让我为这事作一篇记文。啊！魏君对吴县的百姓有如此深厚的情谊，吴县的百姓怎么能忘记他呢？</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>吴：即吴县，在今江苏省东南部。长洲：旧县名，治所在今江苏省苏州市，1912年并人吴县。<br>在郡治所：指吴县、长洲的县治同在苏州府。<br>灵岩：在吴县西南邓尉山西，上有馆娃宫、西施洞、吴王井等遗址。馆娃宫是吴王为西施建造的，因称吴之故宫，今灵岩寺即其遗址。<br>虎丘、剑池、天平、尚方、支硎：皆为吴县境内的名山胜景，并多有古迹遗址。除剑池外，其余皆为山名。东晋佛教学徒支道林曾在支硎隐居，相传吴王阖闾葬在虎丘。<br>太湖：湖名，古称震泽，跨苏浙二省，湖中多有小山，是著名的风景区。<br>同年：古时在科举考试中同科考中的人互称同年。<br>高第：此处指官吏考试列入优等。给事中：官名，掌侍从、规谏，监察六部，纠弹官吏。<br>令：指县令。诚：确实。<br>尸祝：指祭祀，古时祭祀的神主称尸，司祭礼的人称祝。浮屠：这里指佛。老子：道家始祖老聃。<br>惓惓：同“拳拳”，诚恳深切的意思。<br>苏子瞻：苏轼，字子瞻，北宋文学家。韩魏公：韩琦，北宋大臣，封魏国公。黄州：府名，在今湖北黄冈一带。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《吴山图记》是明代散文家归有光所写的一篇文章，主旨在于说明贤者于其所至，不独使其人不忍忘，亦不能自忘于其人。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>吴、长洲二县，在郡治所，分境而治；而郡西诸山，皆在吴县。</p><p>其最高者：穹窿、阳山、邓尉、西脊、铜井，而灵岩，吴之故宫在焉。尚有西子之遗迹；若虎丘、剑池及天平、尚方、支硎，皆胜地也；而太湖汪洋三万六千顷，七十二峰沉浸其间，则海内之奇观矣。余同年友魏君用晦为吴县，未及三年，以高第召入为给事中。君之为县有惠爱，百姓扳留之不能得，而君亦不忍于其民；由是好事者绘《吴山图》以为赠。</p><p>夫令之于民诚重矣。令诚贤也，其地之山川草木，亦被其泽而有荣也；令诚不贤也，其地之山川草木，亦被其殃而有辱也。君于吴之山川，盖增重矣。异时吾民将择胜于岩峦之间，尸祝于浮屠老子之宫也，固宜。而君则亦既去矣，何复惓惓于此山哉。</p><p>昔苏子瞻称韩魏公去黄州四十余年，而思之不忘，至以为《思黄州》诗；子瞻为黄人刻之于石。然后知贤者于其所至，不独使其人之不忍忘而已，亦不能自忘于其人也。君今去县已三年矣。一日，与余同在内庭，出示此图，展玩太息，因命余记之。噫！君之于吾吴有情如此，如之何而使吾民能忘之也！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>吴县、长洲二县，都在吴郡郡治所在地而划界分治的。郡的西面有许多山，都在吴县境内。其中最高的有穹窿、阳山、邓尉、西脊、铜井等山。而灵岩山，曾经是当年吴国宫殿所在的地方，那里至今还保存着西施的遗迹。至于说到虎丘、剑池，以及天平、尚方、支硎，都是风景美好的地方。而三万六千顷浩瀚的太湖中，有七十二峰坐落其间，则更称得上天下奇观了。<br>我的同年好友魏用晦君任吴县长官不到三年，就因为政绩赫赫而被朝廷召入任给事中。魏君治理吴县时对百姓很有恩惠，百姓苦留不得，魏君也不忍离去，于是有热心人就画了一幅《吴县图》，来作为临别留念赠给他。<br>县令对于百姓确实是很重要的。如果县令贤能，那当地的山川草木也会受到他的恩泽，荣耀一方；如果县令不贤能，就会祸及当地的山川草木，使其受到耻辱。魏君对吴县的山川草木，算是增加了它们的光彩吧？有朝一日这里的百姓将在山间选择一处风景优美之地，在佛堂和道观里祭祀他，这本来也是在情理之中。可是魏君已经离开了吴县，为什么仍然会眷恋当地的山川呢？过去苏子瞻称道韩魏公离开黄州任上已经四十多年，往事依然时时不忘，以致写下了思念黄州的诗，苏子瞻为黄州的人把这首诗刻在石碑上。这以后人们才明白贤能的人对于他所到的地方，不仅使那里的百姓不忍忘怀自己，而且连他自己也不会忘记那里的百姓。<br>如今魏君离开吴县已经三年了，有一天他和我同在内庭，拿出这幅《吴山图》，边欣赏边感叹，于是让我为这事作一篇记文。啊！魏君对吴县的百姓有如此深厚的情谊，吴县的百姓怎么能忘记他呢？</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>吴：即吴县，在今江苏省东南部。长洲：旧县名，治所在今江苏省苏州市，1912年并人吴县。<br>在郡治所：指吴县、长洲的县治同在苏州府。<br>灵岩：在吴县西南邓尉山西，上有馆娃宫、西施洞、吴王井等遗址。馆娃宫是吴王为西施建造的，因称吴之故宫，今灵岩寺即其遗址。<br>虎丘、剑池、天平、尚方、支硎：皆为吴县境内的名山胜景，并多有古迹遗址。除剑池外，其余皆为山名。东晋佛教学徒支道林曾在支硎隐居，相传吴王阖闾葬在虎丘。<br>太湖：湖名，古称震泽，跨苏浙二省，湖中多有小山，是著名的风景区。<br>同年：古时在科举考试中同科考中的人互称同年。<br>高第：此处指官吏考试列入优等。给事中：官名，掌侍从、规谏，监察六部，纠弹官吏。<br>令：指县令。诚：确实。<br>尸祝：指祭祀，古时祭祀的神主称尸，司祭礼的人称祝。浮屠：这里指佛。老子：道家始祖老聃。<br>惓惓：同“拳拳”，诚恳深切的意思。<br>苏子瞻：苏轼，字子瞻，北宋文学家。韩魏公：韩琦，北宋大臣，封魏国公。黄州：府名，在今湖北黄冈一带。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《吴山图记》是明代散文家归有光所写的一篇文章，主旨在于说明贤者于其所至，不独使其人不忍忘，亦不能自忘于其人。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/1420084.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

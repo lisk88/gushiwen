@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>静夜思 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>静夜思 - 李白 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="静夜思是唐朝诗人李白的经典作品。本页面提供静夜思的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="静夜思,李白,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="静夜思 - 李白 - 唐朝古诗文">
+    <meta property="og:description" content="静夜思是唐朝诗人李白的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="静夜思 - 李白 - 唐朝古诗文">
+    <meta name="twitter:description" content="静夜思是唐朝诗人李白的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "静夜思",
+      "author": {
+        "@type": "Person",
+        "name": "李白"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "静夜思是唐朝诗人李白的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">静夜思</h1>
-            <div class="poem-author">【唐】李白</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">李白</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>床前明月光，疑是地上霜。</p><p>举头望明月，低头思故乡。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>明亮的月光洒在窗户纸上，好像地上泛起了一层霜。我禁不住抬起头来，看那天窗外空中的一轮明月，不由得低头沉思，想起远方的家乡。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>静夜思：安静的夜晚产生的思绪。<br>床：此诗中的“床”字，是争论和异议的焦点。今传五种说法。指井台。指井栏。从考古发现来看，中国最早的水井是木结构水井。古代井栏有数米高，成方框形围住井口，防止人跌入井内，这方框形既像四堵墙，又像古代的床。因此古代井栏又叫银床，说明井和床有关系，其关系的发生则是由于两者在形状上的相似和功能上的类同。“窗”的通假字。从意义上讲，“床”可能与‘窗’通假，而且在窗户前面是可能看到月亮的。但是，参照宋代版本，‘举头望山月’，便可证实作者所言乃是室外的月亮。从时间上讲，宋代版本比明代版本在对作者原意的忠诚度上，更加可靠。取本义，即坐卧的器具，《诗经·小雅·斯干》有“载寐之牀”，《易·剥牀·王犊注》亦有“在下而安者也”之说，讲得即是卧具。马未都等认为，床应解释为胡床。胡床，亦称“交床”、“交椅”、“绳床”。古时一种可以折叠的轻便坐具，马扎功能类似小板凳，但人所坐的面非木板，而是可卷折的布或类似物，两边腿可合起来。现代人常为古代文献中或诗词中的“胡床”或“床”所误。至迟在唐时，“床”仍然是“胡床”（即马扎，一种坐具）。<br>疑：好像。<br>举头：抬头。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《静夜思》是唐代诗人李白所作的一首五绝小诗。此诗描写了秋日夜晚，诗人于屋内抬头望月的所感，表达客居思乡之情，语言清新朴素而韵味含蓄无穷，历来广为传诵。<br>明代版本是目前流传比较广泛的版本。该版本虽然可能不完全是李白的原作，有个别字词后世或有所修改，但是流传度很高，并被收录于各版本的语文教科书中。<br>宋代版本与人们常说的“床前明月光”明显不一致，其实并非是错误，而是流传版本不同。一般认为，这一版本比明版本更接近李白的原作，但仍有学者认为可能存在更早的版本。宋刊本的《李太白文集》、宋人郭茂倩所编的《乐府诗集》、洪迈所编《万首唐人绝句》中，《静夜思》的第一句均为“床前看月光”，第三句也均作“举头望山月”。元萧士赟《分类补注李太白集》、明高棅《唐诗品汇》，也是如此。宋人一直推崇唐诗，其收录编辑甚有规模，加之距唐年代相近，误传差错相对较少，故宋代乃至元代所搜集的《静夜思》应该是可靠准确的；在清朝玄烨皇帝亲自钦定的权威刊本《全唐诗》中，也并没有受到前面同时代不同刊本的影响而对此诗作任何修改。　　在此之前《静夜思》已传入日本（日本静嘉堂文库藏有宋刊本《李太白文集》12册），因日本人对唐诗崇尚，在后世流传过程中并未对其作出任何修改。但在中国情况就不一样了，到了明代赵宦光、黄习远对宋人洪迈的《唐人万首绝句》进行了整理与删补，《静夜思》的第三句被改成“举头望明月”，但是第一句“床前看月光”没有变化。清朝康熙年间沈德潜编选的《唐诗别裁》，《静夜思》诗的第一句是“床前明月光”，但第三句却是“举头望山月”。直到1763年（清乾隆二十八年）蘅塘退士所编的《唐诗三百首》里，吸纳了明刊《唐人万首绝句》与清康熙年《唐诗别裁》对《静夜思》的两处改动，从此《静夜思》才成为在中国通行至今的版本：“床前明月光，疑是地上霜；举头望明月，低头思故乡”。但是这也不是清朝流行的唯一版本，就在《唐诗三百首》问世前58年的1705年（康熙四十四年），康熙钦定的《全唐诗》中的《静夜思》就是与宋刊本《李太白文集》完全相同的“床前看月光，疑是地上霜。举头望山月，低头思故乡”，后来中华书局出版的《全唐诗》也沿用着这一表述。　　这一表述是明朝以后为普及诗词而改写的。经过“改动”了的《静夜思》比“原版”要更加朗朗上口却是不争的事实，这也解释了为什么“床前明月光”版比“床前看月光”版在中国民间更受欢迎的原因。中国李白研究会会长、新疆师范大学教授薛天纬先生在《漫说》（《文史知识》1984年第4期）一文中专门对两个版本的差异发表了如下看法：仔细体味，第一句如作“床前看月光”，中间嵌进一个动词，语气稍显滞重；再说，“月光”是无形的东西，不好特意去“看”，如果特意“看”，也就不会错当成“霜”了。而说“明月光”，则似不经意间月光映入眼帘，下句逗出“疑”字，便觉得很自然；何况，“明”字还增加了月夜的亮色。第三句，“望明月”较之“望山月”不但摆脱了地理环境的限制，而且，“山月”的说法不免带点文人气——文人诗中，往往将月亮区分为“山月”“海月”等，“明月”则全然是老百姓眼中的月亮了。所谓“篡改说”、“山寨说”实在是言过其实。有学者认为，“《静夜思》四句诗，至少有50种不同版本，并且你很难知道哪一种抄本更接近‘原本’。我们现在熟知的‘举头望明月’版本是在明代确定下来的”。莫砺锋在《百家讲坛》进行唐诗普及时，选取的也是大家熟知的版本，“所谓的‘篡改’不是一个人任意妄为的，而是长久以来的集体选择。古诗流传的历史，也是读者参与创造的过程，大家觉得这样更美，更朗朗上口，是千万百读者共同选择了这个版本。”今人读到的《静夜思》已经不仅仅是一首“唐”诗，它其实凝结了1300多年来一代又一代人的审美创造，后人应该抱以尊重的态度。近年来有关版本争议源于对李白诗歌版本众多这一常识普及不够。因此，有学者表示，国人对文史知识的缺失应引起深思，要意识到普及文史知识的必要，对博大精深的五千年中华文明存有敬畏之心。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>床前明月光，疑是地上霜。</p><p>举头望明月，低头思故乡。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>明亮的月光洒在窗户纸上，好像地上泛起了一层霜。我禁不住抬起头来，看那天窗外空中的一轮明月，不由得低头沉思，想起远方的家乡。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>静夜思：安静的夜晚产生的思绪。<br>床：此诗中的“床”字，是争论和异议的焦点。今传五种说法。指井台。指井栏。从考古发现来看，中国最早的水井是木结构水井。古代井栏有数米高，成方框形围住井口，防止人跌入井内，这方框形既像四堵墙，又像古代的床。因此古代井栏又叫银床，说明井和床有关系，其关系的发生则是由于两者在形状上的相似和功能上的类同。“窗”的通假字。从意义上讲，“床”可能与‘窗’通假，而且在窗户前面是可能看到月亮的。但是，参照宋代版本，‘举头望山月’，便可证实作者所言乃是室外的月亮。从时间上讲，宋代版本比明代版本在对作者原意的忠诚度上，更加可靠。取本义，即坐卧的器具，《诗经·小雅·斯干》有“载寐之牀”，《易·剥牀·王犊注》亦有“在下而安者也”之说，讲得即是卧具。马未都等认为，床应解释为胡床。胡床，亦称“交床”、“交椅”、“绳床”。古时一种可以折叠的轻便坐具，马扎功能类似小板凳，但人所坐的面非木板，而是可卷折的布或类似物，两边腿可合起来。现代人常为古代文献中或诗词中的“胡床”或“床”所误。至迟在唐时，“床”仍然是“胡床”（即马扎，一种坐具）。<br>疑：好像。<br>举头：抬头。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《静夜思》是唐代诗人李白所作的一首五绝小诗。此诗描写了秋日夜晚，诗人于屋内抬头望月的所感，表达客居思乡之情，语言清新朴素而韵味含蓄无穷，历来广为传诵。<br>明代版本是目前流传比较广泛的版本。该版本虽然可能不完全是李白的原作，有个别字词后世或有所修改，但是流传度很高，并被收录于各版本的语文教科书中。<br>宋代版本与人们常说的“床前明月光”明显不一致，其实并非是错误，而是流传版本不同。一般认为，这一版本比明版本更接近李白的原作，但仍有学者认为可能存在更早的版本。宋刊本的《李太白文集》、宋人郭茂倩所编的《乐府诗集》、洪迈所编《万首唐人绝句》中，《静夜思》的第一句均为“床前看月光”，第三句也均作“举头望山月”。元萧士赟《分类补注李太白集》、明高棅《唐诗品汇》，也是如此。宋人一直推崇唐诗，其收录编辑甚有规模，加之距唐年代相近，误传差错相对较少，故宋代乃至元代所搜集的《静夜思》应该是可靠准确的；在清朝玄烨皇帝亲自钦定的权威刊本《全唐诗》中，也并没有受到前面同时代不同刊本的影响而对此诗作任何修改。　　在此之前《静夜思》已传入日本（日本静嘉堂文库藏有宋刊本《李太白文集》12册），因日本人对唐诗崇尚，在后世流传过程中并未对其作出任何修改。但在中国情况就不一样了，到了明代赵宦光、黄习远对宋人洪迈的《唐人万首绝句》进行了整理与删补，《静夜思》的第三句被改成“举头望明月”，但是第一句“床前看月光”没有变化。清朝康熙年间沈德潜编选的《唐诗别裁》，《静夜思》诗的第一句是“床前明月光”，但第三句却是“举头望山月”。直到1763年（清乾隆二十八年）蘅塘退士所编的《唐诗三百首》里，吸纳了明刊《唐人万首绝句》与清康熙年《唐诗别裁》对《静夜思》的两处改动，从此《静夜思》才成为在中国通行至今的版本：“床前明月光，疑是地上霜；举头望明月，低头思故乡”。但是这也不是清朝流行的唯一版本，就在《唐诗三百首》问世前58年的1705年（康熙四十四年），康熙钦定的《全唐诗》中的《静夜思》就是与宋刊本《李太白文集》完全相同的“床前看月光，疑是地上霜。举头望山月，低头思故乡”，后来中华书局出版的《全唐诗》也沿用着这一表述。　　这一表述是明朝以后为普及诗词而改写的。经过“改动”了的《静夜思》比“原版”要更加朗朗上口却是不争的事实，这也解释了为什么“床前明月光”版比“床前看月光”版在中国民间更受欢迎的原因。中国李白研究会会长、新疆师范大学教授薛天纬先生在《漫说》（《文史知识》1984年第4期）一文中专门对两个版本的差异发表了如下看法：仔细体味，第一句如作“床前看月光”，中间嵌进一个动词，语气稍显滞重；再说，“月光”是无形的东西，不好特意去“看”，如果特意“看”，也就不会错当成“霜”了。而说“明月光”，则似不经意间月光映入眼帘，下句逗出“疑”字，便觉得很自然；何况，“明”字还增加了月夜的亮色。第三句，“望明月”较之“望山月”不但摆脱了地理环境的限制，而且，“山月”的说法不免带点文人气——文人诗中，往往将月亮区分为“山月”“海月”等，“明月”则全然是老百姓眼中的月亮了。所谓“篡改说”、“山寨说”实在是言过其实。有学者认为，“《静夜思》四句诗，至少有50种不同版本，并且你很难知道哪一种抄本更接近‘原本’。我们现在熟知的‘举头望明月’版本是在明代确定下来的”。莫砺锋在《百家讲坛》进行唐诗普及时，选取的也是大家熟知的版本，“所谓的‘篡改’不是一个人任意妄为的，而是长久以来的集体选择。古诗流传的历史，也是读者参与创造的过程，大家觉得这样更美，更朗朗上口，是千万百读者共同选择了这个版本。”今人读到的《静夜思》已经不仅仅是一首“唐”诗，它其实凝结了1300多年来一代又一代人的审美创造，后人应该抱以尊重的态度。近年来有关版本争议源于对李白诗歌版本众多这一常识普及不够。因此，有学者表示，国人对文史知识的缺失应引起深思，要意识到普及文史知识的必要，对博大精深的五千年中华文明存有敬畏之心。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/47169/4947494.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

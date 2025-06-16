@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>太常引 · 建康中秋夜为吕叔潜赋 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>太常引 · 建康中秋夜为吕叔潜赋 - 辛弃疾 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="太常引 · 建康中秋夜为吕叔潜赋是宋朝诗人辛弃疾的经典作品。本页面提供太常引 · 建康中秋夜为吕叔潜赋的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="太常引 · 建康中秋夜为吕叔潜赋,辛弃疾,宋朝,古诗文,中学语文,诗词赏析,古典文学,词">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="太常引 · 建康中秋夜为吕叔潜赋 - 辛弃疾 - 宋朝古诗文">
+    <meta property="og:description" content="太常引 · 建康中秋夜为吕叔潜赋是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="太常引 · 建康中秋夜为吕叔潜赋 - 辛弃疾 - 宋朝古诗文">
+    <meta name="twitter:description" content="太常引 · 建康中秋夜为吕叔潜赋是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "太常引 · 建康中秋夜为吕叔潜赋",
+      "author": {
+        "@type": "Person",
+        "name": "辛弃疾"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "词",
+      "description": "太常引 · 建康中秋夜为吕叔潜赋是宋朝诗人辛弃疾的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">太常引 · 建康中秋夜为吕叔潜赋</h1>
-            <div class="poem-author">【宋】辛弃疾</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">辛弃疾</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>一轮秋影转金波，飞镜又重磨。把酒问姮娥：被白发、欺人奈何？</p><p>乘风好去，长空万里，直下看山河。斫去桂婆娑，人道是，清光更多。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>一轮缓缓移动的秋月洒下万里金波，就像那刚磨亮的铜镜又飞上了天廓。我举起酒杯问那月中的嫦娥：怎么办呢？白髮日增，好像故意欺负我。<br>我要乘风飞上万里长空，俯视祖国的大好山河。还要砍去月中摇曳的桂树枝柯，人们说，这将使月亮洒下人间的光辉更多。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>太常引：词牌名。据《填词名解》载：「《太常引》，汉周泽为太常，坚持斋戒，其妻窥内问之，泽大怒，以为干扰其斋戒，收送监狱。故有居世不谐，为『太常妻』之谚。後人取其事以名词。或曰：『太常，导引之曲也。』」案，太常，官名也，九卿之一，司祭祀礼乐、掌宗庙选试。秦始置奉常，西汉景帝改为太常，历代沿置，至清末废。引：古代乐曲体裁之一。《钦定词谱》云：「《太和正音谱》注『仙吕宫』。一名《太清引》。韩涧泉词有『小春时候腊前梅』句，名《腊前梅》。」是调初有四十八字、四十九字、五十字及平韵、仄韵多格。後宋元人大多填四十九字体，《钦定词谱》谓此调仅二体，以稼轩词为正体，所异者前阕第二句或五字全词四十九字或六字全词五十字耳，俱有宋元人词可校。正体，双调四十九字，前阕四平韵，後阕三平韵。间用长短句，无对仗要求。後阕首次句，四言，有对仗者，亦有不对仗者；第三、四句，五言，因中有句读相分（古人应为句义分割），亦可不对仗。前後阕两七言结句均作上三下四式，语义不可断，且下四字必作「平平去平」，平仄不可变，第六字尤用去声。此调宜轻悠，亦宜婉约，遣字不需太重、太猛。可有波澜，但无需大浪。<br>建康中秋夜为吕叔潜赋：广信书院本作「建康中秋夜为吕潜叔赋」，兹从四卷本丙集。四卷本无「夜」字。<br>吕叔潜：名大虬，生平事迹不详，似为作者声气相应的朋友。南宋·汪玉山《文定集·卷十五·与吕叔潜》中有「魏公再相」及「伯恭今安在两日前作书托韩无咎附便」等语。宋·陈子象《庚溪诗话·卷下》：「吕叔潜大虬言镇江丹阳玉乳泉壁间一绝云：『骑马出门三月暮，杨花无奈雪漫天。客情最苦夜难度，宿处先寻无杜鹃。』」知吕氏名大虬。查吕祖谦《东莱集·卷九·吕氏家传》，大虬为吕好问孙，乃祖谦之诸父。<br>金波：形容月光浮动，因亦指月光。《汉书·卷二十二·礼乐志》：「月穆穆以金波」。唐·颜师古注：「言月光穆穆，若金之波流也」。宋·苏东坡《洞仙歌·余七岁时。见眉山老尼。姓朱，忘其名，年九十岁，自言尝随其师入蜀主孟昶宫中。一日大热，蜀主与花蕊夫人夜纳凉摩诃池上，作一词。朱具能记之。今四十年，朱已死久矣，人无知此词者。但记其首两句，暇日寻味，岂〈洞仙歌令〉乎，乃为足之云》词：「试问夜如何？夜已三更，金波淡，玉绳低转」。<br>飞镜：飞天之明镜，指月亮。唐·甘子布《光赋》：「银河披曀，金飔送清，孤圆上魄，飞镜流明」。唐·李太白《把酒问月》诗：「皎如飞镜临丹阙，绿烟灭尽清辉发。」<br>「飞镜又重磨」句：喻月重圆。南北朝·徐孝穆《玉台新咏·卷十·古绝句四首》：「破镜飞上天。」唐·吴兢《乐府古题要解·卷下·藁砧今何在》：「『破镜飞上天』，言月半当还也。」<br>姮（Héng）娥：即嫦娥，传说中的月中仙女。西汉·刘中垒《淮南子·卷六·览冥训》：「羿请不死之药于西王母，姮娥窃以奔月。」高诱注，她後来「得仙，奔入月中为月精」。<br>「被白发、欺人奈何。」句：唐·薛大拙《春日使府寓怀二首·其一》诗：「青春背我堂堂去，白发欺人故故生。」<br>「斫（zhuó）去桂婆娑。人道是、清光更多。」三句：唐·杜少陵《一百五日夜对月》诗：「斫却月中桂，清光应更多。」唐·段柯古《酉阳杂俎·前集·卷一·天咫》：「旧言月中有桂，有蟾蜍，故异书言月桂高五百丈，下有一人常斫之，树创随合。人姓吴名刚，西河人，学仙有过，谪令伐树。」唐·韩昌黎《月蚀诗效玉川子作》诗：「玉阶桂树闲婆娑。」斫，砍；桂，桂树；婆娑，树影摇曳皃。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词通过古代的神话传说，强烈地表达了自己反对妥协投降、立志收复中原失土的政治理想。全词想象丰富，把超现实的奇思妙想与现实中的思想矛盾结合起来，体现了浓厚的浪漫主义色彩。</p></div></div>
+        <article class="poem-content" data-kind="词" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>一轮秋影转金波，飞镜又重磨。把酒问姮娥：被白发、欺人奈何？</p><p>乘风好去，长空万里，直下看山河。斫去桂婆娑，人道是，清光更多。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>一轮缓缓移动的秋月洒下万里金波，就像那刚磨亮的铜镜又飞上了天廓。我举起酒杯问那月中的嫦娥：怎么办呢？白髮日增，好像故意欺负我。<br>我要乘风飞上万里长空，俯视祖国的大好山河。还要砍去月中摇曳的桂树枝柯，人们说，这将使月亮洒下人间的光辉更多。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>太常引：词牌名。据《填词名解》载：「《太常引》，汉周泽为太常，坚持斋戒，其妻窥内问之，泽大怒，以为干扰其斋戒，收送监狱。故有居世不谐，为『太常妻』之谚。後人取其事以名词。或曰：『太常，导引之曲也。』」案，太常，官名也，九卿之一，司祭祀礼乐、掌宗庙选试。秦始置奉常，西汉景帝改为太常，历代沿置，至清末废。引：古代乐曲体裁之一。《钦定词谱》云：「《太和正音谱》注『仙吕宫』。一名《太清引》。韩涧泉词有『小春时候腊前梅』句，名《腊前梅》。」是调初有四十八字、四十九字、五十字及平韵、仄韵多格。後宋元人大多填四十九字体，《钦定词谱》谓此调仅二体，以稼轩词为正体，所异者前阕第二句或五字全词四十九字或六字全词五十字耳，俱有宋元人词可校。正体，双调四十九字，前阕四平韵，後阕三平韵。间用长短句，无对仗要求。後阕首次句，四言，有对仗者，亦有不对仗者；第三、四句，五言，因中有句读相分（古人应为句义分割），亦可不对仗。前後阕两七言结句均作上三下四式，语义不可断，且下四字必作「平平去平」，平仄不可变，第六字尤用去声。此调宜轻悠，亦宜婉约，遣字不需太重、太猛。可有波澜，但无需大浪。<br>建康中秋夜为吕叔潜赋：广信书院本作「建康中秋夜为吕潜叔赋」，兹从四卷本丙集。四卷本无「夜」字。<br>吕叔潜：名大虬，生平事迹不详，似为作者声气相应的朋友。南宋·汪玉山《文定集·卷十五·与吕叔潜》中有「魏公再相」及「伯恭今安在两日前作书托韩无咎附便」等语。宋·陈子象《庚溪诗话·卷下》：「吕叔潜大虬言镇江丹阳玉乳泉壁间一绝云：『骑马出门三月暮，杨花无奈雪漫天。客情最苦夜难度，宿处先寻无杜鹃。』」知吕氏名大虬。查吕祖谦《东莱集·卷九·吕氏家传》，大虬为吕好问孙，乃祖谦之诸父。<br>金波：形容月光浮动，因亦指月光。《汉书·卷二十二·礼乐志》：「月穆穆以金波」。唐·颜师古注：「言月光穆穆，若金之波流也」。宋·苏东坡《洞仙歌·余七岁时。见眉山老尼。姓朱，忘其名，年九十岁，自言尝随其师入蜀主孟昶宫中。一日大热，蜀主与花蕊夫人夜纳凉摩诃池上，作一词。朱具能记之。今四十年，朱已死久矣，人无知此词者。但记其首两句，暇日寻味，岂〈洞仙歌令〉乎，乃为足之云》词：「试问夜如何？夜已三更，金波淡，玉绳低转」。<br>飞镜：飞天之明镜，指月亮。唐·甘子布《光赋》：「银河披曀，金飔送清，孤圆上魄，飞镜流明」。唐·李太白《把酒问月》诗：「皎如飞镜临丹阙，绿烟灭尽清辉发。」<br>「飞镜又重磨」句：喻月重圆。南北朝·徐孝穆《玉台新咏·卷十·古绝句四首》：「破镜飞上天。」唐·吴兢《乐府古题要解·卷下·藁砧今何在》：「『破镜飞上天』，言月半当还也。」<br>姮（Héng）娥：即嫦娥，传说中的月中仙女。西汉·刘中垒《淮南子·卷六·览冥训》：「羿请不死之药于西王母，姮娥窃以奔月。」高诱注，她後来「得仙，奔入月中为月精」。<br>「被白发、欺人奈何。」句：唐·薛大拙《春日使府寓怀二首·其一》诗：「青春背我堂堂去，白发欺人故故生。」<br>「斫（zhuó）去桂婆娑。人道是、清光更多。」三句：唐·杜少陵《一百五日夜对月》诗：「斫却月中桂，清光应更多。」唐·段柯古《酉阳杂俎·前集·卷一·天咫》：「旧言月中有桂，有蟾蜍，故异书言月桂高五百丈，下有一人常斫之，树创随合。人姓吴名刚，西河人，学仙有过，谪令伐树。」唐·韩昌黎《月蚀诗效玉川子作》诗：「玉阶桂树闲婆娑。」斫，砍；桂，桂树；婆娑，树影摇曳皃。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>此词通过古代的神话传说，强烈地表达了自己反对妥协投降、立志收复中原失土的政治理想。全词想象丰富，把超现实的奇思妙想与现实中的思想矛盾结合起来，体现了浓厚的浪漫主义色彩。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -134,7 +165,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/2781142.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

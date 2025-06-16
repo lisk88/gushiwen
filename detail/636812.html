@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>国语 ·  襄王不许请隧 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>国语 ·  襄王不许请隧 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="国语 ·  襄王不许请隧是周朝诗人左丘明的经典作品。本页面提供国语 ·  襄王不许请隧的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="国语 ·  襄王不许请隧,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="国语 ·  襄王不许请隧 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="国语 ·  襄王不许请隧是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="国语 ·  襄王不许请隧 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="国语 ·  襄王不许请隧是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "国语 ·  襄王不许请隧",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "国语 ·  襄王不许请隧是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">国语 ·  襄王不许请隧</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>晋文公既定襄王于郏，王劳之以地，辞，请隧焉。王弗许，曰：“昔我先王之有天下也，规方千里，以为甸服，以供上帝山川百神之祀，以备百姓兆民之用，以待不庭、不虞之患。其馀，以均分公、侯、伯、子、男，使各有宁宇，以顺及天地，无逢其灾害。先王岂有赖焉？内官不过九御，外官不过九品，足以供给神祇而已，岂敢厌纵其耳目心腹，以乱百度？亦唯是死生之服物采章，以临长百姓而轻重布之，王何异之有？”</p><p>“今天降祸灾于周室，余一人仅亦守府，又不佞以勤叔父，而班先王之大物以赏私德，其叔父实应且憎，以非余一人，余一人岂敢有爱也？先民有言曰：‘改玉改行。’叔父若能光裕大德，更姓改物，以创制天下，自显庸也，而缩取备物，以镇抚百姓，余一人其流辟于裔土，何辞之有与？若犹是姬姓也，尚将列为公侯，以复先王之职，大物其未可改也。叔父其茂昭明德，物将自至，余何敢以私劳变前之大章，以忝天下，其若先王与百姓何？何政令之为也？若不然，叔父有地而隧焉，余安能知之？”</p><p>文公遂不敢请，受地而还。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>晋文公使周襄王在郏邑恢复王位，襄王拿块土地酬谢他。晋文公辞谢，要求襄王允许他死后埋葬用天子的隧礼。襄王不许，说：“从前我先王掌管天下，划出方圆千里之地作为甸服，以供奉上帝和山川百神，以供应百姓兆民的用度，以防备诸侯不服朝廷或意外的患难。其余的土地就平均分配给公侯伯子男，使人们各有地方安居，以顺应天地尊卑的法则，而不受灾害。先王还有什么私利呢？他宫内女官只有九御，宫外官员只有九卿，足够供奉天地神灵而已，岂敢尽情满足他耳目心腹的嗜好而破坏各种法度？只有死后生前衣服用具的色彩花纹有所区别，以便君临天下、分别尊卑罢了。此外，天子还有什么不同？<br>如今上天降祸周朝，寡人也只是谨守先王故府的遗规，加以自己无能，不得不麻烦叔父；如果再分出先王的大礼来报答寡人的私德，那么，叔父也会厌恶寡人，责备寡人了。否则，寡人岂敢有所吝惜？前人说过：‘身上的佩玉改了样，走路的气派不一样。’如果叔父能发扬伟大的美德，改姓换代，开创一统天下的大业，显示自己的丰功伟绩，自然可用天子的服饰文采以安抚百姓，寡人也许会流放边疆，还有什么话可说？如果叔父仍保持姬姓，位列公侯，以恢复先王规定的职分；那么，天子所用的大礼就不可更改了。叔父还是努力发扬德行吧，您所需要的事物自然会来的。就算我敢因酬私德而改变先王的制度，从而玷辱了天下，又如何对得起先王和百姓？又如何推行政令？否则，叔父有的是土地，就是开通墓道举行隧礼，寡人又从何知道呢？”<br>晋文公于是不敢请隧礼，接受赏赐的土地，回国去了。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>晋文公：春秋五霸之一。襄王：周襄王。郏：今河南洛阳西。<br>隧：掘墓道安葬。古时天子的葬礼。<br>甸服：国都近郊之地。<br>不庭：不来进贡。不虞：意料不到的事。<br>神祇：天神和地神。<br>百度：各种法令、法度。<br>天降祸灾：周王朝发生内乱。余一人：古代帝王的谦称。<br>不佞：谦词，不才。叔父：天子对同姓诸侯的称呼。<br>更姓改物：改朝换代。显庸：显示功能。<br>流：放逐。辟：受刑罚。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《襄王不许请隧》是春秋时期创作的散文，作者是左丘明。讲述的是晋文公使周襄王在郏邑恢复王位，襄王拿块土地酬谢他。晋文公辞谢，要求襄王允许他死后埋葬用天子的隧礼。襄王不许。阐明了对古代宗法礼仪制度的尊重。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>晋文公既定襄王于郏，王劳之以地，辞，请隧焉。王弗许，曰：“昔我先王之有天下也，规方千里，以为甸服，以供上帝山川百神之祀，以备百姓兆民之用，以待不庭、不虞之患。其馀，以均分公、侯、伯、子、男，使各有宁宇，以顺及天地，无逢其灾害。先王岂有赖焉？内官不过九御，外官不过九品，足以供给神祇而已，岂敢厌纵其耳目心腹，以乱百度？亦唯是死生之服物采章，以临长百姓而轻重布之，王何异之有？”</p><p>“今天降祸灾于周室，余一人仅亦守府，又不佞以勤叔父，而班先王之大物以赏私德，其叔父实应且憎，以非余一人，余一人岂敢有爱也？先民有言曰：‘改玉改行。’叔父若能光裕大德，更姓改物，以创制天下，自显庸也，而缩取备物，以镇抚百姓，余一人其流辟于裔土，何辞之有与？若犹是姬姓也，尚将列为公侯，以复先王之职，大物其未可改也。叔父其茂昭明德，物将自至，余何敢以私劳变前之大章，以忝天下，其若先王与百姓何？何政令之为也？若不然，叔父有地而隧焉，余安能知之？”</p><p>文公遂不敢请，受地而还。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>晋文公使周襄王在郏邑恢复王位，襄王拿块土地酬谢他。晋文公辞谢，要求襄王允许他死后埋葬用天子的隧礼。襄王不许，说：“从前我先王掌管天下，划出方圆千里之地作为甸服，以供奉上帝和山川百神，以供应百姓兆民的用度，以防备诸侯不服朝廷或意外的患难。其余的土地就平均分配给公侯伯子男，使人们各有地方安居，以顺应天地尊卑的法则，而不受灾害。先王还有什么私利呢？他宫内女官只有九御，宫外官员只有九卿，足够供奉天地神灵而已，岂敢尽情满足他耳目心腹的嗜好而破坏各种法度？只有死后生前衣服用具的色彩花纹有所区别，以便君临天下、分别尊卑罢了。此外，天子还有什么不同？<br>如今上天降祸周朝，寡人也只是谨守先王故府的遗规，加以自己无能，不得不麻烦叔父；如果再分出先王的大礼来报答寡人的私德，那么，叔父也会厌恶寡人，责备寡人了。否则，寡人岂敢有所吝惜？前人说过：‘身上的佩玉改了样，走路的气派不一样。’如果叔父能发扬伟大的美德，改姓换代，开创一统天下的大业，显示自己的丰功伟绩，自然可用天子的服饰文采以安抚百姓，寡人也许会流放边疆，还有什么话可说？如果叔父仍保持姬姓，位列公侯，以恢复先王规定的职分；那么，天子所用的大礼就不可更改了。叔父还是努力发扬德行吧，您所需要的事物自然会来的。就算我敢因酬私德而改变先王的制度，从而玷辱了天下，又如何对得起先王和百姓？又如何推行政令？否则，叔父有的是土地，就是开通墓道举行隧礼，寡人又从何知道呢？”<br>晋文公于是不敢请隧礼，接受赏赐的土地，回国去了。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>晋文公：春秋五霸之一。襄王：周襄王。郏：今河南洛阳西。<br>隧：掘墓道安葬。古时天子的葬礼。<br>甸服：国都近郊之地。<br>不庭：不来进贡。不虞：意料不到的事。<br>神祇：天神和地神。<br>百度：各种法令、法度。<br>天降祸灾：周王朝发生内乱。余一人：古代帝王的谦称。<br>不佞：谦词，不才。叔父：天子对同姓诸侯的称呼。<br>更姓改物：改朝换代。显庸：显示功能。<br>流：放逐。辟：受刑罚。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《襄王不许请隧》是春秋时期创作的散文，作者是左丘明。讲述的是晋文公使周襄王在郏邑恢复王位，襄王拿块土地酬谢他。晋文公辞谢，要求襄王允许他死后埋葬用天子的隧礼。襄王不许。阐明了对古代宗法礼仪制度的尊重。</p></div></div>
             
             <div class="section"><a href="https://baike.baidu.com/item/%E8%A5%84%E7%8E%8B%E4%B8%8D%E8%AE%B8%E8%AF%B7%E9%9A%A7/9421452?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

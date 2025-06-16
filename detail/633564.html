@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登泰山记 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>登泰山记 - 姚鼐 - 清朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="登泰山记是清朝诗人姚鼐的经典作品。本页面提供登泰山记的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="登泰山记,姚鼐,清朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="登泰山记 - 姚鼐 - 清朝古诗文">
+    <meta property="og:description" content="登泰山记是清朝诗人姚鼐的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="登泰山记 - 姚鼐 - 清朝古诗文">
+    <meta name="twitter:description" content="登泰山记是清朝诗人姚鼐的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "登泰山记",
+      "author": {
+        "@type": "Person",
+        "name": "姚鼐"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "登泰山记是清朝诗人姚鼐的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">登泰山记</h1>
-            <div class="poem-author">【清】姚鼐</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【清】<span itemprop="name">姚鼐</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>泰山之阳，汶水西流；其阴，济水东流。阳谷皆入汶，阴谷皆入济。当其南北分者，古长城也。最高日观峰，在长城南十五里。</p><p>余以乾隆三十九年十二月，自京师乘风雪，历齐河、长清，穿泰山西北谷，越长城之限，至于泰安。是月丁未，与知府朱孝纯子颍由南麓登。四十五里，道皆砌石为磴，其级七千有余。</p><p>泰山正南面有三谷。中谷绕泰安城下，郦道元所谓环水也。余始循以入，道少半，越中岭，复循西谷，遂至其巅。古时登山，循东谷入，道有天门。东谷者，古谓之天门溪水，余所不至也。今所经中岭及山巅，崖限当道者，世皆谓之天门云。道中迷雾冰滑，磴几不可登。及既上，苍山负雪，明烛天南；望晚日照城郭，汶水、徂徕如画，而半山居雾若带然。</p><p>戊申晦，五鼓，与子颍坐日观亭，待日出。大风扬积雪击面。亭东自足下皆云漫。稍见云中白若樗蒱，数十立者，山也。极天云一线异色，须臾成五采。日上，正赤如丹，下有红光，动摇承之。或曰，此东海也。回视日观以西峰，或得日，或否，绛皓驳色，而皆若偻。</p><p>亭西有岱祠，又有碧霞元君祠；皇帝行宫在碧霞元君祠东。是日观道中石刻，自唐显庆以来，其远古刻尽漫失。僻不当道者，皆不及往。</p><p>山多石，少土；石苍黑色，多平方，少圜。少杂树，多松，生石罅，皆平顶。冰雪，无瀑水，无鸟兽音迹。至日观数里内无树，而雪与人膝齐。</p><p>桐城姚鼐记。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>泰山的南面，汶河向西流去；泰山的北面，济水向东流去。南面山谷的水都流入汶水，北面山谷的水都流入济水。处在那阳谷和阴谷南北分界处的，是古代春秋时期齐国所筑长城的遗址。最高的日观峰，在古长城以南十五里。<br>我在乾隆三十九年十二月从京城里出发，冒着风雪启程，经过齐河县、长清县，穿过泰山西北面的山谷，跨过长城的城墙，到达泰安。这月28日，我和泰安知府朱孝纯从南边的山脚登山。攀行四十五里远，道路都是石板砌成的石级，那些台阶共有七千多级。泰山正南面有三条水道，其中中谷的水环绕泰安城，这就是郦道元书中所说的环水。我起初顺着中谷进去。沿着小路走了不到一半，翻过中岭，再沿着西边的水道走，就到了泰山的巅顶。古时候登泰山，沿着东边的水道进入，道路中有座天门。这东边的山谷，古时候称它为“天门溪水”，是我没有到过的。现在我经过的中岭和山顶，挡在路上的像门槛一样的山崖，世上人都称它为“天门”。一路上大雾弥漫、冰冻溜滑，石阶几乎无法攀登。等到已经登上山顶，只见青山上覆盖着白雪，雪光照亮了南面的天空。远望夕阳映照着泰安城，汶水、徂徕山就像是一幅美丽的山水画，停留在半山腰处的云雾，又像是一条舞动的飘带似的。<br>戊申这一天是月底，五更的时候，我和子颖坐在日观亭里，等待日出。这时大风扬起的积雪扑面打来。日观亭东面从脚底往下一片云雾弥漫，依稀可见云中几十个白色的像骰子似的东西，那是山峰。天边的云彩形成一条线呈现出奇异的颜色，一会儿又变成五颜六色的。太阳升上来了，红的像朱砂一样，下面有红光晃动摇荡着托着它。有人说，这是东海。回头看日观峰以西的山峰，有的被日光照到，有的没照到，或红或白，颜色错杂，都像弯腰曲背鞠躬致敬的样子。<br>日观亭西面有一座东岳大帝庙，又有一座碧霞元君庙。皇帝出外巡行时居住的处所就在碧霞元君庙的东面。这一天，还观看了路上的石刻，都是从唐朝显庆年间以来的，那些更古老的石碑都已经模糊或缺失了。那些偏僻不对着道路的石刻，都赶不上去看了。<br>山上石头多，泥土少。山石都呈青黑色，大多是平的、方形的，很少有圆形的。杂树很少，多是松树，松树都生长在石头的缝隙里，树顶是平的。冰天雪地，没有瀑布，没有飞鸟走兽的声音和踪迹。日观峰附近几里以内没有树木，积雪厚得同人的膝盖一样平齐。<br>桐城姚鼐记述。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>阳：山的南面。<br>汶（Wèn）水：也叫汶河。发源于山东莱芜东北原山，向西南流经泰安东。<br>济水：发源于河南济源县西王屋山，东流到山入海东。后来下游被黄河冲没。<br>阳谷：指山南面谷中的水。谷，两山之间的流水道，现通称山涧。<br>当其南北分者：在那（阳谷和阴谷）南北分界处的。<br>古长城：指春秋时期齐国所筑长城的遗址，古时齐鲁两国以此为界。<br>日观峰：在山顶东岩，是泰山观日出的地方。<br>以：在。<br>乾隆三十九年：即公元1774年。<br>乘：趁，这里有“冒着”的意思。<br>齐河、长清：地名，都在山东省。<br>限：门槛，这里指像一道门槛的城墙。<br>泰安：即今山东泰安，在泰山南面，清朝为泰安府治所。<br>丁未：丁未日（十二月二十八日）。<br>朱孝纯子颖：朱孝纯，字子颖。当时是泰安府的知府。<br>蹬（dèng）：石级。<br>级：石级。<br>环水：即中溪，俗称梳洗河，流出泰山，傍泰安城东面南流。<br>循以入：顺着（中谷）进去。<br>道少半：路不到一半。<br>中岭：即黄岘岭，又名中溪山，中溪发源于此。<br>天门：泰山峰名。《山东通志》：“泰山周回一百六十里，屈曲盘道百余，经南天门，东西三天门，至绝顶，高四十余里。”<br>崖限当道者：挡在路上的像门槛一样的山崖。<br>云：语气助词。<br>几：几乎。<br>苍山负雪，明烛天南：青山上覆盖着白雪，（雪）光照亮了南面的天空。负，背。烛，动词，照。<br>徂徕（cúlái）：山名，在泰安东南。<br>居：停留。<br>戊申晦：戊申这一天是月底。晦：农历每月最后一天。<br>五鼓：五更。<br>日观亭：亭名，在日观峰上。<br>漫：迷漫。<br>樗蒱（chūpú）：又作“樗蒲”，古代的一种赌博游戏，这里指博戏用的“五木”。五木两头尖，中间广平，立起来很像山峰。<br>极天：天边。<br>采：通“彩”。<br>丹：朱砂。<br>东海：泛指东面的海。这里是想象，实际上在泰山顶上看不见东海。<br>或得日，或否：有的被日光照着，有的没有照着。<br>绛皓驳色：或红或白，颜色错杂。绛，大红。皓：白色。驳：杂。<br>若偻：像脊背弯曲的样子。引申为鞠躬、致敬的样子。日观峰西面诸峰都比日观峰低，所以这样说。偻，驼背。<br>岱祠：东岳大帝庙。<br>碧霞元君：传说是东岳大帝的女儿。<br>行宫：皇帝出外巡行时居住的住所。这里指乾隆登泰山时住过的宫室。<br>显庆：唐高宗的年号。<br>漫失：模糊或缺失。漫：磨灭。<br>僻不当道者：偏僻，不在道路附近的。<br>圜：通“圆”。<br>石罅：石缝。<br>瀑水：瀑布。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《登泰山记》是清代姚鼐在乾隆年间创作的泰山题材著名散文。文章描述了作者冒雪登泰山观赏日出的经过，描写了泰山的雄奇形势，并考察纠正了泰山记载的错误，文字简洁生动，写景尤为出色，是桐城派古文的名篇。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>泰山之阳，汶水西流；其阴，济水东流。阳谷皆入汶，阴谷皆入济。当其南北分者，古长城也。最高日观峰，在长城南十五里。</p><p>余以乾隆三十九年十二月，自京师乘风雪，历齐河、长清，穿泰山西北谷，越长城之限，至于泰安。是月丁未，与知府朱孝纯子颍由南麓登。四十五里，道皆砌石为磴，其级七千有余。</p><p>泰山正南面有三谷。中谷绕泰安城下，郦道元所谓环水也。余始循以入，道少半，越中岭，复循西谷，遂至其巅。古时登山，循东谷入，道有天门。东谷者，古谓之天门溪水，余所不至也。今所经中岭及山巅，崖限当道者，世皆谓之天门云。道中迷雾冰滑，磴几不可登。及既上，苍山负雪，明烛天南；望晚日照城郭，汶水、徂徕如画，而半山居雾若带然。</p><p>戊申晦，五鼓，与子颍坐日观亭，待日出。大风扬积雪击面。亭东自足下皆云漫。稍见云中白若樗蒱，数十立者，山也。极天云一线异色，须臾成五采。日上，正赤如丹，下有红光，动摇承之。或曰，此东海也。回视日观以西峰，或得日，或否，绛皓驳色，而皆若偻。</p><p>亭西有岱祠，又有碧霞元君祠；皇帝行宫在碧霞元君祠东。是日观道中石刻，自唐显庆以来，其远古刻尽漫失。僻不当道者，皆不及往。</p><p>山多石，少土；石苍黑色，多平方，少圜。少杂树，多松，生石罅，皆平顶。冰雪，无瀑水，无鸟兽音迹。至日观数里内无树，而雪与人膝齐。</p><p>桐城姚鼐记。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>泰山的南面，汶河向西流去；泰山的北面，济水向东流去。南面山谷的水都流入汶水，北面山谷的水都流入济水。处在那阳谷和阴谷南北分界处的，是古代春秋时期齐国所筑长城的遗址。最高的日观峰，在古长城以南十五里。<br>我在乾隆三十九年十二月从京城里出发，冒着风雪启程，经过齐河县、长清县，穿过泰山西北面的山谷，跨过长城的城墙，到达泰安。这月28日，我和泰安知府朱孝纯从南边的山脚登山。攀行四十五里远，道路都是石板砌成的石级，那些台阶共有七千多级。泰山正南面有三条水道，其中中谷的水环绕泰安城，这就是郦道元书中所说的环水。我起初顺着中谷进去。沿着小路走了不到一半，翻过中岭，再沿着西边的水道走，就到了泰山的巅顶。古时候登泰山，沿着东边的水道进入，道路中有座天门。这东边的山谷，古时候称它为“天门溪水”，是我没有到过的。现在我经过的中岭和山顶，挡在路上的像门槛一样的山崖，世上人都称它为“天门”。一路上大雾弥漫、冰冻溜滑，石阶几乎无法攀登。等到已经登上山顶，只见青山上覆盖着白雪，雪光照亮了南面的天空。远望夕阳映照着泰安城，汶水、徂徕山就像是一幅美丽的山水画，停留在半山腰处的云雾，又像是一条舞动的飘带似的。<br>戊申这一天是月底，五更的时候，我和子颖坐在日观亭里，等待日出。这时大风扬起的积雪扑面打来。日观亭东面从脚底往下一片云雾弥漫，依稀可见云中几十个白色的像骰子似的东西，那是山峰。天边的云彩形成一条线呈现出奇异的颜色，一会儿又变成五颜六色的。太阳升上来了，红的像朱砂一样，下面有红光晃动摇荡着托着它。有人说，这是东海。回头看日观峰以西的山峰，有的被日光照到，有的没照到，或红或白，颜色错杂，都像弯腰曲背鞠躬致敬的样子。<br>日观亭西面有一座东岳大帝庙，又有一座碧霞元君庙。皇帝出外巡行时居住的处所就在碧霞元君庙的东面。这一天，还观看了路上的石刻，都是从唐朝显庆年间以来的，那些更古老的石碑都已经模糊或缺失了。那些偏僻不对着道路的石刻，都赶不上去看了。<br>山上石头多，泥土少。山石都呈青黑色，大多是平的、方形的，很少有圆形的。杂树很少，多是松树，松树都生长在石头的缝隙里，树顶是平的。冰天雪地，没有瀑布，没有飞鸟走兽的声音和踪迹。日观峰附近几里以内没有树木，积雪厚得同人的膝盖一样平齐。<br>桐城姚鼐记述。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>阳：山的南面。<br>汶（Wèn）水：也叫汶河。发源于山东莱芜东北原山，向西南流经泰安东。<br>济水：发源于河南济源县西王屋山，东流到山入海东。后来下游被黄河冲没。<br>阳谷：指山南面谷中的水。谷，两山之间的流水道，现通称山涧。<br>当其南北分者：在那（阳谷和阴谷）南北分界处的。<br>古长城：指春秋时期齐国所筑长城的遗址，古时齐鲁两国以此为界。<br>日观峰：在山顶东岩，是泰山观日出的地方。<br>以：在。<br>乾隆三十九年：即公元1774年。<br>乘：趁，这里有“冒着”的意思。<br>齐河、长清：地名，都在山东省。<br>限：门槛，这里指像一道门槛的城墙。<br>泰安：即今山东泰安，在泰山南面，清朝为泰安府治所。<br>丁未：丁未日（十二月二十八日）。<br>朱孝纯子颖：朱孝纯，字子颖。当时是泰安府的知府。<br>蹬（dèng）：石级。<br>级：石级。<br>环水：即中溪，俗称梳洗河，流出泰山，傍泰安城东面南流。<br>循以入：顺着（中谷）进去。<br>道少半：路不到一半。<br>中岭：即黄岘岭，又名中溪山，中溪发源于此。<br>天门：泰山峰名。《山东通志》：“泰山周回一百六十里，屈曲盘道百余，经南天门，东西三天门，至绝顶，高四十余里。”<br>崖限当道者：挡在路上的像门槛一样的山崖。<br>云：语气助词。<br>几：几乎。<br>苍山负雪，明烛天南：青山上覆盖着白雪，（雪）光照亮了南面的天空。负，背。烛，动词，照。<br>徂徕（cúlái）：山名，在泰安东南。<br>居：停留。<br>戊申晦：戊申这一天是月底。晦：农历每月最后一天。<br>五鼓：五更。<br>日观亭：亭名，在日观峰上。<br>漫：迷漫。<br>樗蒱（chūpú）：又作“樗蒲”，古代的一种赌博游戏，这里指博戏用的“五木”。五木两头尖，中间广平，立起来很像山峰。<br>极天：天边。<br>采：通“彩”。<br>丹：朱砂。<br>东海：泛指东面的海。这里是想象，实际上在泰山顶上看不见东海。<br>或得日，或否：有的被日光照着，有的没有照着。<br>绛皓驳色：或红或白，颜色错杂。绛，大红。皓：白色。驳：杂。<br>若偻：像脊背弯曲的样子。引申为鞠躬、致敬的样子。日观峰西面诸峰都比日观峰低，所以这样说。偻，驼背。<br>岱祠：东岳大帝庙。<br>碧霞元君：传说是东岳大帝的女儿。<br>行宫：皇帝出外巡行时居住的住所。这里指乾隆登泰山时住过的宫室。<br>显庆：唐高宗的年号。<br>漫失：模糊或缺失。漫：磨灭。<br>僻不当道者：偏僻，不在道路附近的。<br>圜：通“圆”。<br>石罅：石缝。<br>瀑水：瀑布。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《登泰山记》是清代姚鼐在乾隆年间创作的泰山题材著名散文。文章描述了作者冒雪登泰山观赏日出的经过，描写了泰山的雄奇形势，并考察纠正了泰山记载的错误，文字简洁生动，写景尤为出色，是桐城派古文的名篇。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/355731.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

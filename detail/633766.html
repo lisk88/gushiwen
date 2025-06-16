@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>墨子 · 第十四章 · 兼爱（上） - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>墨子 · 第十四章 · 兼爱（上） - 墨子 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="墨子 · 第十四章 · 兼爱（上）是周朝诗人墨子的经典作品。本页面提供墨子 · 第十四章 · 兼爱（上）的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="墨子 · 第十四章 · 兼爱（上）,墨子,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="墨子 · 第十四章 · 兼爱（上） - 墨子 - 周朝古诗文">
+    <meta property="og:description" content="墨子 · 第十四章 · 兼爱（上）是周朝诗人墨子的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="墨子 · 第十四章 · 兼爱（上） - 墨子 - 周朝古诗文">
+    <meta name="twitter:description" content="墨子 · 第十四章 · 兼爱（上）是周朝诗人墨子的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "墨子 · 第十四章 · 兼爱（上）",
+      "author": {
+        "@type": "Person",
+        "name": "墨子"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "墨子 · 第十四章 · 兼爱（上）是周朝诗人墨子的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">墨子 · 第十四章 · 兼爱（上）</h1>
-            <div class="poem-author">【周】墨子</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">墨子</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>圣人以治天下为事者也，必知乱之所自起，焉能治之；不知乱之所自起，则不能治。譬之如医之攻人之疾者然，必知疾之所自起，焉能攻之；不知疾之所自起，则弗能攻。治乱者何独不然？必知乱之所自起，焉能治之；不知乱之斯自起，则弗能治。圣人以治天下为事者也，不可不察乱之所自起。</p><p>当察乱何自起？起不相爱。臣子之不孝君父，所谓乱也。子自爱，不爱父，故亏父而自利；弟自爱，不爱兄，故亏兄而自利；臣自爱，不爱君，故亏君而自利，此所谓乱也。虽父之不慈子，兄之不慈弟，君之不慈臣，此亦天下之所谓乱也。父自爱也，不爱子，故亏子而自利；兄自爱也，不爱弟，故亏弟而自利；君自爱也，不爱臣，故亏臣而自利。是何也？皆起不相爱。</p><p>虽至天下之为盗贼者亦然：盗爱其室，不爱其异室，故窃异室以利其室。贼爱其身，不爱人，故贼人以利其身。此何也？皆起不相爱。虽至大夫之相乱家，诸侯之相攻国者亦然：大夫各爱其家，不爱异家，故乱异家以利其家。诸侯各爱其国，不爱异国，故攻异国以利其国，天下之乱物，具此而已矣。察此何自起？皆起不相爱。</p><p>若使天下兼相爱，爱人若爱其身，犹有不孝者乎？视父兄与君若其身，恶施不孝？犹有不慈者乎？视弟子与臣若其身，恶施不慈？故不孝不慈亡有。犹有盗贼乎？故视人之室若其室，谁窃？视人身若其身，谁贼？故盗贼亡有。犹有大夫之相乱家、诸侯之相攻国者乎？视人家若其家，谁乱？视人国若其国，谁攻？故大夫之相乱家、诸侯之相攻国者亡有。若使天下兼相爱，国与国不相攻，家与家不相乱，盗贼无有，君臣父子皆能孝慈，若此，则天下治。</p><p>故圣人以治天下为事者，恶得不禁恶而劝爱？故天下兼相爱则治，交相恶则乱。故子墨子曰：“不可以不劝爱人者，此也。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>圣人是以治理天下为职业的人，必须知道混乱从哪里产生，才能对它进行治理。如果不知道混乱从哪里产生，就不能进行治理。这就好像医生给人治病一样，必须知道疾病产生的根源，才能进行医治。如果不知道疾病产生的根源，就不能医治。治理混乱又何尝不是这样，必须知道混乱产生的根源，才能进行治理。如果不知道混乱产生的根源，就不能治理。圣人是以治理天下为职业的人，不可不考察混乱产生的根源。<br>试考察混乱从哪里产生呢？起于人与人不相爱。臣与子不孝敬君和父，就是所谓乱。儿子爱自己而不爱父亲，因而损害父亲以自利；弟弟爱自己而不爱兄长，因而损害兄长以自利；臣下爱自己而不爱君上，因而损害君上以自利，这就是所谓混乱。反过来，即使父亲不慈爱儿子，兄长不慈爱弟弟，君上不慈爱臣下，这也是天下的所谓混乱。父亲爱自己而不爱儿子，所以损害儿子以自利；兄长爱自己而不爱弟弟，所以损害弟弟以自利；君上爱自己<br>而不爱臣下，所以损害臣下以自利。这是为什么呢？都是起于不相爱。<br>即使在天底下做盗贼的人，也是这样。盗贼只爱自己的家，不爱别人的家，所以盗窃别人的家以利自己的家；盗贼只爱自身，不爱别人，所以残害别人以利自己。这是什么原因呢？都起于不相爱。<br>即使大夫相互侵扰家族，诸侯相互攻伐封国，也是这样。大夫各自爱他自己的家族，不爱别人的家族，所以侵扰别人的家族以利他自己的家族；诸侯各自爱他自己的国家，不爱别人的国家，所以攻伐别人的国家以利他自己的国家。天下的乱事，全部都具备在这里了。细察它从哪里产生呢？都起于不相爱。<br>假若天下都能相亲相爱，爱别人就像爱自己，还能有不孝的吗？看待父亲、兄弟和君上像自己一样，怎么会做出不孝的事呢？还会有不慈爱的吗？看待弟弟、儿子与臣下像自己一样，怎么会做出不慈的事呢？所以不孝不慈都没有了。还有盗贼吗？看待别人的家像自己的家一样，谁会盗窃？看待别人就像自己一样，谁会害人？所以盗贼没有了。还有大夫相互侵扰家族，诸侯相互攻伐封国吗？看待别人的家族就像自己的家族，谁会侵犯？看待别人的封国就像自己的封国，谁会攻伐？所以大夫相互侵扰家族，诸侯相互攻伐封国，都没有了。假若天下的人都相亲相爱，国家与国家不相互攻伐，家族与家族不相互侵扰，盗贼没有了，君臣父子间都能孝敬慈爱，像这样，天下也就治理了。<br>所以圣人既然是以治理天下为职业的人，怎么能不禁止相互仇恨而鼓励相爱呢？因此天下的人相亲相爱就会治理好，相互憎恶则会混乱。所以墨子说：“不能不鼓励爱别人”，道理就在此。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>兼爱：墨家学派最有代表性的理论之一。所谓兼爱，其本质是要求人们爱人如己，彼此之间不要存在血缘与等级差别的观念。墨子认为，不相爱是当时社会混乱最大的原因，只有通过“兼相爱，交相利”才能达到社会安定的状态。这种理论具有反抗贵族等级观念的进步意义，但同时也带有强烈的理想色彩。<br>当：读为“尝”。<br>恶（wū）：何。<br>亡：通“无”。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>圣人以治天下为事者也，必知乱之所自起，焉能治之；不知乱之所自起，则不能治。譬之如医之攻人之疾者然，必知疾之所自起，焉能攻之；不知疾之所自起，则弗能攻。治乱者何独不然？必知乱之所自起，焉能治之；不知乱之斯自起，则弗能治。圣人以治天下为事者也，不可不察乱之所自起。</p><p>当察乱何自起？起不相爱。臣子之不孝君父，所谓乱也。子自爱，不爱父，故亏父而自利；弟自爱，不爱兄，故亏兄而自利；臣自爱，不爱君，故亏君而自利，此所谓乱也。虽父之不慈子，兄之不慈弟，君之不慈臣，此亦天下之所谓乱也。父自爱也，不爱子，故亏子而自利；兄自爱也，不爱弟，故亏弟而自利；君自爱也，不爱臣，故亏臣而自利。是何也？皆起不相爱。</p><p>虽至天下之为盗贼者亦然：盗爱其室，不爱其异室，故窃异室以利其室。贼爱其身，不爱人，故贼人以利其身。此何也？皆起不相爱。虽至大夫之相乱家，诸侯之相攻国者亦然：大夫各爱其家，不爱异家，故乱异家以利其家。诸侯各爱其国，不爱异国，故攻异国以利其国，天下之乱物，具此而已矣。察此何自起？皆起不相爱。</p><p>若使天下兼相爱，爱人若爱其身，犹有不孝者乎？视父兄与君若其身，恶施不孝？犹有不慈者乎？视弟子与臣若其身，恶施不慈？故不孝不慈亡有。犹有盗贼乎？故视人之室若其室，谁窃？视人身若其身，谁贼？故盗贼亡有。犹有大夫之相乱家、诸侯之相攻国者乎？视人家若其家，谁乱？视人国若其国，谁攻？故大夫之相乱家、诸侯之相攻国者亡有。若使天下兼相爱，国与国不相攻，家与家不相乱，盗贼无有，君臣父子皆能孝慈，若此，则天下治。</p><p>故圣人以治天下为事者，恶得不禁恶而劝爱？故天下兼相爱则治，交相恶则乱。故子墨子曰：“不可以不劝爱人者，此也。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>圣人是以治理天下为职业的人，必须知道混乱从哪里产生，才能对它进行治理。如果不知道混乱从哪里产生，就不能进行治理。这就好像医生给人治病一样，必须知道疾病产生的根源，才能进行医治。如果不知道疾病产生的根源，就不能医治。治理混乱又何尝不是这样，必须知道混乱产生的根源，才能进行治理。如果不知道混乱产生的根源，就不能治理。圣人是以治理天下为职业的人，不可不考察混乱产生的根源。<br>试考察混乱从哪里产生呢？起于人与人不相爱。臣与子不孝敬君和父，就是所谓乱。儿子爱自己而不爱父亲，因而损害父亲以自利；弟弟爱自己而不爱兄长，因而损害兄长以自利；臣下爱自己而不爱君上，因而损害君上以自利，这就是所谓混乱。反过来，即使父亲不慈爱儿子，兄长不慈爱弟弟，君上不慈爱臣下，这也是天下的所谓混乱。父亲爱自己而不爱儿子，所以损害儿子以自利；兄长爱自己而不爱弟弟，所以损害弟弟以自利；君上爱自己<br>而不爱臣下，所以损害臣下以自利。这是为什么呢？都是起于不相爱。<br>即使在天底下做盗贼的人，也是这样。盗贼只爱自己的家，不爱别人的家，所以盗窃别人的家以利自己的家；盗贼只爱自身，不爱别人，所以残害别人以利自己。这是什么原因呢？都起于不相爱。<br>即使大夫相互侵扰家族，诸侯相互攻伐封国，也是这样。大夫各自爱他自己的家族，不爱别人的家族，所以侵扰别人的家族以利他自己的家族；诸侯各自爱他自己的国家，不爱别人的国家，所以攻伐别人的国家以利他自己的国家。天下的乱事，全部都具备在这里了。细察它从哪里产生呢？都起于不相爱。<br>假若天下都能相亲相爱，爱别人就像爱自己，还能有不孝的吗？看待父亲、兄弟和君上像自己一样，怎么会做出不孝的事呢？还会有不慈爱的吗？看待弟弟、儿子与臣下像自己一样，怎么会做出不慈的事呢？所以不孝不慈都没有了。还有盗贼吗？看待别人的家像自己的家一样，谁会盗窃？看待别人就像自己一样，谁会害人？所以盗贼没有了。还有大夫相互侵扰家族，诸侯相互攻伐封国吗？看待别人的家族就像自己的家族，谁会侵犯？看待别人的封国就像自己的封国，谁会攻伐？所以大夫相互侵扰家族，诸侯相互攻伐封国，都没有了。假若天下的人都相亲相爱，国家与国家不相互攻伐，家族与家族不相互侵扰，盗贼没有了，君臣父子间都能孝敬慈爱，像这样，天下也就治理了。<br>所以圣人既然是以治理天下为职业的人，怎么能不禁止相互仇恨而鼓励相爱呢？因此天下的人相亲相爱就会治理好，相互憎恶则会混乱。所以墨子说：“不能不鼓励爱别人”，道理就在此。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>兼爱：墨家学派最有代表性的理论之一。所谓兼爱，其本质是要求人们爱人如己，彼此之间不要存在血缘与等级差别的观念。墨子认为，不相爱是当时社会混乱最大的原因，只有通过“兼相爱，交相利”才能达到社会安定的状态。这种理论具有反抗贵族等级观念的进步意义，但同时也带有强烈的理想色彩。<br>当：读为“尝”。<br>恶（wū）：何。<br>亡：通“无”。</p></div></div>
             
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

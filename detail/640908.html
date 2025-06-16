@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>前赤壁赋 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>前赤壁赋 - 苏轼 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="前赤壁赋是宋朝诗人苏轼的经典作品。本页面提供前赤壁赋的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="前赤壁赋,苏轼,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="前赤壁赋 - 苏轼 - 宋朝古诗文">
+    <meta property="og:description" content="前赤壁赋是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="前赤壁赋 - 苏轼 - 宋朝古诗文">
+    <meta name="twitter:description" content="前赤壁赋是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "前赤壁赋",
+      "author": {
+        "@type": "Person",
+        "name": "苏轼"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "前赤壁赋是宋朝诗人苏轼的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">前赤壁赋</h1>
-            <div class="poem-author">【宋】苏轼</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">苏轼</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上，裴回于斗牛之间。白露横江，水光接天。纵一苇之所如，陵万顷之茫然。浩浩乎如凭虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。</p><p>于是饮酒乐甚，扣舷而歌之。歌曰：“桂棹兮兰桨，击空明兮溯流光。渺渺兮余怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕，如泣如诉；馀音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。</p><p>苏子愀然，正襟危坐，而问客曰：“何为其然也？”客曰：“‘月明星稀，乌鹊南飞。’此非曹孟德之诗乎？西望夏口，东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江，横槊赋诗，固一世之雄也，而今安在哉？况吾与子渔樵于江渚之上，侣鱼虾而友麋鹿，驾一叶之扁舟，举匏樽以相属。寄蜉蝣于天地，渺浮海之一粟。哀吾生之须臾，羡长江之无穷。挟飞仙以遨游，抱明月而长终。知不可乎骤得，托遗响于悲风。”</p><p>苏子曰：“客亦知夫水与月乎？逝者如斯，而未尝往也；赢虚者如彼，而卒莫消长也。盖将自其变者而观之，则天地曾不能以一瞬；自其不变者而观之，则物与我皆无尽也，而又何羡乎！且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共食。”</p><p>客喜而笑，洗盏更酌。肴核既尽，杯盘狼籍。相与枕藉乎舟中，不知东方之既白。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>壬戌年秋天，七月十六日，我与友人在赤壁下泛舟遊玩。清风阵阵拂来，水面波澜不起。举起酒杯向同伴劝酒，吟诵《明月》中“窈窕”这一章。不一会儿，明月从东山后升起，在斗宿与牛宿之间来回移动。白茫茫的雾气横贯江面，水光连着天际。放纵一片苇叶似的小船随意漂浮，越过茫茫的江面。浩浩淼淼好像乘风凌空而行，并不知道到哪里才会停栖，飘飘摇摇好像要离开尘世飘飞而起，羽化成仙进入仙境。<br>在这时喝酒喝得非常高兴，敲着船边唱起歌来。歌中唱到：“桂木船棹啊香兰船桨，击打着月光下的清波，在泛着月光的水面逆流而上。我的情思啊悠远茫茫，眺望美人啊，却在天的另一方。”有会吹洞箫的客人，配着节奏为歌声伴和，洞箫的声音呜呜咽咽：有如哀怨有如思慕，既像啜泣也像倾诉，余音在江上回荡，像细丝一样连续不断。能使深谷中的蛟龙为之起舞，能使孤舟上的寡妇为之饮泣。<br>我的神色也愁惨起来，整好衣襟坐端正，向客人问道：“箫声为什么这样哀怨呢？”客人回答：“‘月明星稀，乌鹊南飞’，这不是曹公孟德的诗么？这里向西可以望到夏口，向东可以望到武昌，山河接壤连绵不绝，目力所及，一片郁郁苍苍。这不正是曹孟德被周瑜所围困的地方么？当初他攻陷荆州，夺得江陵，沿长江顺流东下，麾下的战船首尾相连延绵千里，旗子将天空全都蔽住，面对大江斟酒，横执长矛吟诗，本来是当世的一位英雄人物，然而现在又在哪里呢？何况我与你在江中的小洲打渔砍柴，以鱼虾为侣，以麋鹿为友，在江上驾着这一叶小舟，举起杯盏相互敬酒，如同蜉蝣置身于广阔的天地中，像沧海中的一粒粟米那样渺小。唉，哀叹我们的一生衹是短暂的片刻，不由羡慕长江的没有穷尽。想要携同仙人携手遨游各地，与明月相拥而永存世间。知道这些终究不能实现，只得将憾恨化为箫音，托寄在悲凉的秋风中罢了。”<br>我问道：“你可也知道这水与月？时间流逝就像这水，其实并没有真正逝去；时圆时缺的就像这月，终究没有增减。可见，从事物易变的一面看来，那么天地间万事万物时刻在变动，连一眨眼的工夫都不停止；而从事物不变的一面看来，万物同我们来说都是永恒的，又有什么可羡慕的呢？何况天地之间，万物各有主宰者，若不是自己应该拥有的，即使一分一毫也不能求取。只有江上的清风，以及山间的明月，听到便成了声音，进入眼帘便绘出形色，取得这些不会有人禁止，感受这些也不会有竭尽的忧虑。这是大自然恩赐的没有穷尽的宝藏，我和你可以共同享受。”<br>客人高兴地笑了，洗净酒杯重新斟酒。菜肴果品都已吃完，杯子盘子杂乱一片。大家互相枕着垫着睡在船上，不知不觉东方已经露出白色的曙光。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>壬戌（rénxū）：元丰五年，岁次壬戌。古代以干支纪年，该年为壬戌年。<br>既望：农历毎月十六。农历毎月十五日为望日，十六日为既望。<br>徐：缓缓地。<br>兴：起。<br>属（zhǔ）：倾注，引申为劝酒。<br>明月之诗：指《诗经·陈风·月出》。<br>窈窕（yǎotiǎo）之章：《陈风·月出》诗首章为：“月出皎兮，佼人僚兮，舒窈纠兮，劳心悄兮。”“窈纠”同“窈窕”。<br>少焉：一会儿。<br>裴回：意同“徘徊”。此处苏轼墨迹原作“裴回”，非教科书所写的“徘徊”。<br>斗牛：星座名，即斗宿（南斗）、牛宿。<br>白露：白茫茫的水气。<br>横江：横贯江面。<br>“纵一苇之所如，陵万顷之茫然”句：任凭小船在宽广的江面上飘荡。纵，任凭。一苇，喻极小的船。《诗经·卫风·河广》：“谁谓河广，一苇杭（航）之。”如，往。凌，越过。万顷，极为宽阔的江面。<br>茫然：旷远的样子。<br>凭虚御风：乘风腾空而遨遊。虚，太空。凭虚，凌空；御，驾御。教科书中作“冯虚”，实误，东坡真迹为“憑虛”二字，“冯（馮）虚”版本系传抄过程中心字底脱落所致。<br>遗世：离开尘世。<br>羽化：传说成仙的人能像长了翅膀一样飞昇。<br>登仙：登上仙境。<br>扣舷（xián）：敲打着船边，指打节拍。<br>桂棹（zhào）兰桨：桂树做的棹，兰木做的桨。<br>空明：月亮倒映水中的澄明之色。<br>溯：逆流而上。<br>流光：在水波上闪动的月光。<br>渺渺：悠远的样子。<br>余怀：教科书中作“予怀”，实误，东坡自书原迹为“余怀”，可见“予怀”版本是编书者失误不察所致。<br>美人：喻心中美好的理想或好的君王。<br>倚歌：按照歌曲的声调节拍。<br>和：同声相应，唱和。<br>怨：哀怨。<br>慕：眷恋。<br>余音：尾声。<br>袅袅（niǎo）：形容声音婉转悠长。<br>缕：细丝。<br>幽壑：深谷，这里指深渊。此句意谓：潜藏在深渊里的蛟龙为之起舞。<br>嫠（lí）妇：寡妇。唐·白乐天《琵琶行》写孤居商人妻云：“去来江口守空船，绕舱明月江水寒。夜深忽梦少年事，梦啼妆泪红阑干。”这里化用其事。<br>愀（qiǎo）然：容色改变的样子。<br>正襟危坐：整理衣襟，（严肃地）端坐着。<br>何为其然也：箫声为什么会这么悲凉呢？<br>夏口：故城在今湖北武昌。<br>武昌：今湖北鄂城县。<br>缪（liáo）：通“缭”，盘绕。<br>郁：茂盛的样子。<br>孟德之困于周郎：指汉献帝建安十三年，吴将周公瑾败曹孟德八十万大军于赤壁。周郎，公瑾二十四岁拜中郎将，吴中皆呼为“周郎”。<br>荆州：辖南阳、江夏、长沙等八郡，今湖南、湖北一带。<br>江陵：当时的荆州首府，今湖北县名。<br>“方其破荆州，下江陵，顺流而东也”句：指建安十三年刘琮率众降于曹孟德，曹军不战而占领荆州、江陵。方，当。<br>舳舻（zhúlú）：战船前后相接，这里指战船。<br>酾（shī）酒：滤酒，这里指斟酒。<br>横槊（shuò）：横执长矛。槊，长矛。<br>侣：以……为伴侣，这里为意动用法。<br>麋（mí）：鹿的一种。<br>扁（piān）舟：小舟。<br>匏（páo）樽：用葫芦做成的酒器。匏，葫芦。<br>寄：寓托。<br>蜉蝣（fúyóu）：一种朝生暮死的昆虫。此句喻人生之短暂。<br>渺：小。<br>浮海：大海。此句喻人类在天地之间极为渺小。教科书中作“沧海”，而东坡自书墨迹中实为“浮海”二字，“沧海”版本是为后世编者不察而留下的传抄错误。<br>须臾：片刻，形容生命之短。<br>长终：至于永远。<br>骤：多。<br>遗响：馀音，指箫声。<br>悲风：秋风。<br>逝者如斯：流逝的像这江水。语出《论语·子罕》：“子在川上曰：‘逝者如斯夫，不舍昼夜。’”逝，往；斯，指水。<br>赢虚者如彼：指月亮的圆缺。此处亦依东坡真迹版本，而不取“盈虚”版本。<br>卒：最终。<br>消长：增减。<br>曾（zēng）不能：固定词组，连……都不够。曾，连……都。<br>一瞬：一眨眼的工夫。<br>是：这。<br>造物者：天地自然。<br>无尽藏（zàng）：无穷无尽的宝藏。<br>食：享用。《释典》谓六识以六人为养，其养也胥谓之食，目以色为食，耳以声为食，鼻以香为食，口以味为食，身以触为食，意以法为食。清风明月，耳得成声，目遇成色。故曰“共食”。易以“共适”，则意味索然。当时有问东坡“食”字之义，坡曰：“如食吧之‘食’，犹共用也。”坡盖不欲以博览上人，故权词以答，古人谦抑如此。明代版本将“共食”妄改为“共适”，以致误从至今。<br>肴核：菜肴、果品。<br>枕藉：相互靠着。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《赤壁赋》是北宋文学家东坡创作的一篇赋，作于宋神宗元丰五年贬谪黄州（今湖北黄冈）时。本篇文字以台北故宫博物院所藏东坡真迹为正。<br>此赋记叙了作者与朋友们月夜泛舟游赤壁的所见所感，以作者的主观感受为线索，通过主客问答的形式，反映了作者由月夜泛舟的舒畅，到怀古伤今的悲咽，再到精神解脱的达观。全赋在布局与结构安排中映现了其独特的艺术构思，情韵深致、理意透辟，在中国文学上有着很高的文学地位，并对之后的赋、散文、诗产生了重大影响。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上，裴回于斗牛之间。白露横江，水光接天。纵一苇之所如，陵万顷之茫然。浩浩乎如凭虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。</p><p>于是饮酒乐甚，扣舷而歌之。歌曰：“桂棹兮兰桨，击空明兮溯流光。渺渺兮余怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕，如泣如诉；馀音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。</p><p>苏子愀然，正襟危坐，而问客曰：“何为其然也？”客曰：“‘月明星稀，乌鹊南飞。’此非曹孟德之诗乎？西望夏口，东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江，横槊赋诗，固一世之雄也，而今安在哉？况吾与子渔樵于江渚之上，侣鱼虾而友麋鹿，驾一叶之扁舟，举匏樽以相属。寄蜉蝣于天地，渺浮海之一粟。哀吾生之须臾，羡长江之无穷。挟飞仙以遨游，抱明月而长终。知不可乎骤得，托遗响于悲风。”</p><p>苏子曰：“客亦知夫水与月乎？逝者如斯，而未尝往也；赢虚者如彼，而卒莫消长也。盖将自其变者而观之，则天地曾不能以一瞬；自其不变者而观之，则物与我皆无尽也，而又何羡乎！且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共食。”</p><p>客喜而笑，洗盏更酌。肴核既尽，杯盘狼籍。相与枕藉乎舟中，不知东方之既白。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>壬戌年秋天，七月十六日，我与友人在赤壁下泛舟遊玩。清风阵阵拂来，水面波澜不起。举起酒杯向同伴劝酒，吟诵《明月》中“窈窕”这一章。不一会儿，明月从东山后升起，在斗宿与牛宿之间来回移动。白茫茫的雾气横贯江面，水光连着天际。放纵一片苇叶似的小船随意漂浮，越过茫茫的江面。浩浩淼淼好像乘风凌空而行，并不知道到哪里才会停栖，飘飘摇摇好像要离开尘世飘飞而起，羽化成仙进入仙境。<br>在这时喝酒喝得非常高兴，敲着船边唱起歌来。歌中唱到：“桂木船棹啊香兰船桨，击打着月光下的清波，在泛着月光的水面逆流而上。我的情思啊悠远茫茫，眺望美人啊，却在天的另一方。”有会吹洞箫的客人，配着节奏为歌声伴和，洞箫的声音呜呜咽咽：有如哀怨有如思慕，既像啜泣也像倾诉，余音在江上回荡，像细丝一样连续不断。能使深谷中的蛟龙为之起舞，能使孤舟上的寡妇为之饮泣。<br>我的神色也愁惨起来，整好衣襟坐端正，向客人问道：“箫声为什么这样哀怨呢？”客人回答：“‘月明星稀，乌鹊南飞’，这不是曹公孟德的诗么？这里向西可以望到夏口，向东可以望到武昌，山河接壤连绵不绝，目力所及，一片郁郁苍苍。这不正是曹孟德被周瑜所围困的地方么？当初他攻陷荆州，夺得江陵，沿长江顺流东下，麾下的战船首尾相连延绵千里，旗子将天空全都蔽住，面对大江斟酒，横执长矛吟诗，本来是当世的一位英雄人物，然而现在又在哪里呢？何况我与你在江中的小洲打渔砍柴，以鱼虾为侣，以麋鹿为友，在江上驾着这一叶小舟，举起杯盏相互敬酒，如同蜉蝣置身于广阔的天地中，像沧海中的一粒粟米那样渺小。唉，哀叹我们的一生衹是短暂的片刻，不由羡慕长江的没有穷尽。想要携同仙人携手遨游各地，与明月相拥而永存世间。知道这些终究不能实现，只得将憾恨化为箫音，托寄在悲凉的秋风中罢了。”<br>我问道：“你可也知道这水与月？时间流逝就像这水，其实并没有真正逝去；时圆时缺的就像这月，终究没有增减。可见，从事物易变的一面看来，那么天地间万事万物时刻在变动，连一眨眼的工夫都不停止；而从事物不变的一面看来，万物同我们来说都是永恒的，又有什么可羡慕的呢？何况天地之间，万物各有主宰者，若不是自己应该拥有的，即使一分一毫也不能求取。只有江上的清风，以及山间的明月，听到便成了声音，进入眼帘便绘出形色，取得这些不会有人禁止，感受这些也不会有竭尽的忧虑。这是大自然恩赐的没有穷尽的宝藏，我和你可以共同享受。”<br>客人高兴地笑了，洗净酒杯重新斟酒。菜肴果品都已吃完，杯子盘子杂乱一片。大家互相枕着垫着睡在船上，不知不觉东方已经露出白色的曙光。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>壬戌（rénxū）：元丰五年，岁次壬戌。古代以干支纪年，该年为壬戌年。<br>既望：农历毎月十六。农历毎月十五日为望日，十六日为既望。<br>徐：缓缓地。<br>兴：起。<br>属（zhǔ）：倾注，引申为劝酒。<br>明月之诗：指《诗经·陈风·月出》。<br>窈窕（yǎotiǎo）之章：《陈风·月出》诗首章为：“月出皎兮，佼人僚兮，舒窈纠兮，劳心悄兮。”“窈纠”同“窈窕”。<br>少焉：一会儿。<br>裴回：意同“徘徊”。此处苏轼墨迹原作“裴回”，非教科书所写的“徘徊”。<br>斗牛：星座名，即斗宿（南斗）、牛宿。<br>白露：白茫茫的水气。<br>横江：横贯江面。<br>“纵一苇之所如，陵万顷之茫然”句：任凭小船在宽广的江面上飘荡。纵，任凭。一苇，喻极小的船。《诗经·卫风·河广》：“谁谓河广，一苇杭（航）之。”如，往。凌，越过。万顷，极为宽阔的江面。<br>茫然：旷远的样子。<br>凭虚御风：乘风腾空而遨遊。虚，太空。凭虚，凌空；御，驾御。教科书中作“冯虚”，实误，东坡真迹为“憑虛”二字，“冯（馮）虚”版本系传抄过程中心字底脱落所致。<br>遗世：离开尘世。<br>羽化：传说成仙的人能像长了翅膀一样飞昇。<br>登仙：登上仙境。<br>扣舷（xián）：敲打着船边，指打节拍。<br>桂棹（zhào）兰桨：桂树做的棹，兰木做的桨。<br>空明：月亮倒映水中的澄明之色。<br>溯：逆流而上。<br>流光：在水波上闪动的月光。<br>渺渺：悠远的样子。<br>余怀：教科书中作“予怀”，实误，东坡自书原迹为“余怀”，可见“予怀”版本是编书者失误不察所致。<br>美人：喻心中美好的理想或好的君王。<br>倚歌：按照歌曲的声调节拍。<br>和：同声相应，唱和。<br>怨：哀怨。<br>慕：眷恋。<br>余音：尾声。<br>袅袅（niǎo）：形容声音婉转悠长。<br>缕：细丝。<br>幽壑：深谷，这里指深渊。此句意谓：潜藏在深渊里的蛟龙为之起舞。<br>嫠（lí）妇：寡妇。唐·白乐天《琵琶行》写孤居商人妻云：“去来江口守空船，绕舱明月江水寒。夜深忽梦少年事，梦啼妆泪红阑干。”这里化用其事。<br>愀（qiǎo）然：容色改变的样子。<br>正襟危坐：整理衣襟，（严肃地）端坐着。<br>何为其然也：箫声为什么会这么悲凉呢？<br>夏口：故城在今湖北武昌。<br>武昌：今湖北鄂城县。<br>缪（liáo）：通“缭”，盘绕。<br>郁：茂盛的样子。<br>孟德之困于周郎：指汉献帝建安十三年，吴将周公瑾败曹孟德八十万大军于赤壁。周郎，公瑾二十四岁拜中郎将，吴中皆呼为“周郎”。<br>荆州：辖南阳、江夏、长沙等八郡，今湖南、湖北一带。<br>江陵：当时的荆州首府，今湖北县名。<br>“方其破荆州，下江陵，顺流而东也”句：指建安十三年刘琮率众降于曹孟德，曹军不战而占领荆州、江陵。方，当。<br>舳舻（zhúlú）：战船前后相接，这里指战船。<br>酾（shī）酒：滤酒，这里指斟酒。<br>横槊（shuò）：横执长矛。槊，长矛。<br>侣：以……为伴侣，这里为意动用法。<br>麋（mí）：鹿的一种。<br>扁（piān）舟：小舟。<br>匏（páo）樽：用葫芦做成的酒器。匏，葫芦。<br>寄：寓托。<br>蜉蝣（fúyóu）：一种朝生暮死的昆虫。此句喻人生之短暂。<br>渺：小。<br>浮海：大海。此句喻人类在天地之间极为渺小。教科书中作“沧海”，而东坡自书墨迹中实为“浮海”二字，“沧海”版本是为后世编者不察而留下的传抄错误。<br>须臾：片刻，形容生命之短。<br>长终：至于永远。<br>骤：多。<br>遗响：馀音，指箫声。<br>悲风：秋风。<br>逝者如斯：流逝的像这江水。语出《论语·子罕》：“子在川上曰：‘逝者如斯夫，不舍昼夜。’”逝，往；斯，指水。<br>赢虚者如彼：指月亮的圆缺。此处亦依东坡真迹版本，而不取“盈虚”版本。<br>卒：最终。<br>消长：增减。<br>曾（zēng）不能：固定词组，连……都不够。曾，连……都。<br>一瞬：一眨眼的工夫。<br>是：这。<br>造物者：天地自然。<br>无尽藏（zàng）：无穷无尽的宝藏。<br>食：享用。《释典》谓六识以六人为养，其养也胥谓之食，目以色为食，耳以声为食，鼻以香为食，口以味为食，身以触为食，意以法为食。清风明月，耳得成声，目遇成色。故曰“共食”。易以“共适”，则意味索然。当时有问东坡“食”字之义，坡曰：“如食吧之‘食’，犹共用也。”坡盖不欲以博览上人，故权词以答，古人谦抑如此。明代版本将“共食”妄改为“共适”，以致误从至今。<br>肴核：菜肴、果品。<br>枕藉：相互靠着。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《赤壁赋》是北宋文学家东坡创作的一篇赋，作于宋神宗元丰五年贬谪黄州（今湖北黄冈）时。本篇文字以台北故宫博物院所藏东坡真迹为正。<br>此赋记叙了作者与朋友们月夜泛舟游赤壁的所见所感，以作者的主观感受为线索，通过主客问答的形式，反映了作者由月夜泛舟的舒畅，到怀古伤今的悲咽，再到精神解脱的达观。全赋在布局与结构安排中映现了其独特的艺术构思，情韵深致、理意透辟，在中国文学上有着很高的文学地位，并对之后的赋、散文、诗产生了重大影响。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -123,7 +154,72 @@
     </div>
     
             <div class="section"><a href="https://baike.baidu.com/item/赤壁赋" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

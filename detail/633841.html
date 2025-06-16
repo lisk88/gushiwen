@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>战国策 · 鲁共公择言 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>战国策 · 鲁共公择言 - 刘向 - 汉朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="战国策 · 鲁共公择言是汉朝诗人刘向的经典作品。本页面提供战国策 · 鲁共公择言的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="战国策 · 鲁共公择言,刘向,汉朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="战国策 · 鲁共公择言 - 刘向 - 汉朝古诗文">
+    <meta property="og:description" content="战国策 · 鲁共公择言是汉朝诗人刘向的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="战国策 · 鲁共公择言 - 刘向 - 汉朝古诗文">
+    <meta name="twitter:description" content="战国策 · 鲁共公择言是汉朝诗人刘向的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "战国策 · 鲁共公择言",
+      "author": {
+        "@type": "Person",
+        "name": "刘向"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "战国策 · 鲁共公择言是汉朝诗人刘向的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">战国策 · 鲁共公择言</h1>
-            <div class="poem-author">【汉】刘向</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【汉】<span itemprop="name">刘向</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>梁王魏婴觞诸侯于范台。酒酣，请鲁君举觞。鲁君兴，避席择言曰：“昔者，帝女令仪狄作酒而美，进之禹，禹饮而甘之，遂疏仪狄，绝旨酒，曰：‘后世必有以酒亡其国者。’齐桓公夜半不嗛，易牙乃煎熬燔炙，和调五味而进之，桓公食之而饱，至旦不觉，曰：‘后世必有以味亡其国者。’晋文公得南之威，三日不听朝，遂推南之威而远之，曰：‘后世必有以色亡其国者。’楚王登强台而望崩山，左江而右湖，以临彷徨，其乐忘死，遂盟强台而弗登，曰：‘后世必有以高台陂池亡其国者。’今主君之尊，仪狄之酒也；主君之味，易牙之调也；左白台而右闾须，南威之美也；前夹林而后兰台，强台之乐也；有一于此，足以亡其国。今主君兼此四者，可无戒与！”梁王称善相属。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>梁王魏婴在范台宴请诸侯。当大家喝得高兴时，梁王请鲁共公举杯祝酒。鲁共公站起来，离开座位，选择了一番有意义的话，说：“从前，帝尧的女儿叫仪狄酿酒，味道极好，奉送给禹，禹喝了觉得很甜美，于是疏远了仪狄，并戒了酒。说：‘后世必定有因为饮酒而亡国的！’齐桓公半夜里感到饥饿，不舒服，易牙立刻烹煮烧烤，调和五味，进献给齐桓公吃。齐桓公吃得饱饱的，直到第二天早晨还没睡醒。说：‘后世必定有贪图美味而亡国的！’晋文公得到美女南威，三天都不上朝听政，于是将南威推开，疏远了她，说：‘后世必定有因为好女色而亡国的！’楚庄王登上高高的强台，眺望崩山，左面是大江，右面是大湖，俯视下面，徘徊留连，快乐得忘了死的危险。于是，他发誓不再登上强台。说：‘后世必定有爱好修建王室园林而亡国的！’现在，梁王你的酒杯里是仪狄的酒；你的饭菜是易牙所烹调；你左面的白台，右面的闾须，是南威般的美女；你前面有夹林，后面有兰台，是和强台一般的快乐。这四件事里只要有一样，就可以亡国。梁王你而今兼有这四样，难道可以不警惕吗？”梁王听了，连声称赞说好。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>鲁共公：鲁国国君，名奋。<br>择言：择善而言的意思，也就是选择具有深刻意义的话的意思。<br>梁王魏婴：梁惠王，即魏王，因魏于公元前362年迁都大梁，故又称梁。梁惠王十五年（公元前344）召集逢泽（今开封东南）之会，自称为王。当时，梁强盛，鲁、卫、宋、郑的国君均来朝见。<br>鲁君：鲁共公。<br>觞：酒杯。<br>避席：古人席地而坐，避席即站起身，离开座席，表示严肃恭敬。<br>帝女：似指帝尧的女儿。<br>仪狄：仪狄是夏禹时代司掌造酒的官员，女性，相传是我国最早的酿酒人，虞舜的后人。<br>旨酒：美酒。旨，味美。<br>不嗛：不满足，有饥饿感。<br>易牙：一作“狄牙”，齐桓公宠臣，善调味。<br>南之威：一作“南威”，美女名。<br>楚王：楚庄王，春秋五霸之一。<br>强台：即章华台。<br>崩山，一作“崇山”。<br>尊：同“樽”，酒杯。<br>白台、闾须：皆美女名。<br>夹林、兰台：梁之宫苑、园林名。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文是选自《战国策·魏策三》的一章，记叙了梁惠王在范台宴集诸侯时，鲁共公在梁王魏婴宴席上的一段祝酒辞，是诫言各诸侯王要警惕酒、味、色、乐的诱惑，否则将有亡国的危险。言直意重，表现了鲁共公卓越的政治见解。<br>文章的表达，主要运用了譬喻说理、排比言事的手法。全文以大禹疏仪狄而戒酒，齐桓公食美味而不醒，晋文公远南威而拒色，楚庄王不登强台而排乐为例，说明历代明主贤君都是拒酒、味、色、乐的引诱，而梁王兼有四者，足当警惕。理寓于故事中，以譬作喻，便于接受。排比句的运用，增强了气势和说服力。就内容而言，文章张扬的力戒酒、味、色、乐以强国兴邦的思想，不仅在两千多年前有益，即使在今天仍有其勿庸置疑的现实意义。<br>文章开始先概括叙述梁惠王与诸侯宴饮的情况。“梁王魏婴觞诸侯于范台”一句，言虽简而作用大，既交代了当时情况，又总领全篇，文章皆由此而生，这一句表明了梁王的主人地位，而与会诸侯都是弱小之邦。一“觞”字点出宴饮，而“范台”又是魏国之名台，聚美女歌吹娱乐之所在。在此梁惠王自满自得，恣意作乐的情形自然表露出来了，为下文作了铺垫交代。接着写“酒酣”梁王“请鲁君举觞”，即请鲁共公为与宴的诸侯们祝酒，更突出了梁惠王在这些诸侯中的身份和地位，并引出鲁君的祝酒之辞。<br>文章的主要部分是写鲁共公非同凡响的祝酒辞。鲁共公起身，离开座席祝酒，“避席”这一举动不同寻常，认真严肃可想而知。“择言”一词更显示出鲁共公不是一般地祝酒助兴，而是大有用意。鲁共公的祝酒辞分两层，第一层先以“昔者”领起对古代一些贤明君主对酒色淫逸要提高警惕看法的陈述。文章分别以大禹饮仪狄所造之酒，觉得异常醇美，而引起警觉，疏远了仪狄，再也不喝美酒，并告诫说“后世必有以酒亡其国者”；说明戒酒对一国之君的重要意义。又以春秋五霸之一齐桓公食易牙五味之调而感到舒适，引起警觉，告诫说“后世必有以味亡其国者”；又以晋文公得美女南之威，引起警觉，告诫说：“后世必有以色亡其国者”；楚庄王有章华台之乐，醒悟后“盟强台而弗登”，告诫道“后世必有以高台陂池亡其国者”；说明国君要警惕嗜欲女色等。文章在这里将禹与著名的春秋五霸中有作为的国君拈出，写他们也曾经受到过美酒、佳肴、女色、高台陂池之乐的诱惑，但他们都是有理智又贤明的君主，都能很快有所觉悟，戒掉酒色娱乐给他们带来的坏毛病，使他们能够更好地治国安邦，给后世提供了榜样。这层以古人为镜，写得文辞严整，文势贯通，方面俱全，又有层次感，同时又具有信手拈来，出口成章的味道。<br>在第二层中，鲁共公极自然地将梁惠王与古代贤明君王对比，从以上四个相应的方面指出梁惠王奢侈淫靡俱全，已显露出亡国之兆，却还自恃强大，不知醒悟，点明其“择言”祝酒的深刻含义所在，突出文章的主旨。这段话也是分四方面排比写来，对照鲜明，劝讽之意自然显现其中，并在最后以“有一于此，足以亡国，今主君兼此四者，可无戒与！”告诫梁惠王，语言遒劲有力度，动人心魄，同时又自然得体，使梁惠王最终也不得不服服贴贴地“称善相属”。<br>这篇文章短小精悍，结构严整，笔法简练，以祝酒辞的形式，却说出事关国家兴亡的大道理，劝讽有力，含义深刻。文章语言句式整齐，而富于变化，前后对应，有繁有简，如此短章笔法之妙，不可言喻。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>梁王魏婴觞诸侯于范台。酒酣，请鲁君举觞。鲁君兴，避席择言曰：“昔者，帝女令仪狄作酒而美，进之禹，禹饮而甘之，遂疏仪狄，绝旨酒，曰：‘后世必有以酒亡其国者。’齐桓公夜半不嗛，易牙乃煎熬燔炙，和调五味而进之，桓公食之而饱，至旦不觉，曰：‘后世必有以味亡其国者。’晋文公得南之威，三日不听朝，遂推南之威而远之，曰：‘后世必有以色亡其国者。’楚王登强台而望崩山，左江而右湖，以临彷徨，其乐忘死，遂盟强台而弗登，曰：‘后世必有以高台陂池亡其国者。’今主君之尊，仪狄之酒也；主君之味，易牙之调也；左白台而右闾须，南威之美也；前夹林而后兰台，强台之乐也；有一于此，足以亡其国。今主君兼此四者，可无戒与！”梁王称善相属。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>梁王魏婴在范台宴请诸侯。当大家喝得高兴时，梁王请鲁共公举杯祝酒。鲁共公站起来，离开座位，选择了一番有意义的话，说：“从前，帝尧的女儿叫仪狄酿酒，味道极好，奉送给禹，禹喝了觉得很甜美，于是疏远了仪狄，并戒了酒。说：‘后世必定有因为饮酒而亡国的！’齐桓公半夜里感到饥饿，不舒服，易牙立刻烹煮烧烤，调和五味，进献给齐桓公吃。齐桓公吃得饱饱的，直到第二天早晨还没睡醒。说：‘后世必定有贪图美味而亡国的！’晋文公得到美女南威，三天都不上朝听政，于是将南威推开，疏远了她，说：‘后世必定有因为好女色而亡国的！’楚庄王登上高高的强台，眺望崩山，左面是大江，右面是大湖，俯视下面，徘徊留连，快乐得忘了死的危险。于是，他发誓不再登上强台。说：‘后世必定有爱好修建王室园林而亡国的！’现在，梁王你的酒杯里是仪狄的酒；你的饭菜是易牙所烹调；你左面的白台，右面的闾须，是南威般的美女；你前面有夹林，后面有兰台，是和强台一般的快乐。这四件事里只要有一样，就可以亡国。梁王你而今兼有这四样，难道可以不警惕吗？”梁王听了，连声称赞说好。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>鲁共公：鲁国国君，名奋。<br>择言：择善而言的意思，也就是选择具有深刻意义的话的意思。<br>梁王魏婴：梁惠王，即魏王，因魏于公元前362年迁都大梁，故又称梁。梁惠王十五年（公元前344）召集逢泽（今开封东南）之会，自称为王。当时，梁强盛，鲁、卫、宋、郑的国君均来朝见。<br>鲁君：鲁共公。<br>觞：酒杯。<br>避席：古人席地而坐，避席即站起身，离开座席，表示严肃恭敬。<br>帝女：似指帝尧的女儿。<br>仪狄：仪狄是夏禹时代司掌造酒的官员，女性，相传是我国最早的酿酒人，虞舜的后人。<br>旨酒：美酒。旨，味美。<br>不嗛：不满足，有饥饿感。<br>易牙：一作“狄牙”，齐桓公宠臣，善调味。<br>南之威：一作“南威”，美女名。<br>楚王：楚庄王，春秋五霸之一。<br>强台：即章华台。<br>崩山，一作“崇山”。<br>尊：同“樽”，酒杯。<br>白台、闾须：皆美女名。<br>夹林、兰台：梁之宫苑、园林名。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文是选自《战国策·魏策三》的一章，记叙了梁惠王在范台宴集诸侯时，鲁共公在梁王魏婴宴席上的一段祝酒辞，是诫言各诸侯王要警惕酒、味、色、乐的诱惑，否则将有亡国的危险。言直意重，表现了鲁共公卓越的政治见解。<br>文章的表达，主要运用了譬喻说理、排比言事的手法。全文以大禹疏仪狄而戒酒，齐桓公食美味而不醒，晋文公远南威而拒色，楚庄王不登强台而排乐为例，说明历代明主贤君都是拒酒、味、色、乐的引诱，而梁王兼有四者，足当警惕。理寓于故事中，以譬作喻，便于接受。排比句的运用，增强了气势和说服力。就内容而言，文章张扬的力戒酒、味、色、乐以强国兴邦的思想，不仅在两千多年前有益，即使在今天仍有其勿庸置疑的现实意义。<br>文章开始先概括叙述梁惠王与诸侯宴饮的情况。“梁王魏婴觞诸侯于范台”一句，言虽简而作用大，既交代了当时情况，又总领全篇，文章皆由此而生，这一句表明了梁王的主人地位，而与会诸侯都是弱小之邦。一“觞”字点出宴饮，而“范台”又是魏国之名台，聚美女歌吹娱乐之所在。在此梁惠王自满自得，恣意作乐的情形自然表露出来了，为下文作了铺垫交代。接着写“酒酣”梁王“请鲁君举觞”，即请鲁共公为与宴的诸侯们祝酒，更突出了梁惠王在这些诸侯中的身份和地位，并引出鲁君的祝酒之辞。<br>文章的主要部分是写鲁共公非同凡响的祝酒辞。鲁共公起身，离开座席祝酒，“避席”这一举动不同寻常，认真严肃可想而知。“择言”一词更显示出鲁共公不是一般地祝酒助兴，而是大有用意。鲁共公的祝酒辞分两层，第一层先以“昔者”领起对古代一些贤明君主对酒色淫逸要提高警惕看法的陈述。文章分别以大禹饮仪狄所造之酒，觉得异常醇美，而引起警觉，疏远了仪狄，再也不喝美酒，并告诫说“后世必有以酒亡其国者”；说明戒酒对一国之君的重要意义。又以春秋五霸之一齐桓公食易牙五味之调而感到舒适，引起警觉，告诫说“后世必有以味亡其国者”；又以晋文公得美女南之威，引起警觉，告诫说：“后世必有以色亡其国者”；楚庄王有章华台之乐，醒悟后“盟强台而弗登”，告诫道“后世必有以高台陂池亡其国者”；说明国君要警惕嗜欲女色等。文章在这里将禹与著名的春秋五霸中有作为的国君拈出，写他们也曾经受到过美酒、佳肴、女色、高台陂池之乐的诱惑，但他们都是有理智又贤明的君主，都能很快有所觉悟，戒掉酒色娱乐给他们带来的坏毛病，使他们能够更好地治国安邦，给后世提供了榜样。这层以古人为镜，写得文辞严整，文势贯通，方面俱全，又有层次感，同时又具有信手拈来，出口成章的味道。<br>在第二层中，鲁共公极自然地将梁惠王与古代贤明君王对比，从以上四个相应的方面指出梁惠王奢侈淫靡俱全，已显露出亡国之兆，却还自恃强大，不知醒悟，点明其“择言”祝酒的深刻含义所在，突出文章的主旨。这段话也是分四方面排比写来，对照鲜明，劝讽之意自然显现其中，并在最后以“有一于此，足以亡国，今主君兼此四者，可无戒与！”告诫梁惠王，语言遒劲有力度，动人心魄，同时又自然得体，使梁惠王最终也不得不服服贴贴地“称善相属”。<br>这篇文章短小精悍，结构严整，笔法简练，以祝酒辞的形式，却说出事关国家兴亡的大道理，劝讽有力，含义深刻。文章语言句式整齐，而富于变化，前后对应，有繁有简，如此短章笔法之妙，不可言喻。</p></div></div>
             
             <div class="section"><a href="http://baike.baidu.com/view/2027213.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

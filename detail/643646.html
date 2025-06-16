@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>寺人披见文公 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>寺人披见文公 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="寺人披见文公是周朝诗人左丘明的经典作品。本页面提供寺人披见文公的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="寺人披见文公,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="寺人披见文公 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="寺人披见文公是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="寺人披见文公 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="寺人披见文公是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "寺人披见文公",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "寺人披见文公是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">寺人披见文公</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>吕、郤畏逼，将焚公宫而弑晋侯。寺人披请见。公使让之，且辞焉，曰：“蒲城之役，君命一宿，女即至。其后余从狄君以田渭滨，女为惠公来求杀余，命女三宿，女中宿至。虽有君命何其速也？夫袪犹在，女其行乎！”对曰：“臣谓君之入也，其知之矣。若犹未也，又将及难。君命无二，古之制也。除君之恶，唯力是视。蒲人、狄人、余何有焉？即位，其无蒲、狄乎！齐桓公置射钩，而使管仲相。君若易之，何辱命焉？行者甚众，岂唯刑臣？”公见之，以难告。</p><p>晋侯潜会秦伯于王城。己丑晦，公宫火。瑕甥、郤芮不获公，乃如河上，秦伯诱而杀之。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>吕甥、郤芮害怕受到威逼，要焚烧晋文公的宫室而杀死文公。寺人披请求进见，文公令人训斥他，并且拒绝接见，说：“蒲城的战役，君王命你第二天赶到，你马上就来了。后来我逃到狄国同狄国国君到渭河边打猎，你替惠公前来谋杀我，惠公命你三天后赶到，你过了第二天就到了。虽然有君王的命令，怎么那样快呢？在蒲城被你斩断的那只袖口还在。你就走吧！”披回答说：“小臣以为君王这次返国，大概已懂得了为君之道。如果还没有懂，恐怕您又要遇到灾难。对国君的命令没有二心，这是古代的制度。除掉国君所憎恶的人，就看自己有多大的力量，尽多大的力量。您当时是蒲人或狄人，对于我又有什么关系呢？现在您即位为君，难道就不会再发生蒲、狄那样的事件吗？从前齐桓公抛弃射钩之仇，而让管仲辅佐自己，您如果改变桓公的做法，又何必辱蒙您下驱逐的命令？这样，要逃走的人就会很多了，岂只受刑的小臣我一人？”于是文公接见了披，他把即将发生的叛乱报告了文公。<br>晋文公暗地里和秦穆公在秦国的王城会晤商量应付的办法。三月的最后一天，晋文公的宫室果然被烧。瑕甥、郤芮没有捉到文公，于是逃跑到黄河边上，秦穆公诱他们过河把他们杀了。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>吕、郤：吕即阴饴甥，他的采邑除阴外还有吕今山西霍县西、瑕今山西临猗附近，故又称吕甥、瑕甥。郤即郤芮。二人都是晋惠公、晋怀公的旧臣。<br>畏逼：害怕遭受迫害。<br>弑：古时子杀父，臣杀君为弑。<br>见：谒见。<br>使：派人来到某个地方。<br>让：斥责。<br>一宿：隔一夜。<br>女：同“汝”，你。<br>田：打猎。<br>中宿：隔两夜。<br>袪：衣袖。<br>入：回到国内。<br>其：在这里表示推测语气。<br>之：指为君之道。<br>及难：遭遇灾难。<br>唯力是视：即“唯视力”，只看自己力量多大，就尽多大力量。<br>余何有焉：和我有什么关系呢？<br>齐桓公置射钩：鲁庄公九年，管仲奉公子纠与齐桓公战于乾时，管仲曾射中齐桓公革带上的钩，后来他投奔齐桓公，齐桓公能听鲍叔牙劝说，置射钩之仇而不问，任用其为相。<br>潜：秘密地。<br>诱：诱骗。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·僖公二十四年》。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>吕、郤畏逼，将焚公宫而弑晋侯。寺人披请见。公使让之，且辞焉，曰：“蒲城之役，君命一宿，女即至。其后余从狄君以田渭滨，女为惠公来求杀余，命女三宿，女中宿至。虽有君命何其速也？夫袪犹在，女其行乎！”对曰：“臣谓君之入也，其知之矣。若犹未也，又将及难。君命无二，古之制也。除君之恶，唯力是视。蒲人、狄人、余何有焉？即位，其无蒲、狄乎！齐桓公置射钩，而使管仲相。君若易之，何辱命焉？行者甚众，岂唯刑臣？”公见之，以难告。</p><p>晋侯潜会秦伯于王城。己丑晦，公宫火。瑕甥、郤芮不获公，乃如河上，秦伯诱而杀之。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>吕甥、郤芮害怕受到威逼，要焚烧晋文公的宫室而杀死文公。寺人披请求进见，文公令人训斥他，并且拒绝接见，说：“蒲城的战役，君王命你第二天赶到，你马上就来了。后来我逃到狄国同狄国国君到渭河边打猎，你替惠公前来谋杀我，惠公命你三天后赶到，你过了第二天就到了。虽然有君王的命令，怎么那样快呢？在蒲城被你斩断的那只袖口还在。你就走吧！”披回答说：“小臣以为君王这次返国，大概已懂得了为君之道。如果还没有懂，恐怕您又要遇到灾难。对国君的命令没有二心，这是古代的制度。除掉国君所憎恶的人，就看自己有多大的力量，尽多大的力量。您当时是蒲人或狄人，对于我又有什么关系呢？现在您即位为君，难道就不会再发生蒲、狄那样的事件吗？从前齐桓公抛弃射钩之仇，而让管仲辅佐自己，您如果改变桓公的做法，又何必辱蒙您下驱逐的命令？这样，要逃走的人就会很多了，岂只受刑的小臣我一人？”于是文公接见了披，他把即将发生的叛乱报告了文公。<br>晋文公暗地里和秦穆公在秦国的王城会晤商量应付的办法。三月的最后一天，晋文公的宫室果然被烧。瑕甥、郤芮没有捉到文公，于是逃跑到黄河边上，秦穆公诱他们过河把他们杀了。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>吕、郤：吕即阴饴甥，他的采邑除阴外还有吕今山西霍县西、瑕今山西临猗附近，故又称吕甥、瑕甥。郤即郤芮。二人都是晋惠公、晋怀公的旧臣。<br>畏逼：害怕遭受迫害。<br>弑：古时子杀父，臣杀君为弑。<br>见：谒见。<br>使：派人来到某个地方。<br>让：斥责。<br>一宿：隔一夜。<br>女：同“汝”，你。<br>田：打猎。<br>中宿：隔两夜。<br>袪：衣袖。<br>入：回到国内。<br>其：在这里表示推测语气。<br>之：指为君之道。<br>及难：遭遇灾难。<br>唯力是视：即“唯视力”，只看自己力量多大，就尽多大力量。<br>余何有焉：和我有什么关系呢？<br>齐桓公置射钩：鲁庄公九年，管仲奉公子纠与齐桓公战于乾时，管仲曾射中齐桓公革带上的钩，后来他投奔齐桓公，齐桓公能听鲍叔牙劝说，置射钩之仇而不问，任用其为相。<br>潜：秘密地。<br>诱：诱骗。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文出自《左传·僖公二十四年》。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

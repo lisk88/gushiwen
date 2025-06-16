@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>西江月 · 夜行黄沙道中 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>西江月 · 夜行黄沙道中 - 辛弃疾 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="西江月 · 夜行黄沙道中是宋朝诗人辛弃疾的经典作品。本页面提供西江月 · 夜行黄沙道中的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="西江月 · 夜行黄沙道中,辛弃疾,宋朝,古诗文,中学语文,诗词赏析,古典文学,词">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="西江月 · 夜行黄沙道中 - 辛弃疾 - 宋朝古诗文">
+    <meta property="og:description" content="西江月 · 夜行黄沙道中是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="西江月 · 夜行黄沙道中 - 辛弃疾 - 宋朝古诗文">
+    <meta name="twitter:description" content="西江月 · 夜行黄沙道中是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "西江月 · 夜行黄沙道中",
+      "author": {
+        "@type": "Person",
+        "name": "辛弃疾"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "词",
+      "description": "西江月 · 夜行黄沙道中是宋朝诗人辛弃疾的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">西江月 · 夜行黄沙道中</h1>
-            <div class="poem-author">【宋】辛弃疾</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">辛弃疾</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>明月别枝惊鹊，清风半夜鸣蝉。稻花香里说丰年，听取蛙声一片。</p><p>七八个星天外，两三点雨山前。旧时茅店社林边，路转溪桥忽见。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>天边的明月升上了树梢，惊飞了栖息在枝头的喜鹊。清凉的晚风仿佛传来了远处的蝉叫声。在稻花的香气里，人们谈论着丰收的年景，耳边传来一阵阵青蛙的叫声，好像在说着丰收年。<br>天空中轻云漂浮，闪烁的星星时隐时现，山前下起了淅淅沥沥的小雨，从前那熟悉的茅店小屋依然坐落在土地庙附近的树林中，山路一转，曾经那记忆深刻的溪流小桥呈现在眼前。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>西江月：唐教坊曲名，后用作词牌名。调名取自李白《苏台览古》“只今唯有西江月，曾照吴王宫里人”。西江是长江的别称，调咏吴王西施的故事。又名《白蘋香》、《步虚词》、《晚香时候》、《玉炉三涧雪》、《江月令》。双调五十字，平仄两协。后阕字句作法与前阕相同。<br>黄沙道：指的是从江西省上饶县黄沙岭黄沙村的茅店到大屋村的黄沙岭之间约二十公里的乡村道路，南宋时是一条直通上饶古城的比较繁华的官道，东到上饶，西通江西省铅（yán）山县。<br>“明月别枝惊鹊”句：明亮的月光惊醒了睡在树枝上的喜鹊。语出宋·苏轼《杭州牡丹开时，仆犹在常、润，周令作诗见寄，次其韵，复次一首送赴阙·其二》诗：“天静伤鸿犹戢翼，月明惊鹊未安枝”。别枝，斜枝。<br>“七八个星天外，两三点雨山前”句：五代十国后蜀·何光远《鉴诫录·卷五·容易格》：“王蜀卢侍郎延让吟诗，多著寻常容易言语，时辈称之为高格。……然于数篇见境尤妙，有《松门寺》云：‘山寺取凉当夏夜，共僧蹲坐石阶前。两三条电欲为雨，七八个星犹在天。衣汗稍停床上扇，茶香时拨涧中泉。通宵听论莲华义，不藉松窗一觉眠。’”<br>茅店：茅草盖的乡村客店。<br>社：土地神庙。<br>社林：土地庙附近的树林。古时，村有社树，为祀神处，故曰“社林”。<br>溪桥：一作“溪头”。<br>忽见（xiàn）：忽然出现。见，同“现”，显现、出现。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>辛稼轩在南宋做到封疆大吏，但他英伟磊落的议论和果断干练的作风，特别是力主抗战的政治主张，却遭到同僚的嫉恨和最高统治阶层的打击。宋孝宗淳熙八年（公元1181年），他被弹劾罢官，回到带湖家居，过着投闲置散的退隐生活。辛弃疾一直重视农业生产和同情民间疾苦，这首词正作于辛稼轩闲居上饶带湖期间。<br>此词着意描写黄沙岭的夜景。明月清风，疏星稀雨，鹊惊蝉鸣，稻花飘香，蛙声一片。词从视觉、听觉和嗅觉三方面抒写夏夜的山村风光。情景交融，优美如画。恬静自然，生动逼真。是宋词中以农村生活为题材的佳作。</p></div></div>
+        <article class="poem-content" data-kind="词" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>明月别枝惊鹊，清风半夜鸣蝉。稻花香里说丰年，听取蛙声一片。</p><p>七八个星天外，两三点雨山前。旧时茅店社林边，路转溪桥忽见。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>天边的明月升上了树梢，惊飞了栖息在枝头的喜鹊。清凉的晚风仿佛传来了远处的蝉叫声。在稻花的香气里，人们谈论着丰收的年景，耳边传来一阵阵青蛙的叫声，好像在说着丰收年。<br>天空中轻云漂浮，闪烁的星星时隐时现，山前下起了淅淅沥沥的小雨，从前那熟悉的茅店小屋依然坐落在土地庙附近的树林中，山路一转，曾经那记忆深刻的溪流小桥呈现在眼前。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>西江月：唐教坊曲名，后用作词牌名。调名取自李白《苏台览古》“只今唯有西江月，曾照吴王宫里人”。西江是长江的别称，调咏吴王西施的故事。又名《白蘋香》、《步虚词》、《晚香时候》、《玉炉三涧雪》、《江月令》。双调五十字，平仄两协。后阕字句作法与前阕相同。<br>黄沙道：指的是从江西省上饶县黄沙岭黄沙村的茅店到大屋村的黄沙岭之间约二十公里的乡村道路，南宋时是一条直通上饶古城的比较繁华的官道，东到上饶，西通江西省铅（yán）山县。<br>“明月别枝惊鹊”句：明亮的月光惊醒了睡在树枝上的喜鹊。语出宋·苏轼《杭州牡丹开时，仆犹在常、润，周令作诗见寄，次其韵，复次一首送赴阙·其二》诗：“天静伤鸿犹戢翼，月明惊鹊未安枝”。别枝，斜枝。<br>“七八个星天外，两三点雨山前”句：五代十国后蜀·何光远《鉴诫录·卷五·容易格》：“王蜀卢侍郎延让吟诗，多著寻常容易言语，时辈称之为高格。……然于数篇见境尤妙，有《松门寺》云：‘山寺取凉当夏夜，共僧蹲坐石阶前。两三条电欲为雨，七八个星犹在天。衣汗稍停床上扇，茶香时拨涧中泉。通宵听论莲华义，不藉松窗一觉眠。’”<br>茅店：茅草盖的乡村客店。<br>社：土地神庙。<br>社林：土地庙附近的树林。古时，村有社树，为祀神处，故曰“社林”。<br>溪桥：一作“溪头”。<br>忽见（xiàn）：忽然出现。见，同“现”，显现、出现。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>辛稼轩在南宋做到封疆大吏，但他英伟磊落的议论和果断干练的作风，特别是力主抗战的政治主张，却遭到同僚的嫉恨和最高统治阶层的打击。宋孝宗淳熙八年（公元1181年），他被弹劾罢官，回到带湖家居，过着投闲置散的退隐生活。辛弃疾一直重视农业生产和同情民间疾苦，这首词正作于辛稼轩闲居上饶带湖期间。<br>此词着意描写黄沙岭的夜景。明月清风，疏星稀雨，鹊惊蝉鸣，稻花飘香，蛙声一片。词从视觉、听觉和嗅觉三方面抒写夏夜的山村风光。情景交融，优美如画。恬静自然，生动逼真。是宋词中以农村生活为题材的佳作。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -134,7 +165,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/383874.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

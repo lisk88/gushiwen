@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>使至塞上 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>使至塞上 - 王维 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="使至塞上是唐朝诗人王维的经典作品。本页面提供使至塞上的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="使至塞上,王维,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="使至塞上 - 王维 - 唐朝古诗文">
+    <meta property="og:description" content="使至塞上是唐朝诗人王维的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="使至塞上 - 王维 - 唐朝古诗文">
+    <meta name="twitter:description" content="使至塞上是唐朝诗人王维的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "使至塞上",
+      "author": {
+        "@type": "Person",
+        "name": "王维"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "使至塞上是唐朝诗人王维的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">使至塞上</h1>
-            <div class="poem-author">【唐】王维</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">王维</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>单车欲问边，属国过居延。</p><p>征蓬出汉塞，归雁入胡天。</p><p>大漠孤烟直，长河落日圆。</p><p>萧关逢候骑，都护在燕然。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>乘单车想去慰问边关，路经的属国已过居延。<br>千里飞蓬也飘出汉塞，北归大雁正翱翔云天。<br>浩瀚沙漠中孤烟直上，无尽长河上落日浑圆。<br>到萧关遇到侦候骑士，告诉我都护已在燕然。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>使至塞上：奉命出使边塞。<br>使：出使。<br>单车：一辆车，车辆少，这里形容轻车简从。<br>问边：到边塞去看望，指慰问守卫边疆的官兵。<br>属国：有几种解释：一指少数民族附属于汉族朝廷而存其国号者。汉、唐两朝均有一些属国。二指官名，秦汉时有一种官职名为典属国，苏武归汉后即授典属国官职。属国，即典属国的简称，汉代称负责外交事物的官员为典属国，唐人有时以「属国」代称出使边陲的使臣，这里诗人用来指自己使者的身份。<br>居延：地名，汉代称居延泽，唐代称居延海，在今内蒙古额济纳旗北境。又西汉张掖郡有居延县（参见《汉书·地理志》），故城在今额济纳旗东南。又东汉凉州刺史部有张掖居延属国，辖境在居延泽一带。此句一般注本均言王维路过居延。然而王维此次出使，实际上无需经过居延。因而林庚、冯沅君主编的《中国历代诗歌选》认为此句是写唐王朝「边塞的辽阔，附属国直到居延以外」。<br>征蓬：随风远飞的枯蓬，此处为诗人自喻。<br>归雁：雁是候鸟，春天北飞，秋天南行，这里是指大雁北飞。<br>胡天：胡人的领地。这里是指唐军占领的北方。<br>大漠：大沙漠，此处大约是指凉州之北的沙漠。<br>孤烟：赵殿成注有二解：一云古代边防报警时燃狼粪，「其烟直而聚，虽风吹之不散」。二云塞外多旋风，「袅烟沙而直上」。据后人有到甘肃、新疆实地考察者证实，确有旋风如「孤烟直上」。又：孤烟也可能是唐代边防使用的平安火。《通典·卷二一八》云：「及暮，平安火不至。」胡三省注：「《六典》：唐镇戍烽候所至，大率相去三十里，每日初夜，放烟一炬，谓之平安火。」<br>长河：一说指流经凉州（今甘肃武威）以北沙漠的一条内陆河，这条河在唐代叫马成河，疑即今石羊河；一说指古弱水（今额济纳河），中国第二大内陆河，干流全长八百二十一公里，流经青海省、甘肃省和内蒙古自治区，最后注入苏古淖尔（东居延海）和嘎顺淖尔（西居延海），其上游流淌在甘肃张掖地区，称羌谷水、鄂博河（古作弱水），流到酒泉地区就改称弱水，进入阿拉善盟则称额济纳河。<br>萧关：古关名，又名陇山关，故址在今宁夏固原东南。<br>候骑：一作「候吏」，负责侦察、通讯的骑兵。王维出使河西并不经过萧关，此处大概是用何逊诗「候骑出萧关，追兵赴马邑」之意，非实写。<br>都护：唐朝在西北边疆置安西、安北等六大都护府，其长官称都护，每府派大都护一人，副都护二人，负责辖区一切事务。这里指前敌统帅。<br>燕然：古山名，即今蒙古国杭爱山。这里代指前线。《后汉书·窦宪传》：宪率军大破单于军，「遂登燕然山，去塞三千馀里，刻石勒功，纪汉威德，令班固作铭。」此两句意谓在途中遇到候骑，得知主帅破敌后尚在前线未归。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗为唐代诗人王维奉命赴边疆慰问将士途中所作的一首纪行诗，记述出使塞上的旅程以及旅程中所见的塞外风光。首联两句交待此行目的和到达地点，诗缘何而作；颔联两句包含多重意蕴，借蓬草自况，写飘零之感；颈联两句描绘了边陲大漠中壮阔雄奇的景象，境界阔大，气象雄浑；尾联两句虚写战争已取得胜利，流露出对都护的赞叹。此诗既反映了边塞生活，同时也表达了诗人由于被排挤而产生的孤独、寂寞、悲伤之情以及在大漠的雄浑景色中情感得到熏陶、净化、升华后产生的慷慨悲壮之情，显露出一种豁达情怀。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>单车欲问边，属国过居延。</p><p>征蓬出汉塞，归雁入胡天。</p><p>大漠孤烟直，长河落日圆。</p><p>萧关逢候骑，都护在燕然。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>乘单车想去慰问边关，路经的属国已过居延。<br>千里飞蓬也飘出汉塞，北归大雁正翱翔云天。<br>浩瀚沙漠中孤烟直上，无尽长河上落日浑圆。<br>到萧关遇到侦候骑士，告诉我都护已在燕然。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>使至塞上：奉命出使边塞。<br>使：出使。<br>单车：一辆车，车辆少，这里形容轻车简从。<br>问边：到边塞去看望，指慰问守卫边疆的官兵。<br>属国：有几种解释：一指少数民族附属于汉族朝廷而存其国号者。汉、唐两朝均有一些属国。二指官名，秦汉时有一种官职名为典属国，苏武归汉后即授典属国官职。属国，即典属国的简称，汉代称负责外交事物的官员为典属国，唐人有时以「属国」代称出使边陲的使臣，这里诗人用来指自己使者的身份。<br>居延：地名，汉代称居延泽，唐代称居延海，在今内蒙古额济纳旗北境。又西汉张掖郡有居延县（参见《汉书·地理志》），故城在今额济纳旗东南。又东汉凉州刺史部有张掖居延属国，辖境在居延泽一带。此句一般注本均言王维路过居延。然而王维此次出使，实际上无需经过居延。因而林庚、冯沅君主编的《中国历代诗歌选》认为此句是写唐王朝「边塞的辽阔，附属国直到居延以外」。<br>征蓬：随风远飞的枯蓬，此处为诗人自喻。<br>归雁：雁是候鸟，春天北飞，秋天南行，这里是指大雁北飞。<br>胡天：胡人的领地。这里是指唐军占领的北方。<br>大漠：大沙漠，此处大约是指凉州之北的沙漠。<br>孤烟：赵殿成注有二解：一云古代边防报警时燃狼粪，「其烟直而聚，虽风吹之不散」。二云塞外多旋风，「袅烟沙而直上」。据后人有到甘肃、新疆实地考察者证实，确有旋风如「孤烟直上」。又：孤烟也可能是唐代边防使用的平安火。《通典·卷二一八》云：「及暮，平安火不至。」胡三省注：「《六典》：唐镇戍烽候所至，大率相去三十里，每日初夜，放烟一炬，谓之平安火。」<br>长河：一说指流经凉州（今甘肃武威）以北沙漠的一条内陆河，这条河在唐代叫马成河，疑即今石羊河；一说指古弱水（今额济纳河），中国第二大内陆河，干流全长八百二十一公里，流经青海省、甘肃省和内蒙古自治区，最后注入苏古淖尔（东居延海）和嘎顺淖尔（西居延海），其上游流淌在甘肃张掖地区，称羌谷水、鄂博河（古作弱水），流到酒泉地区就改称弱水，进入阿拉善盟则称额济纳河。<br>萧关：古关名，又名陇山关，故址在今宁夏固原东南。<br>候骑：一作「候吏」，负责侦察、通讯的骑兵。王维出使河西并不经过萧关，此处大概是用何逊诗「候骑出萧关，追兵赴马邑」之意，非实写。<br>都护：唐朝在西北边疆置安西、安北等六大都护府，其长官称都护，每府派大都护一人，副都护二人，负责辖区一切事务。这里指前敌统帅。<br>燕然：古山名，即今蒙古国杭爱山。这里代指前线。《后汉书·窦宪传》：宪率军大破单于军，「遂登燕然山，去塞三千馀里，刻石勒功，纪汉威德，令班固作铭。」此两句意谓在途中遇到候骑，得知主帅破敌后尚在前线未归。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>此诗为唐代诗人王维奉命赴边疆慰问将士途中所作的一首纪行诗，记述出使塞上的旅程以及旅程中所见的塞外风光。首联两句交待此行目的和到达地点，诗缘何而作；颔联两句包含多重意蕴，借蓬草自况，写飘零之感；颈联两句描绘了边陲大漠中壮阔雄奇的景象，境界阔大，气象雄浑；尾联两句虚写战争已取得胜利，流露出对都护的赞叹。此诗既反映了边塞生活，同时也表达了诗人由于被排挤而产生的孤独、寂寞、悲伤之情以及在大漠的雄浑景色中情感得到熏陶、净化、升华后产生的慷慨悲壮之情，显露出一种豁达情怀。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/154736.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

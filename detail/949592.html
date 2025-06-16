@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>北冥有鱼 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>北冥有鱼 - 庄子 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="北冥有鱼是周朝诗人庄子的经典作品。本页面提供北冥有鱼的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="北冥有鱼,庄子,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="北冥有鱼 - 庄子 - 周朝古诗文">
+    <meta property="og:description" content="北冥有鱼是周朝诗人庄子的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="北冥有鱼 - 庄子 - 周朝古诗文">
+    <meta name="twitter:description" content="北冥有鱼是周朝诗人庄子的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "北冥有鱼",
+      "author": {
+        "@type": "Person",
+        "name": "庄子"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "北冥有鱼是周朝诗人庄子的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">北冥有鱼</h1>
-            <div class="poem-author">【周】庄子</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">庄子</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。南冥者，天池也。《齐谐》者，志怪者也。《谐》之言曰：「鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。」野马也，尘埃也，生物之以息相吹也。天之苍苍，其正色邪？其远而无所至极邪？其视下也，亦若是则已矣。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>北海里有一条鱼，它的名字叫鲲。鲲非常巨大，不知道有几千里。鲲变化成为鸟，它的名字就叫做鹏。鹏的脊背，也不知道有几千里长；当它振动翅膀奋起直飞的时候，翅膀就好像挂在天边的云彩。这只鸟，大风吹动海水的时候就要迁徙到南方的大海去了。南方的大海是一个天然的大池子。《齐谐》这本书，是记载一些怪异事情的书。书上记载：「鹏往南方的大海迁徙的时候，翅膀拍打水面，能激起三千里的浪涛，环绕着旋风飞上了九万里的高空，乘着六月的风离开了北海。」像野马奔腾一样的游气，飘飘扬扬的尘埃，活动着的生物都因为风吹而运动。天空苍苍茫茫的，难道就是它本来的颜色吗？还是因为天高远而看不到尽头呢？鹏往下看的时候，看见的应该也是这个样子。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>逍遥游：闲适自得、无拘无束的样子。<br>北冥：北海，因海水深黑而得名。冥，通「溟」，指广阔幽深的大海。下文的「南冥」和「冥海」都用此意。<br>鲲（kūn）：传说中的大鱼。本义鱼子，小鱼。在此被庄子借用为大鱼之义，这符合庄子的《齐物论》本旨和庄子的独特的奇诡文风。<br>几：本义为极微小，引申为「极为接近」。《庄子》中此种用法不少，如《人间世》中「无传其溢言，则几乎全」；又引申为「尽」，《庄子》中此种用法更多，如「适得而几矣」（《齐物论》），「无时无几」（《则阳》）。此处当解释为「尽」。旧说「不知其几千里也」都解释为「不知道它有几千里大」，恐误。因《庄子》一书中表数量的词都用「数」，如「数仞」、「数金」释为「几仞」、「很多金子」；若要表达「几千里大」之义，应为「不知其数千里也」（《逍遥游》后文有「其广数千里」）。<br>千里也：应有千里之大。<br>鹏：传说中的大鸟。<br>怒而飞：振翅奋发。怒，奋发，这里指鼓起翅膀，通「努」，奋力飞举。<br>垂天之云：悬挂在天空的云。垂天，天边，垂，通「陲」，边际。<br>海运：海动，古有“六月海动”之说，海动必有大风，有大风鹏鸟始可借风力而南徙。指海啸，形容海动风起之时。<br>徙：迁徙。<br>天池：天然形成的大水池。<br>《齐谐》：志怪小说集。《隋书·经籍志》史部杂传类着录，七卷，题宋散骑侍郎东阳无疑撰。《旧唐志》同，《新唐志》入小说家类。作者事迹不详，今人多以为晋末宋初人。成书亦在宋初。该书亡于赵宋，遗文散见于《艺文类聚》、《法苑珠林》、《初学记》、《白孔六帖》等类书中，其中《太平广记》、《太平御览》征引最多。常见的辑佚本有马国翰《玉函山房辑佚书》本和鲁迅《古小说钩沉》本，均为十五条。<br>志怪：记述怪异的故事。志，记述。<br>水击：「击水」一词的倒装，形容大鹏起飞时翅膀拍击水面的壮观景象。击，拍打。<br>抟（tuán）扶摇而上者九万里：乘着旋风环旋飞上几万里的高空。抟，盘旋上升，一说“抟”当作“搏”（bó），拍击的意思。扶摇，旋风。九，表虚数，不是实指。<br>去以六月息：凭借着六月的大风才能离开。去，离开。以，用。息，气息，这里指风。<br>野马：云雾之气变化腾涌成野马的样子。<br>尘埃：空中游尘。<br>以息相吹也：以气息相互吹而飘得。<br>苍苍：深蓝色。<br>其：或许。<br>正色：真正的颜色。<br>邪（yé）：通「耶」，疑问词。<br>其视下也：它（指大鹏）向下俯视。<br>亦若是则已矣：也不过像人在地面上看天一样罢了。是，这样。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥。南冥者，天池也。《齐谐》者，志怪者也。《谐》之言曰：「鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。」野马也，尘埃也，生物之以息相吹也。天之苍苍，其正色邪？其远而无所至极邪？其视下也，亦若是则已矣。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>北海里有一条鱼，它的名字叫鲲。鲲非常巨大，不知道有几千里。鲲变化成为鸟，它的名字就叫做鹏。鹏的脊背，也不知道有几千里长；当它振动翅膀奋起直飞的时候，翅膀就好像挂在天边的云彩。这只鸟，大风吹动海水的时候就要迁徙到南方的大海去了。南方的大海是一个天然的大池子。《齐谐》这本书，是记载一些怪异事情的书。书上记载：「鹏往南方的大海迁徙的时候，翅膀拍打水面，能激起三千里的浪涛，环绕着旋风飞上了九万里的高空，乘着六月的风离开了北海。」像野马奔腾一样的游气，飘飘扬扬的尘埃，活动着的生物都因为风吹而运动。天空苍苍茫茫的，难道就是它本来的颜色吗？还是因为天高远而看不到尽头呢？鹏往下看的时候，看见的应该也是这个样子。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>逍遥游：闲适自得、无拘无束的样子。<br>北冥：北海，因海水深黑而得名。冥，通「溟」，指广阔幽深的大海。下文的「南冥」和「冥海」都用此意。<br>鲲（kūn）：传说中的大鱼。本义鱼子，小鱼。在此被庄子借用为大鱼之义，这符合庄子的《齐物论》本旨和庄子的独特的奇诡文风。<br>几：本义为极微小，引申为「极为接近」。《庄子》中此种用法不少，如《人间世》中「无传其溢言，则几乎全」；又引申为「尽」，《庄子》中此种用法更多，如「适得而几矣」（《齐物论》），「无时无几」（《则阳》）。此处当解释为「尽」。旧说「不知其几千里也」都解释为「不知道它有几千里大」，恐误。因《庄子》一书中表数量的词都用「数」，如「数仞」、「数金」释为「几仞」、「很多金子」；若要表达「几千里大」之义，应为「不知其数千里也」（《逍遥游》后文有「其广数千里」）。<br>千里也：应有千里之大。<br>鹏：传说中的大鸟。<br>怒而飞：振翅奋发。怒，奋发，这里指鼓起翅膀，通「努」，奋力飞举。<br>垂天之云：悬挂在天空的云。垂天，天边，垂，通「陲」，边际。<br>海运：海动，古有“六月海动”之说，海动必有大风，有大风鹏鸟始可借风力而南徙。指海啸，形容海动风起之时。<br>徙：迁徙。<br>天池：天然形成的大水池。<br>《齐谐》：志怪小说集。《隋书·经籍志》史部杂传类着录，七卷，题宋散骑侍郎东阳无疑撰。《旧唐志》同，《新唐志》入小说家类。作者事迹不详，今人多以为晋末宋初人。成书亦在宋初。该书亡于赵宋，遗文散见于《艺文类聚》、《法苑珠林》、《初学记》、《白孔六帖》等类书中，其中《太平广记》、《太平御览》征引最多。常见的辑佚本有马国翰《玉函山房辑佚书》本和鲁迅《古小说钩沉》本，均为十五条。<br>志怪：记述怪异的故事。志，记述。<br>水击：「击水」一词的倒装，形容大鹏起飞时翅膀拍击水面的壮观景象。击，拍打。<br>抟（tuán）扶摇而上者九万里：乘着旋风环旋飞上几万里的高空。抟，盘旋上升，一说“抟”当作“搏”（bó），拍击的意思。扶摇，旋风。九，表虚数，不是实指。<br>去以六月息：凭借着六月的大风才能离开。去，离开。以，用。息，气息，这里指风。<br>野马：云雾之气变化腾涌成野马的样子。<br>尘埃：空中游尘。<br>以息相吹也：以气息相互吹而飘得。<br>苍苍：深蓝色。<br>其：或许。<br>正色：真正的颜色。<br>邪（yé）：通「耶」，疑问词。<br>其视下也：它（指大鹏）向下俯视。<br>亦若是则已矣：也不过像人在地面上看天一样罢了。是，这样。</p></div></div>
             
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

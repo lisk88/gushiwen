@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>泷冈阡表 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>泷冈阡表 - 欧阳修 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="泷冈阡表是宋朝诗人欧阳修的经典作品。本页面提供泷冈阡表的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="泷冈阡表,欧阳修,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="泷冈阡表 - 欧阳修 - 宋朝古诗文">
+    <meta property="og:description" content="泷冈阡表是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="泷冈阡表 - 欧阳修 - 宋朝古诗文">
+    <meta name="twitter:description" content="泷冈阡表是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "泷冈阡表",
+      "author": {
+        "@type": "Person",
+        "name": "欧阳修"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "泷冈阡表是宋朝诗人欧阳修的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">泷冈阡表</h1>
-            <div class="poem-author">【宋】欧阳修</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">欧阳修</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>呜呼！惟我皇考崇公，卜吉于泷冈之六十年，其子修始克表于其阡；非敢缓也，盖有待也。</p><p>修不幸，生四岁而孤。太夫人守节自誓；居穷，自力于衣食，以长以教，俾至于成人。太夫人告之曰：「汝父为吏，廉而好施与，喜宾客；其俸禄虽薄，常不使有馀。曰：『毋以是为我累。』故其亡也，无一瓦之覆，一垄之植，以庇而为生；吾何恃而能自守邪？吾于汝父，知其一二，以有待于汝也。自吾为汝家妇，不及事吾姑；然知汝父之能养也。汝孤而幼，吾不能知汝之必有立；然知汝父之必将有后也。吾之始归也，汝父免于母丧方逾年，岁时祭祀，则必涕泣曰：『祭而丰，不如养之薄也。』间御酒食，则又涕泣曰：『昔常不足，而今有馀，其何及也！』吾始一二见之，以为新免于丧适然耳；既而其后常然，至其终身，未尝不然。吾虽不及事姑，而以此知汝父之能养也。汝父为吏，尝夜烛治官书，屡废而叹。吾问之，则曰：『此死狱也，我求其生不得尔。』吾曰：『生可求乎？』曰：『求其生而不得，则死者与我皆无恨也；矧求而有得邪？以其有得，则知不求而死者有恨也。夫常求其生，犹失之死，而世常求其死也。』回顾乳者剑汝而立于旁，因指而叹曰：『术者谓我岁行在戌将死，使其言然，吾不及见儿之立也，后当以我语告之。』其平居教他子弟，常用此语，吾耳熟焉，故能详也。其施于外事，吾不能知；其居于家，无所矜饰，而所为如此，是真发于中者邪！呜呼！其心厚于仁者邪！此吾知汝父之必将有后也。汝其勉之！夫养不必丰，要于孝；利虽不得博于物，要其心之厚于仁，吾不能教汝，此汝父之志也。」修泣而志之，不敢忘。</p><p>先公少孤力学，咸平三年进士及第，为道州判官，泗、绵二州推官；又为泰州判官。享年五十有九，葬沙溪之泷冈。</p><p>太夫人姓郑氏，考讳德仪，世为江南名族。太夫人恭俭仁爱而有礼；初封福昌县太君，进封乐安、安康、彭城三郡太君。自其家少微时，治其家以俭约；其后常不使过之，曰：「吾儿不能苟合于世，俭薄所以居患难也。」其后修贬夷陵，太夫人言笑自若，曰：「汝家故贫贱也，吾处之有素矣。汝能安之，吾亦安矣。」</p><p>自先公之亡二十年，修始得禄而养。又十有二年，列官于朝，始得赠封其亲。又十年，修为龙图阁直学士、尚书吏部郎中、留守南京，太夫人以疾终于官舍，享年七十有二。又八年，修以非才入副枢密，遂参政事，又七年而罢。自登二府，天子推恩，其三世，盖自嘉祐以来，逢国大庆，必加宠锡。皇曾祖府君累赠金紫光禄大夫、太师、中书令；曾祖妣累封楚国太夫人。皇祖府君累赠金紫光禄大夫、太师、中书令兼尚书令，祖妣累封吴国太夫人。皇考崇公，累赠金紫光禄大夫、太师、中书令兼尚书令。皇妣累封越国太夫人。今上初郊，皇考赐爵为崇国公，太夫人进号魏国。</p><p>于是小子修泣而言曰：「呜呼！为善无不报，而迟速有时！此理之常也。惟我祖考，积善成德，宜享其隆，虽不克有于其躬，而赐爵受封，显荣褒大，实有三朝之锡命，是足以表见于后世，而庇赖其子孙矣。」乃列其世谱，具刻于碑，既又载我皇考崇公之遗训，太夫人之所以教，而有待于修者，并揭于阡。俾知夫小子修之德薄能鲜，遭时窃位，而幸全大节，不辱其先者，其来有自。</p><p>熙宁三年，岁次庚戌、四月辛酉朔十有五日乙亥，男推诚保德崇仁翊戴功臣、观文殿学士、特进行兵部尚书、知青州军州事、兼管内劝农使、充京东东路安抚使、上柱国、乐安郡开国公、食邑四千三百户、食实封一千二百户修表。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>唉！我的父亲崇国公，在泷冈占卜吉地安葬六十年之后，他的儿子修纔能够在墓道上立碑，这并不是敢有意迟缓，是因为有所等待。<br>我不幸，四岁时父亲就去世了，母亲立志守节，家境贫困，她靠自己的力量操持生活，还要抚养我、教育我，使我长大成人。母亲告诉我说：「你父亲为官清廉，乐于助人，又爱结交朋友，他的薪俸微薄，常常所剩无几，说：『不要让钱财使我受累！』因此他去世后，没有留下可赖以生存的家产。我靠什么守节呢？我对你父亲有所了解，因而把希望寄托在你身上。从我成为你家媳妇的时候，没赶上侍奉婆婆，但我知道你父亲很孝敬父母。你自幼失去父亲，我不能断定你将来有成就，但我知道你父亲一定后继有人。我刚出嫁时，你父亲为他母亲守孝刚一年。岁末祭祀祖先，他总是流泪说：「祭祀再丰富，也不如生前的微薄奉养啊。」偶然喫些好的酒菜，他也会流泪说：「从前娘在时常常不够，如今富足有馀，又无法让她嚐到！」刚开始我遇到这种情形，还以为是刚服完丧不久纔这样。后来却经常如此，直到去世。我虽然没来得及侍奉婆婆，可从这一点能看出你父亲很孝敬父母。」<br>「你父亲做官，曾经在夜里点着蜡烛看案卷，他多次停下来叹气。我问他，就说：『这是一个判了死罪的案子，我想为他求得一条生路却办不到。』我问：『可以为死囚找生路吗？』他说：『想为他寻求生路却无能为力，那么，死者和我就没有遗憾了，何况去寻求生路而又办到呢！正因为有得到赦免的，纔明白不认眞推求而被处死的人可能有遗恨啊。经常为死囚求生路，还不免错杀；偏偏世上总有人想置犯人于死地呢？』他回头看见奶娘抱着你站在旁边，于是指着你叹气说：『算命的说我遇上戌年就会死，假使他的话应验了，我就看不见儿子长大成人了，将来你要把我的话告诉他。』他也常常用这些话教育其他晚辈，我听惯了所以记得很清楚。他在外面怎么样，我不知道；但他在家里，从不装腔作势，他行事厚道，是發自内心的！唉！他是很重视仁的啊！因此我就知道你父亲一定会有好的后代。你一定努力啊！奉养父母不一定要丰厚，最重要的是孝敬；利益虽然不能遍施于所有的人，重在仁爱之心。我没什么可教你的，这些都是你父亲的愿望。」我流着泪记下了这些教诲，不敢忘记。<br>先父年幼丧父，努力读书。咸平三年考中进士，曾任道州判官，泗、绵二州推官，又做过泰州判官，享年五十九岁，葬在沙溪的泷岗。<br>太夫人姓郑，她的父亲名讳是德仪，世代都是江南有名望的家族。太夫人恭敬、俭约、仁爱又有礼仪教养，起初诰封为福昌县太君，进封为乐安、安康、彭城三郡太君。从我们家道中落以后，她就以俭约的原则持家，后来家境富裕了，也不许花费过多，她说：「我的儿子不能苟且迎合世人，俭约一些，纔能度过那可能要遭受的患难。」后来，我被贬夷陵，太夫人言笑如常，说：「你的家本来就贫贱，我已经习惯这种日子。你能安乐对待，我也能安乐。」<br>先父死后二十年，我纔取得俸禄来供养母亲。又过了十二年，列位于朝廷做京官，纔获得赠封双亲。又过了十年，我担任龙图阁直学士、尚书吏部郎中，留守南京。母亲因病逝世于官邸，享年七十二岁。又过了八年，我以不相称的才能，做了朝廷的副枢密使，进为参知政事。又过了七年纔解除职务。自从进入军、政二府后，天子施恩，褒奖三代宗亲。自从仁宗嘉祐年间以来，每逢国家大庆，必定对我的先祖加以赐恩。曾祖父累赠为金紫光禄大夫、太师、中书令，曾祖母累赠为楚国太夫人。祖父累赠为金紫光禄大夫、太师、中书令兼尚书令，祖母累赠为吴国太夫人。先父崇国公累赠为金紫光禄大夫、太师、中书令兼尚书令，先母累赠为越国太夫人。皇上初次举行祭天大礼，先父赐爵为崇国公，先母进爵为魏国太夫人。<br>于是我流着泪说：「唉！做善事无不得到好报的，时间或迟或早，这是必然的道理。我先祖和父亲积善有德，理应享有这种盛大的酬报。虽然他们在有生之年不能享受到，但是赐爵位、受封官，经表彰而光荣，因褒奖而崇大，具有三朝恩赏诰封，这就足够使其德行显扬于后世，庇荫支持子孙。」于是排列我家世代的谱系，详细刻在石碑上，接着又记下先父崇国公的遗训，以及太夫人的教育，以及所以对我有所待的原因，都写在阡表上，好让大家知道我德行浅薄，能力微小，衹是适逢其时纔能得到髙位，有幸保全大的原则，没有辱及先祖，都由于上述的原因。<br>神宗熙宁三年，庚戌年，四月初一辛酉，十五日乙亥，男推诚保德崇仁翊戴功臣、观文殿学士、特进、行兵部尚书，知青州军州事、兼管内劝农使、充京东路安抚使、上柱国、乐安郡开国公、食邑四千三百户、食实封一千二百户，欧阳修立表。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>泷（shuāng）冈：地名。在江西省永丰县沙溪南凤凰山上。<br>阡（qiān）表：卽墓碑。阡，墓道。<br>皇考：指亡父。<br>崇公：欧阳文忠父观，字仲宾，追封崇国公。<br>卜吉：指风水先生找到一块好坟地。<br>克：能够。<br>表：墓表，是记述死者公德的文体。<br>孤：古时年幼就死了父亲称孤。<br>太夫人：指欧阳文忠的母亲郑氏。古时列侯之妻称夫人，列侯死，子称其母为太夫人。<br>守节自誓：郑氏决心守寡，不再嫁人。<br>居穷：家境贫寒。衣食：指生活。<br>以长以教：一边抚养（欧阳文忠）一边教育他。以……以：一边……一边……，表示两个并列。<br>俾（bǐ）：使达到某种程度。<br>姑：丈夫的母亲，这里指欧阳文忠之祖母。<br>养：奉养，指孝顺父母。<br>始归：纔嫁过来的时候。古时女子出嫁称归。<br>免于母丧：母亲死后，守丧期满。旧时父母或祖父死，儿子与长房长孙须谢绝人事，做官的解除职务，在家守孝二十七上月（概称三年），也称守制。免，指期满。<br>间：间或，偶尔。<br>御：进用。<br>适然：偶然这样。<br>官书：官府的文书。这里指刑狱案件。<br>求其生不得：指无法免除他的死刑。<br>矧（shěn）：况且。<br>剑：抱。《礼记·曲礼上》：「负剑辟咡诏之。」郑康成注：「剑谓挟之于旁。」<br>戌：地支的第十一位，可与天干的甲、丙、戊、庚、壬相配来记年。<br>咸平：宋眞宗年号。<br>道州：地名，辖境为今天的湖南道县、宁远以南的潇河流域。<br>判官：官名，州郡长官的属官，掌管文书工作。<br>推官：州郡长官的属官，专管刑事。<br>考：亡父。<br>讳：名讳。<br>江南：宋时地区划分为路，宋眞宗时中国划分为十八路，江南为一路，辖区相当于今天的江西、江苏的长江以南，镇江、大茅山、长荡湖一线以西和安徽长江以南以及湖北阳新、通山等县。<br>夷陵：县名，今湖北宜昌市东南。宋仁宗景祐三年（西元一〇三六年），范文正与宰相吕文靖不和，罢知饶州，朝臣多论救，独谏官髙敏之以为当贬。欧阳文忠写信骂髙「不復知人间有羞耻事」，并叫他「直携此书于朝，使正予罪而诛之。」髙上其书于仁宗，欧阳文忠因此被贬为夷陵令。事见《宋史》范文正、欧阳文忠二传。<br>龙图阁：宋眞宗建。在会庆殿西偏，北连禁中，阁东曰资政殿、西曰述古殿。阁上供奉太宗御书、御制文集及典籍、图画、宝瑞之物，及宗正寺所进属籍、世谱。有学士、直学士、待制、直阁等官。包公曾为龙图阁直学士，人称包公为包龙图卽源于此。<br>南京：宋时南京为应天府，治所在今河南商丘市。<br>枢密：枢密使，官名，中国最高军事长官。<br>推恩：施恩惠于他人。<br>嘉祐：宋仁宗年号。<br>妣：已故母亲。<br>今上：当今的皇上，卽宋神宗。<br>郊：祭天。<br>三朝：宋仁宗、宋英宗、宋神宗。<br>熙宁：神宗年号。<br>庚戌：庚戌年，前文有「术者谓我岁行在戌年将死」。<br>辛酉：天干地支所记月份。<br>朔：初一。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《泷冈阡表》是唐宋八大家之一欧阳文忠代表作，被誉为中国古代三大祭文之一。该文是欧阳文忠在他父亲死后六十年所作的墓表。在表文中，作者盛赞父亲的孝顺与仁厚，母亲的俭约与安于贫贱。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>呜呼！惟我皇考崇公，卜吉于泷冈之六十年，其子修始克表于其阡；非敢缓也，盖有待也。</p><p>修不幸，生四岁而孤。太夫人守节自誓；居穷，自力于衣食，以长以教，俾至于成人。太夫人告之曰：「汝父为吏，廉而好施与，喜宾客；其俸禄虽薄，常不使有馀。曰：『毋以是为我累。』故其亡也，无一瓦之覆，一垄之植，以庇而为生；吾何恃而能自守邪？吾于汝父，知其一二，以有待于汝也。自吾为汝家妇，不及事吾姑；然知汝父之能养也。汝孤而幼，吾不能知汝之必有立；然知汝父之必将有后也。吾之始归也，汝父免于母丧方逾年，岁时祭祀，则必涕泣曰：『祭而丰，不如养之薄也。』间御酒食，则又涕泣曰：『昔常不足，而今有馀，其何及也！』吾始一二见之，以为新免于丧适然耳；既而其后常然，至其终身，未尝不然。吾虽不及事姑，而以此知汝父之能养也。汝父为吏，尝夜烛治官书，屡废而叹。吾问之，则曰：『此死狱也，我求其生不得尔。』吾曰：『生可求乎？』曰：『求其生而不得，则死者与我皆无恨也；矧求而有得邪？以其有得，则知不求而死者有恨也。夫常求其生，犹失之死，而世常求其死也。』回顾乳者剑汝而立于旁，因指而叹曰：『术者谓我岁行在戌将死，使其言然，吾不及见儿之立也，后当以我语告之。』其平居教他子弟，常用此语，吾耳熟焉，故能详也。其施于外事，吾不能知；其居于家，无所矜饰，而所为如此，是真发于中者邪！呜呼！其心厚于仁者邪！此吾知汝父之必将有后也。汝其勉之！夫养不必丰，要于孝；利虽不得博于物，要其心之厚于仁，吾不能教汝，此汝父之志也。」修泣而志之，不敢忘。</p><p>先公少孤力学，咸平三年进士及第，为道州判官，泗、绵二州推官；又为泰州判官。享年五十有九，葬沙溪之泷冈。</p><p>太夫人姓郑氏，考讳德仪，世为江南名族。太夫人恭俭仁爱而有礼；初封福昌县太君，进封乐安、安康、彭城三郡太君。自其家少微时，治其家以俭约；其后常不使过之，曰：「吾儿不能苟合于世，俭薄所以居患难也。」其后修贬夷陵，太夫人言笑自若，曰：「汝家故贫贱也，吾处之有素矣。汝能安之，吾亦安矣。」</p><p>自先公之亡二十年，修始得禄而养。又十有二年，列官于朝，始得赠封其亲。又十年，修为龙图阁直学士、尚书吏部郎中、留守南京，太夫人以疾终于官舍，享年七十有二。又八年，修以非才入副枢密，遂参政事，又七年而罢。自登二府，天子推恩，其三世，盖自嘉祐以来，逢国大庆，必加宠锡。皇曾祖府君累赠金紫光禄大夫、太师、中书令；曾祖妣累封楚国太夫人。皇祖府君累赠金紫光禄大夫、太师、中书令兼尚书令，祖妣累封吴国太夫人。皇考崇公，累赠金紫光禄大夫、太师、中书令兼尚书令。皇妣累封越国太夫人。今上初郊，皇考赐爵为崇国公，太夫人进号魏国。</p><p>于是小子修泣而言曰：「呜呼！为善无不报，而迟速有时！此理之常也。惟我祖考，积善成德，宜享其隆，虽不克有于其躬，而赐爵受封，显荣褒大，实有三朝之锡命，是足以表见于后世，而庇赖其子孙矣。」乃列其世谱，具刻于碑，既又载我皇考崇公之遗训，太夫人之所以教，而有待于修者，并揭于阡。俾知夫小子修之德薄能鲜，遭时窃位，而幸全大节，不辱其先者，其来有自。</p><p>熙宁三年，岁次庚戌、四月辛酉朔十有五日乙亥，男推诚保德崇仁翊戴功臣、观文殿学士、特进行兵部尚书、知青州军州事、兼管内劝农使、充京东东路安抚使、上柱国、乐安郡开国公、食邑四千三百户、食实封一千二百户修表。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>唉！我的父亲崇国公，在泷冈占卜吉地安葬六十年之后，他的儿子修纔能够在墓道上立碑，这并不是敢有意迟缓，是因为有所等待。<br>我不幸，四岁时父亲就去世了，母亲立志守节，家境贫困，她靠自己的力量操持生活，还要抚养我、教育我，使我长大成人。母亲告诉我说：「你父亲为官清廉，乐于助人，又爱结交朋友，他的薪俸微薄，常常所剩无几，说：『不要让钱财使我受累！』因此他去世后，没有留下可赖以生存的家产。我靠什么守节呢？我对你父亲有所了解，因而把希望寄托在你身上。从我成为你家媳妇的时候，没赶上侍奉婆婆，但我知道你父亲很孝敬父母。你自幼失去父亲，我不能断定你将来有成就，但我知道你父亲一定后继有人。我刚出嫁时，你父亲为他母亲守孝刚一年。岁末祭祀祖先，他总是流泪说：「祭祀再丰富，也不如生前的微薄奉养啊。」偶然喫些好的酒菜，他也会流泪说：「从前娘在时常常不够，如今富足有馀，又无法让她嚐到！」刚开始我遇到这种情形，还以为是刚服完丧不久纔这样。后来却经常如此，直到去世。我虽然没来得及侍奉婆婆，可从这一点能看出你父亲很孝敬父母。」<br>「你父亲做官，曾经在夜里点着蜡烛看案卷，他多次停下来叹气。我问他，就说：『这是一个判了死罪的案子，我想为他求得一条生路却办不到。』我问：『可以为死囚找生路吗？』他说：『想为他寻求生路却无能为力，那么，死者和我就没有遗憾了，何况去寻求生路而又办到呢！正因为有得到赦免的，纔明白不认眞推求而被处死的人可能有遗恨啊。经常为死囚求生路，还不免错杀；偏偏世上总有人想置犯人于死地呢？』他回头看见奶娘抱着你站在旁边，于是指着你叹气说：『算命的说我遇上戌年就会死，假使他的话应验了，我就看不见儿子长大成人了，将来你要把我的话告诉他。』他也常常用这些话教育其他晚辈，我听惯了所以记得很清楚。他在外面怎么样，我不知道；但他在家里，从不装腔作势，他行事厚道，是發自内心的！唉！他是很重视仁的啊！因此我就知道你父亲一定会有好的后代。你一定努力啊！奉养父母不一定要丰厚，最重要的是孝敬；利益虽然不能遍施于所有的人，重在仁爱之心。我没什么可教你的，这些都是你父亲的愿望。」我流着泪记下了这些教诲，不敢忘记。<br>先父年幼丧父，努力读书。咸平三年考中进士，曾任道州判官，泗、绵二州推官，又做过泰州判官，享年五十九岁，葬在沙溪的泷岗。<br>太夫人姓郑，她的父亲名讳是德仪，世代都是江南有名望的家族。太夫人恭敬、俭约、仁爱又有礼仪教养，起初诰封为福昌县太君，进封为乐安、安康、彭城三郡太君。从我们家道中落以后，她就以俭约的原则持家，后来家境富裕了，也不许花费过多，她说：「我的儿子不能苟且迎合世人，俭约一些，纔能度过那可能要遭受的患难。」后来，我被贬夷陵，太夫人言笑如常，说：「你的家本来就贫贱，我已经习惯这种日子。你能安乐对待，我也能安乐。」<br>先父死后二十年，我纔取得俸禄来供养母亲。又过了十二年，列位于朝廷做京官，纔获得赠封双亲。又过了十年，我担任龙图阁直学士、尚书吏部郎中，留守南京。母亲因病逝世于官邸，享年七十二岁。又过了八年，我以不相称的才能，做了朝廷的副枢密使，进为参知政事。又过了七年纔解除职务。自从进入军、政二府后，天子施恩，褒奖三代宗亲。自从仁宗嘉祐年间以来，每逢国家大庆，必定对我的先祖加以赐恩。曾祖父累赠为金紫光禄大夫、太师、中书令，曾祖母累赠为楚国太夫人。祖父累赠为金紫光禄大夫、太师、中书令兼尚书令，祖母累赠为吴国太夫人。先父崇国公累赠为金紫光禄大夫、太师、中书令兼尚书令，先母累赠为越国太夫人。皇上初次举行祭天大礼，先父赐爵为崇国公，先母进爵为魏国太夫人。<br>于是我流着泪说：「唉！做善事无不得到好报的，时间或迟或早，这是必然的道理。我先祖和父亲积善有德，理应享有这种盛大的酬报。虽然他们在有生之年不能享受到，但是赐爵位、受封官，经表彰而光荣，因褒奖而崇大，具有三朝恩赏诰封，这就足够使其德行显扬于后世，庇荫支持子孙。」于是排列我家世代的谱系，详细刻在石碑上，接着又记下先父崇国公的遗训，以及太夫人的教育，以及所以对我有所待的原因，都写在阡表上，好让大家知道我德行浅薄，能力微小，衹是适逢其时纔能得到髙位，有幸保全大的原则，没有辱及先祖，都由于上述的原因。<br>神宗熙宁三年，庚戌年，四月初一辛酉，十五日乙亥，男推诚保德崇仁翊戴功臣、观文殿学士、特进、行兵部尚书，知青州军州事、兼管内劝农使、充京东路安抚使、上柱国、乐安郡开国公、食邑四千三百户、食实封一千二百户，欧阳修立表。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>泷（shuāng）冈：地名。在江西省永丰县沙溪南凤凰山上。<br>阡（qiān）表：卽墓碑。阡，墓道。<br>皇考：指亡父。<br>崇公：欧阳文忠父观，字仲宾，追封崇国公。<br>卜吉：指风水先生找到一块好坟地。<br>克：能够。<br>表：墓表，是记述死者公德的文体。<br>孤：古时年幼就死了父亲称孤。<br>太夫人：指欧阳文忠的母亲郑氏。古时列侯之妻称夫人，列侯死，子称其母为太夫人。<br>守节自誓：郑氏决心守寡，不再嫁人。<br>居穷：家境贫寒。衣食：指生活。<br>以长以教：一边抚养（欧阳文忠）一边教育他。以……以：一边……一边……，表示两个并列。<br>俾（bǐ）：使达到某种程度。<br>姑：丈夫的母亲，这里指欧阳文忠之祖母。<br>养：奉养，指孝顺父母。<br>始归：纔嫁过来的时候。古时女子出嫁称归。<br>免于母丧：母亲死后，守丧期满。旧时父母或祖父死，儿子与长房长孙须谢绝人事，做官的解除职务，在家守孝二十七上月（概称三年），也称守制。免，指期满。<br>间：间或，偶尔。<br>御：进用。<br>适然：偶然这样。<br>官书：官府的文书。这里指刑狱案件。<br>求其生不得：指无法免除他的死刑。<br>矧（shěn）：况且。<br>剑：抱。《礼记·曲礼上》：「负剑辟咡诏之。」郑康成注：「剑谓挟之于旁。」<br>戌：地支的第十一位，可与天干的甲、丙、戊、庚、壬相配来记年。<br>咸平：宋眞宗年号。<br>道州：地名，辖境为今天的湖南道县、宁远以南的潇河流域。<br>判官：官名，州郡长官的属官，掌管文书工作。<br>推官：州郡长官的属官，专管刑事。<br>考：亡父。<br>讳：名讳。<br>江南：宋时地区划分为路，宋眞宗时中国划分为十八路，江南为一路，辖区相当于今天的江西、江苏的长江以南，镇江、大茅山、长荡湖一线以西和安徽长江以南以及湖北阳新、通山等县。<br>夷陵：县名，今湖北宜昌市东南。宋仁宗景祐三年（西元一〇三六年），范文正与宰相吕文靖不和，罢知饶州，朝臣多论救，独谏官髙敏之以为当贬。欧阳文忠写信骂髙「不復知人间有羞耻事」，并叫他「直携此书于朝，使正予罪而诛之。」髙上其书于仁宗，欧阳文忠因此被贬为夷陵令。事见《宋史》范文正、欧阳文忠二传。<br>龙图阁：宋眞宗建。在会庆殿西偏，北连禁中，阁东曰资政殿、西曰述古殿。阁上供奉太宗御书、御制文集及典籍、图画、宝瑞之物，及宗正寺所进属籍、世谱。有学士、直学士、待制、直阁等官。包公曾为龙图阁直学士，人称包公为包龙图卽源于此。<br>南京：宋时南京为应天府，治所在今河南商丘市。<br>枢密：枢密使，官名，中国最高军事长官。<br>推恩：施恩惠于他人。<br>嘉祐：宋仁宗年号。<br>妣：已故母亲。<br>今上：当今的皇上，卽宋神宗。<br>郊：祭天。<br>三朝：宋仁宗、宋英宗、宋神宗。<br>熙宁：神宗年号。<br>庚戌：庚戌年，前文有「术者谓我岁行在戌年将死」。<br>辛酉：天干地支所记月份。<br>朔：初一。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《泷冈阡表》是唐宋八大家之一欧阳文忠代表作，被誉为中国古代三大祭文之一。该文是欧阳文忠在他父亲死后六十年所作的墓表。在表文中，作者盛赞父亲的孝顺与仁厚，母亲的俭约与安于贫贱。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -134,7 +165,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.cn/view/1223956.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

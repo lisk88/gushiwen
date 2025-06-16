@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>六国论 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>六国论 - 苏洵 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="六国论是宋朝诗人苏洵的经典作品。本页面提供六国论的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="六国论,苏洵,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="六国论 - 苏洵 - 宋朝古诗文">
+    <meta property="og:description" content="六国论是宋朝诗人苏洵的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="六国论 - 苏洵 - 宋朝古诗文">
+    <meta name="twitter:description" content="六国论是宋朝诗人苏洵的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "六国论",
+      "author": {
+        "@type": "Person",
+        "name": "苏洵"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "六国论是宋朝诗人苏洵的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">六国论</h1>
-            <div class="poem-author">【宋】苏洵</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">苏洵</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>六国破灭，非兵不利，战不善，弊在赂秦。赂秦而力亏，破灭之道也。或曰：六国互丧，率赂秦耶？曰：不赂者以赂者丧，盖失强援，不能独完。故曰：弊在赂秦也。</p><p>秦以攻取之外，小则获邑，大则得城。较秦之所得，与战胜而得者，其实百倍；诸侯之所亡，与战败而亡者，其实亦百倍。则秦之所大欲，诸侯之所大患，固不在战矣。思厥先祖父，暴霜露，斩荆棘，以有尺寸之地。子孙视之不甚惜，举以予人，如弃草芥。今日割五城，明日割十城，然后得一夕安寝。起视四境，而秦兵又至矣。然则诸侯之地有限，暴秦之欲无厌，奉之弥繁，侵之愈急。故不战而强弱胜负已判矣。至于颠覆，理固宜然。古人云：“以地事秦，犹抱薪救火，薪不尽，火不灭。”此言得之。</p><p>齐人未尝赂秦，终继五国迁灭，何哉？与嬴而不助五国也。五国既丧，齐亦不免矣。燕赵之君，始有远略，能守其土，义不赂秦。是故燕虽小国而后亡，斯用兵之效也。至丹以荆卿为计，始速祸焉。赵尝五战于秦，二败而三胜。后秦击赵者再，李牧连却之。洎牧以谗诛，邯郸为郡，惜其用武而不终也。且燕、赵处秦革灭殆尽之际，可谓智力孤危，战败而亡，诚不得已。向使三国各爱其地，齐人勿附于秦，刺客不行，良将犹在，则胜负之数，存亡之理，当与秦相较，或未易量。</p><p>呜呼！以赂秦之地，封天下之谋臣，以事秦之心，礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！</p><p>夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，下而从六国破亡之故事，是又在六国下矣！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>六国灭亡，不是武器不锐利，仗打得不好，弊病在于割地向秦割地求和。向秦割地求和，自己的力量就亏损了，这是灭亡的原因。有人说：“六国相继灭亡，全都是由于割地贿赂秦国吗？”回答说：“不割地贿赂秦国的国家因为割地贿赂秦国的国家而灭亡。因为他们失去了强有力的外援，不能单独保全。所以说：‘弊病在于割地贿赂秦国’啊！”<br>秦国除用攻占的方法取得土地之外（还得到诸侯的割地贿赂），小的就获得城镇，大的就获得都市，把秦国由受贿赂得到的土地与战胜而得到的土地比较，实际上有一百倍，把诸侯贿赂秦国所失去的土地与战败所失去的土地比较，实际上也有一百倍。那么秦国最大的欲望，诸侯最大的祸患，当然就不在于战争了。回想他们的祖辈父辈，冒着霜露，披荆斩棘，因而才有一点点土地。可是子孙们看待它却很不珍惜，拿它来送人，就像抛弃小草一样。今天割去五座城，明天割去十座城，然后才能睡上一夜安稳觉。待起床一看四周边境，秦国的军队又打来了。那么，诸侯的土地有限，暴秦的欲望没有满足；谁送给它土地越多，它侵犯谁就越急。所以不用打仗，谁强谁弱、谁胜谁败就已分得清清楚楚了。六国落到灭亡的地步，按理本来应当这样。古人说：“用土地侍奉秦国，就像抱着柴草救火，柴草没有烧完，火就不会熄灭。”这话说得在理啊！<br>齐国不曾割地贿赂秦国，最后也随着五国灭亡，为什么呢？这是因为它跟秦国交好而不帮助五国啊。五国灭亡之后，齐国也就不能幸免了。燕国和赵国的君主，起初有远大的谋略，能够守住自己的土地，坚持正义不贿赂秦国。因此燕国虽然是个小国，却灭亡在后，这是用兵抵抗的效果啊。到了燕太子丹用派遣荆轲刺杀秦王作为对付秦国的策略，才招致灭亡的祸患。赵国曾经与秦国多次作战，败少胜多。后来秦国又两次攻打赵国，李牧接连打退了它。等到李牧因受谗言被赵王杀害，都城邯郸就变成秦国的一个郡，可惜它用兵抵抗却没能坚持到底啊。况且燕赵正处在其他国家被消灭了的时候，可说是智谋已尽，力量单薄，战败而亡国，实在是没有办法的事啊。假使当初韩、魏、楚三国都各自珍惜自己的土地，齐国不依附秦国，燕国的刺客不去秦国，赵国的良将李牧还活着，那么胜败存亡的命运，如果与秦国较量，也许还不容易估量呢。<br>唉！如果六国把贿赂秦国的土地封赏给天下的谋臣，用侍奉秦国的心意礼遇天下非凡的人才，齐心协力向西对付秦国，那么我担心秦国人连饭也咽不下喉呢。可悲啊！有这样的形势，却被秦国积久的威势所胁制，土地天天削减，月月割让，以至于走向灭亡。治理国家的人切不要让自己被敌人积久的威势所胁制啊！<br>六国和秦国都是诸侯，他们的势力比秦国弱，可是还有能够不割地贿赂而战胜秦国的形势。如果凭着一统天下的大国，反而重蹈六国灭亡的覆辙，这就又在六国之下了！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>兵：兵器<br>善：好。<br>弊在赂秦：弊病在于贿赂秦国。赂，贿赂。这里指向秦割地求和。<br>道：原因<br>或曰：有人说。这是设问。下句的“曰”是对该设问的回答。<br>率：都，皆。<br>盖：承接上文，表示原因，有“因为”的意思。<br>完：保全。<br>以攻取：用攻战（的办法）而夺取。<br>小：形容词作名词，小的地方。<br>其实：它的实际数目。<br>所大欲：所最想要的（东西），大，最。<br>厥先祖父：泛指他们的先人祖辈，指列国的先公先王。厥，其。先，对去世的尊长的敬称。祖父，祖辈与父辈。<br>暴（pù）霜露：暴露在霜露之中。意思是冒着霜露。和下文的斩荆棘，已有尺寸之地，都是形容创业的艰苦。<br>视：对待<br>举以予人：拿它（土地）来送给别人。实际是举之以予人，省略了之，代土地。<br>然则：既然这样，那么。<br>厌：同“餍”，满足。<br>奉之弥繁，侵之愈急：（诸侯）送给秦的土地越多，（秦国）侵略诸侯也越厉害。奉，奉送。弥、愈，都是“更加”的意思。繁，多。<br>判：决定。<br>至于：以至于。<br>颠覆：灭亡。<br>理固宜然：（按照）道理本来就应该这样。<br>“以地事秦······火不灭”：语见《史记·魏世家》和《战国策·魏策》。事，侍奉。<br>此言得之：这话对了。得之，得其理。之，指上面说的道理。<br>终：最后。<br>继：跟着。<br>迁灭：灭亡。古代灭人国家，同时迁其国宝、重器，故说“迁灭”。<br>与嬴：亲附秦国。与，亲附。嬴，秦王族的姓，此借指秦国。<br>既：连词，既然<br>免：幸免。<br>始有远略：起初有长远的谋略，这句中的“始”与下文“至丹”的“至”，“洎牧”的“洎”，“用武而不终”的“不终”，互相呼应。<br>义：名词作动词，坚持正义。<br>斯：这。<br>始：才。<br>速：招致。<br>再：两次。<br>却：使······退却。<br>洎（jì）：及，等到。<br>以：因为<br>谗：小人的坏话。<br>邯郸为郡：秦灭赵之后，把赵国改为秦国的邯郸郡。邯郸，赵国的都城。<br>且燕赵处秦革灭殆尽之际：燕赵两国正处在秦国把其他国家快要消灭干净的时候。革，改变，除去。殆，几乎，将要。<br>智力：智谋和力量（国力）。<br>向使：以前假如。<br>胜负之数，存亡之理：胜负存亡的命运。数，天数。理，理数。皆指命运。<br>当（tǎng）：同“倘”，如果。<br>易量：容易判断。<br>以：用。<br>礼：礼待。名作动。<br>食之不得下咽也：指寝食不安，内心惶恐。下，向下。名作动。咽，吞咽。<br>势：优势。<br>而：却。<br>积威：积久而成的威势。<br>劫：胁迫，劫持。<br>日：每天，一天天，名作状。下文“月”同。<br>于：比。<br>为国者无使为积威之所劫哉：治理国家的人不要被积久的威势胁迫啊！<br>可以：可以凭借。<br>苟：如果。<br>下而从六国破亡之故事：一作“而从六国破亡之故事”。从，跟随。故事，旧事，先例。<br>下：指在六国之后。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《六国论》是苏洵政论文代表作品。选自苏洵史论文章《权书》十篇里的第八篇。《六国论》提出并论证了六国灭亡“弊在赂秦”的精辟论点，“借古讽今”，抨击宋王朝对辽和西夏的屈辱政策，告诫北宋统治者要吸取六国灭亡的教训，以免重蹈覆辙。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>六国破灭，非兵不利，战不善，弊在赂秦。赂秦而力亏，破灭之道也。或曰：六国互丧，率赂秦耶？曰：不赂者以赂者丧，盖失强援，不能独完。故曰：弊在赂秦也。</p><p>秦以攻取之外，小则获邑，大则得城。较秦之所得，与战胜而得者，其实百倍；诸侯之所亡，与战败而亡者，其实亦百倍。则秦之所大欲，诸侯之所大患，固不在战矣。思厥先祖父，暴霜露，斩荆棘，以有尺寸之地。子孙视之不甚惜，举以予人，如弃草芥。今日割五城，明日割十城，然后得一夕安寝。起视四境，而秦兵又至矣。然则诸侯之地有限，暴秦之欲无厌，奉之弥繁，侵之愈急。故不战而强弱胜负已判矣。至于颠覆，理固宜然。古人云：“以地事秦，犹抱薪救火，薪不尽，火不灭。”此言得之。</p><p>齐人未尝赂秦，终继五国迁灭，何哉？与嬴而不助五国也。五国既丧，齐亦不免矣。燕赵之君，始有远略，能守其土，义不赂秦。是故燕虽小国而后亡，斯用兵之效也。至丹以荆卿为计，始速祸焉。赵尝五战于秦，二败而三胜。后秦击赵者再，李牧连却之。洎牧以谗诛，邯郸为郡，惜其用武而不终也。且燕、赵处秦革灭殆尽之际，可谓智力孤危，战败而亡，诚不得已。向使三国各爱其地，齐人勿附于秦，刺客不行，良将犹在，则胜负之数，存亡之理，当与秦相较，或未易量。</p><p>呜呼！以赂秦之地，封天下之谋臣，以事秦之心，礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！</p><p>夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，下而从六国破亡之故事，是又在六国下矣！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>六国灭亡，不是武器不锐利，仗打得不好，弊病在于割地向秦割地求和。向秦割地求和，自己的力量就亏损了，这是灭亡的原因。有人说：“六国相继灭亡，全都是由于割地贿赂秦国吗？”回答说：“不割地贿赂秦国的国家因为割地贿赂秦国的国家而灭亡。因为他们失去了强有力的外援，不能单独保全。所以说：‘弊病在于割地贿赂秦国’啊！”<br>秦国除用攻占的方法取得土地之外（还得到诸侯的割地贿赂），小的就获得城镇，大的就获得都市，把秦国由受贿赂得到的土地与战胜而得到的土地比较，实际上有一百倍，把诸侯贿赂秦国所失去的土地与战败所失去的土地比较，实际上也有一百倍。那么秦国最大的欲望，诸侯最大的祸患，当然就不在于战争了。回想他们的祖辈父辈，冒着霜露，披荆斩棘，因而才有一点点土地。可是子孙们看待它却很不珍惜，拿它来送人，就像抛弃小草一样。今天割去五座城，明天割去十座城，然后才能睡上一夜安稳觉。待起床一看四周边境，秦国的军队又打来了。那么，诸侯的土地有限，暴秦的欲望没有满足；谁送给它土地越多，它侵犯谁就越急。所以不用打仗，谁强谁弱、谁胜谁败就已分得清清楚楚了。六国落到灭亡的地步，按理本来应当这样。古人说：“用土地侍奉秦国，就像抱着柴草救火，柴草没有烧完，火就不会熄灭。”这话说得在理啊！<br>齐国不曾割地贿赂秦国，最后也随着五国灭亡，为什么呢？这是因为它跟秦国交好而不帮助五国啊。五国灭亡之后，齐国也就不能幸免了。燕国和赵国的君主，起初有远大的谋略，能够守住自己的土地，坚持正义不贿赂秦国。因此燕国虽然是个小国，却灭亡在后，这是用兵抵抗的效果啊。到了燕太子丹用派遣荆轲刺杀秦王作为对付秦国的策略，才招致灭亡的祸患。赵国曾经与秦国多次作战，败少胜多。后来秦国又两次攻打赵国，李牧接连打退了它。等到李牧因受谗言被赵王杀害，都城邯郸就变成秦国的一个郡，可惜它用兵抵抗却没能坚持到底啊。况且燕赵正处在其他国家被消灭了的时候，可说是智谋已尽，力量单薄，战败而亡国，实在是没有办法的事啊。假使当初韩、魏、楚三国都各自珍惜自己的土地，齐国不依附秦国，燕国的刺客不去秦国，赵国的良将李牧还活着，那么胜败存亡的命运，如果与秦国较量，也许还不容易估量呢。<br>唉！如果六国把贿赂秦国的土地封赏给天下的谋臣，用侍奉秦国的心意礼遇天下非凡的人才，齐心协力向西对付秦国，那么我担心秦国人连饭也咽不下喉呢。可悲啊！有这样的形势，却被秦国积久的威势所胁制，土地天天削减，月月割让，以至于走向灭亡。治理国家的人切不要让自己被敌人积久的威势所胁制啊！<br>六国和秦国都是诸侯，他们的势力比秦国弱，可是还有能够不割地贿赂而战胜秦国的形势。如果凭着一统天下的大国，反而重蹈六国灭亡的覆辙，这就又在六国之下了！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>兵：兵器<br>善：好。<br>弊在赂秦：弊病在于贿赂秦国。赂，贿赂。这里指向秦割地求和。<br>道：原因<br>或曰：有人说。这是设问。下句的“曰”是对该设问的回答。<br>率：都，皆。<br>盖：承接上文，表示原因，有“因为”的意思。<br>完：保全。<br>以攻取：用攻战（的办法）而夺取。<br>小：形容词作名词，小的地方。<br>其实：它的实际数目。<br>所大欲：所最想要的（东西），大，最。<br>厥先祖父：泛指他们的先人祖辈，指列国的先公先王。厥，其。先，对去世的尊长的敬称。祖父，祖辈与父辈。<br>暴（pù）霜露：暴露在霜露之中。意思是冒着霜露。和下文的斩荆棘，已有尺寸之地，都是形容创业的艰苦。<br>视：对待<br>举以予人：拿它（土地）来送给别人。实际是举之以予人，省略了之，代土地。<br>然则：既然这样，那么。<br>厌：同“餍”，满足。<br>奉之弥繁，侵之愈急：（诸侯）送给秦的土地越多，（秦国）侵略诸侯也越厉害。奉，奉送。弥、愈，都是“更加”的意思。繁，多。<br>判：决定。<br>至于：以至于。<br>颠覆：灭亡。<br>理固宜然：（按照）道理本来就应该这样。<br>“以地事秦······火不灭”：语见《史记·魏世家》和《战国策·魏策》。事，侍奉。<br>此言得之：这话对了。得之，得其理。之，指上面说的道理。<br>终：最后。<br>继：跟着。<br>迁灭：灭亡。古代灭人国家，同时迁其国宝、重器，故说“迁灭”。<br>与嬴：亲附秦国。与，亲附。嬴，秦王族的姓，此借指秦国。<br>既：连词，既然<br>免：幸免。<br>始有远略：起初有长远的谋略，这句中的“始”与下文“至丹”的“至”，“洎牧”的“洎”，“用武而不终”的“不终”，互相呼应。<br>义：名词作动词，坚持正义。<br>斯：这。<br>始：才。<br>速：招致。<br>再：两次。<br>却：使······退却。<br>洎（jì）：及，等到。<br>以：因为<br>谗：小人的坏话。<br>邯郸为郡：秦灭赵之后，把赵国改为秦国的邯郸郡。邯郸，赵国的都城。<br>且燕赵处秦革灭殆尽之际：燕赵两国正处在秦国把其他国家快要消灭干净的时候。革，改变，除去。殆，几乎，将要。<br>智力：智谋和力量（国力）。<br>向使：以前假如。<br>胜负之数，存亡之理：胜负存亡的命运。数，天数。理，理数。皆指命运。<br>当（tǎng）：同“倘”，如果。<br>易量：容易判断。<br>以：用。<br>礼：礼待。名作动。<br>食之不得下咽也：指寝食不安，内心惶恐。下，向下。名作动。咽，吞咽。<br>势：优势。<br>而：却。<br>积威：积久而成的威势。<br>劫：胁迫，劫持。<br>日：每天，一天天，名作状。下文“月”同。<br>于：比。<br>为国者无使为积威之所劫哉：治理国家的人不要被积久的威势胁迫啊！<br>可以：可以凭借。<br>苟：如果。<br>下而从六国破亡之故事：一作“而从六国破亡之故事”。从，跟随。故事，旧事，先例。<br>下：指在六国之后。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《六国论》是苏洵政论文代表作品。选自苏洵史论文章《权书》十篇里的第八篇。《六国论》提出并论证了六国灭亡“弊在赂秦”的精辟论点，“借古讽今”，抨击宋王朝对辽和西夏的屈辱政策，告诫北宋统治者要吸取六国灭亡的教训，以免重蹈覆辙。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/50131/4941291.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>超然台记 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>超然台记 - 苏轼 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="超然台记是宋朝诗人苏轼的经典作品。本页面提供超然台记的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="超然台记,苏轼,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="超然台记 - 苏轼 - 宋朝古诗文">
+    <meta property="og:description" content="超然台记是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="超然台记 - 苏轼 - 宋朝古诗文">
+    <meta name="twitter:description" content="超然台记是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "超然台记",
+      "author": {
+        "@type": "Person",
+        "name": "苏轼"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "超然台记是宋朝诗人苏轼的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">超然台记</h1>
-            <div class="poem-author">【宋】苏轼</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">苏轼</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>凡物，皆有可观。苟有可观，皆有可乐，非必怪奇玮丽者也。哺糟啜醨，皆可以醉；果蔬草木，皆可以饱。推此类也，吾安往而不乐？夫所谓求福而辞祸者，以福可喜而祸可悲也。人之所欲无穷，而物之可以足吾欲者有尽。美恶之辨战乎中，而去取之择交乎前，则可乐者常少，而可悲者常多，是谓求祸而辞福。夫求祸而辞福，岂人之情也哉？物有以盖之矣。彼游于物之内，而不游于物之外。物非有大小也，自其内而观之，未有不高且大者也。彼挟其高大以临我，则我常眩乱反复，如隙中之观斗，又焉知胜负之所在？是以美恶横生，而忧乐出焉，可不大哀乎！</p><p>予自钱塘移守胶西，释舟楫之安，而服车马之劳；去雕墙之美，而庇采椽之居；背湖山之观，而行桑麻之野。始至之日，岁比不登，盗贼满野，狱讼充斥；而斋厨索然，日食杞菊。人固疑予之不乐也。处之期年，而貌加丰，发之白者，日以反黑。予既乐其风俗之淳，而其吏民亦安予之拙也。于是治其园囿，洁其庭宇，伐安邱、高密之木，以修补破败，为苟完之计。而园之北，因城以为台者旧矣；稍葺而新之。时相与登览，放意肆志焉。南望马耳、常山，出没隐见，若近若远，庶几有隐君子乎？而其东则庐山，秦人卢敖之所从遁也。西望穆陵，隐然如城郭，师尚父、齐桓公之遗烈，犹有存者。北俯潍水，慨然太息，思淮阴之功，而吊其不终。台高而安，深而明，夏凉而冬温。雨雪之朝，风月之夕，予未尝不在，客未尝不从。撷园蔬，取池鱼，酿秫酒，瀹脱粟而食之，曰：“乐哉游乎！”</p><p>方是时，予弟子由适在济南，闻而赋之，且名其台曰“超然”。以见予之无所往而不乐者，盖游于物之外也。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>任何事物都有可观赏的地方。如有可观赏的地方，那么都可使人有快乐，不必一定要是怪异、新奇、雄伟、瑰丽的景观。吃酒糟、喝薄酒，都可以使人醉，水果蔬菜草木，都可以充饥。以此类推，我到哪儿会不快乐呢？人们之所以要追求幸福，避开灾祸，因为幸福可使人欢喜，而灾祸却使人悲伤。人的欲望是无穷的，而能满足我们欲望的东西却是有限的。如果美好和丑恶的区别在胸中激荡，选取和舍弃的选择在眼前交织，那么能使人快活的东西就很少了，而令人悲哀的事就很多，这叫做求祸避福。追求灾祸，躲避幸福，难道是人们的心愿吗？这是外物蒙蔽人呀！他们这些人局限在事物之中，而不能自由驰骋在事物之外；事物本无大小之别，如果人拘于从它内部来看待它，那么没有一物不是高大的。它以高大的形象横在我们面前，那么我常常会眼花缭乱反复不定了，就象在缝隙中看人争斗，又哪里能知道谁胜谁负呢？因此，心中充满美好和丑恶的区别，忧愁也就由此产生了；这不令人非常悲哀吗！<br>我从杭州调移到密州任知州，放弃了乘船的舒适快乐，而承受坐车骑马的劳累；放弃墙壁雕绘的华美漂亮的住宅，而蔽身在粗木造的屋舍里；远离杭州湖光山色的美景，来到桑麻丛生的荒野。刚到之时，连年收成不好，盗贼到处都有，案件也多不胜数；而厨房里空荡无物，每天都以野菜充饥，人们一定都怀疑我会不快乐。可我在这里住了一年后，面腴体丰，头发白的地方，也一天天变黑了。我既喜欢这里风俗的淳朴，这里的官吏百姓也习惯了我的愚拙无能。于是，在这里修整花园菜圃，打扫干净庭院屋宇，砍伐安丘、高密的树木，用来修补破败的房屋，以便勉强度日。在园子的北面，靠着城墙筑起的高台已经很旧了，稍加整修，让它焕然一新。我不时和大家一起登台观览，在那儿尽情游玩。从台上向南望去，马耳、常山时隐时现，有时似乎很近，有时又似乎很远，或许有隐士住在那里吧？台的东面就是卢山，秦人卢敖就是在那里隐遁的。向西望去是穆陵关，隐隐约约象一道城墙，姜太公、齐桓公的英雄业绩，尚有留存。向北俯视潍水，不禁慨叹万分，想起了淮阴侯韩信的赫赫战功，又哀叹他不得善终。这台虽然高，但却非常安稳；这台上居室幽深，却又明亮，夏凉冬暖。雨落雪飞的早晨，风清月明的夜晚，我没有不在那里的，朋友们也没有不在这里跟随着我的。我们采摘园子里的蔬菜，钓取池塘里的游鱼，酿高粱酒，煮糙米，大家一边吃一面赞叹：“多么快活的游乐啊！”<br>这个时候，我的弟弟苏辙字子由恰好在济南做官，听说了这件事，写了一篇文章，并且给这个台子取名“超然”，以说明我之所以到哪儿都快乐的原因，大概就是在于我的心能超乎事物之外啊！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>凡物皆有可观，省略“者”即可观者，值得观赏的地方。<br>哺：吃。<br>啜：喝。<br>醨：米酒。<br>醉：使……醉。<br>饱：使……饱。<br>吾安往而不乐：即“吾往安而不乐”。<br>而物之可以足吾欲者有尽：即“而可以足吾欲之物者有尽”，但是能满足我们欲望的东西却是有限的。<br>岂：难道。<br>情：心愿。<br>有以：可以用来。<br>盖：蒙蔽。<br>焉：哪里。<br>横：意外发生。<br>而：表承接，随后。<br>焉：于此。<br>背：远离。<br>比：连续，常常。<br>登：丰收。<br>苟全：大致完备。<br>葺（qì）：原指用茅草覆盖房子，后泛指修理房屋。<br>庶几：表希望或推测。<br>遗烈：前辈留下来的功业。<br>撷（xié）：摘下，取下。<br>秫（shú）：黏高粱，可以做烧酒。有的地区就指高粱。<br>瀹（yuè）：煮。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这篇文章反映了作者知足常乐、超然达观的人生态度，也隐含了少许内心苦闷、失意之情。<br>这篇文章用“乐”字贯穿全文，先写超然于物外，就无往而不乐，不能超然于物外，则必悲哀，正面写乐，反面写悲，悲是乐的反面，即是写乐的反面，终不离乐字。再写初到胶西之忧，再写初安之乐，治园修台，登览游乐。以忧去衬托乐，愈显出更加可喜可乐。以乐开头，以乐结尾，全文处处不离乐字，是“一字立骨”的佳作。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>凡物，皆有可观。苟有可观，皆有可乐，非必怪奇玮丽者也。哺糟啜醨，皆可以醉；果蔬草木，皆可以饱。推此类也，吾安往而不乐？夫所谓求福而辞祸者，以福可喜而祸可悲也。人之所欲无穷，而物之可以足吾欲者有尽。美恶之辨战乎中，而去取之择交乎前，则可乐者常少，而可悲者常多，是谓求祸而辞福。夫求祸而辞福，岂人之情也哉？物有以盖之矣。彼游于物之内，而不游于物之外。物非有大小也，自其内而观之，未有不高且大者也。彼挟其高大以临我，则我常眩乱反复，如隙中之观斗，又焉知胜负之所在？是以美恶横生，而忧乐出焉，可不大哀乎！</p><p>予自钱塘移守胶西，释舟楫之安，而服车马之劳；去雕墙之美，而庇采椽之居；背湖山之观，而行桑麻之野。始至之日，岁比不登，盗贼满野，狱讼充斥；而斋厨索然，日食杞菊。人固疑予之不乐也。处之期年，而貌加丰，发之白者，日以反黑。予既乐其风俗之淳，而其吏民亦安予之拙也。于是治其园囿，洁其庭宇，伐安邱、高密之木，以修补破败，为苟完之计。而园之北，因城以为台者旧矣；稍葺而新之。时相与登览，放意肆志焉。南望马耳、常山，出没隐见，若近若远，庶几有隐君子乎？而其东则庐山，秦人卢敖之所从遁也。西望穆陵，隐然如城郭，师尚父、齐桓公之遗烈，犹有存者。北俯潍水，慨然太息，思淮阴之功，而吊其不终。台高而安，深而明，夏凉而冬温。雨雪之朝，风月之夕，予未尝不在，客未尝不从。撷园蔬，取池鱼，酿秫酒，瀹脱粟而食之，曰：“乐哉游乎！”</p><p>方是时，予弟子由适在济南，闻而赋之，且名其台曰“超然”。以见予之无所往而不乐者，盖游于物之外也。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>任何事物都有可观赏的地方。如有可观赏的地方，那么都可使人有快乐，不必一定要是怪异、新奇、雄伟、瑰丽的景观。吃酒糟、喝薄酒，都可以使人醉，水果蔬菜草木，都可以充饥。以此类推，我到哪儿会不快乐呢？人们之所以要追求幸福，避开灾祸，因为幸福可使人欢喜，而灾祸却使人悲伤。人的欲望是无穷的，而能满足我们欲望的东西却是有限的。如果美好和丑恶的区别在胸中激荡，选取和舍弃的选择在眼前交织，那么能使人快活的东西就很少了，而令人悲哀的事就很多，这叫做求祸避福。追求灾祸，躲避幸福，难道是人们的心愿吗？这是外物蒙蔽人呀！他们这些人局限在事物之中，而不能自由驰骋在事物之外；事物本无大小之别，如果人拘于从它内部来看待它，那么没有一物不是高大的。它以高大的形象横在我们面前，那么我常常会眼花缭乱反复不定了，就象在缝隙中看人争斗，又哪里能知道谁胜谁负呢？因此，心中充满美好和丑恶的区别，忧愁也就由此产生了；这不令人非常悲哀吗！<br>我从杭州调移到密州任知州，放弃了乘船的舒适快乐，而承受坐车骑马的劳累；放弃墙壁雕绘的华美漂亮的住宅，而蔽身在粗木造的屋舍里；远离杭州湖光山色的美景，来到桑麻丛生的荒野。刚到之时，连年收成不好，盗贼到处都有，案件也多不胜数；而厨房里空荡无物，每天都以野菜充饥，人们一定都怀疑我会不快乐。可我在这里住了一年后，面腴体丰，头发白的地方，也一天天变黑了。我既喜欢这里风俗的淳朴，这里的官吏百姓也习惯了我的愚拙无能。于是，在这里修整花园菜圃，打扫干净庭院屋宇，砍伐安丘、高密的树木，用来修补破败的房屋，以便勉强度日。在园子的北面，靠着城墙筑起的高台已经很旧了，稍加整修，让它焕然一新。我不时和大家一起登台观览，在那儿尽情游玩。从台上向南望去，马耳、常山时隐时现，有时似乎很近，有时又似乎很远，或许有隐士住在那里吧？台的东面就是卢山，秦人卢敖就是在那里隐遁的。向西望去是穆陵关，隐隐约约象一道城墙，姜太公、齐桓公的英雄业绩，尚有留存。向北俯视潍水，不禁慨叹万分，想起了淮阴侯韩信的赫赫战功，又哀叹他不得善终。这台虽然高，但却非常安稳；这台上居室幽深，却又明亮，夏凉冬暖。雨落雪飞的早晨，风清月明的夜晚，我没有不在那里的，朋友们也没有不在这里跟随着我的。我们采摘园子里的蔬菜，钓取池塘里的游鱼，酿高粱酒，煮糙米，大家一边吃一面赞叹：“多么快活的游乐啊！”<br>这个时候，我的弟弟苏辙字子由恰好在济南做官，听说了这件事，写了一篇文章，并且给这个台子取名“超然”，以说明我之所以到哪儿都快乐的原因，大概就是在于我的心能超乎事物之外啊！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>凡物皆有可观，省略“者”即可观者，值得观赏的地方。<br>哺：吃。<br>啜：喝。<br>醨：米酒。<br>醉：使……醉。<br>饱：使……饱。<br>吾安往而不乐：即“吾往安而不乐”。<br>而物之可以足吾欲者有尽：即“而可以足吾欲之物者有尽”，但是能满足我们欲望的东西却是有限的。<br>岂：难道。<br>情：心愿。<br>有以：可以用来。<br>盖：蒙蔽。<br>焉：哪里。<br>横：意外发生。<br>而：表承接，随后。<br>焉：于此。<br>背：远离。<br>比：连续，常常。<br>登：丰收。<br>苟全：大致完备。<br>葺（qì）：原指用茅草覆盖房子，后泛指修理房屋。<br>庶几：表希望或推测。<br>遗烈：前辈留下来的功业。<br>撷（xié）：摘下，取下。<br>秫（shú）：黏高粱，可以做烧酒。有的地区就指高粱。<br>瀹（yuè）：煮。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>这篇文章反映了作者知足常乐、超然达观的人生态度，也隐含了少许内心苦闷、失意之情。<br>这篇文章用“乐”字贯穿全文，先写超然于物外，就无往而不乐，不能超然于物外，则必悲哀，正面写乐，反面写悲，悲是乐的反面，即是写乐的反面，终不离乐字。再写初到胶西之忧，再写初安之乐，治园修台，登览游乐。以忧去衬托乐，愈显出更加可喜可乐。以乐开头，以乐结尾，全文处处不离乐字，是“一字立骨”的佳作。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -112,7 +143,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/864241.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

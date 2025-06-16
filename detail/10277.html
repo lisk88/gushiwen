@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>归去来兮辞 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>归去来兮辞 - 陶渊明 - 晋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="归去来兮辞是晋朝诗人陶渊明的经典作品。本页面提供归去来兮辞的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="归去来兮辞,陶渊明,晋朝,古诗文,中学语文,诗词赏析,古典文学,赋">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="归去来兮辞 - 陶渊明 - 晋朝古诗文">
+    <meta property="og:description" content="归去来兮辞是晋朝诗人陶渊明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="归去来兮辞 - 陶渊明 - 晋朝古诗文">
+    <meta name="twitter:description" content="归去来兮辞是晋朝诗人陶渊明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "归去来兮辞",
+      "author": {
+        "@type": "Person",
+        "name": "陶渊明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "赋",
+      "description": "归去来兮辞是晋朝诗人陶渊明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">归去来兮辞</h1>
-            <div class="poem-author">【晋】陶渊明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【晋】<span itemprop="name">陶渊明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>归去来兮，田园将芜胡不归？既自以心为形役，奚惆怅而独悲？悟已往之不谏，知来者之可追。实迷途其未远，觉今是而昨非。舟遥遥以轻飏，风飘飘而吹衣。问征夫以前路，恨晨光之熹微。</p><p>乃瞻衡宇，载欣载奔。僮仆欢迎，稚子候门。三径就荒，松菊犹存。携幼入室，有酒盈樽。引壶觞以自酌，眄庭柯以怡颜。倚南窗以寄傲，审容膝之易安。园日涉以成趣，门虽设而常关。策扶老以流憩，时矫首而遐观。云无心以出岫，鸟倦飞而知还。景翳翳以将入，抚孤松而盘桓。</p><p>归去来兮，请息交以绝游。世与我而相违，复驾言兮焉求？悦亲戚之情话，乐琴书以消忧。农人告余以春及，将有事于西畴。或命巾车，或棹孤舟。既窈窕以寻壑，亦崎岖而经丘。木欣欣以向荣，泉涓涓而始流。善万物之得时，感吾生之行休。</p><p>已矣乎！寓形宇内复几时？曷不委心任去留？胡为乎遑遑欲何之？富贵非吾愿，帝乡不可期。怀良辰以孤往，或植杖而耘籽。登东皋以舒啸，临清流而赋诗。聊乘化以归尽，乐夫天命复奚疑！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>【序文】<br>我家贫穷，耕田植桑不足以供自己生活。孩子很多，米缸里没有剩馀的粮食，赖以维持生计的本领我还没有找到。亲友大都劝我去做官，我心里也有这个念头，可是求官缺少门路。正赶上出使到外地的事情，地方大吏以爱惜人才为美德，叔父也因为我家境贫苦（替我设法），我就被委任到小县做官。那时社会上动荡不安，心里惧怕到远处当官。彭泽县离家一百里，公田收获的粮食，足够造酒饮用，所以就请求去那里。等到过了一些日子，便产生了留恋故园的怀乡感情。那是为什么？本性任其自然，这是勉强不得的；饥寒虽是急需解决的问题，但是违背本意去做官，身心都感痛苦。过去为官做事，都是为了吃饭而役使自己。于是惆怅感慨，心情激动不平，深深有愧於平生的志愿。仍然希望看到这一茬庄稼成熟，便收拾行装连夜离去。不久，嫁到程家的妹妹在武昌去世，去吊丧的心情像骏马奔驰一樣急迫，自己请求免去官职。自立秋第二个月到冬天，在职共八十多天。因辞官而顺遂了心愿，写了一篇文章，题目叫《归去来兮》。乙巳年（晋安帝义熙元年）十一月。<br>【正文】<br>回去吧！田园都将要荒芜了，为什么不回去呢？既然自己的心灵被躯壳所役使，那为什么悲愁失意？我明悟过去的错误已不可挽回，但明白未發生的事尚可补救。我确实入了迷途，但不算太远，已觉悟如今的选择是正确的，而曾经的行为才是迷途。船在水面轻轻地飘荡着前进，轻快前行，风轻飘飞舞，吹起了衣袂翩翩。我向行人询问前面的路，遗憾的是天刚刚放亮。<br>终於看到了自己的家，心中欣喜，奔跑过去。家僮欢快地迎接我，幼儿们守候在门庭等待。院子里的小路快要荒芜了，松菊还长在那里。我带着幼儿们进入屋室，早有清酿溢满了酒樽。我端起酒壶酒杯自斟自饮，看看院子裏的树木，觉得很愉快；倚着南窗寄托傲然自得的心情，觉得住在简陋的小屋里也非常舒服。天天到院子里走走，自成一种乐趣，小园的门经常地关闭，拄着拐杖出去走走，随时随地休息，时时抬头望着远方。云气自然而然的从山里冒出，倦飞的小鸟也知道飞回巢中；阳光黯淡，太阳快落下去了，手抚孤松徘徊。<br>回来呀！我要跟世俗之人断绝交游。世事与我所想的相违背，还能努力探求什么呢？以亲人间的知心话为愉悦，以弹琴读书为乐来消除忧愁。农夫告诉我春天到了，西边田野里要开始耕种了。有时叫上一辆有帷的小车，有时划过一艘小船。有时经过幽深曲折的山谷，有时走过高低不平的山路。草木茂盛，水流细微。羡慕自然界的万物一到春天便及时生长茂盛，感叹自己的一生行将结束。<br>算了吧！活在世上还能有多久，为什么不放下心来任其自然地生死？为什么心神不定，想要到哪裏去？富贵不是我所求，修成神仙是没有希望的。趁着春天美好的时光，独自外出。有时放下手杖，拿起农具除草培土；登上东边的高岗放声呼啸，傍着清清的溪流吟诵诗篇。姑且顺其自然走完生命的路程，抱定乐安天命的主意，还有什么可犹疑的呢！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>“耕植不足以自给”句：耕田植桑不足以供自己生活。耕，耕田；植，植桑；以，来；给，供给。<br>幼稚盈室：孩子很多。幼稚，指孩童；盈，满。<br>瓶无储粟：米缸里没有剩馀的粮食。瓶，同“缾”，指盛米用的陶制容器、如甏（bèng）、瓮之类。<br>“生生所资，未见其术”句：赖以维持生计的本领我还没有找到。生生，犹言维持生计，前一“生”字为动词，后一“生”字为名词；资，凭藉；术，这里指经营生计的本领。<br>长吏：较高职位的县吏。指小官。<br>脱然：轻快貌。<br>有怀：有所思念（指有了做官的念头）。<br>靡途：没有门路。<br>会有四方之事：刚巧碰上有出使到外地去的事情。会，适逢；四方，意为到各处去。<br>诸侯：指州郡长官。<br>家叔：指陶夔（kuí），当时任太常卿。<br>惮：害怕。<br>役：服役。<br>彭泽：县名。在今江西省湖口县东。<br>眷然：依恋貌。<br>归欤（yú）之情：回去的心情。<br>质性：本性。<br>矫厉：造作勉强。<br>违己：违反自己本心。<br>交病：指思想上遭受痛苦。<br>从人事：从事于仕途中的人事交往。指做官。<br>口腹自役：为了满足口腹的需要而驱使自己。<br>怅然：失意。<br>一稔（rěn）：公田收获一次。稔，谷物成熟。<br>敛裳：收拾行装。<br>程氏妹：嫁给程家的妹妹。<br>武昌：今湖北省鄂城县。<br>骏奔：急着前去奔丧。<br>仲秋：农历八月。<br>乙巳岁：晋安帝义熙元年（西元四〇五年）。<br>归去来兮：意思是“回去吧”。来，助词，无义；兮，语气词。<br>田园将芜胡不归：田园将要荒芜了，为什么不回去？胡，同“何”。<br>“以心为形役”句：让心神为形体所役使。意思是本心不愿出仕，但为了免于饥寒，违背本意做了官。心，意愿；形，形体，指身体；役，奴役。<br>“奚惆怅而独悲”句：为什么悲愁失意。惆怅，失意貌。<br>悟已往之不谏：觉悟到过去做错了的事（指出仕）已经不能改正。谏，谏止，劝止。<br>“知来者之可追”句：知道未来的事（指归隐）还可以挽救。追，挽救，补救。<br>迷途：做官。<br>“舟遥遥以轻飏（yáng）”句：船在水面上轻轻地飘荡着前进。遥遥，摇摆不定貌；以，而；扬，飞扬，形容船行驶轻快貌。<br>“恨晨光之熹微”句：遗憾的是天刚刚放亮。恨，遗憾；熹微，微明，天未大亮。<br>乃瞻衡宇，载欣载奔：看见自己家的房子，心中欣喜，奔跑过去。瞻，远望；衡宇，横木为门之屋，谓简陋之屋。<br>稚子：幼儿。<br>三径：院中小路。汉朝蒋诩（xǔ）隐居之后，在院里竹下开辟三径，只于少数友人来往。后人以“三径”代指隐士所居。<br>“三径就荒，松菊犹存”句：院子里的小路快要荒芜了，松菊还长在那里。<br>盈樽：满杯。<br>眄（miàn）庭柯以怡颜：看看院子里的树木，觉得很愉快。眄，斜看，这里是“随便看看”的意思；柯，树枝；以，为了；怡颜，使面容现出愉快神色。<br>寄傲：寄托傲然自得的心情。傲，指傲世。<br>“审容膝之易安”句：觉得住在简陋的小屋里也非常舒服。审，觉察；容膝，只能容下双膝的小屋，极言其狭小。<br>“园日涉以成趣”句：天天到园里行走，自成一种乐趣。涉，涉足，走到。<br>“策扶老以流憩（qì）”句：拄着拐杖出去走走，随时随地休息。策，拄着。扶老，手杖。憩，休息。流憩，游息，就是没有固定的地方，到处走走歇歇。<br>“时矫首而遐观”句：时时抬起头向远处望望。矫，举。遐，远。<br>“云无心以出岫（xiù）”句：云气自然而然地从山里冒出。无心，无意地；岫，有洞穴的山，这里泛指山峰。<br>“景翳（yì）翳以将入”句：阳光黯淡，太阳快落下去了。景，日光；翳翳，阴暗貌。<br>盘桓：盘旋，徘徊，留恋不去。<br>扶孤松而盘桓：手扶孤松徘徊。<br>“请息交以绝游”句：意思是不再同官场有任何瓜葛。息交，停止与人交往断绝交游。<br>“世与我而相违，复驾言兮焉求”句：世事与我所想的相违背，还能努力探求什么呢？驾，驾车，这里指驾车出游去追求想要的东西；言，助词。<br>情话：知心话。<br>春及：春天到了。<br>“将有事于西畴”句：西边田野里要开始耕种了。有事，指耕种之事；事，这里指农事；畴，田地。<br>或命巾车：有时叫上一辆有帷的小车。巾车，有车帷的小车；或，有时。<br>或棹（zhào）孤舟：有时划一艘小船。棹，本义船桨。这里名词做动词，意为划桨。<br>“既窈窕以寻壑”句：经过幽深曲折的山谷。窈窕，幽深曲折貌；壑，山沟。<br>“亦崎岖而经丘”句：走过高低不平的山路。<br>木欣欣以向荣：草木茂盛。欣欣，向荣，都是草木滋长茂盛的意思。<br>涓涓：水流细微貌。<br>“善万物之得时，感吾生之行休”句：羡慕自然界万物一到春天便及时生长茂盛，感叹自己的一生行将结束。善，欢喜，羡慕；行休，行将结束。<br>已矣乎：算了吧！助词“矣”与“乎”连用，加强感叹语气。<br>“寓形宇内复几时，曷（hé）不委心任去留”句：活在世上能有多久，何不顺从自己的心愿，管它什么生与死呢？寓形，寄生；宇内，天地之间；曷，何；委心，随心所欲；去留，指生死。<br>“胡为乎遑遑欲何之：为什么心神不定，想到哪里去呢？遑遑，不安貌；之，往。<br>“帝乡不可期”句：仙境到不了。帝乡，仙乡，神仙居住的地方。期，希望，企及。<br>“怀良辰以孤往”句：爱惜美好的时光，独自外出。怀，留恋、爱惜；良辰，指上文所说万物得时的春天；孤往，独自外出。<br>“或植杖而耘耔”句：有时扶着拐杖除草培苗。植，立，扶着。耘，除草。耘，除草。籽，培苗。<br>“登东皋（gāo）以舒啸”句：登上东面的高地放声长啸，皋，高地；啸，撮口发出的长而清越的一种声音；舒，放。<br>“聊乘化以归尽”句：姑且顺其自然走完生命的路程。聊：姑且。乘化，随顺大自然的运转变化；归尽：到死；尽，指死亡。<br>“乐夫天命复奚疑”句：乐安天命，还有什么可疑虑的呢？复，还有；疑，疑虑。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>“归去来兮”就是“归去”，“来”和“兮”都是语助词，无义。辞，在汉代往往与赋并称为“辞赋”，源于“楚辞”，是一种抒情赋，同样讲究文字与韵节。全文描述了作者在回乡路上和到家后的情形，并设想日后的隐居生活，从而表达了作者对当时官场的厌恶和对农村生活的向往。另一方面，也流露出诗人的一种“乐天知命”的消极思想。</p></div></div>
+        <article class="poem-content" data-kind="赋" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>归去来兮，田园将芜胡不归？既自以心为形役，奚惆怅而独悲？悟已往之不谏，知来者之可追。实迷途其未远，觉今是而昨非。舟遥遥以轻飏，风飘飘而吹衣。问征夫以前路，恨晨光之熹微。</p><p>乃瞻衡宇，载欣载奔。僮仆欢迎，稚子候门。三径就荒，松菊犹存。携幼入室，有酒盈樽。引壶觞以自酌，眄庭柯以怡颜。倚南窗以寄傲，审容膝之易安。园日涉以成趣，门虽设而常关。策扶老以流憩，时矫首而遐观。云无心以出岫，鸟倦飞而知还。景翳翳以将入，抚孤松而盘桓。</p><p>归去来兮，请息交以绝游。世与我而相违，复驾言兮焉求？悦亲戚之情话，乐琴书以消忧。农人告余以春及，将有事于西畴。或命巾车，或棹孤舟。既窈窕以寻壑，亦崎岖而经丘。木欣欣以向荣，泉涓涓而始流。善万物之得时，感吾生之行休。</p><p>已矣乎！寓形宇内复几时？曷不委心任去留？胡为乎遑遑欲何之？富贵非吾愿，帝乡不可期。怀良辰以孤往，或植杖而耘籽。登东皋以舒啸，临清流而赋诗。聊乘化以归尽，乐夫天命复奚疑！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>【序文】<br>我家贫穷，耕田植桑不足以供自己生活。孩子很多，米缸里没有剩馀的粮食，赖以维持生计的本领我还没有找到。亲友大都劝我去做官，我心里也有这个念头，可是求官缺少门路。正赶上出使到外地的事情，地方大吏以爱惜人才为美德，叔父也因为我家境贫苦（替我设法），我就被委任到小县做官。那时社会上动荡不安，心里惧怕到远处当官。彭泽县离家一百里，公田收获的粮食，足够造酒饮用，所以就请求去那里。等到过了一些日子，便产生了留恋故园的怀乡感情。那是为什么？本性任其自然，这是勉强不得的；饥寒虽是急需解决的问题，但是违背本意去做官，身心都感痛苦。过去为官做事，都是为了吃饭而役使自己。于是惆怅感慨，心情激动不平，深深有愧於平生的志愿。仍然希望看到这一茬庄稼成熟，便收拾行装连夜离去。不久，嫁到程家的妹妹在武昌去世，去吊丧的心情像骏马奔驰一樣急迫，自己请求免去官职。自立秋第二个月到冬天，在职共八十多天。因辞官而顺遂了心愿，写了一篇文章，题目叫《归去来兮》。乙巳年（晋安帝义熙元年）十一月。<br>【正文】<br>回去吧！田园都将要荒芜了，为什么不回去呢？既然自己的心灵被躯壳所役使，那为什么悲愁失意？我明悟过去的错误已不可挽回，但明白未發生的事尚可补救。我确实入了迷途，但不算太远，已觉悟如今的选择是正确的，而曾经的行为才是迷途。船在水面轻轻地飘荡着前进，轻快前行，风轻飘飞舞，吹起了衣袂翩翩。我向行人询问前面的路，遗憾的是天刚刚放亮。<br>终於看到了自己的家，心中欣喜，奔跑过去。家僮欢快地迎接我，幼儿们守候在门庭等待。院子里的小路快要荒芜了，松菊还长在那里。我带着幼儿们进入屋室，早有清酿溢满了酒樽。我端起酒壶酒杯自斟自饮，看看院子裏的树木，觉得很愉快；倚着南窗寄托傲然自得的心情，觉得住在简陋的小屋里也非常舒服。天天到院子里走走，自成一种乐趣，小园的门经常地关闭，拄着拐杖出去走走，随时随地休息，时时抬头望着远方。云气自然而然的从山里冒出，倦飞的小鸟也知道飞回巢中；阳光黯淡，太阳快落下去了，手抚孤松徘徊。<br>回来呀！我要跟世俗之人断绝交游。世事与我所想的相违背，还能努力探求什么呢？以亲人间的知心话为愉悦，以弹琴读书为乐来消除忧愁。农夫告诉我春天到了，西边田野里要开始耕种了。有时叫上一辆有帷的小车，有时划过一艘小船。有时经过幽深曲折的山谷，有时走过高低不平的山路。草木茂盛，水流细微。羡慕自然界的万物一到春天便及时生长茂盛，感叹自己的一生行将结束。<br>算了吧！活在世上还能有多久，为什么不放下心来任其自然地生死？为什么心神不定，想要到哪裏去？富贵不是我所求，修成神仙是没有希望的。趁着春天美好的时光，独自外出。有时放下手杖，拿起农具除草培土；登上东边的高岗放声呼啸，傍着清清的溪流吟诵诗篇。姑且顺其自然走完生命的路程，抱定乐安天命的主意，还有什么可犹疑的呢！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>“耕植不足以自给”句：耕田植桑不足以供自己生活。耕，耕田；植，植桑；以，来；给，供给。<br>幼稚盈室：孩子很多。幼稚，指孩童；盈，满。<br>瓶无储粟：米缸里没有剩馀的粮食。瓶，同“缾”，指盛米用的陶制容器、如甏（bèng）、瓮之类。<br>“生生所资，未见其术”句：赖以维持生计的本领我还没有找到。生生，犹言维持生计，前一“生”字为动词，后一“生”字为名词；资，凭藉；术，这里指经营生计的本领。<br>长吏：较高职位的县吏。指小官。<br>脱然：轻快貌。<br>有怀：有所思念（指有了做官的念头）。<br>靡途：没有门路。<br>会有四方之事：刚巧碰上有出使到外地去的事情。会，适逢；四方，意为到各处去。<br>诸侯：指州郡长官。<br>家叔：指陶夔（kuí），当时任太常卿。<br>惮：害怕。<br>役：服役。<br>彭泽：县名。在今江西省湖口县东。<br>眷然：依恋貌。<br>归欤（yú）之情：回去的心情。<br>质性：本性。<br>矫厉：造作勉强。<br>违己：违反自己本心。<br>交病：指思想上遭受痛苦。<br>从人事：从事于仕途中的人事交往。指做官。<br>口腹自役：为了满足口腹的需要而驱使自己。<br>怅然：失意。<br>一稔（rěn）：公田收获一次。稔，谷物成熟。<br>敛裳：收拾行装。<br>程氏妹：嫁给程家的妹妹。<br>武昌：今湖北省鄂城县。<br>骏奔：急着前去奔丧。<br>仲秋：农历八月。<br>乙巳岁：晋安帝义熙元年（西元四〇五年）。<br>归去来兮：意思是“回去吧”。来，助词，无义；兮，语气词。<br>田园将芜胡不归：田园将要荒芜了，为什么不回去？胡，同“何”。<br>“以心为形役”句：让心神为形体所役使。意思是本心不愿出仕，但为了免于饥寒，违背本意做了官。心，意愿；形，形体，指身体；役，奴役。<br>“奚惆怅而独悲”句：为什么悲愁失意。惆怅，失意貌。<br>悟已往之不谏：觉悟到过去做错了的事（指出仕）已经不能改正。谏，谏止，劝止。<br>“知来者之可追”句：知道未来的事（指归隐）还可以挽救。追，挽救，补救。<br>迷途：做官。<br>“舟遥遥以轻飏（yáng）”句：船在水面上轻轻地飘荡着前进。遥遥，摇摆不定貌；以，而；扬，飞扬，形容船行驶轻快貌。<br>“恨晨光之熹微”句：遗憾的是天刚刚放亮。恨，遗憾；熹微，微明，天未大亮。<br>乃瞻衡宇，载欣载奔：看见自己家的房子，心中欣喜，奔跑过去。瞻，远望；衡宇，横木为门之屋，谓简陋之屋。<br>稚子：幼儿。<br>三径：院中小路。汉朝蒋诩（xǔ）隐居之后，在院里竹下开辟三径，只于少数友人来往。后人以“三径”代指隐士所居。<br>“三径就荒，松菊犹存”句：院子里的小路快要荒芜了，松菊还长在那里。<br>盈樽：满杯。<br>眄（miàn）庭柯以怡颜：看看院子里的树木，觉得很愉快。眄，斜看，这里是“随便看看”的意思；柯，树枝；以，为了；怡颜，使面容现出愉快神色。<br>寄傲：寄托傲然自得的心情。傲，指傲世。<br>“审容膝之易安”句：觉得住在简陋的小屋里也非常舒服。审，觉察；容膝，只能容下双膝的小屋，极言其狭小。<br>“园日涉以成趣”句：天天到园里行走，自成一种乐趣。涉，涉足，走到。<br>“策扶老以流憩（qì）”句：拄着拐杖出去走走，随时随地休息。策，拄着。扶老，手杖。憩，休息。流憩，游息，就是没有固定的地方，到处走走歇歇。<br>“时矫首而遐观”句：时时抬起头向远处望望。矫，举。遐，远。<br>“云无心以出岫（xiù）”句：云气自然而然地从山里冒出。无心，无意地；岫，有洞穴的山，这里泛指山峰。<br>“景翳（yì）翳以将入”句：阳光黯淡，太阳快落下去了。景，日光；翳翳，阴暗貌。<br>盘桓：盘旋，徘徊，留恋不去。<br>扶孤松而盘桓：手扶孤松徘徊。<br>“请息交以绝游”句：意思是不再同官场有任何瓜葛。息交，停止与人交往断绝交游。<br>“世与我而相违，复驾言兮焉求”句：世事与我所想的相违背，还能努力探求什么呢？驾，驾车，这里指驾车出游去追求想要的东西；言，助词。<br>情话：知心话。<br>春及：春天到了。<br>“将有事于西畴”句：西边田野里要开始耕种了。有事，指耕种之事；事，这里指农事；畴，田地。<br>或命巾车：有时叫上一辆有帷的小车。巾车，有车帷的小车；或，有时。<br>或棹（zhào）孤舟：有时划一艘小船。棹，本义船桨。这里名词做动词，意为划桨。<br>“既窈窕以寻壑”句：经过幽深曲折的山谷。窈窕，幽深曲折貌；壑，山沟。<br>“亦崎岖而经丘”句：走过高低不平的山路。<br>木欣欣以向荣：草木茂盛。欣欣，向荣，都是草木滋长茂盛的意思。<br>涓涓：水流细微貌。<br>“善万物之得时，感吾生之行休”句：羡慕自然界万物一到春天便及时生长茂盛，感叹自己的一生行将结束。善，欢喜，羡慕；行休，行将结束。<br>已矣乎：算了吧！助词“矣”与“乎”连用，加强感叹语气。<br>“寓形宇内复几时，曷（hé）不委心任去留”句：活在世上能有多久，何不顺从自己的心愿，管它什么生与死呢？寓形，寄生；宇内，天地之间；曷，何；委心，随心所欲；去留，指生死。<br>“胡为乎遑遑欲何之：为什么心神不定，想到哪里去呢？遑遑，不安貌；之，往。<br>“帝乡不可期”句：仙境到不了。帝乡，仙乡，神仙居住的地方。期，希望，企及。<br>“怀良辰以孤往”句：爱惜美好的时光，独自外出。怀，留恋、爱惜；良辰，指上文所说万物得时的春天；孤往，独自外出。<br>“或植杖而耘耔”句：有时扶着拐杖除草培苗。植，立，扶着。耘，除草。耘，除草。籽，培苗。<br>“登东皋（gāo）以舒啸”句：登上东面的高地放声长啸，皋，高地；啸，撮口发出的长而清越的一种声音；舒，放。<br>“聊乘化以归尽”句：姑且顺其自然走完生命的路程。聊：姑且。乘化，随顺大自然的运转变化；归尽：到死；尽，指死亡。<br>“乐夫天命复奚疑”句：乐安天命，还有什么可疑虑的呢？复，还有；疑，疑虑。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>“归去来兮”就是“归去”，“来”和“兮”都是语助词，无义。辞，在汉代往往与赋并称为“辞赋”，源于“楚辞”，是一种抒情赋，同样讲究文字与韵节。全文描述了作者在回乡路上和到家后的情形，并设想日后的隐居生活，从而表达了作者对当时官场的厌恶和对农村生活的向往。另一方面，也流露出诗人的一种“乐天知命”的消极思想。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -112,7 +143,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/16966.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

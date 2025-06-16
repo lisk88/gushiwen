@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三峡 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>三峡 - 郦道元 - 南北朝朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="三峡是南北朝朝诗人郦道元的经典作品。本页面提供三峡的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="三峡,郦道元,南北朝朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="三峡 - 郦道元 - 南北朝朝古诗文">
+    <meta property="og:description" content="三峡是南北朝朝诗人郦道元的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="三峡 - 郦道元 - 南北朝朝古诗文">
+    <meta name="twitter:description" content="三峡是南北朝朝诗人郦道元的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "三峡",
+      "author": {
+        "@type": "Person",
+        "name": "郦道元"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "三峡是南北朝朝诗人郦道元的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">三峡</h1>
-            <div class="poem-author">【南北朝】郦道元</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【南北朝】<span itemprop="name">郦道元</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>自三峡七百里中，两岸连山，略无阙处。重岩叠嶂，隐天蔽日。自非亭午夜分，不见曦月。</p><p>至于夏水襄陵，沿溯阻绝。或王命急宣，有时朝发白帝，暮到江陵，其间千二百里，虽乘奔御风，不以疾也。</p><p>春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间，清荣峻茂，良多趣味。</p><p>每至晴初霜旦，林寒涧肃，常有高猿长啸，属引凄异，空谷传响，哀转久绝。故渔者歌曰：「巴东三峡巫峡长，猿鸣三声泪沾裳。」</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>在三峡七百里（的沿途）中，两岸都是连绵的高山，没有一点中断的地方；重重叠叠的悬崖峭壁，遮挡了天空和太阳。如果不是正午，就看不到太阳，如果不是半夜就看不到月亮。<br>到了夏天江水漫上山陵，上行和下行的航路都被阻断。有时皇帝的命令要紧急传达，这时只要早晨从白帝城出发，傍晚就到了江陵，中间相距一千二百里，即使骑上飞奔的快马，驾着疾风，也不如它快。<br>等到春天和冬天的时候，就可以看见激起白色浪花的急流里有回旋的清波，碧绿的潭水里倒映着景物的影子。极高的山峰上，大多生长着许多奇形怪状的松柏，悬泉瀑布在山峰之间飞流冲荡。水清，树荣，山峻，草盛，实在是趣味无穷。<br>（在秋天）每到天刚放晴的时候或下霜的早晨，树林和山涧显出一片清凉和寂静，经常有猿猴在高处拉长声音鸣叫，声音持续不断，（显得）非常凄凉怪异，在空荡的山谷里传来猿叫的回声，悲哀婉转，很久才消失。所以三峡中渔民的歌谣唱道：「巴东三峡巫峡长，猿鸣三声泪沾裳。」</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>自：在、从。<br>三峡：指长江上游重庆、湖北两个省级行政单位间的瞿塘峡、巫峡和西陵峡。三峡全长实际只有四百多里。<br>两岸连山，略无阙处：江岸两边一个山峰连着一个山峰，一点儿也没有中断的地方。略无，毫无。<br>阙（quē），通「缺」，中断，空缺。<br>嶂（zhàng）：形势高险像屏障一样的山峰。<br>隐：遮蔽。<br>自非：如果不是。自，如果；非，不是。<br>亭午：正午。<br>夜分：半夜。<br>曦（xī）月：日月，曦，日光，这里指太阳。<br>夏水襄（xiāng）陵：夏天大水涨上了高陵之上。襄陵，指水漫上山陵。出自《尚书·尧典》：「荡荡怀山襄陵，浩浩滔天。」襄，动词，上，冲上。陵，大的土山，这里泛指山陵。<br>沿：顺流而下。<br>溯：逆流而上。<br>或：有时。<br>王命：皇帝的命令。<br>宣：宣布、传播、传达。<br>白帝：城名，在重庆奉节县东。<br>朝发白帝：早上从白帝城出发。朝，早晨；<br>江陵：今湖北江陵。<br>其间：指从白帝城到江陵之间。<br>千二百里：一千二百里，约合现在的三百五十公里。<br>虽：连词，表示假设的让步，相当于「即使」。<br>奔：指飞奔的骏马。<br>御：驾驭。<br>以：这样。<br>素湍（tuān）：白色的急流。素，白色；湍，急流的水。<br>绿潭：碧绿的深水。潭，深水。<br>回清倒影：回旋的清波，倒映出（各种景物）的影子。<br>绝？（yǎn）：极高的山峰。绝，极，？，极高的山峰。（？本身就指极高的山峰，此处用绝表强调修饰）<br>怪柏：形状奇特的柏树。<br>悬泉：从山顶飞流而下的泉水。<br>飞漱：急流沖荡。漱，沖荡。<br>清荣峻茂：水清，树荣（茂盛），山高，草盛。<br>良多趣味：的确有很多趣味（趣味无穷）。良，的确，确实。<br>晴初：天刚晴。<br>霜旦：下霜的早晨，指秋季。<br>林寒：山林中气候寒冷。<br>涧肃：山沟里气候清冷。涧，夹在两山之间的水沟。肃，清冷。<br>啸：动物拉长声音叫。<br>属（zhǔ）：动词，连接。<br>引：延长。<br>凄异：凄凉怪异。<br>响：回声。<br>哀转久绝：悲哀婉转，很久才消失。<br>巴东：汉郡名，在今重庆东部云阳，奉节，巫山一带。<br>三声：几声。这里不是确数。<br>沾：打湿。<br>裳（cháng）：衣服。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《三峡》节选自南北朝北魏地理学家郦道元所著的《水经注·江水注》，是著名山水散文。全篇只用一百五十五个字，既描写了三峡错落有致的自然风貌，又写三峡不同季节的壮丽景色，展示了祖国河山的雄伟奇丽、无限壮阔的景象。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>自三峡七百里中，两岸连山，略无阙处。重岩叠嶂，隐天蔽日。自非亭午夜分，不见曦月。</p><p>至于夏水襄陵，沿溯阻绝。或王命急宣，有时朝发白帝，暮到江陵，其间千二百里，虽乘奔御风，不以疾也。</p><p>春冬之时，则素湍绿潭，回清倒影，绝𪩘多生怪柏，悬泉瀑布，飞漱其间，清荣峻茂，良多趣味。</p><p>每至晴初霜旦，林寒涧肃，常有高猿长啸，属引凄异，空谷传响，哀转久绝。故渔者歌曰：「巴东三峡巫峡长，猿鸣三声泪沾裳。」</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>在三峡七百里（的沿途）中，两岸都是连绵的高山，没有一点中断的地方；重重叠叠的悬崖峭壁，遮挡了天空和太阳。如果不是正午，就看不到太阳，如果不是半夜就看不到月亮。<br>到了夏天江水漫上山陵，上行和下行的航路都被阻断。有时皇帝的命令要紧急传达，这时只要早晨从白帝城出发，傍晚就到了江陵，中间相距一千二百里，即使骑上飞奔的快马，驾着疾风，也不如它快。<br>等到春天和冬天的时候，就可以看见激起白色浪花的急流里有回旋的清波，碧绿的潭水里倒映着景物的影子。极高的山峰上，大多生长着许多奇形怪状的松柏，悬泉瀑布在山峰之间飞流冲荡。水清，树荣，山峻，草盛，实在是趣味无穷。<br>（在秋天）每到天刚放晴的时候或下霜的早晨，树林和山涧显出一片清凉和寂静，经常有猿猴在高处拉长声音鸣叫，声音持续不断，（显得）非常凄凉怪异，在空荡的山谷里传来猿叫的回声，悲哀婉转，很久才消失。所以三峡中渔民的歌谣唱道：「巴东三峡巫峡长，猿鸣三声泪沾裳。」</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>自：在、从。<br>三峡：指长江上游重庆、湖北两个省级行政单位间的瞿塘峡、巫峡和西陵峡。三峡全长实际只有四百多里。<br>两岸连山，略无阙处：江岸两边一个山峰连着一个山峰，一点儿也没有中断的地方。略无，毫无。<br>阙（quē），通「缺」，中断，空缺。<br>嶂（zhàng）：形势高险像屏障一样的山峰。<br>隐：遮蔽。<br>自非：如果不是。自，如果；非，不是。<br>亭午：正午。<br>夜分：半夜。<br>曦（xī）月：日月，曦，日光，这里指太阳。<br>夏水襄（xiāng）陵：夏天大水涨上了高陵之上。襄陵，指水漫上山陵。出自《尚书·尧典》：「荡荡怀山襄陵，浩浩滔天。」襄，动词，上，冲上。陵，大的土山，这里泛指山陵。<br>沿：顺流而下。<br>溯：逆流而上。<br>或：有时。<br>王命：皇帝的命令。<br>宣：宣布、传播、传达。<br>白帝：城名，在重庆奉节县东。<br>朝发白帝：早上从白帝城出发。朝，早晨；<br>江陵：今湖北江陵。<br>其间：指从白帝城到江陵之间。<br>千二百里：一千二百里，约合现在的三百五十公里。<br>虽：连词，表示假设的让步，相当于「即使」。<br>奔：指飞奔的骏马。<br>御：驾驭。<br>以：这样。<br>素湍（tuān）：白色的急流。素，白色；湍，急流的水。<br>绿潭：碧绿的深水。潭，深水。<br>回清倒影：回旋的清波，倒映出（各种景物）的影子。<br>绝？（yǎn）：极高的山峰。绝，极，？，极高的山峰。（？本身就指极高的山峰，此处用绝表强调修饰）<br>怪柏：形状奇特的柏树。<br>悬泉：从山顶飞流而下的泉水。<br>飞漱：急流沖荡。漱，沖荡。<br>清荣峻茂：水清，树荣（茂盛），山高，草盛。<br>良多趣味：的确有很多趣味（趣味无穷）。良，的确，确实。<br>晴初：天刚晴。<br>霜旦：下霜的早晨，指秋季。<br>林寒：山林中气候寒冷。<br>涧肃：山沟里气候清冷。涧，夹在两山之间的水沟。肃，清冷。<br>啸：动物拉长声音叫。<br>属（zhǔ）：动词，连接。<br>引：延长。<br>凄异：凄凉怪异。<br>响：回声。<br>哀转久绝：悲哀婉转，很久才消失。<br>巴东：汉郡名，在今重庆东部云阳，奉节，巫山一带。<br>三声：几声。这里不是确数。<br>沾：打湿。<br>裳（cháng）：衣服。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《三峡》节选自南北朝北魏地理学家郦道元所著的《水经注·江水注》，是著名山水散文。全篇只用一百五十五个字，既描写了三峡错落有致的自然风貌，又写三峡不同季节的壮丽景色，展示了祖国河山的雄伟奇丽、无限壮阔的景象。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/5261/6949885.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>与陈给事书 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>与陈给事书 - 韩愈 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="与陈给事书是唐朝诗人韩愈的经典作品。本页面提供与陈给事书的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="与陈给事书,韩愈,唐朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="与陈给事书 - 韩愈 - 唐朝古诗文">
+    <meta property="og:description" content="与陈给事书是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="与陈给事书 - 韩愈 - 唐朝古诗文">
+    <meta name="twitter:description" content="与陈给事书是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "与陈给事书",
+      "author": {
+        "@type": "Person",
+        "name": "韩愈"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "与陈给事书是唐朝诗人韩愈的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">与陈给事书</h1>
-            <div class="poem-author">【唐】韩愈</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">韩愈</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>愈再拜：愈之获见于阁下有年矣，始者亦尝辱一言之誉。贫贱也，衣食于奔走，不得朝夕继见，其后阁下位益尊，伺候于门墙者日益进。夫位益尊，则贱者日隔；伺候于门墙者日益进，则爱博而情不专。愈也道不加修，而文日益有名。夫道不加修，则贤者不与；文日益有名，则同进者忌。始之以日隔之疏，加之以不专之望，以不与者之心，而听忌者之说，由是阁下之庭，无愈之迹矣。</p><p>去年春，亦尝一进谒于左右矣，温乎其容，若加其新也；属乎其言，若闵其穷也。退而喜也，以告于人。其后如东京取妻子，又不得朝夕继见，及其还也，亦尝一进谒于左右矣，邈乎其容，若不察其愚也；悄乎其言，若不接其情也。退而惧也，不敢复进。</p><p>今则释然悟，翻然悔曰：其邈也，乃所以怒其来之不继也；其悄也，乃所以示其意也。不敏之诛，无所逃避，不敢遂进，辄自疏其所以，并献近所为《复志赋》以下十首为一卷，卷有标轴，《送孟郊序》一首，生纸写，不加装饰，皆有揩字注字处，急于自解而谢，不能俟更写，阁下取其意而略其礼可也。愈恐惧再拜。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>韩愈再拜：<br>我有幸同您认识已经好多年了，开始时也曾受到您一些称赞。后来由于我贫贱，为了生计而奔波，所以不能早晚经常拜见。此后，您的地位越来越尊贵，依附侍候在您门下的人一天天地增多。地位越来越尊贵，跟贫贱的人就会一天天地疏远间隔；伺候在六下的人一天天在增加，那么由于您喜欢的人多了，而对于旧友的情意也就不专了。我的品德修养方面没有加强，而所写的文章却一天比一天多出名。品德方面不完善，那么贤德的人就不会赞扬；文章越来越有名，那么我与同路求进的人就会妒忌。起初，您我由于经常不见面而疏远，以后又加上我对您感情不专的私下抱怨，而您又怀着不再赏识的情绪，并且听任妒忌者的闲话，由于这些原因，您的门庭之中，就没有我的足迹了。<br>去年春天，我也曾经去拜见过您一次。您面色温和，好像是接待新近结交的朋友；谈话连续不断，好像同情我穷困的处境。告辞回来，非常高兴，便把这些情况告诉了别人。此后，我回东京去接妻子儿女，又不能朝夕连续与您相见了。等我回来后，我又曾经拜访过您一次。您表情冷漠，好像不体察我个人的苦衷；沉默寡言，好像是不理会我的情意。告辞回来，心中恐惧，不敢再登门拜见。<br>现在我恍然大悟，非常懊悔，心里想：您那种冷漠的表情，是责怪我不常去拜见的缘故；谈话很少，就是暗示这种意思的缘故。对我性情愚钝的责怪，我是无法逃避的。我不敢马上去拜见您，就自己写信和分析陈述事情的缘由，同时献上近日写的《复志赋》等十篇文章作为一卷，卷有标签和轴。《送孟郊序》一文，用生纸写成，没有装饰，并且有涂改和加字的地方，因为我急于向您解释误会表示道歉，所以来不及重新誊写清楚。希望您接受我的心意，不计较我的礼节上的不周之处。<br>我诚惶诚恐，再拜。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>再拜：古代一种隆重的礼节，先后拜两次，表示郑重奉上的意思。<br>伺候：等候，此处有依附的意思。<br>门墙：原指师门，此处泛指尊者的门下。<br>贤者：此处指陈给事。<br>进谒：前去拜见。<br>闵：同“悯”，怜恤，哀伤。<br>妻子：指妻子和儿子。<br>邈：远，此处形容脸上表情冷漠。<br>若不察其愚：好像没有察见我的愚衷。<br>诛：责备。<br>遂：就、立刻。<br>疏：分条陈述。<br>标轴：古代用纸或帛做成卷子，中心有轴，故一卷叫一轴。标轴是卷轴上所作的标记。<br>孟郊：字东野。唐代诗人，韩愈的朋友。<br>生纸：未经煮捶或涂蜡的纸。唐代书写分熟纸与生纸，生纸用于丧事，或作草稿用。<br>揩：涂抹。<br>注：添加。上述用生纸写信，不加装饰，有揩字注字处数语，乃是表示失礼和歉意。<br>俟（sì）：等待。<br>恐惧：非常小心谨慎以至达到害怕不安的程度。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《与陈给事书》是唐宋八大家之首韩愈写给陈给事的信笺。陈给事即陈京。韩文公早年与陈有旧，可后来，韩文公被贬去广东阳山县当县令，而陈京却因精通礼仪得到了皇帝的欣赏。韩文公经“落实政策”“平反昭雪”后回到京师，可这时的陈京却表现出相当的冷漠和寡言。韩文公陷入迷惘的境地，认为陈京是念旧情的，他对自己的漠然完全是对自己不勤于登门的抱怨。<br>韩愈在信中述写了与陈京交往和疏远的原因，历敷了与陈给事的见面情况，希望与对方恢复交往，代为引荐。信中处处体现其诚惶诚恐的心态；同时字里行间又透露出其不甘低眉之情。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>愈再拜：愈之获见于阁下有年矣，始者亦尝辱一言之誉。贫贱也，衣食于奔走，不得朝夕继见，其后阁下位益尊，伺候于门墙者日益进。夫位益尊，则贱者日隔；伺候于门墙者日益进，则爱博而情不专。愈也道不加修，而文日益有名。夫道不加修，则贤者不与；文日益有名，则同进者忌。始之以日隔之疏，加之以不专之望，以不与者之心，而听忌者之说，由是阁下之庭，无愈之迹矣。</p><p>去年春，亦尝一进谒于左右矣，温乎其容，若加其新也；属乎其言，若闵其穷也。退而喜也，以告于人。其后如东京取妻子，又不得朝夕继见，及其还也，亦尝一进谒于左右矣，邈乎其容，若不察其愚也；悄乎其言，若不接其情也。退而惧也，不敢复进。</p><p>今则释然悟，翻然悔曰：其邈也，乃所以怒其来之不继也；其悄也，乃所以示其意也。不敏之诛，无所逃避，不敢遂进，辄自疏其所以，并献近所为《复志赋》以下十首为一卷，卷有标轴，《送孟郊序》一首，生纸写，不加装饰，皆有揩字注字处，急于自解而谢，不能俟更写，阁下取其意而略其礼可也。愈恐惧再拜。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>韩愈再拜：<br>我有幸同您认识已经好多年了，开始时也曾受到您一些称赞。后来由于我贫贱，为了生计而奔波，所以不能早晚经常拜见。此后，您的地位越来越尊贵，依附侍候在您门下的人一天天地增多。地位越来越尊贵，跟贫贱的人就会一天天地疏远间隔；伺候在六下的人一天天在增加，那么由于您喜欢的人多了，而对于旧友的情意也就不专了。我的品德修养方面没有加强，而所写的文章却一天比一天多出名。品德方面不完善，那么贤德的人就不会赞扬；文章越来越有名，那么我与同路求进的人就会妒忌。起初，您我由于经常不见面而疏远，以后又加上我对您感情不专的私下抱怨，而您又怀着不再赏识的情绪，并且听任妒忌者的闲话，由于这些原因，您的门庭之中，就没有我的足迹了。<br>去年春天，我也曾经去拜见过您一次。您面色温和，好像是接待新近结交的朋友；谈话连续不断，好像同情我穷困的处境。告辞回来，非常高兴，便把这些情况告诉了别人。此后，我回东京去接妻子儿女，又不能朝夕连续与您相见了。等我回来后，我又曾经拜访过您一次。您表情冷漠，好像不体察我个人的苦衷；沉默寡言，好像是不理会我的情意。告辞回来，心中恐惧，不敢再登门拜见。<br>现在我恍然大悟，非常懊悔，心里想：您那种冷漠的表情，是责怪我不常去拜见的缘故；谈话很少，就是暗示这种意思的缘故。对我性情愚钝的责怪，我是无法逃避的。我不敢马上去拜见您，就自己写信和分析陈述事情的缘由，同时献上近日写的《复志赋》等十篇文章作为一卷，卷有标签和轴。《送孟郊序》一文，用生纸写成，没有装饰，并且有涂改和加字的地方，因为我急于向您解释误会表示道歉，所以来不及重新誊写清楚。希望您接受我的心意，不计较我的礼节上的不周之处。<br>我诚惶诚恐，再拜。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>再拜：古代一种隆重的礼节，先后拜两次，表示郑重奉上的意思。<br>伺候：等候，此处有依附的意思。<br>门墙：原指师门，此处泛指尊者的门下。<br>贤者：此处指陈给事。<br>进谒：前去拜见。<br>闵：同“悯”，怜恤，哀伤。<br>妻子：指妻子和儿子。<br>邈：远，此处形容脸上表情冷漠。<br>若不察其愚：好像没有察见我的愚衷。<br>诛：责备。<br>遂：就、立刻。<br>疏：分条陈述。<br>标轴：古代用纸或帛做成卷子，中心有轴，故一卷叫一轴。标轴是卷轴上所作的标记。<br>孟郊：字东野。唐代诗人，韩愈的朋友。<br>生纸：未经煮捶或涂蜡的纸。唐代书写分熟纸与生纸，生纸用于丧事，或作草稿用。<br>揩：涂抹。<br>注：添加。上述用生纸写信，不加装饰，有揩字注字处数语，乃是表示失礼和歉意。<br>俟（sì）：等待。<br>恐惧：非常小心谨慎以至达到害怕不安的程度。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《与陈给事书》是唐宋八大家之首韩愈写给陈给事的信笺。陈给事即陈京。韩文公早年与陈有旧，可后来，韩文公被贬去广东阳山县当县令，而陈京却因精通礼仪得到了皇帝的欣赏。韩文公经“落实政策”“平反昭雪”后回到京师，可这时的陈京却表现出相当的冷漠和寡言。韩文公陷入迷惘的境地，认为陈京是念旧情的，他对自己的漠然完全是对自己不勤于登门的抱怨。<br>韩愈在信中述写了与陈京交往和疏远的原因，历敷了与陈给事的见面情况，希望与对方恢复交往，代为引荐。信中处处体现其诚惶诚恐的心态；同时字里行间又透露出其不甘低眉之情。</p></div></div>
             
             <div class="section"><a href="http://baike.baidu.com/item/与陈给事书" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

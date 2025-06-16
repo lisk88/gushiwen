@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>破阵子 · 为陈同甫赋壮词以寄之 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>破阵子 · 为陈同甫赋壮词以寄之 - 辛弃疾 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="破阵子 · 为陈同甫赋壮词以寄之是宋朝诗人辛弃疾的经典作品。本页面提供破阵子 · 为陈同甫赋壮词以寄之的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="破阵子 · 为陈同甫赋壮词以寄之,辛弃疾,宋朝,古诗文,中学语文,诗词赏析,古典文学,词">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="破阵子 · 为陈同甫赋壮词以寄之 - 辛弃疾 - 宋朝古诗文">
+    <meta property="og:description" content="破阵子 · 为陈同甫赋壮词以寄之是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="破阵子 · 为陈同甫赋壮词以寄之 - 辛弃疾 - 宋朝古诗文">
+    <meta name="twitter:description" content="破阵子 · 为陈同甫赋壮词以寄之是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "破阵子 · 为陈同甫赋壮词以寄之",
+      "author": {
+        "@type": "Person",
+        "name": "辛弃疾"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "词",
+      "description": "破阵子 · 为陈同甫赋壮词以寄之是宋朝诗人辛弃疾的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">破阵子 · 为陈同甫赋壮词以寄之</h1>
-            <div class="poem-author">【宋】辛弃疾</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">辛弃疾</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>醉里挑灯看剑，梦回吹角连营。八百里分麾下炙，五十弦翻塞外声，沙场秋点兵。</p><p>马作的卢飞快，弓如霹雳弦惊。了却君王天下事，赢得生前身后名。可怜白发生！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>醉里挑亮油灯观看宝剑，梦中听到军营的号角声响成一片。把牛肉分给部下享用，让乐器奏起雄壮的军乐鼓舞士气。这是秋天在战场上阅兵。<br>战马像的卢马那样跑得飞快，弓箭像惊雷一样震耳离弦。一心想完成替君收复国家失地的大业，取得世代相传的美名。可惜壮志难酬，白发已生！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>“为陈同甫赋壮词以寄之”：四卷本丁集作“为陈同父赋壮词以寄”。<br>陈同甫：陈亮（公元1143年—公元1194年），字同父（甫），号龙川，婺州永康（今属浙江）人，才气超迈，曾三上书孝宗，反对议和。光宗策进士，擢第一，授签书建康府判官，未赴任卒。有《龙川集》行世。《宋史·卷四百三十六·儒林》有传。<br>挑灯看剑：北宋·刘斧《青琐高议·卷三》载高言诗：“男儿慷慨平生事，时复挑灯把剑看。”挑灯，把灯芯挑亮；看剑，抽出宝剑来细看。<br>梦回：梦里遇见，说明下面描写的战场场景，不过是作者旧梦重温。<br>角：军中乐器，长五尺，形如竹筒，用竹、木、皮、铜制成，外加彩绘．名曰画角。始仅直吹，后用以横吹。其声哀厉高亢，闻之使人振奋。<br>吹角连营：各个军营里接连不断地响起号角声。<br>八百里：牛名。南朝宋·刘义庆《世说新语·汰侈》：“王君夫（恺）有牛，名‘八百里駮（bó）’，常瑩其蹄角。王武子（济）语君夫：‘我射不如卿，今指赌卿牛，以千万对之。’君夫既恃手快，且谓骏物无有杀理，便相然可。令武子先射。武子一起便破的，却据胡床，叱左右：‘速探牛心来！’须臾，炙至，一脔便去。”唐·韩愈《元和圣德诗》：“万牛脔炙，万瓮行酒。”宋·苏轼《约公择饮是日大风》诗：“要当啖公八百里，豪气一洗儒生酸。”唐·范摅《云溪友谈·卷下·杂嘲戏》：“李日新《题仙娥驿》诗曰：‘商山食店太悠悠，陈□䭔饠古䭃头。更有台中牛肉炙，尚盘数脔紫光毬。’”<br>麾下：部下。麾，军中大旗。<br>炙（zhì）：切碎的熟肉炙<br>分麾下炙：把烤牛肉分赏给部下。<br>五十弦：原指瑟，此处泛指各种乐器。《史记·卷二十八·封禅书》：“太帝使素女鼓五十弦瑟，悲，帝禁不止，故破其瑟为二十五弦。”唐·李商隐《锦瑟》：“锦瑟无端五十弦，一弦一柱思华年。”<br>翻：演奏。<br>塞外声：指悲壮粗犷的战歌<br>沙场：战场。<br>秋：古代点兵用武，多在秋天。<br>点兵：检阅军队。<br>的卢：良马名，一种烈性快马。《相马经》：“马白额入口齿者，名曰‘榆雁’，一名‘的卢’。”《三国志·卷三十二·〈蜀书·先主传〉》注引《世语》：“（刘）备屯樊城，刘表礼焉，惮其为人，不甚信用。曾请备宴会，蒯越、蔡瑁欲因会取备，备觉之，伪如厕，潜遁出。所乘马名的卢，骑的卢走，渡襄阳城西檀溪水中，溺不得出。备急曰：“的卢：今日厄矣，可努力！”的卢乃一踊三丈，遂得过，乘桴渡河。”<br>马作的卢飞快：战马像的卢马那样跑得飞快。作：像……一样。<br>霹雳：本是疾雷声，此处比喻弓弦响声之大。<br>弓如霹雳弦惊：《南史·卷五十五·曹景宗传》：“曹景宗，字子震，新野人也。……景宗幼善骑射，好畋猎，……景宗谓所亲曰：‘我昔在乡里，骑快马如龙，与年少辈数十骑，拓弓弦作霹雳声，箭如饿鸱叫，平泽中逐獐，数肋射之，渴饮其血，饥食其脯，甜如甘露浆。觉耳后生风，鼻头出火，此乐使人忘死，不知老之将至。……’”<br>了却：了结，把事情做完。<br>君王天下事：统一国家的大业，此特指恢复中原事。<br>赢得：博得。<br>身后：死后。<br>可怜：可惜。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词通过对作者早年抗金部队豪壮的阵容和气概以及自己沙场生涯的追忆，表达了作者杀敌报国、收复失地的理想，抒发了壮志难酬、英雄迟暮的悲愤心情；通过创造雄奇的意境，生动地描绘出一位披肝沥胆、忠一不二、勇往直前的将军形象。全词在结构上打破成规，前九句为一意，末一句另为一意，以末一句否定前九句，前九句写得酣恣淋漓，正为加重末五字失望之情，这种艺术手法体现了辛词的豪放风格和独创精神。</p></div></div>
+        <article class="poem-content" data-kind="词" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>醉里挑灯看剑，梦回吹角连营。八百里分麾下炙，五十弦翻塞外声，沙场秋点兵。</p><p>马作的卢飞快，弓如霹雳弦惊。了却君王天下事，赢得生前身后名。可怜白发生！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>醉里挑亮油灯观看宝剑，梦中听到军营的号角声响成一片。把牛肉分给部下享用，让乐器奏起雄壮的军乐鼓舞士气。这是秋天在战场上阅兵。<br>战马像的卢马那样跑得飞快，弓箭像惊雷一样震耳离弦。一心想完成替君收复国家失地的大业，取得世代相传的美名。可惜壮志难酬，白发已生！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>“为陈同甫赋壮词以寄之”：四卷本丁集作“为陈同父赋壮词以寄”。<br>陈同甫：陈亮（公元1143年—公元1194年），字同父（甫），号龙川，婺州永康（今属浙江）人，才气超迈，曾三上书孝宗，反对议和。光宗策进士，擢第一，授签书建康府判官，未赴任卒。有《龙川集》行世。《宋史·卷四百三十六·儒林》有传。<br>挑灯看剑：北宋·刘斧《青琐高议·卷三》载高言诗：“男儿慷慨平生事，时复挑灯把剑看。”挑灯，把灯芯挑亮；看剑，抽出宝剑来细看。<br>梦回：梦里遇见，说明下面描写的战场场景，不过是作者旧梦重温。<br>角：军中乐器，长五尺，形如竹筒，用竹、木、皮、铜制成，外加彩绘．名曰画角。始仅直吹，后用以横吹。其声哀厉高亢，闻之使人振奋。<br>吹角连营：各个军营里接连不断地响起号角声。<br>八百里：牛名。南朝宋·刘义庆《世说新语·汰侈》：“王君夫（恺）有牛，名‘八百里駮（bó）’，常瑩其蹄角。王武子（济）语君夫：‘我射不如卿，今指赌卿牛，以千万对之。’君夫既恃手快，且谓骏物无有杀理，便相然可。令武子先射。武子一起便破的，却据胡床，叱左右：‘速探牛心来！’须臾，炙至，一脔便去。”唐·韩愈《元和圣德诗》：“万牛脔炙，万瓮行酒。”宋·苏轼《约公择饮是日大风》诗：“要当啖公八百里，豪气一洗儒生酸。”唐·范摅《云溪友谈·卷下·杂嘲戏》：“李日新《题仙娥驿》诗曰：‘商山食店太悠悠，陈□䭔饠古䭃头。更有台中牛肉炙，尚盘数脔紫光毬。’”<br>麾下：部下。麾，军中大旗。<br>炙（zhì）：切碎的熟肉炙<br>分麾下炙：把烤牛肉分赏给部下。<br>五十弦：原指瑟，此处泛指各种乐器。《史记·卷二十八·封禅书》：“太帝使素女鼓五十弦瑟，悲，帝禁不止，故破其瑟为二十五弦。”唐·李商隐《锦瑟》：“锦瑟无端五十弦，一弦一柱思华年。”<br>翻：演奏。<br>塞外声：指悲壮粗犷的战歌<br>沙场：战场。<br>秋：古代点兵用武，多在秋天。<br>点兵：检阅军队。<br>的卢：良马名，一种烈性快马。《相马经》：“马白额入口齿者，名曰‘榆雁’，一名‘的卢’。”《三国志·卷三十二·〈蜀书·先主传〉》注引《世语》：“（刘）备屯樊城，刘表礼焉，惮其为人，不甚信用。曾请备宴会，蒯越、蔡瑁欲因会取备，备觉之，伪如厕，潜遁出。所乘马名的卢，骑的卢走，渡襄阳城西檀溪水中，溺不得出。备急曰：“的卢：今日厄矣，可努力！”的卢乃一踊三丈，遂得过，乘桴渡河。”<br>马作的卢飞快：战马像的卢马那样跑得飞快。作：像……一样。<br>霹雳：本是疾雷声，此处比喻弓弦响声之大。<br>弓如霹雳弦惊：《南史·卷五十五·曹景宗传》：“曹景宗，字子震，新野人也。……景宗幼善骑射，好畋猎，……景宗谓所亲曰：‘我昔在乡里，骑快马如龙，与年少辈数十骑，拓弓弦作霹雳声，箭如饿鸱叫，平泽中逐獐，数肋射之，渴饮其血，饥食其脯，甜如甘露浆。觉耳后生风，鼻头出火，此乐使人忘死，不知老之将至。……’”<br>了却：了结，把事情做完。<br>君王天下事：统一国家的大业，此特指恢复中原事。<br>赢得：博得。<br>身后：死后。<br>可怜：可惜。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>此词通过对作者早年抗金部队豪壮的阵容和气概以及自己沙场生涯的追忆，表达了作者杀敌报国、收复失地的理想，抒发了壮志难酬、英雄迟暮的悲愤心情；通过创造雄奇的意境，生动地描绘出一位披肝沥胆、忠一不二、勇往直前的将军形象。全词在结构上打破成规，前九句为一意，末一句另为一意，以末一句否定前九句，前九句写得酣恣淋漓，正为加重末五字失望之情，这种艺术手法体现了辛词的豪放风格和独创精神。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/2305079.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

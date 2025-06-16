@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>箕子碑 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>箕子碑 - 柳宗元 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="箕子碑是唐朝诗人柳宗元的经典作品。本页面提供箕子碑的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="箕子碑,柳宗元,唐朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="箕子碑 - 柳宗元 - 唐朝古诗文">
+    <meta property="og:description" content="箕子碑是唐朝诗人柳宗元的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="箕子碑 - 柳宗元 - 唐朝古诗文">
+    <meta name="twitter:description" content="箕子碑是唐朝诗人柳宗元的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "箕子碑",
+      "author": {
+        "@type": "Person",
+        "name": "柳宗元"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "箕子碑是唐朝诗人柳宗元的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">箕子碑</h1>
-            <div class="poem-author">【唐】柳宗元</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">柳宗元</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>凡大人之道有三：一曰正蒙难，二曰法授圣，三曰化及民。殷有仁人曰箕子，实具兹道，以立于世。故孔子述六经之旨，尤殷勤焉。当纣之时，大道悖乱，天威之动不能戒，圣人之言无所用。进死以并命，诚仁矣；无益吾祀，故不为。委身以存祀，诚仁矣；与亡吾国故不忍。且是二道有行之者矣，是用保其明哲，与之俯仰；晦是谟范，辱于囚奴；昏而无邪，隤而不息。故在《易》曰：“箕子之明夷”，正蒙难也。及天命既改，生人以正。乃出大法，用为圣师，周人得以序彝伦，而立大典。故在《书》曰：“以箕子归”，作《洪范》，法授圣也。及封朝鲜，推道训俗，惟德无陋，惟人无远。用广殷祀，俾夷为华，化及民也。率是大道，丛于厥躬，天地变化，我得其正，其大人欤！</p><p>于虖！当其周时未至，殷祀未殄，比干已死，微子已去，向使纣恶未稔而自毙，武庚念乱以图存，国无其人，谁与兴理！是固人事之或然者也。然则先生隐忍而为此，其有志于斯乎？唐某年，作庙汲郡，岁时致祀。嘉先生独列于《易》象，作是颂云：</p><p>蒙难以正，授圣以谟。</p><p>宗祀用繁，夷民其苏。</p><p>宪宪大人，显晦不渝。</p><p>圣人之仁，道合隆污。</p><p>明哲在躬，不陋为奴。</p><p>冲让居礼，不盈称孤。</p><p>高而无危，卑不可逾。</p><p>非死非去，有怀故都。</p><p>时诎而伸，卒为世模。</p><p>《易》象是列，文王为徒。</p><p>大明宣昭，崇祀式孚。</p><p>古阙颂辞，继在后儒。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>凡是有德行的人遵从的道理有三种：第一是纠正人违法作乱。第二是把大道传授于圣人。第三是教化万民。在殷朝时有一位仁人叫箕子，他实实在在地具备了这三道，以大德行立于世上。所以孔子在叙述六经的要旨大意时，尤其殷勤。<br>在殷纣王之时，大道逆乱，上天的震怒不能引起人们警戒，圣人的言论无所用处。臣下拼死进谏，把己身的生死置之度外，诚然是仁者的作为了，但无益于殷朝的社稷祭祀，所以不这样做；委曲求全，以保存殷朝的祭祀，诚然是仁者的所为了，但是亡国的预兆很明显，所以不忍心去这样做。这两条路，都有人行了。这样的作为，是保其贤明，与世俗人一同俯仰曲伸，隐藏自己的谋略，在奴隶中间受凌辱。虽然卑微不得意，但也不肯乱来；虽然颓废失落，但忠心不熄灭。所以《易》上说：“箕子不敢显露自己的明智。”这就是蒙受苦难而能坚持正道。等到天命已经改变，百姓已经走上正轨，就拿出大法《洪范》以传授圣人，周公旦得依此法序次伦常，后来设立大典章制度。所以《书》说：“箕子归来作《洪范》。”这就是把大道传授圣人。到了周朝封箕子于朝鲜地方，他顺应大道，教育感化俗人，德行无论大小，人群不论亲疏远近，光大殷朝的祭祀，使得夷狄蛮荒变为中华，这是教化万民呢。这些大道聚集于箕子一身；天地之变化，箕子独得其正气，这真是有大道德的人了！<br>唉！当周朝还没有建立，殷商还没有灭亡的时候，殷商大臣比干已死，微子也已离去。假如殷纣还没有恶贯满盈，竟然自毙，纣王之子武庚忧虑乱世，图谋保存殷朝，此时国中没有贤明之人，谁能辅佐治理呢？这是人事中或者有的吧。但箕子先生隐忍受辱为奴，也许是有志于此么？<br>唐朝某年，建箕子庙于汲郡，岁岁祭祀，钦佩先生独自列入《易》卦象之中，所以我作了这篇颂词：<br>蒙难以正，授圣以谟。<br>宗祀用繁，夷民其苏。<br>宪宪大人，显晦不渝。<br>圣人之仁，道合隆污。<br>明哲在躬，不陋为奴。<br>冲让居礼，不盈称孤。<br>高而无危，卑不可逾。<br>非死非去，有怀故都。<br>时诎而伸，卒为世模。<br>《易》象是列，文王为徒。<br>大明宣昭，崇祀式孚。<br>古阙颂辞，继在后儒。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>箕子：名胥余，商纣王叔父，因封在箕地，又称箕子。<br>谟：谋划。<br>范：法、原则。<br>隤（tuí）：跌倒。<br>明夷：卦名，象徵暗君在上、明臣在下，明臣隐藏起自己的智慧。<br>彝（yí）：常规。<br>伦：人伦。<br>洪范：相传为禹时的文献《洪范》，箕子增订并献给周武王。<br>俾：使达到某种程度。<br>率：遵守。<br>丛：聚集。<br>厥：其他的。<br>殄（tiǎn）：尽、绝，灭绝。<br>向使：如果。<br>未稔：没成熟，没达到顶点。<br>武庚：名禄父，纣王子。周武王灭商，封武庚以存殷祀。武王死，武庚与管叔蔡叔反叛被杀。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《箕子碑》是唐宋八大家之一柳宗元为箕子庙写的碑文。《箕子碑》原文有碑和颂，《古文观止》只录其碑，《柳河东集》录其全文。纣王无道，箕子劝谏不从，反遭迫害，却能忍辱负重，建立功业，作者对他表示了极大的推崇和同情。作者以伟大人物三个标准“正蒙难”、“法授圣”、“化及民”为评价箕子的出发点，依次展开论述，彰扬箕子的人品、功业，也表达了对自己、对一切仁人志士的勉励。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>凡大人之道有三：一曰正蒙难，二曰法授圣，三曰化及民。殷有仁人曰箕子，实具兹道，以立于世。故孔子述六经之旨，尤殷勤焉。当纣之时，大道悖乱，天威之动不能戒，圣人之言无所用。进死以并命，诚仁矣；无益吾祀，故不为。委身以存祀，诚仁矣；与亡吾国故不忍。且是二道有行之者矣，是用保其明哲，与之俯仰；晦是谟范，辱于囚奴；昏而无邪，隤而不息。故在《易》曰：“箕子之明夷”，正蒙难也。及天命既改，生人以正。乃出大法，用为圣师，周人得以序彝伦，而立大典。故在《书》曰：“以箕子归”，作《洪范》，法授圣也。及封朝鲜，推道训俗，惟德无陋，惟人无远。用广殷祀，俾夷为华，化及民也。率是大道，丛于厥躬，天地变化，我得其正，其大人欤！</p><p>于虖！当其周时未至，殷祀未殄，比干已死，微子已去，向使纣恶未稔而自毙，武庚念乱以图存，国无其人，谁与兴理！是固人事之或然者也。然则先生隐忍而为此，其有志于斯乎？唐某年，作庙汲郡，岁时致祀。嘉先生独列于《易》象，作是颂云：</p><p>蒙难以正，授圣以谟。</p><p>宗祀用繁，夷民其苏。</p><p>宪宪大人，显晦不渝。</p><p>圣人之仁，道合隆污。</p><p>明哲在躬，不陋为奴。</p><p>冲让居礼，不盈称孤。</p><p>高而无危，卑不可逾。</p><p>非死非去，有怀故都。</p><p>时诎而伸，卒为世模。</p><p>《易》象是列，文王为徒。</p><p>大明宣昭，崇祀式孚。</p><p>古阙颂辞，继在后儒。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>凡是有德行的人遵从的道理有三种：第一是纠正人违法作乱。第二是把大道传授于圣人。第三是教化万民。在殷朝时有一位仁人叫箕子，他实实在在地具备了这三道，以大德行立于世上。所以孔子在叙述六经的要旨大意时，尤其殷勤。<br>在殷纣王之时，大道逆乱，上天的震怒不能引起人们警戒，圣人的言论无所用处。臣下拼死进谏，把己身的生死置之度外，诚然是仁者的作为了，但无益于殷朝的社稷祭祀，所以不这样做；委曲求全，以保存殷朝的祭祀，诚然是仁者的所为了，但是亡国的预兆很明显，所以不忍心去这样做。这两条路，都有人行了。这样的作为，是保其贤明，与世俗人一同俯仰曲伸，隐藏自己的谋略，在奴隶中间受凌辱。虽然卑微不得意，但也不肯乱来；虽然颓废失落，但忠心不熄灭。所以《易》上说：“箕子不敢显露自己的明智。”这就是蒙受苦难而能坚持正道。等到天命已经改变，百姓已经走上正轨，就拿出大法《洪范》以传授圣人，周公旦得依此法序次伦常，后来设立大典章制度。所以《书》说：“箕子归来作《洪范》。”这就是把大道传授圣人。到了周朝封箕子于朝鲜地方，他顺应大道，教育感化俗人，德行无论大小，人群不论亲疏远近，光大殷朝的祭祀，使得夷狄蛮荒变为中华，这是教化万民呢。这些大道聚集于箕子一身；天地之变化，箕子独得其正气，这真是有大道德的人了！<br>唉！当周朝还没有建立，殷商还没有灭亡的时候，殷商大臣比干已死，微子也已离去。假如殷纣还没有恶贯满盈，竟然自毙，纣王之子武庚忧虑乱世，图谋保存殷朝，此时国中没有贤明之人，谁能辅佐治理呢？这是人事中或者有的吧。但箕子先生隐忍受辱为奴，也许是有志于此么？<br>唐朝某年，建箕子庙于汲郡，岁岁祭祀，钦佩先生独自列入《易》卦象之中，所以我作了这篇颂词：<br>蒙难以正，授圣以谟。<br>宗祀用繁，夷民其苏。<br>宪宪大人，显晦不渝。<br>圣人之仁，道合隆污。<br>明哲在躬，不陋为奴。<br>冲让居礼，不盈称孤。<br>高而无危，卑不可逾。<br>非死非去，有怀故都。<br>时诎而伸，卒为世模。<br>《易》象是列，文王为徒。<br>大明宣昭，崇祀式孚。<br>古阙颂辞，继在后儒。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>箕子：名胥余，商纣王叔父，因封在箕地，又称箕子。<br>谟：谋划。<br>范：法、原则。<br>隤（tuí）：跌倒。<br>明夷：卦名，象徵暗君在上、明臣在下，明臣隐藏起自己的智慧。<br>彝（yí）：常规。<br>伦：人伦。<br>洪范：相传为禹时的文献《洪范》，箕子增订并献给周武王。<br>俾：使达到某种程度。<br>率：遵守。<br>丛：聚集。<br>厥：其他的。<br>殄（tiǎn）：尽、绝，灭绝。<br>向使：如果。<br>未稔：没成熟，没达到顶点。<br>武庚：名禄父，纣王子。周武王灭商，封武庚以存殷祀。武王死，武庚与管叔蔡叔反叛被杀。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《箕子碑》是唐宋八大家之一柳宗元为箕子庙写的碑文。《箕子碑》原文有碑和颂，《古文观止》只录其碑，《柳河东集》录其全文。纣王无道，箕子劝谏不从，反遭迫害，却能忍辱负重，建立功业，作者对他表示了极大的推崇和同情。作者以伟大人物三个标准“正蒙难”、“法授圣”、“化及民”为评价箕子的出发点，依次展开论述，彰扬箕子的人品、功业，也表达了对自己、对一切仁人志士的勉励。</p></div></div>
             
             <div class="section"><a href="http://baike.baidu.com/item/箕子碑" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

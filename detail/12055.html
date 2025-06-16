@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>晁错论 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>晁错论 - 苏轼 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="晁错论是宋朝诗人苏轼的经典作品。本页面提供晁错论的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="晁错论,苏轼,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="晁错论 - 苏轼 - 宋朝古诗文">
+    <meta property="og:description" content="晁错论是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="晁错论 - 苏轼 - 宋朝古诗文">
+    <meta name="twitter:description" content="晁错论是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "晁错论",
+      "author": {
+        "@type": "Person",
+        "name": "苏轼"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "晁错论是宋朝诗人苏轼的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">晁错论</h1>
-            <div class="poem-author">【宋】苏轼</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">苏轼</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>天下之患，最不可为者，名为治平无事，而其实有不测之忧。坐观其变，而不为之所，则恐至于不可救；起而强为之，则天下狃于治平之安而不吾信。惟仁人君子豪杰之士，为能出身为天下犯大难，以求成大功；此固非勉强期月之间，而苟以求名之所能也。天下治平，无故而发大难之端；吾发之，吾能收之，然后有辞于天下。事至而循循焉欲去之，使他人任其责，则天下之祸，必集于我。</p><p>昔者晁错尽忠为汉，谋弱山东之诸侯，山东诸侯并起，以诛错为名；而天子不以察，以错为之说。天下悲错之以忠而受祸，不知错有以取之也。</p><p>古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。昔禹之治水，凿龙门，决大河而放之海。方其功之未成也，盖亦有溃冒冲突可畏之患；惟能前知其当然，事至不惧，而徐为之图，是以得至于成功。</p><p>夫以七国之强，而骤削之，其为变，岂足怪哉？错不于此时捐其身，为天下当大难之冲，而制吴楚之命，乃为自全之计，欲使天子自将而己居守。且夫发七国之难者，谁乎？己欲求其名，安所逃其患。以自将之至危，与居守至安；己为难首，择其至安，而遣天子以其至危，此忠臣义士所以愤怨而不平者也。当此之时，虽无袁盎，错亦未免于祸。何者？己欲居守，而使人主自将。以情而言，天子固已难之矣，而重违其议。是以袁盎之说，得行于其间。使吴楚反，错已身任其危，日夜淬砺，东向而待之，使不至于累其君，则天子将恃之以为无恐，虽有百盎，可得而间哉？</p><p>嗟夫！世之君子，欲求非常之功，则无务为自全之计。使错自将而讨吴楚，未必无功，惟其欲自固其身，而天子不悦。奸臣得以乘其隙，错之所以自全者，乃其所以自祸欤！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>天下的祸患，最不能挽回的，莫过于表面上社会安定没有祸乱，而实际上却存在着不安定因素。消极地看着祸乱發生却不去想方设法对付，那么恐怕祸乱就会發展到无可挽回的地步。起来坚决地制止它，又担心天下人已经习惯于这种安定的表象却不相信我。只有那些仁人君子、豪杰人物，才能够挺身而出为国家安定而冒天下之大不韪，以求得成就伟大的功业。这本来就不是能够在短时间内一蹴而就的，更不是企图追求名利的人所能做到的。国家安定平静，无缘无故地触發巨大的祸患的导火线。我触發了它，我又能制止它，然後才能有力地说服天下人。祸乱發生却想躲躲闪闪地避开它，让别人去承担平定它的责任，那么天下人的责难，必定要集中到我的身上。<br>从前晁错殚精竭虑效忠汉室，建议景帝削弱山东诸侯各国的实力。于是山东诸侯各国共同起兵，借着杀晁错的名义。可是景帝没有洞察到他们的用心，就把晁错杀了来说服他们退兵。天下人都为晁错因尽忠而遭杀身之祸而痛心，却不明白其中部分原因却是晁错自己造成的。<br>自古以来凡是做大事业的人，不仅有出类拔萃的才能，也一定有坚韧不拔的意志。从前大禹治水，凿开龙门，疏通黄河，使洪水东流入海。当他的整个工程尚未最後完成时，可能也时有决堤、漫堤等可怕的祸患發生，只是他事先就预料到会这样，祸患發生时就不惊慌失措而能从容地治理它，所以能够最终取得成功。<br>七国那样强大，却突然想削弱它，他们起来叛乱难道值得奇怪吗？晁错不在这个时候豁出自己的性命，为天下人承受抵挡大难从而控制吴、楚等国的命运，却居然为了保全自己的性命想让景帝御驾亲征平定叛乱而自己留守京城。再说那挑起七国之乱的是谁呢？自己想赢得那个美名，又怎么能躲避这场患难呢？拿亲自带兵平定叛乱的极其危险，与留守京城的极其安全相比，自己是个引发祸乱的主谋，选择最安全的事情去做，却把最危险的事情留给皇帝去做，这就是让忠臣义士们愤怒不平的原因啊。在这个时候，即使没有袁盎，晁错也不可能免于杀身之祸。为什么呢？自己想要留守京城，却叫皇帝御驾亲征，按情理来说，皇帝本来已经觉得这是勉为其难的事情，但又不好反对他的建议，这样正好给袁盎以进谗言的机会，使他的目的能够得逞。假若吴、楚等七国叛乱时，晁错豁出性命承担这一危险的平叛重担，夜以继日像淬火磨刀似的训练军队，向东边严阵以待，让自己的君主不至于受到烦忧，那么皇帝就会充分依靠他而不觉得七国叛乱有什么可怕。纵使有一百个袁盎，能有机可乘离间他们君臣吗？<br>唉！世上的君子如果想要建立伟大的功业，那就不要考虑保全性命的计策。假如晁错自己亲自带兵去讨伐吴、楚等七国，不一定就不会成功。只因他一心想保全自身，而惹得皇帝不高兴，奸臣正好趁此钻了空子。晁错晁错企图保全自己的性命，正是他招致杀身之祸的原因啊！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>晁错：颍川（今河南禹县）人，西汉政治家、文学家。汉文帝时，任太常掌故，后历任太子舍人、博士、太子家令；景帝即位后，任为内史，后迁至御史大夫。主张重农贵粟、移民实边，力倡削弱诸候，更定法令，招致王侯权贵忌恨。汉景帝四年（公元前154年），吴、楚等七国以「请诛鼂错，以清君侧」为名，举兵反叛。景帝听从袁盎之计，腰斩鼂错于东市。鼂错的政论文「疏直激切，尽所欲言」，鲁迅称为「西汉鸿文，沾溉后人，其泽甚远」。<br>患：祸患。<br>为：治理，消除。<br>治平：政治清明，社会安定<br>其：代词，指祸患。<br>所：处所。这里指解决问题的措施。<br>狃（niǔ）：习惯。<br>不吾信：不相信我。<br>惟：只有。<br>出身：挺身而出。<br>犯：冒着。<br>以：而，表顺接。<br>固：原本。<br>期（jī）月：一个月。这里泛指短时期<br>端：开头，开始。<br>發：触發。<br>收：制止。<br>然後有辞于天下：然後才能有力地说服天下人。<br>循循焉：缓慢的样子。循循，徐徐;焉，……的样子。<br>去：逃避<br>昔者晁错尽忠为汉：从前晁错殚精竭虑效忠汉朝。昔者，从前。<br>山东：指崤山以东。<br>并起：一同起兵叛乱。<br>以诛错为名：以诛杀晁错作为名义。以……为，把……作为。<br>而天子不以察，以错为之说：但汉景帝没有洞察到起兵的诸侯的用心，把晁错杀了来说服他们退兵。<br>天下悲错之以忠而受祸，不知错有以取之也：天下人都为晁错因尽忠而遭受杀身之祸而悲痛，却不明白其中一部分是晁错自己造成的。以，因为；取，招致。<br>古之立大事者，不惟有超世之才，亦必有坚忍不拔之志：自古以来能够成就伟大功绩的人，不仅仅要有超凡出众的才能，也一定有坚韧不拔的意志。<br>龙门：今陕西韩城东北，是黄河奔流最湍急处。<br>大河：指黄河。<br>方：当。<br>盖亦有溃冒冲突可畏之患：可能也有决堤、漫堤等可怕的祸患。<br>是以：所以，因此。<br>夫：句首發语词。<br>骤：突然。<br>其为变，岂足怪哉：他们起来叛乱，难道值得奇怪吗？足，值得。<br>乃：竟然。<br>欲使天子自将而己居守：想让皇帝御驾亲征平定叛乱，而自己留守京城。<br>己欲求其名，安所逃其患：自己想求得这个美名，怎么能逃避这场患难呢？安，怎么。<br>此忠臣义士所以愤怨而不平者也：这是忠臣义士们之所以愤怒不平的原因啊。<br>虽：即使。<br>何者：为什么呢？<br>以情而言：按照情理来说。以，按照。<br>天子固已难之矣，而重违其议：皇帝本来已经觉得这是勉为其难的事情，但又不好反对他的建议。<br>使：假若。<br>淬砺：锻炼磨砺。引申为冲锋陷阵，發愤图强。<br>虽有百盎，可得而间哉：即使有一百个袁盎，能有机可乘离间他们君臣吗？<br>嗟夫：感叹词，唉。<br>则无务为自全之计：就不要考虑保全性命的计策。务，从事。<br>隙：空隙，空子。<br>乃其所以自祸欤：正是他招致杀身之祸的原因啊！欤，语气助词，表感叹。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《晁错论》是北宋文学家苏轼创作的一篇人物评论文，评论对象为西汉初年景帝时期的政治改革家晁错。这篇文章总结了削藩失败是晁错被杀的原因。作者认为，晁错被杀，首先有七国叛乱给皇帝造成的压力和受到政敌中伤的原因，但又提出了另一个观点，即晁错自己也缺乏坚强的意志和临危不惧的精神，才给了政敌攻击他的机会。同时，作者通过对晁错改革失败的叹惋，表达出自己愿意为国效力但有志难展的抑郁心情。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>天下之患，最不可为者，名为治平无事，而其实有不测之忧。坐观其变，而不为之所，则恐至于不可救；起而强为之，则天下狃于治平之安而不吾信。惟仁人君子豪杰之士，为能出身为天下犯大难，以求成大功；此固非勉强期月之间，而苟以求名之所能也。天下治平，无故而发大难之端；吾发之，吾能收之，然后有辞于天下。事至而循循焉欲去之，使他人任其责，则天下之祸，必集于我。</p><p>昔者晁错尽忠为汉，谋弱山东之诸侯，山东诸侯并起，以诛错为名；而天子不以察，以错为之说。天下悲错之以忠而受祸，不知错有以取之也。</p><p>古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。昔禹之治水，凿龙门，决大河而放之海。方其功之未成也，盖亦有溃冒冲突可畏之患；惟能前知其当然，事至不惧，而徐为之图，是以得至于成功。</p><p>夫以七国之强，而骤削之，其为变，岂足怪哉？错不于此时捐其身，为天下当大难之冲，而制吴楚之命，乃为自全之计，欲使天子自将而己居守。且夫发七国之难者，谁乎？己欲求其名，安所逃其患。以自将之至危，与居守至安；己为难首，择其至安，而遣天子以其至危，此忠臣义士所以愤怨而不平者也。当此之时，虽无袁盎，错亦未免于祸。何者？己欲居守，而使人主自将。以情而言，天子固已难之矣，而重违其议。是以袁盎之说，得行于其间。使吴楚反，错已身任其危，日夜淬砺，东向而待之，使不至于累其君，则天子将恃之以为无恐，虽有百盎，可得而间哉？</p><p>嗟夫！世之君子，欲求非常之功，则无务为自全之计。使错自将而讨吴楚，未必无功，惟其欲自固其身，而天子不悦。奸臣得以乘其隙，错之所以自全者，乃其所以自祸欤！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>天下的祸患，最不能挽回的，莫过于表面上社会安定没有祸乱，而实际上却存在着不安定因素。消极地看着祸乱發生却不去想方设法对付，那么恐怕祸乱就会發展到无可挽回的地步。起来坚决地制止它，又担心天下人已经习惯于这种安定的表象却不相信我。只有那些仁人君子、豪杰人物，才能够挺身而出为国家安定而冒天下之大不韪，以求得成就伟大的功业。这本来就不是能够在短时间内一蹴而就的，更不是企图追求名利的人所能做到的。国家安定平静，无缘无故地触發巨大的祸患的导火线。我触發了它，我又能制止它，然後才能有力地说服天下人。祸乱發生却想躲躲闪闪地避开它，让别人去承担平定它的责任，那么天下人的责难，必定要集中到我的身上。<br>从前晁错殚精竭虑效忠汉室，建议景帝削弱山东诸侯各国的实力。于是山东诸侯各国共同起兵，借着杀晁错的名义。可是景帝没有洞察到他们的用心，就把晁错杀了来说服他们退兵。天下人都为晁错因尽忠而遭杀身之祸而痛心，却不明白其中部分原因却是晁错自己造成的。<br>自古以来凡是做大事业的人，不仅有出类拔萃的才能，也一定有坚韧不拔的意志。从前大禹治水，凿开龙门，疏通黄河，使洪水东流入海。当他的整个工程尚未最後完成时，可能也时有决堤、漫堤等可怕的祸患發生，只是他事先就预料到会这样，祸患發生时就不惊慌失措而能从容地治理它，所以能够最终取得成功。<br>七国那样强大，却突然想削弱它，他们起来叛乱难道值得奇怪吗？晁错不在这个时候豁出自己的性命，为天下人承受抵挡大难从而控制吴、楚等国的命运，却居然为了保全自己的性命想让景帝御驾亲征平定叛乱而自己留守京城。再说那挑起七国之乱的是谁呢？自己想赢得那个美名，又怎么能躲避这场患难呢？拿亲自带兵平定叛乱的极其危险，与留守京城的极其安全相比，自己是个引发祸乱的主谋，选择最安全的事情去做，却把最危险的事情留给皇帝去做，这就是让忠臣义士们愤怒不平的原因啊。在这个时候，即使没有袁盎，晁错也不可能免于杀身之祸。为什么呢？自己想要留守京城，却叫皇帝御驾亲征，按情理来说，皇帝本来已经觉得这是勉为其难的事情，但又不好反对他的建议，这样正好给袁盎以进谗言的机会，使他的目的能够得逞。假若吴、楚等七国叛乱时，晁错豁出性命承担这一危险的平叛重担，夜以继日像淬火磨刀似的训练军队，向东边严阵以待，让自己的君主不至于受到烦忧，那么皇帝就会充分依靠他而不觉得七国叛乱有什么可怕。纵使有一百个袁盎，能有机可乘离间他们君臣吗？<br>唉！世上的君子如果想要建立伟大的功业，那就不要考虑保全性命的计策。假如晁错自己亲自带兵去讨伐吴、楚等七国，不一定就不会成功。只因他一心想保全自身，而惹得皇帝不高兴，奸臣正好趁此钻了空子。晁错晁错企图保全自己的性命，正是他招致杀身之祸的原因啊！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>晁错：颍川（今河南禹县）人，西汉政治家、文学家。汉文帝时，任太常掌故，后历任太子舍人、博士、太子家令；景帝即位后，任为内史，后迁至御史大夫。主张重农贵粟、移民实边，力倡削弱诸候，更定法令，招致王侯权贵忌恨。汉景帝四年（公元前154年），吴、楚等七国以「请诛鼂错，以清君侧」为名，举兵反叛。景帝听从袁盎之计，腰斩鼂错于东市。鼂错的政论文「疏直激切，尽所欲言」，鲁迅称为「西汉鸿文，沾溉后人，其泽甚远」。<br>患：祸患。<br>为：治理，消除。<br>治平：政治清明，社会安定<br>其：代词，指祸患。<br>所：处所。这里指解决问题的措施。<br>狃（niǔ）：习惯。<br>不吾信：不相信我。<br>惟：只有。<br>出身：挺身而出。<br>犯：冒着。<br>以：而，表顺接。<br>固：原本。<br>期（jī）月：一个月。这里泛指短时期<br>端：开头，开始。<br>發：触發。<br>收：制止。<br>然後有辞于天下：然後才能有力地说服天下人。<br>循循焉：缓慢的样子。循循，徐徐;焉，……的样子。<br>去：逃避<br>昔者晁错尽忠为汉：从前晁错殚精竭虑效忠汉朝。昔者，从前。<br>山东：指崤山以东。<br>并起：一同起兵叛乱。<br>以诛错为名：以诛杀晁错作为名义。以……为，把……作为。<br>而天子不以察，以错为之说：但汉景帝没有洞察到起兵的诸侯的用心，把晁错杀了来说服他们退兵。<br>天下悲错之以忠而受祸，不知错有以取之也：天下人都为晁错因尽忠而遭受杀身之祸而悲痛，却不明白其中一部分是晁错自己造成的。以，因为；取，招致。<br>古之立大事者，不惟有超世之才，亦必有坚忍不拔之志：自古以来能够成就伟大功绩的人，不仅仅要有超凡出众的才能，也一定有坚韧不拔的意志。<br>龙门：今陕西韩城东北，是黄河奔流最湍急处。<br>大河：指黄河。<br>方：当。<br>盖亦有溃冒冲突可畏之患：可能也有决堤、漫堤等可怕的祸患。<br>是以：所以，因此。<br>夫：句首發语词。<br>骤：突然。<br>其为变，岂足怪哉：他们起来叛乱，难道值得奇怪吗？足，值得。<br>乃：竟然。<br>欲使天子自将而己居守：想让皇帝御驾亲征平定叛乱，而自己留守京城。<br>己欲求其名，安所逃其患：自己想求得这个美名，怎么能逃避这场患难呢？安，怎么。<br>此忠臣义士所以愤怨而不平者也：这是忠臣义士们之所以愤怒不平的原因啊。<br>虽：即使。<br>何者：为什么呢？<br>以情而言：按照情理来说。以，按照。<br>天子固已难之矣，而重违其议：皇帝本来已经觉得这是勉为其难的事情，但又不好反对他的建议。<br>使：假若。<br>淬砺：锻炼磨砺。引申为冲锋陷阵，發愤图强。<br>虽有百盎，可得而间哉：即使有一百个袁盎，能有机可乘离间他们君臣吗？<br>嗟夫：感叹词，唉。<br>则无务为自全之计：就不要考虑保全性命的计策。务，从事。<br>隙：空隙，空子。<br>乃其所以自祸欤：正是他招致杀身之祸的原因啊！欤，语气助词，表感叹。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《晁错论》是北宋文学家苏轼创作的一篇人物评论文，评论对象为西汉初年景帝时期的政治改革家晁错。这篇文章总结了削藩失败是晁错被杀的原因。作者认为，晁错被杀，首先有七国叛乱给皇帝造成的压力和受到政敌中伤的原因，但又提出了另一个观点，即晁错自己也缺乏坚强的意志和临危不惧的精神，才给了政敌攻击他的机会。同时，作者通过对晁错改革失败的叹惋，表达出自己愿意为国效力但有志难展的抑郁心情。</p></div></div>
             
             <div class="section"><a href="http://baike.baidu.com/view/575557.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

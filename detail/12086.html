@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>桃花源诗 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>桃花源诗 - 陶渊明 - 晋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="桃花源诗是晋朝诗人陶渊明的经典作品。本页面提供桃花源诗的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="桃花源诗,陶渊明,晋朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="桃花源诗 - 陶渊明 - 晋朝古诗文">
+    <meta property="og:description" content="桃花源诗是晋朝诗人陶渊明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="桃花源诗 - 陶渊明 - 晋朝古诗文">
+    <meta name="twitter:description" content="桃花源诗是晋朝诗人陶渊明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "桃花源诗",
+      "author": {
+        "@type": "Person",
+        "name": "陶渊明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "桃花源诗是晋朝诗人陶渊明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">桃花源诗</h1>
-            <div class="poem-author">【晋】陶渊明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【晋】<span itemprop="name">陶渊明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>嬴氏乱天纪，贤者避其世。</p><p>黄绮之商山，伊人亦云逝。</p><p>往迹浸复湮，来径遂芜废。</p><p>相命肆农耕，日入从所憩。</p><p>桑竹垂余荫，菽稷随时艺；</p><p>春蚕收长丝，秋熟靡王税。</p><p>荒路暧交通，鸡犬互鸣吠。</p><p>俎豆犹古法，衣裳无新制。</p><p>童孺纵行歌，班白欢游诣。</p><p>草荣识节和，木衰知风厉。</p><p>虽无纪历志，四时自成岁。</p><p>怡然有馀乐，于何劳智慧？</p><p>奇踪隐五百，一朝敞神界。</p><p>淳薄既异源，旋复还幽蔽。</p><p>借问游方士，焉测尘嚣外。</p><p>愿言蹑清风，高举寻吾契。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>秦王暴政乱纲纪，贤士纷纷远躲避。<br>四皓隐居在商山，有人隐匿来此地。<br>往昔踪迹消失尽，来此路途已荒废。<br>相唤共同致农耕，天黑还家自休息。<br>桑竹茂盛遮浓荫，庄稼种植按节气。<br>春蚕结茧取长丝，秋日丰收不纳税。<br>荒草遮途阻交通，村中鸡犬互鸣吠。<br>祭祀仍遵古礼法，衣裳没有新款式。<br>儿童欢跳纵情歌，老者欣然自游憩。<br>草木花开知春到，草衰木凋知寒至。<br>虽无年历记时日，四季推移自成岁。<br>欢快安逸乐无穷，哪还需要动知慧？<br>奇踪隐蔽五百岁，一朝开放神奇界。<br>浮薄淳朴不同源，转眼深藏无处觅。<br>请问世间凡夫子，可知尘外此奇迹？<br>我愿踏乘轻云去，高飞寻找我知己。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>嬴（yíng）氏：这里指秦始皇嬴政。<br>黄绮：汉初商山四皓中之夏黄公、绮里季的合称。此指商山四皓。<br>伊人：指桃源山中人。<br>云：句中助词，无义。<br>逝：离去，即逃至山中。<br>往迹：人或车马行进所留下的踪迹。<br>湮（yān）：埋没。<br>相命：互相传令，此指互相招呼。<br>肆：致力。<br>从：相随。<br>所憩：休息的处所。<br>余：一作“馀”。<br>菽（shū）：豆类。<br>稷（jì）：谷类。<br>艺：种植。<br>靡（mǐ）：没有。<br>暧（ài）：遮蔽。<br>俎（zǔ）豆：俎和豆。古代祭祀、宴飨时盛食物用的两种礼器。亦泛指各种礼器。<br>衣裳（cháng）：古时衣指上衣，裳指下裙。後亦泛指衣服。<br>童孺（rú）：儿童。<br>班白：指须发花白。班，通“斑”。<br>诣（yì）：玩耍。<br>节和：节令和顺。<br>纪历：纪年、纪月、纪日的历书。<br>成岁：成为一年。<br>馀乐：不尽之乐。<br>于何：为什么，干什么。<br>五百：五百年。从秦始皇到晋太元中的五百多年。<br>神界：神奇的界域。<br>淳：淳厚，指桃源山中的人情风尚。<br>薄：浮薄，指现实社会的人情世态。<br>旋：很快。<br>幽蔽：深暗。<br>游方士：游于方外之士。<br>尘嚣：世间的纷扰、喧嚣。<br>蹑（niè）：踩。<br>契（qì）：契合，指志同道合的人。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《桃花源诗》是晋宋之际文学家陶渊明创作的附于《桃花源记》之后的一首五言诗，诗与记珠联璧合，又相互独立，并无重复之感。此诗以诗人的口吻讲述桃花源中人民和平、安宁的生活，诗人以自己对当时社会现实的深切感受，突破了个人狭小的生活天地，从现实社会的政治黑暗、人民生活苦难出发，结合传说中的情形，描绘了一个与现实社会相对立自由、幸福的理想社会。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>嬴氏乱天纪，贤者避其世。</p><p>黄绮之商山，伊人亦云逝。</p><p>往迹浸复湮，来径遂芜废。</p><p>相命肆农耕，日入从所憩。</p><p>桑竹垂余荫，菽稷随时艺；</p><p>春蚕收长丝，秋熟靡王税。</p><p>荒路暧交通，鸡犬互鸣吠。</p><p>俎豆犹古法，衣裳无新制。</p><p>童孺纵行歌，班白欢游诣。</p><p>草荣识节和，木衰知风厉。</p><p>虽无纪历志，四时自成岁。</p><p>怡然有馀乐，于何劳智慧？</p><p>奇踪隐五百，一朝敞神界。</p><p>淳薄既异源，旋复还幽蔽。</p><p>借问游方士，焉测尘嚣外。</p><p>愿言蹑清风，高举寻吾契。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>秦王暴政乱纲纪，贤士纷纷远躲避。<br>四皓隐居在商山，有人隐匿来此地。<br>往昔踪迹消失尽，来此路途已荒废。<br>相唤共同致农耕，天黑还家自休息。<br>桑竹茂盛遮浓荫，庄稼种植按节气。<br>春蚕结茧取长丝，秋日丰收不纳税。<br>荒草遮途阻交通，村中鸡犬互鸣吠。<br>祭祀仍遵古礼法，衣裳没有新款式。<br>儿童欢跳纵情歌，老者欣然自游憩。<br>草木花开知春到，草衰木凋知寒至。<br>虽无年历记时日，四季推移自成岁。<br>欢快安逸乐无穷，哪还需要动知慧？<br>奇踪隐蔽五百岁，一朝开放神奇界。<br>浮薄淳朴不同源，转眼深藏无处觅。<br>请问世间凡夫子，可知尘外此奇迹？<br>我愿踏乘轻云去，高飞寻找我知己。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>嬴（yíng）氏：这里指秦始皇嬴政。<br>黄绮：汉初商山四皓中之夏黄公、绮里季的合称。此指商山四皓。<br>伊人：指桃源山中人。<br>云：句中助词，无义。<br>逝：离去，即逃至山中。<br>往迹：人或车马行进所留下的踪迹。<br>湮（yān）：埋没。<br>相命：互相传令，此指互相招呼。<br>肆：致力。<br>从：相随。<br>所憩：休息的处所。<br>余：一作“馀”。<br>菽（shū）：豆类。<br>稷（jì）：谷类。<br>艺：种植。<br>靡（mǐ）：没有。<br>暧（ài）：遮蔽。<br>俎（zǔ）豆：俎和豆。古代祭祀、宴飨时盛食物用的两种礼器。亦泛指各种礼器。<br>衣裳（cháng）：古时衣指上衣，裳指下裙。後亦泛指衣服。<br>童孺（rú）：儿童。<br>班白：指须发花白。班，通“斑”。<br>诣（yì）：玩耍。<br>节和：节令和顺。<br>纪历：纪年、纪月、纪日的历书。<br>成岁：成为一年。<br>馀乐：不尽之乐。<br>于何：为什么，干什么。<br>五百：五百年。从秦始皇到晋太元中的五百多年。<br>神界：神奇的界域。<br>淳：淳厚，指桃源山中的人情风尚。<br>薄：浮薄，指现实社会的人情世态。<br>旋：很快。<br>幽蔽：深暗。<br>游方士：游于方外之士。<br>尘嚣：世间的纷扰、喧嚣。<br>蹑（niè）：踩。<br>契（qì）：契合，指志同道合的人。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《桃花源诗》是晋宋之际文学家陶渊明创作的附于《桃花源记》之后的一首五言诗，诗与记珠联璧合，又相互独立，并无重复之感。此诗以诗人的口吻讲述桃花源中人民和平、安宁的生活，诗人以自己对当时社会现实的深切感受，突破了个人狭小的生活天地，从现实社会的政治黑暗、人民生活苦难出发，结合传说中的情形，描绘了一个与现实社会相对立自由、幸福的理想社会。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/762421.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

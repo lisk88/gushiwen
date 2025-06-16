@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>孙权劝学 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>孙权劝学 - 司马光 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="孙权劝学是宋朝诗人司马光的经典作品。本页面提供孙权劝学的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="孙权劝学,司马光,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="孙权劝学 - 司马光 - 宋朝古诗文">
+    <meta property="og:description" content="孙权劝学是宋朝诗人司马光的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="孙权劝学 - 司马光 - 宋朝古诗文">
+    <meta name="twitter:description" content="孙权劝学是宋朝诗人司马光的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "孙权劝学",
+      "author": {
+        "@type": "Person",
+        "name": "司马光"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "孙权劝学是宋朝诗人司马光的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">孙权劝学</h1>
-            <div class="poem-author">【宋】司马光</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">司马光</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>初，权谓吕蒙曰：“卿今当涂掌事，不可不学！”蒙辞以军中多务。权曰：“孤岂欲卿治经为博士邪！但当涉猎，见往事耳。卿言多务，孰若孤？孤常读书，自以为大有所益。”蒙乃始就学。及鲁肃过寻阳，与蒙论议，大惊曰：“卿今者才略，非复吴下阿蒙！”蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”肃遂拜蒙母，结友而别。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>当初，孙权对吕蒙说：“你现在当权管事，不可以不学习！”吕蒙用军中事务繁多来推托。孙权说：“我难道想要你研究儒家经典，成为博士（专掌经学传授的学官）吗！我只是让你粗略地阅读，了解历史罢了。你说军务繁多，谁比得上我（事务多）呢？我经常读书，自己觉得获益很多。”吕蒙于是开始学习。当鲁肃路过寻阳的时候，鲁肃和吕蒙一起谈论议事，鲁肃十分吃惊地说：“你现在的军事方面和政治方面的才能和谋略，不再是原来的那个吴县的（没有学识的）阿蒙了！”吕蒙说：“志士（君子）分别几天，就重新另眼看待了，长兄你认清事物怎么这么晚呢？”于是鲁肃拜见吕蒙的母亲，和吕蒙结为朋友后分别了。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>1、初：当初，起初，这里是追述往事的习惯用词。<br>2、权：指孙权，字仲谋，吴郡富春（浙江富阳）人，黄龙元年（公元222年）称王于武昌（今湖北鄂城），国号吴，不久迁都建业，（今江苏南京）。229年称帝。<br>3、谓……曰：谓，告诉；连用表示“对……说”。<br>4、吕蒙：字子明，三国时吴国名将，汝南富陂（今安徽省阜南县东南）人。<br>5、卿：古代君对臣或朋友之间的爱称。<br>6、今：当今。<br>7、当涂：当道，当权。<br>8、掌事：掌管政事。<br>9、辞：推托。<br>10、以：介词，用。<br>11、务：事务。<br>12、孤：古时王侯的自称。<br>13、岂：难道。<br>14、治经：研究儒家经典。治，研究。“经”指《诗经》《尚书》《礼记》《周易》《春秋》等书。<br>15、博士：当时专掌经学传授的学官。<br>16、邪（yé）：通“耶”，语气词，表示反问或疑问的语气。<br>17、但：只，仅。<br>18、当：应当。<br>19、涉猎：粗略地阅读。<br>20、见往事：了解历史。见，了解；往事，指历史。<br>21、耳：语气词，表示限制语气，罢了。<br>22、多务：事务多，杂事多。务，事务。<br>23、孰若：与……相比如何；谁像（我）。孰：谁，哪个；若：比得上。<br>24、益：好处。<br>25、乃：于是，就。<br>26、始：开始。<br>27、就学：指从事学习。就，单独翻译为从事。<br>28、及：到了……的时候。<br>29、过：路过。<br>30、寻阳：县名，在湖北黄梅西南。<br>31、论议：讨论议事。<br>32、大：非常，十分。<br>33、惊：惊奇。<br>34、者：用在时间词后面，不译。<br>35、才略：军事方面或政治方面的才干和谋略。<br>36、非复：不再是。复：再，又。<br>37、吴下阿蒙：指在吴下时的没有才学的吕蒙。吴下，指吴县，如今江苏苏州。阿蒙，指吕蒙，名字前加"阿"，有亲昵的意味。现指才识尚浅的人。<br>38、士别三日：与读书的人分别几天。三：几天，这里指“几”。士，读书人。<br>39、即：就。<br>40、更（gēng）：重新。<br>41、刮目相待：另眼相看，用新的眼光看待。刮目：擦擦眼。待：看待。<br>42、大兄：长兄，这里是对同辈年长者的尊称。<br>43、何：为什么。<br>44、见事：认清事物。见，认清，识别。<br>45、乎：啊。表感叹或反问语气。<br>46、遂：于是，就。<br>47、拜：拜见。<br>48、别：离开。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>初，权谓吕蒙曰：“卿今当涂掌事，不可不学！”蒙辞以军中多务。权曰：“孤岂欲卿治经为博士邪！但当涉猎，见往事耳。卿言多务，孰若孤？孤常读书，自以为大有所益。”蒙乃始就学。及鲁肃过寻阳，与蒙论议，大惊曰：“卿今者才略，非复吴下阿蒙！”蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”肃遂拜蒙母，结友而别。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>当初，孙权对吕蒙说：“你现在当权管事，不可以不学习！”吕蒙用军中事务繁多来推托。孙权说：“我难道想要你研究儒家经典，成为博士（专掌经学传授的学官）吗！我只是让你粗略地阅读，了解历史罢了。你说军务繁多，谁比得上我（事务多）呢？我经常读书，自己觉得获益很多。”吕蒙于是开始学习。当鲁肃路过寻阳的时候，鲁肃和吕蒙一起谈论议事，鲁肃十分吃惊地说：“你现在的军事方面和政治方面的才能和谋略，不再是原来的那个吴县的（没有学识的）阿蒙了！”吕蒙说：“志士（君子）分别几天，就重新另眼看待了，长兄你认清事物怎么这么晚呢？”于是鲁肃拜见吕蒙的母亲，和吕蒙结为朋友后分别了。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>1、初：当初，起初，这里是追述往事的习惯用词。<br>2、权：指孙权，字仲谋，吴郡富春（浙江富阳）人，黄龙元年（公元222年）称王于武昌（今湖北鄂城），国号吴，不久迁都建业，（今江苏南京）。229年称帝。<br>3、谓……曰：谓，告诉；连用表示“对……说”。<br>4、吕蒙：字子明，三国时吴国名将，汝南富陂（今安徽省阜南县东南）人。<br>5、卿：古代君对臣或朋友之间的爱称。<br>6、今：当今。<br>7、当涂：当道，当权。<br>8、掌事：掌管政事。<br>9、辞：推托。<br>10、以：介词，用。<br>11、务：事务。<br>12、孤：古时王侯的自称。<br>13、岂：难道。<br>14、治经：研究儒家经典。治，研究。“经”指《诗经》《尚书》《礼记》《周易》《春秋》等书。<br>15、博士：当时专掌经学传授的学官。<br>16、邪（yé）：通“耶”，语气词，表示反问或疑问的语气。<br>17、但：只，仅。<br>18、当：应当。<br>19、涉猎：粗略地阅读。<br>20、见往事：了解历史。见，了解；往事，指历史。<br>21、耳：语气词，表示限制语气，罢了。<br>22、多务：事务多，杂事多。务，事务。<br>23、孰若：与……相比如何；谁像（我）。孰：谁，哪个；若：比得上。<br>24、益：好处。<br>25、乃：于是，就。<br>26、始：开始。<br>27、就学：指从事学习。就，单独翻译为从事。<br>28、及：到了……的时候。<br>29、过：路过。<br>30、寻阳：县名，在湖北黄梅西南。<br>31、论议：讨论议事。<br>32、大：非常，十分。<br>33、惊：惊奇。<br>34、者：用在时间词后面，不译。<br>35、才略：军事方面或政治方面的才干和谋略。<br>36、非复：不再是。复：再，又。<br>37、吴下阿蒙：指在吴下时的没有才学的吕蒙。吴下，指吴县，如今江苏苏州。阿蒙，指吕蒙，名字前加"阿"，有亲昵的意味。现指才识尚浅的人。<br>38、士别三日：与读书的人分别几天。三：几天，这里指“几”。士，读书人。<br>39、即：就。<br>40、更（gēng）：重新。<br>41、刮目相待：另眼相看，用新的眼光看待。刮目：擦擦眼。待：看待。<br>42、大兄：长兄，这里是对同辈年长者的尊称。<br>43、何：为什么。<br>44、见事：认清事物。见，认清，识别。<br>45、乎：啊。表感叹或反问语气。<br>46、遂：于是，就。<br>47、拜：拜见。<br>48、别：离开。</p></div></div>
             
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

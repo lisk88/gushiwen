@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>兰亭集序 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>兰亭集序 - 王羲之 - 晋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="兰亭集序是晋朝诗人王羲之的经典作品。本页面提供兰亭集序的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="兰亭集序,王羲之,晋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="兰亭集序 - 王羲之 - 晋朝古诗文">
+    <meta property="og:description" content="兰亭集序是晋朝诗人王羲之的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="兰亭集序 - 王羲之 - 晋朝古诗文">
+    <meta name="twitter:description" content="兰亭集序是晋朝诗人王羲之的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "兰亭集序",
+      "author": {
+        "@type": "Person",
+        "name": "王羲之"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "兰亭集序是晋朝诗人王羲之的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">兰亭集序</h1>
-            <div class="poem-author">【晋】王羲之</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【晋】<span itemprop="name">王羲之</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹，又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。</p><p>是日也，天朗气清，惠风和畅。仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。</p><p>夫人之相与，俯仰一世。或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，怏然自足，不知老之将至。及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，以为陈迹，犹不能不以之兴怀，况修短随化，终期于尽！古人云：“死生亦大矣。”岂不痛哉！</p><p>每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔，悲夫！故列叙时人，录其所述。虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>永和九年，时在癸丑之年，三月上旬，我们会集在会稽郡山阴城的兰亭，为了做禊事。众多贤才都汇聚到这里，年龄大的小的都聚集在这里。兰亭这个地方有高峻的山峰，茂盛的树林，高高的竹子。又有清澈湍急的溪流，辉映环绕在亭子的四周，我们引溪水作为流觞的曲水，排列坐在曲水旁边，虽然没有演奏音乐的盛况，但喝点酒，作点诗，也足够来畅快叙述幽深内藏的感情了。<br>这一天，天气晴朗，空气清新，和风温暖，仰首观览到宇宙的浩大，俯看观察大地上众多的万物，用来舒展眼力，开阔胸怀，足够来极尽视听的欢娱，实在很快乐。<br>人与人相互交往，很快便度过一生。有的人在室内畅谈自己的胸怀抱负；有的人就着自己所爱好的事物，寄托情怀，放纵无羁地生活。虽然各有各的爱好，安静与躁动各不相同，但当他们对所接触的事物感到高兴时，一时感到自得和满足，竟然不知道衰老将要到来。等到对得到或喜爱的东西已经厌倦，感情随着事物的变化而变化，感慨随之产生。过去所喜欢的东西，转瞬间，已经成为旧迹，尚且不能不因为它引发心中的感触，况且寿命长短，听凭造化，最后归结于消灭。古人说：“死生毕竟是件大事啊。”怎么能不让人悲痛呢？<br>每当看到前人所发感慨的原因，其缘由像一张符契那样相和，总难免要在读前人文章时叹息哀伤，不能明白于心。本来知道把生死等同的说法是不真实的，把长寿和短命等同起来的说法是妄造的。后人看待今人，也就像今人看待前人，可悲呀。所以一个一个记下当时与会的人，录下他们所作的诗篇。纵使时代变了，事情不同了，但触发人们情怀的原因，他们的思想情趣是一样的。后世的读者，也将对这次集会的诗文有所感慨。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>永和：东晋穆帝司马聃的年号，从公元345—356年共十二年。永和九年上巳节，王羲之与谢安，孙绰等四十一人。举行禊礼，饮酒赋诗，事后将作品结为一集，由王羲之写了这篇序总述其事。<br>暮春：阴历三月。暮，晚。<br>会：集会。<br>会稽（kuàijī）：郡名，今浙江绍兴。<br>山阴：今绍兴越城区。<br>修禊（xì）事也：（为了做）禊礼这件事。古代习俗，于阴历三月上旬的巳日（魏以后定为三月三日），人们群聚于水滨嬉戏洗濯，以祓除不祥和求福。实际上这是古人的一种游春活动。修禊，《兰亭集序》的神龙摹本作“脩稧”。<br>群贤：诸多贤士能人。指谢安等三十二位社会的名流。贤，形容词做名词。<br>毕至：全到。毕，全、都。<br>少长：如王羲之的儿子王凝之、王徽之是少；谢安、王羲之等是长。<br>咸：都。<br>崇山峻岭：高峻的山岭。岭，《兰亭集序》的神龙摹本作“领”。<br>修竹：高高的竹子。修，高高的样子。<br>激湍：流势很急的水。<br>映带左右：辉映点缀在亭子的周围。映带，映衬、围绕，《兰亭集序》的神龙摹本作“暎”。<br>流觞曲（shāngqū）水：用漆制的酒杯盛酒，放入弯曲的水道中任其飘流，杯停在某人面前，某人就引杯饮酒。这是古人一种劝酒取乐的方式。流，使动用法；曲水，引水环曲为渠，以流酒杯。<br>列坐其次：列坐在曲水之旁。列坐，排列而坐；次，旁边，水边。<br>丝竹管弦之盛：演奏音乐的盛况。盛，盛大。<br>一觞一咏：喝着酒作着诗。<br>幽情：幽深内藏的感情。<br>是日也：这一天。<br>惠风：和风。<br>和畅，缓和。<br>品类之盛：万物的繁多。品类，指自然界的万物。<br>所以：用来。<br>骋：使……奔驰。<br>极：穷尽。<br>信：实在。<br>夫人之相与，俯仰一世：人与人相交往，很快便度过一生。夫，句首发语词，不译。相与，相处、相交往。俯仰，表示时间的短暂。<br>取诸：取之于，从……中取得。<br>悟言：面对面的交谈。悟，通“晤”，面对面。<br>因寄所托，放浪形骸之外：就着自己所爱好的事物，寄托自己的情怀，不受约束，放纵无羁的生活。因，依、随着。寄，寄托。所托，所爱好的事物。放浪，放纵、无拘束。形骸，身体、形体。<br>趣（qū）舍万殊：各有各的爱好，取舍各不相同。趣舍，即取舍，爱好。趣，通“取”。万殊，千差万别。<br>静躁：安静与躁动。<br>暂：短暂，一时。<br>怏然自足：自大自满的样子。然，……的样子。中学教科书中“怏”字讹作“快”，不可取。<br>不知老之将至：（竟）不知道衰老将要到来。语出《论语·述而》：“其为人也，发愤忘食，乐以忘忧，不知老之将至云尔。”一本有“曾”在句前。<br>所之既倦：（对于）所喜爱或得到的事物已经厌倦。之，往、到达。<br>情随事迁：感情随着事物的变化而变化。迁，变化。<br>感慨系之：感慨随着产生。系，附着。<br>向：过去、以前。<br>以为陈迹：中学教科书中讹“以”字为“已”，今正之。<br>陈迹：旧迹。<br>以之兴怀：因它而引起心中的感触。以，因。之，指“向之所欣……以为陈迹”。兴，发生、引起。<br>修短随化：寿命长短听凭造化。化，自然。<br>期：至，及。<br>死生亦大矣：死生是一件大事啊。语出《庄子·德充符》。<br>契：符契，古代的一种信物。在符契上刻上字，剖而为二，各执一半，作为凭证。<br>临文嗟（jiē）悼：读古人文章时叹息哀伤。临，面对。<br>喻：明白。<br>固知一死生为虚诞，齐彭殇为妄作：本来知道把死和生等同起来的说法是不真实的，把长寿和短命等同起来的说法是妄造的。固，本来、当然。一，把……看作一样；齐，把……看作相等，都用作动词。虚诞，虚妄荒诞的话。殇，未成年死去的人。妄作，妄造、胡说。一生死，齐彭殇，都是庄子的看法。出自《齐物论》。<br>亦由今之视昔：中学教科书中将“由”字讹作“犹”，不可取。<br>列叙时人：一个一个记下当时与会的人。<br>录其所述：录下他们作的诗。<br>其致一也：人们的思想情趣是一样的。<br>后之览者：后世的读者。<br>斯文：这次集会的诗文。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《兰亭集序》又名《兰亭宴集序》、《兰亭序》。东晋穆帝永和九年（公元353年）三月三日，王羲之与谢安、孙绰等四十一位军政高官，在山阴（今浙江绍兴）兰亭「修禊」，会上各人做诗，《兰亭集序》即为王羲之为众人所作之诗写的序文手稿。文中记叙了兰亭山水之美和聚会的畅快之情，抒发作者对生死无常的感慨。<br>王羲之手书之真迹已随唐太宗葬于墓中，后人只得由临本中窥见此作。而其临本中又以「神龙本」《兰亭集序》最为称道，因该卷画心前上有唐中宗「神龙」年号小印左半印迹而得名，被认定为是由冯承素奉圣旨于兰亭真迹上双钩所摹，所以应是与真迹最为接近的摹本。本文内容即以《兰亭集序》「神龙摹本」为准。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹，又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。</p><p>是日也，天朗气清，惠风和畅。仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。</p><p>夫人之相与，俯仰一世。或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，怏然自足，不知老之将至。及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，以为陈迹，犹不能不以之兴怀，况修短随化，终期于尽！古人云：“死生亦大矣。”岂不痛哉！</p><p>每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔，悲夫！故列叙时人，录其所述。虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>永和九年，时在癸丑之年，三月上旬，我们会集在会稽郡山阴城的兰亭，为了做禊事。众多贤才都汇聚到这里，年龄大的小的都聚集在这里。兰亭这个地方有高峻的山峰，茂盛的树林，高高的竹子。又有清澈湍急的溪流，辉映环绕在亭子的四周，我们引溪水作为流觞的曲水，排列坐在曲水旁边，虽然没有演奏音乐的盛况，但喝点酒，作点诗，也足够来畅快叙述幽深内藏的感情了。<br>这一天，天气晴朗，空气清新，和风温暖，仰首观览到宇宙的浩大，俯看观察大地上众多的万物，用来舒展眼力，开阔胸怀，足够来极尽视听的欢娱，实在很快乐。<br>人与人相互交往，很快便度过一生。有的人在室内畅谈自己的胸怀抱负；有的人就着自己所爱好的事物，寄托情怀，放纵无羁地生活。虽然各有各的爱好，安静与躁动各不相同，但当他们对所接触的事物感到高兴时，一时感到自得和满足，竟然不知道衰老将要到来。等到对得到或喜爱的东西已经厌倦，感情随着事物的变化而变化，感慨随之产生。过去所喜欢的东西，转瞬间，已经成为旧迹，尚且不能不因为它引发心中的感触，况且寿命长短，听凭造化，最后归结于消灭。古人说：“死生毕竟是件大事啊。”怎么能不让人悲痛呢？<br>每当看到前人所发感慨的原因，其缘由像一张符契那样相和，总难免要在读前人文章时叹息哀伤，不能明白于心。本来知道把生死等同的说法是不真实的，把长寿和短命等同起来的说法是妄造的。后人看待今人，也就像今人看待前人，可悲呀。所以一个一个记下当时与会的人，录下他们所作的诗篇。纵使时代变了，事情不同了，但触发人们情怀的原因，他们的思想情趣是一样的。后世的读者，也将对这次集会的诗文有所感慨。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>永和：东晋穆帝司马聃的年号，从公元345—356年共十二年。永和九年上巳节，王羲之与谢安，孙绰等四十一人。举行禊礼，饮酒赋诗，事后将作品结为一集，由王羲之写了这篇序总述其事。<br>暮春：阴历三月。暮，晚。<br>会：集会。<br>会稽（kuàijī）：郡名，今浙江绍兴。<br>山阴：今绍兴越城区。<br>修禊（xì）事也：（为了做）禊礼这件事。古代习俗，于阴历三月上旬的巳日（魏以后定为三月三日），人们群聚于水滨嬉戏洗濯，以祓除不祥和求福。实际上这是古人的一种游春活动。修禊，《兰亭集序》的神龙摹本作“脩稧”。<br>群贤：诸多贤士能人。指谢安等三十二位社会的名流。贤，形容词做名词。<br>毕至：全到。毕，全、都。<br>少长：如王羲之的儿子王凝之、王徽之是少；谢安、王羲之等是长。<br>咸：都。<br>崇山峻岭：高峻的山岭。岭，《兰亭集序》的神龙摹本作“领”。<br>修竹：高高的竹子。修，高高的样子。<br>激湍：流势很急的水。<br>映带左右：辉映点缀在亭子的周围。映带，映衬、围绕，《兰亭集序》的神龙摹本作“暎”。<br>流觞曲（shāngqū）水：用漆制的酒杯盛酒，放入弯曲的水道中任其飘流，杯停在某人面前，某人就引杯饮酒。这是古人一种劝酒取乐的方式。流，使动用法；曲水，引水环曲为渠，以流酒杯。<br>列坐其次：列坐在曲水之旁。列坐，排列而坐；次，旁边，水边。<br>丝竹管弦之盛：演奏音乐的盛况。盛，盛大。<br>一觞一咏：喝着酒作着诗。<br>幽情：幽深内藏的感情。<br>是日也：这一天。<br>惠风：和风。<br>和畅，缓和。<br>品类之盛：万物的繁多。品类，指自然界的万物。<br>所以：用来。<br>骋：使……奔驰。<br>极：穷尽。<br>信：实在。<br>夫人之相与，俯仰一世：人与人相交往，很快便度过一生。夫，句首发语词，不译。相与，相处、相交往。俯仰，表示时间的短暂。<br>取诸：取之于，从……中取得。<br>悟言：面对面的交谈。悟，通“晤”，面对面。<br>因寄所托，放浪形骸之外：就着自己所爱好的事物，寄托自己的情怀，不受约束，放纵无羁的生活。因，依、随着。寄，寄托。所托，所爱好的事物。放浪，放纵、无拘束。形骸，身体、形体。<br>趣（qū）舍万殊：各有各的爱好，取舍各不相同。趣舍，即取舍，爱好。趣，通“取”。万殊，千差万别。<br>静躁：安静与躁动。<br>暂：短暂，一时。<br>怏然自足：自大自满的样子。然，……的样子。中学教科书中“怏”字讹作“快”，不可取。<br>不知老之将至：（竟）不知道衰老将要到来。语出《论语·述而》：“其为人也，发愤忘食，乐以忘忧，不知老之将至云尔。”一本有“曾”在句前。<br>所之既倦：（对于）所喜爱或得到的事物已经厌倦。之，往、到达。<br>情随事迁：感情随着事物的变化而变化。迁，变化。<br>感慨系之：感慨随着产生。系，附着。<br>向：过去、以前。<br>以为陈迹：中学教科书中讹“以”字为“已”，今正之。<br>陈迹：旧迹。<br>以之兴怀：因它而引起心中的感触。以，因。之，指“向之所欣……以为陈迹”。兴，发生、引起。<br>修短随化：寿命长短听凭造化。化，自然。<br>期：至，及。<br>死生亦大矣：死生是一件大事啊。语出《庄子·德充符》。<br>契：符契，古代的一种信物。在符契上刻上字，剖而为二，各执一半，作为凭证。<br>临文嗟（jiē）悼：读古人文章时叹息哀伤。临，面对。<br>喻：明白。<br>固知一死生为虚诞，齐彭殇为妄作：本来知道把死和生等同起来的说法是不真实的，把长寿和短命等同起来的说法是妄造的。固，本来、当然。一，把……看作一样；齐，把……看作相等，都用作动词。虚诞，虚妄荒诞的话。殇，未成年死去的人。妄作，妄造、胡说。一生死，齐彭殇，都是庄子的看法。出自《齐物论》。<br>亦由今之视昔：中学教科书中将“由”字讹作“犹”，不可取。<br>列叙时人：一个一个记下当时与会的人。<br>录其所述：录下他们作的诗。<br>其致一也：人们的思想情趣是一样的。<br>后之览者：后世的读者。<br>斯文：这次集会的诗文。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《兰亭集序》又名《兰亭宴集序》、《兰亭序》。东晋穆帝永和九年（公元353年）三月三日，王羲之与谢安、孙绰等四十一位军政高官，在山阴（今浙江绍兴）兰亭「修禊」，会上各人做诗，《兰亭集序》即为王羲之为众人所作之诗写的序文手稿。文中记叙了兰亭山水之美和聚会的畅快之情，抒发作者对生死无常的感慨。<br>王羲之手书之真迹已随唐太宗葬于墓中，后人只得由临本中窥见此作。而其临本中又以「神龙本」《兰亭集序》最为称道，因该卷画心前上有唐中宗「神龙」年号小印左半印迹而得名，被认定为是由冯承素奉圣旨于兰亭真迹上双钩所摹，所以应是与真迹最为接近的摹本。本文内容即以《兰亭集序》「神龙摹本」为准。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/6850/17409556.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

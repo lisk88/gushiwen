@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>徐文长传 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>徐文长传 - 袁宏道 - 明朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="徐文长传是明朝诗人袁宏道的经典作品。本页面提供徐文长传的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="徐文长传,袁宏道,明朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="徐文长传 - 袁宏道 - 明朝古诗文">
+    <meta property="og:description" content="徐文长传是明朝诗人袁宏道的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="徐文长传 - 袁宏道 - 明朝古诗文">
+    <meta name="twitter:description" content="徐文长传是明朝诗人袁宏道的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "徐文长传",
+      "author": {
+        "@type": "Person",
+        "name": "袁宏道"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "徐文长传是明朝诗人袁宏道的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">徐文长传</h1>
-            <div class="poem-author">【明】袁宏道</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【明】<span itemprop="name">袁宏道</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>余少时过里肆中，见北杂剧有《四声猿》，意气豪达，与近时书生所演传奇绝异，题曰“天池生”，疑为元人作。后适越，见人家单幅上有署“田水月”者，强心铁骨，与夫一种磊块不平之气，字画之中，宛宛可见。意甚骇之，而不知田水月为何人。</p><p>余一夕，坐陶编修楼，随意抽架上书，得《阙编》诗一帙。恶楮毛书，烟煤败黑，微有字形。稍就灯间读之，读未数首，不觉惊跃，忽呼石篑：“《阙编》何人作者？今耶？古耶？”石篑曰：“此余乡先辈徐天池先生书也。先生名渭，字文长，嘉、隆间人，前五六年方卒。今卷轴题额上有田水月者，即其人也。”余始悟前后所疑，皆即文长一人。又当诗道荒秽之时，获此奇秘，如魇得醒。两人跃起，灯影下，读复叫，叫复读，僮仆睡者皆惊起。余自是或向人，或作书，皆首称文长先生。有来看余者，即出诗与之读。一时名公巨匠，浸浸知向慕云。</p><p>文长为山阴秀才，大试辄不利，豪荡不羁。总督胡梅林公知之，聘为幕客。文长与胡公约：“若欲客某者，当具宾礼，非时辄得出入。”胡公皆许之。文长乃葛衣乌巾，长揖就坐，纵谈天下事，旁若无人。胡公大喜。是时公督数边兵，威振东南，介胄之士，膝语蛇行，不敢举头；而文长以部下一诸生傲之，信心而行，恣臆谈谑，了无忌惮。会得白鹿，属文长代作表。表上，永陵喜甚。公以是益重之，一切疏记，皆出其手。</p><p>文长自负才略，好奇计，谈兵多中。凡公所以饵汪、徐诸虏者，皆密相议然后行。尝饮一酒楼，有数健儿亦饮其下，不肯留钱。文长密以数字驰公，公立命缚健儿至麾下，皆斩之，一军股栗。有沙门负资而秽，酒间偶言于公，公后以他事杖杀之。其信任多此类。</p><p>胡公既怜文长之才，哀其数困，时方省试，凡入帘者，公密属曰：“徐子，天下才，若在本房，幸勿脱失。”皆曰：“如命。”一知县以他羁后至，至期方谒公，偶忘属，卷适在其房，遂不偶。</p><p>文长既已不得志于有司，遂乃放浪曲糵，恣情山水，走齐、鲁、燕、赵之地，穷览朔漠。其所见山奔海立，沙起云行，风鸣树偃，幽谷大都，人物鱼鸟，一切可惊可愕之状，一一皆达之于诗。其胸中又有一段不可磨灭之气，英雄失路、托足无门之悲，故其为诗，如嗔如笑，如水鸣峡，如种出土，如寡妇之夜哭，羁人之寒起。当其放意，平畴千里；偶尔幽峭，鬼语秋坟。文长眼空千古，独立一时。当时所谓达官贵人、骚士墨客，文长皆叱而奴之，耻不与交，故其名不出于越。悲夫！</p><p>一日，饮其乡大夫家。乡大夫指筵上一小物求赋，阴令童仆续纸丈馀进，欲以苦之。文长援笔立成，竟满其纸，气韵遒逸，物无遁情，一座大惊。</p><p>文长喜作书，笔意奔放如其诗，苍劲中姿媚跃出。余不能书，而谬谓文长书决当在王雅宜、文徵仲之上。不论书法，而论书神：先生者，诚八法之散圣，字林之侠客也。间以其馀，旁溢为花草竹石，皆超逸有致。</p><p>卒以疑杀其继室，下狱论死。张阳和力解，乃得出。既出，倔强如初。晚年愤益深，佯狂益甚。显者至门，皆拒不纳。当道官至，求一字不可得。时携钱至酒肆，呼下隶与饮。或自持斧击破其头，血流被面，头骨皆折，揉之有声。或槌其囊，或以利锥锥其两耳，深入寸馀，竟不得死。</p><p>石篑言：晚岁诗文益奇，无刻本，集藏于家。予所见者，《徐文长集》、《阙编》二种而已。然文长竟以不得志于时，抱愤而卒。</p><p>石公曰：先生数奇不已，遂为狂疾；狂疾不已，遂为囹圄。古今文人，牢骚困苦，未有若先生者也。虽然，胡公间世豪杰，永陵英主，幕中礼数异等，是胡公知有先生矣；表上，人主悦，是人主知有先生矣。独身未贵耳。先生诗文崛起，一扫近代芜秽之习，百世而下，自有定论，胡为不遇哉？梅客生尝寄余书曰：“文长吾老友，病奇于人，人奇于诗，诗奇于字，字奇于文，文奇于画。”余谓文长无之而不奇者也。无之而不奇，斯无之而不奇也哉！悲夫！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我年轻时经过家乡的店铺，看见有北杂剧《四声猿》。意趣和气概豪放旷达，与大多书生所编写的传奇大不相同，署名为“天池生”，怀疑它是元代人的作品。后来到越地去，看见人家单张的书幅上有署款“田水月”的，笔法刚劲有力，一种郁结在胸中的不平之气，透露于字画中，仿佛可见。心中十分惊讶，却不知道田水月是谁。<br>一天晚上，坐在陶编修家楼上，随意抽阅架上陈放的书，得《阙编》诗集一函。纸张装订都很差，刷板墨质低劣，字迹模糊不清。略凑近灯前阅读，看了没几首，不由得惊喜欢跃，连忙叫石篑，问他：“《阙编》是谁作的？是今人还是古人？”石篑说：“这是我同乡前辈徐天池先生著的书。先生名渭，字文长，嘉靖、隆庆间人，五六年前才去世。现在卷轴、题额上有署田水月的，就是他。”我方才明白前后所猜疑的都是文长一人。再加上如今正当诗歌领域荒芜浊污的时候，得到这样的奇珍秘宝，犹如在恶梦中被唤醒。我们俩跳起来，在灯影下，读了又叫，叫了又读，睡着的佣人们都被惊起。我从此以后，或者对人家口说，或者写书信，都标表文长先生。有来看望我的，就拿出文长的诗给他读。一时文学界著名的人物，渐渐地知道向往仰慕他。<br>徐渭，字文长，是山阴的秀才，名声很大，薛蕙做浙江省考官时，认为他是奇才，但命运不好，乡试多次未被录取。性格直爽，无拘无束。总督胡宗宪知晓他的才能，聘请他做幕客。文长与胡宗宪讲定：“如果要我做幕客的话，要按照接待宾客的礼节，不规定时间，自由进出。”胡宗宪都答应了他。文长于是穿葛布衣服，戴黑色头巾，拱手行礼入坐，放言畅谈天下大事，好象旁边没有人一样。胡宗宪非常高兴。那时胡宗宪统率着几个方面的兵将，威振东南一带，军人畏惧他以至跪着说话，匍匐在地像蛇一样爬行，不敢抬头；而文长作为部下一秀才而对他高傲自得，随心所欲地行事，任意谈论和开玩笑，丝毫没有畏惧顾虑。议论的人说他是真长和杜甫一类的人。正逢捕得一头白鹿，胡宗宪请文长代作贺表。表章上达，世宗皇帝看了很高兴。因此胡宗宪更加看重他，一切奏疏、公文等，都请他代作。<br>文长对自己的才能谋略看得很高，喜欢出奇谋妙计，谈论行军打仗的形势策略大多得其要领。凡是胡宗宪所行的诱降汪直、徐海等盗寇的计谋，都和他慎密商议，然后付诸实行。文长曾经在一座酒楼上喝酒，有几名军士也在楼下喝酒，酒后不肯付钱。文长暗暗写短函迅速告达胡宗宪，胡宗宪立刻命令将军士绑进衙门，全部斩首，全军都害怕得大腿发抖。有一个和尚依仗有钱财而行为不轨，徐渭在喝酒时偶尔提起，后来胡宗宪借其它事把他击毙在梃杖下。文长受到胡宗宪的信任多和这相仿。<br>胡宗宪既然怜爱文长的才华，又哀叹他屡次考试不中，适逢乡试，凡是作考官的，都暗中嘱托说：“徐子是第一流才士，如在你的房里，希望不要遗漏。”考官都答应遵照他的话去办。有一个知县因有其它事耽搁，晚来了一些，到了考期才拜见胡宗宪。胡宗恰巧忘了嘱托他，试卷正好分发在他的房中，于是又没有被取中。<br>文长既然不得志，不被当道看重，于是放浪形骸，肆意狂饮，纵情山水。他游历了山东（齐鲁）、河北（燕赵），又饱览了塞外大漠。他所见的山如奔马、海浪壁立、胡沙满天和雷霆千里的景象，风雨交鸣的声音和奇木异树的形状，乃至山谷的幽深冷清和都市的繁华热闹，以及奇人异士、怪鱼珍鸟，所有前所未见，令人惊愕的自然和人文景观，他都一一化入了诗中。他胸中一直郁结着强烈的不平奋争精神和英雄无用武之地的悲凉。所以他的诗有时怒骂，有时嬉笑，有时如山洪奔流于峡谷，发出轰雷般的涛声，有时如春芽破土，充满蓬勃的生机。有时他的诗像寡妇深夜的哭声那样凄厉，有时像逆旅行客冲寒启程那样无奈。虽然他诗作的格调，有时比较卑下，但是匠心独运，有大气象和超人的气概。那种如以色事人的女子一般媚俗的诗作是难以望其项背的。徐文长于为文之道有真知灼见，他的文章气象沉着而法度精严，他不为墨守成规而压抑自己的才华和创造力，也不漫无节制地放纵议论以致伤害文章的严谨理路，真是韩愈、曾巩一流的文章家。徐文长志趣高雅，不与时俗合调，对当时的所谓文坛领袖，他一概加以愤怒的抨击，所以他的文字没人推崇，名气也只局限在家乡浙江一带，这实在令人为之悲哀！喜写作，他用笔奔放有如他的诗，在苍劲豪迈中另具一种妩媚的姿态跃然纸上，欧阳公所谓的美人迟暮另具一种韵味的说法，可用之于形容文长的书法。文长以诗、文、书法修养的余绪，涉笔成花鸟画，也都超逸有情致。<br>后来，文长因疑忌误杀他的继室妻子而下狱定死罪，张元汴太史极力营救，方得出狱。晚年的徐文长对世道愈加愤恨不平，于是有意作出一种更为狂放的样子，达官名士登门拜访，他时常会拒绝不见。他又经常带着钱到酒店，叫下人仆隶和他一起喝酒。他曾拿斧头砍击自己的头胪，血流满面，头骨破碎，用手揉摩，碎骨咔咔有声。他还曾用尖利的锥子锥入自己双耳一寸多深，却竟然没有死。<br>周望声称文长的诗文到晚年愈加奇异，没有刻本行世，诗文集稿都藏在家中。我有在浙江做官的科举同年，曾委托他们抄录文长的诗文，至今没有得到。我所见到的，只有《徐文长集》、《阙编》二种而已。而今徐文长竟以不合于时，不得申展抱负，带着对世道的愤恨而死去了。<br>石公说：徐文长先生的命途多艰，坎坷不断，致使他激愤成狂疾，狂病的不断发作，又导致他被投入监狱，从古至今文人的牢骚怨愤和遭受到的困难苦痛，再没有能超过徐文长先生的了。但尽管如此，仍有胡公这样的不世之豪杰，世宗这样的英明帝王赏识他。徐文长在胡公幕中受到特殊礼遇，这是胡公认识到了他的价值，他的上奏表文博得皇帝的欢心，表明皇帝也认识到了他的价值，唯一欠缺的，只是未能致身显贵而已。文长先生诗文的崛起，可以一扫近代文坛庞杂卑陋的习气，将来历史自会有公正的定论，又怎么能说他生不逢时，始终不被社会承认呢？<br>梅客生曾经写信给我说：徐文长是我的老朋友，他的怪病比他这个怪人更要怪，而他作为一个奇人又比他的奇诗更要奇。我则认为徐文长没有一处地方不怪异奇特，正因为没有一处不怪异奇特，所以也就注定他一生命运没有一处不艰难，不坎坷。令人悲哀呀！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>徐文长，即徐渭（公元1521年-公元1593年），字文长，号青藤道士。明代文人，在诗文、戏曲、书法、绘画方面，都有相当成就。有《徐文长集》三十卷，《逸稿》二十四卷，杂剧《四声猿》，戏曲理论著作《南词叙录》等。<br>胡梅林公：胡宗宪，字汝贞，绩溪（今属安徽）人。嘉靖进士，任浙江巡抚，总督军务，以平倭功，加右都御史、太子太保。因投靠严嵩，严嵩倒台后，他也下狱死。<br>葛衣乌巾：身着布衣，头戴黑巾。此为布衣装束。<br>督数边兵：胡宗宪总督南直隶、浙、闽军务。<br>介胄之士：披甲戴盔之士，指将官们。<br>膝语蛇行：跪着说话，爬着走路，形容极其恭敬惶恐。<br>会得白鹿：《徐文长自著畸谱》：“三十八岁，孟春之三日，幕再招，时获白鹿二，……令草两表以献。”<br>表：一种臣下呈于君主的文体，一般用来陈述衷情，颂贺谢圣。<br>永陵：明世宗嘉靖皇帝的陵墓，此用来代指嘉靖皇帝本人。<br>沙门：和尚。<br>秽：丑行。<br>数困：指徐渭曾多次参加科举考试未能考中。<br>疏记：两种文体。疏，即臣下给皇帝的奏疏。记，书牍、札子。<br>不偶：不遇。<br>有司：主管部门的官员。<br>曲蘖（niè）：即酒母，酿酒的发酵物，后遂以之代指酒。<br>朔漠：北方沙漠地区。<br>大都：大城市。<br>嗔：生气。<br>羁人：旅客。<br>间：有时。<br>馀：馀力。<br>卒以疑：最终由于疑心。<br>继室：续娶的妻子。<br>晚年愤益深：胡宗宪被处死后，徐渭更加愤激。<br>佯狂：装疯。<br>下隶：衙门差役。<br>石公：作者的号。<br>数奇（jī）：命运坎坷，遭遇不顺。<br>囹圄（língyǔ）：监狱。这里指身陷囹圄。<br>间世：间隔几世。古称三十年为一世。形容不常有的。<br>芜秽：杂乱、繁冗。<br>梅客生：梅国桢，字客生。万历进士，官兵部右侍郎。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《徐文长传》选自《袁中郎全集·卷四》。<br>徐文长是明嘉靖至万历年间著名的文学艺术家，幼有文名，但只考上一个秀才，以后屡试不就。他好谈兵法，积极参与当时东南沿海的抗倭战争，曾入浙闽军务总督胡宗宪幕中，参预机宜，写过两篇对倭作战的方案，自称：“尝身匿兵中，环舟贼垒，度地形为方略。”后胡宗宪被捕下狱，他也受到牵连，忧愤成狂，之后游历山水，遇见总兵李成梁并教导其子李如松兵法战略，并使李如松在万历二十年的朝鲜战争中大败丰臣秀吉的日本军。他怀才不遇，在仕途上备受倾踬，在文学上亦不得志。他与后七子李攀龙、王世贞同时，然却是李、王的反对派。他曾批判复古派效古人某篇某体是人而“学为鸟言者”（《叶子肃诗序》）当时复古派盛行。王、李之作遍天下，他自然受到冷落。徐文长生前虽有文集刊行，但鲜为人知。在他死后四年，袁宏道始偶然地在陶望龄的家中发现其诗集《阙编》，大惊异，叹为平生仅见，于是写了这篇传记。<br>徐文长一生侘傺潦倒，其磊落不平之气，一一发之于诗文，“愤激无聊，放言高论，不复问古人法度为何物”。（《四库全书总目提要》）其诗实力公安一派的先鞭，尤其是他批判理学之伪，提倡一己之适，蔑弃礼法，作狂傲世，更与公安三袁的处世精神相通。因此袁宏道的这一篇传记便不同于一般记述人物的行状。全文从徐文长的诗文不得行于世写起，突出他怀才不遇、备受冷落的坎坷一生，同情之心溢于言表，景仰之情流注行间，寄情楮墨，表达了作者自己强烈的傲世疾俗的精神。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>余少时过里肆中，见北杂剧有《四声猿》，意气豪达，与近时书生所演传奇绝异，题曰“天池生”，疑为元人作。后适越，见人家单幅上有署“田水月”者，强心铁骨，与夫一种磊块不平之气，字画之中，宛宛可见。意甚骇之，而不知田水月为何人。</p><p>余一夕，坐陶编修楼，随意抽架上书，得《阙编》诗一帙。恶楮毛书，烟煤败黑，微有字形。稍就灯间读之，读未数首，不觉惊跃，忽呼石篑：“《阙编》何人作者？今耶？古耶？”石篑曰：“此余乡先辈徐天池先生书也。先生名渭，字文长，嘉、隆间人，前五六年方卒。今卷轴题额上有田水月者，即其人也。”余始悟前后所疑，皆即文长一人。又当诗道荒秽之时，获此奇秘，如魇得醒。两人跃起，灯影下，读复叫，叫复读，僮仆睡者皆惊起。余自是或向人，或作书，皆首称文长先生。有来看余者，即出诗与之读。一时名公巨匠，浸浸知向慕云。</p><p>文长为山阴秀才，大试辄不利，豪荡不羁。总督胡梅林公知之，聘为幕客。文长与胡公约：“若欲客某者，当具宾礼，非时辄得出入。”胡公皆许之。文长乃葛衣乌巾，长揖就坐，纵谈天下事，旁若无人。胡公大喜。是时公督数边兵，威振东南，介胄之士，膝语蛇行，不敢举头；而文长以部下一诸生傲之，信心而行，恣臆谈谑，了无忌惮。会得白鹿，属文长代作表。表上，永陵喜甚。公以是益重之，一切疏记，皆出其手。</p><p>文长自负才略，好奇计，谈兵多中。凡公所以饵汪、徐诸虏者，皆密相议然后行。尝饮一酒楼，有数健儿亦饮其下，不肯留钱。文长密以数字驰公，公立命缚健儿至麾下，皆斩之，一军股栗。有沙门负资而秽，酒间偶言于公，公后以他事杖杀之。其信任多此类。</p><p>胡公既怜文长之才，哀其数困，时方省试，凡入帘者，公密属曰：“徐子，天下才，若在本房，幸勿脱失。”皆曰：“如命。”一知县以他羁后至，至期方谒公，偶忘属，卷适在其房，遂不偶。</p><p>文长既已不得志于有司，遂乃放浪曲糵，恣情山水，走齐、鲁、燕、赵之地，穷览朔漠。其所见山奔海立，沙起云行，风鸣树偃，幽谷大都，人物鱼鸟，一切可惊可愕之状，一一皆达之于诗。其胸中又有一段不可磨灭之气，英雄失路、托足无门之悲，故其为诗，如嗔如笑，如水鸣峡，如种出土，如寡妇之夜哭，羁人之寒起。当其放意，平畴千里；偶尔幽峭，鬼语秋坟。文长眼空千古，独立一时。当时所谓达官贵人、骚士墨客，文长皆叱而奴之，耻不与交，故其名不出于越。悲夫！</p><p>一日，饮其乡大夫家。乡大夫指筵上一小物求赋，阴令童仆续纸丈馀进，欲以苦之。文长援笔立成，竟满其纸，气韵遒逸，物无遁情，一座大惊。</p><p>文长喜作书，笔意奔放如其诗，苍劲中姿媚跃出。余不能书，而谬谓文长书决当在王雅宜、文徵仲之上。不论书法，而论书神：先生者，诚八法之散圣，字林之侠客也。间以其馀，旁溢为花草竹石，皆超逸有致。</p><p>卒以疑杀其继室，下狱论死。张阳和力解，乃得出。既出，倔强如初。晚年愤益深，佯狂益甚。显者至门，皆拒不纳。当道官至，求一字不可得。时携钱至酒肆，呼下隶与饮。或自持斧击破其头，血流被面，头骨皆折，揉之有声。或槌其囊，或以利锥锥其两耳，深入寸馀，竟不得死。</p><p>石篑言：晚岁诗文益奇，无刻本，集藏于家。予所见者，《徐文长集》、《阙编》二种而已。然文长竟以不得志于时，抱愤而卒。</p><p>石公曰：先生数奇不已，遂为狂疾；狂疾不已，遂为囹圄。古今文人，牢骚困苦，未有若先生者也。虽然，胡公间世豪杰，永陵英主，幕中礼数异等，是胡公知有先生矣；表上，人主悦，是人主知有先生矣。独身未贵耳。先生诗文崛起，一扫近代芜秽之习，百世而下，自有定论，胡为不遇哉？梅客生尝寄余书曰：“文长吾老友，病奇于人，人奇于诗，诗奇于字，字奇于文，文奇于画。”余谓文长无之而不奇者也。无之而不奇，斯无之而不奇也哉！悲夫！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>我年轻时经过家乡的店铺，看见有北杂剧《四声猿》。意趣和气概豪放旷达，与大多书生所编写的传奇大不相同，署名为“天池生”，怀疑它是元代人的作品。后来到越地去，看见人家单张的书幅上有署款“田水月”的，笔法刚劲有力，一种郁结在胸中的不平之气，透露于字画中，仿佛可见。心中十分惊讶，却不知道田水月是谁。<br>一天晚上，坐在陶编修家楼上，随意抽阅架上陈放的书，得《阙编》诗集一函。纸张装订都很差，刷板墨质低劣，字迹模糊不清。略凑近灯前阅读，看了没几首，不由得惊喜欢跃，连忙叫石篑，问他：“《阙编》是谁作的？是今人还是古人？”石篑说：“这是我同乡前辈徐天池先生著的书。先生名渭，字文长，嘉靖、隆庆间人，五六年前才去世。现在卷轴、题额上有署田水月的，就是他。”我方才明白前后所猜疑的都是文长一人。再加上如今正当诗歌领域荒芜浊污的时候，得到这样的奇珍秘宝，犹如在恶梦中被唤醒。我们俩跳起来，在灯影下，读了又叫，叫了又读，睡着的佣人们都被惊起。我从此以后，或者对人家口说，或者写书信，都标表文长先生。有来看望我的，就拿出文长的诗给他读。一时文学界著名的人物，渐渐地知道向往仰慕他。<br>徐渭，字文长，是山阴的秀才，名声很大，薛蕙做浙江省考官时，认为他是奇才，但命运不好，乡试多次未被录取。性格直爽，无拘无束。总督胡宗宪知晓他的才能，聘请他做幕客。文长与胡宗宪讲定：“如果要我做幕客的话，要按照接待宾客的礼节，不规定时间，自由进出。”胡宗宪都答应了他。文长于是穿葛布衣服，戴黑色头巾，拱手行礼入坐，放言畅谈天下大事，好象旁边没有人一样。胡宗宪非常高兴。那时胡宗宪统率着几个方面的兵将，威振东南一带，军人畏惧他以至跪着说话，匍匐在地像蛇一样爬行，不敢抬头；而文长作为部下一秀才而对他高傲自得，随心所欲地行事，任意谈论和开玩笑，丝毫没有畏惧顾虑。议论的人说他是真长和杜甫一类的人。正逢捕得一头白鹿，胡宗宪请文长代作贺表。表章上达，世宗皇帝看了很高兴。因此胡宗宪更加看重他，一切奏疏、公文等，都请他代作。<br>文长对自己的才能谋略看得很高，喜欢出奇谋妙计，谈论行军打仗的形势策略大多得其要领。凡是胡宗宪所行的诱降汪直、徐海等盗寇的计谋，都和他慎密商议，然后付诸实行。文长曾经在一座酒楼上喝酒，有几名军士也在楼下喝酒，酒后不肯付钱。文长暗暗写短函迅速告达胡宗宪，胡宗宪立刻命令将军士绑进衙门，全部斩首，全军都害怕得大腿发抖。有一个和尚依仗有钱财而行为不轨，徐渭在喝酒时偶尔提起，后来胡宗宪借其它事把他击毙在梃杖下。文长受到胡宗宪的信任多和这相仿。<br>胡宗宪既然怜爱文长的才华，又哀叹他屡次考试不中，适逢乡试，凡是作考官的，都暗中嘱托说：“徐子是第一流才士，如在你的房里，希望不要遗漏。”考官都答应遵照他的话去办。有一个知县因有其它事耽搁，晚来了一些，到了考期才拜见胡宗宪。胡宗恰巧忘了嘱托他，试卷正好分发在他的房中，于是又没有被取中。<br>文长既然不得志，不被当道看重，于是放浪形骸，肆意狂饮，纵情山水。他游历了山东（齐鲁）、河北（燕赵），又饱览了塞外大漠。他所见的山如奔马、海浪壁立、胡沙满天和雷霆千里的景象，风雨交鸣的声音和奇木异树的形状，乃至山谷的幽深冷清和都市的繁华热闹，以及奇人异士、怪鱼珍鸟，所有前所未见，令人惊愕的自然和人文景观，他都一一化入了诗中。他胸中一直郁结着强烈的不平奋争精神和英雄无用武之地的悲凉。所以他的诗有时怒骂，有时嬉笑，有时如山洪奔流于峡谷，发出轰雷般的涛声，有时如春芽破土，充满蓬勃的生机。有时他的诗像寡妇深夜的哭声那样凄厉，有时像逆旅行客冲寒启程那样无奈。虽然他诗作的格调，有时比较卑下，但是匠心独运，有大气象和超人的气概。那种如以色事人的女子一般媚俗的诗作是难以望其项背的。徐文长于为文之道有真知灼见，他的文章气象沉着而法度精严，他不为墨守成规而压抑自己的才华和创造力，也不漫无节制地放纵议论以致伤害文章的严谨理路，真是韩愈、曾巩一流的文章家。徐文长志趣高雅，不与时俗合调，对当时的所谓文坛领袖，他一概加以愤怒的抨击，所以他的文字没人推崇，名气也只局限在家乡浙江一带，这实在令人为之悲哀！喜写作，他用笔奔放有如他的诗，在苍劲豪迈中另具一种妩媚的姿态跃然纸上，欧阳公所谓的美人迟暮另具一种韵味的说法，可用之于形容文长的书法。文长以诗、文、书法修养的余绪，涉笔成花鸟画，也都超逸有情致。<br>后来，文长因疑忌误杀他的继室妻子而下狱定死罪，张元汴太史极力营救，方得出狱。晚年的徐文长对世道愈加愤恨不平，于是有意作出一种更为狂放的样子，达官名士登门拜访，他时常会拒绝不见。他又经常带着钱到酒店，叫下人仆隶和他一起喝酒。他曾拿斧头砍击自己的头胪，血流满面，头骨破碎，用手揉摩，碎骨咔咔有声。他还曾用尖利的锥子锥入自己双耳一寸多深，却竟然没有死。<br>周望声称文长的诗文到晚年愈加奇异，没有刻本行世，诗文集稿都藏在家中。我有在浙江做官的科举同年，曾委托他们抄录文长的诗文，至今没有得到。我所见到的，只有《徐文长集》、《阙编》二种而已。而今徐文长竟以不合于时，不得申展抱负，带着对世道的愤恨而死去了。<br>石公说：徐文长先生的命途多艰，坎坷不断，致使他激愤成狂疾，狂病的不断发作，又导致他被投入监狱，从古至今文人的牢骚怨愤和遭受到的困难苦痛，再没有能超过徐文长先生的了。但尽管如此，仍有胡公这样的不世之豪杰，世宗这样的英明帝王赏识他。徐文长在胡公幕中受到特殊礼遇，这是胡公认识到了他的价值，他的上奏表文博得皇帝的欢心，表明皇帝也认识到了他的价值，唯一欠缺的，只是未能致身显贵而已。文长先生诗文的崛起，可以一扫近代文坛庞杂卑陋的习气，将来历史自会有公正的定论，又怎么能说他生不逢时，始终不被社会承认呢？<br>梅客生曾经写信给我说：徐文长是我的老朋友，他的怪病比他这个怪人更要怪，而他作为一个奇人又比他的奇诗更要奇。我则认为徐文长没有一处地方不怪异奇特，正因为没有一处不怪异奇特，所以也就注定他一生命运没有一处不艰难，不坎坷。令人悲哀呀！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>徐文长，即徐渭（公元1521年-公元1593年），字文长，号青藤道士。明代文人，在诗文、戏曲、书法、绘画方面，都有相当成就。有《徐文长集》三十卷，《逸稿》二十四卷，杂剧《四声猿》，戏曲理论著作《南词叙录》等。<br>胡梅林公：胡宗宪，字汝贞，绩溪（今属安徽）人。嘉靖进士，任浙江巡抚，总督军务，以平倭功，加右都御史、太子太保。因投靠严嵩，严嵩倒台后，他也下狱死。<br>葛衣乌巾：身着布衣，头戴黑巾。此为布衣装束。<br>督数边兵：胡宗宪总督南直隶、浙、闽军务。<br>介胄之士：披甲戴盔之士，指将官们。<br>膝语蛇行：跪着说话，爬着走路，形容极其恭敬惶恐。<br>会得白鹿：《徐文长自著畸谱》：“三十八岁，孟春之三日，幕再招，时获白鹿二，……令草两表以献。”<br>表：一种臣下呈于君主的文体，一般用来陈述衷情，颂贺谢圣。<br>永陵：明世宗嘉靖皇帝的陵墓，此用来代指嘉靖皇帝本人。<br>沙门：和尚。<br>秽：丑行。<br>数困：指徐渭曾多次参加科举考试未能考中。<br>疏记：两种文体。疏，即臣下给皇帝的奏疏。记，书牍、札子。<br>不偶：不遇。<br>有司：主管部门的官员。<br>曲蘖（niè）：即酒母，酿酒的发酵物，后遂以之代指酒。<br>朔漠：北方沙漠地区。<br>大都：大城市。<br>嗔：生气。<br>羁人：旅客。<br>间：有时。<br>馀：馀力。<br>卒以疑：最终由于疑心。<br>继室：续娶的妻子。<br>晚年愤益深：胡宗宪被处死后，徐渭更加愤激。<br>佯狂：装疯。<br>下隶：衙门差役。<br>石公：作者的号。<br>数奇（jī）：命运坎坷，遭遇不顺。<br>囹圄（língyǔ）：监狱。这里指身陷囹圄。<br>间世：间隔几世。古称三十年为一世。形容不常有的。<br>芜秽：杂乱、繁冗。<br>梅客生：梅国桢，字客生。万历进士，官兵部右侍郎。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《徐文长传》选自《袁中郎全集·卷四》。<br>徐文长是明嘉靖至万历年间著名的文学艺术家，幼有文名，但只考上一个秀才，以后屡试不就。他好谈兵法，积极参与当时东南沿海的抗倭战争，曾入浙闽军务总督胡宗宪幕中，参预机宜，写过两篇对倭作战的方案，自称：“尝身匿兵中，环舟贼垒，度地形为方略。”后胡宗宪被捕下狱，他也受到牵连，忧愤成狂，之后游历山水，遇见总兵李成梁并教导其子李如松兵法战略，并使李如松在万历二十年的朝鲜战争中大败丰臣秀吉的日本军。他怀才不遇，在仕途上备受倾踬，在文学上亦不得志。他与后七子李攀龙、王世贞同时，然却是李、王的反对派。他曾批判复古派效古人某篇某体是人而“学为鸟言者”（《叶子肃诗序》）当时复古派盛行。王、李之作遍天下，他自然受到冷落。徐文长生前虽有文集刊行，但鲜为人知。在他死后四年，袁宏道始偶然地在陶望龄的家中发现其诗集《阙编》，大惊异，叹为平生仅见，于是写了这篇传记。<br>徐文长一生侘傺潦倒，其磊落不平之气，一一发之于诗文，“愤激无聊，放言高论，不复问古人法度为何物”。（《四库全书总目提要》）其诗实力公安一派的先鞭，尤其是他批判理学之伪，提倡一己之适，蔑弃礼法，作狂傲世，更与公安三袁的处世精神相通。因此袁宏道的这一篇传记便不同于一般记述人物的行状。全文从徐文长的诗文不得行于世写起，突出他怀才不遇、备受冷落的坎坷一生，同情之心溢于言表，景仰之情流注行间，寄情楮墨，表达了作者自己强烈的傲世疾俗的精神。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/item/徐文长传" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

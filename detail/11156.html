@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>南乡子 · 登京口北固亭有怀 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>南乡子 · 登京口北固亭有怀 - 辛弃疾 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="南乡子 · 登京口北固亭有怀是宋朝诗人辛弃疾的经典作品。本页面提供南乡子 · 登京口北固亭有怀的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="南乡子 · 登京口北固亭有怀,辛弃疾,宋朝,古诗文,中学语文,诗词赏析,古典文学,词">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="南乡子 · 登京口北固亭有怀 - 辛弃疾 - 宋朝古诗文">
+    <meta property="og:description" content="南乡子 · 登京口北固亭有怀是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="南乡子 · 登京口北固亭有怀 - 辛弃疾 - 宋朝古诗文">
+    <meta name="twitter:description" content="南乡子 · 登京口北固亭有怀是宋朝诗人辛弃疾的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "南乡子 · 登京口北固亭有怀",
+      "author": {
+        "@type": "Person",
+        "name": "辛弃疾"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "词",
+      "description": "南乡子 · 登京口北固亭有怀是宋朝诗人辛弃疾的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">南乡子 · 登京口北固亭有怀</h1>
-            <div class="poem-author">【宋】辛弃疾</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">辛弃疾</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。不尽长江滚滚流。</p><p>年少万兜鍪，坐断东南战未休。天下英雄谁敌手？曹刘。生子当如孙仲谋。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>什么地方可以看见中原呢？在北固楼上，满眼都是美好的风光。从古到今，有多少国家兴亡大事呢？不知道。往事连绵不断，如同没有尽头的长江水滚滚地奔流不息。<br>当年孙权在青年时代，做了三军统帅。他能占据东南，坚持抗战，没有向敌人低头和屈服过。天下英雄谁是孙权的敌手呢？衹有曹操和刘备而已。这样也就难怪曹操说：「要是能有个孙权那样的儿子就好了。」</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>南乡子：唐教坊曲名，后用作词牌。又名《好离乡》、《蕉叶怨》。《金奁集》入「黄钟宫」。原为单调，有二十七字、二十八字、三十字各体，两平韵，三仄韵，平仄换韵。单调始自后蜀欧阳炯，此词牌即以欧阳炯《南乡子》为正体。冯正中、李珣（Xún）俱本此添字。双调者始自南唐冯正中词。冯词平韵五十六字，十句，上下阕各四句用韵。另有五十八字体者。其定格为双调五十六字，上下阕各四平韵，一韵到底。此调唱时音节需流丽谐婉，声情掩抑。<br>京口：即今江苏镇江。唐·李弘宪《元和郡县志·卷二十六·〈江南道·润州〉》：「今为浙西观察使理所。……本春秋吴之朱方邑，始皇改为丹徒。汉初为荆国，刘贾所封。后汉献帝建安十四年，孙权自吴理丹徒，号曰『京城』，今州是也。十六年迁都建业，以此为京口镇。」<br>北固亭：清·顾宛溪《读史方舆纪要·卷二十五·镇江府》：「北固山在城北一里府治后，下临长江。自晋以来，郡治皆据其上。三面临水，回岭斗绝，势最险固，因名，盖郡之主山也。蔡谟起楼于其上，以贮君实，谢安复营葺之。……大同十年，武帝登望，久之曰：『此岭下足须固守，然于京口，实乃壮观。』于是改楼曰北顾楼。」《北固山志·卷二·建置》：「北固山在山上，晋蔡谟建。《梁纪》云：『大同十年春三月乙酉幸京口城北固楼，改名北顾。』乾道己丑守臣待制陈天麟补建，有碑记（嘉定甲戌，待制史弥坚命吏访得，裂为三而失其一）。楼或亭名。旧亭在郡圃后，绍熙壬子殿撰赵彦逾徙于山，西向。嘉泰壬戌阁学黄由增广之。」陈天麟《北固山志·卷十二·〈艺文·重修北固楼记〉》：「予观京口诸山起伏缭绕，出于城府，率如瓜蔓斿缀。今甘露最近江，迄立西乡，而山南北皆（下阙）田，盖昔江道也，与《南史》所云合矣。予于连沧观之西为亭，面之，而复其旧名，则甘露之为北固，其亦安之而不辞矣。夫六朝之所以名山，盖自固耳。其君臣厌厌若九泉下人，宁复有远略？玆地控吴负楚，襟山带江，登高北望，使人有焚龙庭，空漠北之志。神州陆沉殆五十年，岂无忠义之士奋然自拔，为朝廷快宿愤，报不共戴天之雠，而乃甘心恃江为固乎？则予是亭之复，不特为登览也。」按：《北固山志·卷七杂识》：「陈天麟，右朝散郎，敷文阁，乾道四年任。」<br>「不尽长江滚滚流」句：唐·杜少陵《登高》诗：「无边落木萧萧下，不尽长江滚滚来。」宋·苏东坡《次韵前篇》诗：「长江滚滚空自流。」<br>坐断：即「佔据住」之意。<br>「天下英雄谁敌手？曹刘」句：《三国志·卷三十二·〈蜀书·先主传〉》：「是时曹公从容谓先主曰：『今天下英雄，唯使君与操耳。本初之徒，不足数也。』」<br>「生子当如孙仲谋」句：东晋、南朝宋·裴世期注《三国志·卷四十七·〈吴书·吴主传〉》引《吴历》：「曹公出濡须，作油船，夜渡洲上。权以水军围取，得三千馀人，其没溺者亦数千人。权数挑战，公坚守不出。权乃自来，乘轻船，从灞须口入公军。诸将皆以为是挑战者，欲击之。公曰：『此必孙权欲身见吾军部伍也。』敕军中皆精严，弓弩不得妄发。权行五六里，回还作鼓吹。公见舟船器仗军伍整肃，喟然叹曰：『生子当如孙仲谋，刘景升儿子若豚犬耳！』权为笺与曹公，说：『春水方生，公宜速去。』别纸言：『足下不死，孤不得安。』曹公语诸将曰：『孙权不欺孤。』乃彻军还。」</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此词通过对古代英雄人物的歌颂，表达了作者渴望像古代英雄人物那样金戈铁马，收拾旧山河，为国效力的壮烈情怀，饱含着浓浓的爱国思想，但也流露出作者报国无门的无限感慨，蕴含着对苟且偷安、毫无振作的南宋朝廷的愤懑之情。全词写景、抒情、议论密切结合；融化古人语言入词，活用典故成语；通篇三问三答，层次分明，互相呼应；即景抒情，藉古讽今；风格明快，气魄阔大，情调乐观昂扬。<br>收回遥望的视线，看这北固楼近处的风物：「千古江山，英雄无觅，孙仲谋处。舞榭歌台，风流总被，雨打风吹去。」（《永遇乐·京口北固亭怀古》）这不禁引起了词人千古兴亡之感。因此，词人接下来再问一句：「千古兴亡多少事？」这句问语纵观千古成败，意味深长，回味无穷。然而，往事悠悠，英雄往矣，衹有这无尽的江水依旧滚滚东流。「悠悠，不尽长江滚滚流！」「悠悠」者，兼指时间之漫长久远，和词人思绪之无穷也。<br>「不尽长江滚滚流」，藉用杜少陵《登高》诗句：「无边落木萧萧下，不尽长江滚滚来。」词人胸中倒来倒去的不尽愁思和感慨，犹如长流不息的江水。「年少万兜鍪，坐断东南战未休。」三国时代的孙权年纪轻轻就统率千军万马，雄据东南一隅，奋发自强，战斗不息。据历史记载：孙权十九岁继父兄之业统治江东，西征黄祖，北拒曹操，独据一方。赤壁之战大破曹兵，年方二十七岁。因此可以说，上面这两句是实写史事，因为它是千真万确的历史，因而更具有说服力和感染力。作者在这里一是突出了孙权的年少有为，「年少」而敢于与雄才大略、兵多将广的强敌曹操较量，这就需要非凡的胆识和气魄。二是突出了孙权的盖世武功，他不断征战，不断壮大。而他之「坐断东南」，形势与南宋政权相似。显然，稼轩热情歌颂孙权的不畏强敌，坚决抵抗，并战而胜之，正是反衬当朝文武之辈的庸碌无能、懦怯苟安。<br>接下来，辛稼轩为了把这层意思进一步发挥，不惜以夸张之笔极力渲染孙权不可一世的英姿。他异乎寻常地第三次发问，以提醒人们注意：「天下英雄谁敌手？」作者自问又自答曰：「曹刘」，唯曹操与刘备耳！据《三国志·蜀书·先主传》记载：曹操曾对刘备说：「今天下英雄，惟使君（刘备）与操耳。」辛稼轩便藉用这段故事，把曹操和刘备请来给孙权当配角，说天下英雄衹有曹操、刘备才堪与孙权争胜。曹、刘、孙三人，论智勇才略，孙权未必在曹刘之上。稼轩在《美芹十论》中对孙权的评价也并非称赞有加，然而，在这首词里，词人却把孙权作为三国时代第一流叱咤风云的英雄来颂扬，其所以如此用笔，实藉凭吊千古英雄之名，慨叹当今南宋无大智大勇之人执掌乾坤。这种用心，更于篇末见意。作者在这里极力赞颂孙权的年少有为，突出他的盖世武功，其原因是孙权「坐断东南」，形势与南宋极似，作者这样热情赞颂孙权的不畏强敌，其实是对苟且偷安、毫无振作的南宋朝廷的鞭挞。<br>《三国志·吴书·吴主传》注引《吴历》说：曹操有一次与孙权对垒，见吴军乘着战船，军容整肃，孙权仪表堂堂，威风凛凛，乃喟然叹曰：「生子当如孙仲谋，刘景升（刘表）儿子若豚犬耳！」一世之雄如曹操，对敢于与自己抗衡的强者，投以敬佩的目光，而对于那种不战而请降的懦夫，如对刘景升儿子刘琮则十分轻视，斥为任人宰割的猪狗。把大好江山拱手奉献敌人，还要为敌人耻笑辱骂。作者在这里引用了前半句，没有明言后半句，实际上是藉曹操之口，讽刺当朝主议的大臣们都是刘景升儿子一类的猪狗，这种别开生面的表现手法，曲尽其妙，而又意在言外。<br>曹操所一褒一贬的两种人，形成了极其鲜明、强烈的对照，在南宋摇摇欲坠的政局中，也有着主战与主和两种人。聪明的词人衹做正面文章，对刘景升儿子这个反面角色，便不指名道姓以示众了。然而纵然作者不予道破，而又能使人感到不言而喻。因为上述曹操这段话众所周知，虽然辛稼轩衹说了前一句赞语，人们马上就会联想起后面那句骂人的话，从而使人意识到辛稼轩的潜台词：可笑当朝主和议的众多王公大臣，都是刘景升儿子之类的猪狗。词人此种别开生面的表现手法，颇类似歇后语的作用。而且在写法上这一句与上两句意脉不断，衔接得很自然。上两句说，天下英雄中衹有曹操、刘备配称孙权的对手。连曹操都这样说，生儿子要像孙权这个样。再从「生子当如孙仲谋」这句话的蕴含和思想深度来说，南宋时代人，如此看重孙权，实是那个时代特有的社会心理的反映。因为南宋朝廷实在太萎靡庸碌了，在历史上，孙权能称雄江东于一时，而南宋经过了好几代皇帝，却没有出一个像孙权一样的人。所以，「生子当如孙仲谋」这句话，本是曹操的语言，而由辛稼轩口中说出，却是代表了南宋人民要求奋发图强的时代的呼声。<br>这首词通篇三问三答，互相呼应，感怆雄壮，意境高远。它与稼轩同时期所作另一首登北固亭词《永遇乐·京口北固亭怀古》相比，一风格明快，一沉郁顿挫，同是怀古伤今，写法大异其趣，而都不失为千古绝唱，亦可见辛稼轩丰富多彩之大手笔也。</p></div></div>
+        <article class="poem-content" data-kind="词" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。不尽长江滚滚流。</p><p>年少万兜鍪，坐断东南战未休。天下英雄谁敌手？曹刘。生子当如孙仲谋。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>什么地方可以看见中原呢？在北固楼上，满眼都是美好的风光。从古到今，有多少国家兴亡大事呢？不知道。往事连绵不断，如同没有尽头的长江水滚滚地奔流不息。<br>当年孙权在青年时代，做了三军统帅。他能占据东南，坚持抗战，没有向敌人低头和屈服过。天下英雄谁是孙权的敌手呢？衹有曹操和刘备而已。这样也就难怪曹操说：「要是能有个孙权那样的儿子就好了。」</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>南乡子：唐教坊曲名，后用作词牌。又名《好离乡》、《蕉叶怨》。《金奁集》入「黄钟宫」。原为单调，有二十七字、二十八字、三十字各体，两平韵，三仄韵，平仄换韵。单调始自后蜀欧阳炯，此词牌即以欧阳炯《南乡子》为正体。冯正中、李珣（Xún）俱本此添字。双调者始自南唐冯正中词。冯词平韵五十六字，十句，上下阕各四句用韵。另有五十八字体者。其定格为双调五十六字，上下阕各四平韵，一韵到底。此调唱时音节需流丽谐婉，声情掩抑。<br>京口：即今江苏镇江。唐·李弘宪《元和郡县志·卷二十六·〈江南道·润州〉》：「今为浙西观察使理所。……本春秋吴之朱方邑，始皇改为丹徒。汉初为荆国，刘贾所封。后汉献帝建安十四年，孙权自吴理丹徒，号曰『京城』，今州是也。十六年迁都建业，以此为京口镇。」<br>北固亭：清·顾宛溪《读史方舆纪要·卷二十五·镇江府》：「北固山在城北一里府治后，下临长江。自晋以来，郡治皆据其上。三面临水，回岭斗绝，势最险固，因名，盖郡之主山也。蔡谟起楼于其上，以贮君实，谢安复营葺之。……大同十年，武帝登望，久之曰：『此岭下足须固守，然于京口，实乃壮观。』于是改楼曰北顾楼。」《北固山志·卷二·建置》：「北固山在山上，晋蔡谟建。《梁纪》云：『大同十年春三月乙酉幸京口城北固楼，改名北顾。』乾道己丑守臣待制陈天麟补建，有碑记（嘉定甲戌，待制史弥坚命吏访得，裂为三而失其一）。楼或亭名。旧亭在郡圃后，绍熙壬子殿撰赵彦逾徙于山，西向。嘉泰壬戌阁学黄由增广之。」陈天麟《北固山志·卷十二·〈艺文·重修北固楼记〉》：「予观京口诸山起伏缭绕，出于城府，率如瓜蔓斿缀。今甘露最近江，迄立西乡，而山南北皆（下阙）田，盖昔江道也，与《南史》所云合矣。予于连沧观之西为亭，面之，而复其旧名，则甘露之为北固，其亦安之而不辞矣。夫六朝之所以名山，盖自固耳。其君臣厌厌若九泉下人，宁复有远略？玆地控吴负楚，襟山带江，登高北望，使人有焚龙庭，空漠北之志。神州陆沉殆五十年，岂无忠义之士奋然自拔，为朝廷快宿愤，报不共戴天之雠，而乃甘心恃江为固乎？则予是亭之复，不特为登览也。」按：《北固山志·卷七杂识》：「陈天麟，右朝散郎，敷文阁，乾道四年任。」<br>「不尽长江滚滚流」句：唐·杜少陵《登高》诗：「无边落木萧萧下，不尽长江滚滚来。」宋·苏东坡《次韵前篇》诗：「长江滚滚空自流。」<br>坐断：即「佔据住」之意。<br>「天下英雄谁敌手？曹刘」句：《三国志·卷三十二·〈蜀书·先主传〉》：「是时曹公从容谓先主曰：『今天下英雄，唯使君与操耳。本初之徒，不足数也。』」<br>「生子当如孙仲谋」句：东晋、南朝宋·裴世期注《三国志·卷四十七·〈吴书·吴主传〉》引《吴历》：「曹公出濡须，作油船，夜渡洲上。权以水军围取，得三千馀人，其没溺者亦数千人。权数挑战，公坚守不出。权乃自来，乘轻船，从灞须口入公军。诸将皆以为是挑战者，欲击之。公曰：『此必孙权欲身见吾军部伍也。』敕军中皆精严，弓弩不得妄发。权行五六里，回还作鼓吹。公见舟船器仗军伍整肃，喟然叹曰：『生子当如孙仲谋，刘景升儿子若豚犬耳！』权为笺与曹公，说：『春水方生，公宜速去。』别纸言：『足下不死，孤不得安。』曹公语诸将曰：『孙权不欺孤。』乃彻军还。」</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>此词通过对古代英雄人物的歌颂，表达了作者渴望像古代英雄人物那样金戈铁马，收拾旧山河，为国效力的壮烈情怀，饱含着浓浓的爱国思想，但也流露出作者报国无门的无限感慨，蕴含着对苟且偷安、毫无振作的南宋朝廷的愤懑之情。全词写景、抒情、议论密切结合；融化古人语言入词，活用典故成语；通篇三问三答，层次分明，互相呼应；即景抒情，藉古讽今；风格明快，气魄阔大，情调乐观昂扬。<br>收回遥望的视线，看这北固楼近处的风物：「千古江山，英雄无觅，孙仲谋处。舞榭歌台，风流总被，雨打风吹去。」（《永遇乐·京口北固亭怀古》）这不禁引起了词人千古兴亡之感。因此，词人接下来再问一句：「千古兴亡多少事？」这句问语纵观千古成败，意味深长，回味无穷。然而，往事悠悠，英雄往矣，衹有这无尽的江水依旧滚滚东流。「悠悠，不尽长江滚滚流！」「悠悠」者，兼指时间之漫长久远，和词人思绪之无穷也。<br>「不尽长江滚滚流」，藉用杜少陵《登高》诗句：「无边落木萧萧下，不尽长江滚滚来。」词人胸中倒来倒去的不尽愁思和感慨，犹如长流不息的江水。「年少万兜鍪，坐断东南战未休。」三国时代的孙权年纪轻轻就统率千军万马，雄据东南一隅，奋发自强，战斗不息。据历史记载：孙权十九岁继父兄之业统治江东，西征黄祖，北拒曹操，独据一方。赤壁之战大破曹兵，年方二十七岁。因此可以说，上面这两句是实写史事，因为它是千真万确的历史，因而更具有说服力和感染力。作者在这里一是突出了孙权的年少有为，「年少」而敢于与雄才大略、兵多将广的强敌曹操较量，这就需要非凡的胆识和气魄。二是突出了孙权的盖世武功，他不断征战，不断壮大。而他之「坐断东南」，形势与南宋政权相似。显然，稼轩热情歌颂孙权的不畏强敌，坚决抵抗，并战而胜之，正是反衬当朝文武之辈的庸碌无能、懦怯苟安。<br>接下来，辛稼轩为了把这层意思进一步发挥，不惜以夸张之笔极力渲染孙权不可一世的英姿。他异乎寻常地第三次发问，以提醒人们注意：「天下英雄谁敌手？」作者自问又自答曰：「曹刘」，唯曹操与刘备耳！据《三国志·蜀书·先主传》记载：曹操曾对刘备说：「今天下英雄，惟使君（刘备）与操耳。」辛稼轩便藉用这段故事，把曹操和刘备请来给孙权当配角，说天下英雄衹有曹操、刘备才堪与孙权争胜。曹、刘、孙三人，论智勇才略，孙权未必在曹刘之上。稼轩在《美芹十论》中对孙权的评价也并非称赞有加，然而，在这首词里，词人却把孙权作为三国时代第一流叱咤风云的英雄来颂扬，其所以如此用笔，实藉凭吊千古英雄之名，慨叹当今南宋无大智大勇之人执掌乾坤。这种用心，更于篇末见意。作者在这里极力赞颂孙权的年少有为，突出他的盖世武功，其原因是孙权「坐断东南」，形势与南宋极似，作者这样热情赞颂孙权的不畏强敌，其实是对苟且偷安、毫无振作的南宋朝廷的鞭挞。<br>《三国志·吴书·吴主传》注引《吴历》说：曹操有一次与孙权对垒，见吴军乘着战船，军容整肃，孙权仪表堂堂，威风凛凛，乃喟然叹曰：「生子当如孙仲谋，刘景升（刘表）儿子若豚犬耳！」一世之雄如曹操，对敢于与自己抗衡的强者，投以敬佩的目光，而对于那种不战而请降的懦夫，如对刘景升儿子刘琮则十分轻视，斥为任人宰割的猪狗。把大好江山拱手奉献敌人，还要为敌人耻笑辱骂。作者在这里引用了前半句，没有明言后半句，实际上是藉曹操之口，讽刺当朝主议的大臣们都是刘景升儿子一类的猪狗，这种别开生面的表现手法，曲尽其妙，而又意在言外。<br>曹操所一褒一贬的两种人，形成了极其鲜明、强烈的对照，在南宋摇摇欲坠的政局中，也有着主战与主和两种人。聪明的词人衹做正面文章，对刘景升儿子这个反面角色，便不指名道姓以示众了。然而纵然作者不予道破，而又能使人感到不言而喻。因为上述曹操这段话众所周知，虽然辛稼轩衹说了前一句赞语，人们马上就会联想起后面那句骂人的话，从而使人意识到辛稼轩的潜台词：可笑当朝主和议的众多王公大臣，都是刘景升儿子之类的猪狗。词人此种别开生面的表现手法，颇类似歇后语的作用。而且在写法上这一句与上两句意脉不断，衔接得很自然。上两句说，天下英雄中衹有曹操、刘备配称孙权的对手。连曹操都这样说，生儿子要像孙权这个样。再从「生子当如孙仲谋」这句话的蕴含和思想深度来说，南宋时代人，如此看重孙权，实是那个时代特有的社会心理的反映。因为南宋朝廷实在太萎靡庸碌了，在历史上，孙权能称雄江东于一时，而南宋经过了好几代皇帝，却没有出一个像孙权一样的人。所以，「生子当如孙仲谋」这句话，本是曹操的语言，而由辛稼轩口中说出，却是代表了南宋人民要求奋发图强的时代的呼声。<br>这首词通篇三问三答，互相呼应，感怆雄壮，意境高远。它与稼轩同时期所作另一首登北固亭词《永遇乐·京口北固亭怀古》相比，一风格明快，一沉郁顿挫，同是怀古伤今，写法大异其趣，而都不失为千古绝唱，亦可见辛稼轩丰富多彩之大手笔也。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/1043187.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

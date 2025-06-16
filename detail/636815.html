@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>国语 ·  敬姜论劳逸 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>国语 ·  敬姜论劳逸 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="国语 ·  敬姜论劳逸是周朝诗人左丘明的经典作品。本页面提供国语 ·  敬姜论劳逸的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="国语 ·  敬姜论劳逸,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="国语 ·  敬姜论劳逸 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="国语 ·  敬姜论劳逸是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="国语 ·  敬姜论劳逸 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="国语 ·  敬姜论劳逸是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "国语 ·  敬姜论劳逸",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "国语 ·  敬姜论劳逸是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">国语 ·  敬姜论劳逸</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>公父文伯退朝，朝其母，其母方绩，文伯曰：“以歜之家而主犹绩，惧干季孙之怒也。其以歜为不能事主乎？”其母叹曰：“鲁其亡乎？使僮子备官而未之闻耶？居，吾语女。昔圣王之处民也，择瘠土而处之，劳其民而用之，故长王天下。夫民劳则思，思则善心生；逸则淫，淫则忘善；忘善则恶心生。沃土之民不材，淫也。瘠土之民，莫不向义，劳也。</p><p>是故天子大采朝日，与三公九卿，祖识地德，日中考政，与百官之政事。师尹惟旅牧相，宣序民事。少采夕月，与太史司载纠虔天刑。日入，监九御，使洁奉禘、郊之粢盛，而后即安。诸侯朝修天子之业命，昼考其国职，夕省其典刑，夜儆百工，使无慆淫，而后即安。卿大夫朝考其职，昼讲其庶政，夕序其业，夜庀其家事，而后即安。士朝受业，昼而讲贯，夕而习复，夜而计过，无憾，而后即安。自庶人以下，明而动，晦而休，无日以怠。王后亲织玄紞，公侯之夫人，加之纮、綖。卿之内子为大带，命妇成祭服。列士之妻，加之以朝服。自庶士以下，皆衣其夫。社而赋事，烝而献功，男女效绩，愆则有辟。古之制也！君子劳心，小人劳力，先王之训也！自上以下，谁敢淫心舍力？</p><p>今我寡也，尔又在下位，朝夕处事，犹恐忘先人之业。况有怠惰，其何以避辟？吾冀而朝夕修我，曰：‘必无废先人。’尔今曰：‘胡不自安？’以是承君之官，余惧穆伯之绝祀也？”</p><p>仲尼闻之曰：“弟子志之，季氏之妇不淫矣！”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>公父文伯退朝之后，去看望他的母亲，他的母亲正在纺线，文伯说：“象我公父歜这样的人家还要母亲亲自纺线，这恐怕会让季孙恼怒。他会觉得我公父歜不愿意孝敬母亲吧？”他的母亲叹了一口气说：“鲁国要灭亡了吧？让你这样的顽童充数做官却不把做官之道讲给你听？坐下来，我讲给你听。过去圣贤的国王为老百姓安置居所，选择贫瘠之地让百姓定居下来，使百姓劳作，发挥他们的才能，因此（君主）就能够长久地统治天下。老百姓要劳作才会思考，要思考才能（找到）改善生活（的好办法）；闲散安逸会导致人们过度享乐，人们过度享乐就会忘记美好的品行；忘记美好的品行就会产生邪念。居住在沃土之地的百姓不成材，是因为过度享乐啊。居住在贫瘠土地上的百姓，没有不讲道义的，是因为他们勤劳啊。<br>因此天子穿着五彩花纹的衣服隆重地祭祀太阳，让叁公九卿，熟习知悉农业生产，中午考察政务，交代百官要做的事务。京都县邑各级官员在牧、相的领导下，安排事务使百姓得到治理。天子穿着三采花纹的衣服祭祀月亮，和太史、司载详细记录天象；日落便督促嫔妃们，让她们清洁并准备好禘祭、郊祭的各种谷物及器皿，然后才休息。诸侯们清早听取天子布置事务和训导，白天完成他们所负责的日常政务，傍晚反复检查有关典章和法规，夜晚警告众官，告诫他们不要过度享乐，然后才休息。卿大夫清早统筹安排政务，白天与属僚商量处理政务，傍晚梳理一遍当天的事务，夜晚处理他的家事，然后才休息。贵族青年清早接受早课，白天讲习所学知识，傍晚复习，夜晚反省自己有无过错直到没有什么不满意的地方，然后才休息。从平民以下，日出而作，日落而息，没有一天懈怠的。王后亲自编织冠冕上用来系瑱的黑色丝带，公侯的夫人还要编织系于颌下的帽带以及覆盖帽子的装饰品。卿的妻子做腰带，所有贵妇人都要亲自做祭祀服装。各种士人的妻子，还要做朝服。普通百姓，都要给丈夫做衣服穿。春分之后祭祀土地接着开始耕种，冬季祭祀时献上谷物和牲畜，男女（都在冬祭上）展示自己的劳动成果（事功），有过失就要避开不能参加祭祀。这是上古传下来的制度！君王操心，小人出力，这是先王的遗训啊。自上而下，谁敢挖空心思偷懒呢？如今我守了寡，你又做官，早晚做事，尚且担心丢弃了祖宗的基业。倘若懈怠懒惰，那怎么躲避得了罪责呢！我希望你早晚提醒我说：‘一定不要废弃先人的传统。’你今天却说：‘为什么不自己图安逸啊？’以你这样的态度承担君王的官职，我恐怕你父亲穆伯要绝后了啊。”<br>仲尼听说这件事后说：“弟子们记住，季家的老夫人不图安逸！”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>公父文伯：鲁大夫。季悼子的孙子，公父穆伯的儿子。<br>朝：古时候去见君王叫朝，谒见尊敬的人也可以叫朝。母：公父文伯的母亲，即敬姜。<br>绩：纺麻。<br>歜（chù）：公父文伯，名歜。文伯自称其名。主：主母。<br>干：犯。季孙：即季康子。当时担任鲁国的正卿，是季悼子的曾孙。季氏是鲁是的大族，敬姜是季康子从叔祖母，所以文伯这样说。<br>僮子：即童子。备官：充任官职。<br>居：坐下。<br>瘠土：不肥沃的土地。<br>大采：五采。朝日：天子以春分朝日。<br>祖：熟习。识：知。地德：古人认为地能生产百物，养育人民，这便是地之德。<br>师尹：大夫官。惟：表并列，与，和。旅：众士。牧：州牧。相：国相。宣序：全面安排。<br>少采：三采。夕月：天子每年秋分之夜祭祀月亮的仪式。<br>庀（pǐ）：治理<br>列士：士的总称，周代分元士，中士，庶士三种。<br>社：春社，每年春分时祭祀土地神。烝：特指冬天的祭祀。愆：罪过，过失。辟：刑法。<br>而：你。修：勉励。<br>淫：贪图安逸。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《敬姜论劳逸》是春秋时期创作的散文，作者是左丘明。敬姜的一番长论，是希望自己做高官的儿子忠于职守，做好本职工作的同时，一定要谨记勤俭节约，不要贪图安逸。她认为贪图安逸会触发人们内心的贪欲，贪欲最终会葬送儿子的前程乃至生命。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>公父文伯退朝，朝其母，其母方绩，文伯曰：“以歜之家而主犹绩，惧干季孙之怒也。其以歜为不能事主乎？”其母叹曰：“鲁其亡乎？使僮子备官而未之闻耶？居，吾语女。昔圣王之处民也，择瘠土而处之，劳其民而用之，故长王天下。夫民劳则思，思则善心生；逸则淫，淫则忘善；忘善则恶心生。沃土之民不材，淫也。瘠土之民，莫不向义，劳也。</p><p>是故天子大采朝日，与三公九卿，祖识地德，日中考政，与百官之政事。师尹惟旅牧相，宣序民事。少采夕月，与太史司载纠虔天刑。日入，监九御，使洁奉禘、郊之粢盛，而后即安。诸侯朝修天子之业命，昼考其国职，夕省其典刑，夜儆百工，使无慆淫，而后即安。卿大夫朝考其职，昼讲其庶政，夕序其业，夜庀其家事，而后即安。士朝受业，昼而讲贯，夕而习复，夜而计过，无憾，而后即安。自庶人以下，明而动，晦而休，无日以怠。王后亲织玄紞，公侯之夫人，加之纮、綖。卿之内子为大带，命妇成祭服。列士之妻，加之以朝服。自庶士以下，皆衣其夫。社而赋事，烝而献功，男女效绩，愆则有辟。古之制也！君子劳心，小人劳力，先王之训也！自上以下，谁敢淫心舍力？</p><p>今我寡也，尔又在下位，朝夕处事，犹恐忘先人之业。况有怠惰，其何以避辟？吾冀而朝夕修我，曰：‘必无废先人。’尔今曰：‘胡不自安？’以是承君之官，余惧穆伯之绝祀也？”</p><p>仲尼闻之曰：“弟子志之，季氏之妇不淫矣！”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>公父文伯退朝之后，去看望他的母亲，他的母亲正在纺线，文伯说：“象我公父歜这样的人家还要母亲亲自纺线，这恐怕会让季孙恼怒。他会觉得我公父歜不愿意孝敬母亲吧？”他的母亲叹了一口气说：“鲁国要灭亡了吧？让你这样的顽童充数做官却不把做官之道讲给你听？坐下来，我讲给你听。过去圣贤的国王为老百姓安置居所，选择贫瘠之地让百姓定居下来，使百姓劳作，发挥他们的才能，因此（君主）就能够长久地统治天下。老百姓要劳作才会思考，要思考才能（找到）改善生活（的好办法）；闲散安逸会导致人们过度享乐，人们过度享乐就会忘记美好的品行；忘记美好的品行就会产生邪念。居住在沃土之地的百姓不成材，是因为过度享乐啊。居住在贫瘠土地上的百姓，没有不讲道义的，是因为他们勤劳啊。<br>因此天子穿着五彩花纹的衣服隆重地祭祀太阳，让叁公九卿，熟习知悉农业生产，中午考察政务，交代百官要做的事务。京都县邑各级官员在牧、相的领导下，安排事务使百姓得到治理。天子穿着三采花纹的衣服祭祀月亮，和太史、司载详细记录天象；日落便督促嫔妃们，让她们清洁并准备好禘祭、郊祭的各种谷物及器皿，然后才休息。诸侯们清早听取天子布置事务和训导，白天完成他们所负责的日常政务，傍晚反复检查有关典章和法规，夜晚警告众官，告诫他们不要过度享乐，然后才休息。卿大夫清早统筹安排政务，白天与属僚商量处理政务，傍晚梳理一遍当天的事务，夜晚处理他的家事，然后才休息。贵族青年清早接受早课，白天讲习所学知识，傍晚复习，夜晚反省自己有无过错直到没有什么不满意的地方，然后才休息。从平民以下，日出而作，日落而息，没有一天懈怠的。王后亲自编织冠冕上用来系瑱的黑色丝带，公侯的夫人还要编织系于颌下的帽带以及覆盖帽子的装饰品。卿的妻子做腰带，所有贵妇人都要亲自做祭祀服装。各种士人的妻子，还要做朝服。普通百姓，都要给丈夫做衣服穿。春分之后祭祀土地接着开始耕种，冬季祭祀时献上谷物和牲畜，男女（都在冬祭上）展示自己的劳动成果（事功），有过失就要避开不能参加祭祀。这是上古传下来的制度！君王操心，小人出力，这是先王的遗训啊。自上而下，谁敢挖空心思偷懒呢？如今我守了寡，你又做官，早晚做事，尚且担心丢弃了祖宗的基业。倘若懈怠懒惰，那怎么躲避得了罪责呢！我希望你早晚提醒我说：‘一定不要废弃先人的传统。’你今天却说：‘为什么不自己图安逸啊？’以你这样的态度承担君王的官职，我恐怕你父亲穆伯要绝后了啊。”<br>仲尼听说这件事后说：“弟子们记住，季家的老夫人不图安逸！”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>公父文伯：鲁大夫。季悼子的孙子，公父穆伯的儿子。<br>朝：古时候去见君王叫朝，谒见尊敬的人也可以叫朝。母：公父文伯的母亲，即敬姜。<br>绩：纺麻。<br>歜（chù）：公父文伯，名歜。文伯自称其名。主：主母。<br>干：犯。季孙：即季康子。当时担任鲁国的正卿，是季悼子的曾孙。季氏是鲁是的大族，敬姜是季康子从叔祖母，所以文伯这样说。<br>僮子：即童子。备官：充任官职。<br>居：坐下。<br>瘠土：不肥沃的土地。<br>大采：五采。朝日：天子以春分朝日。<br>祖：熟习。识：知。地德：古人认为地能生产百物，养育人民，这便是地之德。<br>师尹：大夫官。惟：表并列，与，和。旅：众士。牧：州牧。相：国相。宣序：全面安排。<br>少采：三采。夕月：天子每年秋分之夜祭祀月亮的仪式。<br>庀（pǐ）：治理<br>列士：士的总称，周代分元士，中士，庶士三种。<br>社：春社，每年春分时祭祀土地神。烝：特指冬天的祭祀。愆：罪过，过失。辟：刑法。<br>而：你。修：勉励。<br>淫：贪图安逸。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《敬姜论劳逸》是春秋时期创作的散文，作者是左丘明。敬姜的一番长论，是希望自己做高官的儿子忠于职守，做好本职工作的同时，一定要谨记勤俭节约，不要贪图安逸。她认为贪图安逸会触发人们内心的贪欲，贪欲最终会葬送儿子的前程乃至生命。</p></div></div>
             
             <div class="section"><a href="https://baike.baidu.com/item/%E6%95%AC%E5%A7%9C%E8%AE%BA%E5%8A%B3%E9%80%B8" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

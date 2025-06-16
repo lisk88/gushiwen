@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>纵囚论 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>纵囚论 - 欧阳修 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="纵囚论是宋朝诗人欧阳修的经典作品。本页面提供纵囚论的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="纵囚论,欧阳修,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="纵囚论 - 欧阳修 - 宋朝古诗文">
+    <meta property="og:description" content="纵囚论是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="纵囚论 - 欧阳修 - 宋朝古诗文">
+    <meta name="twitter:description" content="纵囚论是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "纵囚论",
+      "author": {
+        "@type": "Person",
+        "name": "欧阳修"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "纵囚论是宋朝诗人欧阳修的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">纵囚论</h1>
-            <div class="poem-author">【宋】欧阳修</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">欧阳修</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>信义行于君子，而刑戮施于小人。刑入于死者，乃罪大恶极，此又小人之尤甚者也。宁以义死，不苟幸生，而视死如归，此又君子之尤难者也。</p><p>方唐太宗之六年，录大辟囚三百馀人，纵使还家，约其自归以就死，是君子之难能，期小人之尤者以必能也。其囚及期，而卒自归无后者，是君子之所难，而小人之所易也，此岂近于人情哉？</p><p>或曰：「罪大恶极，诚小人矣。及施恩德以临之，可使变而为君子；盖恩德入人之深，而移人之速，有如是者矣。」</p><p>曰：「太宗之为此，所以求此名也。然安知夫纵之去也，不意其必来以冀免，所以纵之乎？又安知夫被纵而去也，不意其自归而必获免，所以复来乎？夫意其必来而纵之，是上贼下之情也；意其必免而复来，是下贼上之心也。吾见上下交相贼，以成此名也，乌有所谓施恩德，与夫知信义者哉？不然，太宗施德于天下，于兹六年矣。不能使小人不为极恶大罪，而一日之恩，能使视死如归，而存信义，此又不通之论也。」</p><p>「然则，何为而可？」曰：「纵而来归，杀之无赦；而又纵之，而又来，则可知为恩德之致尔；然此必无之事也。若夫纵而来归而赦之，可偶一为之尔。若屡为之，则杀人者皆不死，是可为天下之常法乎？不可为常者，其圣人之法乎？是以尧舜三王之治，必本于人情；不立异以为高，不逆情以干誉。」</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>信义可以在君子中施行，而种种刑罚则在小人中施行。判刑列入死刑的人，是罪大恶极的，又是小人中特别坏的人。宁愿为正义而死，不愿意苟且贪生，而视死如归，这在君子中也是很难做到的。在唐太宗即位后第六年时，把判处死刑的犯人三百馀人登记在册，放他们回家，约定好到期自动回来接受死刑。这是君子都难以做到的事，而希望小人中最坏的人能做到自然更难。到了规定的时间，那些囚犯自动回来而没有延误。这是君子难以做到的，而小人却很容易地做到了。这难道近于人情吗？<br>有人说：罪大恶极，确实是小人了；如果对他们采取恩德感化的手段，就可以使他们变为君子。恩德感化愈深入人心，人的转变速度就愈快，有过这样的事。我说：唐太宗之所以这样做，就是为了得到这种名声。可是怎么会知道他在放回囚犯时，没有料到他们一定会回来希望可以赦免自己的死罪，所以才放回他们呢？又怎么会知道那些被放回的囚犯，没有料到他们自动回来就一定会被赦免自己的死罪，这才又回来呢？料想到囚犯一定会回来这才放他们回家，这是唐太宗从上面窥测到下面囚犯的内心想法；料想到一定会被赦免死罪这才回来，这是下面的囚犯在窥测上面的皇帝的内心想法。我从中看到的是上下互相窥测对方的内心想法才形成了这种名声，哪里还有皇帝采取恩德感化的办法和囚犯遵守信义的事呢？不然的话，唐太宗在全国施行恩德感化的办法，到这时已经六年了，却不能让小人不犯极恶大罪，只凭一天的恩德感化，就能使囚犯视死如归，而且坚守信义。这是一种说不通的观点啊！<br>那么应该怎么去做才可以呢？我说：对放回家去而又回来的囚犯，杀了他而不能赦免。然后再放出一批囚犯，他们又回来了，这样才可以知道是被恩德感化所致。然而这必定是不可能的事。如果对放出的囚犯在他们回来后就赦免了死罪，可以偶尔做一次。如果总是这样去做，那么杀人犯都不会被处死。这可以作为国家的常法吗？不能作为国家的常法。这难道能说是圣人之法吗？所以说，尧、舜、三王治理国家，必定以合乎人情为标准，不以标新立异为高明，不能违背情理来博取自己的名誉。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>刑戮：刑罚或处死。<br>苟：只图眼前。<br>唐太宗之六年：唐太宗贞观六年（公元632年）。唐太宗是中国历史上有一定作为的皇帝，他在位年间，国势强大，社会较安定，史称“贞观之治”。<br>大辟：死刑。大辟意为最重的刑罚。辟，法、刑法。<br>罪大恶极：罪恶大到了极点。<br>意：估计。<br>冀免：希望赦免。<br>贼：用作动词，<br>窃：私下行动，引申为窥测。<br>三王：指夏禹、商汤、周文王和周武王。他们都是儒家崇拜的古代的明君。<br>干誉：求取名誉。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《纵囚论》是唐宋八大家欧阳修的一篇史论文章。文章评论唐太宗李世民的假释死刑囚犯，犯人被释归家后又全部按时返回，从而赦免他们的史实。<br>文章开门见山，从“信义行于君子，而刑戮施于小人”说起，定下全文基调。接着通过唐太宗纵放死囚的史实，用君子与小人相比较，论析指出唐太宗的做法有悖人情，违反法度，是沽名钓誉的一种手段。因此，作者认为唐太宗的做法不值得效法，而应该“尧舜三王之治，必本于人情”。文章据史立论，层层辨析，论证充分，结论高远，警醒人心。<br>本文最大的特点是逻辑性强，结构严密。全文基本上可以分为提出问题、分析问题、解决问题三个部分。在提出问题时，作者肯定地指出，纵囚一事本身就不近人情。分析问题时，文章从唐太宗、囚犯的不同的心理活动中得出了这样一个结论：这不过是上演了一场“上下交相贼”的闹剧。同时，他还从唐太宗登基六年来并没有消弭小人犯极恶大罪的事实，证明了偶尔的纵囚也解决不了问题。这种“以子之矛，攻子之盾”的笔法，确实犀利无比。在解决问题时，作者旗帜鲜明地亮出了自己的观点：不管从事何种工作，“必本于人情”。<br>本文的反问句较多，有助于增强文章的说服力。第二段中采取问答的形式来论证，又增加了文章的可读性。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>信义行于君子，而刑戮施于小人。刑入于死者，乃罪大恶极，此又小人之尤甚者也。宁以义死，不苟幸生，而视死如归，此又君子之尤难者也。</p><p>方唐太宗之六年，录大辟囚三百馀人，纵使还家，约其自归以就死，是君子之难能，期小人之尤者以必能也。其囚及期，而卒自归无后者，是君子之所难，而小人之所易也，此岂近于人情哉？</p><p>或曰：「罪大恶极，诚小人矣。及施恩德以临之，可使变而为君子；盖恩德入人之深，而移人之速，有如是者矣。」</p><p>曰：「太宗之为此，所以求此名也。然安知夫纵之去也，不意其必来以冀免，所以纵之乎？又安知夫被纵而去也，不意其自归而必获免，所以复来乎？夫意其必来而纵之，是上贼下之情也；意其必免而复来，是下贼上之心也。吾见上下交相贼，以成此名也，乌有所谓施恩德，与夫知信义者哉？不然，太宗施德于天下，于兹六年矣。不能使小人不为极恶大罪，而一日之恩，能使视死如归，而存信义，此又不通之论也。」</p><p>「然则，何为而可？」曰：「纵而来归，杀之无赦；而又纵之，而又来，则可知为恩德之致尔；然此必无之事也。若夫纵而来归而赦之，可偶一为之尔。若屡为之，则杀人者皆不死，是可为天下之常法乎？不可为常者，其圣人之法乎？是以尧舜三王之治，必本于人情；不立异以为高，不逆情以干誉。」</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>信义可以在君子中施行，而种种刑罚则在小人中施行。判刑列入死刑的人，是罪大恶极的，又是小人中特别坏的人。宁愿为正义而死，不愿意苟且贪生，而视死如归，这在君子中也是很难做到的。在唐太宗即位后第六年时，把判处死刑的犯人三百馀人登记在册，放他们回家，约定好到期自动回来接受死刑。这是君子都难以做到的事，而希望小人中最坏的人能做到自然更难。到了规定的时间，那些囚犯自动回来而没有延误。这是君子难以做到的，而小人却很容易地做到了。这难道近于人情吗？<br>有人说：罪大恶极，确实是小人了；如果对他们采取恩德感化的手段，就可以使他们变为君子。恩德感化愈深入人心，人的转变速度就愈快，有过这样的事。我说：唐太宗之所以这样做，就是为了得到这种名声。可是怎么会知道他在放回囚犯时，没有料到他们一定会回来希望可以赦免自己的死罪，所以才放回他们呢？又怎么会知道那些被放回的囚犯，没有料到他们自动回来就一定会被赦免自己的死罪，这才又回来呢？料想到囚犯一定会回来这才放他们回家，这是唐太宗从上面窥测到下面囚犯的内心想法；料想到一定会被赦免死罪这才回来，这是下面的囚犯在窥测上面的皇帝的内心想法。我从中看到的是上下互相窥测对方的内心想法才形成了这种名声，哪里还有皇帝采取恩德感化的办法和囚犯遵守信义的事呢？不然的话，唐太宗在全国施行恩德感化的办法，到这时已经六年了，却不能让小人不犯极恶大罪，只凭一天的恩德感化，就能使囚犯视死如归，而且坚守信义。这是一种说不通的观点啊！<br>那么应该怎么去做才可以呢？我说：对放回家去而又回来的囚犯，杀了他而不能赦免。然后再放出一批囚犯，他们又回来了，这样才可以知道是被恩德感化所致。然而这必定是不可能的事。如果对放出的囚犯在他们回来后就赦免了死罪，可以偶尔做一次。如果总是这样去做，那么杀人犯都不会被处死。这可以作为国家的常法吗？不能作为国家的常法。这难道能说是圣人之法吗？所以说，尧、舜、三王治理国家，必定以合乎人情为标准，不以标新立异为高明，不能违背情理来博取自己的名誉。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>刑戮：刑罚或处死。<br>苟：只图眼前。<br>唐太宗之六年：唐太宗贞观六年（公元632年）。唐太宗是中国历史上有一定作为的皇帝，他在位年间，国势强大，社会较安定，史称“贞观之治”。<br>大辟：死刑。大辟意为最重的刑罚。辟，法、刑法。<br>罪大恶极：罪恶大到了极点。<br>意：估计。<br>冀免：希望赦免。<br>贼：用作动词，<br>窃：私下行动，引申为窥测。<br>三王：指夏禹、商汤、周文王和周武王。他们都是儒家崇拜的古代的明君。<br>干誉：求取名誉。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《纵囚论》是唐宋八大家欧阳修的一篇史论文章。文章评论唐太宗李世民的假释死刑囚犯，犯人被释归家后又全部按时返回，从而赦免他们的史实。<br>文章开门见山，从“信义行于君子，而刑戮施于小人”说起，定下全文基调。接着通过唐太宗纵放死囚的史实，用君子与小人相比较，论析指出唐太宗的做法有悖人情，违反法度，是沽名钓誉的一种手段。因此，作者认为唐太宗的做法不值得效法，而应该“尧舜三王之治，必本于人情”。文章据史立论，层层辨析，论证充分，结论高远，警醒人心。<br>本文最大的特点是逻辑性强，结构严密。全文基本上可以分为提出问题、分析问题、解决问题三个部分。在提出问题时，作者肯定地指出，纵囚一事本身就不近人情。分析问题时，文章从唐太宗、囚犯的不同的心理活动中得出了这样一个结论：这不过是上演了一场“上下交相贼”的闹剧。同时，他还从唐太宗登基六年来并没有消弭小人犯极恶大罪的事实，证明了偶尔的纵囚也解决不了问题。这种“以子之矛，攻子之盾”的笔法，确实犀利无比。在解决问题时，作者旗帜鲜明地亮出了自己的观点：不管从事何种工作，“必本于人情”。<br>本文的反问句较多，有助于增强文章的说服力。第二段中采取问答的形式来论证，又增加了文章的可读性。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -112,7 +143,72 @@
     </div>
     
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

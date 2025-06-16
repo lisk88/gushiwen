@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>行路难三首 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>行路难三首 - 李白 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="行路难三首是唐朝诗人李白的经典作品。本页面提供行路难三首的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="行路难三首,李白,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="行路难三首 - 李白 - 唐朝古诗文">
+    <meta property="og:description" content="行路难三首是唐朝诗人李白的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="行路难三首 - 李白 - 唐朝古诗文">
+    <meta name="twitter:description" content="行路难三首是唐朝诗人李白的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "行路难三首",
+      "author": {
+        "@type": "Person",
+        "name": "李白"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "行路难三首是唐朝诗人李白的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">行路难三首</h1>
-            <div class="poem-author">【唐】李白</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">李白</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>【其一】</p><p>金樽清酒斗十千，玉盘珍羞直万钱。</p><p>停杯投箸不能食，拔剑四顾心茫然。</p><p>欲渡黄河冰塞川，将登太行雪满山。</p><p>闲来垂钓碧溪上，忽复乘舟梦日边。</p><p>行路难，行路难，多歧路，今安在？</p><p>长风破浪会有时，直挂云帆济沧海！</p><p>【其二】</p><p>大道如青天，我独不得出。</p><p>羞逐长安社中儿，赤鸡白雉赌梨栗。</p><p>弹剑作歌奏苦声，曳裾王门不称情。</p><p>淮阴市井笑韩信，汉朝公卿忌贾生。</p><p>君不见昔时燕家重郭隗，拥篲折节无嫌猜。</p><p>剧辛乐毅感恩分，输肝剖胆效英才。</p><p>昭王白骨萦蔓草，谁人更扫黄金台？</p><p>行路难，归去来！</p><p>【其三】</p><p>有耳莫洗颍川水，有口莫食首阳蕨。</p><p>含光混世贵无名，何用孤高比云月？</p><p>吾观自古贤达人，功成不退皆殒身。</p><p>子胥既弃吴江上，屈原终投湘水滨。</p><p>陆机雄才岂自保？李斯税驾苦不早。</p><p>华亭鹤唳讵可闻？上蔡苍鹰何足道？</p><p>君不见吴中张翰称达生，秋风忽忆江东行。</p><p>且乐生前一杯酒，何须身后千载名？</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>【其一】<br>金杯中的美酒一斗价十千，玉盘里的菜肴珍贵值万钱。<br>但心情愁烦使得我放下杯筷，不愿进餐。拔出宝剑环顾四周，心里一片茫然。<br>想渡过黄河，坚冰堵塞大川；想登太行山，大雪遍布高山。<br>遥想当年，姜太公溪垂钓，得遇重才的文王，伊尹乘舟梦日，受聘在商汤身边。<br>人生的道路何等艰难，何等艰难，歧路纷杂，真正的大道究竟在哪边？<br>坚信乘风破浪的时机定会到来，到那时，将扬起征帆远渡碧海青天。<br>【其二】<br>大道虽宽广如青天，唯独没有我的出路。<br>我不愿意追随长安城中的富家子弟，去搞斗鸡走狗一类的赌博游戏。<br>像冯谖那样弹剑作歌发牢骚，在权贵之门卑躬屈节，那不合我心意。<br>韩信发迹之前被淮阴市井之徒讥笑，贾谊才能超群遭汉朝公卿妒忌。<br>君不见古时燕昭王重用郭隗，拥彗折节、谦恭下士，毫不嫌疑猜忌。<br>剧辛和乐毅感激知遇的恩情，竭忠尽智，以自己的才能为君主效力。<br>而今燕昭王之白骨已隐于荒草之中，还有谁能像他那样重用贤士呢？<br>世路艰难，我只得归去啦！<br>【其三】<br>不要学许由用颍水洗耳，不要学伯夷和叔齐隐居首阳采薇而食。<br>在世上活着贵在韬光养晦，为什么要隐居清高自比云月？<br>我看自古以来的贤达之人，功绩告成之后不自行隐退都死于非命。<br>伍子胥被吴王弃于吴江之上，屈原最终抱石自沉汨罗江中。<br>陆机如此雄才大略也无法自保，李斯以自己悲惨的结局为苦。<br>陆机是否还能听见华亭别墅间的鹤唳？李斯是否还能在上蔡东门牵鹰打猎？<br>你不知道吴中的张翰是个旷达之人，因见秋风起而想起江东故都。<br>生时有一杯酒就应尽情欢乐，何须在意身后千年的虚名？</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>行路难：乐府《杂曲歌辞》调名，古乐府道路六曲之一，亦有变行路难，内容多写社会道途艰难及离别悲伤之意，多以「君不见」为首，后鲍照拟作为多。<br>樽（zūn）：古代盛酒的器具，以金为饰。<br>清酒：清醇的美酒。<br>斗十千：一斗值十千钱（即万钱），形容酒美价高。<br>玉盘：精美的食具。<br>珍羞：珍贵的菜肴。羞，同「馐」，美味的食物。<br>直：通「值」，价值。<br>投箸（zhù）：丢下筷子。箸，筷子。<br>茫然：无所适从。<br>塞：堵塞。<br>太行：太行山，现山西、河南、河北三省交界处。<br>雪满山：一作「雪暗天」。详细说明：根据《平水韵》来看，这里一句的「川」和下一句的「边」都是属于下平一先，而「山」属于上平十五删。而「天」才是同在下平一先中的字。《平水韵》是后人总结唐人的用韵，总结的时候不可能把「山」这样的常见字放错位置，更不可能忽略这篇李白的名篇。<br>「闲来垂钓碧溪上，忽复乘舟梦日边。」句：暗用典故：姜太公吕尚曾在渭水的磻溪上钓鱼，得遇周文王，助周灭商；伊尹曾梦见自己乘船从日月旁边经过，后被商汤聘请，助商灭夏。这两句表示诗人自己对从政仍有所期待。碧，一作「坐」。<br>「多岐路，今安在。」句：岔道这么多，如今身在何处？岐，一作「歧」；安，哪里。<br>长风破浪：比喻实现政治理想。据《宋书·宗悫传》载：宗悫少年时，叔父宗炳问他的志向，他说：「愿乘长风破万里浪。」<br>会：当。<br>云帆：高高的船帆。船在海里航行，因天水相连，船帆好像出没在云雾之中。<br>济：渡过。<br>沧海：大海。<br>社：古二十五家为一社。<br>白狗：一作「白雉」。<br>弹剑：战国时齐公子孟尝君门下食客冯谖曾屡次弹剑作歌怨己不如意。<br>贾生：洛阳贾谊，曾上书汉文帝，劝其改制兴礼，受时大臣反对。<br>拥篲：燕昭王亲自扫路，恐灰尘飞扬，用衣袖挡帚以礼迎贤士邹衍。<br>折节：一作「折腰」。<br>归去来：指隐居。语出东晋陶渊明《归去来辞》。<br>首阳蕨：《史记·伯夷列传》：「武王已平殷乱，天下宗周，而伯夷、叔齐耻之，义不食周粟，隐于首阳山，采薇而食之……遂饿死于首阳山。」《索引》：「薇，蕨也。」按薇、蕨本二草，前人误以为一。<br>含光混世贵无名：此句言不露锋芒，随世俯仰之意。《高士传》：巢父谓许由曰：「何不隐汝形，藏汝光？」<br>自古贤达人：鲍照《拟行路难》：「自古圣贤尽贫贱」。《史记·蔡泽列传》：「四时之序，成功者去。……商君为秦孝公明法令，……功已成矣，而遂以车裂。……白起……功已成矣，而遂赐剑死于杜邮。吴起……功已成矣，而卒枝解。大夫种为越王深谋远计……令越成霸，功已彰而信矣，勾践终负而杀之。此四子者，功成不去，祸至于身？」<br>子胥：伍子胥，春秋末期吴国大夫。《吴越春秋》卷五《夫差内传》：「吴王闻子胥之怨恨也，乃使人赐属镂之剑，子胥……遂伏剑而死。吴王乃取子胥尸，盛以鸱夷之器，投之于江中。」又见《国语·吴语》。<br>陆机雄才岂自保：《晋书·陆机传》载：陆机因宦人诬陷而被杀害于军中，临终叹曰：「华亭鹤唳，岂可复闻乎？」<br>李斯税驾苦不早：李斯，秦国统一六国的大功臣，任秦朝丞相，后被杀。《史记·李斯列传》载：李斯喟然叹曰：「……斯乃上蔡布衣……今人臣之位，无居臣上者，可谓富贵极矣。物极则衰，吾未知所税驾？」《索引》：「税驾，犹解驾，言休息也。」<br>华亭鹤唳讵可闻？上蔡苍鹰何足道：这两句还是写李斯。《史记·李斯列传》：「二世二年七月，具斯五刑，论腰斩咸阳市。斯出狱，与其中子俱执，顾谓其中子曰：『吾欲与若复牵黄犬俱出上蔡东门逐狡兔，岂可得乎！』」《太平御览·卷九二六》：「《史记》曰：『李斯临刑，思牵黄犬、臂苍鹰，出上蔡门，不可得矣。』」<br>秋风忽忆江东行：这句写张翰。《晋书·张翰传》：「张翰，字季鹰，吴郡吴人也。……为大司马东曹掾。……因见秋风起，乃思吴中菰菜、莼羹、鲈鱼脍，曰：『人生贵得适志，何能羁官数千里，以要名爵乎？』遂命驾而归。……或谓之曰：『卿乃纵适一时，独不为身后名邪？』答曰：『使我有身后名，不如即时一杯酒。』时人贵其旷达。」</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《行路难三首》是唐代伟大诗人李白的组诗作品。这三首诗抒写了诗人在政治道路上遭遇艰难后的感慨。诗中跌宕起伏的感情，跳跃式的思维，以及高昂的气势，使作品具有独特的艺术魅力，成为后人广为称颂的千古名篇。全诗蕴意波澜起伏，跌宕多姿。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>【其一】</p><p>金樽清酒斗十千，玉盘珍羞直万钱。</p><p>停杯投箸不能食，拔剑四顾心茫然。</p><p>欲渡黄河冰塞川，将登太行雪满山。</p><p>闲来垂钓碧溪上，忽复乘舟梦日边。</p><p>行路难，行路难，多歧路，今安在？</p><p>长风破浪会有时，直挂云帆济沧海！</p><p>【其二】</p><p>大道如青天，我独不得出。</p><p>羞逐长安社中儿，赤鸡白雉赌梨栗。</p><p>弹剑作歌奏苦声，曳裾王门不称情。</p><p>淮阴市井笑韩信，汉朝公卿忌贾生。</p><p>君不见昔时燕家重郭隗，拥篲折节无嫌猜。</p><p>剧辛乐毅感恩分，输肝剖胆效英才。</p><p>昭王白骨萦蔓草，谁人更扫黄金台？</p><p>行路难，归去来！</p><p>【其三】</p><p>有耳莫洗颍川水，有口莫食首阳蕨。</p><p>含光混世贵无名，何用孤高比云月？</p><p>吾观自古贤达人，功成不退皆殒身。</p><p>子胥既弃吴江上，屈原终投湘水滨。</p><p>陆机雄才岂自保？李斯税驾苦不早。</p><p>华亭鹤唳讵可闻？上蔡苍鹰何足道？</p><p>君不见吴中张翰称达生，秋风忽忆江东行。</p><p>且乐生前一杯酒，何须身后千载名？</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>【其一】<br>金杯中的美酒一斗价十千，玉盘里的菜肴珍贵值万钱。<br>但心情愁烦使得我放下杯筷，不愿进餐。拔出宝剑环顾四周，心里一片茫然。<br>想渡过黄河，坚冰堵塞大川；想登太行山，大雪遍布高山。<br>遥想当年，姜太公溪垂钓，得遇重才的文王，伊尹乘舟梦日，受聘在商汤身边。<br>人生的道路何等艰难，何等艰难，歧路纷杂，真正的大道究竟在哪边？<br>坚信乘风破浪的时机定会到来，到那时，将扬起征帆远渡碧海青天。<br>【其二】<br>大道虽宽广如青天，唯独没有我的出路。<br>我不愿意追随长安城中的富家子弟，去搞斗鸡走狗一类的赌博游戏。<br>像冯谖那样弹剑作歌发牢骚，在权贵之门卑躬屈节，那不合我心意。<br>韩信发迹之前被淮阴市井之徒讥笑，贾谊才能超群遭汉朝公卿妒忌。<br>君不见古时燕昭王重用郭隗，拥彗折节、谦恭下士，毫不嫌疑猜忌。<br>剧辛和乐毅感激知遇的恩情，竭忠尽智，以自己的才能为君主效力。<br>而今燕昭王之白骨已隐于荒草之中，还有谁能像他那样重用贤士呢？<br>世路艰难，我只得归去啦！<br>【其三】<br>不要学许由用颍水洗耳，不要学伯夷和叔齐隐居首阳采薇而食。<br>在世上活着贵在韬光养晦，为什么要隐居清高自比云月？<br>我看自古以来的贤达之人，功绩告成之后不自行隐退都死于非命。<br>伍子胥被吴王弃于吴江之上，屈原最终抱石自沉汨罗江中。<br>陆机如此雄才大略也无法自保，李斯以自己悲惨的结局为苦。<br>陆机是否还能听见华亭别墅间的鹤唳？李斯是否还能在上蔡东门牵鹰打猎？<br>你不知道吴中的张翰是个旷达之人，因见秋风起而想起江东故都。<br>生时有一杯酒就应尽情欢乐，何须在意身后千年的虚名？</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>行路难：乐府《杂曲歌辞》调名，古乐府道路六曲之一，亦有变行路难，内容多写社会道途艰难及离别悲伤之意，多以「君不见」为首，后鲍照拟作为多。<br>樽（zūn）：古代盛酒的器具，以金为饰。<br>清酒：清醇的美酒。<br>斗十千：一斗值十千钱（即万钱），形容酒美价高。<br>玉盘：精美的食具。<br>珍羞：珍贵的菜肴。羞，同「馐」，美味的食物。<br>直：通「值」，价值。<br>投箸（zhù）：丢下筷子。箸，筷子。<br>茫然：无所适从。<br>塞：堵塞。<br>太行：太行山，现山西、河南、河北三省交界处。<br>雪满山：一作「雪暗天」。详细说明：根据《平水韵》来看，这里一句的「川」和下一句的「边」都是属于下平一先，而「山」属于上平十五删。而「天」才是同在下平一先中的字。《平水韵》是后人总结唐人的用韵，总结的时候不可能把「山」这样的常见字放错位置，更不可能忽略这篇李白的名篇。<br>「闲来垂钓碧溪上，忽复乘舟梦日边。」句：暗用典故：姜太公吕尚曾在渭水的磻溪上钓鱼，得遇周文王，助周灭商；伊尹曾梦见自己乘船从日月旁边经过，后被商汤聘请，助商灭夏。这两句表示诗人自己对从政仍有所期待。碧，一作「坐」。<br>「多岐路，今安在。」句：岔道这么多，如今身在何处？岐，一作「歧」；安，哪里。<br>长风破浪：比喻实现政治理想。据《宋书·宗悫传》载：宗悫少年时，叔父宗炳问他的志向，他说：「愿乘长风破万里浪。」<br>会：当。<br>云帆：高高的船帆。船在海里航行，因天水相连，船帆好像出没在云雾之中。<br>济：渡过。<br>沧海：大海。<br>社：古二十五家为一社。<br>白狗：一作「白雉」。<br>弹剑：战国时齐公子孟尝君门下食客冯谖曾屡次弹剑作歌怨己不如意。<br>贾生：洛阳贾谊，曾上书汉文帝，劝其改制兴礼，受时大臣反对。<br>拥篲：燕昭王亲自扫路，恐灰尘飞扬，用衣袖挡帚以礼迎贤士邹衍。<br>折节：一作「折腰」。<br>归去来：指隐居。语出东晋陶渊明《归去来辞》。<br>首阳蕨：《史记·伯夷列传》：「武王已平殷乱，天下宗周，而伯夷、叔齐耻之，义不食周粟，隐于首阳山，采薇而食之……遂饿死于首阳山。」《索引》：「薇，蕨也。」按薇、蕨本二草，前人误以为一。<br>含光混世贵无名：此句言不露锋芒，随世俯仰之意。《高士传》：巢父谓许由曰：「何不隐汝形，藏汝光？」<br>自古贤达人：鲍照《拟行路难》：「自古圣贤尽贫贱」。《史记·蔡泽列传》：「四时之序，成功者去。……商君为秦孝公明法令，……功已成矣，而遂以车裂。……白起……功已成矣，而遂赐剑死于杜邮。吴起……功已成矣，而卒枝解。大夫种为越王深谋远计……令越成霸，功已彰而信矣，勾践终负而杀之。此四子者，功成不去，祸至于身？」<br>子胥：伍子胥，春秋末期吴国大夫。《吴越春秋》卷五《夫差内传》：「吴王闻子胥之怨恨也，乃使人赐属镂之剑，子胥……遂伏剑而死。吴王乃取子胥尸，盛以鸱夷之器，投之于江中。」又见《国语·吴语》。<br>陆机雄才岂自保：《晋书·陆机传》载：陆机因宦人诬陷而被杀害于军中，临终叹曰：「华亭鹤唳，岂可复闻乎？」<br>李斯税驾苦不早：李斯，秦国统一六国的大功臣，任秦朝丞相，后被杀。《史记·李斯列传》载：李斯喟然叹曰：「……斯乃上蔡布衣……今人臣之位，无居臣上者，可谓富贵极矣。物极则衰，吾未知所税驾？」《索引》：「税驾，犹解驾，言休息也。」<br>华亭鹤唳讵可闻？上蔡苍鹰何足道：这两句还是写李斯。《史记·李斯列传》：「二世二年七月，具斯五刑，论腰斩咸阳市。斯出狱，与其中子俱执，顾谓其中子曰：『吾欲与若复牵黄犬俱出上蔡东门逐狡兔，岂可得乎！』」《太平御览·卷九二六》：「《史记》曰：『李斯临刑，思牵黄犬、臂苍鹰，出上蔡门，不可得矣。』」<br>秋风忽忆江东行：这句写张翰。《晋书·张翰传》：「张翰，字季鹰，吴郡吴人也。……为大司马东曹掾。……因见秋风起，乃思吴中菰菜、莼羹、鲈鱼脍，曰：『人生贵得适志，何能羁官数千里，以要名爵乎？』遂命驾而归。……或谓之曰：『卿乃纵适一时，独不为身后名邪？』答曰：『使我有身后名，不如即时一杯酒。』时人贵其旷达。」</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《行路难三首》是唐代伟大诗人李白的组诗作品。这三首诗抒写了诗人在政治道路上遭遇艰难后的感慨。诗中跌宕起伏的感情，跳跃式的思维，以及高昂的气势，使作品具有独特的艺术魅力，成为后人广为称颂的千古名篇。全诗蕴意波澜起伏，跌宕多姿。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -200,7 +231,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/item/行路难三首/2864251" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

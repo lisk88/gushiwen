@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>瘗旅文 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>瘗旅文 - 王守仁 - 明朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="瘗旅文是明朝诗人王守仁的经典作品。本页面提供瘗旅文的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="瘗旅文,王守仁,明朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="瘗旅文 - 王守仁 - 明朝古诗文">
+    <meta property="og:description" content="瘗旅文是明朝诗人王守仁的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="瘗旅文 - 王守仁 - 明朝古诗文">
+    <meta name="twitter:description" content="瘗旅文是明朝诗人王守仁的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "瘗旅文",
+      "author": {
+        "@type": "Person",
+        "name": "王守仁"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "瘗旅文是明朝诗人王守仁的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">瘗旅文</h1>
-            <div class="poem-author">【明】王守仁</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【明】<span itemprop="name">王守仁</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>维正德四年，秋月三日，有吏目云自京来者，不知其名氏，携一子、一仆，将之任，过龙场，投宿土苗家。予从篱落间望见之；阴雨昏黑，欲就问讯北来事，不果。明早，遣人觇之，已行矣。薄午，有人自蜈蜙坡来，云：“一老人死坡下，傍两人哭之哀。”予曰：“此必吏目死矣。伤哉！”薄暮，复有人来云：“坡下死者二人，傍一人坐哭。”询其状，则其子又死矣。明日，复有人来云：“见坡下积尸三焉。”则其仆又死矣。呜呼，伤哉！念其暴骨无主，将二童子持畚锸往瘗之，二童子有难色然。予曰：“噫！吾与尔犹彼也！”二童闵然涕下，请往。就其傍山麓为三坎，埋之。又以只鸡、饭三盂，嗟吁涕洟而告之，曰：</p><p>“呜呼，伤哉！繄何人？繄何人？吾龙场驿丞馀姚王守仁也。吾与尔皆中土之产，吾不知尔郡邑，尔乌乎来为兹山之鬼乎？古者重去其乡，游宦不逾千里。吾以窜逐而来此，宜也。尔亦何辜乎？闻尔官吏目耳；俸不能五斗，尔率妻子躬耕，可有也；胡为乎以五斗而易尔七尺之躯；又不足，而益以尔子与仆乎？呜呼，伤哉！尔诚恋兹五斗而来，则宜欣然就道；胡为乎吾昨望见尔容，蹙然盖不胜其忧者？夫冲冒霜露，扳援崖壁，行万峰之顶，饥渴劳顿，筋骨疲惫；而又瘴疠侵其外，忧郁攻其中，其能以无死乎？吾固知尔之必死，然不谓若是其速，又不谓尔子、尔仆，亦遽然奄忽也！皆尔自取，谓之何哉？吾念尔三骨之无依，而来瘗耳，乃使吾有无穷之怆也！呜呼，伤哉！纵不尔瘗，幽崖之狐成群，阴壑之虺如车轮，亦必能葬尔于腹，不致久暴露尔。尔既已无知，然吾何能为心乎？自吾去父母乡国而来此，三年矣，历瘴毒而苟能自全，以吾未尝一日之戚戚也。今悲伤若此，是吾为尔者重，而自为者轻也。吾不宜复为尔悲矣！吾为尔歌，尔听之！”</p><p>“歌曰：‘连峰际天兮，飞鸟不通。游子怀乡兮，莫知西东。莫知西东兮，维天则同。异域殊方兮，环海之中。达观随寓兮，莫必予宫。魂兮魂兮，无悲以恫！’”</p><p>“又歌以慰之曰：‘与尔皆乡土之离兮！蛮之人言语不相知兮！性命不可期！吾苟死于兹兮，率尔子仆，来从予兮！吾与尔遨以嬉兮，骖紫彪，而乘文螭兮，登望故乡而嘘唏兮！吾苟获生归兮，尔子尔仆尚尔随兮，无以无侣悲兮！道傍之冢累累兮，多中土之流离兮；相与呼啸而徘徊兮！餐风饮露，无尔饥兮！朝友麋鹿，暮猿与栖兮！尔安尔居兮，无为厉于兹墟兮！’”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>大明正德四年秋季某月初三日，有一名从北京来到这里的吏目，不知他姓甚名谁，身边带着一个儿子、一个仆人，将要上任，路过龙场，投宿在一户苗族人家。我从篱笆中间望见他，当时阴雨昏黑，想靠近他打听北方的情况，没有实现。第二天早晨，派人去探视，他已经走了。近午时刻，有人从蜈蚣坡那边来，说：“有一个老人死于坡下，旁边两人哭得很伤心。”我说：“这一定是吏目死了。可悲啊！”傍晚，又有人来说：“坡下死了两个人，旁边一人坐着叹息。”问明他们的情状，方知他的儿子又死了。第二天，又有人来说：“看到坡下堆了三具尸体。”那么，他的仆人又死了。唉，令人伤心啊！想到他们的尸骨暴露在荒野，无人认领，于是我就带着两个童仆，拿着畚箕和铁锹，前去埋葬他们。两名童仆脸上流露出为难的情绪。我说：“唉，我和你们，本像他们一样啊。”两名童仆怜悯地淌下眼泪，要求一起去。于是在旁边的山脚下挖了三个坑，把他们埋了。随即供上一只鸡、三碗饭，一面叹息，一面流着眼泪，向死者祭告说：<br>“唉，悲伤啊！你是什么人，什么人啊？我是此地龙场驿的驿丞、余姚王守仁呀。我和你都生长在中原地区，我不知你的家乡是何郡何县，你为什么要来做这座山上的鬼魂啊？古人不会轻率地离开故乡，外出做官也不超过千里。我是因为流放而来此地，理所应当。你又有什么罪过而非来不可呢？听说你的官职，仅是一个小小的吏目而已。薪俸不过五斗米，你领着老婆孩子亲自种田就会有了。为什么竟用这五斗米换去你堂堂七尺之躯？又为什么还觉得不够，再加上你的儿子和仆人啊？哎呀，太悲伤了！你如真正是为留恋这五斗米而来，那就应该欢欢喜喜地上路，为什么我昨天望见你皱着额头、面有愁容，似乎承受不起那深重的忧虑呢？一路上常冒着雾气露水，攀援悬崖峭壁，走过万山的峰顶，饥渴劳累，筋骨疲惫，又加上瘴疬侵其外，忧郁攻其中，难道能免于一死吗？我固然知道你会必死，可是没有想到会如此之快，更没有想到你的儿子、你的仆人也会很快地死去啊。都是你自己找来的呀，还说它什么呢？我不过是怜念你们三具尸骨无所归依才来埋葬罢了，却使我引起无穷的感怆。唉，悲痛啊！纵然不葬你们，那幽暗的山崖上狐狸成群，阴深山谷中粗如车轮的毒蛇，也一定能够把你们葬在腹中，不致长久的暴露。你已经没有一点知觉，但我又怎能安心呢？自从我离开父母之乡来到此地，已经三个年头。历尽瘴毒而能勉强保全自己的生命，主要是因为我没有一天怀有忧戚的情绪啊。今天忽然如此悲伤，乃是我为你想得太重，而为自身想得很轻啊。我不应该再为你悲伤了！我来为你唱歌，你请听着。”<br>“我唱道：‘连绵的山峰高接云天啊，飞鸟不通。怀念家乡的游子啊，不知西东。不知西东啊，顶上的苍天却一般相同。地方纵然相隔甚远啊，都在四海的环绕之中。想得开的人儿到处为家，又何必守住那旧居一栋？魂灵啊，魂灵啊，不要悲伤，不要惊恐！’”<br>“再唱一只歌来安慰你：‘我与你都是离乡背井的苦命人啊，蛮人的语言谁也听不懂，性命没指望啊，前程一场空。假使我也死在这地方啊，请带着你子你仆紧相从。我们一起遨游同嬉戏，其乐也无穷。驾驭紫色虎啊，乘坐五彩龙；登高望故乡啊，放声叹息长悲恸。假使我有幸能生还啊，你尚有儿子仆人在身后随从；不要以为无伴侣啊，就悲悲切切常哀痛。道旁累累多枯冢啊，中原的游魂卧其中，与他们一起呼啸，一起散步从容。餐清风，饮甘露啊，莫愁饥饿腹中空。麋鹿朝为友啊，到晚间再与猿猴栖一洞。安心守分居墓中啊，可不要变成厉鬼村村寨寨乱逞凶！’”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>正德四年：公元1509年。正德，明武宗年号（1506—1521）。<br>吏目：明代散州或直隶州均设有吏目一人，掌助理刑狱之事，并管官署内部事务。<br>龙场：龙场驿，在今贵州修文县。<br>土苗：土著苗族。<br>篱落：篱笆。<br>觇（chān）：窥视<br>薄午：近午。<br>将：携。<br>畚（běn）：用草绳或竹篾编织成的盛物器具。<br>锸（chā）：铁锹。<br>坎：坑。<br>涕洟：目出为涕，鼻出为洟，即指眼泪鼻涕。这里谓哭泣。<br>繄（yī）：发语词，表语气。<br>胡为乎：为了什么。<br>窜逐：放逐，这里谓贬斥。<br>蹙然：皱眉忧愁的样子。<br>庵忽：疾速，这里喻死亡。<br>虺（huǐ）：毒蛇，俗称土虺蛇，大者长八九尺。<br>际天：接近天际。<br>维：同“惟”，只有。<br>随寓：随处可居，即随寓而安。<br>恫（dòng）：恐惧。<br>骖（cān）：古代一车驾三马叫骖。这里是驾驭的意思。彪：小虎。<br>文螭（chī）：带有条纹的无角的龙。<br>厉：厉鬼。<br>墟：村落。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文选自《王文成公全书·卷二十五》，作于正德四年（公元1509年），这时作者被贬于龙场驿已是第三个年头了。瘗（yì）就是埋葬。该文是作者埋葬三个客死在外的异乡人以后所作的一篇哀祭文。这三个异乡人，仅为了微薄的薪俸而万里奔走，终于暴死异乡。他们与作者素昧平生，但祭文的感情却写得相当深切，其关键是作者被贬龙场驿，其景况略如客死之人，悲客死之人也是作者借以抒发自己被贬异域的凄苦哀伤之情。但作者能“达观随寓”，终于生活下来了。这既是实情，也是作者的自宽自解。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>维正德四年，秋月三日，有吏目云自京来者，不知其名氏，携一子、一仆，将之任，过龙场，投宿土苗家。予从篱落间望见之；阴雨昏黑，欲就问讯北来事，不果。明早，遣人觇之，已行矣。薄午，有人自蜈蜙坡来，云：“一老人死坡下，傍两人哭之哀。”予曰：“此必吏目死矣。伤哉！”薄暮，复有人来云：“坡下死者二人，傍一人坐哭。”询其状，则其子又死矣。明日，复有人来云：“见坡下积尸三焉。”则其仆又死矣。呜呼，伤哉！念其暴骨无主，将二童子持畚锸往瘗之，二童子有难色然。予曰：“噫！吾与尔犹彼也！”二童闵然涕下，请往。就其傍山麓为三坎，埋之。又以只鸡、饭三盂，嗟吁涕洟而告之，曰：</p><p>“呜呼，伤哉！繄何人？繄何人？吾龙场驿丞馀姚王守仁也。吾与尔皆中土之产，吾不知尔郡邑，尔乌乎来为兹山之鬼乎？古者重去其乡，游宦不逾千里。吾以窜逐而来此，宜也。尔亦何辜乎？闻尔官吏目耳；俸不能五斗，尔率妻子躬耕，可有也；胡为乎以五斗而易尔七尺之躯；又不足，而益以尔子与仆乎？呜呼，伤哉！尔诚恋兹五斗而来，则宜欣然就道；胡为乎吾昨望见尔容，蹙然盖不胜其忧者？夫冲冒霜露，扳援崖壁，行万峰之顶，饥渴劳顿，筋骨疲惫；而又瘴疠侵其外，忧郁攻其中，其能以无死乎？吾固知尔之必死，然不谓若是其速，又不谓尔子、尔仆，亦遽然奄忽也！皆尔自取，谓之何哉？吾念尔三骨之无依，而来瘗耳，乃使吾有无穷之怆也！呜呼，伤哉！纵不尔瘗，幽崖之狐成群，阴壑之虺如车轮，亦必能葬尔于腹，不致久暴露尔。尔既已无知，然吾何能为心乎？自吾去父母乡国而来此，三年矣，历瘴毒而苟能自全，以吾未尝一日之戚戚也。今悲伤若此，是吾为尔者重，而自为者轻也。吾不宜复为尔悲矣！吾为尔歌，尔听之！”</p><p>“歌曰：‘连峰际天兮，飞鸟不通。游子怀乡兮，莫知西东。莫知西东兮，维天则同。异域殊方兮，环海之中。达观随寓兮，莫必予宫。魂兮魂兮，无悲以恫！’”</p><p>“又歌以慰之曰：‘与尔皆乡土之离兮！蛮之人言语不相知兮！性命不可期！吾苟死于兹兮，率尔子仆，来从予兮！吾与尔遨以嬉兮，骖紫彪，而乘文螭兮，登望故乡而嘘唏兮！吾苟获生归兮，尔子尔仆尚尔随兮，无以无侣悲兮！道傍之冢累累兮，多中土之流离兮；相与呼啸而徘徊兮！餐风饮露，无尔饥兮！朝友麋鹿，暮猿与栖兮！尔安尔居兮，无为厉于兹墟兮！’”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>大明正德四年秋季某月初三日，有一名从北京来到这里的吏目，不知他姓甚名谁，身边带着一个儿子、一个仆人，将要上任，路过龙场，投宿在一户苗族人家。我从篱笆中间望见他，当时阴雨昏黑，想靠近他打听北方的情况，没有实现。第二天早晨，派人去探视，他已经走了。近午时刻，有人从蜈蚣坡那边来，说：“有一个老人死于坡下，旁边两人哭得很伤心。”我说：“这一定是吏目死了。可悲啊！”傍晚，又有人来说：“坡下死了两个人，旁边一人坐着叹息。”问明他们的情状，方知他的儿子又死了。第二天，又有人来说：“看到坡下堆了三具尸体。”那么，他的仆人又死了。唉，令人伤心啊！想到他们的尸骨暴露在荒野，无人认领，于是我就带着两个童仆，拿着畚箕和铁锹，前去埋葬他们。两名童仆脸上流露出为难的情绪。我说：“唉，我和你们，本像他们一样啊。”两名童仆怜悯地淌下眼泪，要求一起去。于是在旁边的山脚下挖了三个坑，把他们埋了。随即供上一只鸡、三碗饭，一面叹息，一面流着眼泪，向死者祭告说：<br>“唉，悲伤啊！你是什么人，什么人啊？我是此地龙场驿的驿丞、余姚王守仁呀。我和你都生长在中原地区，我不知你的家乡是何郡何县，你为什么要来做这座山上的鬼魂啊？古人不会轻率地离开故乡，外出做官也不超过千里。我是因为流放而来此地，理所应当。你又有什么罪过而非来不可呢？听说你的官职，仅是一个小小的吏目而已。薪俸不过五斗米，你领着老婆孩子亲自种田就会有了。为什么竟用这五斗米换去你堂堂七尺之躯？又为什么还觉得不够，再加上你的儿子和仆人啊？哎呀，太悲伤了！你如真正是为留恋这五斗米而来，那就应该欢欢喜喜地上路，为什么我昨天望见你皱着额头、面有愁容，似乎承受不起那深重的忧虑呢？一路上常冒着雾气露水，攀援悬崖峭壁，走过万山的峰顶，饥渴劳累，筋骨疲惫，又加上瘴疬侵其外，忧郁攻其中，难道能免于一死吗？我固然知道你会必死，可是没有想到会如此之快，更没有想到你的儿子、你的仆人也会很快地死去啊。都是你自己找来的呀，还说它什么呢？我不过是怜念你们三具尸骨无所归依才来埋葬罢了，却使我引起无穷的感怆。唉，悲痛啊！纵然不葬你们，那幽暗的山崖上狐狸成群，阴深山谷中粗如车轮的毒蛇，也一定能够把你们葬在腹中，不致长久的暴露。你已经没有一点知觉，但我又怎能安心呢？自从我离开父母之乡来到此地，已经三个年头。历尽瘴毒而能勉强保全自己的生命，主要是因为我没有一天怀有忧戚的情绪啊。今天忽然如此悲伤，乃是我为你想得太重，而为自身想得很轻啊。我不应该再为你悲伤了！我来为你唱歌，你请听着。”<br>“我唱道：‘连绵的山峰高接云天啊，飞鸟不通。怀念家乡的游子啊，不知西东。不知西东啊，顶上的苍天却一般相同。地方纵然相隔甚远啊，都在四海的环绕之中。想得开的人儿到处为家，又何必守住那旧居一栋？魂灵啊，魂灵啊，不要悲伤，不要惊恐！’”<br>“再唱一只歌来安慰你：‘我与你都是离乡背井的苦命人啊，蛮人的语言谁也听不懂，性命没指望啊，前程一场空。假使我也死在这地方啊，请带着你子你仆紧相从。我们一起遨游同嬉戏，其乐也无穷。驾驭紫色虎啊，乘坐五彩龙；登高望故乡啊，放声叹息长悲恸。假使我有幸能生还啊，你尚有儿子仆人在身后随从；不要以为无伴侣啊，就悲悲切切常哀痛。道旁累累多枯冢啊，中原的游魂卧其中，与他们一起呼啸，一起散步从容。餐清风，饮甘露啊，莫愁饥饿腹中空。麋鹿朝为友啊，到晚间再与猿猴栖一洞。安心守分居墓中啊，可不要变成厉鬼村村寨寨乱逞凶！’”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>正德四年：公元1509年。正德，明武宗年号（1506—1521）。<br>吏目：明代散州或直隶州均设有吏目一人，掌助理刑狱之事，并管官署内部事务。<br>龙场：龙场驿，在今贵州修文县。<br>土苗：土著苗族。<br>篱落：篱笆。<br>觇（chān）：窥视<br>薄午：近午。<br>将：携。<br>畚（běn）：用草绳或竹篾编织成的盛物器具。<br>锸（chā）：铁锹。<br>坎：坑。<br>涕洟：目出为涕，鼻出为洟，即指眼泪鼻涕。这里谓哭泣。<br>繄（yī）：发语词，表语气。<br>胡为乎：为了什么。<br>窜逐：放逐，这里谓贬斥。<br>蹙然：皱眉忧愁的样子。<br>庵忽：疾速，这里喻死亡。<br>虺（huǐ）：毒蛇，俗称土虺蛇，大者长八九尺。<br>际天：接近天际。<br>维：同“惟”，只有。<br>随寓：随处可居，即随寓而安。<br>恫（dòng）：恐惧。<br>骖（cān）：古代一车驾三马叫骖。这里是驾驭的意思。彪：小虎。<br>文螭（chī）：带有条纹的无角的龙。<br>厉：厉鬼。<br>墟：村落。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文选自《王文成公全书·卷二十五》，作于正德四年（公元1509年），这时作者被贬于龙场驿已是第三个年头了。瘗（yì）就是埋葬。该文是作者埋葬三个客死在外的异乡人以后所作的一篇哀祭文。这三个异乡人，仅为了微薄的薪俸而万里奔走，终于暴死异乡。他们与作者素昧平生，但祭文的感情却写得相当深切，其关键是作者被贬龙场驿，其景况略如客死之人，悲客死之人也是作者借以抒发自己被贬异域的凄苦哀伤之情。但作者能“达观随寓”，终于生活下来了。这既是实情，也是作者的自宽自解。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/1420089.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

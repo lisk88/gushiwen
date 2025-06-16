@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新五代史 · 宦者传论 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>新五代史 · 宦者传论 - 欧阳修 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="新五代史 · 宦者传论是宋朝诗人欧阳修的经典作品。本页面提供新五代史 · 宦者传论的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="新五代史 · 宦者传论,欧阳修,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="新五代史 · 宦者传论 - 欧阳修 - 宋朝古诗文">
+    <meta property="og:description" content="新五代史 · 宦者传论是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="新五代史 · 宦者传论 - 欧阳修 - 宋朝古诗文">
+    <meta name="twitter:description" content="新五代史 · 宦者传论是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "新五代史 · 宦者传论",
+      "author": {
+        "@type": "Person",
+        "name": "欧阳修"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "新五代史 · 宦者传论是宋朝诗人欧阳修的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">新五代史 · 宦者传论</h1>
-            <div class="poem-author">【宋】欧阳修</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">欧阳修</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>自古宦者乱人之国，其源深于女祸。</p><p>女，色而已；宦者之害，非一端也。盖其用事也，近而习；其为心也，专而忍；能以小善中人之意，小信固人之心，使人主必信而亲之。待其已信，然后惧以祸福而把持之。虽有忠臣硕士，列于朝廷，而人主以为去己疏远，不若起居饮食，前后左右之亲，为可恃也。故前后左右者日益亲，则忠臣硕士日益疏，而人主之势日益孤。势孤则惧祸之心日益切，而把持者日益牢。安危出其喜怒，祸患伏于帷闼，则向之所谓可恃者，乃所以为患也。患已深而觉之，欲与疏远之臣，图左右之亲近，缓之则养祸而益深，急之则挟人主以为质。虽有圣智，不能与谋。谋之而不可为，为之而不可成，至其甚，则俱伤而两败。故其大者亡国，其次亡身，而使奸豪得借以为资而起，至抉其种类，尽杀以快天下之心而后已。此前史所载，宦者之祸常如此者，非一世也。</p><p>夫为人主者，非欲养祸于内，而疏忠臣硕士于外，盖其渐积而势使之然也。夫女色之惑，不幸而不悟，则祸斯及矣。使其一悟，捽而去之可也。宦者之为祸，虽欲悔悟，而势有不得而去也。唐昭宗之事是已。故曰：「深于女祸」者，谓此也。可不戒哉！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>自古以来，宦官扰乱国家，这来源比妇女的祸患还要深。<br>妇人女子，不过使君王好色罢了。但是宦官的危害，并非在某一处或某一件事情。因为宦官做事情，经常在君王左右，亲近服侍。他们的心思专一，善于忍耐。能讨好以迎合君王的心意，能在小处表现诚实以稳固君王的心，使得君王必定相信而亲近他们。等到取得君王的信任，然后拿福祸来恐吓君王把持朝政。这时虽然有忠臣贤士罗列在朝廷，而君王以为离自己疏远。宦官却服侍起居饮食，不离自己前后左右，显得更为亲近可靠，所以在君王前后左右的宦官日益亲近，忠臣贤士日益疏远，君王的势力日益孤立。势力越孤立，则恐惧祸乱的心情一天天更厉害，而把持君王的宦官，地位日益牢固。国家的安危出于他们的喜怒，祸患隐伏于宫门帷幄之中。这样昔日所谓可以依赖信任的人，就是现在起祸为患的。待君王觉得祸患已深，想与被疏远的忠臣贤士策划，除掉左右亲近的宦官，但事情和缓则培养祸乱越深；事情急促，则宦官挟持君王为人质，这时虽然有圣贤的智慧，也不能与之谋划。即使谋划了也不能实行，实行了也不能成功。如果事情发展走了极端，则两败俱伤，所以大的祸患导致国家灭亡，小的祸患导致君王身死，而使奸雄借机起事，围捕宦官一党，将他们斩尽杀绝来快愉天下人之心才罢休。以前史书上所记载的关于宦官的祸患，常常就是这样，并不是一朝一代如此。<br>为君王的人，也不想养祸患在宫内，而疏远忠臣贤士于宫外，只是渐渐积累而时势使他那样。女色的媚惑人，如果不幸而不觉悟，那么祸患就会来临。假使他一旦觉悟，揪起头发，将她驱逐就可以了。宦官为祸患，虽然想悔悟，但时势使君王不能将他们赶走，唐昭宗的事就是这样。所以说“宦官的祸患深于女色的祸患”，即指如此。怎么能不引以为戒呢？</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>宦者：即宦官。也叫太监，是一些被阉割后失去性能力的男人，在宫廷内侍奉皇帝及其家族。宦官本为内廷官，不能干预政事，但其上层分子是皇帝最亲近的奴才，所以往往能窃取大权。<br>女祸：古代史书中称宠信女子或女主执政败坏国事为女祸。<br>一端：事情的一点或一个方面。<br>近而习：亲近熟悉。<br>专而忍：专一隐忍，不露真情。<br>小善：指一些能得到人君喜欢的小事。<br>中：合。<br>小信：指一些貌似忠心耿耿的小动作。<br>固：稳住。<br>硕士：贤能之士，学问渊博的人。<br>帷闼（tà）：泛指皇帝居住的后宫。帷，帐幕；闼，宫中小门。<br>质：抵押品。<br>奸豪：奸雄，指权诈欺世的野心家。<br>资：口实，资本。<br>抉（jué）：剔出、剜出。<br>“此前史所载”句：关于奸豪诛杀宦官的史实，最典型的为汉、唐两朝。东汉末年，宦官专权，大将军何进谋诛宦官，密召郎中董卓入京。董卓入朝后，大肆诛戮宦官，并乘机自称相国，一时人心惶惶。其后各地豪强纷纷起兵讨卓，形成混乱局面。唐昭宗时，宦官把持朝政，宣武节度使朱温乘机进军长安，尽杀诸宦官，并迫使皇帝封他为梁王。不久，朱温便废帝自立。<br>捽（zuó）：抓，揪住。<br>唐昭宗之事：唐昭宗经常狂饮，喜怒无常，密谋尽诛宦官。宦官刘季述、王仲先等假托皇后的命令，立太子，囚禁昭宗，想尽诛百官后，再弑昭宗。后来都将孙德昭等斩王仲先，杖杀刘季述，迎昭宗复位。以后朱全忠利用诛宦官的机会，弑昭宗，灭了唐朝。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《五代史·宦者传论》由宋代著名诗人欧阳修所写，该文通过论述宦官制度的各种弊端说明君主应提高警惕，防止宦官作乱于内而导致国家衰亡的道理。该文也是作者史论中的名篇之一。<br>欧阳修擅长写史论，该文也是他的得意之作。清人吴楚材誉之为“可为千古龟鉴”，用现代的话说，就是说文章对于历代帝王都有一定的借鉴意义。作者以宦官制度这一结症给国家带来的危害立论，本身就具有一定的吸引力，加上作者的生花妙笔，使文章产生出强烈的艺术效果。本文是《新五代史·宦者传》评论中的一部分。主要是讲宦官之害，深于女祸。文章详细描述了宦官怎样通过小善、小信而逐步把持政权的过程，从而警告帝王们不要渐积养祸。其实，宦官专权是封建专制主义的必然产物：帝王骄故里淫逸，又要防止大臣们的野心，势必依赖一批逢迎残忍的小人。所以自秦而汉，自唐而明，宦官之祸，愈演愈烈。该文的篇幅虽不长，但层次较多，分析详尽，而且夹叙夹议，从容不迫，确属功力不凡。不过，我们也应注意到，本文把“乱人之国”的根源归咎于宦官、女祸，这种观点也是不全面的，只能说明作者在思想上具有局限性。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>自古宦者乱人之国，其源深于女祸。</p><p>女，色而已；宦者之害，非一端也。盖其用事也，近而习；其为心也，专而忍；能以小善中人之意，小信固人之心，使人主必信而亲之。待其已信，然后惧以祸福而把持之。虽有忠臣硕士，列于朝廷，而人主以为去己疏远，不若起居饮食，前后左右之亲，为可恃也。故前后左右者日益亲，则忠臣硕士日益疏，而人主之势日益孤。势孤则惧祸之心日益切，而把持者日益牢。安危出其喜怒，祸患伏于帷闼，则向之所谓可恃者，乃所以为患也。患已深而觉之，欲与疏远之臣，图左右之亲近，缓之则养祸而益深，急之则挟人主以为质。虽有圣智，不能与谋。谋之而不可为，为之而不可成，至其甚，则俱伤而两败。故其大者亡国，其次亡身，而使奸豪得借以为资而起，至抉其种类，尽杀以快天下之心而后已。此前史所载，宦者之祸常如此者，非一世也。</p><p>夫为人主者，非欲养祸于内，而疏忠臣硕士于外，盖其渐积而势使之然也。夫女色之惑，不幸而不悟，则祸斯及矣。使其一悟，捽而去之可也。宦者之为祸，虽欲悔悟，而势有不得而去也。唐昭宗之事是已。故曰：「深于女祸」者，谓此也。可不戒哉！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>自古以来，宦官扰乱国家，这来源比妇女的祸患还要深。<br>妇人女子，不过使君王好色罢了。但是宦官的危害，并非在某一处或某一件事情。因为宦官做事情，经常在君王左右，亲近服侍。他们的心思专一，善于忍耐。能讨好以迎合君王的心意，能在小处表现诚实以稳固君王的心，使得君王必定相信而亲近他们。等到取得君王的信任，然后拿福祸来恐吓君王把持朝政。这时虽然有忠臣贤士罗列在朝廷，而君王以为离自己疏远。宦官却服侍起居饮食，不离自己前后左右，显得更为亲近可靠，所以在君王前后左右的宦官日益亲近，忠臣贤士日益疏远，君王的势力日益孤立。势力越孤立，则恐惧祸乱的心情一天天更厉害，而把持君王的宦官，地位日益牢固。国家的安危出于他们的喜怒，祸患隐伏于宫门帷幄之中。这样昔日所谓可以依赖信任的人，就是现在起祸为患的。待君王觉得祸患已深，想与被疏远的忠臣贤士策划，除掉左右亲近的宦官，但事情和缓则培养祸乱越深；事情急促，则宦官挟持君王为人质，这时虽然有圣贤的智慧，也不能与之谋划。即使谋划了也不能实行，实行了也不能成功。如果事情发展走了极端，则两败俱伤，所以大的祸患导致国家灭亡，小的祸患导致君王身死，而使奸雄借机起事，围捕宦官一党，将他们斩尽杀绝来快愉天下人之心才罢休。以前史书上所记载的关于宦官的祸患，常常就是这样，并不是一朝一代如此。<br>为君王的人，也不想养祸患在宫内，而疏远忠臣贤士于宫外，只是渐渐积累而时势使他那样。女色的媚惑人，如果不幸而不觉悟，那么祸患就会来临。假使他一旦觉悟，揪起头发，将她驱逐就可以了。宦官为祸患，虽然想悔悟，但时势使君王不能将他们赶走，唐昭宗的事就是这样。所以说“宦官的祸患深于女色的祸患”，即指如此。怎么能不引以为戒呢？</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>宦者：即宦官。也叫太监，是一些被阉割后失去性能力的男人，在宫廷内侍奉皇帝及其家族。宦官本为内廷官，不能干预政事，但其上层分子是皇帝最亲近的奴才，所以往往能窃取大权。<br>女祸：古代史书中称宠信女子或女主执政败坏国事为女祸。<br>一端：事情的一点或一个方面。<br>近而习：亲近熟悉。<br>专而忍：专一隐忍，不露真情。<br>小善：指一些能得到人君喜欢的小事。<br>中：合。<br>小信：指一些貌似忠心耿耿的小动作。<br>固：稳住。<br>硕士：贤能之士，学问渊博的人。<br>帷闼（tà）：泛指皇帝居住的后宫。帷，帐幕；闼，宫中小门。<br>质：抵押品。<br>奸豪：奸雄，指权诈欺世的野心家。<br>资：口实，资本。<br>抉（jué）：剔出、剜出。<br>“此前史所载”句：关于奸豪诛杀宦官的史实，最典型的为汉、唐两朝。东汉末年，宦官专权，大将军何进谋诛宦官，密召郎中董卓入京。董卓入朝后，大肆诛戮宦官，并乘机自称相国，一时人心惶惶。其后各地豪强纷纷起兵讨卓，形成混乱局面。唐昭宗时，宦官把持朝政，宣武节度使朱温乘机进军长安，尽杀诸宦官，并迫使皇帝封他为梁王。不久，朱温便废帝自立。<br>捽（zuó）：抓，揪住。<br>唐昭宗之事：唐昭宗经常狂饮，喜怒无常，密谋尽诛宦官。宦官刘季述、王仲先等假托皇后的命令，立太子，囚禁昭宗，想尽诛百官后，再弑昭宗。后来都将孙德昭等斩王仲先，杖杀刘季述，迎昭宗复位。以后朱全忠利用诛宦官的机会，弑昭宗，灭了唐朝。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《五代史·宦者传论》由宋代著名诗人欧阳修所写，该文通过论述宦官制度的各种弊端说明君主应提高警惕，防止宦官作乱于内而导致国家衰亡的道理。该文也是作者史论中的名篇之一。<br>欧阳修擅长写史论，该文也是他的得意之作。清人吴楚材誉之为“可为千古龟鉴”，用现代的话说，就是说文章对于历代帝王都有一定的借鉴意义。作者以宦官制度这一结症给国家带来的危害立论，本身就具有一定的吸引力，加上作者的生花妙笔，使文章产生出强烈的艺术效果。本文是《新五代史·宦者传》评论中的一部分。主要是讲宦官之害，深于女祸。文章详细描述了宦官怎样通过小善、小信而逐步把持政权的过程，从而警告帝王们不要渐积养祸。其实，宦官专权是封建专制主义的必然产物：帝王骄故里淫逸，又要防止大臣们的野心，势必依赖一批逢迎残忍的小人。所以自秦而汉，自唐而明，宦官之祸，愈演愈烈。该文的篇幅虽不长，但层次较多，分析详尽，而且夹叙夹议，从容不迫，确属功力不凡。不过，我们也应注意到，本文把“乱人之国”的根源归咎于宦官、女祸，这种观点也是不全面的，只能说明作者在思想上具有局限性。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

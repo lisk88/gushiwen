@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>子革对灵王 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>子革对灵王 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="子革对灵王是周朝诗人左丘明的经典作品。本页面提供子革对灵王的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="子革对灵王,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="子革对灵王 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="子革对灵王是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="子革对灵王 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="子革对灵王是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "子革对灵王",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "子革对灵王是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">子革对灵王</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>楚子狩于州来，次于颍尾，使荡侯、潘子、司马督、嚣尹午、陵尹喜帅师围徐以惧吴。楚子次于乾溪，以为之援。雨雪，王皮冠，秦复陶，翠被，豹舄，执鞭以出，仆析父从。</p><p>右尹子革夕，王见之。去冠被，舍鞭，与之语曰：“昔我先王熊绎与吕伋、王孙牟、燮父、禽父，并事康王，四国皆有分，我独无有。今吾使人于周，求鼎以为分，王其与我乎？”对曰：“与君王哉！昔我先王熊绎，辟在荆山，筚路蓝缕，以处草莽，跋涉山林，以事天子，唯是桃弧、棘矢，以共御王事。齐，王舅也；晋及鲁、卫，王母弟也。楚是以无分，而彼皆有。今周与四国服事君王，将唯命是从，岂其爱鼎？”王曰：“昔我皇祖伯父昆吾，旧许是宅。今郑人贪赖其田，而不我与。我若求之，其与我乎？”对曰：“与君王哉！周不爱鼎，郑敢爱田？”王曰：“昔诸侯远我而畏晋，今我大城陈、蔡、不羹，赋皆千乘，子与有劳焉。诸侯其畏我乎？”对曰：“畏君王哉！是四国者，专足畏也，又加之以楚，敢不畏君王哉？”</p><p>工尹路请曰：“君王命剥圭以为鏚柲，敢请命。”王入视之。析父谓子革：“吾子，楚国之望也！今与王言如响，国其若之何？”子革曰：“摩厉以须，王出，吾刃将斩矣。”</p><p>王出，复语。左史倚相趋过。王曰：“是良史也，子善视之。是能读《三坟》、《五典》、《八索》、《九丘》。”对曰：“臣尝问焉，昔穆王欲肆其心，周行天下，将皆必有车辙马迹焉。祭公谋父作《祈招》之诗，以止王心，王是以获没于祗宫。臣问其诗而不知也；若问远焉，其焉能知之？”王曰：“子能乎？”对曰：“能。其《诗》曰：‘祈招之愔愔，式昭德音。思我王度，式如玉，式如金。形民之力，而无醉饱之心。’”</p><p>王揖而入，馈不食，寝不寐，数日。不能自克，以及于难。</p><p>仲尼曰：“古也有志：‘克己复礼，仁也。’信善哉！楚灵王若能如是，岂其辱于乾溪？”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>楚灵王到州来冬猎，驻扎在颍尾，派荡侯、潘子、司马督、嚣尹午、陵尹喜率领军队包围徐国以恐吓吴国。楚王驻扎在乾溪，作为他们的后援。天下雪，楚王戴皮帽，穿秦国羽衣，翠鸟羽毛的披肩，豹皮鞋，握鞭而出。仆析父跟随着。<br>子革晚上进见，楚王会见他，脱去帽子、披风，丢掉鞭子，和他谈话，说：“从前我们先王熊绎与齐国的吕伋、卫国的王孙牟、晋国的燮父、鲁国的伯禽同时事奉周康王，四国都有分赐的宝器，唯独我国没有。现在我派人到周室，要求将九鼎作为分赐绐我国的宝器，周王会给我吗？”于革回答说：“会给君王啊！从前我们先王熊绎在偏僻的荆山地方，柴车破衣，居于草野，跋涉山林，事奉天子，只有这桃木做的弓、枣木做的箭来供奉王室大事之用。齐，是周王的舅父；晋及鲁、卫，是周王的同母兄弟。楚国因此没有分赐到宝器，而他们都有。现在周室与上述四国都服侍君王，将会唯命是从，岂会吝惜九鼎？”楚王说：“从前我们的远祖伯父昆吾，住在许国旧地，现在郑国人贪图那里的田地有利，而不给我们。我们如果向他们要求，会给我们吗？”子革回答说：“会给君王啊！周室不吝惜九鼎，郑因岂敢吝惜田地？”楚王说：“从前诸侯认为我国偏远而畏惧晋国，现在我们大力修筑陈、蔡、东、西不羹四个城邑，兵赋都达到兵车一千辆，你参与其事是有功劳的，诸侯会畏惧我们吗？”子革回答说：“会畏惧君王啊！单这四大城邑，已足以使人畏惧了，再加上楚国，岂敢不畏惧君王吗！”<br>工尹路请示说：“君王命令破开圭玉装饰斧柄，冒昧请君王指示。”楚王进去察看。仆析父对于革说：“您，是楚国有声望的人，现在和君王说话好象回声一样应和，国家会怎么样呢？”子革说：“我磨快言语的刀刃以待时机，君王出来，我的刀刃就将砍下去了。”<br>楚王出来，又接着谈话。左史倚相从面前小步快速走过，楚王说：“这个人是好史官，你要好好看待他。这个人能读《三坟》、《五典》、《八索》、《九丘》这样的古书。”子革回答说：“下臣曾经问过他，从前周穆王想要随心所欲，走遍天下，要使天下都留有他的车辙马迹。祭公谋父作了《祈招》的诗篇来制止穆王的贪心，穆王因此能在祇宫寿终正寝。下臣问他诗句却不知道。如果问年代久远的事，他怎能知道？”楚王说：“你能吗？”子革回答说：“能。那首诗说：‘《祈招》的音乐和谐，表现了美德的声音。想起我们君王的气度，似玉，似金。保全百姓的力量，而没有象醉饱一样的贪心。”<br>楚王作了一揖就进去了，有好几天，送上饭不吃，躺下睡不着，还是不能自己克制，以致遇到祸难。<br>孔子说：“古时有记载说：‘克制自己，回到礼仪上来，这就是仁。’说得真好啊！楚灵王如果能象这样，岂会在乾溪受辱？”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>雨雪：下雪。<br>皮冠：皮帽。秦复陶：秦国赠的羽衣。翠被：用翠羽装饰的披肩。舄：鞋。<br>仆析父：楚大夫。<br>右尹：官名。夕：晚上谒见。<br>舍：放下。<br>熊绎：楚国始祖。<br>吕伋：王孙牟、燮父、禽父：齐、卫、晋、鲁四国的始祖。康王：即周康王，周王第三代。<br>四国：指齐、卫、晋、鲁。<br>鼎：夏、商、周三代视为传国之宝。<br>辟：同“僻”。荆山：楚人的发祥地，今湖北南漳县西。<br>筚路：柴车。蓝缕：破烂的衣服。<br>桃弧棘矢：桃木做的弓，棘木（酸枣木）做的箭。<br>共：同“供”。<br>齐，王舅也：周成王的母亲是姜太公的女儿。<br>昆吾：楚的远祖，曾住在许地。许：周初分封的诸侯国。<br>陈、蔡：本为周武王所封的诸侯国，后来为楚所灭。不羹：地名，有东西二邑。赋：指兵车。<br>四国：指陈、蔡、和东西不羹。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·昭公十二年》。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>楚子狩于州来，次于颍尾，使荡侯、潘子、司马督、嚣尹午、陵尹喜帅师围徐以惧吴。楚子次于乾溪，以为之援。雨雪，王皮冠，秦复陶，翠被，豹舄，执鞭以出，仆析父从。</p><p>右尹子革夕，王见之。去冠被，舍鞭，与之语曰：“昔我先王熊绎与吕伋、王孙牟、燮父、禽父，并事康王，四国皆有分，我独无有。今吾使人于周，求鼎以为分，王其与我乎？”对曰：“与君王哉！昔我先王熊绎，辟在荆山，筚路蓝缕，以处草莽，跋涉山林，以事天子，唯是桃弧、棘矢，以共御王事。齐，王舅也；晋及鲁、卫，王母弟也。楚是以无分，而彼皆有。今周与四国服事君王，将唯命是从，岂其爱鼎？”王曰：“昔我皇祖伯父昆吾，旧许是宅。今郑人贪赖其田，而不我与。我若求之，其与我乎？”对曰：“与君王哉！周不爱鼎，郑敢爱田？”王曰：“昔诸侯远我而畏晋，今我大城陈、蔡、不羹，赋皆千乘，子与有劳焉。诸侯其畏我乎？”对曰：“畏君王哉！是四国者，专足畏也，又加之以楚，敢不畏君王哉？”</p><p>工尹路请曰：“君王命剥圭以为鏚柲，敢请命。”王入视之。析父谓子革：“吾子，楚国之望也！今与王言如响，国其若之何？”子革曰：“摩厉以须，王出，吾刃将斩矣。”</p><p>王出，复语。左史倚相趋过。王曰：“是良史也，子善视之。是能读《三坟》、《五典》、《八索》、《九丘》。”对曰：“臣尝问焉，昔穆王欲肆其心，周行天下，将皆必有车辙马迹焉。祭公谋父作《祈招》之诗，以止王心，王是以获没于祗宫。臣问其诗而不知也；若问远焉，其焉能知之？”王曰：“子能乎？”对曰：“能。其《诗》曰：‘祈招之愔愔，式昭德音。思我王度，式如玉，式如金。形民之力，而无醉饱之心。’”</p><p>王揖而入，馈不食，寝不寐，数日。不能自克，以及于难。</p><p>仲尼曰：“古也有志：‘克己复礼，仁也。’信善哉！楚灵王若能如是，岂其辱于乾溪？”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>楚灵王到州来冬猎，驻扎在颍尾，派荡侯、潘子、司马督、嚣尹午、陵尹喜率领军队包围徐国以恐吓吴国。楚王驻扎在乾溪，作为他们的后援。天下雪，楚王戴皮帽，穿秦国羽衣，翠鸟羽毛的披肩，豹皮鞋，握鞭而出。仆析父跟随着。<br>子革晚上进见，楚王会见他，脱去帽子、披风，丢掉鞭子，和他谈话，说：“从前我们先王熊绎与齐国的吕伋、卫国的王孙牟、晋国的燮父、鲁国的伯禽同时事奉周康王，四国都有分赐的宝器，唯独我国没有。现在我派人到周室，要求将九鼎作为分赐绐我国的宝器，周王会给我吗？”于革回答说：“会给君王啊！从前我们先王熊绎在偏僻的荆山地方，柴车破衣，居于草野，跋涉山林，事奉天子，只有这桃木做的弓、枣木做的箭来供奉王室大事之用。齐，是周王的舅父；晋及鲁、卫，是周王的同母兄弟。楚国因此没有分赐到宝器，而他们都有。现在周室与上述四国都服侍君王，将会唯命是从，岂会吝惜九鼎？”楚王说：“从前我们的远祖伯父昆吾，住在许国旧地，现在郑国人贪图那里的田地有利，而不给我们。我们如果向他们要求，会给我们吗？”子革回答说：“会给君王啊！周室不吝惜九鼎，郑因岂敢吝惜田地？”楚王说：“从前诸侯认为我国偏远而畏惧晋国，现在我们大力修筑陈、蔡、东、西不羹四个城邑，兵赋都达到兵车一千辆，你参与其事是有功劳的，诸侯会畏惧我们吗？”子革回答说：“会畏惧君王啊！单这四大城邑，已足以使人畏惧了，再加上楚国，岂敢不畏惧君王吗！”<br>工尹路请示说：“君王命令破开圭玉装饰斧柄，冒昧请君王指示。”楚王进去察看。仆析父对于革说：“您，是楚国有声望的人，现在和君王说话好象回声一样应和，国家会怎么样呢？”子革说：“我磨快言语的刀刃以待时机，君王出来，我的刀刃就将砍下去了。”<br>楚王出来，又接着谈话。左史倚相从面前小步快速走过，楚王说：“这个人是好史官，你要好好看待他。这个人能读《三坟》、《五典》、《八索》、《九丘》这样的古书。”子革回答说：“下臣曾经问过他，从前周穆王想要随心所欲，走遍天下，要使天下都留有他的车辙马迹。祭公谋父作了《祈招》的诗篇来制止穆王的贪心，穆王因此能在祇宫寿终正寝。下臣问他诗句却不知道。如果问年代久远的事，他怎能知道？”楚王说：“你能吗？”子革回答说：“能。那首诗说：‘《祈招》的音乐和谐，表现了美德的声音。想起我们君王的气度，似玉，似金。保全百姓的力量，而没有象醉饱一样的贪心。”<br>楚王作了一揖就进去了，有好几天，送上饭不吃，躺下睡不着，还是不能自己克制，以致遇到祸难。<br>孔子说：“古时有记载说：‘克制自己，回到礼仪上来，这就是仁。’说得真好啊！楚灵王如果能象这样，岂会在乾溪受辱？”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>雨雪：下雪。<br>皮冠：皮帽。秦复陶：秦国赠的羽衣。翠被：用翠羽装饰的披肩。舄：鞋。<br>仆析父：楚大夫。<br>右尹：官名。夕：晚上谒见。<br>舍：放下。<br>熊绎：楚国始祖。<br>吕伋：王孙牟、燮父、禽父：齐、卫、晋、鲁四国的始祖。康王：即周康王，周王第三代。<br>四国：指齐、卫、晋、鲁。<br>鼎：夏、商、周三代视为传国之宝。<br>辟：同“僻”。荆山：楚人的发祥地，今湖北南漳县西。<br>筚路：柴车。蓝缕：破烂的衣服。<br>桃弧棘矢：桃木做的弓，棘木（酸枣木）做的箭。<br>共：同“供”。<br>齐，王舅也：周成王的母亲是姜太公的女儿。<br>昆吾：楚的远祖，曾住在许地。许：周初分封的诸侯国。<br>陈、蔡：本为周武王所封的诸侯国，后来为楚所灭。不羹：地名，有东西二邑。赋：指兵车。<br>四国：指陈、蔡、和东西不羹。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文出自《左传·昭公十二年》。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

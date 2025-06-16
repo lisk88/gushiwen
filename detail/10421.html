@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李凭箜篌引 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>李凭箜篌引 - 李贺 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="李凭箜篌引是唐朝诗人李贺的经典作品。本页面提供李凭箜篌引的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="李凭箜篌引,李贺,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="李凭箜篌引 - 李贺 - 唐朝古诗文">
+    <meta property="og:description" content="李凭箜篌引是唐朝诗人李贺的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="李凭箜篌引 - 李贺 - 唐朝古诗文">
+    <meta name="twitter:description" content="李凭箜篌引是唐朝诗人李贺的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "李凭箜篌引",
+      "author": {
+        "@type": "Person",
+        "name": "李贺"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "李凭箜篌引是唐朝诗人李贺的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">李凭箜篌引</h1>
-            <div class="poem-author">【唐】李贺</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">李贺</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>吴丝蜀桐张高秋，空山凝云颓不流。</p><p>江娥啼竹素女愁，李凭中国弹箜篌。</p><p>昆山玉碎凤凰叫，芙蓉泣露香兰笑。</p><p>十二门前融冷光，二十三丝动紫皇。</p><p>女娲炼石补天处，石破天惊逗秋雨。</p><p>梦入神山教神妪，老鱼跳波瘦蛟舞。</p><p>吴质不眠倚桂树，露脚斜飞湿寒兔。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>在深秋的夜晚，弹奏起吴丝蜀桐制成精美的箜篌。听到美妙的乐声，天空的白云凝聚起来不再飘游。<br>湘娥把泪珠洒满斑竹，九天素女也牵动满腔忧愁。出现这种情况，是由于乐工李凭在京城弹奏箜篌。<br>乐声清脆动听得就像昆仑山美玉击碎，凤凰鸣叫；时而使芙蓉在露水中饮泣，时而使香兰开怀欢笑。<br>清脆的乐声，融和了长安城十二门前的清冷光气。二十三根弦丝高弹轻拨，打动了高高在上的天帝。<br>高亢的乐声直冲云霄，冲上女娲炼石补过的天际。好似补天的五彩石被击破，逗落了漫天绵绵秋雨。<br>幻觉中仿佛乐工进入了神山，把技艺向女仙传授；老鱼兴奋得在波中跳跃，瘦蛟也翩翩起舞乐悠悠。<br>月宫中吴刚被乐声吸引，彻夜不眠在桂树下逗留。桂树下的兔子也佇立聆听，不顾露珠斜飞寒飕飕！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>李凭：当时的梨园艺人，善弹奏箜篌。唐·杨景山《听李凭弹箜篌》诗曰：「听奏繁弦玉殿清，风传曲度禁林明。君王听乐梨园暖，翻到《云门》第几声？」「花咽娇莺玉嗽泉，名髙半在玉筵前。汉王欲助人间乐，从遣新声坠九天。」<br>箜篌引：乐府旧题，属《相和歌·瑟调曲》。<br>箜篌：古代弦乐器。又名空侯、坎侯。形状有多种。据诗中「二十三丝」，可知李凭弹的是竖箜篌。一作“二十三弦”。<br>引：一种古代诗歌体裁，篇幅较长，音节、格律一般比较自由，形式有五言、七言、杂言。<br>吴丝蜀桐：吴地之丝，蜀地之桐。此指制作箜篌的材料。张：调好弦，准备调奏。<br>高秋：指弹奏时间。<br>「吴丝蜀桐张高秋」句：在深秋天气弹奏起箜篌。<br>空白：一作「空山」。《列子·汤问》：「秦青抚节悲歌，响遏行云」。<br>「空山凝云颓不流」句：言山中的行云因听到李凭弹奏的箜篌声而凝定不动了。<br>江娥：一作「湘娥」。元·李息斋《竹谱详录·巻六》：「泪竹生全湘九疑山中……《述异记》云：『舜南巡，葬于苍梧，尧二女娥皇、女英泪下沾竹，文悉为之斑。』一名湘妃竹。」<br>素女：传说中的神女。《汉书·郊祀志上》：「秦帝使素女鼓五十弦瑟，帝禁不止，故破其瑟为二十五弦。」这句说乐声使江娥、素女都感动了。<br>中国：即国之中央，意谓在京城。<br>昆山玉碎凤凰叫：昆仑玉碎，形容乐音清脆。昆山，即昆仑山。凤凰叫，形容乐音和缓。<br>芙蓉泣露、香兰笑：形容乐声时而低回，时而轻快。<br>十二门：长安城东西南北每一面各三门，共十二门，故言。「十二门前融冷光」句：清冷的乐声使人觉得长安城沉浸在寒光之中。<br>二十三丝：《通典·卷一百四十四》：「竖箜篌，胡乐也，汉灵帝好之，体曲而长，二十三弦。竖抱于怀中，用两手齐奏，俗谓之擘箜篌。」<br>紫皇：道教称天上最尊的神为「紫皇」。这里用来指皇帝。<br>女娲：中华上古之神，人首蛇身，为伏羲之妹，风姓。《淮南子·览冥训》和《列子·汤问》载有女娲炼五色石补天故事。<br>石破天惊逗秋雨：补天的五色石（被乐音）震破，引来了一场秋雨。逗，引。<br>坤山：一作「神山」。<br>神妪（yù）：《搜神记·巻四》：「永嘉中，有神现兖州，自称樊道基。有妪号成夫人。夫人好音乐，能弹箜篌，闻人弦歌，辄便起舞。」所谓「神妪」，疑用此典。从这句以下写李凭在梦中将他的绝艺教给神仙，惊动了仙界。<br>老鱼跳波：鱼随着乐声跳跃。源自《列子·汤问》：「瓠巴鼓琴而鸟舞鱼跃。」<br>吴质：卽吴刚。《酉阳杂俎·巻一》：「旧言月中有桂，有蟾蜍。故异书言月桂髙五百丈，下有一人常斫之，树创随合。人姓吴名刚，西河人，学仙有过，谪令伐树。」<br>露脚：露珠下滴的形象说法。<br>寒兔：传说月中有玉兔，故称。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>此诗载于《全唐诗·卷三百九十》。全诗语言峭丽，构思新奇，独辟蹊径，对乐曲本身，仅用两句略加描摹，而将大量笔墨用来渲染乐曲惊天地、泣鬼神的动人效果，大量的联想、想象和神话传说，使作品充满浪漫主义气息。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>吴丝蜀桐张高秋，空山凝云颓不流。</p><p>江娥啼竹素女愁，李凭中国弹箜篌。</p><p>昆山玉碎凤凰叫，芙蓉泣露香兰笑。</p><p>十二门前融冷光，二十三丝动紫皇。</p><p>女娲炼石补天处，石破天惊逗秋雨。</p><p>梦入神山教神妪，老鱼跳波瘦蛟舞。</p><p>吴质不眠倚桂树，露脚斜飞湿寒兔。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>在深秋的夜晚，弹奏起吴丝蜀桐制成精美的箜篌。听到美妙的乐声，天空的白云凝聚起来不再飘游。<br>湘娥把泪珠洒满斑竹，九天素女也牵动满腔忧愁。出现这种情况，是由于乐工李凭在京城弹奏箜篌。<br>乐声清脆动听得就像昆仑山美玉击碎，凤凰鸣叫；时而使芙蓉在露水中饮泣，时而使香兰开怀欢笑。<br>清脆的乐声，融和了长安城十二门前的清冷光气。二十三根弦丝高弹轻拨，打动了高高在上的天帝。<br>高亢的乐声直冲云霄，冲上女娲炼石补过的天际。好似补天的五彩石被击破，逗落了漫天绵绵秋雨。<br>幻觉中仿佛乐工进入了神山，把技艺向女仙传授；老鱼兴奋得在波中跳跃，瘦蛟也翩翩起舞乐悠悠。<br>月宫中吴刚被乐声吸引，彻夜不眠在桂树下逗留。桂树下的兔子也佇立聆听，不顾露珠斜飞寒飕飕！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>李凭：当时的梨园艺人，善弹奏箜篌。唐·杨景山《听李凭弹箜篌》诗曰：「听奏繁弦玉殿清，风传曲度禁林明。君王听乐梨园暖，翻到《云门》第几声？」「花咽娇莺玉嗽泉，名髙半在玉筵前。汉王欲助人间乐，从遣新声坠九天。」<br>箜篌引：乐府旧题，属《相和歌·瑟调曲》。<br>箜篌：古代弦乐器。又名空侯、坎侯。形状有多种。据诗中「二十三丝」，可知李凭弹的是竖箜篌。一作“二十三弦”。<br>引：一种古代诗歌体裁，篇幅较长，音节、格律一般比较自由，形式有五言、七言、杂言。<br>吴丝蜀桐：吴地之丝，蜀地之桐。此指制作箜篌的材料。张：调好弦，准备调奏。<br>高秋：指弹奏时间。<br>「吴丝蜀桐张高秋」句：在深秋天气弹奏起箜篌。<br>空白：一作「空山」。《列子·汤问》：「秦青抚节悲歌，响遏行云」。<br>「空山凝云颓不流」句：言山中的行云因听到李凭弹奏的箜篌声而凝定不动了。<br>江娥：一作「湘娥」。元·李息斋《竹谱详录·巻六》：「泪竹生全湘九疑山中……《述异记》云：『舜南巡，葬于苍梧，尧二女娥皇、女英泪下沾竹，文悉为之斑。』一名湘妃竹。」<br>素女：传说中的神女。《汉书·郊祀志上》：「秦帝使素女鼓五十弦瑟，帝禁不止，故破其瑟为二十五弦。」这句说乐声使江娥、素女都感动了。<br>中国：即国之中央，意谓在京城。<br>昆山玉碎凤凰叫：昆仑玉碎，形容乐音清脆。昆山，即昆仑山。凤凰叫，形容乐音和缓。<br>芙蓉泣露、香兰笑：形容乐声时而低回，时而轻快。<br>十二门：长安城东西南北每一面各三门，共十二门，故言。「十二门前融冷光」句：清冷的乐声使人觉得长安城沉浸在寒光之中。<br>二十三丝：《通典·卷一百四十四》：「竖箜篌，胡乐也，汉灵帝好之，体曲而长，二十三弦。竖抱于怀中，用两手齐奏，俗谓之擘箜篌。」<br>紫皇：道教称天上最尊的神为「紫皇」。这里用来指皇帝。<br>女娲：中华上古之神，人首蛇身，为伏羲之妹，风姓。《淮南子·览冥训》和《列子·汤问》载有女娲炼五色石补天故事。<br>石破天惊逗秋雨：补天的五色石（被乐音）震破，引来了一场秋雨。逗，引。<br>坤山：一作「神山」。<br>神妪（yù）：《搜神记·巻四》：「永嘉中，有神现兖州，自称樊道基。有妪号成夫人。夫人好音乐，能弹箜篌，闻人弦歌，辄便起舞。」所谓「神妪」，疑用此典。从这句以下写李凭在梦中将他的绝艺教给神仙，惊动了仙界。<br>老鱼跳波：鱼随着乐声跳跃。源自《列子·汤问》：「瓠巴鼓琴而鸟舞鱼跃。」<br>吴质：卽吴刚。《酉阳杂俎·巻一》：「旧言月中有桂，有蟾蜍。故异书言月桂髙五百丈，下有一人常斫之，树创随合。人姓吴名刚，西河人，学仙有过，谪令伐树。」<br>露脚：露珠下滴的形象说法。<br>寒兔：传说月中有玉兔，故称。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>此诗载于《全唐诗·卷三百九十》。全诗语言峭丽，构思新奇，独辟蹊径，对乐曲本身，仅用两句略加描摹，而将大量笔墨用来渲染乐曲惊天地、泣鬼神的动人效果，大量的联想、想象和神话传说，使作品充满浪漫主义气息。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -134,7 +165,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/159547.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

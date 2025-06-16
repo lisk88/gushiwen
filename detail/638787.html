@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>世说新语 · 栖逸第十八 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>世说新语 · 栖逸第十八 - 刘义庆 - 南北朝朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="世说新语 · 栖逸第十八是南北朝朝诗人刘义庆的经典作品。本页面提供世说新语 · 栖逸第十八的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="世说新语 · 栖逸第十八,刘义庆,南北朝朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="世说新语 · 栖逸第十八 - 刘义庆 - 南北朝朝古诗文">
+    <meta property="og:description" content="世说新语 · 栖逸第十八是南北朝朝诗人刘义庆的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="世说新语 · 栖逸第十八 - 刘义庆 - 南北朝朝古诗文">
+    <meta name="twitter:description" content="世说新语 · 栖逸第十八是南北朝朝诗人刘义庆的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "世说新语 · 栖逸第十八",
+      "author": {
+        "@type": "Person",
+        "name": "刘义庆"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "世说新语 · 栖逸第十八是南北朝朝诗人刘义庆的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">世说新语 · 栖逸第十八</h1>
-            <div class="poem-author">【南北朝】刘义庆</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【南北朝】<span itemprop="name">刘义庆</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>阮步兵啸，闻数百步。苏门山中，忽有真人，樵伐者咸共传说。阮籍往观，见其人拥膝岩侧。籍登岭就之，箕踞相对。籍商略终古，上陈黄、农玄寂之道，下考三代盛德之美，以问之，仡然不应。复叙有为之教，栖神导气之术以观之，彼犹如前，凝瞩不转。籍因对之长啸。良久，乃笑曰：“可更作。”籍复啸。意尽，退，还半岭许，闻上（口酋）然有声，如数部鼓吹，林谷传响。顾看，乃向人啸也。</p><p>嵇康游于汲郡山中，遇道士孙登，遂与之游。康临去，登曰：“君才则高矣，保身之道不足。”</p><p>山公将去选曹，欲举嵇康；康与书告绝。</p><p>李廞是茂曾第五子，清贞有远操，而少羸病，不肯婚宦。居在临海，住兄侍中墓下。既有高名，王丞相欲招礼之，故辟为府掾。廞得笺命，笑曰：“茂弘乃复以一爵假人！”</p><p>何骠骑弟以高情避世，而骠骑劝之令仕。答曰：“予第五之名，何必减骠骑？”</p><p>阮光禄在东山，萧然无事，常内足于怀。有人以问王右军，右军曰：“此君近不惊宠辱，虽古之沉冥，何以过此？”</p><p>孔车骑少有嘉遁意，年四十余，始应安东命。未仕宦时，常独寝，歌吹自箴诲，自称孔郎，游散名山。百姓谓有道术，为生立庙。今犹有孔郎庙。</p><p>南阳刘驎之，高率善史传，隐于阳岐。于时符坚临江，荆州刺史桓冲将尽訏谟之益，徵为长史，遣人船往迎，赠贶甚厚。驎之闻命，便升舟，悉不受所饷，缘道以乞穷乏，比至上明亦尽。一见冲，因陈无用，翛然而退。居阳岐积年，衣食有无常与村人共。值己匮乏，村人亦如之。甚厚，为乡闾所安。</p><p>南阳翟道渊与汝南周子南少相友，共隐于寻阳。庾太尉说周以当世之务，周遂仕，翟秉志弥固。其后周诣翟，翟不与语。</p><p>孟万年及弟少孤，居武昌阳新县。万年游宦，有盛名当世，少孤未尝出，京邑人士思欲见之，乃遣信报少孤，云“兄病笃”。狼狈至都。时贤见之者，莫不嗟重，因相谓曰：“少孤如此，万年可死。”</p><p>康僧渊在豫章，去郭数十里，立精舍。旁连岭，带长川，芳林列于轩庭，清流激于堂宇。乃闲居研讲，希心理味，庾公诸人多往看之。观其运用吐纳，风流转佳。加已处之怡然，亦有以自得，声名乃兴。后不堪，遂出。</p><p>戴安道既厉操东山，而其兄欲建式遏之功。谢太傅曰：“卿兄弟志业，何其太殊？”戴曰：“下官‘不堪其忧’，家弟‘不改其乐’。”</p><p>许玄度隐在永兴南幽穴中，每致四方诸侯之遗。或谓许曰：“尝闻箕山人，似不尔耳！”许曰：“筐篚苞苴，故当轻于天下之宝耳！”</p><p>范宣未尝入公门。韩康伯与同载，遂诱俱入郡。范便于车后趋下。</p><p>郗超每闻欲高尚隐退者，辄为办百万资，并为造立居宇。在剡为戴公起宅，甚精整。戴始往旧居，与所亲书曰：“近至剡，如官舍。”郗为傅约亦办百万资，傅隐事差互，故不果遗。</p><p>许掾好游山水，而体便登陟。时人云：“许非徒有胜情，实有济胜之具。”</p><p>郗尚书与谢居士善。常称：“谢庆绪识见虽不绝人，可以累心处都尽。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>步兵校尉阮籍吹口哨儿，声音能传一两里远。苏门山里，忽然来了个得道的真人，砍柴的人都这么传说。阮籍去看，看见那个人抱膝坐在山岩上；就登山去见他，两人伸开腿对坐着。阮籍评论古代的事，往上述说黄帝，神农时代玄妙虚无的主张，往下考究夏。商。周三代深厚的美德，拿这些来问他，那人仰着个头，并不回答。阮籍又另外说到儒家的德教主张，道家凝神导气的方法，来看他的反应，他还是像原先那样，目不转睛地凝视着。阮籍便对着他长长地吹了一个口哨儿。过了好一会儿，他才笑着说：“可以再吹一次。”阮籍又吹了一次。待到意兴已尽，便退下来，约莫回到半山腰处，听到山顶上众音齐鸣，好像几部器乐合奏，树林山谷都传来回声。阮籍回头一看，原来是刚才那个人在吹口哨儿。<br>嵇康到汲郡的山里游览，遇见道士孙登，便和他交往。嵇康临走时，孙登说：“您的才能是很高了，可是保身的方法还欠缺些。”<br>山涛将不再担任选曹郎职务，想推荐槛康代替，嵇康写信给他宣告绝交。<br>李廞是李茂曾的第五个儿子，为人清正，有高尚的品德，可是从小就瘦弱多病，所以不肯结婚做官。他留在临海郡，暂住在他哥哥侍中的陵园里。他有了很大的名望以后，丞相王导想聘请并礼待他，所以调来做相府的属官。李廞得到王导的任命信，笑着说：“茂弘竟然拿一个官爵来雇佣人。”<br>骠骑将军何充的弟弟因为情趣高尚而隐居，何充劝导他，要他出来做官。他回答说：“我老五的名望，何尝比骠骑低！”。<br>光禄大夫阮裕隐居东山，清静无为，内心一直很自足。有人因此问右军将军王羲之，羲之说：“这位先生近来不因荣辱而动心，就是古时的隐士，又怎么能超越这一点！”<br>车骑将军孔愉年轻时有隐居的打算，到四十多岁，才接受安东将军的任命出来做官。在没有做官时，一直是独自住在山中，歌咏吹弹，告诫自己谨言慎行，自称孔郎，在名山大川漫游散心。百姓认为他有道术，给他立了个生庙。现在还有孔郎庙。<br>南阳人刘驎之，高尚直率，历史知识很丰富，在阳歧村隐居。当时，苻坚南侵已经逼近长江，荆州刺史桓冲想尽力实现宏图大略的效益，就聘刘驎之任长史，派人和船前去迎接他，赠送的礼物也很丰富。刘驎之只好从命，就上船出发，但桓冲所送的礼物一点也没有收受，沿途拿来送给贫困的人，等走到上明，东西也送光了。他一见到桓冲，便陈述自己没有才能，然后就启由自在地辞去职务。他在阳歧住了多年，衣食向来是和村人互通有无的。碰到自己短缺了，村人也同样帮助他。他是乡邻深感满意的人。<br>南阳人翟道渊和汝南人周子南从小就很友好，两人一道在寻阳县隐居。太尉庾亮曾劝说周子南关心当代的国家大事，子南终于出来做官了；翟道渊却更加坚定了隐居的志向。后来周去看望翟，翟下和他说话。<br>孟万年和他弟弟孟少孤，住在武昌郡阳新县。万年外出做官在当时享有盛名。孟少孤没有外出求过官，京都知名人士想见见他，便派信使给少孤报信说：“你哥哥病重。”少孤急急忙忙地赶到京都，见到他的当代贤达，投有谁不赞叹、敬重他。于是他们评论说：“少孤既是这样，万年可以死而无憾了。”<br>康僧渊在豫章时，在离城几十里远的地方修建居所，旁边连着山岭，一条大河像衣带一样绕着它，繁花似锦的树林布置庭院，清清的流水在房前激起浪花。康僧渊于是避人独居研究解释佛经，倾心义理旨趣。庚亮等人常常去看望他，看到他运用言谈的手法，风度更加美好，加以他心旷神治地对待这一切，也能够安闲自得，于是名声大了起来。后来他忍受不了这种有名气的生活，便离开了那里。<br>戴安道已经在东山隐居，他哥哥又想为国家建功立业。太傅谢安对他哥哥说：“你们兄弟俩的志向。事业，怎么差异这么大呢？”他哥哥回答说：“下官受不了那种忧愁，舍弟却改不了那种乐趣。”<br>许玄度在会稽郡永兴县南幽深的岩洞中隐居，常常引来各处王侯的馈赠。有人对许玄度说：“我曾听说过隐居箕山的人似乎并不是这样做的呀。”许玄度说：“我得到的礼物不过是竹筐装着的食物，这本来就比君位微薄呀。”<br>范宣不曾进过官署。有一次韩康怕和他一起坐车，就想诱骗他一起进郡府，范宣便急忙从车后溜下跑了。<br>郗超每逢听说要尊重隐退者的时候，就为他们筹措百万钱，并且给他们盖房子。在会稽郡刻县给戴安道盖了房子，非常精致完备。戴安道刚前去居住时，给亲友写信说：“最近到了剡地，就好像住进官邪一样。”郗超也为傅约筹措了百万钱，后来傅约隐居一事错过了机会，所以馈赠没有成为事实。<br>司徒椽许玄度喜欢游览山水，而且身体健壮敏捷，便于登高。当时的人说：“许玄度不只有高雅的情趣，而且确有便于游览胜境的好身体。”<br>尚书都恢和谢庆绪居士很友好。常称赞说：“谢庆绪的见识虽然不比别人高明，但是能够劳心的事情一点也没有。”</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>阮步兵啸，闻数百步。苏门山中，忽有真人，樵伐者咸共传说。阮籍往观，见其人拥膝岩侧。籍登岭就之，箕踞相对。籍商略终古，上陈黄、农玄寂之道，下考三代盛德之美，以问之，仡然不应。复叙有为之教，栖神导气之术以观之，彼犹如前，凝瞩不转。籍因对之长啸。良久，乃笑曰：“可更作。”籍复啸。意尽，退，还半岭许，闻上（口酋）然有声，如数部鼓吹，林谷传响。顾看，乃向人啸也。</p><p>嵇康游于汲郡山中，遇道士孙登，遂与之游。康临去，登曰：“君才则高矣，保身之道不足。”</p><p>山公将去选曹，欲举嵇康；康与书告绝。</p><p>李廞是茂曾第五子，清贞有远操，而少羸病，不肯婚宦。居在临海，住兄侍中墓下。既有高名，王丞相欲招礼之，故辟为府掾。廞得笺命，笑曰：“茂弘乃复以一爵假人！”</p><p>何骠骑弟以高情避世，而骠骑劝之令仕。答曰：“予第五之名，何必减骠骑？”</p><p>阮光禄在东山，萧然无事，常内足于怀。有人以问王右军，右军曰：“此君近不惊宠辱，虽古之沉冥，何以过此？”</p><p>孔车骑少有嘉遁意，年四十余，始应安东命。未仕宦时，常独寝，歌吹自箴诲，自称孔郎，游散名山。百姓谓有道术，为生立庙。今犹有孔郎庙。</p><p>南阳刘驎之，高率善史传，隐于阳岐。于时符坚临江，荆州刺史桓冲将尽訏谟之益，徵为长史，遣人船往迎，赠贶甚厚。驎之闻命，便升舟，悉不受所饷，缘道以乞穷乏，比至上明亦尽。一见冲，因陈无用，翛然而退。居阳岐积年，衣食有无常与村人共。值己匮乏，村人亦如之。甚厚，为乡闾所安。</p><p>南阳翟道渊与汝南周子南少相友，共隐于寻阳。庾太尉说周以当世之务，周遂仕，翟秉志弥固。其后周诣翟，翟不与语。</p><p>孟万年及弟少孤，居武昌阳新县。万年游宦，有盛名当世，少孤未尝出，京邑人士思欲见之，乃遣信报少孤，云“兄病笃”。狼狈至都。时贤见之者，莫不嗟重，因相谓曰：“少孤如此，万年可死。”</p><p>康僧渊在豫章，去郭数十里，立精舍。旁连岭，带长川，芳林列于轩庭，清流激于堂宇。乃闲居研讲，希心理味，庾公诸人多往看之。观其运用吐纳，风流转佳。加已处之怡然，亦有以自得，声名乃兴。后不堪，遂出。</p><p>戴安道既厉操东山，而其兄欲建式遏之功。谢太傅曰：“卿兄弟志业，何其太殊？”戴曰：“下官‘不堪其忧’，家弟‘不改其乐’。”</p><p>许玄度隐在永兴南幽穴中，每致四方诸侯之遗。或谓许曰：“尝闻箕山人，似不尔耳！”许曰：“筐篚苞苴，故当轻于天下之宝耳！”</p><p>范宣未尝入公门。韩康伯与同载，遂诱俱入郡。范便于车后趋下。</p><p>郗超每闻欲高尚隐退者，辄为办百万资，并为造立居宇。在剡为戴公起宅，甚精整。戴始往旧居，与所亲书曰：“近至剡，如官舍。”郗为傅约亦办百万资，傅隐事差互，故不果遗。</p><p>许掾好游山水，而体便登陟。时人云：“许非徒有胜情，实有济胜之具。”</p><p>郗尚书与谢居士善。常称：“谢庆绪识见虽不绝人，可以累心处都尽。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>步兵校尉阮籍吹口哨儿，声音能传一两里远。苏门山里，忽然来了个得道的真人，砍柴的人都这么传说。阮籍去看，看见那个人抱膝坐在山岩上；就登山去见他，两人伸开腿对坐着。阮籍评论古代的事，往上述说黄帝，神农时代玄妙虚无的主张，往下考究夏。商。周三代深厚的美德，拿这些来问他，那人仰着个头，并不回答。阮籍又另外说到儒家的德教主张，道家凝神导气的方法，来看他的反应，他还是像原先那样，目不转睛地凝视着。阮籍便对着他长长地吹了一个口哨儿。过了好一会儿，他才笑着说：“可以再吹一次。”阮籍又吹了一次。待到意兴已尽，便退下来，约莫回到半山腰处，听到山顶上众音齐鸣，好像几部器乐合奏，树林山谷都传来回声。阮籍回头一看，原来是刚才那个人在吹口哨儿。<br>嵇康到汲郡的山里游览，遇见道士孙登，便和他交往。嵇康临走时，孙登说：“您的才能是很高了，可是保身的方法还欠缺些。”<br>山涛将不再担任选曹郎职务，想推荐槛康代替，嵇康写信给他宣告绝交。<br>李廞是李茂曾的第五个儿子，为人清正，有高尚的品德，可是从小就瘦弱多病，所以不肯结婚做官。他留在临海郡，暂住在他哥哥侍中的陵园里。他有了很大的名望以后，丞相王导想聘请并礼待他，所以调来做相府的属官。李廞得到王导的任命信，笑着说：“茂弘竟然拿一个官爵来雇佣人。”<br>骠骑将军何充的弟弟因为情趣高尚而隐居，何充劝导他，要他出来做官。他回答说：“我老五的名望，何尝比骠骑低！”。<br>光禄大夫阮裕隐居东山，清静无为，内心一直很自足。有人因此问右军将军王羲之，羲之说：“这位先生近来不因荣辱而动心，就是古时的隐士，又怎么能超越这一点！”<br>车骑将军孔愉年轻时有隐居的打算，到四十多岁，才接受安东将军的任命出来做官。在没有做官时，一直是独自住在山中，歌咏吹弹，告诫自己谨言慎行，自称孔郎，在名山大川漫游散心。百姓认为他有道术，给他立了个生庙。现在还有孔郎庙。<br>南阳人刘驎之，高尚直率，历史知识很丰富，在阳歧村隐居。当时，苻坚南侵已经逼近长江，荆州刺史桓冲想尽力实现宏图大略的效益，就聘刘驎之任长史，派人和船前去迎接他，赠送的礼物也很丰富。刘驎之只好从命，就上船出发，但桓冲所送的礼物一点也没有收受，沿途拿来送给贫困的人，等走到上明，东西也送光了。他一见到桓冲，便陈述自己没有才能，然后就启由自在地辞去职务。他在阳歧住了多年，衣食向来是和村人互通有无的。碰到自己短缺了，村人也同样帮助他。他是乡邻深感满意的人。<br>南阳人翟道渊和汝南人周子南从小就很友好，两人一道在寻阳县隐居。太尉庾亮曾劝说周子南关心当代的国家大事，子南终于出来做官了；翟道渊却更加坚定了隐居的志向。后来周去看望翟，翟下和他说话。<br>孟万年和他弟弟孟少孤，住在武昌郡阳新县。万年外出做官在当时享有盛名。孟少孤没有外出求过官，京都知名人士想见见他，便派信使给少孤报信说：“你哥哥病重。”少孤急急忙忙地赶到京都，见到他的当代贤达，投有谁不赞叹、敬重他。于是他们评论说：“少孤既是这样，万年可以死而无憾了。”<br>康僧渊在豫章时，在离城几十里远的地方修建居所，旁边连着山岭，一条大河像衣带一样绕着它，繁花似锦的树林布置庭院，清清的流水在房前激起浪花。康僧渊于是避人独居研究解释佛经，倾心义理旨趣。庚亮等人常常去看望他，看到他运用言谈的手法，风度更加美好，加以他心旷神治地对待这一切，也能够安闲自得，于是名声大了起来。后来他忍受不了这种有名气的生活，便离开了那里。<br>戴安道已经在东山隐居，他哥哥又想为国家建功立业。太傅谢安对他哥哥说：“你们兄弟俩的志向。事业，怎么差异这么大呢？”他哥哥回答说：“下官受不了那种忧愁，舍弟却改不了那种乐趣。”<br>许玄度在会稽郡永兴县南幽深的岩洞中隐居，常常引来各处王侯的馈赠。有人对许玄度说：“我曾听说过隐居箕山的人似乎并不是这样做的呀。”许玄度说：“我得到的礼物不过是竹筐装着的食物，这本来就比君位微薄呀。”<br>范宣不曾进过官署。有一次韩康怕和他一起坐车，就想诱骗他一起进郡府，范宣便急忙从车后溜下跑了。<br>郗超每逢听说要尊重隐退者的时候，就为他们筹措百万钱，并且给他们盖房子。在会稽郡刻县给戴安道盖了房子，非常精致完备。戴安道刚前去居住时，给亲友写信说：“最近到了剡地，就好像住进官邪一样。”郗超也为傅约筹措了百万钱，后来傅约隐居一事错过了机会，所以馈赠没有成为事实。<br>司徒椽许玄度喜欢游览山水，而且身体健壮敏捷，便于登高。当时的人说：“许玄度不只有高雅的情趣，而且确有便于游览胜境的好身体。”<br>尚书都恢和谢庆绪居士很友好。常称赞说：“谢庆绪的见识虽然不比别人高明，但是能够劳心的事情一点也没有。”</p></div></div>
             
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>栖逸，指避世隐居。囱古就有隐士，魏晋时代，战乱频仍，政治迫害日益加重，一些对现实不满而想逃避的人或者有厌世思想的人更是羡慕起隐居生活，以寄托自己漠视世事的情怀。而那些不甘寂寞又不耐清苦的人，虽然追求荣华富贵，又想寄情山水，做所谓“朝隐”名士，也把隐士看成理想人物。在这种情况下，编纂者设《栖逸》一门。<br>在位者喜欢猎取举逸拔才的美名，一些人也会借隐逸来沽名钓誉，获取高位，故有第3、4 则欲罗致隐者的记述，第9 则点明周子南是先隐后做官。一般的名士也很羡慕隐士之名，例如第10 则记孟少孤隐居，使得“京邑人士思欲见之”。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>栖逸，指避世隐居。囱古就有隐士，魏晋时代，战乱频仍，政治迫害日益加重，一些对现实不满而想逃避的人或者有厌世思想的人更是羡慕起隐居生活，以寄托自己漠视世事的情怀。而那些不甘寂寞又不耐清苦的人，虽然追求荣华富贵，又想寄情山水，做所谓“朝隐”名士，也把隐士看成理想人物。在这种情况下，编纂者设《栖逸》一门。<br>在位者喜欢猎取举逸拔才的美名，一些人也会借隐逸来沽名钓誉，获取高位，故有第3、4 则欲罗致隐者的记述，第9 则点明周子南是先隐后做官。一般的名士也很羡慕隐士之名，例如第10 则记孟少孤隐居，使得“京邑人士思欲见之”。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

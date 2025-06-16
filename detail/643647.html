@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>介之推不言禄 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>介之推不言禄 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="介之推不言禄是周朝诗人左丘明的经典作品。本页面提供介之推不言禄的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="介之推不言禄,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="介之推不言禄 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="介之推不言禄是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="介之推不言禄 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="介之推不言禄是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "介之推不言禄",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "介之推不言禄是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">介之推不言禄</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>晋侯赏从亡者，介之推不言禄，禄亦弗及。</p><p>推曰：“献公之子九人，唯君在矣。惠、怀无亲，外内弃之。天未绝晋，必将有主。主晋祀者，非君而谁？天实置之，而二三子以为己力，不亦诬乎？窃人之财，犹谓之盗。况贪天之功，以为己力乎？下义其罪，上赏其奸。上下相蒙，难与处矣。”</p><p>其母曰：“盍亦求之？以死谁怼？”对曰：“尤而效之，罪又甚焉！且出怨言，不食其食。”其母曰：“亦使知之，若何？”对曰：“言，身之文也。身将隐，焉用文之？是求显也。”其母曰：“能如是乎？与汝偕隐。”遂隐而死。</p><p>晋侯求之，不获，以绵上为之田。曰：“以志吾过，且旌善人。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>晋文公赏赐跟着他逃亡的人们，介之推不去要求禄赏，而晋文公赐禄赏时也没有考虑到他。<br>介之推说：“献公的儿子有九个，现在惟独国君还在人世。惠公、怀公没有亲信，国家内外都抛弃他们。天没有打算灭绝晋，所以必定会有君主。主持晋国祭祀的人，不是君王又是谁呢？上天实际已经安排好了的，而跟随文公逃亡的人却认为是自己的贡献，这不是欺骗吗？偷窃别人的钱财，都说是盗窃。更何况贪图天的功劳，将其作为自己的贡献呢？下面的臣子将罪当做道义，上面的国君对这样奸诈的人给予赏赐。上下互相欺瞒，难以和他们相处啊。”<br>他的母亲问：“你为什么不也去要求赏赐呢？否则这样贫穷地死去又能去埋怨谁呢？”答道：“既然斥责这种行为是罪过而又效仿它，罪更重啊！况且说出埋怨的话了，以后不应吃他的俸禄了。”母亲再问：“那让国君知道这事，可以吗？”答道：“言语，是身体的装饰。身体将要隐居了，还要装饰它吗？这样是乞求显贵啊。”母亲说：“你真能够这样做吗？那么我和你一起隐居吧。”他们便一直隐居到死去。<br>晋文公没有找到他，便用绵上作为他的祭田。说：“用它来记下我的过失，并且表彰善良的人。”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>晋侯：指晋文公，即重耳。他逃亡在外，在秦国的帮助下回晋继承君位。<br>赏：赐有功也。<br>从亡者：从文公出亡在外之臣，如狐偃、赵衰之属。<br>介之推：亦从亡之臣。晋文公臣子，曾割自己腿上的肉以食文公。<br>献公：重耳之父晋献公。<br>惠、怀：惠公，怀公。惠公是文公重耳的弟弟，是怀公的父亲。<br>置：立。<br>二三子：相当于“那几个人”，指跟随文公逃亡诸臣。子是对人的美称。<br>诬：欺骗。<br>下义其罪：义，善也。言贪天之功，在人为犯法，而下反以为善也。<br>上赏其奸：奸，伪也。言贪天之功在国为伪，而上反以此赐也。<br>蒙：欺骗。<br>盍：何不。<br>怼（duì）：怨恨。<br>尤：罪过。<br>文：花纹，装饰。言人之有言，所以文饰其身。<br>绵上：地名，在今山西介休县南、沁源县西北的介山之下。<br>田：祭田。<br>志：记载。<br>旌：表彰。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·僖公二十四年》。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>晋侯赏从亡者，介之推不言禄，禄亦弗及。</p><p>推曰：“献公之子九人，唯君在矣。惠、怀无亲，外内弃之。天未绝晋，必将有主。主晋祀者，非君而谁？天实置之，而二三子以为己力，不亦诬乎？窃人之财，犹谓之盗。况贪天之功，以为己力乎？下义其罪，上赏其奸。上下相蒙，难与处矣。”</p><p>其母曰：“盍亦求之？以死谁怼？”对曰：“尤而效之，罪又甚焉！且出怨言，不食其食。”其母曰：“亦使知之，若何？”对曰：“言，身之文也。身将隐，焉用文之？是求显也。”其母曰：“能如是乎？与汝偕隐。”遂隐而死。</p><p>晋侯求之，不获，以绵上为之田。曰：“以志吾过，且旌善人。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>晋文公赏赐跟着他逃亡的人们，介之推不去要求禄赏，而晋文公赐禄赏时也没有考虑到他。<br>介之推说：“献公的儿子有九个，现在惟独国君还在人世。惠公、怀公没有亲信，国家内外都抛弃他们。天没有打算灭绝晋，所以必定会有君主。主持晋国祭祀的人，不是君王又是谁呢？上天实际已经安排好了的，而跟随文公逃亡的人却认为是自己的贡献，这不是欺骗吗？偷窃别人的钱财，都说是盗窃。更何况贪图天的功劳，将其作为自己的贡献呢？下面的臣子将罪当做道义，上面的国君对这样奸诈的人给予赏赐。上下互相欺瞒，难以和他们相处啊。”<br>他的母亲问：“你为什么不也去要求赏赐呢？否则这样贫穷地死去又能去埋怨谁呢？”答道：“既然斥责这种行为是罪过而又效仿它，罪更重啊！况且说出埋怨的话了，以后不应吃他的俸禄了。”母亲再问：“那让国君知道这事，可以吗？”答道：“言语，是身体的装饰。身体将要隐居了，还要装饰它吗？这样是乞求显贵啊。”母亲说：“你真能够这样做吗？那么我和你一起隐居吧。”他们便一直隐居到死去。<br>晋文公没有找到他，便用绵上作为他的祭田。说：“用它来记下我的过失，并且表彰善良的人。”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>晋侯：指晋文公，即重耳。他逃亡在外，在秦国的帮助下回晋继承君位。<br>赏：赐有功也。<br>从亡者：从文公出亡在外之臣，如狐偃、赵衰之属。<br>介之推：亦从亡之臣。晋文公臣子，曾割自己腿上的肉以食文公。<br>献公：重耳之父晋献公。<br>惠、怀：惠公，怀公。惠公是文公重耳的弟弟，是怀公的父亲。<br>置：立。<br>二三子：相当于“那几个人”，指跟随文公逃亡诸臣。子是对人的美称。<br>诬：欺骗。<br>下义其罪：义，善也。言贪天之功，在人为犯法，而下反以为善也。<br>上赏其奸：奸，伪也。言贪天之功在国为伪，而上反以此赐也。<br>蒙：欺骗。<br>盍：何不。<br>怼（duì）：怨恨。<br>尤：罪过。<br>文：花纹，装饰。言人之有言，所以文饰其身。<br>绵上：地名，在今山西介休县南、沁源县西北的介山之下。<br>田：祭田。<br>志：记载。<br>旌：表彰。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文出自《左传·僖公二十四年》。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

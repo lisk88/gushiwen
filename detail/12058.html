@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>辨奸论 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>辨奸论 - 苏洵 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="辨奸论是宋朝诗人苏洵的经典作品。本页面提供辨奸论的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="辨奸论,苏洵,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="辨奸论 - 苏洵 - 宋朝古诗文">
+    <meta property="og:description" content="辨奸论是宋朝诗人苏洵的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="辨奸论 - 苏洵 - 宋朝古诗文">
+    <meta name="twitter:description" content="辨奸论是宋朝诗人苏洵的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "辨奸论",
+      "author": {
+        "@type": "Person",
+        "name": "苏洵"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "辨奸论是宋朝诗人苏洵的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">辨奸论</h1>
-            <div class="poem-author">【宋】苏洵</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">苏洵</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>事有必至，理有固然。惟天下之静者，乃能见微而知著。月晕而风，础润而雨，人人知之。人事之推移，理势之相因，其疏阔而难知，变化而不可测者，孰与天地阴阳之事。而贤者有不知，其故何也？好恶乱其中，而利害夺其外也!</p><p>昔者，山巨源见王衍曰：“误天下苍生者，必此人也!”郭汾阳见卢杞曰：“此人得志。吾子孙无遗类矣!”自今而言之，其理固有可见者。以吾观之，王衍之为人，容貌言语，固有以欺世而盗名者。然不忮不求，与物浮沉。使晋无惠帝，仅得中主，虽衍百千，何从而乱天下乎？卢杞之奸，固足以败国。然而不学无文，容貌不足以动人，言语不足以眩世，非德宗之鄙暗，亦何从而用之？由是言之，二公之料二子，亦容有未必然也!</p><p>今有人，口诵孔、老之言，身履夷、齐之行，收召好名之士、不得志之人，相与造作言语，私立名字，以为颜渊、孟轲复出，而阴贼险狠，与人异趣。是王衍、卢杞合而为一人也。其祸岂可胜言哉？夫面垢不忘洗，衣垢不忘浣。此人之至情也。今也不然，衣臣虏之衣。食犬彘之食，囚首丧面，而谈诗书，此岂其情也哉？凡事之不近人情者，鲜不为大奸慝，竖刁、易牙、开方是也。以盖世之名，而济其未形之患。虽有愿治之主，好贤之相，犹将举而用之。则其为天下患，必然而无疑者，非特二子之比也。</p><p>孙子曰：“善用兵者，无赫赫之功。”使斯人而不用也，则吾言为过，而斯人有不遇之叹。孰知祸之至于此哉？不然。天下将被其祸，而吾获知言之名，悲夫!</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>事情的發展必定会有一定的结局，道理有它原本就该如此的规律。天下只有表现冷静的人，才能从细微之处预见到日後将会發生的显著变化。月亮周围出现了晕圈预示着将要刮风，房屋的石柱返潮湿润预示着将要下雨，这是人人皆知的事。人事的發展变化，情理和形势之间的因果关系，也是空疏渺茫难以尽知，千变万化而无法预先料到的，怎么能和天地阴阳的变化相比？即便是贤能的人对此也有所不解。这是什么原因呢？这是由于喜爱和憎恨扰乱了他们的内心，利害关系又影响了他们的行动啊!<br>从前山巨源见到王衍，说：“将来给天下百姓带来灾难的，一定是这个人!”郭汾阳见到卢杞，说：“这个人一旦得志，我的子孙就会被他杀得一个不留!”现在分析一下他们所说的话。其中的道理是可以料想到的。依我看来，王衍之为人，从容貌和谈吐上，确实具备了欺世盗名的条件。但是他不妒忌别人，不贪图钱财，只是随大流。如果晋朝当时没有惠帝这个昏君，当政者即使只是一个中等的君主，就算是有成百上千个王衍这样的人，又怎能扰乱天下呢？卢杞那样的奸诈，确实足以败坏国家。但是他不学无术，容貌不足以动人，言谈不足以蒙蔽社会，如果不是遇到德宗这样的鄙陋昏庸的君主，又怎能受到重用呢？由此说来，山、郭二公对王、卢二人所作的预言，也未必完全如此啊!<br>现在有人嘴里背诵着孔子、老子的话，亲身实践着伯夷、叔齐的行为，收罗了一批追求名声和不得志的士人，相互制造舆论，私下里互相标榜，以为自己是颜渊、孟轲再世，然而他们为人阴险狠毒，和一般人的志趣不同。这是把王衍和卢杞合成一个人了。他在社会上酿造的祸害还能说得完吗？脸面脏了不忘洗脸，衣服脏了不忘洗衣，这本是人之常情。现在他却不是这样，身穿奴仆的衣服，吃猪狗的食物，头髮蓬乱得像囚犯，表情哭丧着像家里有人去世，却在那里大谈《诗》《书》，这难道说是人的真实的心情吗？凡是办事不近人情的，很少不成为大奸大恶之辈，竖刁、易牙、开方就是这样的人。此人借助当世享有盛名之力，来促成他尚未形成气候的祸患。虽然有励精图治的君主，敬重贤才的宰相，也还是会选拔并重用他的。这样，他将成为天下的祸患，是必定无疑的了，这就不只是王、卢二人所能比拟的。<br>孙子说：“善于用兵的人，并没有显赫的功勋。”如果这个人没有被重用，那么我的话就有些过头了，而此人就会有怀才不遇的感慨。谁又能知道祸患会达到上述这种地步呢？不然的话，天下将要蒙受他的祸害，而我也会获取卓有远见的名声，那就太可悲了!</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>静者：指能够冷静地观察周围事物而做出合理结论的贤人。<br>天地阴阳之事：指自然现象。古人认为自然界有阴阳二气，二气交互發生作用，便产生了形形色色的自然变化。<br>贤者：旧说以为是影射欧阳修。据史书记载，曾巩曾向欧阳修推荐王安石的文章，欧阳修大加赞赏，并帮助王安石考取了进士。<br>山巨源：山涛（公元205年—283年），字巨源，晋初人，任吏部尚书，为当时的“竹林七贤”之一。他喜好评论人物，对王衍的评价不高。<br>王衍（公元256年—311年）：字夷甫，晋初人，任尚书令、太尉。衍有盛才，常自比子贡。当时晋室诸王擅权，他周旋于诸王间，唯求自全之计，後死于战乱之中。<br>郭汾阳：即郭子仪（公元697年—781年），唐华州（今属陕西）人，累官至太尉、中书令，曾平定安史之乱，破吐蕃，以一身系国家安危者二十年，後封为汾阳郡王，世称郭汾阳。<br>卢杞：字子良，唐滑州（今河南滑县一带）人，唐德宗时任宰相，搜刮民财，排斥异己。杞相貌丑陋，好口辩。後被贬职死于外地。<br>忮(zhì)：嫉恨。<br>惠帝：晋惠帝(公元290年—306年在位)，晋开国君主司马炎之子，以痴呆闻名。他在位时不理朝政，大权旁落，终导致“八王之乱”，晋室随之衰败。<br>眩(xuàn)：通“炫”，惑乱。<br>德宗：唐德宗(公元780—805在位)，唐代晚期的庸君，他削去郭子仪的兵权，重用卢杞，导致朝政紊乱。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《辨奸论》是北宋古文名篇。此文宋本《嘉祐集》不载，见于南宋吕祖谦编选的《宋文鉴》，《古文观止》列于苏洵名下，但一说为邵伯温托苏洵名作，该问题的研究自清初李绂作《书<辨奸论>後》开始，至20世纪末王水照先生作《再论<辨奸论>真伪之争——读邓广铭先生再论<辨奸论>非苏洵所作》，尚无定论。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>事有必至，理有固然。惟天下之静者，乃能见微而知著。月晕而风，础润而雨，人人知之。人事之推移，理势之相因，其疏阔而难知，变化而不可测者，孰与天地阴阳之事。而贤者有不知，其故何也？好恶乱其中，而利害夺其外也!</p><p>昔者，山巨源见王衍曰：“误天下苍生者，必此人也!”郭汾阳见卢杞曰：“此人得志。吾子孙无遗类矣!”自今而言之，其理固有可见者。以吾观之，王衍之为人，容貌言语，固有以欺世而盗名者。然不忮不求，与物浮沉。使晋无惠帝，仅得中主，虽衍百千，何从而乱天下乎？卢杞之奸，固足以败国。然而不学无文，容貌不足以动人，言语不足以眩世，非德宗之鄙暗，亦何从而用之？由是言之，二公之料二子，亦容有未必然也!</p><p>今有人，口诵孔、老之言，身履夷、齐之行，收召好名之士、不得志之人，相与造作言语，私立名字，以为颜渊、孟轲复出，而阴贼险狠，与人异趣。是王衍、卢杞合而为一人也。其祸岂可胜言哉？夫面垢不忘洗，衣垢不忘浣。此人之至情也。今也不然，衣臣虏之衣。食犬彘之食，囚首丧面，而谈诗书，此岂其情也哉？凡事之不近人情者，鲜不为大奸慝，竖刁、易牙、开方是也。以盖世之名，而济其未形之患。虽有愿治之主，好贤之相，犹将举而用之。则其为天下患，必然而无疑者，非特二子之比也。</p><p>孙子曰：“善用兵者，无赫赫之功。”使斯人而不用也，则吾言为过，而斯人有不遇之叹。孰知祸之至于此哉？不然。天下将被其祸，而吾获知言之名，悲夫!</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>事情的發展必定会有一定的结局，道理有它原本就该如此的规律。天下只有表现冷静的人，才能从细微之处预见到日後将会發生的显著变化。月亮周围出现了晕圈预示着将要刮风，房屋的石柱返潮湿润预示着将要下雨，这是人人皆知的事。人事的發展变化，情理和形势之间的因果关系，也是空疏渺茫难以尽知，千变万化而无法预先料到的，怎么能和天地阴阳的变化相比？即便是贤能的人对此也有所不解。这是什么原因呢？这是由于喜爱和憎恨扰乱了他们的内心，利害关系又影响了他们的行动啊!<br>从前山巨源见到王衍，说：“将来给天下百姓带来灾难的，一定是这个人!”郭汾阳见到卢杞，说：“这个人一旦得志，我的子孙就会被他杀得一个不留!”现在分析一下他们所说的话。其中的道理是可以料想到的。依我看来，王衍之为人，从容貌和谈吐上，确实具备了欺世盗名的条件。但是他不妒忌别人，不贪图钱财，只是随大流。如果晋朝当时没有惠帝这个昏君，当政者即使只是一个中等的君主，就算是有成百上千个王衍这样的人，又怎能扰乱天下呢？卢杞那样的奸诈，确实足以败坏国家。但是他不学无术，容貌不足以动人，言谈不足以蒙蔽社会，如果不是遇到德宗这样的鄙陋昏庸的君主，又怎能受到重用呢？由此说来，山、郭二公对王、卢二人所作的预言，也未必完全如此啊!<br>现在有人嘴里背诵着孔子、老子的话，亲身实践着伯夷、叔齐的行为，收罗了一批追求名声和不得志的士人，相互制造舆论，私下里互相标榜，以为自己是颜渊、孟轲再世，然而他们为人阴险狠毒，和一般人的志趣不同。这是把王衍和卢杞合成一个人了。他在社会上酿造的祸害还能说得完吗？脸面脏了不忘洗脸，衣服脏了不忘洗衣，这本是人之常情。现在他却不是这样，身穿奴仆的衣服，吃猪狗的食物，头髮蓬乱得像囚犯，表情哭丧着像家里有人去世，却在那里大谈《诗》《书》，这难道说是人的真实的心情吗？凡是办事不近人情的，很少不成为大奸大恶之辈，竖刁、易牙、开方就是这样的人。此人借助当世享有盛名之力，来促成他尚未形成气候的祸患。虽然有励精图治的君主，敬重贤才的宰相，也还是会选拔并重用他的。这样，他将成为天下的祸患，是必定无疑的了，这就不只是王、卢二人所能比拟的。<br>孙子说：“善于用兵的人，并没有显赫的功勋。”如果这个人没有被重用，那么我的话就有些过头了，而此人就会有怀才不遇的感慨。谁又能知道祸患会达到上述这种地步呢？不然的话，天下将要蒙受他的祸害，而我也会获取卓有远见的名声，那就太可悲了!</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>静者：指能够冷静地观察周围事物而做出合理结论的贤人。<br>天地阴阳之事：指自然现象。古人认为自然界有阴阳二气，二气交互發生作用，便产生了形形色色的自然变化。<br>贤者：旧说以为是影射欧阳修。据史书记载，曾巩曾向欧阳修推荐王安石的文章，欧阳修大加赞赏，并帮助王安石考取了进士。<br>山巨源：山涛（公元205年—283年），字巨源，晋初人，任吏部尚书，为当时的“竹林七贤”之一。他喜好评论人物，对王衍的评价不高。<br>王衍（公元256年—311年）：字夷甫，晋初人，任尚书令、太尉。衍有盛才，常自比子贡。当时晋室诸王擅权，他周旋于诸王间，唯求自全之计，後死于战乱之中。<br>郭汾阳：即郭子仪（公元697年—781年），唐华州（今属陕西）人，累官至太尉、中书令，曾平定安史之乱，破吐蕃，以一身系国家安危者二十年，後封为汾阳郡王，世称郭汾阳。<br>卢杞：字子良，唐滑州（今河南滑县一带）人，唐德宗时任宰相，搜刮民财，排斥异己。杞相貌丑陋，好口辩。後被贬职死于外地。<br>忮(zhì)：嫉恨。<br>惠帝：晋惠帝(公元290年—306年在位)，晋开国君主司马炎之子，以痴呆闻名。他在位时不理朝政，大权旁落，终导致“八王之乱”，晋室随之衰败。<br>眩(xuàn)：通“炫”，惑乱。<br>德宗：唐德宗(公元780—805在位)，唐代晚期的庸君，他削去郭子仪的兵权，重用卢杞，导致朝政紊乱。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《辨奸论》是北宋古文名篇。此文宋本《嘉祐集》不载，见于南宋吕祖谦编选的《宋文鉴》，《古文观止》列于苏洵名下，但一说为邵伯温托苏洵名作，该问题的研究自清初李绂作《书<辨奸论>後》开始，至20世纪末王水照先生作《再论<辨奸论>真伪之争——读邓广铭先生再论<辨奸论>非苏洵所作》，尚无定论。</p></div></div>
             
             <div class="section"><a href="http://baike.baidu.com/view/863129.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

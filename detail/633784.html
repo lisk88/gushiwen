@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>方山子传 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>方山子传 - 苏轼 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="方山子传是宋朝诗人苏轼的经典作品。本页面提供方山子传的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="方山子传,苏轼,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="方山子传 - 苏轼 - 宋朝古诗文">
+    <meta property="og:description" content="方山子传是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="方山子传 - 苏轼 - 宋朝古诗文">
+    <meta name="twitter:description" content="方山子传是宋朝诗人苏轼的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "方山子传",
+      "author": {
+        "@type": "Person",
+        "name": "苏轼"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "方山子传是宋朝诗人苏轼的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">方山子传</h1>
-            <div class="poem-author">【宋】苏轼</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">苏轼</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>方山子，光、黄间隐人也。少时慕朱家、郭解为人，闾里之侠皆宗之。稍壮，折节读书，欲以此驰骋当世，然终不遇。晚乃遁于光、黄间，曰岐亭。庵居蔬食，不与世相闻。弃车马，毁冠服，徒步往来山中，人莫识也。见其所著帽，方屋而高，曰：“此岂古方山冠之遗象乎？”因谓之方山子。</p><p>余谪居于黄，过岐亭，适见焉。曰：“呜呼！此吾故人陈慥季常也。何为而在此？”方山子亦矍然，问余所以至此者。余告之故。俯而不答，仰而笑，呼余宿其家。环堵萧然，而妻子奴婢皆有自得之意。</p><p>余既耸然异之，独念方山子少时，使酒好剑，用财如粪土。前十有九年，余在岐山，见方山子从两骑，挟二矢，游西山。鹊起于前，使骑逐而射之，不获。方山子怒马独出，一发得之。因与余马上论用兵及古今成败，自谓一世豪士。今几日耳，精悍之色犹见于眉间，而岂山中之人哉？</p><p>然方山子世有勋阀，当得官，使从事于其间，今已显闻。而其家在洛阳，园宅壮丽与公侯等。河北有田，岁得帛千匹，亦足以富乐。皆弃不取，独来穷山中，此岂无得而然哉？余闻光、黄间多异人，往往佯狂垢污，不可得而见。方山子傥见之欤？</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>方山子，是光州、黄州一带的隐士。年轻时，仰慕汉代游侠朱家、郭解的品行，乡里的游侠之士都推崇他。（等到他）年岁稍长，就改变志趣，发奋读书，想以此来驰名当代，但是一直没有交上好运。到了晚年隐居在光州、黄州一带名叫岐亭的地方。住茅草屋，吃素食，不与社会各界来往。放弃坐车骑马，毁坏书生衣帽，徒步在山里来往，没有人认识他。人们见他戴的帽子上面方方的且又很高，就说：“这不就是古代乐师戴的方山冠遗留下来的样子吗？”因此就称他为“方山子”。<br>我因贬官居住在黄州，有一次经过岐亭时，正巧碰见了他。我说：“哎，这是我的老朋友陈慥陈季常呀，怎么会在这里呢？”方山子也很惊讶，问我到这里来的原因。我把原因告诉了他，他低头不回答，继而仰天大笑，请我住到他家去。他的家里四壁萧条，然而他的妻子儿女奴仆都显出怡然自得的样子。<br>我对此感到十分惊异。回想起方山子年轻的时候，是酗酒任性，喜欢使剑，挥金如土的游侠之士。十九年前，我在岐亭下，见到方山子带着两名骑马的随从，身藏两箭，在西山游猎。只见前方一鹊飞起，他便叫随从追赶射鹊，未能射中。方山子拉紧缰绳，独自跃马向前，一箭射中飞鹊。他就在马上与我谈论起用兵之道及古今成败之事，自认为是一代豪杰。至今又过了多少日子了，但是一股英气勃勃的神色，依然在眉宇间显现，这怎么会是一位隐居山中的人呢？<br>方山子出身于世代功勋之家，理应有官做，假如他能置身官场，到现在已得声名显赫了。他原本家在洛阳，园林宅舍雄伟富丽，可与公侯之家相同了。在河北还有田地，每年可得上千匹的丝帛收入，这些也足以使生活富裕安乐了。然而他都抛开不去享用，偏偏要来到穷僻的山里，这难道不是因为他独有会心之处才会如此的吗？我听说光州、黄州一带有很多奇人异士，常常假装疯颠、衣衫破旧，但是无法见到他们；方山子或许能遇见他们吧。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>方山子：即陈慥，字季常。<br>光、黄：光州、黄州，两州连界。光州州治在今河南潢川县。<br>隐人：隐士。<br>朱家、郭解：西汉时著名游侠，见《史记·游侠列传》。<br>闾里：乡里。<br>侠：侠义之士。<br>宗之：崇拜他，以他为首。宗，尊奉。<br>折节：改变原来的志趣和行为。《后汉书·段颎传》：“颎少便习弓马……长乃折节好古学。”<br>“欲以此驰骋当世”句：在当代施展才学抱负。<br>遁：遁世隐居。<br>岐亭：宋时黄州的镇名，在今湖北麻城县西南。<br>屋：帽顶。<br>岂：其意为“（这）难道不是……”。<br>方山冠：唐宋时隐士戴的帽子。<br>遗象：犹遗制。<br>“余谪居于黄，过岐亭，适见焉”句：苏轼《岐亭五首叙》：“元丰三年正月，余始谪黄州，至歧亭北二十五里，山上有白马青盖来迎者，则余故人陈慥季常也。为留五日，赋诗一篇而去。”谪，降职。<br>矍（jué）然：惊讶睁眼相视貌。<br>环堵萧然：用陶渊明《五柳先生传》“环堵萦然，不蔽风日”成句，谓室内空无所有。<br>使酒：喝醉酒后爱发脾气，任性而行。<br>好剑：好摆弄刀剑一类武器。<br>余在岐山：宋仁宗嘉祐七年，苏轼任凤翔府签判，时陈糙之父陈希亮知凤翔府。苏轼这时始与陈糙相识订交。岐山，指凤翔，凤翔有岐山。<br>怒马：愤怒地鞭马独自冲出去。<br>一发得之：一箭射中它。<br>“精悍之色犹见于眉间”句：精明英武的神情气度。精悍，精明强干。<br>“然方山子世有勋阀，当得官”二句：苏轼《陈公弼传》：陈希亮（公弼）“当荫补子弟，辄先其族人，卒不及其子糙。”<br>世有勋阀：世代有功勋，属世袭门阀。<br>穷山中：荒僻的山中。<br>“此岂无得而然哉”句：难道没有独特的造诣修养能够作到这一点吗？<br>异人：指特立独行的隐沦之士。<br>佯狂：装疯。<br>垢污：言行不屑循常蹈故，被人们认为是德行上的垢污。<br>傥：或者。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>这篇散文通过对苏轼与方山子的相遇与相交，了解他的人生经历，通过对这些人生经历的描述，表达了作者对方山子特立独行性格和人生取向的赞赏。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>方山子，光、黄间隐人也。少时慕朱家、郭解为人，闾里之侠皆宗之。稍壮，折节读书，欲以此驰骋当世，然终不遇。晚乃遁于光、黄间，曰岐亭。庵居蔬食，不与世相闻。弃车马，毁冠服，徒步往来山中，人莫识也。见其所著帽，方屋而高，曰：“此岂古方山冠之遗象乎？”因谓之方山子。</p><p>余谪居于黄，过岐亭，适见焉。曰：“呜呼！此吾故人陈慥季常也。何为而在此？”方山子亦矍然，问余所以至此者。余告之故。俯而不答，仰而笑，呼余宿其家。环堵萧然，而妻子奴婢皆有自得之意。</p><p>余既耸然异之，独念方山子少时，使酒好剑，用财如粪土。前十有九年，余在岐山，见方山子从两骑，挟二矢，游西山。鹊起于前，使骑逐而射之，不获。方山子怒马独出，一发得之。因与余马上论用兵及古今成败，自谓一世豪士。今几日耳，精悍之色犹见于眉间，而岂山中之人哉？</p><p>然方山子世有勋阀，当得官，使从事于其间，今已显闻。而其家在洛阳，园宅壮丽与公侯等。河北有田，岁得帛千匹，亦足以富乐。皆弃不取，独来穷山中，此岂无得而然哉？余闻光、黄间多异人，往往佯狂垢污，不可得而见。方山子傥见之欤？</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>方山子，是光州、黄州一带的隐士。年轻时，仰慕汉代游侠朱家、郭解的品行，乡里的游侠之士都推崇他。（等到他）年岁稍长，就改变志趣，发奋读书，想以此来驰名当代，但是一直没有交上好运。到了晚年隐居在光州、黄州一带名叫岐亭的地方。住茅草屋，吃素食，不与社会各界来往。放弃坐车骑马，毁坏书生衣帽，徒步在山里来往，没有人认识他。人们见他戴的帽子上面方方的且又很高，就说：“这不就是古代乐师戴的方山冠遗留下来的样子吗？”因此就称他为“方山子”。<br>我因贬官居住在黄州，有一次经过岐亭时，正巧碰见了他。我说：“哎，这是我的老朋友陈慥陈季常呀，怎么会在这里呢？”方山子也很惊讶，问我到这里来的原因。我把原因告诉了他，他低头不回答，继而仰天大笑，请我住到他家去。他的家里四壁萧条，然而他的妻子儿女奴仆都显出怡然自得的样子。<br>我对此感到十分惊异。回想起方山子年轻的时候，是酗酒任性，喜欢使剑，挥金如土的游侠之士。十九年前，我在岐亭下，见到方山子带着两名骑马的随从，身藏两箭，在西山游猎。只见前方一鹊飞起，他便叫随从追赶射鹊，未能射中。方山子拉紧缰绳，独自跃马向前，一箭射中飞鹊。他就在马上与我谈论起用兵之道及古今成败之事，自认为是一代豪杰。至今又过了多少日子了，但是一股英气勃勃的神色，依然在眉宇间显现，这怎么会是一位隐居山中的人呢？<br>方山子出身于世代功勋之家，理应有官做，假如他能置身官场，到现在已得声名显赫了。他原本家在洛阳，园林宅舍雄伟富丽，可与公侯之家相同了。在河北还有田地，每年可得上千匹的丝帛收入，这些也足以使生活富裕安乐了。然而他都抛开不去享用，偏偏要来到穷僻的山里，这难道不是因为他独有会心之处才会如此的吗？我听说光州、黄州一带有很多奇人异士，常常假装疯颠、衣衫破旧，但是无法见到他们；方山子或许能遇见他们吧。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>方山子：即陈慥，字季常。<br>光、黄：光州、黄州，两州连界。光州州治在今河南潢川县。<br>隐人：隐士。<br>朱家、郭解：西汉时著名游侠，见《史记·游侠列传》。<br>闾里：乡里。<br>侠：侠义之士。<br>宗之：崇拜他，以他为首。宗，尊奉。<br>折节：改变原来的志趣和行为。《后汉书·段颎传》：“颎少便习弓马……长乃折节好古学。”<br>“欲以此驰骋当世”句：在当代施展才学抱负。<br>遁：遁世隐居。<br>岐亭：宋时黄州的镇名，在今湖北麻城县西南。<br>屋：帽顶。<br>岂：其意为“（这）难道不是……”。<br>方山冠：唐宋时隐士戴的帽子。<br>遗象：犹遗制。<br>“余谪居于黄，过岐亭，适见焉”句：苏轼《岐亭五首叙》：“元丰三年正月，余始谪黄州，至歧亭北二十五里，山上有白马青盖来迎者，则余故人陈慥季常也。为留五日，赋诗一篇而去。”谪，降职。<br>矍（jué）然：惊讶睁眼相视貌。<br>环堵萧然：用陶渊明《五柳先生传》“环堵萦然，不蔽风日”成句，谓室内空无所有。<br>使酒：喝醉酒后爱发脾气，任性而行。<br>好剑：好摆弄刀剑一类武器。<br>余在岐山：宋仁宗嘉祐七年，苏轼任凤翔府签判，时陈糙之父陈希亮知凤翔府。苏轼这时始与陈糙相识订交。岐山，指凤翔，凤翔有岐山。<br>怒马：愤怒地鞭马独自冲出去。<br>一发得之：一箭射中它。<br>“精悍之色犹见于眉间”句：精明英武的神情气度。精悍，精明强干。<br>“然方山子世有勋阀，当得官”二句：苏轼《陈公弼传》：陈希亮（公弼）“当荫补子弟，辄先其族人，卒不及其子糙。”<br>世有勋阀：世代有功勋，属世袭门阀。<br>穷山中：荒僻的山中。<br>“此岂无得而然哉”句：难道没有独特的造诣修养能够作到这一点吗？<br>异人：指特立独行的隐沦之士。<br>佯狂：装疯。<br>垢污：言行不屑循常蹈故，被人们认为是德行上的垢污。<br>傥：或者。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>这篇散文通过对苏轼与方山子的相遇与相交，了解他的人生经历，通过对这些人生经历的描述，表达了作者对方山子特立独行性格和人生取向的赞赏。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/864265.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蜀道难 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>蜀道难 - 李白 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="蜀道难是唐朝诗人李白的经典作品。本页面提供蜀道难的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="蜀道难,李白,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="蜀道难 - 李白 - 唐朝古诗文">
+    <meta property="og:description" content="蜀道难是唐朝诗人李白的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="蜀道难 - 李白 - 唐朝古诗文">
+    <meta name="twitter:description" content="蜀道难是唐朝诗人李白的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "蜀道难",
+      "author": {
+        "@type": "Person",
+        "name": "李白"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "蜀道难是唐朝诗人李白的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">蜀道难</h1>
-            <div class="poem-author">【唐】李白</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">李白</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹。</p><p>问君西游何时还，畏途巉岩不可攀。但见悲鸟号古木，雄飞雌从绕林间。又闻子规啼夜月，愁空山。蜀道之难，难于上青天，使人听此凋朱颜！连峰去天不盈尺，枯松倒挂倚绝壁。飞湍瀑流争喧豗，砯崖转石万壑雷。其险也如此，嗟尔远道之人胡为乎来哉！</p><p>剑阁峥嵘而崔嵬，一夫当关，万夫莫开。所守或匪亲，化为狼与豺。朝避猛虎，夕避长蛇，磨牙吮血，杀人如麻。锦城虽云乐，不如早还家。蜀道之难，难于上青天，侧身西望长咨嗟。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>啊！何其高峻，何其峭险！蜀道难走比登上青天还要难，古蜀国先王的事迹久远渺茫。岁月漫漫过去四万八千年，蜀道还未能与秦地相通人烟。西边太白山上只有一条鸟道，才能从秦地横越过峨眉山巅。山崩地裂压死迎亲的五壮士，才能修成栈道与陡峭山路相接。上有高峰神仙也要绕路而行，下有河川冲波倒流漩涡转动。翱翔高飞的黄鹤尚不能越渡，攀援敏捷的猿猱更一筹莫展。青泥河的小路曲折又蜿蜒，走一百步就要绕路而行，伸手可触星辰快快屏住呼吸，用手抚胸惊恐不已徒长吁短叹。<br>请问你这次西方游历何时归？山路险道峭岩实在难以攀登。只听见古树枝头飞鸟在哀号，雄雌相随林间飞绕徘徊不前。又听见月夜里杜鹃声声哀鸣，悲声回荡在空山中愁情更添。蜀道难走比登上青天还要难。此情景即使听说也要变容颜！绵延的山峰离天不到一尺远，倒挂的枯松斜倚绝壁悬崖边。瀑布飞泻激流涌争相喧嚣，撞击山岩的巨石响声似惊雷。蜀道这般艰险你为何来此呢？<br>更有崎岖高峻险恶的剑门关，一人把关万余人也休想进入。守关的将领倘若不可信则酿成大祸，那里早晚要避开猛虎和蛇。虎蛇磨牙吸人血好比斩乱麻，锦城虽说能享乐不如早回家。蜀道难走比登上青天还要难，回身向西望禁不住怅惘长叹。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>《蜀道难》：古乐府题，属《相和歌·瑟调曲》。<br>噫（yī）吁（xū）嚱（xī）：三个都是惊叹词。惊叹声，蜀方言，表示惊讶的声音。宋庠《宋景文公笔记·卷上》：「蜀人见物惊异，辄曰『噫吁嚱』。」<br>蚕丛及鱼凫（fú）：蚕丛、鱼凫，是传说中古蜀国两位国王的名字；难以考证。<br>何茫然：指古史传说悠远难详，不知道。据西汉·扬雄《蜀本王纪》记载：「蜀王之先，名蚕丛、柏灌、鱼凫，蒲泽、开明。……从开明上至蚕丛，积三万四千岁。」何，多么。茫然，完全不知道的样子。<br>尔来：从那时以来。尔，那，指开国之初。<br>四万八千岁：极言时间之漫长，夸张而大约言之。<br>秦塞：秦的关塞，指秦地。秦地四周有山川险阻，故称「四塞之地」。塞，山川险要的地方。<br>通人烟：人员往来。<br>西当太白有鸟道：意思是，（长安）西面有太白山（阻隔了入蜀之路），只有鸟儿飞行的路径。西当，在西边的，当，在。太白，太白山，又名太乙山，在长安西（今陕西眉县、太白县一带）。鸟道，指连绵高山间的低缺处，只有鸟能飞过，人迹所不能至。<br>横绝：横越，飞越。<br>峨眉巅：峨眉顶峰。<br>地崩山摧壮士死：《华阳国志·蜀志》：相传秦惠王想征服蜀国，知道蜀王好色，答应送给他五个美女。蜀王派五位壮士去接人。回到梓潼（今四川剑阁之南）的时候，看见一条大蛇进入穴中，一位壮士抓住了它的尾巴，其余四人也来相助，用力往外拽。不多时，山崩地裂，壮士和美女都被压死。山分为五岭，入蜀之路遂通。这便是有名的「五丁开山」的故事。摧，倒塌。<br>天梯：非常陡峭的山路。<br>石栈：俗称“栈道”，在山崖上凿石架木建成的通道。<br>上有六龙回日之高标：上面有迫使太阳神的车子掉头的高俊山峰。六龙回日，《淮南子》注云：「日乘车，驾以六龙。羲和御之。日至此面而薄于虞渊，羲和至此而回六螭。」，意思就是传说中的羲和驾驶着六龙之车（即太阳）到此处便迫近虞渊（传说中的日落处）；六龙，传说太阳神的车子由羲和驾驭六条龙拉着，每天在空中行驶。高标，指蜀山中可作一方之标识的最高峰。<br>下有冲波逆折之回川：下面有波涛滚滚的回旋的急流。冲波，水流冲击腾起的波浪，这里指激流。逆折，倒流，水流回旋。回川，有漩涡的河流。<br>黄鹤：黄鹄（hú），善飞的大鸟。<br>尚：尚且。<br>得：能。<br>猿猱（náo）：猿的一种，蜀山中最善攀援的猴类。<br>青泥：青泥岭，在今甘肃徽县南，陕西略阳县北。《元和郡县志·卷二十二》：「青泥岭，在县西北五十三里，接溪山东，即今通路也。悬崖万仞，山多云雨，行者屡逢泥淖，故号青泥岭。」<br>盘盘：（形容山路）曲折回旋的样子。<br>百步九折：百步之内拐九道弯。<br>萦：盘绕。<br>岩峦：山峰。<br>扪参（ménshēn）历井：意思是，山高入天，人在山上，可以用手触摸星星，甚至可以从它们中间穿过。参、井是二星宿名。古人把天上的星宿分别指配于地上的州国，叫做「分野」，以便通过观察天象来占卜地上所配州国的吉凶。参星为蜀之分野，井星为秦之分野。扪，用手摸；历，经过。<br>仰胁息：仰着头，屏住呼吸。胁息，屏气不敢呼吸。<br>膺：胸。<br>坐：徒，空。<br>君：入蜀的友人。<br>西游：指入蜀。<br>畏途：可怕的路途。<br>巉（chán）岩：险恶陡峭的山壁。<br>但见：只听见。<br>号（háo）古木：在古树木中大声啼鸣。<br>从：跟随。<br>子规：即杜鹃鸟，蜀地最多，鸣声悲哀，若云「不如归去」。《蜀记》曰：「昔有人姓杜名宇，王蜀，号曰『望帝』。宇死，俗说杜宇化为子规。子规，鸟名也。蜀人闻子规鸣，皆曰『望帝』也。」这两句也有断为「又闻子规啼，夜月愁空山」的，但不如此文这种断法顺。<br>凋朱颜：红颜带忧色，如花凋谢，这里是吓得脸变色的意思。凋，使动用法，使……凋谢，这里指脸色由红润变成铁青。<br>连峰去天不盈尺：绵延不断的山峰距天不足一尺。去，距离。盈，满、足。<br>飞湍（tuān）：飞奔而下的急流。湍，急流。<br>喧豗（huī）：喧闹声，这里指急流和瀑布发出的巨大响声。<br>砯（pīng）崖转石万壑雷：急流和瀑布冲击山崖，石块滚滚而下，千山万壑间响起雷鸣般的声音。砯崖，水撞石之声，砯，水冲击石壁发出的响声，这里作动词用，冲击的意思。转，使滚动。壑，山谷。<br>其险也如此：一作「其险也若此」。<br>嗟尔远道之人胡为乎来哉：唉，你这远方的人为什么到这里来呢？这是用蜀人的口气劝说“西游”的人不要来蜀地。嗟，叹惋之辞，感叹声。尔，你。胡为，为什么。乎，语助词，无义。来，指入蜀。<br>剑阁：又名剑门关，在四川剑阁县北，是大、小剑山之间的一条栈道，长约三十馀里。<br>峥嵘、崔嵬：形容山势高大雄峻的样子。<br>一夫当关，万夫莫开：形容剑阁易守难攻。《文选·卷四·左思·〈蜀都赋〉》：「一人守隘，万夫莫向」。《文选·卷五十六·张载·〈剑阁铭〉》：「一人荷戟，万夫趦趄。形胜之地，匪亲勿居。」一夫，一人；当关，守关；莫开，不能打开。<br>所守或匪亲，化为狼与豺：守关的将领倘若不是（自己的）亲信，就会变成叛乱者。所守，指把守关口的人。或匪亲：倘若不是可信赖的人；或，倘若；匪，同「非」。狼与豺，比喻叛乱的人。<br>朝：早上。<br>吮：吸。<br>锦城：成都古代以产棉闻名，朝廷曾经设官于此，专收棉织品，故称锦城或锦官城。《元和郡县志·卷三十一·〈剑南道·成都府·成都县〉》：「锦城在县南十里，故锦官城也。」今四川成都市。<br>咨嗟：叹息。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>全诗二百九十四字，以山川之险言蜀道之难，给人以回肠荡气之感，充分显示了诗人的浪漫气质和热爱祖国河山的感情。诗中诸多的画面此隐彼现，无论是山之高，水之急，河山之改观，林木之荒寂，连峰绝壁之险，皆有逼人之势，其气象之宏伟，其境界之阔大，确非他人可及。正如清代诗评家沈德潜所盛称：「笔势纵横，如虬飞蠖动，起雷霆于指顾之间。」</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹。</p><p>问君西游何时还，畏途巉岩不可攀。但见悲鸟号古木，雄飞雌从绕林间。又闻子规啼夜月，愁空山。蜀道之难，难于上青天，使人听此凋朱颜！连峰去天不盈尺，枯松倒挂倚绝壁。飞湍瀑流争喧豗，砯崖转石万壑雷。其险也如此，嗟尔远道之人胡为乎来哉！</p><p>剑阁峥嵘而崔嵬，一夫当关，万夫莫开。所守或匪亲，化为狼与豺。朝避猛虎，夕避长蛇，磨牙吮血，杀人如麻。锦城虽云乐，不如早还家。蜀道之难，难于上青天，侧身西望长咨嗟。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>啊！何其高峻，何其峭险！蜀道难走比登上青天还要难，古蜀国先王的事迹久远渺茫。岁月漫漫过去四万八千年，蜀道还未能与秦地相通人烟。西边太白山上只有一条鸟道，才能从秦地横越过峨眉山巅。山崩地裂压死迎亲的五壮士，才能修成栈道与陡峭山路相接。上有高峰神仙也要绕路而行，下有河川冲波倒流漩涡转动。翱翔高飞的黄鹤尚不能越渡，攀援敏捷的猿猱更一筹莫展。青泥河的小路曲折又蜿蜒，走一百步就要绕路而行，伸手可触星辰快快屏住呼吸，用手抚胸惊恐不已徒长吁短叹。<br>请问你这次西方游历何时归？山路险道峭岩实在难以攀登。只听见古树枝头飞鸟在哀号，雄雌相随林间飞绕徘徊不前。又听见月夜里杜鹃声声哀鸣，悲声回荡在空山中愁情更添。蜀道难走比登上青天还要难。此情景即使听说也要变容颜！绵延的山峰离天不到一尺远，倒挂的枯松斜倚绝壁悬崖边。瀑布飞泻激流涌争相喧嚣，撞击山岩的巨石响声似惊雷。蜀道这般艰险你为何来此呢？<br>更有崎岖高峻险恶的剑门关，一人把关万余人也休想进入。守关的将领倘若不可信则酿成大祸，那里早晚要避开猛虎和蛇。虎蛇磨牙吸人血好比斩乱麻，锦城虽说能享乐不如早回家。蜀道难走比登上青天还要难，回身向西望禁不住怅惘长叹。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>《蜀道难》：古乐府题，属《相和歌·瑟调曲》。<br>噫（yī）吁（xū）嚱（xī）：三个都是惊叹词。惊叹声，蜀方言，表示惊讶的声音。宋庠《宋景文公笔记·卷上》：「蜀人见物惊异，辄曰『噫吁嚱』。」<br>蚕丛及鱼凫（fú）：蚕丛、鱼凫，是传说中古蜀国两位国王的名字；难以考证。<br>何茫然：指古史传说悠远难详，不知道。据西汉·扬雄《蜀本王纪》记载：「蜀王之先，名蚕丛、柏灌、鱼凫，蒲泽、开明。……从开明上至蚕丛，积三万四千岁。」何，多么。茫然，完全不知道的样子。<br>尔来：从那时以来。尔，那，指开国之初。<br>四万八千岁：极言时间之漫长，夸张而大约言之。<br>秦塞：秦的关塞，指秦地。秦地四周有山川险阻，故称「四塞之地」。塞，山川险要的地方。<br>通人烟：人员往来。<br>西当太白有鸟道：意思是，（长安）西面有太白山（阻隔了入蜀之路），只有鸟儿飞行的路径。西当，在西边的，当，在。太白，太白山，又名太乙山，在长安西（今陕西眉县、太白县一带）。鸟道，指连绵高山间的低缺处，只有鸟能飞过，人迹所不能至。<br>横绝：横越，飞越。<br>峨眉巅：峨眉顶峰。<br>地崩山摧壮士死：《华阳国志·蜀志》：相传秦惠王想征服蜀国，知道蜀王好色，答应送给他五个美女。蜀王派五位壮士去接人。回到梓潼（今四川剑阁之南）的时候，看见一条大蛇进入穴中，一位壮士抓住了它的尾巴，其余四人也来相助，用力往外拽。不多时，山崩地裂，壮士和美女都被压死。山分为五岭，入蜀之路遂通。这便是有名的「五丁开山」的故事。摧，倒塌。<br>天梯：非常陡峭的山路。<br>石栈：俗称“栈道”，在山崖上凿石架木建成的通道。<br>上有六龙回日之高标：上面有迫使太阳神的车子掉头的高俊山峰。六龙回日，《淮南子》注云：「日乘车，驾以六龙。羲和御之。日至此面而薄于虞渊，羲和至此而回六螭。」，意思就是传说中的羲和驾驶着六龙之车（即太阳）到此处便迫近虞渊（传说中的日落处）；六龙，传说太阳神的车子由羲和驾驭六条龙拉着，每天在空中行驶。高标，指蜀山中可作一方之标识的最高峰。<br>下有冲波逆折之回川：下面有波涛滚滚的回旋的急流。冲波，水流冲击腾起的波浪，这里指激流。逆折，倒流，水流回旋。回川，有漩涡的河流。<br>黄鹤：黄鹄（hú），善飞的大鸟。<br>尚：尚且。<br>得：能。<br>猿猱（náo）：猿的一种，蜀山中最善攀援的猴类。<br>青泥：青泥岭，在今甘肃徽县南，陕西略阳县北。《元和郡县志·卷二十二》：「青泥岭，在县西北五十三里，接溪山东，即今通路也。悬崖万仞，山多云雨，行者屡逢泥淖，故号青泥岭。」<br>盘盘：（形容山路）曲折回旋的样子。<br>百步九折：百步之内拐九道弯。<br>萦：盘绕。<br>岩峦：山峰。<br>扪参（ménshēn）历井：意思是，山高入天，人在山上，可以用手触摸星星，甚至可以从它们中间穿过。参、井是二星宿名。古人把天上的星宿分别指配于地上的州国，叫做「分野」，以便通过观察天象来占卜地上所配州国的吉凶。参星为蜀之分野，井星为秦之分野。扪，用手摸；历，经过。<br>仰胁息：仰着头，屏住呼吸。胁息，屏气不敢呼吸。<br>膺：胸。<br>坐：徒，空。<br>君：入蜀的友人。<br>西游：指入蜀。<br>畏途：可怕的路途。<br>巉（chán）岩：险恶陡峭的山壁。<br>但见：只听见。<br>号（háo）古木：在古树木中大声啼鸣。<br>从：跟随。<br>子规：即杜鹃鸟，蜀地最多，鸣声悲哀，若云「不如归去」。《蜀记》曰：「昔有人姓杜名宇，王蜀，号曰『望帝』。宇死，俗说杜宇化为子规。子规，鸟名也。蜀人闻子规鸣，皆曰『望帝』也。」这两句也有断为「又闻子规啼，夜月愁空山」的，但不如此文这种断法顺。<br>凋朱颜：红颜带忧色，如花凋谢，这里是吓得脸变色的意思。凋，使动用法，使……凋谢，这里指脸色由红润变成铁青。<br>连峰去天不盈尺：绵延不断的山峰距天不足一尺。去，距离。盈，满、足。<br>飞湍（tuān）：飞奔而下的急流。湍，急流。<br>喧豗（huī）：喧闹声，这里指急流和瀑布发出的巨大响声。<br>砯（pīng）崖转石万壑雷：急流和瀑布冲击山崖，石块滚滚而下，千山万壑间响起雷鸣般的声音。砯崖，水撞石之声，砯，水冲击石壁发出的响声，这里作动词用，冲击的意思。转，使滚动。壑，山谷。<br>其险也如此：一作「其险也若此」。<br>嗟尔远道之人胡为乎来哉：唉，你这远方的人为什么到这里来呢？这是用蜀人的口气劝说“西游”的人不要来蜀地。嗟，叹惋之辞，感叹声。尔，你。胡为，为什么。乎，语助词，无义。来，指入蜀。<br>剑阁：又名剑门关，在四川剑阁县北，是大、小剑山之间的一条栈道，长约三十馀里。<br>峥嵘、崔嵬：形容山势高大雄峻的样子。<br>一夫当关，万夫莫开：形容剑阁易守难攻。《文选·卷四·左思·〈蜀都赋〉》：「一人守隘，万夫莫向」。《文选·卷五十六·张载·〈剑阁铭〉》：「一人荷戟，万夫趦趄。形胜之地，匪亲勿居。」一夫，一人；当关，守关；莫开，不能打开。<br>所守或匪亲，化为狼与豺：守关的将领倘若不是（自己的）亲信，就会变成叛乱者。所守，指把守关口的人。或匪亲：倘若不是可信赖的人；或，倘若；匪，同「非」。狼与豺，比喻叛乱的人。<br>朝：早上。<br>吮：吸。<br>锦城：成都古代以产棉闻名，朝廷曾经设官于此，专收棉织品，故称锦城或锦官城。《元和郡县志·卷三十一·〈剑南道·成都府·成都县〉》：「锦城在县南十里，故锦官城也。」今四川成都市。<br>咨嗟：叹息。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>全诗二百九十四字，以山川之险言蜀道之难，给人以回肠荡气之感，充分显示了诗人的浪漫气质和热爱祖国河山的感情。诗中诸多的画面此隐彼现，无论是山之高，水之急，河山之改观，林木之荒寂，连峰绝壁之险，皆有逼人之势，其气象之宏伟，其境界之阔大，确非他人可及。正如清代诗评家沈德潜所盛称：「笔势纵横，如虬飞蠖动，起雷霆于指顾之间。」</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -178,7 +209,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/155370/6183241.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

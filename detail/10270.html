@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>枫桥夜泊 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>枫桥夜泊 - 张继 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="枫桥夜泊是唐朝诗人张继的经典作品。本页面提供枫桥夜泊的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="枫桥夜泊,张继,唐朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="枫桥夜泊 - 张继 - 唐朝古诗文">
+    <meta property="og:description" content="枫桥夜泊是唐朝诗人张继的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="枫桥夜泊 - 张继 - 唐朝古诗文">
+    <meta name="twitter:description" content="枫桥夜泊是唐朝诗人张继的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "枫桥夜泊",
+      "author": {
+        "@type": "Person",
+        "name": "张继"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "枫桥夜泊是唐朝诗人张继的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">枫桥夜泊</h1>
-            <div class="poem-author">【唐】张继</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">张继</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>月落乌啼霜满天，江枫渔火对愁眠。</p><p>姑苏城外寒山寺，夜半钟声到客船。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>月亮已落下乌鸦啼叫寒气满天，对着江边枫树和渔火忧愁而眠。<br>姑苏城外那寂寞清静寒山古寺，半夜里敲钟的声音传到了客船。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>枫桥：在今苏州市阊门外。<br>夜泊：夜间把船停靠在岸边。<br>乌啼：一说为乌鸦啼鸣，一说为乌啼镇。<br>霜满天：霜，不可能满天，这个“霜”字应当体会作严寒；霜满天，是空气极冷的形象语。<br>江枫：一般解释作“江边枫树”，江指吴淞江，源自太湖，流经上海，汇入长江，俗称苏州河。另外有人认为指“江村桥”和“枫桥”。“枫桥”在吴县南门（阊阖门）外西郊，本名“封桥”，因张继此诗而改为“枫桥”。<br>渔火：通常解释，“鱼火”就是渔船上的灯火；也有说法指“渔火”实际上就是一同打渔的伙伴。<br>对愁眠：伴愁眠之意，此句把江枫和渔火二词拟人化。就是后世有不解诗的人，怀疑江枫渔火怎么能对愁眠，于是附会出一种讲法，说愁眠是寒山寺对面的山名。<br>姑苏：苏州的别称，因城西南有姑苏山而得名。<br>寒山寺：在枫桥附近，始建于南朝梁代。相传因唐代僧人寒山、拾得曾住此而得名。在今苏州市西枫桥镇。本名“妙利普明塔院”，又名枫桥寺；另一种说法，“寒山”乃泛指肃寒之山，非寺名。寺曾经数次重建，现在的寺宇，为太平天国以后新建。寺钟在第二次世界大战时，被日本人运走，下落不明。<br>夜半钟声：当今的佛寺（春节）半夜敲钟，但当时有半夜敲钟的习惯，也叫「无常钟」或「分夜钟」。宋朝大文豪欧阳修曾提出疑问表示：“诗人为了贪求好句，以至于道理说不通，这是作文章的毛病，如张继诗句“夜半钟声到客船”，句子虽好，但那有三更半夜打钟的道理？”可是经过许多人的实地查访，才知苏州和邻近地区的佛寺，有打半夜钟的风俗。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《枫桥夜泊》是唐朝安史之乱后，诗人张继途经寒山寺时，写下的一首羁旅诗。在这首诗中，诗人精确而细腻地讲述了一个客船夜泊者对江南深秋夜景的观察和感受，勾画了月落乌啼、霜天寒夜、江枫渔火、孤舟客子等景象，有景有情有声有色。此外，这首诗也将作者羁旅之思，家国之忧，以及身处乱世尚无归宿的顾虑充分地表现出来，是写愁的代表作。<br>这首诗句句形象鲜明，可感可画，句与句之间逻辑关系又非常清晰合理，内容晓畅易解。不仅是中国历代各种唐诗选本和别集选入此诗，连亚洲一些国家的小学课本也曾收录此诗。该诗作品不仅在中国家喻户晓，甚至在日本也是很有影响。本诗问世后，寒山寺也因此名扬天下，成为游览胜地。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>月落乌啼霜满天，江枫渔火对愁眠。</p><p>姑苏城外寒山寺，夜半钟声到客船。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>月亮已落下乌鸦啼叫寒气满天，对着江边枫树和渔火忧愁而眠。<br>姑苏城外那寂寞清静寒山古寺，半夜里敲钟的声音传到了客船。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>枫桥：在今苏州市阊门外。<br>夜泊：夜间把船停靠在岸边。<br>乌啼：一说为乌鸦啼鸣，一说为乌啼镇。<br>霜满天：霜，不可能满天，这个“霜”字应当体会作严寒；霜满天，是空气极冷的形象语。<br>江枫：一般解释作“江边枫树”，江指吴淞江，源自太湖，流经上海，汇入长江，俗称苏州河。另外有人认为指“江村桥”和“枫桥”。“枫桥”在吴县南门（阊阖门）外西郊，本名“封桥”，因张继此诗而改为“枫桥”。<br>渔火：通常解释，“鱼火”就是渔船上的灯火；也有说法指“渔火”实际上就是一同打渔的伙伴。<br>对愁眠：伴愁眠之意，此句把江枫和渔火二词拟人化。就是后世有不解诗的人，怀疑江枫渔火怎么能对愁眠，于是附会出一种讲法，说愁眠是寒山寺对面的山名。<br>姑苏：苏州的别称，因城西南有姑苏山而得名。<br>寒山寺：在枫桥附近，始建于南朝梁代。相传因唐代僧人寒山、拾得曾住此而得名。在今苏州市西枫桥镇。本名“妙利普明塔院”，又名枫桥寺；另一种说法，“寒山”乃泛指肃寒之山，非寺名。寺曾经数次重建，现在的寺宇，为太平天国以后新建。寺钟在第二次世界大战时，被日本人运走，下落不明。<br>夜半钟声：当今的佛寺（春节）半夜敲钟，但当时有半夜敲钟的习惯，也叫「无常钟」或「分夜钟」。宋朝大文豪欧阳修曾提出疑问表示：“诗人为了贪求好句，以至于道理说不通，这是作文章的毛病，如张继诗句“夜半钟声到客船”，句子虽好，但那有三更半夜打钟的道理？”可是经过许多人的实地查访，才知苏州和邻近地区的佛寺，有打半夜钟的风俗。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《枫桥夜泊》是唐朝安史之乱后，诗人张继途经寒山寺时，写下的一首羁旅诗。在这首诗中，诗人精确而细腻地讲述了一个客船夜泊者对江南深秋夜景的观察和感受，勾画了月落乌啼、霜天寒夜、江枫渔火、孤舟客子等景象，有景有情有声有色。此外，这首诗也将作者羁旅之思，家国之忧，以及身处乱世尚无归宿的顾虑充分地表现出来，是写愁的代表作。<br>这首诗句句形象鲜明，可感可画，句与句之间逻辑关系又非常清晰合理，内容晓畅易解。不仅是中国历代各种唐诗选本和别集选入此诗，连亚洲一些国家的小学课本也曾收录此诗。该诗作品不仅在中国家喻户晓，甚至在日本也是很有影响。本诗问世后，寒山寺也因此名扬天下，成为游览胜地。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/156045/4899471.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

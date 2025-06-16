@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卖柑者言 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>卖柑者言 - 刘基 - 明朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="卖柑者言是明朝诗人刘基的经典作品。本页面提供卖柑者言的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="卖柑者言,刘基,明朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="卖柑者言 - 刘基 - 明朝古诗文">
+    <meta property="og:description" content="卖柑者言是明朝诗人刘基的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="卖柑者言 - 刘基 - 明朝古诗文">
+    <meta name="twitter:description" content="卖柑者言是明朝诗人刘基的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "卖柑者言",
+      "author": {
+        "@type": "Person",
+        "name": "刘基"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "卖柑者言是明朝诗人刘基的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">卖柑者言</h1>
-            <div class="poem-author">【明】刘基</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【明】<span itemprop="name">刘基</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>杭有卖果者，善藏柑，涉寒暑不溃。出之烨然，玉质而金色。置于市，贾十倍，人争鬻之。</p><p>予贸得其一，剖之，如有烟扑口鼻，视其中，则干若败絮。予怪而问之曰：“若所市于人者，将以实笾豆，奉祭祀，供宾客乎？将炫外以惑愚瞽也？甚矣哉，为欺也！”</p><p>卖者笑曰：“吾业是有年矣，吾赖是以食吾躯。吾售之，人取之，未尝有言，而独不足子所乎？世之为欺者不寡矣，而独我也乎？吾子未之思也。今夫佩虎符、坐皋比者，洸洸乎干城之具也，果能授孙、吴之略耶？峨大冠、拖长绅者，昂昂乎庙堂之器也，果能建伊、皋之业耶？盗起而不知御，民困而不知救，吏奸而不知禁，法斁而不知理，坐糜廪粟而不知耻。观其坐高堂，骑大马，醉醇醴而饫肥鲜者，孰不巍巍乎可畏，赫赫乎可象也？又何往而不金玉其外，败絮其中也哉？今子是之不察，而以察吾柑！”</p><p>予默默无以应。退而思其言，类东方生滑稽之流。岂其愤世疾邪者耶？而托于柑以讽耶？</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>杭州有个卖水果的人，擅长贮藏柑橘，经历冬天和夏天也不溃烂，拿出它们的时候还是光彩鲜明的样子，玉石一样的质地，金灿灿的颜色。放到市场上，卖（比别人的高出）十倍的价钱。人们争相购买他的柑橘。<br>我买到了其中的一个，切开它，像有股烟直扑口鼻，看它的里面，干枯得像破败的棉絮。我对此感到奇怪，问他说：“你卖给别人的柑橘，是打算用来装满在盛祭品的容器中，祭祀祖先、招待宾客的吗？还是要炫耀它的外表用来欺骗傻子和瞎子的吗？这样欺骗人的行为实在是太过分了。”<br>卖柑橘的人笑着说：“我从事这个行业已有好多年了。我依赖这个用来养活自己。我卖它，别人买它，不曾有人说过什么的，却唯独不能满足您吗？世上做欺骗的事的人不少，难道仅仅只有我一个吗？你还没有好好考虑这个问题。<br>现在那些佩戴虎形兵符、坐在虎皮将军坐席上的人，威武的样子，好像是捍卫国家的将才，他们果真能拥有孙武、吴起的谋略吗？那些戴着高帽子，拖着长长带子的人，气宇轩昂的坐在朝堂之上，他们果真能够建立伊尹、皋陶的业绩吗？盗贼四起却不懂得抵御，百姓困苦却不懂得救助，官吏狡诈却不懂得禁止，法度败坏却不懂得治理，奢靡的浪费粮食却不懂得羞耻。看看那些坐在高堂上，骑着大马，喝着美酒，饱食着肥美生鲜食物的人，哪一个不是高大的样子令人敬畏、显赫的令人们效仿？可是无论到哪里，又有谁不是外表如金似玉、内心破败得像破棉絮呢？你现在观察不到这些现象，却来看（明察）我的柑橘！”<br>我默默地没有话用来回答。回来思考这卖柑人的话，觉得他像是像东方朔那样诙谐多讽、机智善辩的人。难道他是对世间邪恶现象激愤痛恨之人吗？因而借托柑橘来进行讽刺吗？</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>涉：经过，经历。<br>溃：腐烂，腐败。<br>烨（yè）然：光彩鲜明的样子。<br>玉：像玉石一样。<br>贾（jià）：同“价”，价格。<br>鬻（yù）：这里是买的意思。<br>贸：买卖，这里是买的意思。<br>若：像，好像。<br>败絮：破败的棉絮。<br>若：代词，你，你们。<br>实：填满，装满。<br>笾（biān）豆：古代祭祀时盛祭品用的两种器具。笾，竹制的食器。豆，木制、陶制或铜制的食器。<br>炫：炫耀，夸耀。<br>惑：迷惑，欺骗。<br>愚瞽（gǔ）：愚蠢的人和瞎子。瞽，瞎子。<br>为：做。<br>欺：欺骗人的事。<br>业：以……为职业。<br>赖：依赖，依靠。<br>食（sì）：同“饲”，这里有供养、养活的意思。<br>夫：发语词。<br>虎符：虎形的兵符，古代调兵用的凭证。<br>皋（gāo）比（pí）：虎皮，指将军的坐席。比，通“皮”，毛皮。<br>洸（guāng）洸：威武的样子。<br>干城之具：捍卫国家的将才。干，盾牌，文中意为捍卫，干和城都用以防御；具，将才。<br>孙、吴：指古代著名军事家孙武和吴起。<br>略：谋略。<br>峨：高高地，指高戴。<br>拖长绅：拖着长长的腰带。绅，古代士大夫束在外衣上的带子。<br>昂昂：气宇轩昂的样子。<br>庙堂：指朝廷。<br>器：才能、本领，这里指“有才能的人”。<br>伊、皋（gāo）：指古代著名政治家伊尹和皋陶。<br>业：功业。<br>起：兴起。<br>御：抵御。<br>斁（dù）：败坏。<br>坐：坐在高位的意思，指那些在高位上却不干正事。<br>糜：通“靡”，浪费。<br>廪（lǐn）粟：国家发的俸米。<br>醉：醉饮。<br>饫（yù）：饱食。<br>巍巍：高大的样子。<br>赫赫：显赫的样子。<br>象：模仿。<br>金玉其外、败絮其中：比喻虚有其表，及外表好而实质坏的人<br>类：像。<br>东方生：指东方朔。汉武帝时曾任太中大夫，性格诙谐，善于讽谏。<br>滑稽（gǔjī）之流：指诙谐多讽、机智善辩的人。<br>疾：愤恨。<br>愤世疾邪：激愤、痛恨世间邪恶的现象。<br>托：假托。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《卖柑者言》是一篇元末明初文学、政治家刘基所写的一篇政治寓言。讲述由买卖一个坏了的柑橘的小事引起议论，假托卖柑者的一席话，深刻讽刺了那些虚有其表，无所作为的官员的丑恶嘴脸以及朝廷的腐败。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>杭有卖果者，善藏柑，涉寒暑不溃。出之烨然，玉质而金色。置于市，贾十倍，人争鬻之。</p><p>予贸得其一，剖之，如有烟扑口鼻，视其中，则干若败絮。予怪而问之曰：“若所市于人者，将以实笾豆，奉祭祀，供宾客乎？将炫外以惑愚瞽也？甚矣哉，为欺也！”</p><p>卖者笑曰：“吾业是有年矣，吾赖是以食吾躯。吾售之，人取之，未尝有言，而独不足子所乎？世之为欺者不寡矣，而独我也乎？吾子未之思也。今夫佩虎符、坐皋比者，洸洸乎干城之具也，果能授孙、吴之略耶？峨大冠、拖长绅者，昂昂乎庙堂之器也，果能建伊、皋之业耶？盗起而不知御，民困而不知救，吏奸而不知禁，法斁而不知理，坐糜廪粟而不知耻。观其坐高堂，骑大马，醉醇醴而饫肥鲜者，孰不巍巍乎可畏，赫赫乎可象也？又何往而不金玉其外，败絮其中也哉？今子是之不察，而以察吾柑！”</p><p>予默默无以应。退而思其言，类东方生滑稽之流。岂其愤世疾邪者耶？而托于柑以讽耶？</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>杭州有个卖水果的人，擅长贮藏柑橘，经历冬天和夏天也不溃烂，拿出它们的时候还是光彩鲜明的样子，玉石一样的质地，金灿灿的颜色。放到市场上，卖（比别人的高出）十倍的价钱。人们争相购买他的柑橘。<br>我买到了其中的一个，切开它，像有股烟直扑口鼻，看它的里面，干枯得像破败的棉絮。我对此感到奇怪，问他说：“你卖给别人的柑橘，是打算用来装满在盛祭品的容器中，祭祀祖先、招待宾客的吗？还是要炫耀它的外表用来欺骗傻子和瞎子的吗？这样欺骗人的行为实在是太过分了。”<br>卖柑橘的人笑着说：“我从事这个行业已有好多年了。我依赖这个用来养活自己。我卖它，别人买它，不曾有人说过什么的，却唯独不能满足您吗？世上做欺骗的事的人不少，难道仅仅只有我一个吗？你还没有好好考虑这个问题。<br>现在那些佩戴虎形兵符、坐在虎皮将军坐席上的人，威武的样子，好像是捍卫国家的将才，他们果真能拥有孙武、吴起的谋略吗？那些戴着高帽子，拖着长长带子的人，气宇轩昂的坐在朝堂之上，他们果真能够建立伊尹、皋陶的业绩吗？盗贼四起却不懂得抵御，百姓困苦却不懂得救助，官吏狡诈却不懂得禁止，法度败坏却不懂得治理，奢靡的浪费粮食却不懂得羞耻。看看那些坐在高堂上，骑着大马，喝着美酒，饱食着肥美生鲜食物的人，哪一个不是高大的样子令人敬畏、显赫的令人们效仿？可是无论到哪里，又有谁不是外表如金似玉、内心破败得像破棉絮呢？你现在观察不到这些现象，却来看（明察）我的柑橘！”<br>我默默地没有话用来回答。回来思考这卖柑人的话，觉得他像是像东方朔那样诙谐多讽、机智善辩的人。难道他是对世间邪恶现象激愤痛恨之人吗？因而借托柑橘来进行讽刺吗？</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>涉：经过，经历。<br>溃：腐烂，腐败。<br>烨（yè）然：光彩鲜明的样子。<br>玉：像玉石一样。<br>贾（jià）：同“价”，价格。<br>鬻（yù）：这里是买的意思。<br>贸：买卖，这里是买的意思。<br>若：像，好像。<br>败絮：破败的棉絮。<br>若：代词，你，你们。<br>实：填满，装满。<br>笾（biān）豆：古代祭祀时盛祭品用的两种器具。笾，竹制的食器。豆，木制、陶制或铜制的食器。<br>炫：炫耀，夸耀。<br>惑：迷惑，欺骗。<br>愚瞽（gǔ）：愚蠢的人和瞎子。瞽，瞎子。<br>为：做。<br>欺：欺骗人的事。<br>业：以……为职业。<br>赖：依赖，依靠。<br>食（sì）：同“饲”，这里有供养、养活的意思。<br>夫：发语词。<br>虎符：虎形的兵符，古代调兵用的凭证。<br>皋（gāo）比（pí）：虎皮，指将军的坐席。比，通“皮”，毛皮。<br>洸（guāng）洸：威武的样子。<br>干城之具：捍卫国家的将才。干，盾牌，文中意为捍卫，干和城都用以防御；具，将才。<br>孙、吴：指古代著名军事家孙武和吴起。<br>略：谋略。<br>峨：高高地，指高戴。<br>拖长绅：拖着长长的腰带。绅，古代士大夫束在外衣上的带子。<br>昂昂：气宇轩昂的样子。<br>庙堂：指朝廷。<br>器：才能、本领，这里指“有才能的人”。<br>伊、皋（gāo）：指古代著名政治家伊尹和皋陶。<br>业：功业。<br>起：兴起。<br>御：抵御。<br>斁（dù）：败坏。<br>坐：坐在高位的意思，指那些在高位上却不干正事。<br>糜：通“靡”，浪费。<br>廪（lǐn）粟：国家发的俸米。<br>醉：醉饮。<br>饫（yù）：饱食。<br>巍巍：高大的样子。<br>赫赫：显赫的样子。<br>象：模仿。<br>金玉其外、败絮其中：比喻虚有其表，及外表好而实质坏的人<br>类：像。<br>东方生：指东方朔。汉武帝时曾任太中大夫，性格诙谐，善于讽谏。<br>滑稽（gǔjī）之流：指诙谐多讽、机智善辩的人。<br>疾：愤恨。<br>愤世疾邪：激愤、痛恨世间邪恶的现象。<br>托：假托。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《卖柑者言》是一篇元末明初文学、政治家刘基所写的一篇政治寓言。讲述由买卖一个坏了的柑橘的小事引起议论，假托卖柑者的一席话，深刻讽刺了那些虚有其表，无所作为的官员的丑恶嘴脸以及朝廷的腐败。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/475915.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

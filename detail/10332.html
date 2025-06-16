@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>爱莲说 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>爱莲说 - 周敦颐 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="爱莲说是宋朝诗人周敦颐的经典作品。本页面提供爱莲说的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="爱莲说,周敦颐,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="爱莲说 - 周敦颐 - 宋朝古诗文">
+    <meta property="og:description" content="爱莲说是宋朝诗人周敦颐的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="爱莲说 - 周敦颐 - 宋朝古诗文">
+    <meta name="twitter:description" content="爱莲说是宋朝诗人周敦颐的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "爱莲说",
+      "author": {
+        "@type": "Person",
+        "name": "周敦颐"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "爱莲说是宋朝诗人周敦颐的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">爱莲说</h1>
-            <div class="poem-author">【宋】周敦颐</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">周敦颐</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p><p>予谓菊，花之隐逸者也；牡丹，花之富贵者也；莲，花之君子者也。噫！菊之爱，陶后鲜有闻。莲之爱，同予者何人？牡丹之爱，宜乎众矣。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>水上，陆地上的各种花草树木，值得喜爱的非常多。晋朝陶渊明唯独喜爱菊花。从唐朝以来世间的人们非常喜爱牡丹。我唯独喜爱莲花，它从淤泥中长出来，却不沾染污秽，在清水里洗涤过但是不显得妖媚，它的茎中间贯通，外形挺直，不生枝蔓，不长枝节，香气远播，更加清香，笔直地洁净地立在那里，可以远远地观赏但是不能玩弄它。<br>我认为，菊花是花中的隐士；牡丹，是花中的富贵者；莲花，是花中的君子。唉！对于菊花的喜爱，在陶渊明以后很少听到了。对于莲花的喜爱，和我一样的还有谁？对于牡丹的喜爱，当然有很多人了。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>可：值得。<br>蕃：通「繁」，多。<br>晋陶渊明独爱菊：晋朝陶渊明只喜爱菊花。陶渊明（365—427），一名潜，字元亮，自称五柳先生，世称靖节先生，东晋浔阳柴桑（现江西省九江县）人，东晋著名诗人。是著名的隐士。他独爱菊花，常在诗里咏菊，如《饮酒》诗里的「采菊东篱下，悠然见南山」，曏来称为名句。独，只，唯独。<br>自李唐来，世人甚爱牡丹：从唐朝以来，人们很爱牡丹。唐人爱牡丹，古书里有不少记载，如唐朝李肇的《唐国史补》里说：「京城贵游，尚牡丹……每春暮，车马若狂……种以求利，一本有直数万者。」李唐，指唐朝。唐朝的皇帝姓李，所以称为「李唐」。世人，社会上的一般人。自，（自）从。盛，很，十分，一作「甚」。<br>予（yú）：我。<br>之：助词，用于主谓之间，取消句子独立性，无实际意义。<br>淤泥：河沟或池塘里积存的污泥。<br>染：沾染（污秽）。<br>濯（zhuó）：洗涤。<br>清涟（lián）：水清而有微波，这里指清水。<br>妖：妖艳。美丽而不端庄。<br>中通外直：（它的茎）内空外直。通，空。直，挺立。<br>不蔓（màn）不枝：不生枝蔓，不长枝节。蔓，名词用作动词，生枝蔓。枝，名词用作动词，长枝节。<br>香远益清：香气远播，更加显得清芬。远，形容词作动词，遥远，空间距离大。益，更，更加。<br>亭亭净植：笔直地洁净地立在那里。亭亭，耸立的样子。植，「植」通「直」，立。<br>可：可以。<br>亵（xiè）：亲近而不庄重。<br>玩：玩弄。<br>焉：助词。<br>谓：认为。<br>隐逸者：指隐居的人。在封建社会里，有些人不愿意跟统治者同流合污，就隐居避世。<br>君子：指品德高尚的人。<br>噫：感叹词，相当于「啊」。<br>菊之爱：对于菊花的喜爱。之，的。一说为「宾语提前的标志」。下文「莲之爱」、「牡丹之爱」同。<br>鲜（xiǎn）：少。<br>闻：听说。<br>同予者何人：像我一样（喜爱莲花的）还有什么人呢？<br>宜乎众矣：（喜爱牡丹的）人应该是很多了。宜，当，这里与乎连用有当然的意思。众，多。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>宋熙宁四年（公元一〇七一年），周敦颐来星子任南康知军。周敦颐为人清廉正直，襟怀淡泊，平生酷爱莲花。周敦颐来星子后，在军衙东侧开挖了一口池塘，全部种植荷花。周敦颐来星子时已值暮年（五十五岁），又抱病在身，所以每当茶余饭后，他或独身一人，或邀三五幕僚好友，于池畔赏花品茗，并写下了散文《爱莲说》。<br>这篇文章通过对莲的形象和品质的描写，歌颂了莲花坚贞的品格，也表现了作者洁身自爱的高洁人格和洒落的胸襟。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p><p>予谓菊，花之隐逸者也；牡丹，花之富贵者也；莲，花之君子者也。噫！菊之爱，陶后鲜有闻。莲之爱，同予者何人？牡丹之爱，宜乎众矣。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>水上，陆地上的各种花草树木，值得喜爱的非常多。晋朝陶渊明唯独喜爱菊花。从唐朝以来世间的人们非常喜爱牡丹。我唯独喜爱莲花，它从淤泥中长出来，却不沾染污秽，在清水里洗涤过但是不显得妖媚，它的茎中间贯通，外形挺直，不生枝蔓，不长枝节，香气远播，更加清香，笔直地洁净地立在那里，可以远远地观赏但是不能玩弄它。<br>我认为，菊花是花中的隐士；牡丹，是花中的富贵者；莲花，是花中的君子。唉！对于菊花的喜爱，在陶渊明以后很少听到了。对于莲花的喜爱，和我一样的还有谁？对于牡丹的喜爱，当然有很多人了。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>可：值得。<br>蕃：通「繁」，多。<br>晋陶渊明独爱菊：晋朝陶渊明只喜爱菊花。陶渊明（365—427），一名潜，字元亮，自称五柳先生，世称靖节先生，东晋浔阳柴桑（现江西省九江县）人，东晋著名诗人。是著名的隐士。他独爱菊花，常在诗里咏菊，如《饮酒》诗里的「采菊东篱下，悠然见南山」，曏来称为名句。独，只，唯独。<br>自李唐来，世人甚爱牡丹：从唐朝以来，人们很爱牡丹。唐人爱牡丹，古书里有不少记载，如唐朝李肇的《唐国史补》里说：「京城贵游，尚牡丹……每春暮，车马若狂……种以求利，一本有直数万者。」李唐，指唐朝。唐朝的皇帝姓李，所以称为「李唐」。世人，社会上的一般人。自，（自）从。盛，很，十分，一作「甚」。<br>予（yú）：我。<br>之：助词，用于主谓之间，取消句子独立性，无实际意义。<br>淤泥：河沟或池塘里积存的污泥。<br>染：沾染（污秽）。<br>濯（zhuó）：洗涤。<br>清涟（lián）：水清而有微波，这里指清水。<br>妖：妖艳。美丽而不端庄。<br>中通外直：（它的茎）内空外直。通，空。直，挺立。<br>不蔓（màn）不枝：不生枝蔓，不长枝节。蔓，名词用作动词，生枝蔓。枝，名词用作动词，长枝节。<br>香远益清：香气远播，更加显得清芬。远，形容词作动词，遥远，空间距离大。益，更，更加。<br>亭亭净植：笔直地洁净地立在那里。亭亭，耸立的样子。植，「植」通「直」，立。<br>可：可以。<br>亵（xiè）：亲近而不庄重。<br>玩：玩弄。<br>焉：助词。<br>谓：认为。<br>隐逸者：指隐居的人。在封建社会里，有些人不愿意跟统治者同流合污，就隐居避世。<br>君子：指品德高尚的人。<br>噫：感叹词，相当于「啊」。<br>菊之爱：对于菊花的喜爱。之，的。一说为「宾语提前的标志」。下文「莲之爱」、「牡丹之爱」同。<br>鲜（xiǎn）：少。<br>闻：听说。<br>同予者何人：像我一样（喜爱莲花的）还有什么人呢？<br>宜乎众矣：（喜爱牡丹的）人应该是很多了。宜，当，这里与乎连用有当然的意思。众，多。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>宋熙宁四年（公元一〇七一年），周敦颐来星子任南康知军。周敦颐为人清廉正直，襟怀淡泊，平生酷爱莲花。周敦颐来星子后，在军衙东侧开挖了一口池塘，全部种植荷花。周敦颐来星子时已值暮年（五十五岁），又抱病在身，所以每当茶余饭后，他或独身一人，或邀三五幕僚好友，于池畔赏花品茗，并写下了散文《爱莲说》。<br>这篇文章通过对莲的形象和品质的描写，歌颂了莲花坚贞的品格，也表现了作者洁身自爱的高洁人格和洒落的胸襟。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/subview/121681/15847788.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>相州昼锦堂记 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>相州昼锦堂记 - 欧阳修 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="相州昼锦堂记是宋朝诗人欧阳修的经典作品。本页面提供相州昼锦堂记的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="相州昼锦堂记,欧阳修,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="相州昼锦堂记 - 欧阳修 - 宋朝古诗文">
+    <meta property="og:description" content="相州昼锦堂记是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="相州昼锦堂记 - 欧阳修 - 宋朝古诗文">
+    <meta name="twitter:description" content="相州昼锦堂记是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "相州昼锦堂记",
+      "author": {
+        "@type": "Person",
+        "name": "欧阳修"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "相州昼锦堂记是宋朝诗人欧阳修的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">相州昼锦堂记</h1>
-            <div class="poem-author">【宋】欧阳修</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">欧阳修</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>仕宦而至将相，富贵而归故乡，此人情之所荣，而今昔之所同也。盖士方穷时，困厄闾里，庸人孺子，皆得易而侮之。若季子不礼于其嫂，买臣见弃于其妻。一旦高车驷马，旗旄导前，而骑卒拥后，夹道之人，相与骈肩累迹，瞻望咨嗟；而所谓庸夫愚妇者，奔走骇汗，羞愧俯伏，以自悔罪于车尘马足之间。此一介之士，得志于当时，而意气之盛，昔人比之衣锦之荣者也。</p><p>惟大丞相魏国公则不然。公，相人也，世有令德，为时名卿。自公少时，已擢高科，登显士；海内之士，闻下风而望余光者，盖亦有年矣。所谓将相而富贵，皆公所宜素有。非如穷厄之人，侥幸得志于一时，出于庸夫愚妇之不意，以惊骇而夸耀之也。然则高牙大纛，不足为公荣；桓圭衮裳，不足为公贵；惟德被生民而功施社稷，勒之金石，播之声诗，以耀后世而垂无穷：此公之志，而士亦以此望于公也。岂止夸一时而荣一乡哉？</p><p>公在至和中，尝以武康之节，来治于相，乃作昼锦之堂于后圃。既又刻诗于石，以遗相人。其言以快恩雠、矜名誉为可薄，盖不以昔人所夸者为荣，而以为戒。于此见公之视富贵为何如，而其志岂易量哉？故能出入将相，勤劳王家，而夷险一节。至于临大事，决大议，垂绅正笏，不动声色，而措天下于泰山之安，可谓社稷之臣矣！其丰功盛烈，所以铭彝鼎而被弦歌者，乃邦家之光，非闾里之荣也。</p><p>余虽不获登公之堂，幸尝窃诵公之诗，乐公之志有成，而喜为天下道也。于是乎书。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>做官做到将相，富贵而回老家，这是大家都认为非常荣耀的事，也是古今都公认的。一般当读书人穷困时，在乡里过着贫苦日子，平民儿童都可轻视甚至侮辱他。如苏秦不被嫂子礼待，朱买臣被妻子抛弃。一旦坐着四匹马拉的高大的车子，旗帜在前开道，又有骑兵卫队拥着，在街边观看的人，挤在一起肩并肩脚挨脚的，一边仰望一边赞叹；而所谓平头男女，又跑又窜又惊又慌，汗水都出来了，甚至惭愧得低头弯腰，跪在车轮辗起的灰尘和马蹄子中间，向新贵人悔过请罪。这就是一个普通士子，成功得志时，那意气的旺盛，是以前人们所比方的穿着锦绣的荣耀事啊！<br>惟有大丞相魏国公不是这样。魏国公，相州人。祖辈起代代都有美好的德行，都是有名的高官。魏国公从年轻时就考取科举高榜，登上显要的位置。海内人士听其传布四方的德音，仰望其播及的风采，已有多年了。所说的做将相，得富贵，都是魏国公早就应有的。不像那穷困的人，一时侥幸得志，出乎庸男和愚妇的意料而使他们惊异，并向他们夸耀。既然这样，那么仪仗大旗，不足为魏国公的光荣；桓圭和礼服，不足为魏国公的显贵。只有恩德遍及百姓，功勋建于国家，事迹刻入钟鼎碑石，传播在声乐和文章里，光耀后世，永世不朽，才是魏国公的心志。读书人也是在这点上寄望魏国公啊。哪里只是荣耀于一时一乡呢？<br>魏国公在仁宗至和年间，曾以武康节度使身份，管理相州，就在后园建了“昼锦堂”。后又刻诗于石碑上，留给相州的人们。诗篇说的是快意于感恩报仇，夸耀个人多誉，都是值得鄙薄的。他不以昔日人们所夸耀的为荣，反而作为自己的警戒。从此可见魏国公是如何看待富贵，而志向哪能轻易测量啊！因此他能出为大将入为丞相，勤劳地为朝廷办事，不论平顺时还是险难时都一样。至于面对重大事件，决策重要议题，垂着衣带，拿着手板，不动声色，把天下放置得像泰山一样安稳，可谓是国家重臣了。他的丰功伟业，被刻上钟鼎，谱成歌曲，是国家的光荣，而不单是乡里的光荣啊。<br>我虽无机会登上魏国公的厅堂，却庆幸曾诵读他的诗篇，很高兴他大志有成，并向天下宣告。于是就写下以上的文字。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>相州：地名，今河南省安阳县。<br>昼锦堂：《三国志·魏志·张既传》：「出为雍州刺史，太祖曰：『还君本州，可谓衣绣昼行矣』。」魏国公韩琦是相州人，以武康节度使身份回相州任知州，如衣锦还乡，因此，修建了昼锦堂。<br>仕宦：做官。<br>困厄闾里：在乡里受困苦。<br>易：轻视。<br>季子不礼于其嫂：苏秦，字季子。<br>买臣见弃于其妻：朱买臣，西汉吴县人，曾以卖柴为生，妻子不能忍受穷困，弃朱而去，后来朱买臣做了大官，妻子要求复婚，朱便叫人端来一盆水泼在马头上，让她再收回来。<br>驷马，四匹马拉的车子。<br>高车驷马：泛指显贵者的车乘。<br>旄：古时旗杆头上用旄牛尾作的装饰；也指有这种装饰的旗。<br>骈肩累迹：肩挨肩，足迹相迭。形容人多拥挤。<br>咨嗟：赞叹。<br>衣锦之荣：富贵之后回故乡的荣耀。<br>大：尊称。<br>魏国公，韩琦的封号。<br>令德：美好的德行。令，美、善。<br>已擢高科：已中了高高的科第。<br>显士：显贵的官吏。<br>馀光：本指落日馀辉，此处借指人们远远地瞻望韩琦的丰采。<br>有年：多年。<br>高牙大纛：高官的仪仗队。牙，牙旗；纛，仪仗队的大旗。<br>桓圭：帝王授给三公的命圭。圭，古代帝王诸侯拿在手中的上圆下方的礼器。<br>衮裳：三公所穿的礼服。<br>被：及。<br>勒之金石：刻在钟鼎、石碑上。<br>播之声诗：颂扬在乐章里。<br>至和：宋仁宗赵祯的年号（公元1054-1056年）。<br>武康之节：武康，地名；节，此处指节度使。<br>圃：园地。<br>夷险一节：太平的时候和患难的时候表现完全一样。夷，平；险，难。<br>垂绅：古代官吏束在衣外的大带子。<br>笏：朝笏，也叫手板，用来指画或记事。<br>烈：功业：<br>彝鼎：钟鼎。<br>邦家：国家。邦，古代诸侯封国的称号，后来泛指国家。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《相州昼锦堂记》是欧阳修为宰相韩琦在故乡相州修建的昼锦堂写的一篇「记」，作于北宋治平二年（公元1065年）。作者围绕「昼锦」（白天穿锦衣，无比荣耀之意）二字发挥，先说明富贵还乡，衣锦而荣，是古今所同，并生动描述了古人衣锦还乡、得意扬扬的场面，然后避实就虚，不写昼锦堂本身，而是着重写昼锦堂主人的高尚品德。作者用苏秦、朱买臣等炫耀富贵的庸俗行为作陪衬，盛赞韩琦不以誇耀富贵为荣，反而引以为戒的行为，讽劝权贵们不要「誇一时而荣一乡」，而以「德被生民而功施社稷」为志，进而「耀后世而垂无穷」。全文写得含蓄隽永，迂回起伏，是历来公认的名篇。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>仕宦而至将相，富贵而归故乡，此人情之所荣，而今昔之所同也。盖士方穷时，困厄闾里，庸人孺子，皆得易而侮之。若季子不礼于其嫂，买臣见弃于其妻。一旦高车驷马，旗旄导前，而骑卒拥后，夹道之人，相与骈肩累迹，瞻望咨嗟；而所谓庸夫愚妇者，奔走骇汗，羞愧俯伏，以自悔罪于车尘马足之间。此一介之士，得志于当时，而意气之盛，昔人比之衣锦之荣者也。</p><p>惟大丞相魏国公则不然。公，相人也，世有令德，为时名卿。自公少时，已擢高科，登显士；海内之士，闻下风而望余光者，盖亦有年矣。所谓将相而富贵，皆公所宜素有。非如穷厄之人，侥幸得志于一时，出于庸夫愚妇之不意，以惊骇而夸耀之也。然则高牙大纛，不足为公荣；桓圭衮裳，不足为公贵；惟德被生民而功施社稷，勒之金石，播之声诗，以耀后世而垂无穷：此公之志，而士亦以此望于公也。岂止夸一时而荣一乡哉？</p><p>公在至和中，尝以武康之节，来治于相，乃作昼锦之堂于后圃。既又刻诗于石，以遗相人。其言以快恩雠、矜名誉为可薄，盖不以昔人所夸者为荣，而以为戒。于此见公之视富贵为何如，而其志岂易量哉？故能出入将相，勤劳王家，而夷险一节。至于临大事，决大议，垂绅正笏，不动声色，而措天下于泰山之安，可谓社稷之臣矣！其丰功盛烈，所以铭彝鼎而被弦歌者，乃邦家之光，非闾里之荣也。</p><p>余虽不获登公之堂，幸尝窃诵公之诗，乐公之志有成，而喜为天下道也。于是乎书。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>做官做到将相，富贵而回老家，这是大家都认为非常荣耀的事，也是古今都公认的。一般当读书人穷困时，在乡里过着贫苦日子，平民儿童都可轻视甚至侮辱他。如苏秦不被嫂子礼待，朱买臣被妻子抛弃。一旦坐着四匹马拉的高大的车子，旗帜在前开道，又有骑兵卫队拥着，在街边观看的人，挤在一起肩并肩脚挨脚的，一边仰望一边赞叹；而所谓平头男女，又跑又窜又惊又慌，汗水都出来了，甚至惭愧得低头弯腰，跪在车轮辗起的灰尘和马蹄子中间，向新贵人悔过请罪。这就是一个普通士子，成功得志时，那意气的旺盛，是以前人们所比方的穿着锦绣的荣耀事啊！<br>惟有大丞相魏国公不是这样。魏国公，相州人。祖辈起代代都有美好的德行，都是有名的高官。魏国公从年轻时就考取科举高榜，登上显要的位置。海内人士听其传布四方的德音，仰望其播及的风采，已有多年了。所说的做将相，得富贵，都是魏国公早就应有的。不像那穷困的人，一时侥幸得志，出乎庸男和愚妇的意料而使他们惊异，并向他们夸耀。既然这样，那么仪仗大旗，不足为魏国公的光荣；桓圭和礼服，不足为魏国公的显贵。只有恩德遍及百姓，功勋建于国家，事迹刻入钟鼎碑石，传播在声乐和文章里，光耀后世，永世不朽，才是魏国公的心志。读书人也是在这点上寄望魏国公啊。哪里只是荣耀于一时一乡呢？<br>魏国公在仁宗至和年间，曾以武康节度使身份，管理相州，就在后园建了“昼锦堂”。后又刻诗于石碑上，留给相州的人们。诗篇说的是快意于感恩报仇，夸耀个人多誉，都是值得鄙薄的。他不以昔日人们所夸耀的为荣，反而作为自己的警戒。从此可见魏国公是如何看待富贵，而志向哪能轻易测量啊！因此他能出为大将入为丞相，勤劳地为朝廷办事，不论平顺时还是险难时都一样。至于面对重大事件，决策重要议题，垂着衣带，拿着手板，不动声色，把天下放置得像泰山一样安稳，可谓是国家重臣了。他的丰功伟业，被刻上钟鼎，谱成歌曲，是国家的光荣，而不单是乡里的光荣啊。<br>我虽无机会登上魏国公的厅堂，却庆幸曾诵读他的诗篇，很高兴他大志有成，并向天下宣告。于是就写下以上的文字。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>相州：地名，今河南省安阳县。<br>昼锦堂：《三国志·魏志·张既传》：「出为雍州刺史，太祖曰：『还君本州，可谓衣绣昼行矣』。」魏国公韩琦是相州人，以武康节度使身份回相州任知州，如衣锦还乡，因此，修建了昼锦堂。<br>仕宦：做官。<br>困厄闾里：在乡里受困苦。<br>易：轻视。<br>季子不礼于其嫂：苏秦，字季子。<br>买臣见弃于其妻：朱买臣，西汉吴县人，曾以卖柴为生，妻子不能忍受穷困，弃朱而去，后来朱买臣做了大官，妻子要求复婚，朱便叫人端来一盆水泼在马头上，让她再收回来。<br>驷马，四匹马拉的车子。<br>高车驷马：泛指显贵者的车乘。<br>旄：古时旗杆头上用旄牛尾作的装饰；也指有这种装饰的旗。<br>骈肩累迹：肩挨肩，足迹相迭。形容人多拥挤。<br>咨嗟：赞叹。<br>衣锦之荣：富贵之后回故乡的荣耀。<br>大：尊称。<br>魏国公，韩琦的封号。<br>令德：美好的德行。令，美、善。<br>已擢高科：已中了高高的科第。<br>显士：显贵的官吏。<br>馀光：本指落日馀辉，此处借指人们远远地瞻望韩琦的丰采。<br>有年：多年。<br>高牙大纛：高官的仪仗队。牙，牙旗；纛，仪仗队的大旗。<br>桓圭：帝王授给三公的命圭。圭，古代帝王诸侯拿在手中的上圆下方的礼器。<br>衮裳：三公所穿的礼服。<br>被：及。<br>勒之金石：刻在钟鼎、石碑上。<br>播之声诗：颂扬在乐章里。<br>至和：宋仁宗赵祯的年号（公元1054-1056年）。<br>武康之节：武康，地名；节，此处指节度使。<br>圃：园地。<br>夷险一节：太平的时候和患难的时候表现完全一样。夷，平；险，难。<br>垂绅：古代官吏束在衣外的大带子。<br>笏：朝笏，也叫手板，用来指画或记事。<br>烈：功业：<br>彝鼎：钟鼎。<br>邦家：国家。邦，古代诸侯封国的称号，后来泛指国家。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《相州昼锦堂记》是欧阳修为宰相韩琦在故乡相州修建的昼锦堂写的一篇「记」，作于北宋治平二年（公元1065年）。作者围绕「昼锦」（白天穿锦衣，无比荣耀之意）二字发挥，先说明富贵还乡，衣锦而荣，是古今所同，并生动描述了古人衣锦还乡、得意扬扬的场面，然后避实就虚，不写昼锦堂本身，而是着重写昼锦堂主人的高尚品德。作者用苏秦、朱买臣等炫耀富贵的庸俗行为作陪衬，盛赞韩琦不以誇耀富贵为荣，反而引以为戒的行为，讽劝权贵们不要「誇一时而荣一乡」，而以「德被生民而功施社稷」为志，进而「耀后世而垂无穷」。全文写得含蓄隽永，迂回起伏，是历来公认的名篇。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="https://baike.baidu.com/item/%E7%9B%B8%E5%B7%9E%E6%98%BC%E9%94%A6%E5%A0%82%E8%AE%B0/4702297?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>礼记 · 檀弓 · 杜蒉扬觯 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>礼记 · 檀弓 · 杜蒉扬觯 - 无名氏 - 秦朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="礼记 · 檀弓 · 杜蒉扬觯是秦朝诗人无名氏的经典作品。本页面提供礼记 · 檀弓 · 杜蒉扬觯的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="礼记 · 檀弓 · 杜蒉扬觯,无名氏,秦朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="礼记 · 檀弓 · 杜蒉扬觯 - 无名氏 - 秦朝古诗文">
+    <meta property="og:description" content="礼记 · 檀弓 · 杜蒉扬觯是秦朝诗人无名氏的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="礼记 · 檀弓 · 杜蒉扬觯 - 无名氏 - 秦朝古诗文">
+    <meta name="twitter:description" content="礼记 · 檀弓 · 杜蒉扬觯是秦朝诗人无名氏的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "礼记 · 檀弓 · 杜蒉扬觯",
+      "author": {
+        "@type": "Person",
+        "name": "无名氏"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "礼记 · 檀弓 · 杜蒉扬觯是秦朝诗人无名氏的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">礼记 · 檀弓 · 杜蒉扬觯</h1>
-            <div class="poem-author">【秦】无名氏</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【秦】<span itemprop="name">无名氏</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>知悼子卒，未葬．平公饮酒，师旷、李调侍，鼓钟。杜篑自外来，闻钟声，曰：「安在？」曰：「在寝。」杜篑入寝，历阶而升．酌曰：「旷饮斯。」又酌曰：「调饮斯．」又酌，堂上北面坐饮之。降，趋而出。</p><p>平公呼而进之，曰：「蒉，曩者尔心或开予，是以不与尔言。尔饮旷，何也？」曰：「子卯不乐。知悼子在堂，斯其为子卯也大矣！旷也，太师也，不以诏．是以饮之也。」「尔饮调，何也？」曰：「调也，君之亵臣也，为一饮一食，亡君之疾。是以饮之也．」「尔饮，何也？」曰：「篑也，宰夫也，非刀匕是共，又敢与知防．是饮之也．」平公曰：「寡人亦有过焉。酌而饮寡人！」杜篑洗而扬觯。</p><p>公谓侍者曰：「如我死，则必无废是爵也！」至于今，既毕献，斯扬觯，谓之「杜举」。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>知悼子死，还没有下葬。平公饮酒（作乐），师旷、李调陪伴侍奉，敲击编钟（演奏乐曲）。杜蒉从外面来，听到编钟声，说：「（平公）在哪？」（仆人）说：「在寝宫。」杜蒉前往寝宫，拾阶而上。斟酒道：「师旷干了这杯。」又斟酒道：「李调乾了这杯。」又斟酒，在大厅的北面（面对平公）坐下乾了酒。走下台阶，跑着出去。<br>平公喊他进来，说：「蒉，刚纔我心想你可能要开导我，因此不跟你说话。你罚师旷喝酒，是为什么啊？」（杜蒉）说：「子日和卯日不演奏乐曲（据说夏朝的桀王逃亡在山西安邑县于乙卯日死亡；商朝的纣王在甲子日自焚死亡。后代君王引以为戒，以子卯日为『疾日』，不演奏乐曲）。知悼子还在堂上（停灵），这事与子卯日相比大多了！师旷，是太师啊。（他）不告诉您道理，因此罚他喝酒啊。」「你罚李调喝酒，（又是）为什么呢？」（杜蒉）说：「李调，是君主身边的近臣。为了一点喝的一点吃食忘记了君主的忌讳，因此罚他喝酒啊。」「你自己（罚自己）喝酒，（又是）为什么呢？」（杜蒉）说：「我杜蒉，膳食官而已，不去管刀勺的事务，却敢干预（对君主）讲道理防范错误的事，因此罚自己喝酒。」平公说：「我也有过错啊。斟酒来罚我。」杜蒉洗乾净然后高高举起酒杯。平公对侍从们说：「如果我死了，千万不要丢弃这酒杯啊。」<br>直到今天，（人们）敬完酒后，都要高举酒杯，叫作「杜举」。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>知（zhì）悼子：春秋时晋国大夫，知罃。知庄公的儿子。悼是他的谥号。<br>平公：晋平公，名彪。<br>师旷：晋国的乐官。<br>李调：晋平公的近臣。<br>侍：作陪。<br>鼓钟：敲钟。<br>杜篑（kuì）：《左传》作「屠蒯（kuǎi）」，晋国的宰夫。寝：寝宫。古时天子的叫燕寝，诸侯的叫路寝。<br>酌：斟酒。<br>堂上北面坐饮之：古时人君的位置朝南，臣子见君时则面向北。杜篑北面而坐，以面向国君行臣礼了。坐：即跪。因为古时席地而坐，坐时两膝跪在席上，屁股坐在脚后跟上，屁股稍稍离开脚后跟就成为跪了，所以跪也叫坐。但坐不可以叫跪。<br>降：下阶。<br>趋：快走。<br>曩者：刚纔。<br>子卯不乐：夏桀以乙卯日死，商纣以甲子日亡，古人把它叫做疾日，所以做国君的不举乐。<br>在堂：指知悼子的灵柩还放在家里没有下葬。<br>斯其为子卯也大矣：古时国君对于卿大夫，人刚死不举乐，人刚下葬不吃肉。悼子是亲近的大臣，死了还没有下葬，人君的哀痛，应当甚于桀纣的疾日，所以说大于子卯。<br>太师：乐官之长。<br>亵臣：轻慢的近臣。<br>疾：疾日，犹言恶日、忌日。<br>宰夫：主管国君膳食的小官。<br>匕：古代指饭勺。<br>与：参与，与闻。知：知谏。防：防闲。敢与知防，是说杜蒉不过是一个宰夫，又敢参与知谏争防闲之事，这是越级行为。<br>爵：酒器。<br>扬：举起。<br>觯（zhì）：古时饮酒用的器皿。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>杜蒉扬觯是属于《杜蒉扬觯》的一个故事，出处《礼记·檀弓》。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>知悼子卒，未葬．平公饮酒，师旷、李调侍，鼓钟。杜篑自外来，闻钟声，曰：「安在？」曰：「在寝。」杜篑入寝，历阶而升．酌曰：「旷饮斯。」又酌曰：「调饮斯．」又酌，堂上北面坐饮之。降，趋而出。</p><p>平公呼而进之，曰：「蒉，曩者尔心或开予，是以不与尔言。尔饮旷，何也？」曰：「子卯不乐。知悼子在堂，斯其为子卯也大矣！旷也，太师也，不以诏．是以饮之也。」「尔饮调，何也？」曰：「调也，君之亵臣也，为一饮一食，亡君之疾。是以饮之也．」「尔饮，何也？」曰：「篑也，宰夫也，非刀匕是共，又敢与知防．是饮之也．」平公曰：「寡人亦有过焉。酌而饮寡人！」杜篑洗而扬觯。</p><p>公谓侍者曰：「如我死，则必无废是爵也！」至于今，既毕献，斯扬觯，谓之「杜举」。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>知悼子死，还没有下葬。平公饮酒（作乐），师旷、李调陪伴侍奉，敲击编钟（演奏乐曲）。杜蒉从外面来，听到编钟声，说：「（平公）在哪？」（仆人）说：「在寝宫。」杜蒉前往寝宫，拾阶而上。斟酒道：「师旷干了这杯。」又斟酒道：「李调乾了这杯。」又斟酒，在大厅的北面（面对平公）坐下乾了酒。走下台阶，跑着出去。<br>平公喊他进来，说：「蒉，刚纔我心想你可能要开导我，因此不跟你说话。你罚师旷喝酒，是为什么啊？」（杜蒉）说：「子日和卯日不演奏乐曲（据说夏朝的桀王逃亡在山西安邑县于乙卯日死亡；商朝的纣王在甲子日自焚死亡。后代君王引以为戒，以子卯日为『疾日』，不演奏乐曲）。知悼子还在堂上（停灵），这事与子卯日相比大多了！师旷，是太师啊。（他）不告诉您道理，因此罚他喝酒啊。」「你罚李调喝酒，（又是）为什么呢？」（杜蒉）说：「李调，是君主身边的近臣。为了一点喝的一点吃食忘记了君主的忌讳，因此罚他喝酒啊。」「你自己（罚自己）喝酒，（又是）为什么呢？」（杜蒉）说：「我杜蒉，膳食官而已，不去管刀勺的事务，却敢干预（对君主）讲道理防范错误的事，因此罚自己喝酒。」平公说：「我也有过错啊。斟酒来罚我。」杜蒉洗乾净然后高高举起酒杯。平公对侍从们说：「如果我死了，千万不要丢弃这酒杯啊。」<br>直到今天，（人们）敬完酒后，都要高举酒杯，叫作「杜举」。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>知（zhì）悼子：春秋时晋国大夫，知罃。知庄公的儿子。悼是他的谥号。<br>平公：晋平公，名彪。<br>师旷：晋国的乐官。<br>李调：晋平公的近臣。<br>侍：作陪。<br>鼓钟：敲钟。<br>杜篑（kuì）：《左传》作「屠蒯（kuǎi）」，晋国的宰夫。寝：寝宫。古时天子的叫燕寝，诸侯的叫路寝。<br>酌：斟酒。<br>堂上北面坐饮之：古时人君的位置朝南，臣子见君时则面向北。杜篑北面而坐，以面向国君行臣礼了。坐：即跪。因为古时席地而坐，坐时两膝跪在席上，屁股坐在脚后跟上，屁股稍稍离开脚后跟就成为跪了，所以跪也叫坐。但坐不可以叫跪。<br>降：下阶。<br>趋：快走。<br>曩者：刚纔。<br>子卯不乐：夏桀以乙卯日死，商纣以甲子日亡，古人把它叫做疾日，所以做国君的不举乐。<br>在堂：指知悼子的灵柩还放在家里没有下葬。<br>斯其为子卯也大矣：古时国君对于卿大夫，人刚死不举乐，人刚下葬不吃肉。悼子是亲近的大臣，死了还没有下葬，人君的哀痛，应当甚于桀纣的疾日，所以说大于子卯。<br>太师：乐官之长。<br>亵臣：轻慢的近臣。<br>疾：疾日，犹言恶日、忌日。<br>宰夫：主管国君膳食的小官。<br>匕：古代指饭勺。<br>与：参与，与闻。知：知谏。防：防闲。敢与知防，是说杜蒉不过是一个宰夫，又敢参与知谏争防闲之事，这是越级行为。<br>爵：酒器。<br>扬：举起。<br>觯（zhì）：古时饮酒用的器皿。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>杜蒉扬觯是属于《杜蒉扬觯》的一个故事，出处《礼记·檀弓》。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="https://baike.baidu.com/item/%E6%9D%9C%E8%92%89%E6%89%AC%E8%A7%AF/7001731?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

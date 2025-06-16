@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>永州八记 · 其八 · 小石城山记 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>永州八记 · 其八 · 小石城山记 - 柳宗元 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="永州八记 · 其八 · 小石城山记是唐朝诗人柳宗元的经典作品。本页面提供永州八记 · 其八 · 小石城山记的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="永州八记 · 其八 · 小石城山记,柳宗元,唐朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="永州八记 · 其八 · 小石城山记 - 柳宗元 - 唐朝古诗文">
+    <meta property="og:description" content="永州八记 · 其八 · 小石城山记是唐朝诗人柳宗元的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="永州八记 · 其八 · 小石城山记 - 柳宗元 - 唐朝古诗文">
+    <meta name="twitter:description" content="永州八记 · 其八 · 小石城山记是唐朝诗人柳宗元的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "永州八记 · 其八 · 小石城山记",
+      "author": {
+        "@type": "Person",
+        "name": "柳宗元"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "永州八记 · 其八 · 小石城山记是唐朝诗人柳宗元的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">永州八记 · 其八 · 小石城山记</h1>
-            <div class="poem-author">【唐】柳宗元</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">柳宗元</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>自西山道口径北，逾黄茅岭而下，有二道：其一西出，寻之无所得；其一少北而东，不过四十丈，土断而川分，有积石横当其垠。其上为睥睨梁欐之形，其旁出堡坞，有若门焉。窥之正黑，投以小石，洞然有水声，其响之激越，良久乃已。环之可上，望甚远，无土壤，而生嘉树美箭，益奇而坚，其疏数偃仰，类智者所施设也。噫！吾疑造物者之有无久矣。及是愈以为诚有。又怪其不为之中州，而列是夷狄，更千百年不得一售其伎，是固劳而无用，神者傥不宜如是，则其果无乎？或曰：“以慰夫贤而辱于此者。”或曰：“其气之灵不为伟人，而独为是物，故楚之南少人而多石。”是二者，予未信之。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>从西山路口一直向北走，越过黄茅岭往下走，有两条路：一条向西走，沿着它走过去什么也得不到；另一条稍微偏北而后向东，走了不到四十丈，路就被一条河流截断了，有积石横挡在这条路的尽头。石山顶部天然生成矮墙和栋梁的形状，旁边又凸出一块好像堡垒，有一个像门的洞。从洞往里探望一片漆黑，丢一块小石子进去，咚地一下有水响声，那声音很洪亮，好久才消失。石山可以盘绕着登到山顶，站在上面望得很远。山上没有泥土却长着很好的树木和竹子，而且更显得形状奇特质地坚硬。竹木分布疏密有致、高低参差，好像是有智慧的人特意布置的。唉！我怀疑造物者的有无已很久了，到了这儿更以为造物者确实是有的。但又奇怪他不把这小石城山安放到人烟辐辏的中原地区去，却把它摆在这荒僻遥远的蛮夷之地，即使经过千百年也没有一次可以显示自己奇异景色的机会，这简直是白耗力气而毫无用处，神灵的造物者似乎不会这样做的。那么造物者果真没有的吧？有人说：“造物者之所以这样安排是用这佳胜景色来安慰那些被贬逐在此地的贤人的。”也有人说：“这地方山川鐘灵之气不孕育伟人，而唯独凝聚成这奇山胜景，所以楚地的南部少出人才而多产奇峰怪石。”这二种说法，我都不信。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>径北：一直往北。<br>逾：越过。<br>黄茅岭：在今湖南省零陵县城西面。<br>西出：路向西伸去。<br>少（shāo）北而东：稍向北又向东去。少，通“稍”。<br>土断而川分：土路中断，出现分流的河水。<br>横当其垠（yín）：横着挡在路的尽头。<br>睥睨（pìnì）：城墙上如齿状的矮墙。<br>梁欐（lì）：栋梁，这里指架支着的梁栋。欐，栋，正梁。<br>堡坞（wù）：小城堡，此处是指由山石天然形成的。因此作者称其“小石城山”。<br>窥：注意，留心。<br>洞然：深深的样子。<br>激越：声音高亢清远。<br>已：停止。<br>环：绕道而行。<br>望甚远：“望之甚远”的意思。<br>箭：指竹子。<br>益：特别。<br>“其疏数偃（cùyàn）仰，类智者所施设也”句：那些嘉树美箭，疏密相宜，起伏有致，好像是聪明人精心设置的。数，密；偃，倒伏；类，好像。<br>造物者：指创世上帝。<br>愈：更是。<br>诚：确实是，的确是。<br>中州：中原地区；<br>售其伎：贡献其技艺，其技艺得到赏识。售，出售，这里是显露的意思；伎，通“技”；<br>固：一作“故”。<br>“又怪其不为之中州，而列是夷狄，更（gēng）千百年不得一售其伎，是固劳而无用”句：意思是说，又奇怪“造物者”不把小石城山安排在中原，反而陈设在这偏僻的蛮夷地区，经历千百年也不能够一展，它的风采，这当然是徒劳而无功用的。<br>傥：通“倘”，倘若、或者。<br>不宜：不合适。<br>如是：如此，指“不为之中州，而列是夷狄”的现象。<br>果：真的。<br>“神者傥（tǎng）不宜如是，则其果无乎”句：神奇性倘若不该这样，造物者就真的不存在了吧？神者，指神奇性，《易·系辞上》：“阴阳不测之谓神。”<br>以慰夫贤而辱于此者：小石城山是用来慰藉那些贤明却被贬谪到这里的人们的。此句是指有人辩“无用”为“有用”的说法。<br>楚：今湖南、湖北等地，春秋战国时属楚国。<br>少人而多石：指少出贤人而多出奇石。<br>“其气之灵不为伟人，而独为是物，故楚之南少人而多石。”句：那天地间的灵气，在这一带，不造就伟大的人物，却仅仅造就小石城山这样的景物，所以“楚之南”这地方缺少人才而多有石岩。此句是指有人辩“徒劳”为“功劳”的说法。其气之灵，这里指天地的灵气。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《小石城山记》是唐代文学家柳宗元于唐宪宗元和元年（公元806年）被贬到永州担任司马后游行而作，是《永州八记》最后一篇。作者先详细描绘了小石城山的形状、布局，突出其酷似石城。赞叹山石树木的疏密仰伏，好像高明者有意设计、布置的，然后自然转入关于“造物主之有无”这一重大哲学命题的议论。作者用欲擒先纵的笔法，批判了唯心主义的天命论，发泄了自己屈遭贬谪，横受压抑的不平。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>自西山道口径北，逾黄茅岭而下，有二道：其一西出，寻之无所得；其一少北而东，不过四十丈，土断而川分，有积石横当其垠。其上为睥睨梁欐之形，其旁出堡坞，有若门焉。窥之正黑，投以小石，洞然有水声，其响之激越，良久乃已。环之可上，望甚远，无土壤，而生嘉树美箭，益奇而坚，其疏数偃仰，类智者所施设也。噫！吾疑造物者之有无久矣。及是愈以为诚有。又怪其不为之中州，而列是夷狄，更千百年不得一售其伎，是固劳而无用，神者傥不宜如是，则其果无乎？或曰：“以慰夫贤而辱于此者。”或曰：“其气之灵不为伟人，而独为是物，故楚之南少人而多石。”是二者，予未信之。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>从西山路口一直向北走，越过黄茅岭往下走，有两条路：一条向西走，沿着它走过去什么也得不到；另一条稍微偏北而后向东，走了不到四十丈，路就被一条河流截断了，有积石横挡在这条路的尽头。石山顶部天然生成矮墙和栋梁的形状，旁边又凸出一块好像堡垒，有一个像门的洞。从洞往里探望一片漆黑，丢一块小石子进去，咚地一下有水响声，那声音很洪亮，好久才消失。石山可以盘绕着登到山顶，站在上面望得很远。山上没有泥土却长着很好的树木和竹子，而且更显得形状奇特质地坚硬。竹木分布疏密有致、高低参差，好像是有智慧的人特意布置的。唉！我怀疑造物者的有无已很久了，到了这儿更以为造物者确实是有的。但又奇怪他不把这小石城山安放到人烟辐辏的中原地区去，却把它摆在这荒僻遥远的蛮夷之地，即使经过千百年也没有一次可以显示自己奇异景色的机会，这简直是白耗力气而毫无用处，神灵的造物者似乎不会这样做的。那么造物者果真没有的吧？有人说：“造物者之所以这样安排是用这佳胜景色来安慰那些被贬逐在此地的贤人的。”也有人说：“这地方山川鐘灵之气不孕育伟人，而唯独凝聚成这奇山胜景，所以楚地的南部少出人才而多产奇峰怪石。”这二种说法，我都不信。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>径北：一直往北。<br>逾：越过。<br>黄茅岭：在今湖南省零陵县城西面。<br>西出：路向西伸去。<br>少（shāo）北而东：稍向北又向东去。少，通“稍”。<br>土断而川分：土路中断，出现分流的河水。<br>横当其垠（yín）：横着挡在路的尽头。<br>睥睨（pìnì）：城墙上如齿状的矮墙。<br>梁欐（lì）：栋梁，这里指架支着的梁栋。欐，栋，正梁。<br>堡坞（wù）：小城堡，此处是指由山石天然形成的。因此作者称其“小石城山”。<br>窥：注意，留心。<br>洞然：深深的样子。<br>激越：声音高亢清远。<br>已：停止。<br>环：绕道而行。<br>望甚远：“望之甚远”的意思。<br>箭：指竹子。<br>益：特别。<br>“其疏数偃（cùyàn）仰，类智者所施设也”句：那些嘉树美箭，疏密相宜，起伏有致，好像是聪明人精心设置的。数，密；偃，倒伏；类，好像。<br>造物者：指创世上帝。<br>愈：更是。<br>诚：确实是，的确是。<br>中州：中原地区；<br>售其伎：贡献其技艺，其技艺得到赏识。售，出售，这里是显露的意思；伎，通“技”；<br>固：一作“故”。<br>“又怪其不为之中州，而列是夷狄，更（gēng）千百年不得一售其伎，是固劳而无用”句：意思是说，又奇怪“造物者”不把小石城山安排在中原，反而陈设在这偏僻的蛮夷地区，经历千百年也不能够一展，它的风采，这当然是徒劳而无功用的。<br>傥：通“倘”，倘若、或者。<br>不宜：不合适。<br>如是：如此，指“不为之中州，而列是夷狄”的现象。<br>果：真的。<br>“神者傥（tǎng）不宜如是，则其果无乎”句：神奇性倘若不该这样，造物者就真的不存在了吧？神者，指神奇性，《易·系辞上》：“阴阳不测之谓神。”<br>以慰夫贤而辱于此者：小石城山是用来慰藉那些贤明却被贬谪到这里的人们的。此句是指有人辩“无用”为“有用”的说法。<br>楚：今湖南、湖北等地，春秋战国时属楚国。<br>少人而多石：指少出贤人而多出奇石。<br>“其气之灵不为伟人，而独为是物，故楚之南少人而多石。”句：那天地间的灵气，在这一带，不造就伟大的人物，却仅仅造就小石城山这样的景物，所以“楚之南”这地方缺少人才而多有石岩。此句是指有人辩“徒劳”为“功劳”的说法。其气之灵，这里指天地的灵气。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《小石城山记》是唐代文学家柳宗元于唐宪宗元和元年（公元806年）被贬到永州担任司马后游行而作，是《永州八记》最后一篇。作者先详细描绘了小石城山的形状、布局，突出其酷似石城。赞叹山石树木的疏密仰伏，好像高明者有意设计、布置的，然后自然转入关于“造物主之有无”这一重大哲学命题的议论。作者用欲擒先纵的笔法，批判了唯心主义的天命论，发泄了自己屈遭贬谪，横受压抑的不平。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/40635.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>楚归晋知罃 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>楚归晋知罃 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="楚归晋知罃是周朝诗人左丘明的经典作品。本页面提供楚归晋知罃的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="楚归晋知罃,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="楚归晋知罃 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="楚归晋知罃是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="楚归晋知罃 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="楚归晋知罃是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "楚归晋知罃",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "楚归晋知罃是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">楚归晋知罃</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>晋人归楚公子谷臣，与连尹襄老之尸于楚，以求知罃。于是荀首佐中军矣，故楚人许之。</p><p>王送知罃，曰：“子其怨我乎？”对曰：“二国治戎，臣不才，不胜其任，以为俘馘。执事不以衅鼓，使归即戮，君之惠也。臣实不才，又谁敢怨？”王曰：“然则德我乎？”对曰：“二国图其社稷，而求纾其民，各惩其忿，以相宥也，两释累囚，以成其好。二国有好，臣不与及，其谁敢德？”王曰：“子归何以报我？”对曰：“臣不任受怨，君亦不任受德。无怨无德，不知所报。”王曰：“虽然，必告不谷。”对曰：“以君之灵，累臣得归骨于晋，寡君之以为戮，死且不朽。若从君之惠而免之，以赐君之外臣首；首其请于寡君，而以戮于宗，亦死且不朽。若不获命，而使嗣宗职，次及于事，而帅偏师以脩封疆，虽遇执事，其弗敢违。其竭力致死，无有二心，以尽臣礼。所以报也！王曰：“晋未可与争。”</p><p>重为之礼而归之。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>晋人把楚国公子谷臣和连尹襄老的尸首归还给楚国，以此要求交换知罃。当时荀首已经是中军副帅，所以楚人答应了。<br>楚王送别知罃，说：“您恐怕怨恨我吧！”知罃回答说：“两国兴兵，下臣没有才能，不能胜任自己的任务，所以做了俘虏。君王的左右没有用我的血来祭鼓，而让我回国去接受诛戮，这是君王的恩惠啊。下臣实在没有才能，又敢怨恨谁？”楚王说：“那么感激我吗？”知罃回答说：“两国为自己的国家打算，希望让百姓得到平安，各自抑止自己的愤怒，来互相原谅，两边都释放被俘的囚犯，以结成友好。两国友好，下臣不曾与谋，又敢感激谁？”楚王说：“您回去，用什么报答我？”知罃回答说：“下臣无所怨恨，君王也不受恩德，没有怨恨，没有恩德，就不知道该报答什么。”楚王说：“尽管这样，还是一定要把您的想法告诉我。”知罃回答说：“以君王的福佑，被囚的下臣能够带着这把骨头回到晋国，寡君如果加以诛戮，死了将很光荣。如果由于君王的恩惠而赦免下臣，把下臣赐给您的外臣荀首，荀首向寡君请求，而把下臣在自己的宗庙里诛戮，也死而不朽。如果得不到寡君诛戮的命令而让我继承宗族的世职，按次序承担晋国的政事，率领部分军队来治理边疆，即使碰到君王的文武官员，我也不会躲避，只有竭尽全力到贡献自己的生命，没有别的念头，以尽到为臣的职责，这就是我用来报答君王的。”楚共王说：“晋国是不能与之相斗争的。”<br>于是就对他重加礼遇而放他回去。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>归：送还。公子谷臣：楚庄王的儿子。连尹襄老：连尹是楚国官名，襄老是楚国的大臣。连尹、楚国主射之官。<br>求：索取。<br>于是：在这个时候。佐中军；担任中军副帅。<br>知罃（yīng）：字子羽，亦称荀罃，是晋大夫荀息的后裔，晋悼公时中军帅。<br>治戎：治兵，演习军队。这里的意思是交战。<br>馘（guó）：割下敌方战死者的左耳（用来报功）。这里与“俘”连用，指俘虏。<br>鼓：取血涂鼓，意思是处死。<br>即戮（lù）：接受杀戮。<br>惩：戒，克制。忿：怨恨。<br>宥（yòu）；宽恕，原谅。<br>与及：参与其中，相干。<br>任：担当<br>外臣：外邦之臣。臣子对别国君主称外臣。<br>宗：宗庙。<br>不获命：没有获得国君允许杀戮的命令。<br>宗职：祖宗世袭的职位。<br>偏师：副帅、副将所属的军队，非主力军队。<br>致死：献出生命。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·成公三年》。楚共王对知罃的句句逼问，知罃都巧妙回答。楚共王因此感叹“晋未可与争”，以隆重的礼仪送知罃归晋。知罃的对答也表现了他忠君爱国、对楚不卑不亢，精神难能可贵。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>晋人归楚公子谷臣，与连尹襄老之尸于楚，以求知罃。于是荀首佐中军矣，故楚人许之。</p><p>王送知罃，曰：“子其怨我乎？”对曰：“二国治戎，臣不才，不胜其任，以为俘馘。执事不以衅鼓，使归即戮，君之惠也。臣实不才，又谁敢怨？”王曰：“然则德我乎？”对曰：“二国图其社稷，而求纾其民，各惩其忿，以相宥也，两释累囚，以成其好。二国有好，臣不与及，其谁敢德？”王曰：“子归何以报我？”对曰：“臣不任受怨，君亦不任受德。无怨无德，不知所报。”王曰：“虽然，必告不谷。”对曰：“以君之灵，累臣得归骨于晋，寡君之以为戮，死且不朽。若从君之惠而免之，以赐君之外臣首；首其请于寡君，而以戮于宗，亦死且不朽。若不获命，而使嗣宗职，次及于事，而帅偏师以脩封疆，虽遇执事，其弗敢违。其竭力致死，无有二心，以尽臣礼。所以报也！王曰：“晋未可与争。”</p><p>重为之礼而归之。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>晋人把楚国公子谷臣和连尹襄老的尸首归还给楚国，以此要求交换知罃。当时荀首已经是中军副帅，所以楚人答应了。<br>楚王送别知罃，说：“您恐怕怨恨我吧！”知罃回答说：“两国兴兵，下臣没有才能，不能胜任自己的任务，所以做了俘虏。君王的左右没有用我的血来祭鼓，而让我回国去接受诛戮，这是君王的恩惠啊。下臣实在没有才能，又敢怨恨谁？”楚王说：“那么感激我吗？”知罃回答说：“两国为自己的国家打算，希望让百姓得到平安，各自抑止自己的愤怒，来互相原谅，两边都释放被俘的囚犯，以结成友好。两国友好，下臣不曾与谋，又敢感激谁？”楚王说：“您回去，用什么报答我？”知罃回答说：“下臣无所怨恨，君王也不受恩德，没有怨恨，没有恩德，就不知道该报答什么。”楚王说：“尽管这样，还是一定要把您的想法告诉我。”知罃回答说：“以君王的福佑，被囚的下臣能够带着这把骨头回到晋国，寡君如果加以诛戮，死了将很光荣。如果由于君王的恩惠而赦免下臣，把下臣赐给您的外臣荀首，荀首向寡君请求，而把下臣在自己的宗庙里诛戮，也死而不朽。如果得不到寡君诛戮的命令而让我继承宗族的世职，按次序承担晋国的政事，率领部分军队来治理边疆，即使碰到君王的文武官员，我也不会躲避，只有竭尽全力到贡献自己的生命，没有别的念头，以尽到为臣的职责，这就是我用来报答君王的。”楚共王说：“晋国是不能与之相斗争的。”<br>于是就对他重加礼遇而放他回去。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>归：送还。公子谷臣：楚庄王的儿子。连尹襄老：连尹是楚国官名，襄老是楚国的大臣。连尹、楚国主射之官。<br>求：索取。<br>于是：在这个时候。佐中军；担任中军副帅。<br>知罃（yīng）：字子羽，亦称荀罃，是晋大夫荀息的后裔，晋悼公时中军帅。<br>治戎：治兵，演习军队。这里的意思是交战。<br>馘（guó）：割下敌方战死者的左耳（用来报功）。这里与“俘”连用，指俘虏。<br>鼓：取血涂鼓，意思是处死。<br>即戮（lù）：接受杀戮。<br>惩：戒，克制。忿：怨恨。<br>宥（yòu）；宽恕，原谅。<br>与及：参与其中，相干。<br>任：担当<br>外臣：外邦之臣。臣子对别国君主称外臣。<br>宗：宗庙。<br>不获命：没有获得国君允许杀戮的命令。<br>宗职：祖宗世袭的职位。<br>偏师：副帅、副将所属的军队，非主力军队。<br>致死：献出生命。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文出自《左传·成公三年》。楚共王对知罃的句句逼问，知罃都巧妙回答。楚共王因此感叹“晋未可与争”，以隆重的礼仪送知罃归晋。知罃的对答也表现了他忠君爱国、对楚不卑不亢，精神难能可贵。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

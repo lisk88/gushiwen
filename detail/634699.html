@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>应科目时与人书 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>应科目时与人书 - 韩愈 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="应科目时与人书是唐朝诗人韩愈的经典作品。本页面提供应科目时与人书的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="应科目时与人书,韩愈,唐朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="应科目时与人书 - 韩愈 - 唐朝古诗文">
+    <meta property="og:description" content="应科目时与人书是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="应科目时与人书 - 韩愈 - 唐朝古诗文">
+    <meta name="twitter:description" content="应科目时与人书是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "应科目时与人书",
+      "author": {
+        "@type": "Person",
+        "name": "韩愈"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "应科目时与人书是唐朝诗人韩愈的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">应科目时与人书</h1>
-            <div class="poem-author">【唐】韩愈</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">韩愈</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>月日，愈再拜：</p><p>天池之滨，大江之濆，曰有怪物焉，盖非常鳞凡介之品汇匹俦也。其得水，变化风雨，上下于天不难也；其不及水，盖寻常尺寸之间耳。无高山大陵旷途绝险为之关隔世，然其穷涸不能自致乎水，为㺍獭之笑者，盖十八九矣。如有力者哀其穷而运转之，盖一举手一投足之劳也。然是物也，负其异于众也，且曰烂死于沙泥，吾宁乐之？若俯首帖耳摇尾而乞怜者，非我之志也。是以有力者遇之，熟视之若无睹也。其死其生，固不可知也。今又有有力者当其前矣，聊试仰首一鸣号焉。庸讵知有力者不哀其穷，而忘一举手一投足之劳而转之清波乎？其哀之，命也；其不哀之，命也；知其在命而且鸣号之者，亦命也。愈今者实有类于是，是以忘其疏愚之罪，而有是说焉。阁下其亦怜察之！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>某月某日，韩愈再拜（书信用语，表示自谦）：<br>天池的边上，大江的水边，传说：有怪物存在，大概不是平常鱼类水兽等动物可以比得上的。它得了水，就能呼风唤雨，上天下地都很容易。如果得不到水，也就是寻常所见的那种形状，不用广阔险峻的高山土丘就能把它困住。然而它在没有水的时候，不能自己造出水来。它们十次有八九次被獱獭（一般的水兽）之流嘲笑。如果碰到有力量的人，可怜它们的窘境而把它们运输转移（到有水的地方），只不过是举手之劳。但是这种怪物，报负和一般东西不同，它会说：“就算烂死在沙泥里，我也高兴。如果俯首帖耳，摇尾乞怜，不是我的志向。”因此有能力帮它的人遇到他们，熟视无睹，就像没看见一般。他的死活，我们也无从知道了。<br>如今又有一个有能力的人走到它的面前，姑且试着抬头鸣叫一声（因为有能力的人已经对他们习惯而视而不见了），哪里知道有能力的人不可怜它的窘境，而忘记了举手之劳，把它转移到水里边？别人可怜它，是它的命。别人不可怜它，也是它的命。知道生死有命还鸣号求助的，也是它的命。我（韩愈）如今确实有点类似于它，所以不顾自己的浅陋，而写下这些话，希望阁下您垂怜并理解我！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>应科目时与人书：本文为贞元九年（公元793年）韩愈参加博学宏词科考试时写给别人的求荐信。<br>濆（fén）：水边。<br>常鳞凡介（cháng lín fán jiè）：解释一般的鱼类、贝类。比喻平凡的人。<br>品汇匹俦：指同一类东西。<br>獱（biān）獭：水獭，半水栖动物。<br>於（yú）：多作为介词，是古汉语中用的很多的虚词。<br>庸讵：通“岂、怎么、何以”。<br>忘：通“无、没有”。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《应科目时与人书》作于贞元九年（公元793年）。韩愈以进士出身参加博学宏词科考试时写给韦舍人的信，目的是希望能帮他做些宣传，以扩大影响。但并不直言其事，而是通过生动的比喻，巧妙地把自己的处境、心性、要求和对方的身份、作用，深刻具体地表现了出来。行文气势磅薄，曲折多变；态度不卑不亢，很有分寸。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>月日，愈再拜：</p><p>天池之滨，大江之濆，曰有怪物焉，盖非常鳞凡介之品汇匹俦也。其得水，变化风雨，上下于天不难也；其不及水，盖寻常尺寸之间耳。无高山大陵旷途绝险为之关隔世，然其穷涸不能自致乎水，为㺍獭之笑者，盖十八九矣。如有力者哀其穷而运转之，盖一举手一投足之劳也。然是物也，负其异于众也，且曰烂死于沙泥，吾宁乐之？若俯首帖耳摇尾而乞怜者，非我之志也。是以有力者遇之，熟视之若无睹也。其死其生，固不可知也。今又有有力者当其前矣，聊试仰首一鸣号焉。庸讵知有力者不哀其穷，而忘一举手一投足之劳而转之清波乎？其哀之，命也；其不哀之，命也；知其在命而且鸣号之者，亦命也。愈今者实有类于是，是以忘其疏愚之罪，而有是说焉。阁下其亦怜察之！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>某月某日，韩愈再拜（书信用语，表示自谦）：<br>天池的边上，大江的水边，传说：有怪物存在，大概不是平常鱼类水兽等动物可以比得上的。它得了水，就能呼风唤雨，上天下地都很容易。如果得不到水，也就是寻常所见的那种形状，不用广阔险峻的高山土丘就能把它困住。然而它在没有水的时候，不能自己造出水来。它们十次有八九次被獱獭（一般的水兽）之流嘲笑。如果碰到有力量的人，可怜它们的窘境而把它们运输转移（到有水的地方），只不过是举手之劳。但是这种怪物，报负和一般东西不同，它会说：“就算烂死在沙泥里，我也高兴。如果俯首帖耳，摇尾乞怜，不是我的志向。”因此有能力帮它的人遇到他们，熟视无睹，就像没看见一般。他的死活，我们也无从知道了。<br>如今又有一个有能力的人走到它的面前，姑且试着抬头鸣叫一声（因为有能力的人已经对他们习惯而视而不见了），哪里知道有能力的人不可怜它的窘境，而忘记了举手之劳，把它转移到水里边？别人可怜它，是它的命。别人不可怜它，也是它的命。知道生死有命还鸣号求助的，也是它的命。我（韩愈）如今确实有点类似于它，所以不顾自己的浅陋，而写下这些话，希望阁下您垂怜并理解我！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>应科目时与人书：本文为贞元九年（公元793年）韩愈参加博学宏词科考试时写给别人的求荐信。<br>濆（fén）：水边。<br>常鳞凡介（cháng lín fán jiè）：解释一般的鱼类、贝类。比喻平凡的人。<br>品汇匹俦：指同一类东西。<br>獱（biān）獭：水獭，半水栖动物。<br>於（yú）：多作为介词，是古汉语中用的很多的虚词。<br>庸讵：通“岂、怎么、何以”。<br>忘：通“无、没有”。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《应科目时与人书》作于贞元九年（公元793年）。韩愈以进士出身参加博学宏词科考试时写给韦舍人的信，目的是希望能帮他做些宣传，以扩大影响。但并不直言其事，而是通过生动的比喻，巧妙地把自己的处境、心性、要求和对方的身份、作用，深刻具体地表现了出来。行文气势磅薄，曲折多变；态度不卑不亢，很有分寸。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="https://baike.baidu.com/item/%E5%BA%94%E7%A7%91%E7%9B%AE%E6%97%B6%E4%B8%8E%E4%BA%BA%E4%B9%A6/2983996?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

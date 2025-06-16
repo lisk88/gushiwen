@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>国风 · 卫风 · 氓 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>国风 · 卫风 · 氓 - 无名氏 - 秦朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="国风 · 卫风 · 氓是秦朝诗人无名氏的经典作品。本页面提供国风 · 卫风 · 氓的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="国风 · 卫风 · 氓,无名氏,秦朝,古诗文,中学语文,诗词赏析,古典文学,诗">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="国风 · 卫风 · 氓 - 无名氏 - 秦朝古诗文">
+    <meta property="og:description" content="国风 · 卫风 · 氓是秦朝诗人无名氏的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="国风 · 卫风 · 氓 - 无名氏 - 秦朝古诗文">
+    <meta name="twitter:description" content="国风 · 卫风 · 氓是秦朝诗人无名氏的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "国风 · 卫风 · 氓",
+      "author": {
+        "@type": "Person",
+        "name": "无名氏"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "诗",
+      "description": "国风 · 卫风 · 氓是秦朝诗人无名氏的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">国风 · 卫风 · 氓</h1>
-            <div class="poem-author">【秦】无名氏</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【秦】<span itemprop="name">无名氏</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>氓之蚩蚩，抱布贸丝。匪来贸丝，来即我谋。送子涉淇，至于顿丘。匪我愆期，子无良媒。将子无怒，秋以为期。</p><p>乘彼垝垣，以望复关。不见复关，泣涕涟涟。既见复关，载笑载言。尔卜尔筮，体无咎言。以尔车来，以我贿迁。</p><p>桑之未落，其叶沃若。于嗟鸠兮，无食桑葚！于嗟女兮，无与士耽！士之耽兮，犹可说也。女之耽兮，不可说也！</p><p>桑之落矣，其黄而陨。自我徂尔，三岁食贫。淇水汤汤，渐车帷裳。女也不爽，士贰其行。士也罔极，二三其德。</p><p>三岁为妇，靡室劳矣。夙兴夜寐，靡有朝矣。言既遂矣，至于暴矣。兄弟不知，咥其笑矣。静言思之，躬自悼矣。</p><p>及尔偕老，老使我怨。淇则有岸，隰则有泮。总角之宴，言笑晏晏。信誓旦旦，不思其反。反是不思，亦已焉哉！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>憨厚农家小伙子，怀抱布币来买丝。其实不是真买丝，找个机会谈婚事。送郎送过淇水西，到了顿丘情依依。不是我愿误佳期，你无媒人失礼仪。望郎休要发脾气，秋天到了来迎娶。<br>爬上那垛破土墙，遥向复关凝神望。复关远在云雾中，不见情郎泪千行。情郎即从复关来，又说又笑喜洋洋。你去卜卦求神仙，没有凶兆心欢畅。赶着你的车子来，为我搬运好嫁妆。<br>桑树叶子未落时，缀满枝头绿萋萋。嘘嘘那些斑鸠儿，别把桑葚吃嘴里。哎呀年轻姑娘们，别对男人情依依。男人若是恋上你，要丢便丢太容易。女人若是恋男子，要想解脱难挣离。<br>桑树叶子落下了，枯黄憔悴任飘摇。自从嫁到你家来，多年穷苦受煎熬。淇水茫茫送我归，水溅车帷湿又潮。我做妻子没差错，是你男人太奸刁。反覆无常没准则，变心缺德耍花招。<br>婚后多年守妇道，繁重家务不辞劳。起早睡晚不嫌苦，忙里忙外非一朝。谁知家业已成後，渐渐对我施凶暴。兄弟不知我处境，个个见我哈哈笑。静下心来细细想，独自伤神泪暗抛。<br>当年发誓偕白头，如今未老心先忧。淇水滔滔终有岸，沼泽虽宽有尽头。回想少时多欢乐，谈笑之间露温柔。海誓山盟犹在耳，哪料反目竞成仇。莫再回想背盟事，既已终结便罢休！</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>氓：《说文》「氓，民也。」本义为外来的百姓，这里指自彼来此之民，男子之代称。<br>蚩蚩（chīchī）：通「嗤嗤」，笑嘻嘻的样子。一说憨厚、老实的样子。<br>布：布币，即春秋初期所用有柄铲状空首币，泛指财货。此句犹言持钱买丝。<br>贸：交易。<br>「匪来贸丝，来即我谋」句：是说那人并非真来买丝，是找我商量事情来了。所商量的事情就是结婚。匪，通「非」；即，靠近；谋，古音mī，商量。<br>淇：卫国河名。今河南淇河。<br>顿丘：地名。今河南清丰。丘，古读如「欺」。<br>愆（qiān）：过失，过错，这里指延误。<br>「匪我愆期，子无良媒」句：谓并非我要拖延约定的婚期而不肯嫁，是因为你没有找好媒人。<br>将（qiāng）：愿，请。<br>无：通「毋」，不要。<br>乘：登上。<br>垝垣（guǐyuán）：倒塌的墙壁。垝，倒塌；垣，墙壁。<br>复关：卫国地名，指「氓」所居之地。女望男到期来会。他来时一定要经过关门。一说，关，车厢。复关，指返回的车子。<br>「不见复关，泣涕涟涟」句：她初时不见彼氓回到关门来，以为他负约不来了，因而伤心泪下。涕，眼泪；涟涟，涕泪下流貌。<br>载（zài）：动词词头，无义。<br>尔卜尔筮（shì）：烧灼龟甲的裂纹以判吉凶，叫做「卜」。用蓍（shī）草占卦叫做「筮」。<br>体：指龟兆和卦兆，即卜筮的结果。<br>无咎（jiù）言：就是无凶卦。咎，不吉利、灾祸。<br>贿：财物，指嫁妆，妆奁（lián）。<br>「尔卜尔筮，体无咎言。以尔车来，以我贿迁」句：谓你从卜筮看一看吉凶吧，只要卜筮的结果好，你就打发车子来迎娶，并将嫁妆搬去。<br>沃若：犹「沃然」，像水浸润过一样有光泽。<br>「桑之未落，其叶沃若」句：以桑的茂盛时期比自己恋爱满足，生活美好的时期。<br>于嗟：本义为表示惊怪、不然、感慨等，此处与嗟皆表感慨。于：通「吁（xū）」。<br>鸠：斑鸠。传说斑鸠吃桑葚过多会醉。<br>耽（dān）：迷恋，沉溺，贪乐太甚。<br>说：通「脱」，解脱。<br>陨（yǔn）：坠落，掉下。这里用黄叶落下比喻女子年老色衰。黄：变黄。<br>其黄而陨：犹《裳裳者华》篇的「芸其黄矣」，芸也是黄色。<br>徂（cú）：往；徂尔：嫁到你家。<br>食贫：过贫穷的生活。<br>汤（shāng）汤：水势浩大的样子。<br>渐（jiān）：浸湿。<br>帷（wéi）裳（cháng）：车旁的布幔。以上两句是说被弃逐後渡淇水而归。<br>爽：差错。<br>「女也不爽，士贰其行」句：说女方没有过失而男方行为不对。<br>罔：无、没有。<br>极：标准、准则。<br>二三其德：在品德上三心二意，言行为前後不一致。<br>靡室劳矣：言所有的家庭劳作一身担负无余。<br>室劳：家务劳动。<br>靡：无。<br>「夙兴夜寐，靡有朝矣」句：就是说起早睡迟，朝朝如此，不能计算了。夙，早；兴，起来。<br>言：语助词，无义。<br>既遂：就是《谷风》篇「既生既育」的意思，言愿望既然已经实现。<br>咥（xì）：笑的样子。<br>「兄弟不知，咥其笑矣」句：谓兄弟还不晓得我的遭遇，见面时都讥笑我啊。<br>静言思之：静下心来好好地想一想，言，音节助词，无实义。<br>躬自悼矣：自身独自伤心。躬，自身；悼，伤心。<br>「及尔偕老，老使我怨」句：当初曾相约和你一同过到老，偕老之说徒然使我怨恨罢了。<br>隰（xí）：低湿的地方；当作「湿」，水名，就是漯河，黄河的支流，流经卫国境内。<br>泮（pàn）：通「畔」，水边，边岸。<br>「淇则有岸，隰则有泮」句：承上文，以水流必有畔岸，喻凡事都有边际，而自己愁思无尽。言外之意，如果和这样的男人偕老，那就苦海无边了。<br>总角：古代男女未成年时把头发扎成丫髻，称总角。这里指代少年时代。宴：快乐。<br>晏晏（yàn）：欢乐，和悦的样子。<br>旦旦：诚恳的样子。<br>不思其反：不曾想过会违背誓言。反，即「返」字。<br>反是不思：违反这些。是，指示代词，指代誓言。是重复上句的意思，变换句法为的是和下句叶韵。<br>已：了结，终止。<br>焉哉（古读zī）：语气词连用，加强语气，表示感叹。末句等于说撇开算了罢！</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《国风·卫风·氓》是中国古代第一部诗歌总集《诗经》中的一首诗。这是一首弃妇自诉婚姻悲剧的长诗。诗中的女主人公以无比沉痛的口气，回忆了恋爱生活的甜蜜，以及婚後被丈夫虐待和遗弃的痛苦。全诗六章，每章十句。第一章，追叙自己由初恋而定的婚；第二章，叙述自己陷入情网，冲破了媒妁之言的桎梏而与氓结婚；第三章，她对一群年青貌美的天真少女，现身说法地规劝她们不要沉醉于爱情，并指出男女不平等的现象；第四章，对氓的负心表示怨恨，她指出，这不是女人的差错，而是氓的反复无常；第五章，接着追叙她婚後的操劳、被虐和兄弟的讥笑而自伤不幸；第六章，叙述幼年彼此的友爱和今日的乖离，斥责氓的虚伪和欺骗，坚决表示和氓在感情上一刀两断。此诗通过弃妇的自述，表达了她悔恨的心情与决绝的态度，深刻地反映了古代社会妇女在恋爱婚姻问题上倍受压迫和摧残的情况。</p></div></div>
+        <article class="poem-content" data-kind="诗" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text text-center" itemprop="text"><p>氓之蚩蚩，抱布贸丝。匪来贸丝，来即我谋。送子涉淇，至于顿丘。匪我愆期，子无良媒。将子无怒，秋以为期。</p><p>乘彼垝垣，以望复关。不见复关，泣涕涟涟。既见复关，载笑载言。尔卜尔筮，体无咎言。以尔车来，以我贿迁。</p><p>桑之未落，其叶沃若。于嗟鸠兮，无食桑葚！于嗟女兮，无与士耽！士之耽兮，犹可说也。女之耽兮，不可说也！</p><p>桑之落矣，其黄而陨。自我徂尔，三岁食贫。淇水汤汤，渐车帷裳。女也不爽，士贰其行。士也罔极，二三其德。</p><p>三岁为妇，靡室劳矣。夙兴夜寐，靡有朝矣。言既遂矣，至于暴矣。兄弟不知，咥其笑矣。静言思之，躬自悼矣。</p><p>及尔偕老，老使我怨。淇则有岸，隰则有泮。总角之宴，言笑晏晏。信誓旦旦，不思其反。反是不思，亦已焉哉！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>憨厚农家小伙子，怀抱布币来买丝。其实不是真买丝，找个机会谈婚事。送郎送过淇水西，到了顿丘情依依。不是我愿误佳期，你无媒人失礼仪。望郎休要发脾气，秋天到了来迎娶。<br>爬上那垛破土墙，遥向复关凝神望。复关远在云雾中，不见情郎泪千行。情郎即从复关来，又说又笑喜洋洋。你去卜卦求神仙，没有凶兆心欢畅。赶着你的车子来，为我搬运好嫁妆。<br>桑树叶子未落时，缀满枝头绿萋萋。嘘嘘那些斑鸠儿，别把桑葚吃嘴里。哎呀年轻姑娘们，别对男人情依依。男人若是恋上你，要丢便丢太容易。女人若是恋男子，要想解脱难挣离。<br>桑树叶子落下了，枯黄憔悴任飘摇。自从嫁到你家来，多年穷苦受煎熬。淇水茫茫送我归，水溅车帷湿又潮。我做妻子没差错，是你男人太奸刁。反覆无常没准则，变心缺德耍花招。<br>婚后多年守妇道，繁重家务不辞劳。起早睡晚不嫌苦，忙里忙外非一朝。谁知家业已成後，渐渐对我施凶暴。兄弟不知我处境，个个见我哈哈笑。静下心来细细想，独自伤神泪暗抛。<br>当年发誓偕白头，如今未老心先忧。淇水滔滔终有岸，沼泽虽宽有尽头。回想少时多欢乐，谈笑之间露温柔。海誓山盟犹在耳，哪料反目竞成仇。莫再回想背盟事，既已终结便罢休！</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>氓：《说文》「氓，民也。」本义为外来的百姓，这里指自彼来此之民，男子之代称。<br>蚩蚩（chīchī）：通「嗤嗤」，笑嘻嘻的样子。一说憨厚、老实的样子。<br>布：布币，即春秋初期所用有柄铲状空首币，泛指财货。此句犹言持钱买丝。<br>贸：交易。<br>「匪来贸丝，来即我谋」句：是说那人并非真来买丝，是找我商量事情来了。所商量的事情就是结婚。匪，通「非」；即，靠近；谋，古音mī，商量。<br>淇：卫国河名。今河南淇河。<br>顿丘：地名。今河南清丰。丘，古读如「欺」。<br>愆（qiān）：过失，过错，这里指延误。<br>「匪我愆期，子无良媒」句：谓并非我要拖延约定的婚期而不肯嫁，是因为你没有找好媒人。<br>将（qiāng）：愿，请。<br>无：通「毋」，不要。<br>乘：登上。<br>垝垣（guǐyuán）：倒塌的墙壁。垝，倒塌；垣，墙壁。<br>复关：卫国地名，指「氓」所居之地。女望男到期来会。他来时一定要经过关门。一说，关，车厢。复关，指返回的车子。<br>「不见复关，泣涕涟涟」句：她初时不见彼氓回到关门来，以为他负约不来了，因而伤心泪下。涕，眼泪；涟涟，涕泪下流貌。<br>载（zài）：动词词头，无义。<br>尔卜尔筮（shì）：烧灼龟甲的裂纹以判吉凶，叫做「卜」。用蓍（shī）草占卦叫做「筮」。<br>体：指龟兆和卦兆，即卜筮的结果。<br>无咎（jiù）言：就是无凶卦。咎，不吉利、灾祸。<br>贿：财物，指嫁妆，妆奁（lián）。<br>「尔卜尔筮，体无咎言。以尔车来，以我贿迁」句：谓你从卜筮看一看吉凶吧，只要卜筮的结果好，你就打发车子来迎娶，并将嫁妆搬去。<br>沃若：犹「沃然」，像水浸润过一样有光泽。<br>「桑之未落，其叶沃若」句：以桑的茂盛时期比自己恋爱满足，生活美好的时期。<br>于嗟：本义为表示惊怪、不然、感慨等，此处与嗟皆表感慨。于：通「吁（xū）」。<br>鸠：斑鸠。传说斑鸠吃桑葚过多会醉。<br>耽（dān）：迷恋，沉溺，贪乐太甚。<br>说：通「脱」，解脱。<br>陨（yǔn）：坠落，掉下。这里用黄叶落下比喻女子年老色衰。黄：变黄。<br>其黄而陨：犹《裳裳者华》篇的「芸其黄矣」，芸也是黄色。<br>徂（cú）：往；徂尔：嫁到你家。<br>食贫：过贫穷的生活。<br>汤（shāng）汤：水势浩大的样子。<br>渐（jiān）：浸湿。<br>帷（wéi）裳（cháng）：车旁的布幔。以上两句是说被弃逐後渡淇水而归。<br>爽：差错。<br>「女也不爽，士贰其行」句：说女方没有过失而男方行为不对。<br>罔：无、没有。<br>极：标准、准则。<br>二三其德：在品德上三心二意，言行为前後不一致。<br>靡室劳矣：言所有的家庭劳作一身担负无余。<br>室劳：家务劳动。<br>靡：无。<br>「夙兴夜寐，靡有朝矣」句：就是说起早睡迟，朝朝如此，不能计算了。夙，早；兴，起来。<br>言：语助词，无义。<br>既遂：就是《谷风》篇「既生既育」的意思，言愿望既然已经实现。<br>咥（xì）：笑的样子。<br>「兄弟不知，咥其笑矣」句：谓兄弟还不晓得我的遭遇，见面时都讥笑我啊。<br>静言思之：静下心来好好地想一想，言，音节助词，无实义。<br>躬自悼矣：自身独自伤心。躬，自身；悼，伤心。<br>「及尔偕老，老使我怨」句：当初曾相约和你一同过到老，偕老之说徒然使我怨恨罢了。<br>隰（xí）：低湿的地方；当作「湿」，水名，就是漯河，黄河的支流，流经卫国境内。<br>泮（pàn）：通「畔」，水边，边岸。<br>「淇则有岸，隰则有泮」句：承上文，以水流必有畔岸，喻凡事都有边际，而自己愁思无尽。言外之意，如果和这样的男人偕老，那就苦海无边了。<br>总角：古代男女未成年时把头发扎成丫髻，称总角。这里指代少年时代。宴：快乐。<br>晏晏（yàn）：欢乐，和悦的样子。<br>旦旦：诚恳的样子。<br>不思其反：不曾想过会违背誓言。反，即「返」字。<br>反是不思：违反这些。是，指示代词，指代誓言。是重复上句的意思，变换句法为的是和下句叶韵。<br>已：了结，终止。<br>焉哉（古读zī）：语气词连用，加强语气，表示感叹。末句等于说撇开算了罢！</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《国风·卫风·氓》是中国古代第一部诗歌总集《诗经》中的一首诗。这是一首弃妇自诉婚姻悲剧的长诗。诗中的女主人公以无比沉痛的口气，回忆了恋爱生活的甜蜜，以及婚後被丈夫虐待和遗弃的痛苦。全诗六章，每章十句。第一章，追叙自己由初恋而定的婚；第二章，叙述自己陷入情网，冲破了媒妁之言的桎梏而与氓结婚；第三章，她对一群年青貌美的天真少女，现身说法地规劝她们不要沉醉于爱情，并指出男女不平等的现象；第四章，对氓的负心表示怨恨，她指出，这不是女人的差错，而是氓的反复无常；第五章，接着追叙她婚後的操劳、被虐和兄弟的讥笑而自伤不幸；第六章，叙述幼年彼此的友爱和今日的乖离，斥责氓的虚伪和欺骗，坚决表示和氓在感情上一刀两断。此诗通过弃妇的自述，表达了她悔恨的心情与决绝的态度，深刻地反映了古代社会妇女在恋爱婚姻问题上倍受压迫和摧残的情况。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -156,7 +187,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/3523412.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

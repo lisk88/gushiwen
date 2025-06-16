@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>论语·雍也篇 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>论语·雍也篇 - 孔子 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="论语·雍也篇是周朝诗人孔子的经典作品。本页面提供论语·雍也篇的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="论语·雍也篇,孔子,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="论语·雍也篇 - 孔子 - 周朝古诗文">
+    <meta property="og:description" content="论语·雍也篇是周朝诗人孔子的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="论语·雍也篇 - 孔子 - 周朝古诗文">
+    <meta name="twitter:description" content="论语·雍也篇是周朝诗人孔子的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "论语·雍也篇",
+      "author": {
+        "@type": "Person",
+        "name": "孔子"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "论语·雍也篇是周朝诗人孔子的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">论语·雍也篇</h1>
-            <div class="poem-author">【周】孔子</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">孔子</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>子曰：“雍也可使南面。”</p><p>仲弓问子桑伯子，子曰：“可也，简。”仲弓曰：“居敬而行简，以临其民，不亦可乎？居简而行简，无乃大简乎？”子曰：“雍之言然。”</p><p>哀公问：“弟子孰为好学？”孔子对曰：“有颜回者好学，不迁怒，不贰过，不幸短命死矣，今也则亡，未闻好学者也。”</p><p>子华使于齐，冉子为其母请粟，子曰：“与之釜。”请益，曰：“与之庾。”冉子与之粟五秉。子曰：“赤之适齐也，乘肥马，衣轻裘。吾闻之也，君子周急不继富。”</p><p>原思为之宰，与之粟九百，辞。子曰：“毋，以与尔邻里乡党乎！”</p><p>子谓仲弓曰：“犁牛之子骍且角，虽欲勿用，山川其舍诸？”</p><p>子曰：“回也，其心三月不违仁，其余则日月至焉而已矣。”</p><p>季康子问：“仲由可使从政也与？”子曰：“由也果，于从政乎何有？”曰：“赐也可使从政也与？”曰：“赐也达，于从政乎何有？”曰：“求也可使从政也与？”曰：“求也艺，于从政乎何有？”</p><p>季氏使闵子骞为费宰，闵子骞曰：“善为我辞焉。如有复我者，则吾必在汶上矣。”</p><p>伯牛有疾，子问之，自牖执其手，曰：“亡之，命矣夫！斯人也而有斯疾也！斯人也而有斯疾也！”</p><p>子曰：“贤哉回也！一箪食，一瓢饮，在陋巷，人不堪其忧，回也不改其乐。贤哉，回也！”</p><p>冉求曰：“非不说子之道，力不足也。”子曰：“力不足者，中道而废，今女画。”</p><p>子谓子夏曰：“女为君子儒，无为小人儒。”</p><p>子游为武城宰，子曰：“女得人焉尔乎？”曰：“有澹台灭明者，行不由径，非公事，未尝至于偃之室也。”</p><p>子曰：“孟之反不伐，奔而殿，将入门，策其马曰：‘非敢后也，马不进也。’”</p><p>子曰：“不有祝鮀之佞，而有宋朝之美，难乎免于今之世矣。”</p><p>子曰：“谁能出不由户？何莫由斯道也？”</p><p>子曰：“质胜文则野，文胜质则史。文质彬彬，然后君子。”</p><p>子曰：“人之生也直，罔之生也幸而免。”</p><p>子曰：“知之者不如好之者；好之者不如乐之者。”</p><p>子曰：“中人以上，可以语上也；中人以下，不可以语上也。”</p><p>樊迟问知，子曰：“务民之义，敬鬼神而远之，可谓知矣。”问仁，曰：“仁者先难而后获，可谓仁矣。”</p><p>子曰：“知者乐水，仁者乐山。知者动，仁者静。知者乐，仁者寿。”</p><p>子曰：“齐一变至于鲁，鲁一变至于道。”</p><p>子曰：“觚不觚，觚哉！觚哉！”</p><p>宰我问曰：“仁者，虽告之曰：‘井有仁焉。’其从之也？”子曰：“何为其然也？君子可逝也，不可陷也；可欺也，不可罔也。”</p><p>子曰：“君子博学于文，约之以礼，亦可以弗畔矣夫。”</p><p>子见南子，子路不说，夫子矢之曰：“予所否者，天厌之！天厌之！”</p><p>子曰：“中庸之为德也，其至矣乎！民鲜久矣。”</p><p>子贡曰：“如有博施于民而能济众，何如？可谓仁乎？”子曰：“何事于仁，必也圣乎！尧、舜其犹病诸！夫仁者，己欲立而立人，己欲达而达人。能近取譬，可谓仁之方也已。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>孔子说：“冉雍这个人，可以让他去做官。”<br>仲弓问孔子：子桑伯子这个人怎么样。孔子说：“此人还可以，办事简要而不烦琐。”仲弓说：“居心恭敬严肃而行事简要，像这样来治理百姓，不是也可以吗？（但是）自己马马虎虎，又以简要的方法办事，这岂不是太简单了吗？”孔子说：“冉雍，这话你说得对。”<br>鲁哀公问孔子：“你的学生中谁是最好学的呢？”孔子回答说：“有一个叫颜回的学生好学，他从不迁怒于别人，也从不重犯同样的过错。不幸短命死了。现在没有那样的人了，没有听说谁是好学的。”<br>子华出使齐国，冉求替他的母亲向孔子请求补助一些谷米。孔子说：“给他六斗四升。”冉求请求再增加一些。孔子说：“再给他二斗四升。”冉求却给他八十斛。孔子说：“公西赤到齐国去，乘坐着肥马驾的车子，穿着又暖和又轻便的皮袍。我听说过，君子只是周济急需救济的人，而不是周济富人的人。”<br>原思给孔子家当总管，孔子给他俸米九百，原思推辞不要。孔子说：“不要推辞。（如果有多的，）给你的乡亲们吧。”<br>孔子在评论仲弓的时候说：“耕牛产下的牛犊长着红色的毛，角也长得整齐端正，人们虽想不用它做祭品，但山川之神难道会舍弃它吗？”<br>孔子说：“颜回这个人，他的心可以在长时间内不离开仁德，其余的学生则只能在短时间内做到仁而已。”<br>季康子问孔子：“仲由这个人，可以让他管理国家政事吗？”孔子说：“仲由做事果断，对于管理国家政事有什么困难呢？”季康子又问：“端木赐这个人，可以让他管理国家政事吗？”孔子说：“端木赐通达事理，对于管理政事有什么困难呢？“又问：“冉求这个人，可以让他管理国家政事吗？”孔子说：“冉求有才能，对于管理国家政事有什么困难呢？”<br>季氏派人请闵子骞去做费邑的长官，闵子骞（对来请他的人）说：“请你好好替我推辞吧！如果再来召我，那我一定跑到汶水那边去了。”<br>伯牛病了，孔子前去探望他，从窗户外面握着他的手说：“丧失了这个人，这是命里注定的吧！这样的人竟会得这样的病啊，这样的人竟会得这样的病啊！”<br>孔子说：“颜回的品质是多么高尚啊！一箪饭，一瓢水，住在简陋的小屋里，别人都忍受不了这种穷困清苦，颜回却没有改变他好学的乐趣。颜回的品质是多么高尚啊！”<br>冉求说：“我不是不喜欢老师您所讲的道，而是我的能力不够呀。”孔子说：“能力不够是到半路才停下来，现在你是自己给自己划了界限不想前进。”<br>孔子对子夏说：“你要做君子儒，不要做小人儒。”<br>子游做了武城的长官。孔子说：“你在那里是到了人才没有？”。子游回答说：“有一个叫澹台灭明的人，从来不走邪路，没有公事从不到我屋子里来。”<br>孔子说：“孟之反不喜欢夸耀自己。败退的时候，他留在最后掩护全军。快进城门的时候，他鞭打着自己的马说，‘不是我敢于殿后，是马跑得不快。’”<br>孔子说：“如果没有祝鮀那样的口才，只有宋朝的美貌，那在今天的社会上处世立足就比较艰难了。”<br>孔子说：“谁能不经过屋门而走出去呢？为什么没有人走（我所指出的）这条道路呢？”<br>孔子说：“质朴多于文采，就像个乡下人，流于粗俗：文采多于质朴，就流于虚伪、浮夸。只有质朴和文采配合恰当，才是个君子。”<br>孔子说：“一个人的生存是由于正直，而不正直的人也能生存，那只他侥幸地避免了灾祸。”<br>孔子说：“懂得它的人，不如爱好它的人；爱好它的人，又不如以它为乐的人。”<br>孔子说：“具有中等以上才智的人，可以给他讲授高深的学问，在中等水平以下的人，不可以给他讲高深的学问。”<br>樊迟问孔子怎样才算是智，孔子说：“专心致力于（提倡）老百姓应该遵从的道德，尊敬鬼神但要远离它，就可以说是智了。”樊迟又问怎样才是仁，孔子说：“仁人对难做的事，做在人前面，有收获的结果，他得在人后，这可以说是仁了。”<br>孔子说：“聪明人喜爱水，有仁德者喜爱山；聪明人活动，仁德者沉静。聪明人快乐，有仁德者长寿。”<br>孔子说：“齐国一改变，可以达到鲁国这个样子，鲁国一改变，就可以达到先王之道了。”<br>孔子说：“觚不像个觚了，这也算是觚吗？这也算是觚吗？”<br>宰我问道：“对于有仁德的人，别人告诉他井里掉下去一位仁人啦，他会跟着下去吗？”孔子说：“为什么要这样做呢？君子可以到井边去救，却不可以陷入井中；君子可能被欺骗，但不可能被迷惑。”<br>孔子说：“君子广泛地学习古代的文化典籍，又以礼来约束自己，也就可以不离经叛道了。”<br>孔子去见南子，子路不高兴。孔子发誓说：“如果我做什么不正当的事，让上天谴责我吧！让上天谴责我吧！”<br>孔子说：“中庸作为一种道德，该是最高的了吧！人们缺少这种道德已经为时很久了。”<br>子贡说：“假若有一个人，他能给老百姓很多好处又能周济大众，怎么样？可以算是仁人了吗？”孔子说：“岂止是仁人，简直是圣人了！就连尧、舜尚且难以做到呢。至于仁人，就是要想自己站得住，也要帮助人家一同站得住；要想自己过得好，也要帮助人家一同过得好。凡事能就近以自己作比，而推己及人，可以说就是实行仁的方法了。”</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>子曰：“雍也可使南面。”</p><p>仲弓问子桑伯子，子曰：“可也，简。”仲弓曰：“居敬而行简，以临其民，不亦可乎？居简而行简，无乃大简乎？”子曰：“雍之言然。”</p><p>哀公问：“弟子孰为好学？”孔子对曰：“有颜回者好学，不迁怒，不贰过，不幸短命死矣，今也则亡，未闻好学者也。”</p><p>子华使于齐，冉子为其母请粟，子曰：“与之釜。”请益，曰：“与之庾。”冉子与之粟五秉。子曰：“赤之适齐也，乘肥马，衣轻裘。吾闻之也，君子周急不继富。”</p><p>原思为之宰，与之粟九百，辞。子曰：“毋，以与尔邻里乡党乎！”</p><p>子谓仲弓曰：“犁牛之子骍且角，虽欲勿用，山川其舍诸？”</p><p>子曰：“回也，其心三月不违仁，其余则日月至焉而已矣。”</p><p>季康子问：“仲由可使从政也与？”子曰：“由也果，于从政乎何有？”曰：“赐也可使从政也与？”曰：“赐也达，于从政乎何有？”曰：“求也可使从政也与？”曰：“求也艺，于从政乎何有？”</p><p>季氏使闵子骞为费宰，闵子骞曰：“善为我辞焉。如有复我者，则吾必在汶上矣。”</p><p>伯牛有疾，子问之，自牖执其手，曰：“亡之，命矣夫！斯人也而有斯疾也！斯人也而有斯疾也！”</p><p>子曰：“贤哉回也！一箪食，一瓢饮，在陋巷，人不堪其忧，回也不改其乐。贤哉，回也！”</p><p>冉求曰：“非不说子之道，力不足也。”子曰：“力不足者，中道而废，今女画。”</p><p>子谓子夏曰：“女为君子儒，无为小人儒。”</p><p>子游为武城宰，子曰：“女得人焉尔乎？”曰：“有澹台灭明者，行不由径，非公事，未尝至于偃之室也。”</p><p>子曰：“孟之反不伐，奔而殿，将入门，策其马曰：‘非敢后也，马不进也。’”</p><p>子曰：“不有祝鮀之佞，而有宋朝之美，难乎免于今之世矣。”</p><p>子曰：“谁能出不由户？何莫由斯道也？”</p><p>子曰：“质胜文则野，文胜质则史。文质彬彬，然后君子。”</p><p>子曰：“人之生也直，罔之生也幸而免。”</p><p>子曰：“知之者不如好之者；好之者不如乐之者。”</p><p>子曰：“中人以上，可以语上也；中人以下，不可以语上也。”</p><p>樊迟问知，子曰：“务民之义，敬鬼神而远之，可谓知矣。”问仁，曰：“仁者先难而后获，可谓仁矣。”</p><p>子曰：“知者乐水，仁者乐山。知者动，仁者静。知者乐，仁者寿。”</p><p>子曰：“齐一变至于鲁，鲁一变至于道。”</p><p>子曰：“觚不觚，觚哉！觚哉！”</p><p>宰我问曰：“仁者，虽告之曰：‘井有仁焉。’其从之也？”子曰：“何为其然也？君子可逝也，不可陷也；可欺也，不可罔也。”</p><p>子曰：“君子博学于文，约之以礼，亦可以弗畔矣夫。”</p><p>子见南子，子路不说，夫子矢之曰：“予所否者，天厌之！天厌之！”</p><p>子曰：“中庸之为德也，其至矣乎！民鲜久矣。”</p><p>子贡曰：“如有博施于民而能济众，何如？可谓仁乎？”子曰：“何事于仁，必也圣乎！尧、舜其犹病诸！夫仁者，己欲立而立人，己欲达而达人。能近取譬，可谓仁之方也已。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>孔子说：“冉雍这个人，可以让他去做官。”<br>仲弓问孔子：子桑伯子这个人怎么样。孔子说：“此人还可以，办事简要而不烦琐。”仲弓说：“居心恭敬严肃而行事简要，像这样来治理百姓，不是也可以吗？（但是）自己马马虎虎，又以简要的方法办事，这岂不是太简单了吗？”孔子说：“冉雍，这话你说得对。”<br>鲁哀公问孔子：“你的学生中谁是最好学的呢？”孔子回答说：“有一个叫颜回的学生好学，他从不迁怒于别人，也从不重犯同样的过错。不幸短命死了。现在没有那样的人了，没有听说谁是好学的。”<br>子华出使齐国，冉求替他的母亲向孔子请求补助一些谷米。孔子说：“给他六斗四升。”冉求请求再增加一些。孔子说：“再给他二斗四升。”冉求却给他八十斛。孔子说：“公西赤到齐国去，乘坐着肥马驾的车子，穿着又暖和又轻便的皮袍。我听说过，君子只是周济急需救济的人，而不是周济富人的人。”<br>原思给孔子家当总管，孔子给他俸米九百，原思推辞不要。孔子说：“不要推辞。（如果有多的，）给你的乡亲们吧。”<br>孔子在评论仲弓的时候说：“耕牛产下的牛犊长着红色的毛，角也长得整齐端正，人们虽想不用它做祭品，但山川之神难道会舍弃它吗？”<br>孔子说：“颜回这个人，他的心可以在长时间内不离开仁德，其余的学生则只能在短时间内做到仁而已。”<br>季康子问孔子：“仲由这个人，可以让他管理国家政事吗？”孔子说：“仲由做事果断，对于管理国家政事有什么困难呢？”季康子又问：“端木赐这个人，可以让他管理国家政事吗？”孔子说：“端木赐通达事理，对于管理政事有什么困难呢？“又问：“冉求这个人，可以让他管理国家政事吗？”孔子说：“冉求有才能，对于管理国家政事有什么困难呢？”<br>季氏派人请闵子骞去做费邑的长官，闵子骞（对来请他的人）说：“请你好好替我推辞吧！如果再来召我，那我一定跑到汶水那边去了。”<br>伯牛病了，孔子前去探望他，从窗户外面握着他的手说：“丧失了这个人，这是命里注定的吧！这样的人竟会得这样的病啊，这样的人竟会得这样的病啊！”<br>孔子说：“颜回的品质是多么高尚啊！一箪饭，一瓢水，住在简陋的小屋里，别人都忍受不了这种穷困清苦，颜回却没有改变他好学的乐趣。颜回的品质是多么高尚啊！”<br>冉求说：“我不是不喜欢老师您所讲的道，而是我的能力不够呀。”孔子说：“能力不够是到半路才停下来，现在你是自己给自己划了界限不想前进。”<br>孔子对子夏说：“你要做君子儒，不要做小人儒。”<br>子游做了武城的长官。孔子说：“你在那里是到了人才没有？”。子游回答说：“有一个叫澹台灭明的人，从来不走邪路，没有公事从不到我屋子里来。”<br>孔子说：“孟之反不喜欢夸耀自己。败退的时候，他留在最后掩护全军。快进城门的时候，他鞭打着自己的马说，‘不是我敢于殿后，是马跑得不快。’”<br>孔子说：“如果没有祝鮀那样的口才，只有宋朝的美貌，那在今天的社会上处世立足就比较艰难了。”<br>孔子说：“谁能不经过屋门而走出去呢？为什么没有人走（我所指出的）这条道路呢？”<br>孔子说：“质朴多于文采，就像个乡下人，流于粗俗：文采多于质朴，就流于虚伪、浮夸。只有质朴和文采配合恰当，才是个君子。”<br>孔子说：“一个人的生存是由于正直，而不正直的人也能生存，那只他侥幸地避免了灾祸。”<br>孔子说：“懂得它的人，不如爱好它的人；爱好它的人，又不如以它为乐的人。”<br>孔子说：“具有中等以上才智的人，可以给他讲授高深的学问，在中等水平以下的人，不可以给他讲高深的学问。”<br>樊迟问孔子怎样才算是智，孔子说：“专心致力于（提倡）老百姓应该遵从的道德，尊敬鬼神但要远离它，就可以说是智了。”樊迟又问怎样才是仁，孔子说：“仁人对难做的事，做在人前面，有收获的结果，他得在人后，这可以说是仁了。”<br>孔子说：“聪明人喜爱水，有仁德者喜爱山；聪明人活动，仁德者沉静。聪明人快乐，有仁德者长寿。”<br>孔子说：“齐国一改变，可以达到鲁国这个样子，鲁国一改变，就可以达到先王之道了。”<br>孔子说：“觚不像个觚了，这也算是觚吗？这也算是觚吗？”<br>宰我问道：“对于有仁德的人，别人告诉他井里掉下去一位仁人啦，他会跟着下去吗？”孔子说：“为什么要这样做呢？君子可以到井边去救，却不可以陷入井中；君子可能被欺骗，但不可能被迷惑。”<br>孔子说：“君子广泛地学习古代的文化典籍，又以礼来约束自己，也就可以不离经叛道了。”<br>孔子去见南子，子路不高兴。孔子发誓说：“如果我做什么不正当的事，让上天谴责我吧！让上天谴责我吧！”<br>孔子说：“中庸作为一种道德，该是最高的了吧！人们缺少这种道德已经为时很久了。”<br>子贡说：“假若有一个人，他能给老百姓很多好处又能周济大众，怎么样？可以算是仁人了吗？”孔子说：“岂止是仁人，简直是圣人了！就连尧、舜尚且难以做到呢。至于仁人，就是要想自己站得住，也要帮助人家一同站得住；要想自己过得好，也要帮助人家一同过得好。凡事能就近以自己作比，而推己及人，可以说就是实行仁的方法了。”</p></div></div>
             
             
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

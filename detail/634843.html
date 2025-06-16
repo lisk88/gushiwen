@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>原毁 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>原毁 - 韩愈 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="原毁是唐朝诗人韩愈的经典作品。本页面提供原毁的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="原毁,韩愈,唐朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="原毁 - 韩愈 - 唐朝古诗文">
+    <meta property="og:description" content="原毁是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="原毁 - 韩愈 - 唐朝古诗文">
+    <meta name="twitter:description" content="原毁是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "原毁",
+      "author": {
+        "@type": "Person",
+        "name": "韩愈"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "原毁是唐朝诗人韩愈的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">原毁</h1>
-            <div class="poem-author">【唐】韩愈</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">韩愈</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>古之君子，其责己也重以周，其待人也轻以约。重以周，故不怠；轻以约，故人乐为善。闻古之人有舜者，其为人也，仁义人也。求其所以为舜者，责于己曰：「彼人也，予人也，彼能是，而我乃不能是。」早夜以思，去其不如舜者，就其如舜者。闻古之人有周公者，其为人也，多才与艺人也。求其所以为周公者，责于己曰：「彼人也，予人也，彼能是，而我乃不能是。」早夜以思，去其不如周公者，就其如周公者。舜，大圣人也，后世无及焉；周公，大圣人也，后世无及焉。是人也，乃曰：「不如舜，不如周公，吾之病也。」是不亦责于身者重以周乎！其于人也，曰：「彼人也，能有是，是足为良人矣；能善是，是足为艺人矣。」取其一，不责其二；即其新，不究其旧，恐恐然惟惧其人之不得为善之利。一善易修也，一艺易能也，其于人也，乃曰：「能有是，是亦足矣。」曰：「能善是，是亦足矣。」不亦待于人者轻以约乎！</p><p>今之君子则不然，其责人也详，其待己也廉。详，故人难于为善；廉，故自取也少。己未有善，曰：「我善是，是亦足矣。」己未有能，曰：「我能是，是亦足矣。」外以欺于人，内以欺于心，未少有得而止矣。不亦待其身者已廉乎。其于人也，曰：「彼虽能是，其人不足称也；彼虽善是，其用不足称也。」举其一，不计其十；究其旧，不图其新，恐恐然惟惧其人之有闻也。是不亦责于人者已详乎！夫是之谓不以众人待其身，而以圣人望于人，吾未见其尊己也。虽然，为是者，有本有原，怠与忌之谓也。怠者不能修，而忌者畏人修。吾常试之矣，常试语于众曰：「某良士。某良士。」其应者必其人之与也；不然，则其所疏远不与同其利者也；不然，则其畏也。不若是，强者必怒于言，懦者必怒于色矣。又尝语于众曰：「某非良士。某非良士。」其不应者，必其人之与也；不然，则其所疏远不与同其利者也；不然。则其畏也。不若是，强者必说于言，懦者必说于色矣。是故事修而谤兴，德高而毁来。</p><p>呜呼！士之处此世，而望名誉之光、道德之行，难已！将有作于上者，得吾说而存之，其国家可几而理欤！</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>古代的君子，他要求自己严格而周密，他要求别人宽容而简约。严格而周密，所以不懈怠地进行道德修养；宽容而简少，所以人们乐于做好事。<br>听说古人中有个叫舜的，他的为人，是个仁义的人；寻求舜所以成为舜的道理，君子对自己要求说：「他是人，我也是人；他能做到这样，而我竟然不能做到这样！」早晨晚上都在思考，去掉那些不如舜的地方，仿效那些与舜相同的地方。听说古人中有个叫周公的，他的为人，是个多才多艺的人；寻求周公所以为周公的道理，对自己要求：「他，是人，我也是人；他能够这样，而我却不能这样！」早晨晚上都在思考，去掉那些不如周公的地方，仿效那些像周公的地方。<br>舜，是大圣人，后世没有人能赶上他的。周公，是大圣人，后世（也）没有人能赶上他的；这人就说：「不如舜，不如周公，这是我的缺点。」这不就是对自己要求严格而全面吗？<br>他对别人呢，就说：「那个人，能有这些优点，这就够得称上是一个善良的人了；能擅长这些事，这就够得称上是一个有才艺的人了。」肯定他一个方面，而不苛求他别的方面；就他的现在表现看，不追究他的过去，提心吊胆地只怕那个人得不到做好事的益处。一件好事容易做到，一种技艺容易学会，（但）他对别人，却说：「能有这些，这就够了。」（又）说：「能擅长这些，这就够了。」（这）不就是要求别人宽容而减少吗？<br>现在的君子却不是这样，他要求别人全面，要求自己却很少。（对人要求）全面了，所以人们很难做好事；（对自己要求）少，所以自己的收获就少。自己没有什么优点，（却）说：「我有这点优点，这也就够了。」自己没有什么才能，（却）说：「我有这点技能，这也就够了。」对外欺骗别人，对内欺骗自己的良心，还没有一点收获就停止了，不也是要求自己的太低了吗？<br>他对别人，（就）说：「他虽然才能这样，（但）他的为人不值得称赞。他虽然擅长这些，（但）他的本领不值得称赞。」举出他的一点（进行批评），不考虑他其馀的十点（怎样），追究他过去（的错误），不考虑他的现在表现，提心吊胆地只怕他人有了名望，这不也是要求别人太全面了吗？<br>这就叫做不用一般人的标准要求自己，却用圣人那样高的标准要求别人，我看不出他是在尊重自己。<br>虽然如此，这样做的人有他的思想根源，那就是懒惰和嫉妒。懒惰的人不能修养品行，而嫉妒别人的人害怕别人进步。我不止一次的试验过，曾经试着对众人说：「某某是个好人，某某是个好人。」那些附和的人，一定是那个人的朋友；要不，就是他不接近的人，不同他有利害关系的人；要不，就是害怕他的人。如果不是这样，强硬的人一定毫不客气地说出反对的话，懦弱的人一定会从脸上表露出反对的颜色。又曾经对众人说：「某某不是好人，某某不是好人。」那些不附和的人，一定是那人的朋友；要不，就是他不接近的人，不和他有利害关系的人；要不，就是害怕他的人。如果不是这样，强硬的人一定会高兴地说出表示赞成的话，懦弱的人一定会从脸上表露出高兴的颜色。所以，事情办好了，诽谤也就跟着来了，声望提高了，诬蔑也随着来了。唉！读书人处在这个世上，希望名誉昭著，道德畅行，真难了。<br>身居高位而将要有作为的人，如果得到我所说的这些道理而牢记住它，大概他的国家差不多就可以治理好了吧。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>原：推究、探究。<br>君子：指旧时贵族阶级士大夫。<br>责：要求。<br>彼：指舜。<br>予：同「余」，我。<br>去：离开、抛弃。<br>就：走向、择取。<br>是人：指上古之君子。<br>良人：善良的人。<br>艺人：多才多艺的人。<br>详：周备、全面。<br>廉：狭窄、范围小。<br>少：稍微。<br>已：太。<br>用：作用，指才能。<br>闻：名声、声望。<br>众人：一般人。<br>望：期待、要求。<br>虽然：虽然这样。<br>尝：曾经。<br>语：告诉。<br>应：响应、附和。<br>与：党与、朋友。<br>畏：畏惧，指害怕他的人。<br>修：善、美好。<br>光：光大、昭著。<br>有作于上：在上位有所作为。<br>存：记住。<br>几：庶几、差不多。<br>理：治理。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《原毁》选自《昌黎先生集》，是唐代文学家韩愈创作的一篇古文。此文论述和探究毁谤产生的原因，文章先从正面开导，说明一个人应该如何正确对待自己和对待别人才符合君子之德、君子之风，然后将不合这个准则的行为拿来对照，最后指出其根源及危害性。全篇行文严肃而恳切，句式整齐中有变化，语言生动而形象，刻划当时士风，可谓入木三分。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>古之君子，其责己也重以周，其待人也轻以约。重以周，故不怠；轻以约，故人乐为善。闻古之人有舜者，其为人也，仁义人也。求其所以为舜者，责于己曰：「彼人也，予人也，彼能是，而我乃不能是。」早夜以思，去其不如舜者，就其如舜者。闻古之人有周公者，其为人也，多才与艺人也。求其所以为周公者，责于己曰：「彼人也，予人也，彼能是，而我乃不能是。」早夜以思，去其不如周公者，就其如周公者。舜，大圣人也，后世无及焉；周公，大圣人也，后世无及焉。是人也，乃曰：「不如舜，不如周公，吾之病也。」是不亦责于身者重以周乎！其于人也，曰：「彼人也，能有是，是足为良人矣；能善是，是足为艺人矣。」取其一，不责其二；即其新，不究其旧，恐恐然惟惧其人之不得为善之利。一善易修也，一艺易能也，其于人也，乃曰：「能有是，是亦足矣。」曰：「能善是，是亦足矣。」不亦待于人者轻以约乎！</p><p>今之君子则不然，其责人也详，其待己也廉。详，故人难于为善；廉，故自取也少。己未有善，曰：「我善是，是亦足矣。」己未有能，曰：「我能是，是亦足矣。」外以欺于人，内以欺于心，未少有得而止矣。不亦待其身者已廉乎。其于人也，曰：「彼虽能是，其人不足称也；彼虽善是，其用不足称也。」举其一，不计其十；究其旧，不图其新，恐恐然惟惧其人之有闻也。是不亦责于人者已详乎！夫是之谓不以众人待其身，而以圣人望于人，吾未见其尊己也。虽然，为是者，有本有原，怠与忌之谓也。怠者不能修，而忌者畏人修。吾常试之矣，常试语于众曰：「某良士。某良士。」其应者必其人之与也；不然，则其所疏远不与同其利者也；不然，则其畏也。不若是，强者必怒于言，懦者必怒于色矣。又尝语于众曰：「某非良士。某非良士。」其不应者，必其人之与也；不然，则其所疏远不与同其利者也；不然。则其畏也。不若是，强者必说于言，懦者必说于色矣。是故事修而谤兴，德高而毁来。</p><p>呜呼！士之处此世，而望名誉之光、道德之行，难已！将有作于上者，得吾说而存之，其国家可几而理欤！</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>古代的君子，他要求自己严格而周密，他要求别人宽容而简约。严格而周密，所以不懈怠地进行道德修养；宽容而简少，所以人们乐于做好事。<br>听说古人中有个叫舜的，他的为人，是个仁义的人；寻求舜所以成为舜的道理，君子对自己要求说：「他是人，我也是人；他能做到这样，而我竟然不能做到这样！」早晨晚上都在思考，去掉那些不如舜的地方，仿效那些与舜相同的地方。听说古人中有个叫周公的，他的为人，是个多才多艺的人；寻求周公所以为周公的道理，对自己要求：「他，是人，我也是人；他能够这样，而我却不能这样！」早晨晚上都在思考，去掉那些不如周公的地方，仿效那些像周公的地方。<br>舜，是大圣人，后世没有人能赶上他的。周公，是大圣人，后世（也）没有人能赶上他的；这人就说：「不如舜，不如周公，这是我的缺点。」这不就是对自己要求严格而全面吗？<br>他对别人呢，就说：「那个人，能有这些优点，这就够得称上是一个善良的人了；能擅长这些事，这就够得称上是一个有才艺的人了。」肯定他一个方面，而不苛求他别的方面；就他的现在表现看，不追究他的过去，提心吊胆地只怕那个人得不到做好事的益处。一件好事容易做到，一种技艺容易学会，（但）他对别人，却说：「能有这些，这就够了。」（又）说：「能擅长这些，这就够了。」（这）不就是要求别人宽容而减少吗？<br>现在的君子却不是这样，他要求别人全面，要求自己却很少。（对人要求）全面了，所以人们很难做好事；（对自己要求）少，所以自己的收获就少。自己没有什么优点，（却）说：「我有这点优点，这也就够了。」自己没有什么才能，（却）说：「我有这点技能，这也就够了。」对外欺骗别人，对内欺骗自己的良心，还没有一点收获就停止了，不也是要求自己的太低了吗？<br>他对别人，（就）说：「他虽然才能这样，（但）他的为人不值得称赞。他虽然擅长这些，（但）他的本领不值得称赞。」举出他的一点（进行批评），不考虑他其馀的十点（怎样），追究他过去（的错误），不考虑他的现在表现，提心吊胆地只怕他人有了名望，这不也是要求别人太全面了吗？<br>这就叫做不用一般人的标准要求自己，却用圣人那样高的标准要求别人，我看不出他是在尊重自己。<br>虽然如此，这样做的人有他的思想根源，那就是懒惰和嫉妒。懒惰的人不能修养品行，而嫉妒别人的人害怕别人进步。我不止一次的试验过，曾经试着对众人说：「某某是个好人，某某是个好人。」那些附和的人，一定是那个人的朋友；要不，就是他不接近的人，不同他有利害关系的人；要不，就是害怕他的人。如果不是这样，强硬的人一定毫不客气地说出反对的话，懦弱的人一定会从脸上表露出反对的颜色。又曾经对众人说：「某某不是好人，某某不是好人。」那些不附和的人，一定是那人的朋友；要不，就是他不接近的人，不和他有利害关系的人；要不，就是害怕他的人。如果不是这样，强硬的人一定会高兴地说出表示赞成的话，懦弱的人一定会从脸上表露出高兴的颜色。所以，事情办好了，诽谤也就跟着来了，声望提高了，诬蔑也随着来了。唉！读书人处在这个世上，希望名誉昭著，道德畅行，真难了。<br>身居高位而将要有作为的人，如果得到我所说的这些道理而牢记住它，大概他的国家差不多就可以治理好了吧。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>原：推究、探究。<br>君子：指旧时贵族阶级士大夫。<br>责：要求。<br>彼：指舜。<br>予：同「余」，我。<br>去：离开、抛弃。<br>就：走向、择取。<br>是人：指上古之君子。<br>良人：善良的人。<br>艺人：多才多艺的人。<br>详：周备、全面。<br>廉：狭窄、范围小。<br>少：稍微。<br>已：太。<br>用：作用，指才能。<br>闻：名声、声望。<br>众人：一般人。<br>望：期待、要求。<br>虽然：虽然这样。<br>尝：曾经。<br>语：告诉。<br>应：响应、附和。<br>与：党与、朋友。<br>畏：畏惧，指害怕他的人。<br>修：善、美好。<br>光：光大、昭著。<br>有作于上：在上位有所作为。<br>存：记住。<br>几：庶几、差不多。<br>理：治理。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《原毁》选自《昌黎先生集》，是唐代文学家韩愈创作的一篇古文。此文论述和探究毁谤产生的原因，文章先从正面开导，说明一个人应该如何正确对待自己和对待别人才符合君子之德、君子之风，然后将不合这个准则的行为拿来对照，最后指出其根源及危害性。全篇行文严肃而恳切，句式整齐中有变化，语言生动而形象，刻划当时士风，可谓入木三分。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -145,7 +176,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/item/原毁" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

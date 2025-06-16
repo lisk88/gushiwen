@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>曹刿论战 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>曹刿论战 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="曹刿论战是周朝诗人左丘明的经典作品。本页面提供曹刿论战的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="曹刿论战,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="曹刿论战 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="曹刿论战是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="曹刿论战 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="曹刿论战是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "曹刿论战",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "曹刿论战是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">曹刿论战</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>十年春，齐师伐我。公将战，曹刿请见。其乡人曰：“肉食者谋之，又何间焉？”刿曰：“肉食者鄙，未能远谋。”乃入见。问：“何以战？”公曰：“衣食所安，弗敢专也，必以分人。”对曰：“小惠未遍，民弗从也。”公曰：“牺牲玉帛，弗敢加也，必以信。”对曰：“小信未孚，神弗福也。”公曰：“小大之狱，虽不能察，必以情。”对曰：“忠之属也。可以一战。战则请从。”</p><p>公与之乘，战于长勺。公将鼓之。刿曰：“未可。”齐人三鼓。刿曰：“可矣。”齐师败绩。公将驰之。刿曰：“未可。”下视其辙，登轼而望之，曰：“可矣。”遂逐齐师。</p><p>既克，公问其故。对曰：“夫战，勇气也。一鼓作气，再而衰，三而竭。彼竭我盈，故克之。夫大国，难测也，惧有伏焉。吾视其辙乱，望其旗靡，故逐之。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>鲁庄公十年的春天，齐国军队攻打鲁国。鲁庄公将要迎战。曹刿请求拜见鲁庄公。他的同乡说：“打仗的事当权者自会谋划，你又何必参与呢？”曹刿说：“当权者目光短浅，不能深谋远虑。”于是入朝去见鲁庄公。曹刿问：“您凭借什么作战？”鲁庄公说：“衣食这一类安身立命的东西，不敢独自享有，一定把它分给身边的大臣。”曹刿回答说：“这些小恩惠不能遍及百姓，百姓是不会听从您的。”鲁庄公说：“祭祀神灵的牛、羊、玉帛之类的用品，我（从来）不敢虚报数目，一定要做到诚实可信。”曹刿说：“这只是小信用，不能让神灵信服，神是不会保佑你的。”鲁庄公说：“大大小小的案件，虽然不能件件都了解得清楚，但一定要处理得合情合理。”曹刿回答说：“这才尽了本职一类的事，可以凭借这个条件打一仗。如果作战，请允许我跟随您一同去。”<br>鲁庄公和他共坐一辆战车，在长勺和齐军作战。鲁庄公将要下令击鼓进军。曹刿说：“现在不行。”等到齐军三次击鼓之后。曹刿说：“可以击鼓进军了。”齐军溃败。鲁庄公又要下令驾车马追逐齐军。曹刿说：“还不行。”说完就下了战车，查看齐军车轮碾出的痕迹，又登上战车，扶着车前横木远望齐军的队形，这才说：“可以追击了。”于是追击齐军。<br>战胜齐军后，鲁庄公问他这样做的原因。曹刿回答说：“作战，是靠敢作敢为毫不畏惧的气概。第一次击鼓能够振作士气。第二次击鼓士兵们的士气就开始低落了，第三次击鼓士兵们的士气就耗尽了。他们的士气已经消失而我军的士气正盛，所以才战胜了他们。像齐国这样的大国，他们的情况是难以推测的，怕他们设下埋伏。我看他们车轮碾过的痕迹散乱，望见他们的旗子倒下了，所以决定追击他们。”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>曹刿（guì）：春秋时鲁国大夫。著名的军事理论家。<br>十年：鲁庄公十年（公元前684年）。<br>齐师：齐国的军队。齐，在今山东省中部。师，军队。<br>伐：攻打。<br>我：指鲁国。《左传》根据鲁史而写，故称鲁国为“我”。<br>公：诸侯的通称，这里指鲁庄公。<br>肉食者：吃肉的人，指当权者。<br>谋：谋议。<br>间（jiàn）：参与。<br>鄙：鄙陋，目光短浅。<br>乃：于是，就。<br>何以战：就是“以何战”，凭借什么作战？以，用，凭，靠。<br>衣食所安，弗敢专也：衣食这类养生的东西，不敢独自享用。安：有“养”的意思。弗：不。专：独自专有，个人专有。<br>必以分人：省略句，省略了"之"，完整的句子是“必以之分人”。一定把它分给别人。以，把。人：指鲁庄公身边的近臣或贵族。<br>遍：一作“徧”，遍及，普遍。<br>牺牲玉帛（bó）：古代祭祀用的祭品。牺牲，祭祀用的猪、牛、羊等。玉，玉器。帛，丝织品。<br>加：虚报夸大。<br>小信未孚（fú）：（这只是）小信用，未能让神灵信服。孚，使人信服。<br>福：名词作动词，赐福，保佑。<br>狱：（诉讼）案件。<br>察：明察。<br>情：实情。<br>忠之属也：这是尽了职分（的事情）。忠，尽力做好分内的事。属，种类。<br>可以一战：就是“可以之一战”，可以凭借这个条件打一仗。可，可以。以，凭借。<br>战则请从：（如果）作战，请允许（我）跟从去。从：随行，跟从。<br>公与之乘：鲁庄公和他共坐一辆战车。之，指曹刿。<br>长勺：鲁国地名，今山东莱芜东北。<br>败绩：军队溃败。<br>驰：驱车追赶。<br>辙（zhé）：车轮碾出的痕迹。<br>轼：古代车厢前做扶手的横木。<br>遂：于是，就。<br>逐：追赶，这里指追击。<br>既克：已经战胜。既，已经。<br>夫战，勇气也：作战，（是靠）敢作敢为毫不畏惧的气概。夫（fú），放在句首，表示将发议论，没有实际意义。<br>一鼓作气：第一次击鼓能振作士气。作，振作。<br>再：第二次。<br>三：第三次。<br>彼竭我盈：他们的勇气已尽，我们的勇气正盛。彼，代词，指齐军方面。盈，充沛，饱满，这里指士气旺盛。<br>难测：难以推测。测，推测，估计。<br>伏：埋伏。<br>靡（mǐ）：倒下。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·庄公十年》。《曹刿论战》记载了发生在公元前684年，齐借口鲁国曾帮助公子纠争夺齐国君位，再次兴兵攻鲁，两军战于长勺。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>十年春，齐师伐我。公将战，曹刿请见。其乡人曰：“肉食者谋之，又何间焉？”刿曰：“肉食者鄙，未能远谋。”乃入见。问：“何以战？”公曰：“衣食所安，弗敢专也，必以分人。”对曰：“小惠未遍，民弗从也。”公曰：“牺牲玉帛，弗敢加也，必以信。”对曰：“小信未孚，神弗福也。”公曰：“小大之狱，虽不能察，必以情。”对曰：“忠之属也。可以一战。战则请从。”</p><p>公与之乘，战于长勺。公将鼓之。刿曰：“未可。”齐人三鼓。刿曰：“可矣。”齐师败绩。公将驰之。刿曰：“未可。”下视其辙，登轼而望之，曰：“可矣。”遂逐齐师。</p><p>既克，公问其故。对曰：“夫战，勇气也。一鼓作气，再而衰，三而竭。彼竭我盈，故克之。夫大国，难测也，惧有伏焉。吾视其辙乱，望其旗靡，故逐之。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>鲁庄公十年的春天，齐国军队攻打鲁国。鲁庄公将要迎战。曹刿请求拜见鲁庄公。他的同乡说：“打仗的事当权者自会谋划，你又何必参与呢？”曹刿说：“当权者目光短浅，不能深谋远虑。”于是入朝去见鲁庄公。曹刿问：“您凭借什么作战？”鲁庄公说：“衣食这一类安身立命的东西，不敢独自享有，一定把它分给身边的大臣。”曹刿回答说：“这些小恩惠不能遍及百姓，百姓是不会听从您的。”鲁庄公说：“祭祀神灵的牛、羊、玉帛之类的用品，我（从来）不敢虚报数目，一定要做到诚实可信。”曹刿说：“这只是小信用，不能让神灵信服，神是不会保佑你的。”鲁庄公说：“大大小小的案件，虽然不能件件都了解得清楚，但一定要处理得合情合理。”曹刿回答说：“这才尽了本职一类的事，可以凭借这个条件打一仗。如果作战，请允许我跟随您一同去。”<br>鲁庄公和他共坐一辆战车，在长勺和齐军作战。鲁庄公将要下令击鼓进军。曹刿说：“现在不行。”等到齐军三次击鼓之后。曹刿说：“可以击鼓进军了。”齐军溃败。鲁庄公又要下令驾车马追逐齐军。曹刿说：“还不行。”说完就下了战车，查看齐军车轮碾出的痕迹，又登上战车，扶着车前横木远望齐军的队形，这才说：“可以追击了。”于是追击齐军。<br>战胜齐军后，鲁庄公问他这样做的原因。曹刿回答说：“作战，是靠敢作敢为毫不畏惧的气概。第一次击鼓能够振作士气。第二次击鼓士兵们的士气就开始低落了，第三次击鼓士兵们的士气就耗尽了。他们的士气已经消失而我军的士气正盛，所以才战胜了他们。像齐国这样的大国，他们的情况是难以推测的，怕他们设下埋伏。我看他们车轮碾过的痕迹散乱，望见他们的旗子倒下了，所以决定追击他们。”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>曹刿（guì）：春秋时鲁国大夫。著名的军事理论家。<br>十年：鲁庄公十年（公元前684年）。<br>齐师：齐国的军队。齐，在今山东省中部。师，军队。<br>伐：攻打。<br>我：指鲁国。《左传》根据鲁史而写，故称鲁国为“我”。<br>公：诸侯的通称，这里指鲁庄公。<br>肉食者：吃肉的人，指当权者。<br>谋：谋议。<br>间（jiàn）：参与。<br>鄙：鄙陋，目光短浅。<br>乃：于是，就。<br>何以战：就是“以何战”，凭借什么作战？以，用，凭，靠。<br>衣食所安，弗敢专也：衣食这类养生的东西，不敢独自享用。安：有“养”的意思。弗：不。专：独自专有，个人专有。<br>必以分人：省略句，省略了"之"，完整的句子是“必以之分人”。一定把它分给别人。以，把。人：指鲁庄公身边的近臣或贵族。<br>遍：一作“徧”，遍及，普遍。<br>牺牲玉帛（bó）：古代祭祀用的祭品。牺牲，祭祀用的猪、牛、羊等。玉，玉器。帛，丝织品。<br>加：虚报夸大。<br>小信未孚（fú）：（这只是）小信用，未能让神灵信服。孚，使人信服。<br>福：名词作动词，赐福，保佑。<br>狱：（诉讼）案件。<br>察：明察。<br>情：实情。<br>忠之属也：这是尽了职分（的事情）。忠，尽力做好分内的事。属，种类。<br>可以一战：就是“可以之一战”，可以凭借这个条件打一仗。可，可以。以，凭借。<br>战则请从：（如果）作战，请允许（我）跟从去。从：随行，跟从。<br>公与之乘：鲁庄公和他共坐一辆战车。之，指曹刿。<br>长勺：鲁国地名，今山东莱芜东北。<br>败绩：军队溃败。<br>驰：驱车追赶。<br>辙（zhé）：车轮碾出的痕迹。<br>轼：古代车厢前做扶手的横木。<br>遂：于是，就。<br>逐：追赶，这里指追击。<br>既克：已经战胜。既，已经。<br>夫战，勇气也：作战，（是靠）敢作敢为毫不畏惧的气概。夫（fú），放在句首，表示将发议论，没有实际意义。<br>一鼓作气：第一次击鼓能振作士气。作，振作。<br>再：第二次。<br>三：第三次。<br>彼竭我盈：他们的勇气已尽，我们的勇气正盛。彼，代词，指齐军方面。盈，充沛，饱满，这里指士气旺盛。<br>难测：难以推测。测，推测，估计。<br>伏：埋伏。<br>靡（mǐ）：倒下。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文出自《左传·庄公十年》。《曹刿论战》记载了发生在公元前684年，齐借口鲁国曾帮助公子纠争夺齐国君位，再次兴兵攻鲁，两军战于长勺。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -134,7 +165,72 @@
     </div>
     
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

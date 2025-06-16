@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>战国策 · 冯谖客孟尝君 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>战国策 · 冯谖客孟尝君 - 刘向 - 汉朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="战国策 · 冯谖客孟尝君是汉朝诗人刘向的经典作品。本页面提供战国策 · 冯谖客孟尝君的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="战国策 · 冯谖客孟尝君,刘向,汉朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="战国策 · 冯谖客孟尝君 - 刘向 - 汉朝古诗文">
+    <meta property="og:description" content="战国策 · 冯谖客孟尝君是汉朝诗人刘向的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="战国策 · 冯谖客孟尝君 - 刘向 - 汉朝古诗文">
+    <meta name="twitter:description" content="战国策 · 冯谖客孟尝君是汉朝诗人刘向的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "战国策 · 冯谖客孟尝君",
+      "author": {
+        "@type": "Person",
+        "name": "刘向"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "战国策 · 冯谖客孟尝君是汉朝诗人刘向的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">战国策 · 冯谖客孟尝君</h1>
-            <div class="poem-author">【汉】刘向</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【汉】<span itemprop="name">刘向</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>齐人有冯谖者，贫乏不能自存，使人属孟尝君，愿寄食门下。孟尝君曰：「客何好？」曰：「客无好也。」曰：「客何能？」曰：「客无能也。」孟尝君笑而受之曰：「诺。」</p><p>左右以君贱之也，食以草具。居有顷，倚柱弹其剑，歌曰：「长铗归来乎！食无鱼。」左右以告。孟尝君曰：「食之，比门下之客。」居有顷，复弹其铗，歌曰：「长铗归来乎！出无车。」左右皆笑之，以告。孟尝君曰：「为之驾，比门下之车客。」于是乘其车，揭其剑，过其友曰：「孟尝君客我。」后有顷，复弹其剑铗，歌曰：「长铗归来乎！无以为家。」左右皆恶之，以为贪而不知足。孟尝君问：「冯公有亲乎？」对曰，「有老母。」孟尝君使人给其食用，无使乏。于是冯谖不复歌。</p><p>后孟尝君出记，问门下诸客：「谁习计会，能为文收责于薛者乎？」冯谖署曰：「能。」孟尝君怪之，曰：「此谁也？」左右曰：「乃歌夫长铗归来者也。」孟尝君笑曰：「客果有能也，吾负之，未尝见也。」请而见之，谢曰：「文倦于事，愦于忧，而性懦愚，沉于国家之事，开罪于先生。先生不羞，乃有意欲为收责于薛乎？」冯谖曰：「愿之。」于是约车治装，载券契而行，辞曰：「责毕收，以何市而反？」孟尝君曰：「视吾家所寡有者。」</p><p>驱而之薛，使吏召诸民当偿者，悉来合券。券遍合，起，矫命，以责赐诸民。因烧其券。民称万岁。</p><p>长驱到齐，晨而求见。孟尝君怪其疾也，衣冠而见之，曰：「责毕收乎？来何疾也！」曰：「收毕矣。」「以何市而反？」冯谖曰：「君之‘视吾家所寡有者’。臣窃计，君宫中积珍宝，狗马实外厩，美人充下陈。君家所寡有者，以义耳！窃以为君市义。」孟尝君曰：「市义奈何？」曰：「今君有区区之薛，不拊爱子其民，因而贾利之。臣窃矫君命，以责赐诸民，因烧其券，民称万岁。乃臣所以为君市义也。」孟尝君不悦，曰：「诺，先生休矣！」</p><p>后期年，齐王谓孟尝君曰：「寡人不敢以先王之臣为臣。」孟尝君就国于薛，未至百里，民扶老携幼，迎君道中终日。孟尝君顾谓冯谖：「先生所为文市义者，乃今日见之。」</p><p>冯谖曰：「狡兔有三窟，仅得免其死耳；今君有一窟，未得高枕而卧也。请为君复凿二窟。」孟尝君予车五十乘，金五百斤，西游于梁，谓惠王曰：「齐放其大臣孟尝君于诸侯，诸侯先迎之者，富而兵强。」于是梁王虚上位，以故相为上将军，遣使者黄金千斤，车百乘，往聘孟尝君。冯谖先驱，诫孟尝君曰：「千金，重币也；百乘，显使也。齐其闻之矣。」梁使三反，孟尝君固辞不往也。</p><p>齐王闻之，君臣恐惧，遣太傅赍黄金千斤、文车二驷，服剑一，封书，谢孟尝君曰：「寡人不祥，被于宗庙之祟，沉于谄谀之臣，开罪于君。寡人不足为也；愿君顾先王之宗庙，姑反国统万人乎！」冯谖诫孟尝君曰：「愿请先王之祭器，立宗庙于薛。」庙成，还报孟尝君曰：「三窟已就，君姑高枕为乐矣。」</p><p>孟尝君为相数十年，无纤介之祸者，冯谖之计也。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>齐国有个名叫冯谖的人，穷得没法养活自己，托人请求孟尝君，说他愿意在孟尝君家里当个食客。孟尝君问：「客人有什么爱好？」回答说：「他没有什么爱好。」又问：「客人有什么才能？」回答说：「他没有什么才能。」孟尝君笑着接受了他，说：「好吧。」<br>孟尝君身边的办事人员认为孟尝君看不起他，便拿粗劣的饭菜给他吃。过了不久，冯谖靠着柱子弹他的剑，唱道：「长铗啊，回去吧！吃饭没有鱼。」办事人员把这情况告诉孟尝君，孟尝君说：「给他鱼吃，按照门下的食客那样对待。」过了不久，（冯谖）又弹着他的剑，唱道：「长剑啊，回去吧！出门没有车。」办事人都笑话他，并把这情况告诉孟尝君。孟尝君说：「给他准备车，按照门下坐车的客人一样对待。」于是冯谖乘着他的车，举着他的剑，去拜访他的朋友，说道：「孟尝君把我当作客人看待了。」这以后不久，冯谖又弹着他的剑，唱道：「长剑啊，回去吧！（在这里）没有办法养家！」办事人员都厌恶他，认为他一味贪求不知满足。孟尝君问道：「冯先生有父母吗？」答道「有个老母亲。」孟尝君派人给她吃的用的，不让她缺少什么。于是冯谖再也不唱歌了。<br>后来孟尝君出了一个通告，询问家里的食客们：「谁熟悉会计工作，能替我到薛邑去收债么？」冯谖（在通告上）签名，写道：「我能。」孟尝君看了感到奇怪，说：「这（签名的）是谁呀？」左右办事人说：「就是唱那‘长剑啊，回去吧’的人。」孟尝君笑着说：「客人果真有才能啊，我对不起他，以前不曾接见他。」便特意把冯谖请来接见他，向他道歉说：「我被一些琐事搞得很疲劳，被忧患缠得心烦意乱，生性又懦弱愚笨，陷在国事家事之中，（不得脱身与先生见面），得罪了先生。先生不以（我对您的简慢）为羞辱，还有意替我到薛邑去收债么？」冯谖说：「愿意（替您）做这件事。」于是准备车马，收拾行李，载着借契出发。告辞的时候，冯谖问：「债款收齐了，用它买些什么回来？」孟尝君说：「看我家里缺少的东西（就买些回来）。」<br>冯谖赶着车到了薛邑，派官吏召集应该还债的老百姓都来核对借契。借契全核对过了，（冯谖）站起来，假托（孟尝君的）命令，把债款赐给老百姓，随即烧了那些借契。老百姓们欢呼万岁。<br>冯谖一直不停地赶车回到齐国（都城），大清早就求见孟尝君。孟尝君对他回得这么快感到奇怪，穿戴整齐来接见他，说：「借款收齐了吗？怎么回得这么快呀？」答道：「收完了。」问：「用它买了什么回来？」冯谖说：「您说‘看我家所缺少的’，我私自考虑，您宫里堆积着珍宝，猎狗和骏马充满了牲口圈，美女站满了堂下，您家所缺少的只是‘义’罢了。我私自用债款给您买了义。」孟尝君问：「买义是怎么回事？」答道：「现在您有个小小的薛，不把那里的人民看做自己的子女，抚育爱护他们，反而趁机用商人的手段在他们身上谋取私利。我私自假托您的命令，把债款送给了老百姓，随即烧了那些借契，老百姓高呼万岁，这就是我用来给您买义的方式啊。」孟尝君不高兴，说：「好吧，先生算了吧！」<br>过了一年，齐王对孟尝君说：「我不敢用先王的臣子作我的臣子。」孟尝君便到他的封地薛邑去。离那里还差一百里路，老百姓就扶老携幼，在路上迎接他。孟尝君回头看着冯谖说：「先生给我买义的道理，今天才算见到了。」冯谖说：「狡猾的兔子有三个洞穴，仅能避免死亡。现在您只有一个洞穴，还不能垫高枕头睡大觉呀。请让我替您再凿两个洞穴。」<br>孟尝君给冯谖五十辆车，五百斤金。往西到梁国去游说。（冯谖）对梁惠王说：「齐国把它的大臣孟尝君放逐到诸侯国来，诸侯国中首先迎接他的，就会国富兵强。」于是梁惠王把相位空出来，让原来的相做上将军，派遣使者带一千斤黄金，一百辆车，去聘请孟尝君。冯谖先赶车回到齐国，提醒孟尝君说：「一千金，是很厚重的聘礼，（出动）一百辆车，是显赫的使节。齐国该听说这情况了。」梁国的使者往返三次，孟尝君坚决推辞不去。<br>齐王听到这些情况，君臣都惊慌害怕起来，就派遣太傅送一千斤黄金、两辆彩车、一把佩剑（给孟尝君）。封好书信向孟尝君道歉说：「我很倒霉，遭受祖宗降下的灾祸，又被那些逢迎讨好的臣子所迷惑，得罪了您。我是不值得您帮助的；希望您能顾念先王的宗庙，姑且回来统率全国人民吧！」<br>冯谖提醒孟尝君说：「希望您向齐王请来先王传下的祭器，在薛地建立宗庙。」宗庙建成了，冯谖回来报告孟尝君说：「三个洞穴都已凿成了，您可以暂且高枕而卧，安心享乐了！」<br>孟尝君做了几十年相，没有一点祸患，都是（由于）冯谖的计谋啊。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>冯谖（xuān）：战国时齐国人，孟尝君门下的食客之一，为战国时期一位高瞻远瞩、颇具深远眼光的战略家。他虽然向孟尝君索取了不少的待遇，却着实为孟尝君效力不少。如替孟尝君收租，树立了孟尝君在人们心中的威信；在孟尝君遭齐王猜忌时，游说国君，使之威名重立。通过「薛国市义」、营造「三窟」等活动，冯谖为孟尝君立下了汗马功劳，使其政治事业久盛不衰。<br>属：嘱托，请托。<br>左右：指孟尝君身边的办事人。<br>以君贱之也：认为孟尝君看不起他。以，认为；贱，贱视，看不起。形容词作动词用；之，他，代冯谖。也：用在表原因的介宾短语之后，表句读上的停顿。<br>食（sì）：给……吃。「食」后省宾语「之」。<br>居：停留，这里有「经过」的意思。<br>有顷：不久。<br>弹（tán）：用指头敲击。<br>铗（jiá）：剑柄，这里指剑。<br>以告：把冯谖弹剑唱歌的事报告孟尝君。<br>车客：能乘车的食客，孟尝君将门客分为三等：上客食鱼、乘车；中客食鱼；下客食菜。<br>恶（wù）：讨厌。<br>以为：以之为。<br>出记：出通告，出文告。<br>「谁习计会（kuài），能为（wèi）文收责（zhài）于薛者乎」句：谁熟悉会计工作，能替我到薛邑去收债么。习：熟悉；计会，会计工作；为文：给我；文，孟尝君自称其名；责，通「债」；薛，孟尝君的领地，今山东枣庄市附近。<br>「冯谖署曰：‘能’。」句：冯谖在通告上签名，并注曰「能」。<br>果：副词，果真，果然。<br>负：对不起。<br>之：他，代「客」（冯谖）。<br>未尝：副词性结构，不曾。<br>愦（kuì）于忧：困于思虑而心中昏乱。<br>性懦（nuò）愚：生性又懦弱愚笨。懦，同「懦」，怯弱。<br>开罪：得罪。<br>不羞：不因受怠慢为辱。羞：意动用法，认为……是羞辱。<br>约车治装：预备车子，治办行装。<br>券契：债务契约，两家各保存一份，可以合验。<br>何市而反：买些什么东西回来。市，买；反，返回。<br>寡有：少有，缺少。<br>合券：指核对债券（借据）、契约。<br>遍合：都核对过。起：站起来。<br>矫（jiǎo）命：假托（孟尝君的）命令。<br>以责（zhài）赐诸民：把债款赐给（借债的）老百姓，意即不要偿还。以，用，把。“责”同“债，通假字。<br>长驱：一直赶车快跑，中途不停留。<br>怪其疾：以其疾为怪。因为他回得这么快而感到奇怪。<br>窃：私自，谦词。<br>计：考虑。<br>下陈：后列。<br>拊爱：即抚爱。<br>子其民：视民如子，形容特别爱护百姓。<br>贾（gǔ）利之：以商人手段向百姓谋取暴利。<br>说：同「悦」，高兴。休矣：算了，罢了。<br>期（jī）年：满一年。<br>齐王：齐閔王。<br>先王：齐閔王父齐宣王。<br>就国：到自己封地（薛）去住。<br>未至百里：距薛地还有一百里。<br>正日：整整一天。<br>顾：回头看。<br>梁：魏国都大梁（今河南开封）。魏王萄（即梁王）迁都大梁，国号曾一度称「梁」。<br>放：弃，免。<br>于：给……机会。<br>虚上位：空出最高的职位（宰相）。<br>故相：过去的宰相。<br>反：同「返」。<br>赍（jī）：拿东西送人。<br>文车：雕刻或绘画着花纹的车。<br>驷：四匹马拉的车，与「乘」同义。<br>服剑：佩剑。<br>谢：道歉。<br>不祥：不善、不好。<br>被于宗庙之祟：受到祖宗神灵的处罚。<br>不足为：不值得顾念帮助。不足，不值得；为，帮助，卫护。<br>顾：顾念。<br>姑：姑且，暂且。<br>反国：返回齐国国都临淄。反，同「返」。<br>统：统率、治理。<br>万人：指全国人民。<br>愿：希望。<br>请：指向齐王请求。<br>祭器：宗庙里用于祭祀祖先的器皿。<br>立宗庙于薛：孟尝君与齐王同族，故请求分给先王传下来的祭器，在薛地建立宗庙，将来齐即不便夺毁其国，如果有他国来侵，齐亦不能不相救。这是冯谖为孟尝君所定的安身之计，为「三窟」之一。<br>纤（xiān）介：细微。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《冯谖客孟尝君》选自《战国策·齐策》，记叙了冯谖为巩固孟尝君的政治地位而进行的种种政治外交活动（焚券市义，谋复相位，在薛建立宗庙），表现冯谖的政治识见和卓越才能——善于利用矛盾以解决矛盾。也反映出齐国统治集团内部和齐、魏等诸侯国之间的矛盾。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>齐人有冯谖者，贫乏不能自存，使人属孟尝君，愿寄食门下。孟尝君曰：「客何好？」曰：「客无好也。」曰：「客何能？」曰：「客无能也。」孟尝君笑而受之曰：「诺。」</p><p>左右以君贱之也，食以草具。居有顷，倚柱弹其剑，歌曰：「长铗归来乎！食无鱼。」左右以告。孟尝君曰：「食之，比门下之客。」居有顷，复弹其铗，歌曰：「长铗归来乎！出无车。」左右皆笑之，以告。孟尝君曰：「为之驾，比门下之车客。」于是乘其车，揭其剑，过其友曰：「孟尝君客我。」后有顷，复弹其剑铗，歌曰：「长铗归来乎！无以为家。」左右皆恶之，以为贪而不知足。孟尝君问：「冯公有亲乎？」对曰，「有老母。」孟尝君使人给其食用，无使乏。于是冯谖不复歌。</p><p>后孟尝君出记，问门下诸客：「谁习计会，能为文收责于薛者乎？」冯谖署曰：「能。」孟尝君怪之，曰：「此谁也？」左右曰：「乃歌夫长铗归来者也。」孟尝君笑曰：「客果有能也，吾负之，未尝见也。」请而见之，谢曰：「文倦于事，愦于忧，而性懦愚，沉于国家之事，开罪于先生。先生不羞，乃有意欲为收责于薛乎？」冯谖曰：「愿之。」于是约车治装，载券契而行，辞曰：「责毕收，以何市而反？」孟尝君曰：「视吾家所寡有者。」</p><p>驱而之薛，使吏召诸民当偿者，悉来合券。券遍合，起，矫命，以责赐诸民。因烧其券。民称万岁。</p><p>长驱到齐，晨而求见。孟尝君怪其疾也，衣冠而见之，曰：「责毕收乎？来何疾也！」曰：「收毕矣。」「以何市而反？」冯谖曰：「君之‘视吾家所寡有者’。臣窃计，君宫中积珍宝，狗马实外厩，美人充下陈。君家所寡有者，以义耳！窃以为君市义。」孟尝君曰：「市义奈何？」曰：「今君有区区之薛，不拊爱子其民，因而贾利之。臣窃矫君命，以责赐诸民，因烧其券，民称万岁。乃臣所以为君市义也。」孟尝君不悦，曰：「诺，先生休矣！」</p><p>后期年，齐王谓孟尝君曰：「寡人不敢以先王之臣为臣。」孟尝君就国于薛，未至百里，民扶老携幼，迎君道中终日。孟尝君顾谓冯谖：「先生所为文市义者，乃今日见之。」</p><p>冯谖曰：「狡兔有三窟，仅得免其死耳；今君有一窟，未得高枕而卧也。请为君复凿二窟。」孟尝君予车五十乘，金五百斤，西游于梁，谓惠王曰：「齐放其大臣孟尝君于诸侯，诸侯先迎之者，富而兵强。」于是梁王虚上位，以故相为上将军，遣使者黄金千斤，车百乘，往聘孟尝君。冯谖先驱，诫孟尝君曰：「千金，重币也；百乘，显使也。齐其闻之矣。」梁使三反，孟尝君固辞不往也。</p><p>齐王闻之，君臣恐惧，遣太傅赍黄金千斤、文车二驷，服剑一，封书，谢孟尝君曰：「寡人不祥，被于宗庙之祟，沉于谄谀之臣，开罪于君。寡人不足为也；愿君顾先王之宗庙，姑反国统万人乎！」冯谖诫孟尝君曰：「愿请先王之祭器，立宗庙于薛。」庙成，还报孟尝君曰：「三窟已就，君姑高枕为乐矣。」</p><p>孟尝君为相数十年，无纤介之祸者，冯谖之计也。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>齐国有个名叫冯谖的人，穷得没法养活自己，托人请求孟尝君，说他愿意在孟尝君家里当个食客。孟尝君问：「客人有什么爱好？」回答说：「他没有什么爱好。」又问：「客人有什么才能？」回答说：「他没有什么才能。」孟尝君笑着接受了他，说：「好吧。」<br>孟尝君身边的办事人员认为孟尝君看不起他，便拿粗劣的饭菜给他吃。过了不久，冯谖靠着柱子弹他的剑，唱道：「长铗啊，回去吧！吃饭没有鱼。」办事人员把这情况告诉孟尝君，孟尝君说：「给他鱼吃，按照门下的食客那样对待。」过了不久，（冯谖）又弹着他的剑，唱道：「长剑啊，回去吧！出门没有车。」办事人都笑话他，并把这情况告诉孟尝君。孟尝君说：「给他准备车，按照门下坐车的客人一样对待。」于是冯谖乘着他的车，举着他的剑，去拜访他的朋友，说道：「孟尝君把我当作客人看待了。」这以后不久，冯谖又弹着他的剑，唱道：「长剑啊，回去吧！（在这里）没有办法养家！」办事人员都厌恶他，认为他一味贪求不知满足。孟尝君问道：「冯先生有父母吗？」答道「有个老母亲。」孟尝君派人给她吃的用的，不让她缺少什么。于是冯谖再也不唱歌了。<br>后来孟尝君出了一个通告，询问家里的食客们：「谁熟悉会计工作，能替我到薛邑去收债么？」冯谖（在通告上）签名，写道：「我能。」孟尝君看了感到奇怪，说：「这（签名的）是谁呀？」左右办事人说：「就是唱那‘长剑啊，回去吧’的人。」孟尝君笑着说：「客人果真有才能啊，我对不起他，以前不曾接见他。」便特意把冯谖请来接见他，向他道歉说：「我被一些琐事搞得很疲劳，被忧患缠得心烦意乱，生性又懦弱愚笨，陷在国事家事之中，（不得脱身与先生见面），得罪了先生。先生不以（我对您的简慢）为羞辱，还有意替我到薛邑去收债么？」冯谖说：「愿意（替您）做这件事。」于是准备车马，收拾行李，载着借契出发。告辞的时候，冯谖问：「债款收齐了，用它买些什么回来？」孟尝君说：「看我家里缺少的东西（就买些回来）。」<br>冯谖赶着车到了薛邑，派官吏召集应该还债的老百姓都来核对借契。借契全核对过了，（冯谖）站起来，假托（孟尝君的）命令，把债款赐给老百姓，随即烧了那些借契。老百姓们欢呼万岁。<br>冯谖一直不停地赶车回到齐国（都城），大清早就求见孟尝君。孟尝君对他回得这么快感到奇怪，穿戴整齐来接见他，说：「借款收齐了吗？怎么回得这么快呀？」答道：「收完了。」问：「用它买了什么回来？」冯谖说：「您说‘看我家所缺少的’，我私自考虑，您宫里堆积着珍宝，猎狗和骏马充满了牲口圈，美女站满了堂下，您家所缺少的只是‘义’罢了。我私自用债款给您买了义。」孟尝君问：「买义是怎么回事？」答道：「现在您有个小小的薛，不把那里的人民看做自己的子女，抚育爱护他们，反而趁机用商人的手段在他们身上谋取私利。我私自假托您的命令，把债款送给了老百姓，随即烧了那些借契，老百姓高呼万岁，这就是我用来给您买义的方式啊。」孟尝君不高兴，说：「好吧，先生算了吧！」<br>过了一年，齐王对孟尝君说：「我不敢用先王的臣子作我的臣子。」孟尝君便到他的封地薛邑去。离那里还差一百里路，老百姓就扶老携幼，在路上迎接他。孟尝君回头看着冯谖说：「先生给我买义的道理，今天才算见到了。」冯谖说：「狡猾的兔子有三个洞穴，仅能避免死亡。现在您只有一个洞穴，还不能垫高枕头睡大觉呀。请让我替您再凿两个洞穴。」<br>孟尝君给冯谖五十辆车，五百斤金。往西到梁国去游说。（冯谖）对梁惠王说：「齐国把它的大臣孟尝君放逐到诸侯国来，诸侯国中首先迎接他的，就会国富兵强。」于是梁惠王把相位空出来，让原来的相做上将军，派遣使者带一千斤黄金，一百辆车，去聘请孟尝君。冯谖先赶车回到齐国，提醒孟尝君说：「一千金，是很厚重的聘礼，（出动）一百辆车，是显赫的使节。齐国该听说这情况了。」梁国的使者往返三次，孟尝君坚决推辞不去。<br>齐王听到这些情况，君臣都惊慌害怕起来，就派遣太傅送一千斤黄金、两辆彩车、一把佩剑（给孟尝君）。封好书信向孟尝君道歉说：「我很倒霉，遭受祖宗降下的灾祸，又被那些逢迎讨好的臣子所迷惑，得罪了您。我是不值得您帮助的；希望您能顾念先王的宗庙，姑且回来统率全国人民吧！」<br>冯谖提醒孟尝君说：「希望您向齐王请来先王传下的祭器，在薛地建立宗庙。」宗庙建成了，冯谖回来报告孟尝君说：「三个洞穴都已凿成了，您可以暂且高枕而卧，安心享乐了！」<br>孟尝君做了几十年相，没有一点祸患，都是（由于）冯谖的计谋啊。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>冯谖（xuān）：战国时齐国人，孟尝君门下的食客之一，为战国时期一位高瞻远瞩、颇具深远眼光的战略家。他虽然向孟尝君索取了不少的待遇，却着实为孟尝君效力不少。如替孟尝君收租，树立了孟尝君在人们心中的威信；在孟尝君遭齐王猜忌时，游说国君，使之威名重立。通过「薛国市义」、营造「三窟」等活动，冯谖为孟尝君立下了汗马功劳，使其政治事业久盛不衰。<br>属：嘱托，请托。<br>左右：指孟尝君身边的办事人。<br>以君贱之也：认为孟尝君看不起他。以，认为；贱，贱视，看不起。形容词作动词用；之，他，代冯谖。也：用在表原因的介宾短语之后，表句读上的停顿。<br>食（sì）：给……吃。「食」后省宾语「之」。<br>居：停留，这里有「经过」的意思。<br>有顷：不久。<br>弹（tán）：用指头敲击。<br>铗（jiá）：剑柄，这里指剑。<br>以告：把冯谖弹剑唱歌的事报告孟尝君。<br>车客：能乘车的食客，孟尝君将门客分为三等：上客食鱼、乘车；中客食鱼；下客食菜。<br>恶（wù）：讨厌。<br>以为：以之为。<br>出记：出通告，出文告。<br>「谁习计会（kuài），能为（wèi）文收责（zhài）于薛者乎」句：谁熟悉会计工作，能替我到薛邑去收债么。习：熟悉；计会，会计工作；为文：给我；文，孟尝君自称其名；责，通「债」；薛，孟尝君的领地，今山东枣庄市附近。<br>「冯谖署曰：‘能’。」句：冯谖在通告上签名，并注曰「能」。<br>果：副词，果真，果然。<br>负：对不起。<br>之：他，代「客」（冯谖）。<br>未尝：副词性结构，不曾。<br>愦（kuì）于忧：困于思虑而心中昏乱。<br>性懦（nuò）愚：生性又懦弱愚笨。懦，同「懦」，怯弱。<br>开罪：得罪。<br>不羞：不因受怠慢为辱。羞：意动用法，认为……是羞辱。<br>约车治装：预备车子，治办行装。<br>券契：债务契约，两家各保存一份，可以合验。<br>何市而反：买些什么东西回来。市，买；反，返回。<br>寡有：少有，缺少。<br>合券：指核对债券（借据）、契约。<br>遍合：都核对过。起：站起来。<br>矫（jiǎo）命：假托（孟尝君的）命令。<br>以责（zhài）赐诸民：把债款赐给（借债的）老百姓，意即不要偿还。以，用，把。“责”同“债，通假字。<br>长驱：一直赶车快跑，中途不停留。<br>怪其疾：以其疾为怪。因为他回得这么快而感到奇怪。<br>窃：私自，谦词。<br>计：考虑。<br>下陈：后列。<br>拊爱：即抚爱。<br>子其民：视民如子，形容特别爱护百姓。<br>贾（gǔ）利之：以商人手段向百姓谋取暴利。<br>说：同「悦」，高兴。休矣：算了，罢了。<br>期（jī）年：满一年。<br>齐王：齐閔王。<br>先王：齐閔王父齐宣王。<br>就国：到自己封地（薛）去住。<br>未至百里：距薛地还有一百里。<br>正日：整整一天。<br>顾：回头看。<br>梁：魏国都大梁（今河南开封）。魏王萄（即梁王）迁都大梁，国号曾一度称「梁」。<br>放：弃，免。<br>于：给……机会。<br>虚上位：空出最高的职位（宰相）。<br>故相：过去的宰相。<br>反：同「返」。<br>赍（jī）：拿东西送人。<br>文车：雕刻或绘画着花纹的车。<br>驷：四匹马拉的车，与「乘」同义。<br>服剑：佩剑。<br>谢：道歉。<br>不祥：不善、不好。<br>被于宗庙之祟：受到祖宗神灵的处罚。<br>不足为：不值得顾念帮助。不足，不值得；为，帮助，卫护。<br>顾：顾念。<br>姑：姑且，暂且。<br>反国：返回齐国国都临淄。反，同「返」。<br>统：统率、治理。<br>万人：指全国人民。<br>愿：希望。<br>请：指向齐王请求。<br>祭器：宗庙里用于祭祀祖先的器皿。<br>立宗庙于薛：孟尝君与齐王同族，故请求分给先王传下来的祭器，在薛地建立宗庙，将来齐即不便夺毁其国，如果有他国来侵，齐亦不能不相救。这是冯谖为孟尝君所定的安身之计，为「三窟」之一。<br>纤（xiān）介：细微。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《冯谖客孟尝君》选自《战国策·齐策》，记叙了冯谖为巩固孟尝君的政治地位而进行的种种政治外交活动（焚券市义，谋复相位，在薛建立宗庙），表现冯谖的政治识见和卓越才能——善于利用矛盾以解决矛盾。也反映出齐国统治集团内部和齐、魏等诸侯国之间的矛盾。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/720140.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

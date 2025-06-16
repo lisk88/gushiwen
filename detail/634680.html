@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>送杨寘序 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>送杨寘序 - 欧阳修 - 宋朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="送杨寘序是宋朝诗人欧阳修的经典作品。本页面提供送杨寘序的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="送杨寘序,欧阳修,宋朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="送杨寘序 - 欧阳修 - 宋朝古诗文">
+    <meta property="og:description" content="送杨寘序是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="送杨寘序 - 欧阳修 - 宋朝古诗文">
+    <meta name="twitter:description" content="送杨寘序是宋朝诗人欧阳修的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "送杨寘序",
+      "author": {
+        "@type": "Person",
+        "name": "欧阳修"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "送杨寘序是宋朝诗人欧阳修的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">送杨寘序</h1>
-            <div class="poem-author">【宋】欧阳修</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【宋】<span itemprop="name">欧阳修</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>予尝有幽忧之疾，退而闲居，不能治也。既而学琴于友人孙道滋，受宫声数引，久而乐之，不知其疾之在体也。夫疾，生乎忧者也。药之毒者，能攻其疾之聚，不若声之至者，能和其心之所不平。心而平，不和者和，则疾之忘也宜哉。</p><p>夫琴之为技小矣，及其至也，大者为宫，细者为羽，操弦骤作，忽然变之，急者凄然以促，缓者舒然以和，如崩崖裂石、高山出泉，而风雨夜至也。如怨夫寡妇之叹息，雌雄雍雍之相鸣也。其忧深思远，则舜与文王、孔子之遗音也；悲愁感愤，则伯奇孤子、屈原忠臣之所叹也。喜怒哀乐，动人必深。而纯古淡泊，与夫尧舜三代之言语、孔子之文章、《易》之忧患、《诗》之怨刺无以异。其能听之以耳，应之以手，取其和者，道其湮郁，写其幽思，则感人之际，亦有至者焉。</p><p>予友杨君，好学有文，累以进士举，不得志。及从荫调，为尉于剑浦，区区在东南数千里外．是其心固有不平者。且少又多疾，而南方少医药。风俗饮食异宜。以多疾之体，有不平之心，居异宜之俗，其能郁郁以久乎？然欲平其心以养其疾，于琴亦将有得焉。故予作《琴说》以赠其行，且邀道滋酌酒，进琴以为别。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>我曾经得了忧劳的病症，退下来闲居，没有医治好。后来在朋友孙道滋那里学习弹琴。学习了五声和几支乐曲，时间一长觉得很快乐，不知道那疾病还在自己身上呢。<br>弹琴作为一种技艺，是很小的了。等这技艺到了极点，大的是最低的声音，小的是最高的声音，按着琴弦迅急弹奏，声调便随着情感的变化而变化；声音急促的，显得很凄惨；声音和缓的，显得很舒畅。有时好像山崩石裂，泉水从高山上涌出来，又好像夜晚发生了大风大雨；有时像旷夫、寡妇的叹息声，又好像和睦的雌鸟、雄鸟互相唱和。它的深沉的忧虑稻悠远的思绪，就是虞舜、周文王和孔子的遗音；它的悲惨、愁闷、感慨、愤激，就是孤儿伯奇、忠臣屈原所发出的叹息。喜、怒、哀、乐的情绪，一定深深地打动人家的心弦；纯厚、古雅、淡泊的音色，却跟尧舜三代的语言、孔子的文章、《易经》所表现的忧患、《诗经》所包含的怨恨讽刺，没有什么区别。它能够凭耳朵听出来，能够随手弹出来。如果选取那和谐的音调，排遣忧郁，散发幽思，那么，往往感动人心，极为深切。<br>我的朋友杨君，喜欢研究学问，很会写文章，屡次参加进士考试，都不得意。等到依靠祖上的官勋，才调到剑浦去做了县尉。小小的剑浦在东南面几千里路以外，在这种情况下，他心里确实有不平的地方。并且从小又多疾病，可是南方缺少名医良药，风俗饮食与中原两样。以他多病的身体，抱着不平的心思，却生活在风俗不同的地方，哪里能够长久地沉闷下去呢？然而要平静他的心思，疗养他的疾病，那么弹琴也能够收到一点好处吧!因此我写了这篇谈琴的文章来给他送行，并且邀请孙道滋参加，喝一杯洒，弹一回琴，当做临别的纪念。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>杨寘（zhì）：欧阳修的朋友，字审贤，少睥时有文才，宋仁宗庆历二年进士。寘，同“置”。<br>幽忧：过度的忧伤和劳累。语出《庄子·让王》：“我适有幽忧之病。”<br>孙道滋：作者的朋友。<br>宫：五声音阶的第一音级，依次是商、角、徵（zhǐ）、羽。<br>引：乐曲体裁之一。<br>“受宫声数引”句：学习宫、商的声音和几支曲子。<br>技：技艺。<br>凄然：悲伤的样子。<br>舒然：舒畅的样子。<br>怨夫：即旷夫，也就是没有妻室的男子。<br>雍雍：和谐、和睦。<br>遗音：《礼记·乐记》：“昔者舜作五弦之琴，以歌南风。”《圣证论》引《尸子》及《孔子家语》说南风辞为：“南风之薰兮，可以解吾民之愠兮；南风之时兮，可以阜吾民之财兮。”《琴操》：“拘幽操，文王于羑（yǒu）里而作也。”《史记·孔子世家》：“孔子学鼓琴于师襄。”一些古书记他作过《临河操》、《将归操》、《猗兰操》、《龟山操》等琴曲。<br>伯奇：《琴操》记周宣王时，大臣尹吉甫有个儿子，名伯奇，本来很孝顺，由于后娘谗害，被尹吉甫驱逐出去。伯奇很伤心，弹琴作《履霜操》，曲终，投河而死。<br>文章：《论语·公冶长》：“夫子之文章可得而闻也。”刘宝楠正义：文章，谓诗、书、礼、乐、《易》之忧患。忧患，《易·系辞下》：“作易者，其有忧患乎！”<br>怨刺：《诗谱序》：“众国纷然，刺怨相寻。”刘宝楠正义：“怨亦刺之类，故连言之”。意谓讽刺政治。<br>道：同“导”，开导。<br>湮（yīn）郁：阻塞。<br>写：通“泻”。<br>荫调：凭借上代官爵而得官。<br>尉：官名。<br>剑浦：县名，今福建南平县内。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《送杨寘序》是北宋文学家欧阳修为即将远赴福建省南平县的杨寘送行所作的序文。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>予尝有幽忧之疾，退而闲居，不能治也。既而学琴于友人孙道滋，受宫声数引，久而乐之，不知其疾之在体也。夫疾，生乎忧者也。药之毒者，能攻其疾之聚，不若声之至者，能和其心之所不平。心而平，不和者和，则疾之忘也宜哉。</p><p>夫琴之为技小矣，及其至也，大者为宫，细者为羽，操弦骤作，忽然变之，急者凄然以促，缓者舒然以和，如崩崖裂石、高山出泉，而风雨夜至也。如怨夫寡妇之叹息，雌雄雍雍之相鸣也。其忧深思远，则舜与文王、孔子之遗音也；悲愁感愤，则伯奇孤子、屈原忠臣之所叹也。喜怒哀乐，动人必深。而纯古淡泊，与夫尧舜三代之言语、孔子之文章、《易》之忧患、《诗》之怨刺无以异。其能听之以耳，应之以手，取其和者，道其湮郁，写其幽思，则感人之际，亦有至者焉。</p><p>予友杨君，好学有文，累以进士举，不得志。及从荫调，为尉于剑浦，区区在东南数千里外．是其心固有不平者。且少又多疾，而南方少医药。风俗饮食异宜。以多疾之体，有不平之心，居异宜之俗，其能郁郁以久乎？然欲平其心以养其疾，于琴亦将有得焉。故予作《琴说》以赠其行，且邀道滋酌酒，进琴以为别。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>我曾经得了忧劳的病症，退下来闲居，没有医治好。后来在朋友孙道滋那里学习弹琴。学习了五声和几支乐曲，时间一长觉得很快乐，不知道那疾病还在自己身上呢。<br>弹琴作为一种技艺，是很小的了。等这技艺到了极点，大的是最低的声音，小的是最高的声音，按着琴弦迅急弹奏，声调便随着情感的变化而变化；声音急促的，显得很凄惨；声音和缓的，显得很舒畅。有时好像山崩石裂，泉水从高山上涌出来，又好像夜晚发生了大风大雨；有时像旷夫、寡妇的叹息声，又好像和睦的雌鸟、雄鸟互相唱和。它的深沉的忧虑稻悠远的思绪，就是虞舜、周文王和孔子的遗音；它的悲惨、愁闷、感慨、愤激，就是孤儿伯奇、忠臣屈原所发出的叹息。喜、怒、哀、乐的情绪，一定深深地打动人家的心弦；纯厚、古雅、淡泊的音色，却跟尧舜三代的语言、孔子的文章、《易经》所表现的忧患、《诗经》所包含的怨恨讽刺，没有什么区别。它能够凭耳朵听出来，能够随手弹出来。如果选取那和谐的音调，排遣忧郁，散发幽思，那么，往往感动人心，极为深切。<br>我的朋友杨君，喜欢研究学问，很会写文章，屡次参加进士考试，都不得意。等到依靠祖上的官勋，才调到剑浦去做了县尉。小小的剑浦在东南面几千里路以外，在这种情况下，他心里确实有不平的地方。并且从小又多疾病，可是南方缺少名医良药，风俗饮食与中原两样。以他多病的身体，抱着不平的心思，却生活在风俗不同的地方，哪里能够长久地沉闷下去呢？然而要平静他的心思，疗养他的疾病，那么弹琴也能够收到一点好处吧!因此我写了这篇谈琴的文章来给他送行，并且邀请孙道滋参加，喝一杯洒，弹一回琴，当做临别的纪念。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>杨寘（zhì）：欧阳修的朋友，字审贤，少睥时有文才，宋仁宗庆历二年进士。寘，同“置”。<br>幽忧：过度的忧伤和劳累。语出《庄子·让王》：“我适有幽忧之病。”<br>孙道滋：作者的朋友。<br>宫：五声音阶的第一音级，依次是商、角、徵（zhǐ）、羽。<br>引：乐曲体裁之一。<br>“受宫声数引”句：学习宫、商的声音和几支曲子。<br>技：技艺。<br>凄然：悲伤的样子。<br>舒然：舒畅的样子。<br>怨夫：即旷夫，也就是没有妻室的男子。<br>雍雍：和谐、和睦。<br>遗音：《礼记·乐记》：“昔者舜作五弦之琴，以歌南风。”《圣证论》引《尸子》及《孔子家语》说南风辞为：“南风之薰兮，可以解吾民之愠兮；南风之时兮，可以阜吾民之财兮。”《琴操》：“拘幽操，文王于羑（yǒu）里而作也。”《史记·孔子世家》：“孔子学鼓琴于师襄。”一些古书记他作过《临河操》、《将归操》、《猗兰操》、《龟山操》等琴曲。<br>伯奇：《琴操》记周宣王时，大臣尹吉甫有个儿子，名伯奇，本来很孝顺，由于后娘谗害，被尹吉甫驱逐出去。伯奇很伤心，弹琴作《履霜操》，曲终，投河而死。<br>文章：《论语·公冶长》：“夫子之文章可得而闻也。”刘宝楠正义：文章，谓诗、书、礼、乐、《易》之忧患。忧患，《易·系辞下》：“作易者，其有忧患乎！”<br>怨刺：《诗谱序》：“众国纷然，刺怨相寻。”刘宝楠正义：“怨亦刺之类，故连言之”。意谓讽刺政治。<br>道：同“导”，开导。<br>湮（yīn）郁：阻塞。<br>写：通“泻”。<br>荫调：凭借上代官爵而得官。<br>尉：官名。<br>剑浦：县名，今福建南平县内。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《送杨寘序》是北宋文学家欧阳修为即将远赴福建省南平县的杨寘送行所作的序文。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -101,7 +132,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/item/送杨寘序" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

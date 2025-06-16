@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>国语 ·  叔向贺贫 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>国语 ·  叔向贺贫 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="国语 ·  叔向贺贫是周朝诗人左丘明的经典作品。本页面提供国语 ·  叔向贺贫的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="国语 ·  叔向贺贫,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="国语 ·  叔向贺贫 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="国语 ·  叔向贺贫是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="国语 ·  叔向贺贫 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="国语 ·  叔向贺贫是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "国语 ·  叔向贺贫",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "国语 ·  叔向贺贫是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">国语 ·  叔向贺贫</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>叔向见韩宣子，宣子忧贫，叔向贺之。宣子曰：“吾有卿之名而无其实，无以从二三子，吾是以忧，子贺我，何故？”</p><p>对曰：“昔栾武子无一卒之田，其宫不备其宗器，宣其德行，顺其宪则，使越于诸侯。诸侯亲之，戎狄怀之，以正晋国。行刑不疚，以免于难。及桓子，骄泰奢侈，贪欲无艺，略则行志，假货居贿，宜及于难，而赖武之德以没其身。及怀子，改桓之行，而修武之德，可以免于难，而离桓之罪，以亡于楚。夫郤昭子，其富半公室，其家半三军，恃其富宠，以泰于国。其身尸于朝，其宗灭于绛。不然，夫八郤，五大夫，三卿，其宠大矣，一朝而灭，莫之哀也，唯无德也。今吾子有栾武子之贫，吾以为能其德矣，是以贺。若不忧德之不建，而患货之不足，将吊不暇，何贺之有？”</p><p>宣子拜，稽首焉，曰：“起也将亡，赖子存之，非起也敢专承之，其自桓叔以下，嘉吾子之赐。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>叔向去拜见韩宣子，韩宣子正为贫困而发愁，叔向却向他表示祝贺。<br>宣子说："我有卿大夫的名称，却没有卿大夫的财富，没有什么荣誉可以跟其他的卿大夫们交往，我正为此发愁，你却祝贺我，这是什么缘故呢？"<br>叔向回答说："从前栾武子没有一百顷田，家里穷的连祭祀的器具都备不齐全；可是他能够传播德行，遵循法制，名闻于诸侯各国。各诸侯国都亲近他，一些少数民族都归附他，因此使晋国安定下来，执行法度，没有弊病，因而避免了灾难。传到桓子时，他骄傲自大，奢侈无度，贪得无厌，犯法胡为，放利聚财，该当遭到祸难，但依赖他父亲栾武子的余德，才得以善终。传到怀子时，怀子改变他父亲桓子的行为，学习他祖父武子的德行，本来可以凭这一点免除灾难；可是受到他父亲桓子的罪孽的连累，因而逃亡到楚国。那个郤昭子，他的财产抵得上晋国公室财产的一半，他家里的佣人抵得上三军的一半，他依仗自己的财产和势力，在晋国过着极其奢侈的生活，最后他的尸体在朝堂上示众，他的宗族在绛这个地方被灭亡了。如果不是这样的话，那八个姓郤的中有五个做大夫，三个做卿，他们的权势够大的了，可是一旦被诛灭，没有一个人同情他们，只是因为没有德行的缘故！现今你有栾武子的清贫境况，我认为你能够继承他的德行，所以表示祝贺，如果不忧愁德行的建立，却只为财产不足而发愁，我表示哀怜还来不及，哪里还能够祝贺呢？"<br>宣子于是下拜，并叩头说："我正在趋向灭亡的时候，全靠你拯救了我。你的恩德不敢独自承受，恐怕从我的祖宗桓叔以下的子孙，都要感谢您的恩赐。"</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>选自《国语》。《国语》相传是春秋时左丘明作，二十一卷，主要记西周末年和春秋时期鲁国等国贵族的言论。叔向，春秋晋国大夫羊舌肸（xī），字叔向。<br>韩宣子：名起，是晋国的卿。卿的爵位在公之下，大夫之上。<br>实：这里指财富。<br>无以从二三子：意思是家里贫穷，没有供给宾客往来的费用，不能跟晋国的卿大夫交往。二三子，指晋国的卿大夫。<br>栾武子：即栾书，晋大夫，于鲁成公四年升任执政大臣，将中军。<br>无一卒之田：没有一百人所有的田亩。古代军队编制，一百人为"卒"。一卒之田，100顷。是上大夫的俸禄。<br>宗器：祭器。<br>宪则：法制。<br>越：本意为高扬，这里指传播。<br>刑：法，就是前边的"宪则"。<br>行刑不疚（jiù）：指栾书弑杀晋厉公而不被国人责难。<br>以免于难：因此避免了祸患。意思是没有遭到杀害或被迫逃亡。<br>桓子：栾武子的儿子。<br>骄泰：骄慢放纵。<br>艺：度，准则。<br>略则行志：忽略法制，任意行事。<br>假货居贿：把财货借给人家从而取利。贿，财。<br>而赖武之德：但是依靠栾武子的德望。<br>以没其身：终生没有遭到祸患。<br>怀子：桓子的儿子。<br>修：研究，学习。<br>离桓之罪：（怀子）因桓子的罪恶而遭罪。离，同"罹"，遭到。<br>以亡于楚：终于逃亡到楚国。<br>郤（xì）昭子：晋国的卿。<br>其富半公室：他的财富抵得过半个晋国。公室，公家，指国家。<br>其家半三军：他家里的佣人抵得过三军的一半。当时的兵制，诸侯大国三军，合三万七千五百人。一说郤家人占据了晋国三军中一半的职位。晋国有三军，三军主将与将佐，合称为“六卿”。<br>宠：尊贵荣华。<br>以泰于国：就在国内非常奢侈。泰，过分、过甚。<br>其身尸于朝：（郤昭子后来被晋厉公派人杀掉，）他的尸体摆在朝堂（示众）。<br>其宗灭于绛：他的宗族在绛这个地方被灭掉了。绛，晋国的旧都：在如今山西省翼城县东南。<br>八郤，五大夫，三卿：郤氏八个人，其中五个大夫，三个卿。<br>吾子：您，古时对人的尊称。<br>能其德矣：能够行他的道德了。<br>吊：忧虑。<br>稽首：顿首，把头叩到地上。<br>起：韩宣子自称他自己的名字。<br>专承：独自一个人承受。<br>桓叔：韩氏的始祖。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《叔向贺贫》是春秋时期创作的散文，作者是左丘明。它的教育意义是叔向借晋栾氏、郤氏两大家族兴亡史，说明人应忧德之不建，不应忧货之不足。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>叔向见韩宣子，宣子忧贫，叔向贺之。宣子曰：“吾有卿之名而无其实，无以从二三子，吾是以忧，子贺我，何故？”</p><p>对曰：“昔栾武子无一卒之田，其宫不备其宗器，宣其德行，顺其宪则，使越于诸侯。诸侯亲之，戎狄怀之，以正晋国。行刑不疚，以免于难。及桓子，骄泰奢侈，贪欲无艺，略则行志，假货居贿，宜及于难，而赖武之德以没其身。及怀子，改桓之行，而修武之德，可以免于难，而离桓之罪，以亡于楚。夫郤昭子，其富半公室，其家半三军，恃其富宠，以泰于国。其身尸于朝，其宗灭于绛。不然，夫八郤，五大夫，三卿，其宠大矣，一朝而灭，莫之哀也，唯无德也。今吾子有栾武子之贫，吾以为能其德矣，是以贺。若不忧德之不建，而患货之不足，将吊不暇，何贺之有？”</p><p>宣子拜，稽首焉，曰：“起也将亡，赖子存之，非起也敢专承之，其自桓叔以下，嘉吾子之赐。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>叔向去拜见韩宣子，韩宣子正为贫困而发愁，叔向却向他表示祝贺。<br>宣子说："我有卿大夫的名称，却没有卿大夫的财富，没有什么荣誉可以跟其他的卿大夫们交往，我正为此发愁，你却祝贺我，这是什么缘故呢？"<br>叔向回答说："从前栾武子没有一百顷田，家里穷的连祭祀的器具都备不齐全；可是他能够传播德行，遵循法制，名闻于诸侯各国。各诸侯国都亲近他，一些少数民族都归附他，因此使晋国安定下来，执行法度，没有弊病，因而避免了灾难。传到桓子时，他骄傲自大，奢侈无度，贪得无厌，犯法胡为，放利聚财，该当遭到祸难，但依赖他父亲栾武子的余德，才得以善终。传到怀子时，怀子改变他父亲桓子的行为，学习他祖父武子的德行，本来可以凭这一点免除灾难；可是受到他父亲桓子的罪孽的连累，因而逃亡到楚国。那个郤昭子，他的财产抵得上晋国公室财产的一半，他家里的佣人抵得上三军的一半，他依仗自己的财产和势力，在晋国过着极其奢侈的生活，最后他的尸体在朝堂上示众，他的宗族在绛这个地方被灭亡了。如果不是这样的话，那八个姓郤的中有五个做大夫，三个做卿，他们的权势够大的了，可是一旦被诛灭，没有一个人同情他们，只是因为没有德行的缘故！现今你有栾武子的清贫境况，我认为你能够继承他的德行，所以表示祝贺，如果不忧愁德行的建立，却只为财产不足而发愁，我表示哀怜还来不及，哪里还能够祝贺呢？"<br>宣子于是下拜，并叩头说："我正在趋向灭亡的时候，全靠你拯救了我。你的恩德不敢独自承受，恐怕从我的祖宗桓叔以下的子孙，都要感谢您的恩赐。"</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>选自《国语》。《国语》相传是春秋时左丘明作，二十一卷，主要记西周末年和春秋时期鲁国等国贵族的言论。叔向，春秋晋国大夫羊舌肸（xī），字叔向。<br>韩宣子：名起，是晋国的卿。卿的爵位在公之下，大夫之上。<br>实：这里指财富。<br>无以从二三子：意思是家里贫穷，没有供给宾客往来的费用，不能跟晋国的卿大夫交往。二三子，指晋国的卿大夫。<br>栾武子：即栾书，晋大夫，于鲁成公四年升任执政大臣，将中军。<br>无一卒之田：没有一百人所有的田亩。古代军队编制，一百人为"卒"。一卒之田，100顷。是上大夫的俸禄。<br>宗器：祭器。<br>宪则：法制。<br>越：本意为高扬，这里指传播。<br>刑：法，就是前边的"宪则"。<br>行刑不疚（jiù）：指栾书弑杀晋厉公而不被国人责难。<br>以免于难：因此避免了祸患。意思是没有遭到杀害或被迫逃亡。<br>桓子：栾武子的儿子。<br>骄泰：骄慢放纵。<br>艺：度，准则。<br>略则行志：忽略法制，任意行事。<br>假货居贿：把财货借给人家从而取利。贿，财。<br>而赖武之德：但是依靠栾武子的德望。<br>以没其身：终生没有遭到祸患。<br>怀子：桓子的儿子。<br>修：研究，学习。<br>离桓之罪：（怀子）因桓子的罪恶而遭罪。离，同"罹"，遭到。<br>以亡于楚：终于逃亡到楚国。<br>郤（xì）昭子：晋国的卿。<br>其富半公室：他的财富抵得过半个晋国。公室，公家，指国家。<br>其家半三军：他家里的佣人抵得过三军的一半。当时的兵制，诸侯大国三军，合三万七千五百人。一说郤家人占据了晋国三军中一半的职位。晋国有三军，三军主将与将佐，合称为“六卿”。<br>宠：尊贵荣华。<br>以泰于国：就在国内非常奢侈。泰，过分、过甚。<br>其身尸于朝：（郤昭子后来被晋厉公派人杀掉，）他的尸体摆在朝堂（示众）。<br>其宗灭于绛：他的宗族在绛这个地方被灭掉了。绛，晋国的旧都：在如今山西省翼城县东南。<br>八郤，五大夫，三卿：郤氏八个人，其中五个大夫，三个卿。<br>吾子：您，古时对人的尊称。<br>能其德矣：能够行他的道德了。<br>吊：忧虑。<br>稽首：顿首，把头叩到地上。<br>起：韩宣子自称他自己的名字。<br>专承：独自一个人承受。<br>桓叔：韩氏的始祖。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《叔向贺贫》是春秋时期创作的散文，作者是左丘明。它的教育意义是叔向借晋栾氏、郤氏两大家族兴亡史，说明人应忧德之不建，不应忧货之不足。</p></div></div>
             
             <div class="section"><a href="https://baike.baidu.com/item/%E5%8F%94%E5%90%91%E8%B4%BA%E8%B4%AB/5777050?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

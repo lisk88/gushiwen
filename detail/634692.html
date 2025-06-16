@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>与于襄阳书 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>与于襄阳书 - 韩愈 - 唐朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="与于襄阳书是唐朝诗人韩愈的经典作品。本页面提供与于襄阳书的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="与于襄阳书,韩愈,唐朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="与于襄阳书 - 韩愈 - 唐朝古诗文">
+    <meta property="og:description" content="与于襄阳书是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="与于襄阳书 - 韩愈 - 唐朝古诗文">
+    <meta name="twitter:description" content="与于襄阳书是唐朝诗人韩愈的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "与于襄阳书",
+      "author": {
+        "@type": "Person",
+        "name": "韩愈"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "与于襄阳书是唐朝诗人韩愈的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">与于襄阳书</h1>
-            <div class="poem-author">【唐】韩愈</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【唐】<span itemprop="name">韩愈</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>七月三日，将仕郎、守国子四门博士韩愈，谨奉书尚书阁下：</p><p>士之能享大名显当世者，莫不有先达之士负天下之望者为之前焉；士之能垂休光照后世者，亦莫不有后进之士负天下之望者为之后焉。莫为之前，虽美而不彰；莫为之后，虽盛而不传。是二人者，未始不相须也，然而千百载乃一相遇焉；岂上之人无可援，下之人无可推欤？何其相须之殷，而相遇之疏也？其故在下之人负其能，不肯谄其上，上之人负其位，不肯顾其下，故高材多戚戚之穷，盛位无赫赫之光，是二人者之所为皆过也。未尝干之，不可谓上无其人；未尝求之，不可谓下无其人。愈之诵此言久矣，未尝敢以闻于人。</p><p>侧闻阁下抱不世之才，特立而独行，道方而事实，卷舒不随乎时，文武唯其所用，岂愈所谓其人哉？抑未闻后进之士，有遇知于左右，获礼于门下者，岂求之而未得耶？将志存乎立功，而事专乎报主，虽遇其人，未暇礼耶？何其宜闻而久不闻也！愈虽不才，其自处不敢后于恒人，阁下将求之而未得欤？古人有言：“请自隗始。”愈今者惟朝夕刍米仆赁之资是急，不过费阁下一朝之享而足也。如曰吾志存乎立功，而事专乎报主，虽遇其人，未暇礼焉，则非愈之所敢知也。世之龊龊者，既不足以语之，磊落奇伟之人，又不能听焉，则信乎命之穷也。</p><p>谨献旧所为文一十八首，如赐观览，亦足知其志之所存。愈恐惧再拜。</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>七月三日，将仕郎、守国子四门博士韩愈，恭敬地把信呈给尚书阁下：<br>读书人能够享有大名声，显扬于当代，没有哪一个不是靠在天下有名望、地位显达的前辈替他引荐的。读书人能够把他的美好德行流传下来，照耀后代的，也没有哪一个不是靠在天下有名望的后辈给他做继承人的。没有人给他引荐，即使有美好的才华也不会显扬；没有人作继承人，即使有很好的功业、德行也不会流传。这两种人，未曾不是互相等待的，然而千百年才相逢一次。难道是居于上位的人中没有可以攀援的人，居于下位的人中没有值得举荐的人吗？为什么他们互相等待那样殷切，而相逢的机会却那样少呢？其原因在于居于下位的人倚仗自己的才华不肯巴结地位高的人请求引荐，居于上位的人倚仗自己的地位不肯照顾地位低的人。所以才学很高的人很多都为不得志而忧愁，地位高的人没有显耀的声誉。这两种人的行为都是错误的。没有去求取，就不能说上面没有引荐人；没有向下寻找，就不能说下面没有可以举荐的人。我思考这句话已经很久了，没有敢把这句话说给别人听。<br>我从旁听说阁下具有非凡的才能，不随波逐流、有独到的见识，行为方正做事实际，进退有度不随流俗，文武官员能量才任用。难道您就是我所说的那种人吗？然而没有听说过后辈有得到您的赏识和礼遇的，难道是您寻求而没能得到吗？还是您志在建功立业，而办事一心想报答君主，虽然遇到了可以推荐的人才，也没有空闲来以礼相待呢？为什么应该听到您推荐人才的事却久久没有听到呢？<br>我虽然没有才能，但要求自己却不敢落后于一般人。阁下将要寻求的人才还没能找到吗？古人说过：“请从我郭隗开始。”我现在只为早晚的柴米和雇仆人的费用着急，这些不过费阁下一顿早饭的费用就足够了。如果您说：“我志在建功立业，办事一心想报答君主，虽然遇到了可以推荐的人才，还没有空闲来以礼相待。”那就不是我敢去知道的了。世间那些拘谨小心的人，既不足以向他们告诉这些话，而胸怀坦白、才识卓越的人，又不听取我的话，那么就真的是我的命运很坏了！<br>恭敬地呈上我以前作的文章十八篇，如蒙您过目，也足以了解我的志向所在。<br>韩愈诚惶诚恐，再拜。</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>将仕郎：官阶，唐属从九品。<br>守：任的意思。<br>国子：即国子监，唐代最高学府，下分七馆：国子、太学、广文、四门、律、书、算。<br>四门博士：即四门馆教授。贞元十八年春，韩愈为四门博士。<br>负：仗侍。<br>休光：盛美的光辉，光华。<br>后进之士：后通显的人。<br>为之后焉：做他们的歌颂者。<br>虽盛而不传：即使成就卓越却不会流传。<br>是二人：这两种人。<br>相须：相待。这里是互相依赖的意思。<br>援：攀援。<br>推：推举。<br>殷：多、盛。这里引申作密切解。<br>相遇：互相遇合。<br>负：仗恃。<br>谄：讨好。<br>顾：照顾关怀。<br>戚戚：忧虑的样子。<br>赫赫：威显的样子。<br>干之：求他。<br>干，干谒。<br>闻于人：听说。<br>侧闻：从旁边听说，表示谦恭。<br>道方而事实：道德方正而工作讲求实际。<br>卷舒：卷缩舒展，这里是进退的意思。<br>文武：具有文、武的才能的人。<br>唯其所用：只在您来使用。其，你，第二人称。<br>遇知：受到赏识。<br>获礼：得到尊敬。<br>恒：平常、普通。<br>隗（kuí）：郭隗，战国时燕国人。燕昭王招贤纳士，欲报齐国之仇，往见郭隗，郭隗说：“今王欲致士，先从隗始，隗且见事，况贤于隗者乎？”。<br>刍（chú）：喂牲口的草。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>于襄阳，名頔，字允元，河南洛阳人，唐德宗贞元十四年（公元798年）九月以工部尚书为山东道节度使。由于做过襄阳大都督，故称于襄阳。贞元十七年（公元801年）秋冬之际，韩愈被任命署理国子临四门博士，正式在京师做官。博士职乃是闲官，地位不高，很难施展抱负，为此，他给于襄阳写信请求引荐。此信以士欲进身场名、建功业须前辈援引，而前辈之功业盛名又须有为的后继者为之传扬为论点，入情入理。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>七月三日，将仕郎、守国子四门博士韩愈，谨奉书尚书阁下：</p><p>士之能享大名显当世者，莫不有先达之士负天下之望者为之前焉；士之能垂休光照后世者，亦莫不有后进之士负天下之望者为之后焉。莫为之前，虽美而不彰；莫为之后，虽盛而不传。是二人者，未始不相须也，然而千百载乃一相遇焉；岂上之人无可援，下之人无可推欤？何其相须之殷，而相遇之疏也？其故在下之人负其能，不肯谄其上，上之人负其位，不肯顾其下，故高材多戚戚之穷，盛位无赫赫之光，是二人者之所为皆过也。未尝干之，不可谓上无其人；未尝求之，不可谓下无其人。愈之诵此言久矣，未尝敢以闻于人。</p><p>侧闻阁下抱不世之才，特立而独行，道方而事实，卷舒不随乎时，文武唯其所用，岂愈所谓其人哉？抑未闻后进之士，有遇知于左右，获礼于门下者，岂求之而未得耶？将志存乎立功，而事专乎报主，虽遇其人，未暇礼耶？何其宜闻而久不闻也！愈虽不才，其自处不敢后于恒人，阁下将求之而未得欤？古人有言：“请自隗始。”愈今者惟朝夕刍米仆赁之资是急，不过费阁下一朝之享而足也。如曰吾志存乎立功，而事专乎报主，虽遇其人，未暇礼焉，则非愈之所敢知也。世之龊龊者，既不足以语之，磊落奇伟之人，又不能听焉，则信乎命之穷也。</p><p>谨献旧所为文一十八首，如赐观览，亦足知其志之所存。愈恐惧再拜。</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>七月三日，将仕郎、守国子四门博士韩愈，恭敬地把信呈给尚书阁下：<br>读书人能够享有大名声，显扬于当代，没有哪一个不是靠在天下有名望、地位显达的前辈替他引荐的。读书人能够把他的美好德行流传下来，照耀后代的，也没有哪一个不是靠在天下有名望的后辈给他做继承人的。没有人给他引荐，即使有美好的才华也不会显扬；没有人作继承人，即使有很好的功业、德行也不会流传。这两种人，未曾不是互相等待的，然而千百年才相逢一次。难道是居于上位的人中没有可以攀援的人，居于下位的人中没有值得举荐的人吗？为什么他们互相等待那样殷切，而相逢的机会却那样少呢？其原因在于居于下位的人倚仗自己的才华不肯巴结地位高的人请求引荐，居于上位的人倚仗自己的地位不肯照顾地位低的人。所以才学很高的人很多都为不得志而忧愁，地位高的人没有显耀的声誉。这两种人的行为都是错误的。没有去求取，就不能说上面没有引荐人；没有向下寻找，就不能说下面没有可以举荐的人。我思考这句话已经很久了，没有敢把这句话说给别人听。<br>我从旁听说阁下具有非凡的才能，不随波逐流、有独到的见识，行为方正做事实际，进退有度不随流俗，文武官员能量才任用。难道您就是我所说的那种人吗？然而没有听说过后辈有得到您的赏识和礼遇的，难道是您寻求而没能得到吗？还是您志在建功立业，而办事一心想报答君主，虽然遇到了可以推荐的人才，也没有空闲来以礼相待呢？为什么应该听到您推荐人才的事却久久没有听到呢？<br>我虽然没有才能，但要求自己却不敢落后于一般人。阁下将要寻求的人才还没能找到吗？古人说过：“请从我郭隗开始。”我现在只为早晚的柴米和雇仆人的费用着急，这些不过费阁下一顿早饭的费用就足够了。如果您说：“我志在建功立业，办事一心想报答君主，虽然遇到了可以推荐的人才，还没有空闲来以礼相待。”那就不是我敢去知道的了。世间那些拘谨小心的人，既不足以向他们告诉这些话，而胸怀坦白、才识卓越的人，又不听取我的话，那么就真的是我的命运很坏了！<br>恭敬地呈上我以前作的文章十八篇，如蒙您过目，也足以了解我的志向所在。<br>韩愈诚惶诚恐，再拜。</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>将仕郎：官阶，唐属从九品。<br>守：任的意思。<br>国子：即国子监，唐代最高学府，下分七馆：国子、太学、广文、四门、律、书、算。<br>四门博士：即四门馆教授。贞元十八年春，韩愈为四门博士。<br>负：仗侍。<br>休光：盛美的光辉，光华。<br>后进之士：后通显的人。<br>为之后焉：做他们的歌颂者。<br>虽盛而不传：即使成就卓越却不会流传。<br>是二人：这两种人。<br>相须：相待。这里是互相依赖的意思。<br>援：攀援。<br>推：推举。<br>殷：多、盛。这里引申作密切解。<br>相遇：互相遇合。<br>负：仗恃。<br>谄：讨好。<br>顾：照顾关怀。<br>戚戚：忧虑的样子。<br>赫赫：威显的样子。<br>干之：求他。<br>干，干谒。<br>闻于人：听说。<br>侧闻：从旁边听说，表示谦恭。<br>道方而事实：道德方正而工作讲求实际。<br>卷舒：卷缩舒展，这里是进退的意思。<br>文武：具有文、武的才能的人。<br>唯其所用：只在您来使用。其，你，第二人称。<br>遇知：受到赏识。<br>获礼：得到尊敬。<br>恒：平常、普通。<br>隗（kuí）：郭隗，战国时燕国人。燕昭王招贤纳士，欲报齐国之仇，往见郭隗，郭隗说：“今王欲致士，先从隗始，隗且见事，况贤于隗者乎？”。<br>刍（chú）：喂牲口的草。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>于襄阳，名頔，字允元，河南洛阳人，唐德宗贞元十四年（公元798年）九月以工部尚书为山东道节度使。由于做过襄阳大都督，故称于襄阳。贞元十七年（公元801年）秋冬之际，韩愈被任命署理国子临四门博士，正式在京师做官。博士职乃是闲官，地位不高，很难施展抱负，为此，他给于襄阳写信请求引荐。此信以士欲进身场名、建功业须前辈援引，而前辈之功业盛名又须有为的后继者为之传扬为论点，入情入理。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -90,7 +121,72 @@
     </div>
     
             <div class="section"><a href="http://baike.baidu.com/view/2259825.htm" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

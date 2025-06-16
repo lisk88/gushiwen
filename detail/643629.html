@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>周郑交质 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>周郑交质 - 左丘明 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="周郑交质是周朝诗人左丘明的经典作品。本页面提供周郑交质的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="周郑交质,左丘明,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="周郑交质 - 左丘明 - 周朝古诗文">
+    <meta property="og:description" content="周郑交质是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="周郑交质 - 左丘明 - 周朝古诗文">
+    <meta name="twitter:description" content="周郑交质是周朝诗人左丘明的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "周郑交质",
+      "author": {
+        "@type": "Person",
+        "name": "左丘明"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "周郑交质是周朝诗人左丘明的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">周郑交质</h1>
-            <div class="poem-author">【周】左丘明</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">左丘明</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>郑武公、庄公为平王卿士。王贰于虢，郑伯怨王。王曰：“无之。”故周郑交质。王子狐为质于郑，郑公子忽为质于周。</p><p>王崩，周人将畀虢公政。四月，郑祭足帅师取温之麦。秋，又取成周之禾。周郑交恶。</p><p>君子曰：“信不由中，质无益也。明恕而行，要之以礼，虽无有质，谁能间之？苟有明信，涧溪沼沚之毛，蘋蘩蕴藻之菜，筐筥錡釜之器，潢污行潦之水，可荐于鬼神，可羞于王公，而况君子结二国之信，行之以礼，又焉用质？《风》有《采蘩》、《采蘋》，《雅》有《行苇》、《泂酌》，昭忠信也。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>郑武公、郑庄公是周平王的卿士。周平王分权给虢公，郑庄公怨恨周平王。周平王说：“没有的事（偏心于虢公）。”于是周王、郑国交换人质：周平王的儿子狐在郑国做人质，郑庄公的儿子忽在周王室做人质。<br>周平王死后，周王室准备让虢公掌政。四月，郑国的祭足帅军队收割了温邑的麦子。秋季，又收割了成周的稻谷。周和郑互相仇恨。<br>君子说：“信用不发自心中，盟约抵押也没用。开诚布公互相谅解地行事，用礼教约束，即使没有抵押，谁能离间他们呢？假如有真诚的信用，山涧溪流中的浮萍，蕨类水藻这样的菜，装在竹筐铁锅一类的器物里，用低洼处沟渠中的水，都可以供奉鬼神，献给王公为食，何况君子缔结两国的盟约，按礼去做，又哪里用得着人质啊？《国风》中有《采蘩》、《采苹》，《大雅》中有《行苇》、《泂酌》诗，都是昭示忠信的。”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>卿士：周朝执政官。<br>贰于虢（guó）：二心，这里有“偏重”的意思。此指平王想把政权一部分让虢执掌。虢，指西虢公，周王室卿士。<br>郑伯：诸侯国郑国的君主，这里是郑庄公。<br>交质：交换人质。<br>王子狐：即姬狐，是周平王的次子、姬泄父的弟弟，史称“王子狐”，在长兄“太子泄父”死后，被立为太子。<br>公子忽：郑庄公太子，后即位为昭公。<br>王崩：周平王去世。崩，君主时代称帝王死。<br>畀（bì）：交给。<br>祭（zhài）足：即祭仲，郑大（dà）夫。温，周朝小国，在今河南温县南。<br>成周：周地，今在河南洛阳市东。<br>中：同“衷”，内心。<br>明恕：互相体谅。<br>要（yāo）：约束。<br>间：离间。<br>明信：彼此了解，坦诚相待。<br>沼沚：沼，池塘。沚，水中小洲。<br>蘋（pín）：水生植物，即浮萍。蘩（fán），白蒿。蕴藻，一种聚生的藻类。菜，野菜。<br>筐筥（jǔ）：竹制容器，方形为筐，圆形为莒。锜（qí）釜，均为烹饪器，有足为錡，无足为釜。<br>潢（huáng）：积水池。污，积水。行（xínɡ）潦（lǎo），路上的积水。<br>荐：享祭，祭祀。<br>羞：同“馐”，进奉。<br>《采蘩》、《采苹》：均为《诗·召南》篇名，写妇女采集野菜以供祭祀。<br>《行苇》、《泂（jiǒng）酌》：均为《诗·大雅》篇名，前者写周祖先晏享先人仁德，歌颂忠厚。后者写汲取行潦之水供宴享。<br>昭：表明。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>本文出自《左传·隐公三年》。在自春秋起始的东周，从平王东迁立国，就天下大乱，礼崩乐坏。周王室为了防止郑庄公独揽朝政，就想分政给另一个姬姓国国君虢公。然而，郑庄公不买周平王的账，为了达成妥协，周平王和郑庄公，居然采用了交换质子这一手段。而这一手段并没有奏效。以上就是该文的背景。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>郑武公、庄公为平王卿士。王贰于虢，郑伯怨王。王曰：“无之。”故周郑交质。王子狐为质于郑，郑公子忽为质于周。</p><p>王崩，周人将畀虢公政。四月，郑祭足帅师取温之麦。秋，又取成周之禾。周郑交恶。</p><p>君子曰：“信不由中，质无益也。明恕而行，要之以礼，虽无有质，谁能间之？苟有明信，涧溪沼沚之毛，蘋蘩蕴藻之菜，筐筥錡釜之器，潢污行潦之水，可荐于鬼神，可羞于王公，而况君子结二国之信，行之以礼，又焉用质？《风》有《采蘩》、《采蘋》，《雅》有《行苇》、《泂酌》，昭忠信也。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>郑武公、郑庄公是周平王的卿士。周平王分权给虢公，郑庄公怨恨周平王。周平王说：“没有的事（偏心于虢公）。”于是周王、郑国交换人质：周平王的儿子狐在郑国做人质，郑庄公的儿子忽在周王室做人质。<br>周平王死后，周王室准备让虢公掌政。四月，郑国的祭足帅军队收割了温邑的麦子。秋季，又收割了成周的稻谷。周和郑互相仇恨。<br>君子说：“信用不发自心中，盟约抵押也没用。开诚布公互相谅解地行事，用礼教约束，即使没有抵押，谁能离间他们呢？假如有真诚的信用，山涧溪流中的浮萍，蕨类水藻这样的菜，装在竹筐铁锅一类的器物里，用低洼处沟渠中的水，都可以供奉鬼神，献给王公为食，何况君子缔结两国的盟约，按礼去做，又哪里用得着人质啊？《国风》中有《采蘩》、《采苹》，《大雅》中有《行苇》、《泂酌》诗，都是昭示忠信的。”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>卿士：周朝执政官。<br>贰于虢（guó）：二心，这里有“偏重”的意思。此指平王想把政权一部分让虢执掌。虢，指西虢公，周王室卿士。<br>郑伯：诸侯国郑国的君主，这里是郑庄公。<br>交质：交换人质。<br>王子狐：即姬狐，是周平王的次子、姬泄父的弟弟，史称“王子狐”，在长兄“太子泄父”死后，被立为太子。<br>公子忽：郑庄公太子，后即位为昭公。<br>王崩：周平王去世。崩，君主时代称帝王死。<br>畀（bì）：交给。<br>祭（zhài）足：即祭仲，郑大（dà）夫。温，周朝小国，在今河南温县南。<br>成周：周地，今在河南洛阳市东。<br>中：同“衷”，内心。<br>明恕：互相体谅。<br>要（yāo）：约束。<br>间：离间。<br>明信：彼此了解，坦诚相待。<br>沼沚：沼，池塘。沚，水中小洲。<br>蘋（pín）：水生植物，即浮萍。蘩（fán），白蒿。蕴藻，一种聚生的藻类。菜，野菜。<br>筐筥（jǔ）：竹制容器，方形为筐，圆形为莒。锜（qí）釜，均为烹饪器，有足为錡，无足为釜。<br>潢（huáng）：积水池。污，积水。行（xínɡ）潦（lǎo），路上的积水。<br>荐：享祭，祭祀。<br>羞：同“馐”，进奉。<br>《采蘩》、《采苹》：均为《诗·召南》篇名，写妇女采集野菜以供祭祀。<br>《行苇》、《泂（jiǒng）酌》：均为《诗·大雅》篇名，前者写周祖先晏享先人仁德，歌颂忠厚。后者写汲取行潦之水供宴享。<br>昭：表明。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>本文出自《左传·隐公三年》。在自春秋起始的东周，从平王东迁立国，就天下大乱，礼崩乐坏。周王室为了防止郑庄公独揽朝政，就想分政给另一个姬姓国国君虢公。然而，郑庄公不买周平王的账，为了达成妥协，周平王和郑庄公，居然采用了交换质子这一手段。而这一手段并没有奏效。以上就是该文的背景。</p></div></div>
             
             
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>

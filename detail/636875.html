@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卜居 - 中学古诗文学习网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif; line-height: 1.8; background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%); min-height: 100vh; }
-        .header { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,255,0.9) 100%); backdrop-filter: blur(10px); padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-bottom: 3px solid #667eea; }
-        .nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav a { color: #667eea; text-decoration: none; font-weight: bold; transition: color 0.3s ease; padding: 0.5rem 1rem; border-radius: 8px; }
-        .nav a:hover { color: #ff6b6b; background: rgba(255,255,255,0.5); }
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
-        .poem-header { text-align: center; margin-bottom: 3rem; background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
-        .poem-title { font-size: 2.8rem; color: #2c3e50; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.3; }
-        .poem-author { font-size: 1.4rem; color: #7f8c8d; margin-bottom: 1rem }
-        .poem-dynasty { font-size: 1.2rem; color: #95a5a6; }
-        .poem-meta { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; color: #7f8c8d; background: rgba(103, 126, 234, 0.1); padding: 0.5rem 1rem; border-radius: 20px; }
-        .poem-content { background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-bottom: 2rem; backdrop-filter: blur(10px); }
-        .poem-text { font-size: 1.4rem; line-height: 2.2; color: #2c3e50; margin-bottom: 2rem; text-align: center; font-family: '华文楷体', '楷体', serif; }
-        .poem-text p { margin-bottom: 1rem; }
-        .section { margin-bottom: 3rem; }
-        .section-title { font-size: 1.5rem; font-weight: bold; color: #2c3e50; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #667eea; display: inline-block; }
-        .section-content { font-size: 1.1rem; color: #34495e; line-height: 1.8; }
-        .section-content p { margin-bottom: 1em; }
-        .translation { background: rgba(103, 126, 234, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea; }
-        .annotation { background: rgba(46, 204, 113, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #2ecc71; }
-        .intro { background: rgba(230, 126, 34, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #e67e22; }
-        .appreciations { background: rgba(155, 89, 182, 0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #9b59b6; }
-        .appreciation-item { background: rgba(255,255,255,0.7); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid rgba(155, 89, 182, 0.1); }
-        .appreciation-item:last-child { margin-bottom: 0; }
-        .appreciation-meta { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-        .book-title { font-weight: bold; color: #9b59b6; }
-        .author-name { font-style: italic; }
-        .press-name { color: #95a5a6; }
-        .external-link { display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; padding: 0.5rem 1rem; border-radius: 20px; background: rgba(103, 126, 234, 0.1); transition: all 0.3s ease; margin-top: 1rem; }
-        .external-link:hover { background: rgba(103, 126, 234, 0.2); transform: translateY(-2px); }
-        @media (max-width: 768px) {
-            .poem-title { font-size: 2.2rem; }
-            .poem-meta { flex-direction: column; gap: 1rem; align-items: center; }
-            .container { padding: 2rem 1rem; }
-            .poem-content { padding: 2rem; }
-            .poem-text { font-size: 1.2rem; }
-            .appreciation-meta { flex-direction: column; align-items: flex-start; }
-        }
-    </style>
+    
+    <!-- 基础SEO标签 -->
+    <title>卜居 - 屈原 - 周朝古诗文 | 中学古诗文学习网站</title>
+    <meta name="description" content="卜居是周朝诗人屈原的经典作品。本页面提供卜居的原文、译文、注释、赏析等详细内容，帮助中学生深入理解古诗文之美。">
+    <meta name="keywords" content="卜居,屈原,周朝,古诗文,中学语文,诗词赏析,古典文学,文">
+    <meta name="author" content="中学古诗文学习网站">
+    <meta name="robots" content="index,follow">
+    
+    <!-- Open Graph 标签 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="卜居 - 屈原 - 周朝古诗文">
+    <meta property="og:description" content="卜居是周朝诗人屈原的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta property="og:url" content="{current_url}">
+    <meta property="og:site_name" content="中学古诗文学习网站">
+    <meta property="og:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="卜居 - 屈原 - 周朝古诗文">
+    <meta name="twitter:description" content="卜居是周朝诗人屈原的经典作品。提供原文、译文、注释、赏析等详细内容。">
+    <meta name="twitter:image" content="https://gushiwen.pages.dev//images/poetry-share.jpg">
+    
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "卜居",
+      "author": {
+        "@type": "Person",
+        "name": "屈原"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "文",
+      "description": "卜居是周朝诗人屈原的经典作品",
+      "url": "{current_url}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "中学古诗文学习网站",
+        "url": "https://gushiwen.pages.dev/"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{current_url}">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 预加载字体 -->
+    <link rel="preload" href="/fonts/chinese-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="javascript:history.back()">← 返回上页</a>
-            <a href="junior.html">初中古诗文</a>
-            <a href="index.html">网站首页</a>
+            <a href="javascript:history.back()">← 返回</a>
+            <a href="https://gushiwen.pages.dev//junior.html">初中古诗文</a>
+            <a href="https://gushiwen.pages.dev//index.html">网站首页</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="poem-header">
+    <main class="container">
+        <article class="poem-header">
             <h1 class="poem-title">卜居</h1>
-            <div class="poem-author">【周】屈原</div>
-            <div class="poem-dynasty"></div>
-        </div>
+            <div class="poem-author">【周】<span itemprop="name">屈原</span></span></div>
+            <div class="poem-dynasty"><span itemprop="dateCreated"></span></div>
 
-        <div class="poem-content">
-            <div class="section">
-                <div class="section-title">📜 原文</div>
-                <div class="poem-text"><p>屈原既放，三年不得复见。竭知尽忠而蔽障于谗。心烦虑乱，不知所从。乃往见太卜郑詹尹曰：“余有所疑，愿因先生决之。”詹尹乃端策拂龟，曰：“君将何以教之？”</p><p>屈原曰：“吾宁悃悃款款，朴以忠乎，将送往劳来，斯无穷乎？宁诛锄草茅以力耕乎，将游大人以成名乎？宁正言不讳以危身乎，将从俗富贵以偷生乎？宁超然高举以保真乎，将哫訾栗斯，喔咿儒儿，以事妇人乎？宁廉洁正直以自清乎，将突梯滑稽，如脂如韦，以洁楹乎？宁昂昂若千里之驹乎，将泛泛若水中之凫，与波上下，偷以全吾躯乎？宁与骐骥亢轭乎，将随驽马之迹乎？宁与黄鹄比翼乎，将与鸡鹜争食乎？此孰吉孰凶？何去何从？世溷浊而不清：蝉翼为重，千钧为轻；黄钟毁弃，瓦釜雷鸣；谗人高张，贤士无名。吁嗟默默兮，谁知吾之廉贞！”</p><p>詹尹乃释策而谢曰：“夫尺有所短，寸有所长；物有所不足，智有所不明；数有所不逮，神有所不通。用君之心，行君之意。龟策诚不能知此事。”</p></div>
+            <!-- 分享功能 -->
+            <div class="share-container">
+                <button class="share-btn" onclick="toggleShare()" aria-label="分享这首诗">
+                    <span>⚡</span>
+                    <span>分享</span>
+                </button>
+                <div class="share-dropdown" id="shareDropdown" role="menu">
+                    <div class="share-options">
+                        <div class="share-option" onclick="copyLink()" role="menuitem">
+                            <span>📋</span>
+                            <span>复制链接</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </article>
 
-            <div class="section"><div class="section-title">📖 译文</div><div class="section-content translation"><p>屈原被流放后，三年不能和楚王相见。他竭尽智慧效忠国家，却被谗言谤语把他和君王遮蔽阻隔。他心烦意乱，不知如何是好。于是去见太卜郑詹尹问卜说：“我对有些事疑惑不解，希望通过您的占卜帮助我分析判断。”郑詹尹就摆正蓍草、拂去龟甲上的灰尘，问道：“先生有何见教？”<br>屈原说：“我宁可诚恳朴实、忠心耿耿呢，还是迎来送往、巧于逢迎而摆脱困境？宁可垦荒锄草勤劳耕作呢，还是交游权贵而沽名钓誉？宁可毫无隐讳地直言为自己招祸呢，还是顺从世俗贪图富贵而苟且偷生？宁可鹤立鸡群而保持正直操守呢，还是阿谀逢迎、强颜欢笑以侍奉那位妇人？宁可廉洁正直以保持自己的清白呢，还是圆滑诡诈、油滑适俗、趋炎附势？宁可像志行高远的千里驹呢，还是像浮游的野鸭随波逐流而保全自身？宁可与骐骥并驾齐驱呢，还是追随那劣马的足迹？宁可与天鹅比翼高飞呢，还是同鸡鸭在地上争食？上述种种，哪个是吉哪个是凶，哪个该舍弃哪个该遵从？现在的世道混浊不清：认为蝉翼是重的，千钧是轻的；黄钟大吕竟遭毁弃，瓦釜陶罐却响如雷鸣；谗佞小人嚣张跋扈，贤明之士则默默无闻。唉，沉默吧，谁人能知我廉洁忠贞的心哪！”<br>郑詹尹于是放下蓍草抱歉地说：“尺比寸长但也有短处，寸比尺短却也有它的长处；世间万物都有不完善的地方，人的智慧也有不明了的时候；术数有占卜不到的事情，天神也有难解之理。您还是按照自己的心志，实行自己的主张吧。龟壳蓍草实在无法知道这些事啊！”</p></div></div>
-            <div class="section"><div class="section-title">📝 注释</div><div class="section-content annotation"><p>卜居：占卜自己该怎么处世。卜，占卜。居，处世的方法与态度。<br>放：放逐。<br>复见：指再见到楚王。<br>蔽障：遮蔽、阻挠。<br>太卜：掌管卜筮的官。<br>因：凭借。<br>端策：数计蓍草。端，数也。拂龟：拂去龟壳上的灰尘。<br>悃（kǔn）悃款款：诚实勤恳的样子。<br>送往劳来：送往迎来。劳，慰劳。<br>大人：指达官贵人。<br>偷生：贪生。<br>超然：高超的样子。高举：远走高飞。保真：保全真实的本性。<br>哫（zú）訾（zī）：以言献媚。栗斯：阿谀奉承状。栗，恭谨，恭敬。斯，语助词。<br>喔咿儒儿（ní）：强颜欢笑的样子。<br>妇人：指楚怀王的宠姬郑袖，她与朝中重臣上官大夫等人联合排挤馋毁屈原。<br>突梯：圆滑的样子。滑（gǔ）稽（jī）：一种能转注吐酒、终日不竭的酒器，后借以指应付无穷、善于迎合别人。<br>如脂如韦：谓像油脂一样光滑，像熟牛皮一样柔软，善于应付环境。<br>洁楹：度量屋柱，顺圆而转，形容处世的圆滑随俗。洁，借为“絜（xié）”，《楚辞补注》引《文选》亦作“絜”。<br>昂昂：昂首挺胸、堂堂正正的样子。<br>泛泛：漂浮不定的样子。凫（fú）：水鸟，即野鸭。一本此字下有一“乎”字。<br>亢（kàng）轭（è）：并驾而行。亢，同“伉”，并也。轭，车辕前端的横木。<br>驽（nú）马：劣马。<br>黄鹄（hú）：天鹅。<br>鹜（wù）：鸭子。<br>溷（hùn）浊：肮脏、污浊。<br>千钧：代表最重的东西。古制三十斤为一钧。<br>黄钟：古乐中十二律之一，是最响最宏大的声调。这里指声调合于黄钟律的大钟。<br>瓦釜（fǔ）：陶制的锅。这里代表鄙俗音乐。<br>高张：指坏人气焰嚣张，趾高气扬。<br>吁嗟：叹息声。<br>释：放下。谢：辞谢，拒绝。<br>数：卦数。逮：及，到。</p></div></div>
-            <div class="section"><div class="section-title">💡 简介</div><div class="section-content intro"><p>《卜居》是《楚辞》中的一篇文章。相传为屈原所作，而现代学者多以为是楚国人在屈原死后为了悼念他而记载下来的有关传说。文章表现了当时社会的黑暗腐败，反映了屈原的愤慨和不满，歌颂了他坚持真理、不愿同流合污的斗争精神。全文以屈原问卜开篇，以詹尹“释策而谢”的答语收结，中间以连珠式的对立设问的语句贯穿，文采斐然，往复盘旋，八对设问，一以贯之，气势充沛，感情强烈。虽铺陈夸饰，句式整齐，却不板不散，亦无重复之嫌。</p></div></div>
+        <article class="poem-content" data-kind="文" itemscope itemtype="http://schema.org/CreativeWork">
+            <section class="section">
+                <h2 class="section-title">📜 原文</h2>
+                <div class="poem-text" itemprop="text"><p>屈原既放，三年不得复见。竭知尽忠而蔽障于谗。心烦虑乱，不知所从。乃往见太卜郑詹尹曰：“余有所疑，愿因先生决之。”詹尹乃端策拂龟，曰：“君将何以教之？”</p><p>屈原曰：“吾宁悃悃款款，朴以忠乎，将送往劳来，斯无穷乎？宁诛锄草茅以力耕乎，将游大人以成名乎？宁正言不讳以危身乎，将从俗富贵以偷生乎？宁超然高举以保真乎，将哫訾栗斯，喔咿儒儿，以事妇人乎？宁廉洁正直以自清乎，将突梯滑稽，如脂如韦，以洁楹乎？宁昂昂若千里之驹乎，将泛泛若水中之凫，与波上下，偷以全吾躯乎？宁与骐骥亢轭乎，将随驽马之迹乎？宁与黄鹄比翼乎，将与鸡鹜争食乎？此孰吉孰凶？何去何从？世溷浊而不清：蝉翼为重，千钧为轻；黄钟毁弃，瓦釜雷鸣；谗人高张，贤士无名。吁嗟默默兮，谁知吾之廉贞！”</p><p>詹尹乃释策而谢曰：“夫尺有所短，寸有所长；物有所不足，智有所不明；数有所不逮，神有所不通。用君之心，行君之意。龟策诚不能知此事。”</p></div>
+            </section>
+
+            <!-- 动态内容区域 -->
+            <div class="section"><h2 class="section-title">📖 译文</h2><div class="section-content translation"><p>屈原被流放后，三年不能和楚王相见。他竭尽智慧效忠国家，却被谗言谤语把他和君王遮蔽阻隔。他心烦意乱，不知如何是好。于是去见太卜郑詹尹问卜说：“我对有些事疑惑不解，希望通过您的占卜帮助我分析判断。”郑詹尹就摆正蓍草、拂去龟甲上的灰尘，问道：“先生有何见教？”<br>屈原说：“我宁可诚恳朴实、忠心耿耿呢，还是迎来送往、巧于逢迎而摆脱困境？宁可垦荒锄草勤劳耕作呢，还是交游权贵而沽名钓誉？宁可毫无隐讳地直言为自己招祸呢，还是顺从世俗贪图富贵而苟且偷生？宁可鹤立鸡群而保持正直操守呢，还是阿谀逢迎、强颜欢笑以侍奉那位妇人？宁可廉洁正直以保持自己的清白呢，还是圆滑诡诈、油滑适俗、趋炎附势？宁可像志行高远的千里驹呢，还是像浮游的野鸭随波逐流而保全自身？宁可与骐骥并驾齐驱呢，还是追随那劣马的足迹？宁可与天鹅比翼高飞呢，还是同鸡鸭在地上争食？上述种种，哪个是吉哪个是凶，哪个该舍弃哪个该遵从？现在的世道混浊不清：认为蝉翼是重的，千钧是轻的；黄钟大吕竟遭毁弃，瓦釜陶罐却响如雷鸣；谗佞小人嚣张跋扈，贤明之士则默默无闻。唉，沉默吧，谁人能知我廉洁忠贞的心哪！”<br>郑詹尹于是放下蓍草抱歉地说：“尺比寸长但也有短处，寸比尺短却也有它的长处；世间万物都有不完善的地方，人的智慧也有不明了的时候；术数有占卜不到的事情，天神也有难解之理。您还是按照自己的心志，实行自己的主张吧。龟壳蓍草实在无法知道这些事啊！”</p></div></div>
+            <div class="section"><h2 class="section-title">📝 注释</h2><div class="section-content annotation"><p>卜居：占卜自己该怎么处世。卜，占卜。居，处世的方法与态度。<br>放：放逐。<br>复见：指再见到楚王。<br>蔽障：遮蔽、阻挠。<br>太卜：掌管卜筮的官。<br>因：凭借。<br>端策：数计蓍草。端，数也。拂龟：拂去龟壳上的灰尘。<br>悃（kǔn）悃款款：诚实勤恳的样子。<br>送往劳来：送往迎来。劳，慰劳。<br>大人：指达官贵人。<br>偷生：贪生。<br>超然：高超的样子。高举：远走高飞。保真：保全真实的本性。<br>哫（zú）訾（zī）：以言献媚。栗斯：阿谀奉承状。栗，恭谨，恭敬。斯，语助词。<br>喔咿儒儿（ní）：强颜欢笑的样子。<br>妇人：指楚怀王的宠姬郑袖，她与朝中重臣上官大夫等人联合排挤馋毁屈原。<br>突梯：圆滑的样子。滑（gǔ）稽（jī）：一种能转注吐酒、终日不竭的酒器，后借以指应付无穷、善于迎合别人。<br>如脂如韦：谓像油脂一样光滑，像熟牛皮一样柔软，善于应付环境。<br>洁楹：度量屋柱，顺圆而转，形容处世的圆滑随俗。洁，借为“絜（xié）”，《楚辞补注》引《文选》亦作“絜”。<br>昂昂：昂首挺胸、堂堂正正的样子。<br>泛泛：漂浮不定的样子。凫（fú）：水鸟，即野鸭。一本此字下有一“乎”字。<br>亢（kàng）轭（è）：并驾而行。亢，同“伉”，并也。轭，车辕前端的横木。<br>驽（nú）马：劣马。<br>黄鹄（hú）：天鹅。<br>鹜（wù）：鸭子。<br>溷（hùn）浊：肮脏、污浊。<br>千钧：代表最重的东西。古制三十斤为一钧。<br>黄钟：古乐中十二律之一，是最响最宏大的声调。这里指声调合于黄钟律的大钟。<br>瓦釜（fǔ）：陶制的锅。这里代表鄙俗音乐。<br>高张：指坏人气焰嚣张，趾高气扬。<br>吁嗟：叹息声。<br>释：放下。谢：辞谢，拒绝。<br>数：卦数。逮：及，到。</p></div></div>
+            <div class="section"><h2 class="section-title">💡 简介</h2><div class="section-content intro"><p>《卜居》是《楚辞》中的一篇文章。相传为屈原所作，而现代学者多以为是楚国人在屈原死后为了悼念他而记载下来的有关传说。文章表现了当时社会的黑暗腐败，反映了屈原的愤慨和不满，歌颂了他坚持真理、不愿同流合污的斗争精神。全文以屈原问卜开篇，以詹尹“释策而谢”的答语收结，中间以连珠式的对立设问的语句贯穿，文采斐然，往复盘旋，八对设问，一以贯之，气势充沛，感情强烈。虽铺陈夸饰，句式整齐，却不板不散，亦无重复之嫌。</p></div></div>
             
     <div class="section" id="appreciationsSection">
-        <div class="section-title">🎨 赏析</div>
+        <h2 class="section-title">🎨 赏析</h2>
         <div class="section-content appreciations">
         <div class="appreciation-item">
             <div class="appreciation-meta">
@@ -112,7 +143,72 @@
     </div>
     
             <div class="section"><a href="https://baike.baidu.com/item/%E5%8D%9C%E5%B1%85/2457577?fr=aladdin" class="external-link" target="_blank"><span>🔗</span><span>查看百度百科</span></a></div>
-        </div>
-    </div>
+        </article>
+    </main>
+
+    <!-- 成功提示消息 -->
+    <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+    <script>
+        // --- 分享功能 JavaScript ---
+        function toggleShare() {
+            const dropdown = document.getElementById('shareDropdown');
+            const isActive = dropdown.classList.toggle('active');
+            if (isActive) {
+                document.addEventListener('click', closeShareOnClickOutside, true);
+            } else {
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function closeShareOnClickOutside(event) {
+            const shareContainer = document.querySelector('.share-container');
+            if (!shareContainer.contains(event.target)) {
+                document.getElementById('shareDropdown').classList.remove('active');
+                document.removeEventListener('click', closeShareOnClickOutside, true);
+            }
+        }
+
+        function showSuccessMessage(message) {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.textContent = message;
+            successMsg.classList.add('show');
+            setTimeout(() => {
+                successMsg.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            const textArea = document.createElement("textarea");
+            textArea.value = url;
+            textArea.style.position = "fixed";
+            textArea.style.top = "-9999px";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showSuccessMessage('链接已复制！');
+            } catch (err) {
+                showSuccessMessage('复制失败');
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+            document.getElementById('shareDropdown').classList.remove('active');
+        }
+
+        // --- 根据内容类型调整对齐方式 ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const kind = document.querySelector('.poem-content')?.dataset.kind;
+            const poemTextElement = document.querySelector('.poem-text');
+
+            if (kind === '诗' && poemTextElement) {
+                poemTextElement.classList.add('text-center');
+            }
+        });
+    </script>
 </body>
 </html>
