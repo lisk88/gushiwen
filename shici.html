@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第六章 文言文阅读 - 必背120个文言实词（1-40）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .header h2 {
+            color: #e74c3c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .source {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .word-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .word-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #3498db;
+        }
+
+        .word-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .word-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .word-char {
+            font-size: 3em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-right: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .word-pinyin {
+            font-size: 1.2em;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .meanings-section {
+            margin-bottom: 20px;
+        }
+
+        .part-of-speech {
+            background: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .meaning-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #2ecc71;
+        }
+
+        .definition {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .example {
+            margin-left: 15px;
+        }
+
+        .example-text {
+            color: #8e44ad;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .example-source {
+            color: #95a5a6;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .example-translation {
+            color: #27ae60;
+            font-size: 0.95em;
+        }
+
+        .idioms-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .idioms-title {
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .idiom-item {
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background: #fff3cd;
+            border-radius: 5px;
+            border-left: 3px solid #ffc107;
+        }
+
+        .idiom-term {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .idiom-explanation {
+            color: #6c757d;
+            margin-left: 10px;
+        }
+
+        .practice-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+
+        .practice-title {
+            color: #8e44ad;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .exercise-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #9b59b6;
+        }
+
+        .exercise-char {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
+
+        .story-template {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .story-answer {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .story-translation {
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            color: #721c24;
+            line-height: 1.8;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .word-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .word-char {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>第六章 文言文阅读</h1>
+            <h2>必背120个文言实词（1-40）+成语助记+小故事练习</h2>
+            <div class="source">专题06：必背120个文言实词（1-40）+成语助记+小故事练习（解析版）-【上好课】2025年高考语文一轮复习知识清单.docx</div>
+        </div>
+
+        <div class="word-grid">
+            <div class="word-card">
+                <div class="word-header">
+                    <div class="word-char">爱</div>
+                    <div class="word-pinyin">ài</div>
+                </div>
+                
+                <div class="meanings-section">
+                    <div class="part-of-speech">名词</div>
+                    <div class="meaning-item">
+                        <div class="definition">恩惠</div>
+                        <div class="example">
+                            <div class="example-text">及子产卒，仲尼闻之，出涕曰："古之遗爱也。"</div>
+                            <div class="example-source">《左传·昭公二十年》</div>
+                            <div class="example-translation">等到子产死去，孔子听说这件事后，流着眼泪说："他是古代为我们留下来的恩惠啊。"</div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-of-speech">动词</div>
+                    <div class="meaning-item">
+                        <div class="definition">给人恩惠</div>
+                        <div class="example">
+                            <div class="example-text">吴广素爱人，士卒多为用者。</div>
+                            <div class="example-source">《史记·陈涉世家》</div>
+                            <div class="example-translation">吴广平素给人恩惠，士兵有很多肯为他所用。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">喜爱</div>
+                        <div class="example">
+                            <div class="example-text">爱其子，择师而教之。</div>
+                            <div class="example-source">韩愈《师说》</div>
+                            <div class="example-translation">喜爱他的儿子，选择良师教他们。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">怜惜，同情</div>
+                        <div class="example">
+                            <div class="example-text">爱其二毛，则如服焉。</div>
+                            <div class="example-source">《左传·子鱼论战》</div>
+                            <div class="example-translation">怜惜那些鬓发斑白的老人，还不如向他们投降。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">吝惜，舍不得</div>
+                        <div class="example">
+                            <div class="example-text">齐国虽褊小，我何爱一牛？</div>
+                            <div class="example-source">《孟子·齐桓晋文之事》</div>
+                            <div class="example-translation">齐国虽然不算广大富裕，但我怎么会吝惜一头牛呢？</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">通"薆"，隐蔽，躲藏</div>
+                        <div class="example">
+                            <div class="example-text">爱而不见，搔首踟蹰。</div>
+                            <div class="example-source">《诗经·邶风·静女》</div>
+                            <div class="example-translation">躲藏起来不见面，（急得我）抓耳挠腮来回走。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-of-speech">形容词</div>
+                    <div class="meaning-item">
+                        <div class="definition">吝啬</div>
+                        <div class="example">
+                            <div class="example-text">百姓皆以王为爱也。</div>
+                            <div class="example-source">《孟子·齐桓晋文之事》</div>
+                            <div class="example-translation">百姓都认为您是吝啬啊。</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="idioms-section">
+                    <div class="idioms-title">相关成语</div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">爱莫能助</span>
+                        <span class="idiom-explanation">虽然心中关切同情，却没有力量帮助。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">爱屋及乌</span>
+                        <span class="idiom-explanation">比喻爱一个人而连带地关心到与他有关的人或物。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">爱(爱惜)不释手</span>
+                        <span class="idiom-explanation">释：放下。喜爱得舍不得放手。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">爱财如命</span>
+                        <span class="idiom-explanation">把钱财看得跟生命一样重要。形容极端吝啬。</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="word-card">
+                <div class="word-header">
+                    <div class="word-char">安</div>
+                    <div class="word-pinyin">ān</div>
+                </div>
+                
+                <div class="meanings-section">
+                    <div class="part-of-speech">形容词</div>
+                    <div class="meaning-item">
+                        <div class="definition">安全，平安</div>
+                        <div class="example">
+                            <div class="example-text">谢庄遂安。</div>
+                            <div class="example-source">《冯婉贞》</div>
+                            <div class="example-translation">谢庄于是就安全了。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">安稳</div>
+                        <div class="example">
+                            <div class="example-text">风雨不动安如山。</div>
+                            <div class="example-source">《茅屋为秋风所破歌》</div>
+                            <div class="example-translation">在风雨中像大山一样安稳。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">安定，舒适</div>
+                        <div class="example">
+                            <div class="example-text">不患寡而患不均，不患贫而患不安。</div>
+                            <div class="example-source">《季氏将伐颛臾》</div>
+                            <div class="example-translation">不担忧（东西）少而担忧分配得不均匀，不担忧贫穷而担忧社会不安定。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-of-speech">动词</div>
+                    <div class="meaning-item">
+                        <div class="definition">安身</div>
+                        <div class="example">
+                            <div class="example-text">衣食所安，弗敢专也，必以分人。</div>
+                            <div class="example-source">《左传·曹刿论战》</div>
+                            <div class="example-translation">使人安身立命的衣物食品，不敢独自占有，一定拿出来分给别人。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">安置</div>
+                        <div class="example">
+                            <div class="example-text">离山十里有王平安营。</div>
+                            <div class="example-source">《三国演义·失街亭》</div>
+                            <div class="example-translation">离山十里有王平在那里安置营地。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">抚慰，安抚</div>
+                        <div class="example">
+                            <div class="example-text">若备与彼协心，上下齐同，则宜抚安，与结盟好。</div>
+                            <div class="example-source">《资治通鉴·赤壁之战》</div>
+                            <div class="example-translation">如果刘备和（刘表的儿子及部将）那些人同心协力，上下一致，就应该加以抚慰，和他们结成同盟好友。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">使……安定</div>
+                        <div class="example">
+                            <div class="example-text">既来之，则安之</div>
+                            <div class="example-source">《季氏将伐颛臾》</div>
+                            <div class="example-translation">使他们到来之后，就要使他们安定下来。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meaning-item">
+                        <div class="definition">安心</div>
+                        <div class="example">
+                            <div class="example-text">予出官二年，恬然自安。</div>
+                            <div class="example-source">《琵琶行》</div>
+                            <div class="example-translation">我调出京城做官二年来，感到坦然安心。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-of-speech">疑问代词</div>
+                    <div class="meaning-item">
+                        <div class="definition">怎么，哪里</div>
+                        <div class="example">
+                            <div class="example-text">臣死且不避，卮酒安足辞？</div>
+                            <div class="example-source">《史记·鸿门宴》</div>
+                            <div class="example-translation">我对死尚且不躲避，一杯酒哪里值得推辞呢？</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="idioms-section">
+                    <div class="idioms-title">相关成语</div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">居安(安定)思危</span>
+                        <span class="idiom-explanation">指随时有应付意外事件的思想准备。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">安之若素</span>
+                        <span class="idiom-explanation">安然相处，和往常一样，不觉得有什么不合适。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">安(安心)土重迁</span>
+                        <span class="idiom-explanation">安于本乡本土，不愿轻易迁移。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">安居乐业</span>
+                        <span class="idiom-explanation">指安定愉快地生活和劳动。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">安步当车</span>
+                        <span class="idiom-explanation">以从容的步行代替乘车。</span>
+                    </div>
+                    <div class="idiom-item">
+                        <span class="idiom-term">随遇而安</span>
+                        <span class="idiom-explanation">指能顺应环境，在任何境遇中都能满足。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="practice-section">
+            <h2 class="practice-title">📚 小故事练习</h2>
+            
+            <div class="exercise-card">
+                <div class="exercise-char">练习1：爱</div>
+                
+                <label class="label">故事模板：</label>
+                <div class="story-template">
+                    楚人爱（）其子，虽爱（）钱财，于其子之求而无不应。其子成人，有陶氏之风独爱（）菊，众人爱（）其高洁，称之。 约其茶亭见之，爱（ ）而不见。
+                </div>
+                
+                <label class="label">参考答案：</label>
+                <div class="story-answer">
+                    楚人爱（宠爱）其子，虽爱（吝惜）钱财，于其子之求而无不应。其子成人，有陶氏之风，独爱（喜爱）菊，众人爱（爱慕）其高洁，称之。约其茶亭见之，爱（隐藏）而不见。
+                </div>
+                
+                <label class="label">白话翻译：</label>
+                <div class="story-translation">
+                    有个楚人宠爱自己的儿子，即使他吝惜钱财，对于自己儿子的要求也没有不答应的。他的儿子长大成人，有陶渊明的风范，只喜爱菊花，大家都爱慕他的高洁，称赞他。和他相约在茶亭见面，他隐藏着没有出现。
+                </div>
+            </div>
+
+            <div class="exercise-card">
+                <div class="exercise-char">练习2：安</div>
+                
+                <label class="label">故事模板：</label>
+                <div class="story-template">
+                    战国间，诸侯欲觅安（ ）闲之地，得旦夕安（）寝，常与邻国相安（），以为无患。时有寇盗相侵，而能安（）如泰山，所求衣食所安（），于是去险要之远地安（）军，败矣。逝者如斯，而今安（ ）在哉？
+                </div>
+                
+                <label class="label">参考答案：</label>
+                <div class="story-answer">
+                    战国间，诸侯欲觅安（安全）闲之地，得旦夕安（安逸）寝，常与邻国相安（安抚），以为无患。时有寇盗相侵，而能安（安稳）如泰山，所求衣食所安（养），于是去险要之远地安（安置）军，败矣。逝者如斯，而今安（哪里）在哉？
+                </div>
+                
+                <label class="label">白话翻译：</label>
+                <div class="story-translation">
+                    战国时期，诸侯想要寻找安全闲适的地方，来获得旦夕之间的安逸，他们常常与邻国相互安抚，认为没有祸患。这些国家不时有贼寇盗贼侵犯，但他们能够像泰山一样安稳，他们想要求得的是衣食的给养，于是去险要的偏远之地去安置军队，失败了。逝去的东西就像这一样，现如今又在哪里呢？
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 添加一些交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const wordCards = document.querySelectorAll('.word-card');
+            
+            wordCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderLeftColor = '#e74c3c';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderLeftColor = '#3498db';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

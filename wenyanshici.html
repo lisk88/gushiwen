@@ -1,0 +1,991 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>第六章 文言文阅读</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap');
+            body { font-family: 'Noto Serif SC', serif; }
+            .nav-link.active {
+                background-color: #4f46e5; /* indigo-600 */
+                color: white;
+            }
+            .nav-link.active .text-gray-400 {
+                color: #c7d2fe; /* indigo-200 */
+            }
+        </style>
+    </head>
+    <body class="bg-gray-100">
+        <div class="flex h-screen">
+            <!-- 左侧导航栏 -->
+            <aside class="w-64 bg-gray-900 text-white p-4 flex-shrink-0 h-full overflow-y-auto">
+                <div class="text-center py-4 mb-4 border-b border-gray-700">
+                    <h1 class="text-2xl font-bold">文言实词</h1>
+                    <p class="text-sm text-gray-400 mt-1">必背120个文言实词</p>
+                </div>
+                <nav id="character-nav" class="space-y-2">
+                    
+        <a href="#char_爱_0" 
+           id="nav_char_爱_0"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">爱</span>
+           <span class="text-sm text-gray-400">ài</span>
+        </a>
+        
+        <a href="#char_安_1" 
+           id="nav_char_安_1"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">安</span>
+           <span class="text-sm text-gray-400">ān</span>
+        </a>
+        
+        <a href="#char_被_2" 
+           id="nav_char_被_2"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">被</span>
+           <span class="text-sm text-gray-400">bèi / pī</span>
+        </a>
+        
+        <a href="#char_倍_3" 
+           id="nav_char_倍_3"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">倍</span>
+           <span class="text-sm text-gray-400">bèi</span>
+        </a>
+        
+        <a href="#char_本_4" 
+           id="nav_char_本_4"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">本</span>
+           <span class="text-sm text-gray-400">běn</span>
+        </a>
+        
+        <a href="#char_鄙_5" 
+           id="nav_char_鄙_5"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">鄙</span>
+           <span class="text-sm text-gray-400">bǐ</span>
+        </a>
+        
+        <a href="#char_兵_6" 
+           id="nav_char_兵_6"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">兵</span>
+           <span class="text-sm text-gray-400">bīng</span>
+        </a>
+        
+        <a href="#char_病_7" 
+           id="nav_char_病_7"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">病</span>
+           <span class="text-sm text-gray-400">bìng</span>
+        </a>
+        
+        <a href="#char_察_8" 
+           id="nav_char_察_8"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">察</span>
+           <span class="text-sm text-gray-400">chá</span>
+        </a>
+        
+        <a href="#char_朝_9" 
+           id="nav_char_朝_9"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">朝</span>
+           <span class="text-sm text-gray-400">cháo / zhāo</span>
+        </a>
+        
+        <a href="#char_曾_10" 
+           id="nav_char_曾_10"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">曾</span>
+           <span class="text-sm text-gray-400">céng / zēng</span>
+        </a>
+        
+        <a href="#char_乘_11" 
+           id="nav_char_乘_11"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">乘</span>
+           <span class="text-sm text-gray-400">chéng / shèng</span>
+        </a>
+        
+        <a href="#char_诚_12" 
+           id="nav_char_诚_12"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">诚</span>
+           <span class="text-sm text-gray-400">chéng</span>
+        </a>
+        
+        <a href="#char_除_13" 
+           id="nav_char_除_13"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">除</span>
+           <span class="text-sm text-gray-400">chú</span>
+        </a>
+        
+        <a href="#char_辞_14" 
+           id="nav_char_辞_14"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">辞</span>
+           <span class="text-sm text-gray-400">cí</span>
+        </a>
+        
+        <a href="#char_从_15" 
+           id="nav_char_从_15"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">从</span>
+           <span class="text-sm text-gray-400">cóng / zòng</span>
+        </a>
+        
+        <a href="#char_殆_16" 
+           id="nav_char_殆_16"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">殆</span>
+           <span class="text-sm text-gray-400">dài</span>
+        </a>
+        
+        <a href="#char_当_17" 
+           id="nav_char_当_17"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">当</span>
+           <span class="text-sm text-gray-400">dāng / dàng</span>
+        </a>
+        
+        <a href="#char_道_18" 
+           id="nav_char_道_18"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">道</span>
+           <span class="text-sm text-gray-400">dào</span>
+        </a>
+        
+        <a href="#char_得_19" 
+           id="nav_char_得_19"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">得</span>
+           <span class="text-sm text-gray-400">dé</span>
+        </a>
+        
+        <a href="#char_度_20" 
+           id="nav_char_度_20"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">度</span>
+           <span class="text-sm text-gray-400">dù / dúo</span>
+        </a>
+        
+        <a href="#char_非_21" 
+           id="nav_char_非_21"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">非</span>
+           <span class="text-sm text-gray-400">fēi</span>
+        </a>
+        
+        <a href="#char_复_22" 
+           id="nav_char_复_22"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">复</span>
+           <span class="text-sm text-gray-400">fù</span>
+        </a>
+        
+        <a href="#char_负_23" 
+           id="nav_char_负_23"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">负</span>
+           <span class="text-sm text-gray-400">fù</span>
+        </a>
+        
+        <a href="#char_盖_24" 
+           id="nav_char_盖_24"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">盖</span>
+           <span class="text-sm text-gray-400">gài / hé</span>
+        </a>
+        
+        <a href="#char_故_25" 
+           id="nav_char_故_25"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">故</span>
+           <span class="text-sm text-gray-400">gù</span>
+        </a>
+        
+        <a href="#char_固_26" 
+           id="nav_char_固_26"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">固</span>
+           <span class="text-sm text-gray-400">gù</span>
+        </a>
+        
+        <a href="#char_顾_27" 
+           id="nav_char_顾_27"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">顾</span>
+           <span class="text-sm text-gray-400">gù</span>
+        </a>
+        
+        <a href="#char_归_28" 
+           id="nav_char_归_28"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">归</span>
+           <span class="text-sm text-gray-400">guī</span>
+        </a>
+        
+        <a href="#char_国_29" 
+           id="nav_char_国_29"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">国</span>
+           <span class="text-sm text-gray-400">guó</span>
+        </a>
+        
+        <a href="#char_过_30" 
+           id="nav_char_过_30"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">过</span>
+           <span class="text-sm text-gray-400">guò</span>
+        </a>
+        
+        <a href="#char_何_31" 
+           id="nav_char_何_31"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">何</span>
+           <span class="text-sm text-gray-400">hé / hè</span>
+        </a>
+        
+        <a href="#char_恨_32" 
+           id="nav_char_恨_32"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">恨</span>
+           <span class="text-sm text-gray-400">hèn</span>
+        </a>
+        
+        <a href="#char_胡_33" 
+           id="nav_char_胡_33"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">胡</span>
+           <span class="text-sm text-gray-400">hú</span>
+        </a>
+        
+        <a href="#char_患_34" 
+           id="nav_char_患_34"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">患</span>
+           <span class="text-sm text-gray-400">huàn</span>
+        </a>
+        
+        <a href="#char_或_35" 
+           id="nav_char_或_35"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">或</span>
+           <span class="text-sm text-gray-400">huò</span>
+        </a>
+        
+        <a href="#char_疾_36" 
+           id="nav_char_疾_36"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">疾</span>
+           <span class="text-sm text-gray-400">jí</span>
+        </a>
+        
+        <a href="#char_及_37" 
+           id="nav_char_及_37"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">及</span>
+           <span class="text-sm text-gray-400">jí</span>
+        </a>
+        
+        <a href="#char_即_38" 
+           id="nav_char_即_38"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">即</span>
+           <span class="text-sm text-gray-400">jí</span>
+        </a>
+        
+        <a href="#char_既_39" 
+           id="nav_char_既_39"
+           class="nav-link flex items-center justify-between bg-gray-800 text-gray-300 rounded-lg p-3 transition-all duration-200 hover:bg-gray-700 hover:text-white">
+           <span class="text-xl font-bold">既</span>
+           <span class="text-sm text-gray-400">jì</span>
+        </a>
+        
+                </nav>
+            </aside>
+            <!-- 右侧内容区 -->
+            <main id="content-area" class="flex-grow p-6 md:p-10 h-full overflow-y-auto">
+                <section id='char_爱_0' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">爱</h2>
+            <p class="text-2xl text-gray-500">ài</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 恩惠</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 及子产卒，仲尼闻之，出涕曰：“古之遗爱也。”</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传·昭公二十年》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 等到子产死去，孔子听说这件事后，流着眼泪说：“他是古代为我们留下来的恩惠啊。”</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 给人恩惠</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 吴广素爱人，士卒多为用者。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·陈涉世家》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 吴广平素给人恩惠，士兵有很多肯为他所用。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 喜爱</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 爱其子，择师而教之。</p><p class='text-sm text-gray-500 italic mt-2'>— 韩愈《师说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 喜爱他的儿子，选择良师教他们。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 怜惜，同情</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 爱其二毛，则如服焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传·子鱼论战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 怜惜那些鬓发斑白的老人，还不如向他们投降。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 吝惜，舍不得</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 齐国虽褊小，我何爱一牛？</p><p class='text-sm text-gray-500 italic mt-2'>— 《孟子·齐桓晋文之事》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 齐国虽然不算广大富裕，但我怎么会吝惜一头牛呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“薆”，隐蔽，躲藏</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 爱而不见，搔首踟蹰。</p><p class='text-sm text-gray-500 italic mt-2'>— 《诗经·邶风·静女》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 躲藏起来不见面，（急得我）抓耳挠腮来回走。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 吝啬</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 百姓皆以王为爱也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孟子·齐桓晋文之事》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 百姓都认为您是吝啬啊。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>爱莫能助</strong>: 虽然心中关切同情，却没有力量帮助。</li><li><strong>爱屋及乌</strong>: 比喻爱一个人而连带地关心到与他有关的人或物。</li><li><strong>爱(爱惜)不释手</strong>: 释：放下。喜爱得舍不得放手。</li><li><strong>爱财如命</strong>: 把钱财看得跟生命一样重要。形容极端吝啬。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_安_1' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">安</h2>
+            <p class="text-2xl text-gray-500">ān</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 安全，平安</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 谢庄遂安。</p><p class='text-sm text-gray-500 italic mt-2'>— 《冯婉贞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 谢庄于是就安全了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 安稳</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 风雨不动安如山。</p><p class='text-sm text-gray-500 italic mt-2'>— 《茅屋为秋风所破歌》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 在风雨中像大山一样安稳。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 安定，舒适</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 不患寡而患不均，不患贫而患不安。</p><p class='text-sm text-gray-500 italic mt-2'>— 《季氏将伐颛臾》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不担忧（东西）少而担忧分配得不均匀，不担忧贫穷而担忧社会不安定。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 安身</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 衣食所安，弗敢专也，必以分人。</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传·曹刿论战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 使人安身立命的衣物食品，不敢独自占有，一定拿出来分给别人。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 安置</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 离山十里有王平安营。</p><p class='text-sm text-gray-500 italic mt-2'>— 《三国演义·失街亭》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 离山十里有王平在那里安置营地。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 抚慰，安抚</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 若备与彼协心，上下齐同，则宜抚安，与结盟好。</p><p class='text-sm text-gray-500 italic mt-2'>— 《资治通鉴·赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果刘备和（刘表的儿子及部将）那些人同心协力，上下一致，就应该加以抚慰，和他们结成同盟好友。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 使……安定</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 既来之，则安之</p><p class='text-sm text-gray-500 italic mt-2'>— 《季氏将伐颛臾》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 使他们到来之后，就要使他们安定下来。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 安心</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 予出官二年，恬然自安。</p><p class='text-sm text-gray-500 italic mt-2'>— 《琵琶行》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我调出京城做官二年来，感到坦然安心。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>疑问代词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 怎么，哪里</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣死且不避，卮酒安足辞？</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我对死尚且不躲避，一杯酒哪里值得推辞呢？</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>居安(安定)思危</strong>: 指随时有应付意外事件的思想准备。</li><li><strong>安之若素</strong>: 安然相处，和往常一样，不觉得有什么不合适。</li><li><strong>安(安心)土重迁</strong>: 安于本乡本土，不愿轻易迁移。</li><li><strong>安居乐业</strong>: 指安定愉快地生活和劳动。</li><li><strong>安步当车</strong>: 以从容的步行代替乘车。</li><li><strong>随遇而安</strong>: 指能顺应环境，在任何境遇中都能满足。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_被_2' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">被</h2>
+            <p class="text-2xl text-gray-500">bèi / pī</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: bèi</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 被子</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 外人颇有公孙布被之讥。</p><p class='text-sm text-gray-500 italic mt-2'>— 《训俭示康》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 外面很有一些人讥笑您，（说您）就像公孙弘盖布被子一样（做假骗人）。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 覆盖</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 成归，闻妻言，如被冰雪 。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 成名回来了，听了妻子的话，全身好像盖上冰雪一样 。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 遭受</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 世之有饥穰，天之行也，禹汤被之矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 世上有灾年和丰年，是自然界的规律，禹、汤这样的贤君也曾遭受过。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>介词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表示被动</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 信而见疑，忠而被谤，能无怨乎？</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·屈原列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 诚信却被怀疑，忠贞却被诽谤，能没有怨恨吗？</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: pī</h3><p class='text-md text-gray-600 mb-3 italic'>(通“披”)</p><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 穿在身上或披在身上</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 将军身被坚执锐，伐无道，诛暴秦。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·陈涉世家》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 将军您亲身穿着坚固的铠甲，拿着锐利的兵器，攻打无道暴虐的秦王朝。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 披散</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 屈原至于江滨，被发行吟泽畔。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·屈原列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 屈原来到江边，披散着头发，在水边一边走一边吟咏诗句。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>泽被(遍及)后世</strong>: 恩泽惠及后代。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_倍_3' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">倍</h2>
+            <p class="text-2xl text-gray-500">bèi</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 背向，背着</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 兵法右倍山陵，前左水泽。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·淮阴侯列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 按照兵法，（布阵时）应当右面靠着山陵，前方和左面靠着水泽。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 违背，背叛</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 愿伯具言臣之不敢倍德也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 希望您详细的（对项王）说明我是不敢背弃他的恩德的。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 加倍</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 虽倍赏累罚而不免于乱。</p><p class='text-sm text-gray-500 italic mt-2'>— 《五蠹》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 即使加倍赏赐，屡次的惩罚也还是不能避免祸乱。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>数词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 一倍</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 十则围之，五则攻之，倍则分之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孙子·谋攻》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 十倍于敌就包围他们，五倍于敌就攻打他们，一倍于敌就设法分散他们的力量。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>量词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 照原数加一次</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 然言其户口，则视三十年以前增五倍焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《治平篇》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 可是说到那住户和人口，就比三十年以前增加了五倍了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 更加，倍加</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 独在异乡为异客，每逢佳节倍思亲。</p><p class='text-sm text-gray-500 italic mt-2'>— 《九月九日忆山东兄弟》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 独自一人在异地客居，每到佳节更加思念亲人。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>事半功倍</strong>: 指做事得法，因而费力小，收效大。</li><li><strong>事倍功半</strong>: 指工作费力大，收效小。</li><li><strong>倍道而行</strong>: 形容加快速度前进。</li><li><strong>身价百倍</strong>: 指名誉地位一下子大提高。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_本_4' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">本</h2>
+            <p class="text-2xl text-gray-500">běn</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 草木的根</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 求木之长者，必固其根本。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谏太宗十思疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 希望树木长得高的，一定要使它的根扎的稳固。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 根本，基础</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 王欲行之，则盍反其本矣？</p><p class='text-sm text-gray-500 italic mt-2'>— 《齐桓晋文之事》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果您要实行仁政的话，那么为什么不回到根本上（求得解决）呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 本业，常代指农业</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今殴民而归之农，皆着于本。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果督促（那些弃农经商的）百姓，叫他们回到农业上来，都从事农业生产。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 书本，稿本，版本</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今存其本不忍废。</p><p class='text-sm text-gray-500 italic mt-2'>— 《〈指南录〉后序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 现在还保存那底稿，舍不得丢掉。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 本章，臣子给皇帝的奏章或书信</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 是无难，别具本章，狱词无易。</p><p class='text-sm text-gray-500 italic mt-2'>— 《狱中杂记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这没有什么困难的，另外准备一份奏章，审判书的内容并不改换。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>量词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 本</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 若印数十百千本，则极为神速。</p><p class='text-sm text-gray-500 italic mt-2'>— 《活板》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果印几十几百几千本，就非常快了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 推究本源，考查</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 抑本其成败之迹，而皆自于人欤？</p><p class='text-sm text-gray-500 italic mt-2'>— 《伶官传序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 还是推究他成功与失败的事迹，都由于人为的原因呢？</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 本来</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣本布衣，躬耕南阳。</p><p class='text-sm text-gray-500 italic mt-2'>— 《出师表》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我本来是平民百姓，在南阳种地为生。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>追本(根源)穷源</strong>: 追究事情发生的根源。</li><li><strong>舍本逐末</strong>: 比喻不抓根本环节，而只在枝节问题上下功夫。</li><li><strong>一本(本钱)万利</strong>: 本钱小，利润大。</li><li><strong>变本(本钱)加厉</strong>: 现指情况变得比本来更加严重。</li><li><strong>本末倒置</strong>: 比喻把主次、轻重的位置弄颠倒了。</li><li><strong>无本(树根)之木</strong>: 比喻没有基础的事物。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_鄙_5' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">鄙</h2>
+            <p class="text-2xl text-gray-500">bǐ</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 边界，边远的地方</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 蜀之鄙，有二僧。</p><p class='text-sm text-gray-500 italic mt-2'>— 《为学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 蜀地的边邑有两个僧人。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 以……为边界（边邑）</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 越国以鄙远，君知其难也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《烛之武退秦师》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 越过别的国家，把遥远的地方当作自己的边邑，您知道那是很难的。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 轻视，瞧不起</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 孔子鄙其小器。</p><p class='text-sm text-gray-500 italic mt-2'>— 《训俭示康》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 孔子瞧不起他的器量狭小。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 鄙陋，见识浅，庸俗</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 肉食者鄙，未能远谋。</p><p class='text-sm text-gray-500 italic mt-2'>— 《曹刿论战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 那些做官的人见识短浅，不能深谋远虑。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>贵远鄙(轻视)近</strong>: 看重远处(过去)的，轻视近处(现在)的。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_兵_6' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">兵</h2>
+            <p class="text-2xl text-gray-500">bīng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 兵器</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 收天下之兵，聚之咸阳。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 收取天下的兵器，把它们聚集到咸阳。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 士兵</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 未几，敌兵果舁炮至。</p><p class='text-sm text-gray-500 italic mt-2'>— 《冯婉贞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不久，敌兵果真抬着炮来了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 军队</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 欲勿予，即患秦兵之来。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 想不给，又担心秦国军队来攻打。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 战争</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 兵旱相乘，天下大屈。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 兵灾旱灾一个接一个到来，天下的财富极度匮乏。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 战略战术，用兵策略</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 故上兵伐谋。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谋攻》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 所以最好的用兵策略是攻破对方的计谋。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>厉兵(兵器)秣马</strong>: 形容准备战斗。</li><li><strong>兵不厌诈</strong>: 作战时尽可能地用假象迷惑敌人以取得胜利。</li><li><strong>兵来将挡，水来土掩</strong>: 比喻不管对方使用什么手段，总有相应的对付方法。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_病_7' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">病</h2>
+            <p class="text-2xl text-gray-500">bìng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 重病</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君之病在肠胃。</p><p class='text-sm text-gray-500 italic mt-2'>— 《扁鹊见蔡桓公》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 您的病在肠胃之中。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 弊病，缺点</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 人皆嗤吾固陋，吾不以为病。</p><p class='text-sm text-gray-500 italic mt-2'>— 《训俭示康》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 人们都笑话我固执，不大方，我不认为是毛病。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 生病</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今而后我将再病，教从何处呼汝耶？</p><p class='text-sm text-gray-500 italic mt-2'>— 《祭妹文》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 今后我如果再次生病，让我从哪里去叫你呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 使……成病态</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 以夭梅、病梅为业以求钱也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《病梅馆记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 以把梅弄成奇形怪状，弄成病态作为职业来求取钱财。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 担心，忧虑</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君子病无能焉，不病人之不己知也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论语》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 君子只担心自己无能，不担心别人不了解自己。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 责备，羞辱</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 古人以俭为美德，今人乃以俭相诟病。</p><p class='text-sm text-gray-500 italic mt-2'>— 《训俭示康》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 古人把俭朴认为是美德，今人却因为俭朴而讥笑羞辱人家。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 困苦</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 向吾不为斯役，则久已病矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《捕蛇者说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果我不做这个差使，早就困苦不堪了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 疲劳</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今日病矣，予助苗长矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《揠苗助长》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 今天我太累了，我帮助禾苗长高了。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>病入膏肓</strong>: 形容病情十分严重，无法医治。比喻事情到了无法挽救的地步。</li><li><strong>无病呻吟</strong>: 比喻没有值得忧伤的事情而叹息感慨。也比喻文艺作品没有真实感情，装腔作势。</li><li><strong>同病相怜</strong>: 比喻因有同样的遭遇或痛苦而互相同情。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_察_8' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">察</h2>
+            <p class="text-2xl text-gray-500">chá</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 观察，仔细看</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 徐而察之，则山下皆石穴罅。</p><p class='text-sm text-gray-500 italic mt-2'>— 《石钟山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> （我）慢慢地观察它，就（发现）山下都是石洞和石缝。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 看清楚</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 明足以察秋毫之末，而不见舆薪。</p><p class='text-sm text-gray-500 italic mt-2'>— 《齐桓晋文之事》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 视力足以看清楚秋天野兽身上毫毛的细梢，却看不见成车的柴草。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 详审，考察</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 向察众人之议，专欲误将军。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 刚才考察众人的议论，完全是想要损害您的。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 了解，弄清楚</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 小大之狱，虽不能察，必以情。</p><p class='text-sm text-gray-500 italic mt-2'>— 《曹刿论战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 大大小小的案件，即使不能一一了解清楚，也一定按照情理去办。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 考察后加以推荐</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 前太守逵察臣孝廉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《陈情表》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 先前一个叫逵的太守考查并推荐我为孝廉。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 精明</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 水至清则无鱼，人至察则无徒。</p><p class='text-sm text-gray-500 italic mt-2'>— 东方朔《答客难》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 水清澈到了极点，就没有鱼了；人精明到了极点，就没有朋友。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>察(观察)言观色</strong>: 多指揣摸别人的心意。</li><li><strong>明察秋毫</strong>: 后多形容人能洞察事理。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_朝_9' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">朝</h2>
+            <p class="text-2xl text-gray-500">cháo / zhāo</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: cháo</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 朝见，朝拜</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 相如每朝时，常称病。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 蔺相如每当上朝时，常常假托有病（请假）。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 朝廷</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 于是入朝见威王。</p><p class='text-sm text-gray-500 italic mt-2'>— 《邹忌讽齐王纳谏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 于是入朝拜见威王。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 朝代，指整个王朝，也指某一皇帝的一代</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 三顾频烦天下计，两朝开济老臣心。</p><p class='text-sm text-gray-500 italic mt-2'>— 杜甫《蜀相》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 当年刘备三顾茅庐，多次向诸葛亮询问天下大计，辅助两代君主，足见老臣心意。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: zhāo</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 早晨</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 有时朝发白帝，暮到江陵</p><p class='text-sm text-gray-500 italic mt-2'>— 《三峡》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 有的时候，早上从白帝城出发，晚上就能到达江陵。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>朝秦暮楚</strong>: 比喻人反复无常。</li><li><strong>朝不保夕</strong>: 形容形势危急，难以预料。</li><li><strong>班师回朝</strong>: 指出征的军队胜利返回朝廷。</li><li><strong>百鸟朝凤(朝拜)</strong>: 比喻德高望重者众望所归。</li><li><strong>改朝（朝代）换代</strong>: 旧的朝代为新的朝代所代替。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_曾_10' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">曾</h2>
+            <p class="text-2xl text-gray-500">céng / zēng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: céng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间的过去，曾经，已经，才</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 江南好，风景旧曾谙。</p><p class='text-sm text-gray-500 italic mt-2'>— 白居易《忆江南》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 江南好，那里的风景我过去曾经很熟悉。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: zēng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 指与自己隔着两代的亲属</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 高曾之时，隙地未尽辟。</p><p class='text-sm text-gray-500 italic mt-2'>— 《治平篇》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 高祖曾祖的时代，空闲的土地还没有完全开垦出来。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“增”，增加</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 所以动心忍性，曾益其所不能。</p><p class='text-sm text-gray-500 italic mt-2'>— 《生于忧患，死于安乐》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 用来使他的内心警觉，使他的性格坚忍，增长他的才干。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表意外，竟然，居然，简直</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 而侯生曾无一言半辞送我。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 可是侯生竟然没有一句话送我。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>曾经沧海</strong>: 比喻曾经见过大世面，不把平常事物放在眼里。</li><li><strong>曾几何时</strong>: 指没过多久。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_乘_11' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">乘</h2>
+            <p class="text-2xl text-gray-500">chéng / shèng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: chéng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 驾，坐</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 独与迈乘小舟至绝壁下。</p><p class='text-sm text-gray-500 italic mt-2'>— 《石钟山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 独自和苏迈坐着小船来到绝壁之下。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 升，登</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 乘鄂渚而反顾兮，欸秋冬之绪风。</p><p class='text-sm text-gray-500 italic mt-2'>— 《涉江》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 登上鄂渚回头望啊，在秋冬的寒风中叹息。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 冒着</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 余以乾隆三十九年十二月，自京师乘风雪，至于泰安。</p><p class='text-sm text-gray-500 italic mt-2'>— 《登泰山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我在乾隆三十九年十二月，从京城冒着风雪，来到泰安。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 连接，一个接一个</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 兵旱相乘，天下大屈。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 兵灾旱灾一个接一个到来，天下的财富极度匮乏。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>介词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 趁着，凭借</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 因利乘便，宰割天下，分裂山河。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 凭借着这种有利的形势，任意割取天下的土地，划分诸侯的山河。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: shèng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 一车四马的总称</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 然秦以区区之地，致万乘之势。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 然而秦国凭借着很小的一块土地，取得了拥有万乘兵车的国势。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>量词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 辆</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 乃请宾客，约车骑百余乘。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 就约请宾客，准备一百多辆兵车。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>数词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 四</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 以乘韦先，牛二十犒师。</p><p class='text-sm text-gray-500 italic mt-2'>— 《殽之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 先用四张熟牛皮做礼物，又送上十二头牛来慰劳秦军。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>乘人之危</strong>: 乘人家危难的时候去威胁损害。</li><li><strong>乘兴而来，败兴而归</strong>: 趁着兴致来到，结果很扫兴的回去。</li><li><strong>因利乘便</strong>: 凭藉有利的形势。</li><li><strong>乘虚而入</strong>: 趁着虚弱疏漏的地方进入。</li><li><strong>乘风破浪</strong>: 比喻排除困难，奋勇前进。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_诚_12' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">诚</h2>
+            <p class="text-2xl text-gray-500">chéng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 诚心诚意</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 帝感其诚，命夸娥氏二子负二山。</p><p class='text-sm text-gray-500 italic mt-2'>— 《愚公移山》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 天帝被他的真诚的心意所感动，便派夸娥氏的两个儿子背走了这两座山。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表肯定，确实，的确</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣诚知不如徐公美。</p><p class='text-sm text-gray-500 italic mt-2'>— 《邹忌讽齐王纳谏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我确实知道自己（长得）不如徐公漂亮。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表假设推论，果真，如果</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 诚如是，则霸业可成，汉室可兴矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《隆中对》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果能这样，那么，霸业就可以成功，汉室就可以中兴了。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>诚惶诚恐</strong>: 非常小心谨慎以至达到害怕不安的程度。</li><li><strong>心悦诚服</strong>: 指真心地服气或服从。</li><li><strong>开诚(诚心)布公</strong>: 指以诚心待人，坦白无私。</li><li><strong>精诚所至，金石为开</strong>: 形容诚心诚意的巨大精神力量。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_除_13' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">除</h2>
+            <p class="text-2xl text-gray-500">chú</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 台阶</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 从至雍棫阳宫，扶辇下除。</p><p class='text-sm text-gray-500 italic mt-2'>— 《苏武传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 跟随皇帝到了雍棫阳宫，扶着御辇下台阶。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 去掉，除去。</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 当横行天下，为汉家除残去秽。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> （您）应当在天下纵横驰骋，替汉朝除去奸佞贼臣。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 修治，清理</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 即除魏阉废祠之址以葬之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《五人墓碑记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 就清理了魏忠贤的废祠旧址，来安葬他们。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 拜官授职</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 予除右丞相兼枢密使。</p><p class='text-sm text-gray-500 italic mt-2'>— 《〈指南录〉后序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我被任命为右丞相兼枢密使。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>除旧布新</strong>: 以新的代替旧的。</li><li><strong>斩草除根</strong>: 比喻除去祸根，以免后患。</li><li><strong>兴利除弊</strong>: 兴办对国家人民有益利的事业，除去各种弊端。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_辞_14' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">辞</h2>
+            <p class="text-2xl text-gray-500">cí</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 诉讼的供词</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 狱辞无谋故者，经秋审入矜疑，即免死。</p><p class='text-sm text-gray-500 italic mt-2'>— 《狱中杂记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 讼词中没有写明是预谋杀人或故意杀人的，经过秋审归入“矜疑”一类，就可以免去死罪。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 言辞，文辞</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 而侯生曾无一言半辞送我。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 可是侯生竟然没有一句话送我。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 托辞，借口</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君子疾夫舍曰“欲之”而必为之辞。</p><p class='text-sm text-gray-500 italic mt-2'>— 《季氏将伐颛臾》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 君子厌恶那些不说自己想要得到却要为自己找借口的人。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 命令</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 近者奉辞伐罪，旌麾南指，刘琮束手。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 近来奉了皇帝的命令讨伐有罪的人，军旗向南一指，刘琮就投降了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 一种文体</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 且携所着书及诗文辞稿本数册，家书一箧托焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谭嗣同》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 并且带来他自己所撰写的书和诗文辞赋的稿件数册，一小箱家信托付给我。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 告别，辞别</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今者出，未辞也，为之奈何。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 现在出来，没有告辞，怎么办呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 推辞，不接受</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 如姬之欲为公子死，无所辞。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如姬想为公子出力，就是献出生命也不会推辞。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 计较</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 大礼不辞小让。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 行大礼的人不必计较小的谦让。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>不辞而别</strong>: 没有告辞就离开了，或悄悄溜走了。</li><li><strong>欲加之罪，何患无辞(借口，托辞)</strong>: 指随心所欲地诬陷人。</li><li><strong>辞不达意</strong>: 指词句不能确切地表达出意思和感情。</li><li><strong>一辞(话语)莫赞</strong>: 没有一句妥贴的赞美话能表达。形容诗文写得极好。</li><li><strong>大放厥辞(言辞)</strong>: 原指作诗文极力铺陈词藻，后指大发议论，或妄发谬论。</li><li><strong>义不容辞(推辞)</strong>: 容：允许；辞：推托。道义上不允许推辞。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_从_15' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">从</h2>
+            <p class="text-2xl text-gray-500">cóng / zòng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: cóng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 跟随</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 一狼得骨止，一狼仍从。</p><p class='text-sm text-gray-500 italic mt-2'>— 《狼》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 一只狼得到骨头停了下来，另一只狼仍然跟随在后面。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 依顺，听从</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣从其计，大王亦幸赦臣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我听从了他的计策，幸好您也赦免了我。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 参与，参加</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 弟走从军阿姨死。</p><p class='text-sm text-gray-500 italic mt-2'>— 《琵琶行》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 弟弟参军走了，养母也死去了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 追赶</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 佯北勿从。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孙子·军争》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 假装败退的敌人不要追赶。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 依傍，紧挨着</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 樊哙从良坐。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 樊哙紧挨着张良坐下。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>介词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 由，自</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 从小丘西行百二十步。</p><p class='text-sm text-gray-500 italic mt-2'>— 《小石潭记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 由小山包向西走一百二十步。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: zòng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 指堂房亲属。</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 升死，其印为予群从所得。</p><p class='text-sm text-gray-500 italic mt-2'>— 《活板》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 毕升死去之后，那些印版被我的侄子们得到。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“纵”，南北方向，也特指合纵的盟约</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 于是从散约败，争割地而赂秦。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 于是合纵的盟约被破坏了，（六国）又争着割地贿赂秦国。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>从善如流</strong>: 形容能迅速地接受别人的好意见。</li><li><strong>择善而从(跟随)</strong>: 指选择好的学，按照好的做。</li><li><strong>祸从口出</strong>: 指说话不谨慎容易惹祸。</li><li><strong>投笔从(参加)戎</strong>: 指文人从军。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_殆_16' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">殆</h2>
+            <p class="text-2xl text-gray-500">dài</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 危险</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 吾非至于子之门，则殆矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《庄子·秋水》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我如果不是来到了您的门前，就危险了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 精神疲倦而无所得</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 学而不思则罔，思而不学则殆。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论语·为政》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 只学习不思考就会迷惑，只思考而不学习就会精神疲倦。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表测度或不肯定。大概，恐怕</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 郦元之所见闻，殆与余同，而言之不详。</p><p class='text-sm text-gray-500 italic mt-2'>— 《石钟山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 郦道元的所见所闻，大概和我一样。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表约略，几乎，接近，差不多</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 燕赵处秦革灭殆尽之际。</p><p class='text-sm text-gray-500 italic mt-2'>— 《六国论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 燕国赵国处在其他国家几乎被秦消灭光了的时候。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>百战不殆（危险）</strong>: 经历许多次战役，都没有遭到危险。形容善于用兵。</li><li><strong>殆(几乎)无孑遗</strong>: 几乎没有一点余剩。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_当_17' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">当</h2>
+            <p class="text-2xl text-gray-500">dāng / dàng</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: dāng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 两者相抵</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 募有能捕之者，当其租入。</p><p class='text-sm text-gray-500 italic mt-2'>— 《捕蛇者说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 招募能捕到这种毒蛇的人，（用捕到的蛇）顶他应交的租税。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 抵御，抵挡</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 料大王士卒足以当项王乎。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 估计您的军队能够抵挡得住项王的军队吗？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 占据，把守</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 一夫当关，万人莫开。</p><p class='text-sm text-gray-500 italic mt-2'>— 《蜀道难》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 一个人把守关口，一万个人也攻不下来。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 主持，执掌</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 北邀当国者相见。</p><p class='text-sm text-gray-500 italic mt-2'>— 《〈指南录〉后序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 元军邀请主持国政的人相见。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 判决，判罪</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 公等遇雨，皆已失期，失期当斩。</p><p class='text-sm text-gray-500 italic mt-2'>— 《陈涉世家》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 你们这些人遇到大雨阻隔，全都错过了期限，错过期限就会被判处杀头的罪。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 应当</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 诸将吏敢复有言当迎操者，与此案同。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 各位将军官吏如有再敢说应当投降曹操的，就和这个书案一样。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>介词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表处所，对着，面对</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 当窗理云鬓，对镜贴花黄。</p><p class='text-sm text-gray-500 italic mt-2'>— 《木兰辞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 面对窗户梳理头发，照着镜子在额头贴上花黄。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间，值，在，正在</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 当是时也，商君佐之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 在这个时候，有商鞅辅佐他。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表必然，必定，一定</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 不久当归还，还必相迎取。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孔雀东南飞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 过不了多久我一定回来，回来之后一定去迎娶你。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间的未来，将，将要</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今当远离，临表涕零，不知所言。</p><p class='text-sm text-gray-500 italic mt-2'>— 《出师表》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 今天将要远离了，面对表章落泪，不知道自己说的是什么了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: dàng</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 符合</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 惴惴恐不当意。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 心中惴惴不安，恐怕不符合（县官的）心意。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 当作</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 晚食以当肉，安步以当车。</p><p class='text-sm text-gray-500 italic mt-2'>— 《战国策·齐策》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 晚些吃饭，（粗茶淡饭）也可以当作肉食；从容不迫地步行，就可以当成坐车。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 适宜，恰当</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 古法采草药，多用二月八月，此殊未当。</p><p class='text-sm text-gray-500 italic mt-2'>— 《采草药》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 按照古法采草药，多在二月和八月，这很不恰当。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>锐不可当(dāng，抵挡)</strong>: 形容勇往直前的气势，不可抵挡。</li><li><strong>当(面对)仁不让</strong>: 后指遇到应该做的事就积极主动去做，不推让。</li><li><strong>独当(dāng，主持)一面</strong>: 单独负责一个方面的工作。</li><li><strong>当务之急</strong>: 当前任务中最急切要办的事。</li><li><strong>首当其冲</strong>: 比喻最先受到攻击或遭到灾难。</li><li><strong>安步当(当作)车</strong>: 以从容的步行代替乘车。</li><li><strong>罚不当(相称)罪</strong>: 多指处罚过重。</li><li><strong>螳臂当(dāng)车</strong>: 比喻做力量做不到的事情，必然失败。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_道_18' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">道</h2>
+            <p class="text-2xl text-gray-500">dào</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 道路</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 有狼当道，人立而啼。</p><p class='text-sm text-gray-500 italic mt-2'>— 《中山狼传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 有一只狼站在路中间，像人一样直立着嚎叫。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 途径，方法</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 此五者，知胜之道也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谋攻》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这五条，是预知胜利的方法。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 风尚</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 师道之不传也久矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《师说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 从师的风尚已经很久不能流传了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 思想，学说</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 既加冠，益慕圣贤之道。</p><p class='text-sm text-gray-500 italic mt-2'>— 《送东阳马生序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 成年以后，更加仰慕（古代）圣贤的学说。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 道理，规律</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣之所好者，道也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《庖丁解牛》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我所喜欢的是（事物间的）规律。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 好的政治措施和局面</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 将军身被坚执锐，伐无道，诛暴秦。</p><p class='text-sm text-gray-500 italic mt-2'>— 《陈涉世家》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 将军您亲身穿着坚固的铠甲，拿着锐利的兵器，攻打无道暴虐的秦王朝。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 取道</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 从郦山下，道芷阳间行。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 从郦山下来，取道芷阳从小路行走。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 走路，赶路</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 闻操已向荆州，晨夜兼道。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 听说曹操已经向荆州（进军了），就日夜加速赶路。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 说，讲</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 何可胜道也哉？</p><p class='text-sm text-gray-500 italic mt-2'>— 《游褒禅山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 哪里讲得完呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“导”，引导，疏导</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 故善者因之，其次利道之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《货殖列传序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 所以（对于人民），最好的办法是顺其自然发展，其次是借有利的形势引导他们。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>道听途说</strong>: 泛指没有根据的传闻。</li><li><strong>道不同，不相为谋</strong>: 比喻意见或志趣不同的人就无法共事。</li><li><strong>道(道行)高一尺，魔高一丈</strong>: 也比喻正义终将战胜邪恶。</li><li><strong>分道(路)扬镳(biāo)</strong>: 比喻目标不同，各走各的路或各干各的事。</li><li><strong>安贫乐道(道义)</strong>: 安于贫穷，以坚持自己的信念为乐。</li><li><strong>津津乐道(谈论)</strong>: 很有兴趣地说个不停。</li><li><strong>明修栈道，暗度陈仓</strong>: 比喻用一种假象迷惑对方，实际上却另有打算。</li><li><strong>坐而论道(道理)</strong>: 指口头说说，不见行动。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_得_19' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">得</h2>
+            <p class="text-2xl text-gray-500">dé</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 收获</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 不如自行搜觅，冀有万一之得。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不如自己前去寻找，希望能有万一的收获。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 心得，体会</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 古人之观于天地、山川、草木、虫鱼、鸟兽，往往有得。</p><p class='text-sm text-gray-500 italic mt-2'>— 《游褒禅山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 古人对天地山川草木虫鱼鸟兽的观察，往往有心得。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 取得，获得</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 赵惠文王时，得楚和氏璧。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 在赵惠文王时，（赵国）得到了楚国的和氏璧。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 具备</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 积善成德，而神明自得，圣心备焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《劝学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 积累善行，成为美德，圣人的思想也就具备了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 能够</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 沛公军霸上，未得与项羽相见。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 沛公的军队驻扎在霸上，没能和项羽相见。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 完成</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 医得眼前疮，剜却心头肉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《咏田家》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 医治完了眼前的创伤，却挖掉了心上的肉。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“德”，感恩</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 为所识穷乏者得我欤？</p><p class='text-sm text-gray-500 italic mt-2'>— 《鱼我所欲也》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 是为了所认识的穷苦人感激我的恩德吗？</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 融洽</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 某亦守法，与公甚相得。</p><p class='text-sm text-gray-500 italic mt-2'>— 《记王忠肃公翱事》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 某某太监也很守法，和王翱相处得很融洽。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 对，正确</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 此言得之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《六国论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这句话说对了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 得意</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 意气扬扬，甚自得也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·管晏列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> （晏子的车夫）趾高气扬，很得意的样子。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 必须、应该</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君为我呼入，吾得兄事之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 你替我把他叫进来，我应该像对待兄长一样对待他。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>得过且过</strong>: 且：形容胸无大志。</li><li><strong>得寸进尺</strong>: 比喻贪心不足。</li><li><strong>得心应手</strong>: 比喻技艺纯熟或做事情非常顺利。</li><li><strong>得天独厚</strong>: 具备的条件特别优越，所处环境特别好。</li><li><strong>得鱼忘筌</strong>: 筌：捕鱼用的竹器。比喻事情成功以后就忘了本来依靠的东西。</li><li><strong>相得益彰</strong>: 指两个人或两件事物互相配合，双方的能力和作用更能显示出来</li><li><strong>得陇望蜀</strong>: 比喻贪得无厌。</li><li><strong>鹬蚌相争，渔翁得利</strong>: 比喻双方争执不下，两败俱伤，让第三者占了便宜。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_度_20' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">度</h2>
+            <p class="text-2xl text-gray-500">dù / dúo</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: dù</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 计量长短的标准</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 宁信度，无自信也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《郑人买履》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 宁可相信所量的尺寸，也不相信自己的脚。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 限度</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 生之有时而用之无度，则物力必屈。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 生产是有季节的，而使用却没有限度，那么物资一定会很快耗尽。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 制度，法度</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 内立法度，务耕织。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 对内设立法令制度，发展农业生产。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 气度，常态</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 卒起不意，尽失其度。</p><p class='text-sm text-gray-500 italic mt-2'>— 《荆轲刺秦王》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 事情发生得突然，没有料到，（群臣）全都失去了原有的气度。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>量词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 次，回，个</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 崔九堂前几度闻。</p><p class='text-sm text-gray-500 italic mt-2'>— 《江南逢李龟年》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 在崔九的堂前也有几次听到你的乐曲。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 谱写，创制（歌曲）</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 予怀怆然，感慨今昔，因自度此曲。</p><p class='text-sm text-gray-500 italic mt-2'>— 姜夔《扬州慢》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我内心感到悲怆，感慨扬州的今昔变化，于是自己创制了这首曲子。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 过</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 春风不度玉门关。</p><p class='text-sm text-gray-500 italic mt-2'>— 《凉州词》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 春风吹不过玉门关。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: dúo</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 丈量，计算</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 即量腹而食，度足而居，吾以知其必不敷矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《治平篇》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 就算是计算着肚子分配吃的，计算着身量分配住处，我也能知道那是一定不够用的了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 推测，估计</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 度我至军中，公乃入。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 估计我到了军中，你再进去。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>审时度势</strong>: 观察分析时势，估计情况的变化。</li><li><strong>置之度外</strong>: 指不把个人的生死利害等放在心上。</li><li><strong>度日如年</strong>: 形容日子很不好过。</li><li><strong>风度翩翩</strong>: 举止文雅优美。</li><li><strong>金针度(传授)人</strong>: 把高明的方法传授给别人。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_非_21' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">非</h2>
+            <p class="text-2xl text-gray-500">fēi</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 不对的，错误的</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 实迷途其未远，觉今是而昨非。</p><p class='text-sm text-gray-500 italic mt-2'>— 《归去来兮辞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 实际上我走上迷途并不太远，已经觉悟到如今退隐是正确的，而以前的做法错了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 讥评，责难，认为不对</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 是已而非人，俗之同病。</p><p class='text-sm text-gray-500 italic mt-2'>— 刘开《问说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 认为自己正确，别人不对，这是世俗的通病。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 用在判断句中，相当于“不是”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 人非生而知之者，孰能无惑？</p><p class='text-sm text-gray-500 italic mt-2'>— 《师说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 人不是生来就懂得道理的，谁能没有疑难问题呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 无，没有</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 登高而招，臂非加长也，而见者远。</p><p class='text-sm text-gray-500 italic mt-2'>— 《劝学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 站在高处招手，臂膀没有加长，但远处的人也能看得见。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 多用在叙述句、描写句中，相当于“不”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 汝非徒身当服行，当以训汝子孙，使知前辈风俗云。</p><p class='text-sm text-gray-500 italic mt-2'>— 《训俭示康》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 你不仅自己应当履行节俭，还应当用这个道理教育你的子孙，让他们知道前辈的风俗啊。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 除了，除非</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 非刘豫州莫可以当曹操者。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 除了刘备以外，没有可以抵挡曹操的人了。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>非亲非故</strong>: 表示彼此没有什么关系。</li><li><strong>今非昔比</strong>: 多指形势、自然面貌等发生了巨大的变化。</li><li><strong>人非圣贤，孰能无过</strong>: 旧时指一般人犯错误是难免的</li><li><strong>文过饰非</strong>: 用漂亮的言词掩饰自己的过失和错误。</li><li><strong>物是人非</strong>: 多用于表达事过境迁。因而怀念故人。</li><li><strong>东隅已逝，桑榆非晚</strong>: 早年的时光消逝，如果珍惜时光，发愤图强，晚年并不晚</li><li><strong>塞翁失马，焉知非福</strong>: 比喻虽然暂时受挫折，却可能因此得到意想不到的好处。也指坏事可以转变为好事。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_复_22' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">复</h2>
+            <p class="text-2xl text-gray-500">fù</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 回来</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 昭王南征而不复。</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传·僖公四年》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 昭王远行南方却没有回来。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 恢复</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 师道之不复，可知矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《师说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 从师的风尚不能恢复，（由这里）就可以知道了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 回答</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 不敢出一言以复。</p><p class='text-sm text-gray-500 italic mt-2'>— 《送东阳马生序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不敢说一句话来回答。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 报复</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> （伍员）谓申包胥曰：“我必复楚国。”</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传·定公四年》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 伍员对申包胥说：“我一定要报复楚国。”</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“覆”，遮盖，盖上</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 复之以掌，虚若无物。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 用手掌把它盖住，觉得手心里空空的，好像没有什么东西。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 夹层的，双层的。</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 红罗复斗帐，四角垂香囊。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孔雀东南飞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 用红罗做的双层的床帐，四个角上都挂着香囊。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 繁复，重复</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 山重水复疑无路，柳暗花明又一村。</p><p class='text-sm text-gray-500 italic mt-2'>— 陆游《游山西村》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 山水一重一重的出现，前面似乎无路可走了，可是走过柳树茂密，山花鲜艳的地方，意外的又看到一个村庄。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 再，又，还</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 诸将吏敢复有言当迎操者，与此案同。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 各位将军官吏如有再敢说应当投降曹操的，就和这个书案一样。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>周而复始</strong>: 转了一圈又一圈，不断循环。</li><li><strong>故态复萌</strong>: 指旧的习气或毛病等又出现了。</li><li><strong>无以复加</strong>: 不可能再增加。指程度达到了极点。</li><li><strong>万劫不复(恢复)</strong>: 指永远不能恢复。</li><li><strong>死灰复燃</strong>: 现常比喻已经消失了的恶势力又重新活动起来。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_负_23' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">负</h2>
+            <p class="text-2xl text-gray-500">fù</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 以背载物</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 帝感其诚，命夸娥氏二子负二山。</p><p class='text-sm text-gray-500 italic mt-2'>— 《愚公移山》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 天帝被他的诚心所感动，命令夸娥氏的两个儿子背走了这两座山。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 担负，担当</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 均之二策，宁许以负秦曲。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 衡量这两个办法，宁可答应下来，让秦承担理亏（的责任）。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 仗恃</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 秦贪，负其强，以空言求壁。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 秦国贪心，倚仗它的强盛，用空话来求取（我们的）宝玉。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 辜负，对不起</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣诚恐见欺于王而负赵。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我实在害怕被您欺骗而辜负了赵国。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 背弃，违背</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 相如度秦王虽斋，决负约不偿城。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 蔺相如估计秦王虽然实行了斋戒，也一定会背弃盟约，不补偿给赵国城池。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 覆盖</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 苍山负雪，明烛天南。</p><p class='text-sm text-gray-500 italic mt-2'>— 《登泰山记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 青苍色的山峰上覆盖着白雪，像明亮的蜡烛一样，照亮了南面的天空。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 失败</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 不知彼而知己，一胜一负。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谋攻》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不了解对方，却了解自己，胜败（的几率）各占一半。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>忘恩负义</strong>: 忘记别人对自己的好处，反而做出对不起别人的事。</li><li><strong>忍辱负(承担)重</strong>: 为了完成艰巨的任务，忍受暂时的屈辱。</li><li><strong>负荆请罪</strong>: 表示向人认错赔罪</li><li><strong>负屈含冤</strong>: 指蒙受冤屈，得不到昭雪。</li><li><strong>负隅顽抗</strong>: 指依仗某种条件，顽固进行抵抗。</li><li><strong>久负盛名</strong>: 长时期地享有好的名声。</li><li><strong>如释重负</strong>: 形容紧张心情过去以后的的轻松愉快。</li><li><strong>不负众望</strong>: 不辜负大家的期望。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_盖_24' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">盖</h2>
+            <p class="text-2xl text-gray-500">gài / hé</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: gài</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 车盖</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 今已亭亭如盖矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《项脊轩志》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 现在已经长得高高的，（枝叶茂盛），像车盖一样了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 器物的盖子</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 合盖隆起，形似酒尊。</p><p class='text-sm text-gray-500 italic mt-2'>— 《张衡传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 盖子高高的鼓起来，形状像酒樽一样。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 遮盖</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 天似穹庐，笼盖四野。</p><p class='text-sm text-gray-500 italic mt-2'>— 《敕勒歌》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 天像个帐篷，遮盖着大地。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 胜过，压倒</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 刘豫州，王室之胄，英才盖世。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 刘备是汉朝王室的后代，杰出的才能超过了当世之人。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表肯定判断，原来是</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 乃悟前狼假寐，盖以诱敌。</p><p class='text-sm text-gray-500 italic mt-2'>— 《狼》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 才明白前面的狼假装打瞌睡，原来是为了诱敌。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表推测性判断，大概</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 未几，敌兵果舁（yú）炮至，盖五六百人也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《冯婉贞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不久，敌军果然抬着炮来了，大概有五六百人。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>语气词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 用在句首，不译</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 盖一岁之犯死者二焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《捕蛇者说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 一年之中冒死亡的危险只有两次而已。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: hé</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>疑问代词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 通“盍”，何，怎么</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 技盖至此乎？</p><p class='text-sm text-gray-500 italic mt-2'>— 《庖丁解牛》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 技艺怎么（精湛）到了这种地步啊？</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>盖世无双</strong>: 才能或武艺当代第一，没有人能比得上。</li><li><strong>盖(合上)棺论定</strong>: 人死后对其一生作出评价。</li><li><strong>官盖如云</strong>: 形容官吏到的很多。</li><li><strong>欲盖弥彰</strong>: 想掩盖坏事的真相，结果反而更明显地暴露出来。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_故_25' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">故</h2>
+            <p class="text-2xl text-gray-500">gù</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 缘故，原因</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 既克，公问其故。</p><p class='text-sm text-gray-500 italic mt-2'>— 《曹刿论战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 打胜了这一仗后，庄公问这次取胜的原因。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 事故，变故</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 乡园多故，不能不动客子之愁。</p><p class='text-sm text-gray-500 italic mt-2'>— 《报刘一丈书》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 家乡多有变故，不能不使客居在外的游子担忧。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 旧交，老朋友</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君安与项伯有故？</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 你怎么和项伯有老交情？</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 旧有的，原来的</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 故垒西边，人道是三国周郎赤壁。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁怀古》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 那西边的旧营垒，人们说是三国时周瑜（大败曹操）的赤壁。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 衰老</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 弟走从军阿姨死，暮去朝来颜色故。</p><p class='text-sm text-gray-500 italic mt-2'>— 《琵琶行》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 弟弟参军走了，养母也死去了。时光一天一天的流逝，我的容颜也衰老了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 故意，特意</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 公子往，数请之，朱亥故不复谢。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 公子多次前往问候，朱亥却故意不肯回拜答谢。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 过去，从前</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 轩东故尝为厨。</p><p class='text-sm text-gray-500 italic mt-2'>— 《项脊轩志》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> （项脊）轩的东面曾经做过厨房。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 仍然、仍旧</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 累官故不失州郡也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 逐级提升仍然少不了当个州郡的长官。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 本来</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 此物故非西产。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这种东西本来不是山西特产。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 所以</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 故木受绳则直。</p><p class='text-sm text-gray-500 italic mt-2'>— 《劝学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 所以木材用墨线量过就会更直。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>一见如故</strong>: 初次见面就象老朋友一样合得来。</li><li><strong>明知故(故意)犯</strong>: 明明知道不能做，却故意违犯。</li><li><strong>故步自封</strong>: 比喻守着老一套，不求进步。</li><li><strong>革故鼎新</strong>: 现泛指除掉旧的，建立拳的。</li><li><strong>非亲非故</strong>: 表示彼此没有什么关系。</li><li><strong>平白无故</strong>: 指无缘无故。</li><li><strong>吐故纳新(旧的)</strong>: 现多用来比喻扬弃旧的、不好的，吸收新的，好的。</li><li><strong>依然如故</strong>: 指人没有什么长进，还是从前的老样子。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_固_26' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">固</h2>
+            <p class="text-2xl text-gray-500">gù</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 险要的地势</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 秦孝公据殽函之固。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 秦孝公占据着殽山和函谷关的险要地势。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 巩固，安定</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 固国不以山溪之险。</p><p class='text-sm text-gray-500 italic mt-2'>— 《天时不如地利》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 巩固国防不必靠山河的险要。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 坚守，安守</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 秦数败赵军，赵军固壁不战。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 秦军多次打败赵国的军队，赵军坚守营寨不肯出战。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 固执，顽固</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 汝心之固，固不可彻。</p><p class='text-sm text-gray-500 italic mt-2'>— 《愚公移山》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 你的思想这样顽固，顽固到不能通达事理的程度。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 坚固</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 荆州与国邻接，江山险固。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 荆州和我国邻近接壤，江山险要坚固。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 坚决，坚持</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 蔺相如固止之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 蔺相如坚决制止他们。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表本来，原来</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 生乎吾前，其闻道也固先乎吾。</p><p class='text-sm text-gray-500 italic mt-2'>— 《师说》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 生在我的前面，他懂得道理本来就比我要早。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表确然，确实，实在</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 斯固百世之遇也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《五人墓碑记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这实在是百世难得的际遇啊！</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表让步，固然</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 人固有一死，或重于泰山，或轻于鸿毛。</p><p class='text-sm text-gray-500 italic mt-2'>— 《报任安书》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 人固然有一死，只是有的人死得比泰山还重，有的人死得比鸿毛还轻。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>固若金汤</strong>: 金属造的城，滚水形成的护城河。形容工事无比坚固。</li><li><strong>君子固穷</strong>: 指君子能够安贫乐道，不失节操。</li><li><strong>根深蒂固(稳固)</strong>: 比喻基础深厚，不容易动摇。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_顾_27' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">顾</h2>
+            <p class="text-2xl text-gray-500">gù</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 回头，回头看</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 相如顾召赵御史曰。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 蔺相如回头召来赵国的御史说。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 看，视</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 成顾蟋蟀笼虚，则气断声吞。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 成名看到盛蟋蟀的笼子空了，就（觉得）出不来气说不出话。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 看望，拜访</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 三顾臣于草庐之中。</p><p class='text-sm text-gray-500 italic mt-2'>— 《出师表》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 三次到我的草房之中看望我。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 关心</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 子布、元表诸人各顾妻子。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 子布、元表众人各自关心自己的妻子儿女。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 照顾</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 三岁贯女，莫我肯顾。</p><p class='text-sm text-gray-500 italic mt-2'>— 《硕鼠》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 多年来我供养你，你却一点也不肯把我照顾。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 顾虑，考虑</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 但欲求死，不复顾利害。</p><p class='text-sm text-gray-500 italic mt-2'>— 《〈指南录〉后序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 只想要求得一死，不再考虑利害。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表转折，只，只是</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 吾每念常痛于骨髓，顾不知计所出耳。</p><p class='text-sm text-gray-500 italic mt-2'>— 《荆轲刺秦王》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我每当想到这些，常常痛彻骨髓，只是想不出好的办法来。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表反问，反而，难道</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 人之立志，顾不如蜀鄙之僧哉？</p><p class='text-sm text-gray-500 italic mt-2'>— 《为学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 人如果要立下志向，难道不如蜀地边远偏僻地方的和尚吗？</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>顾此失彼</strong>: 形容忙乱或慌张的情景。</li><li><strong>顾名思义</strong>: 从名称想到所包含的意义。</li><li><strong>顾(回首)盼生姿</strong>: 形容眉目传神，姿态动人。</li><li><strong>顾(照顾)全大局</strong>: 指从整体的利益着想，使不遭受损害。</li><li><strong>顾影自怜</strong>: 形容孤独失意的样子，也指自我欣赏。</li><li><strong>义无反顾</strong>: 从道义上只有勇往直前，不能犹豫回顾。</li><li><strong>见兔顾(回头)犬</strong>: 比喻动作虽稍迟，但赶紧想办法，还来得及。</li><li><strong>自顾(照顾)不暇</strong>: 指没有力量再照顾别人。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_归_28' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">归</h2>
+            <p class="text-2xl text-gray-500">guī</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 女子出嫁</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 后五年，吾妻来归。</p><p class='text-sm text-gray-500 italic mt-2'>— 《项脊轩志》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 此后五年，我的妻子嫁到我家来了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 返回</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 相如既归，赵王以为贤大夫，拜为上卿。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 蔺相如回国以后，赵王认为他是个贤能的大夫，封他做了上卿。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 归还</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 城不入，臣请完璧归赵。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果十五座城不能归入赵国，请允许我把宝玉完好的归还给赵国。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 归属，归依</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 江表英豪咸归附之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 江南的英雄豪杰都归附到他那里。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 归到一处，汇聚</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 众士慕仰，若水之归海。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 各位英雄豪杰都仰慕他，好像江河汇聚到大海一样。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>反璞归真</strong>: 比喻回复原来的自然状态。</li><li><strong>殊途同归</strong>: 比喻采取不同的方法而得到相同的结果。</li><li><strong>完璧归赵</strong>: 后比喻把原物完好地归还本人。</li><li><strong>宾至如归(回家)</strong>: 形容招待客人热情周到。</li><li><strong>众望所归(归向)</strong>: 指得到群众的信任。</li><li><strong>铩羽而归(回来)</strong>: 指失败或不得志而归。</li><li><strong>实至名归(到来)</strong>: 有了真正的学识、本领或功业，自然就有声誉。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_国_29' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">国</h2>
+            <p class="text-2xl text-gray-500">guó</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 国家</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 即不幸有方二三千里之旱，国胡以相恤。</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果不幸出现方圆两三千里的旱灾，国家用什么来救济他们？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 诸侯国</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 六国破灭，非兵不利，战不善，弊在赂秦。</p><p class='text-sm text-gray-500 italic mt-2'>— 《六国论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 六国灭亡，不是武器不锋利，仗打得不好，毛病出在贿赂秦国上。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 国都，京城</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 登斯楼也，则有去国怀乡，忧谗畏讥，满目萧然，感极而悲者矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《岳阳楼记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 登上这座楼，就会有一种远离国都，怀念家乡，担心别人说坏话，满眼萧条，感伤到了极点而悲愤的情绪。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 地区，地域</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 逝将去女，适彼乐国。</p><p class='text-sm text-gray-500 italic mt-2'>— 《硕鼠》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我发誓要离开你，去到那欢乐的地方。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 国事</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 等死，死国可乎？</p><p class='text-sm text-gray-500 italic mt-2'>— 《陈涉世家》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 同样是死，为国事而死可以吗？</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>安邦定国(国家)</strong>: 使国家安定巩固。</li><li><strong>国泰民安</strong>: 国家太平，人民安乐。</li><li><strong>倾国倾城</strong>: 多形容妇女容貌极美。</li><li><strong>共商国是</strong>: 共同商讨国家大计。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_过_30' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">过</h2>
+            <p class="text-2xl text-gray-500">guò</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 走过，经过</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 雷霆乍惊，宫车过也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《阿房宫赋》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 雷霆忽然震响，原来是宫车经过。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 胜过，超过</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 一出门，裘马过世家焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 一出门，穿着轻暖的皮衣，骑着高头大马，超过了世代做官的人家。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 拜访，探望</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 臣有客在市屠中，愿枉车骑过之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我有一个朋友在市井屠户之中，想要委屈您的车马去拜访他。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 到，来到</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 一日，大母过余。</p><p class='text-sm text-gray-500 italic mt-2'>— 《项脊轩志》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 有一天，祖母来到我的书房。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 犯有过错</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 过而能改，善莫大焉。</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 犯了错误能够改正，是没有比这再大的好事了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 责备</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 闻大王有意督过之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 听说您想要责怪他。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 过时</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 花过而采，则根色黯恶。</p><p class='text-sm text-gray-500 italic mt-2'>— 《采草药》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 开过花以后再采，根的颜色就会暗淡难看。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 过失，过错</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君子博学而日参省乎己，则知明而行无过矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《劝学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 君子广泛的学习，并且每天检查反省自己，就会智慧通达，行为没有过错了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 过分，过于</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 以其境过清，不可久居，乃记之而去。</p><p class='text-sm text-gray-500 italic mt-2'>— 《小石潭记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 因为那里的环境过于凄清，不宜久留，于是写了这篇文章就离去了。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>过(超过)犹不及</strong>: </li><li><strong>闻过(过错)则喜</strong>: 指虚心接受意见。</li><li><strong>过江之鲫</strong>: 比喻某种时兴的事物多得很。</li><li><strong>文过饰非</strong>: 用漂亮的言词掩饰自己的过失和错误。</li><li><strong>白驹过隙</strong>: 形容时间过得极快。</li><li><strong>矫枉过正</strong>: 比喻纠正错误超过了应有的限度。</li><li><strong>瞒天过海</strong>: 用欺骗的手段在暗地里活动。</li><li><strong>人非圣贤，孰能无过</strong>: 一般人不是圣人和贤人，谁能没有过失?</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_何_31' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">何</h2>
+            <p class="text-2xl text-gray-500">hé / hè</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: hé</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>代词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 什么</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 大王来何操？</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 您来的时候带了什么？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 哪里，什么地方</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 豫州今欲何至？</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 您现在想要到什么地方去？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 怎么</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君美甚，徐公何能及君也？</p><p class='text-sm text-gray-500 italic mt-2'>— 《邹忌讽齐王纳谏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 您漂亮极了，徐公怎么能赶得上您呢？</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 多么</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 水何澹澹，山岛竦峙。</p><p class='text-sm text-gray-500 italic mt-2'>— 《观沧海》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 水面多么浩大，山岳岛屿高高地耸立在水边。</p></div></div><h4 class='text-xl font-semibold text-gray-800 mb-2'>助词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 即今“啊”字</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 隐隐何甸甸，俱会大道口。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孔雀东南飞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 车声隐隐甸甸的响啊，两人相会在大道口。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h3 class='text-2xl font-semibold text-indigo-700 mb-4'>读音: hè</h3><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 背、扛</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 尔牧来思，何蓑何笠。</p><p class='text-sm text-gray-500 italic mt-2'>— 《诗经·小雅·无羊》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 你的牧人来了，披着蓑衣，戴着斗笠。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>何足挂齿</strong>: 不值一提的意思。</li><li><strong>欲加之罪，何患无辞</strong>: 指随心所欲地诬陷人。</li><li><strong>相煎何急</strong>: 比喻兄弟间自相残害。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_恨_32' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">恨</h2>
+            <p class="text-2xl text-gray-500">hèn</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 怨恨</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 天长地久有时尽，此恨绵绵无绝期。</p><p class='text-sm text-gray-500 italic mt-2'>— 《长恨歌》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 天地虽然长久，但总有到尽头的时候，唯有这永别的怨恨，却是绵延不断，永远没有断绝的一天。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 遗憾</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 先帝在时，每与臣论此事，未尝不叹息痛恨于桓灵也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《出师表》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 先帝活着的时候，每当和我谈到这件事，没有不对桓帝、灵帝（失政）表示叹息遗憾的。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 怨恨</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 公子往而臣不送，以是知公子恨之复返也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《信陵君窃符救赵》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 您前去（送死）我却没有送您，因此知道您会怨恨我而回来。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>相见恨晚</strong>: 形容一见如故，意气极其相投。</li><li><strong>一失足成千古恨（遗憾）</strong>: 比喻一旦犯下严重错误或堕落，就成为终身的憾事。</li><li><strong>恨铁不成钢</strong>: 形容对所期望的人不争气不上进感到不满，急切希望他变好。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_胡_33' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">胡</h2>
+            <p class="text-2xl text-gray-500">hú</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 古代泛指西部和北部的各少数民族，秦汉时多指匈奴</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 胡人不敢南下而牧马，士不敢弯弓而报怨。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 匈奴人不敢南下来牧马，六国的士民也不敢拿起弓箭来报仇。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 兽类颔下的垂肉</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 狼跋其胡，载疐（zhì）其尾。</p><p class='text-sm text-gray-500 italic mt-2'>— 《诗经·豳风·狼跋》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 老狼前进踩下巴，老狼后退绊尾巴</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>代词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 什么</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 卒然边境有急，数千百万之众，国胡以馈之？</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 突然边境发生紧急情况，数千百万的士兵，国家用什么发给他们粮饷呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 为什么，怎么</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 归去来兮！田园将芜胡不归？</p><p class='text-sm text-gray-500 italic mt-2'>— 《归去来兮辞》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 回去吧！家中的田园都要荒芜了，为什么还不回去？</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>胡服骑射</strong>: 指学习胡人的短打服饰，同时也学习他们的骑马、射箭等武艺。</li><li><strong>胡(乱)说八道</strong>: 没有根据或没有道理地瞎说。</li><li><strong>胡作非为</strong>: 不顾法纪或舆论，毫无顾忌地做坏事。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_患_34' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">患</h2>
+            <p class="text-2xl text-gray-500">huàn</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 忧患，祸害</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 马超、韩遂尚在关西，为操后患。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 马超、韩遂还在函谷关以西，成为曹操的后患。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 讳忌</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 此数者用兵之患也，而操皆冒行之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《赤壁之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这几点都是用兵的大忌讳啊，可是曹操却都贸然去做了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 担忧，忧虑</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 欲勿予，即患秦兵之来。</p><p class='text-sm text-gray-500 italic mt-2'>— 《廉颇蔺相如列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 想要不给，却又担心秦兵到来。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 危害</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 故君之所以患于军者三。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谋攻》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 所以国君用来危害军队的情况有三种。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>患得患失</strong>: 形容对个人得失看得很重。</li><li><strong>养虎遗患</strong>: 比喻纵容坏人坏事，留下后患。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_或_35' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">或</h2>
+            <p class="text-2xl text-gray-500">huò</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>代词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 有的（有的人，有的事物）</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 或曰：“六国互丧，率赂秦耶？”</p><p class='text-sm text-gray-500 italic mt-2'>— 《六国论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 有人说：“六国交互灭亡，都是由于贿赂秦国吗？”</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 也许，或许</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 越人语天姥，云霞明灭或可睹。</p><p class='text-sm text-gray-500 italic mt-2'>— 《梦游天姥吟留别》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 吴越一带的人说起的天姥山，云霞忽明忽暗，或许能够看见。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 有时</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 或遇其叱咄，色愈恭，礼愈至，不敢出一言以复。</p><p class='text-sm text-gray-500 italic mt-2'>— 《送东阳马生序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 有时遇到他发怒斥责，我的神色更加恭敬，礼节更加周到，不敢说一句话来回复他。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 如果，假如</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 或王命急宣，有时朝发白帝，暮到江陵。</p><p class='text-sm text-gray-500 italic mt-2'>— 《水经注·三峡》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果遇到皇帝有紧急命令宣召，有时早上从白帝城出发，晚上就到了江陵。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>多言或中</strong>: 指多方面讨论之，有的可能中的。</li><li><strong>不可或缺</strong>: 指必不可少。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_疾_36' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">疾</h2>
+            <p class="text-2xl text-gray-500">jí</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>名词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 病，指常病，轻病</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 寡人无疾。</p><p class='text-sm text-gray-500 italic mt-2'>— 《扁鹊见蔡桓公》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我没有病。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 痛苦，疾苦</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 凡牧民者，必知其疾。</p><p class='text-sm text-gray-500 italic mt-2'>— 《管子》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 凡是管理百姓的人，一定要知道他们的疾苦。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 毛病，缺点</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 必为有窃疾矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《公输》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 一定是有偷窃的毛病了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 患疾</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 其疾病而死，死而湮没不足道者，亦已众矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《五人墓碑记》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 他们之中患病而死，死去默默无闻，不值一提的人也太多了。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 厌恶</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君子疾夫舍曰“欲之”而必为之辞。</p><p class='text-sm text-gray-500 italic mt-2'>— 《季氏将伐颛臾》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 君子厌恶那些不说自己想要得到却要为自己找借口的人。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 痛心</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 屈平疾王听之不聪也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《屈原列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 屈原痛心怀王视听不明。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 痛恨</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 天下之欲疾其君者，皆欲赴愬于王。</p><p class='text-sm text-gray-500 italic mt-2'>— 《齐桓晋文之事》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 天下那些痛恨自己国君的人，都想跑到您这里来申诉。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 妒忌，通“嫉”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 膑至，庞涓恐其贤于己，疾之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《孙膑》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 孙膑到了（魏国），庞涓怕他比自己有才能，妒忌他。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>形容词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 急速，快捷</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 虽乘奔御风不以疾也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《三峡》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 即使乘着快马加者风也不如他快。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 强，猛烈</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 顺风而呼，声非加疾也，而闻者彰。</p><p class='text-sm text-gray-500 italic mt-2'>— 《劝学》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 顺风呼喊，声音没有加大，别人却能听得更清楚。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>疾恶如仇</strong>: 憎恨坏人坏事就象憎恨仇人一样。</li><li><strong>积劳成疾</strong>: 因长期工作，劳累过度而生了病。</li><li><strong>讳疾忌医</strong>: 比喻怕人批评而掩饰自己的的缺点和错误。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_及_37' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">及</h2>
+            <p class="text-2xl text-gray-500">jí</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 追赶上</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 怀王悔，追张仪，不及。</p><p class='text-sm text-gray-500 italic mt-2'>— 《屈原列传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 怀王后悔了，（派人）追赶张仪，没有追上。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 到，到达</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 及滑，郑商人弦高将市于周，遇之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《殽之战》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 到来滑国，郑国的商人弦高将要到周去做买卖，遇到了他们。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 涉及</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 此其近者祸及身，远者及其子孙。</p><p class='text-sm text-gray-500 italic mt-2'>— 《触龙说赵太后》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 这些人当中离得近的祸及自身，隔得远的祸害就会落到他的子孙身上。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 比得上</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 君美甚，徐公何能及君也？</p><p class='text-sm text-gray-500 italic mt-2'>— 《邹忌讽齐王纳谏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 您漂亮极了，徐公哪里赶得上您呢？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 接近</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 予之及于死者不知其几矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《〈指南录〉后序》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我接近死亡的情况不知道有多少次了。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表并列，和，与</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 太子及宾客知其事者，皆白衣冠送之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《荆轲刺秦王》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 太子和知道这件事的宾客们，都穿着白色的衣服，戴着白色的帽子来送他。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>介词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 和，同，跟</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 宋公及楚人战于泓。</p><p class='text-sm text-gray-500 italic mt-2'>— 《左传·僖公二十二年》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 宋公和楚国人在泓地作战。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 趁着……之时</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 而不及今令有功于国。</p><p class='text-sm text-gray-500 italic mt-2'>— 《触龙说赵太后》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 却不趁着现在让他为国立功。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>望尘莫及</strong>: 比喻远远落在后面。</li><li><strong>鞭长莫及</strong>: 比喻相隔太远，力量达不到。</li><li><strong>爱屋及乌</strong>: 比喻爱一个人而连带地关心到与他有关的人或物。</li><li><strong>言不及义</strong>: 指净说些无聊的话，没有一句正经的。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_即_38' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">即</h2>
+            <p class="text-2xl text-gray-500">jí</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 靠近</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 匪来贸丝，来即我谋。</p><p class='text-sm text-gray-500 italic mt-2'>— 《诗经·氓》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> （其实）不是来换丝，而是到我这里来商量（婚事）。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 登上（帝位）</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 昭帝即位，数年，匈奴与汉和亲。</p><p class='text-sm text-gray-500 italic mt-2'>— 《汉书·苏武传》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 昭帝登上帝位数年之后，匈奴同汉朝和亲。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间的相连，相当于“立即”“就”“就要”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 项伯即入见沛公。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 项伯立刻进去会见沛公。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 加强肯定作用，相当于“就是”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 吾翁即若翁，必欲烹而翁，则幸分我一杯羹。</p><p class='text-sm text-gray-500 italic mt-2'>— 《史记·项羽本纪》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 我的父亲就是你的父亲，如果一定要烹你的父亲，那么，希望能分给我一碗肉羹。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表假设。相当于“如果”“假设”。</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 即不幸有方二三千里之旱，国胡以相恤？</p><p class='text-sm text-gray-500 italic mt-2'>— 《论积贮疏》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 如果不幸遇到方圆二三千里的旱灾，国家用什么来救急？</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表让步，相当于“即使”“纵使”“就算是”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 即捕得三两头，又劣弱不中于款。</p><p class='text-sm text-gray-500 italic mt-2'>— 《促织》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 就算是捉到了两三只（蟋蟀），又都很差很弱，不合规格。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>介词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间、地点，相当于“当”“就在”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 项王即日因留沛公与饮。</p><p class='text-sm text-gray-500 italic mt-2'>— 《鸿门宴》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 项王当天就留下沛公和他一起喝酒。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>可望而不可即(接近)</strong>: 常比喻目前还不能实现的事物。</li><li><strong>若即(接近)若离</strong>: 若形容对人保持一定距离。</li><li><strong>稍纵即(就)逝</strong>: 形容时间或机会等很容易过去。</li><li><strong>召之即(就)来，挥之即去</strong>: 召形容非常听从指挥。</li><li><strong>俯拾即(就)是</strong>: 形容多而易得。</li><li><strong>一拍即(就)合</strong>: 比喻困情意相投或有利害关系，一下子就说到一起或结合在一起。</li></ul></div>
+            </section>
+        </main>
+        </section><section id='char_既_39' class='character-content mb-16 scroll-mt-8'>
+        <header class="text-center mb-10">
+            <h2 class="text-6xl font-extrabold text-gray-800 mb-2">既</h2>
+            <p class="text-2xl text-gray-500">jì</p>
+        </header>
+        
+        <main class="bg-white p-8 rounded-2xl shadow-lg">
+            <section>
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-indigo-500 pl-4">详细释义</h3>
+                <div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>动词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 完了，尽</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 言未既，有笑于列者曰：“先生欺余哉！”</p><p class='text-sm text-gray-500 italic mt-2'>— 韩愈《进学解》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 话没有说完，在学生中就有人笑着说：“先生欺骗我啊！”</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>副词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间的过去或动作的完成。已经，……以后。</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 始皇既没，余威震于殊俗。</p><p class='text-sm text-gray-500 italic mt-2'>— 《过秦论》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 始皇死去之后，他的余威还震慑着远方异地。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表时间或行为承接，“不久”“一会儿”“后来”，有时“既而”连用</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 既又与汝就食江南，零丁孤苦，未尝一日相离也。</p><p class='text-sm text-gray-500 italic mt-2'>— 《祭十二郎文》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 不久又和你到江南谋生，孤苦伶仃，我俩没有一天分开过。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 表范围。“全”“都”</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 肴核既尽，杯盘狼藉。</p><p class='text-sm text-gray-500 italic mt-2'>— 苏轼《赤壁赋》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 菜肴全都吃光了，杯子盘子乱七八糟的放着。</p></div></div></div><div class='pinyin-group bg-gray-50 p-6 rounded-xl shadow-inner mb-6'><h4 class='text-xl font-semibold text-gray-800 mb-2'>连词</h4><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 既然</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 既来之，则安之。</p><p class='text-sm text-gray-500 italic mt-2'>— 《季氏将伐颛臾》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 既然让他们来了，就要让他们安心。</p></div></div><div class='definition border-l-4 border-indigo-200 pl-4 mb-4'><p class='text-lg text-gray-800'><strong>释义:</strong> 既……且……，既……又……，表两种情况同时存在</p><div class='example bg-white p-4 rounded-lg mt-3 border border-gray-200'><p class='text-gray-700'><strong>例句:</strong> 三军既惑且疑，则诸侯之难至矣。</p><p class='text-sm text-gray-500 italic mt-2'>— 《谋攻》</p><p class='text-sm text-gray-600 mt-1'><strong>翻译:</strong> 三军既迷惑又怀疑，那么诸侯进攻的灾难就到了。</p></div></div></div>
+            </section>
+            <section class="mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-sky-500 pl-4">相关成语</h3>
+                <div class='idioms-section bg-sky-50 p-6 rounded-xl shadow-inner'><h3 class='text-2xl font-semibold text-sky-700 mb-4'>相关成语</h3><ul class='list-disc list-inside text-gray-700 space-y-2'><li><strong>既往不咎</strong>: 现指对以往的过错不再责备。</li><li><strong>一如既往</strong>: 指态度没有变化，完全象从前一样。</li><li><strong>一言既出，驷马难追</strong>: 指话说出口，就不能再收回，一定要算数。</li></ul></div>
+            </section>
+        </main>
+        </section>
+            </main>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const navContainer = document.getElementById('character-nav');
+                const contentArea = document.getElementById('content-area');
+                const sections = document.querySelectorAll('.character-content');
+                const navLinks = new Map();
+                navContainer.querySelectorAll('.nav-link').forEach(link => {
+                    navLinks.set(link.hash.substring(1), link);
+                });
+
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        const id = entry.target.getAttribute('id');
+                        const navLink = navLinks.get(id);
+                        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+                            navLink.classList.add('active');
+                        } else {
+                            navLink.classList.remove('active');
+                        }
+                    });
+                }, { root: contentArea, threshold: 0.5, rootMargin: "-40% 0px -40% 0px" });
+
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+
+                // 首次加载时激活第一个
+                const firstLink = navLinks.values().next().value;
+                if(firstLink) firstLink.classList.add('active');
+            });
+        </script>
+    </body>
+    </html>
+    
