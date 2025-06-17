@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中学古诗文学习网站</title>
+    <title>中学古诗文</title>
     <style>
         * {
             margin: 0;
@@ -170,7 +170,7 @@
         
         .primary-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
             gap: 3rem;
         }
 
@@ -235,6 +235,10 @@
         }
         
         /* --- Icon & Title Colors --- */
+        .primary-school .category-icon { background: linear-gradient(135deg, #c1fcd3 0%, #76f2a2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .primary-school h2 { color: #27ae60; }
+        .primary-school:hover { border-color: #27ae60; }
+
         .junior .category-icon { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .junior h2 { color: #e74c3c; }
         .junior:hover { border-color: #e74c3c; }
@@ -262,6 +266,19 @@
         .yuanqu .category-icon { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .yuanqu h2 { color: #b7791f; }
         .yuanqu:hover { border-color: #b7791f; }
+        
+        /* --- New Module Colors --- */
+        .culture .category-icon { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .culture h2 { color: #d35400; }
+        .culture:hover { border-color: #d35400; }
+
+        .quotes .category-icon { background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .quotes h2 { color: #2980b9; }
+        .quotes:hover { border-color: #2980b9; }
+
+        .words .category-icon { background: linear-gradient(135deg, #a770ef 0%, #cf8bf3 50%, #fdb99b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .words h2 { color: #8e44ad; }
+        .words:hover { border-color: #8e44ad; }
 
         .category-card h2 {
             font-size: 2.2rem;
@@ -328,7 +345,10 @@
         .footer-links a:hover { color: #f39c12; }
         
         @media (max-width: 1200px) {
-            .primary-grid, .secondary-grid { grid-template-columns: 1fr; }
+            /* Let primary grid stack to 1 column earlier if needed */
+             .primary-grid { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); }
+             /* Allow secondary grid to have 2 columns on tablets */
+            .secondary-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
         }
 
         @media (max-width: 768px) {
@@ -336,6 +356,7 @@
             .header p { font-size: 1.2rem; }
             .category-card { padding: 2rem; }
             .container { padding: 2rem 1rem; }
+            .primary-grid, .secondary-grid { grid-template-columns: 1fr; }
         }
         
         @keyframes fadeInUp {
@@ -350,18 +371,20 @@
         
         .primary-grid .category-card:nth-child(1) { animation-delay: 0.1s; }
         .primary-grid .category-card:nth-child(2) { animation-delay: 0.2s; }
+        .primary-grid .category-card:nth-child(3) { animation-delay: 0.3s; }
 
-        .secondary-grid .category-card:nth-child(1) { animation-delay: 0.3s; }
-        .secondary-grid .category-card:nth-child(2) { animation-delay: 0.4s; }
-        .secondary-grid .category-card:nth-child(3) { animation-delay: 0.5s; }
-        .secondary-grid .category-card:nth-child(4) { animation-delay: 0.6s; }
-        .secondary-grid .category-card:nth-child(5) { animation-delay: 0.7s; }
+        .secondary-grid .category-card:nth-child(1) { animation-delay: 0.4s; }
+        .secondary-grid .category-card:nth-child(2) { animation-delay: 0.5s; }
+        .secondary-grid .category-card:nth-child(3) { animation-delay: 0.6s; }
+        .secondary-grid .category-card:nth-child(4) { animation-delay: 0.7s; }
+        .secondary-grid .category-card:nth-child(5) { animation-delay: 0.8s; }
+        /* Animation delays for the second secondary-grid will restart from its parent */
 
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>中华古诗文典藏</h1>
+        <h1>中学古诗文</h1>
         <p>传承千年文化，品味诗词之美</p>
         <div class="decorative-quote">
             腹有诗书气自华，最是书香能致远
@@ -375,6 +398,22 @@
         </div>
 
         <div class="primary-grid">
+             <!-- 小学 -->
+            <a href="primary.html" class="category-card primary-school">
+                <div>
+                    <div class="category-icon">🌱</div>
+                    <h2>小学古诗文</h2>
+                    <p>精选小学阶段必背古诗词，图文并茂，寓教于乐，激发孩子对古典文学的兴趣，为语文学习打下良好开端。</p>
+                </div>
+                <div>
+                    <div class="category-stats">
+                        <div class="stat-item"><span class="stat-number">70+</span><div class="stat-label">必背古诗</div></div>
+                        <div class="stat-item"><span class="stat-number">6</span><div class="stat-label">年级分类</div></div>
+                        <div class="stat-item"><span class="stat-number">兴趣</span><div class="stat-label">启蒙首选</div></div>
+                    </div>
+                </div>
+            </a>
+
             <!-- 初中 -->
             <a href="junior.html" class="category-card junior">
                 <div>
@@ -453,9 +492,39 @@
                     <p>记录汉末至东晋士人的言行风貌和遗闻轶事，文字清隽，意味深长，展现了魏晋名士的智慧与风采。</p>
                 </div>
             </a>
-
-
         </div>
+
+        <!-- =========== NEW MODULES START =========== -->
+        <h2 class="section-title">备考与积累</h2>
+        <div class="secondary-grid">
+            <!-- 古文化常识 -->
+            <a href="culture.html" class="category-card culture">
+                <div>
+                    <div class="category-icon">🏺</div>
+                    <h2>古文化常识</h2>
+                    <p>了解古代天文、地理、官职、科举、礼仪等，丰富知识储备，深化文化理解。</p>
+                </div>
+            </a>
+            
+            <!-- 诗词名句 -->
+            <a href="quotes.html" class="category-card quotes">
+                <div>
+                    <div class="category-icon">✨</div>
+                    <h2>诗词名句</h2>
+                    <p>精选千古传诵的经典名句，分类赏析，并标注出处，助力写作与引用。</p>
+                </div>
+            </a>
+
+            <!-- 文言文常考实词 -->
+            <a href="words.html" class="category-card words">
+                <div>
+                    <div class="category-icon">🔎</div>
+                    <h2>文言文实词</h2>
+                    <p>系统梳理常考文言实词的一词多义与古今异义，攻克阅读核心障碍。</p>
+                </div>
+            </a>
+        </div>
+        <!-- =========== NEW MODULES END =========== -->
         
         <div class="features-section">
             <h2 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 2rem;">网站特色</h2>

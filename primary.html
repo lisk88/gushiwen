@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小中古诗文 - 古诗文学习网站</title>
+    <style>
+        /* --- 基础与布局重置 --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: '华文楷体', 'KaiTi', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.7;
+            /* 调整为与初中页面一致的蓝紫色渐变背景 */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* --- 页面容器 --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* --- 头部与导航栏 --- */
+        .header {
+            background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(245,255,250,0.92) 100%);
+            backdrop-filter: blur(12px);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            /* 边框颜色与新主题匹配 */
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #667eea; /* 导航链接颜色 */
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .nav a:hover, .nav a.active {
+            color: #fff;
+            background: #667eea;
+        }
+
+        /* --- 页面标题 --- */
+        .page-title {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .page-title h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .page-title p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        /* --- 年级切换标签 --- */
+        .grade-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* 允许换行 */
+            margin-bottom: 3rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50px;
+            padding: 0.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .tab-button {
+            background: transparent;
+            border: none;
+            color: white;
+            padding: 0.8rem 1.5rem; /* 调整内边距 */
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0.3rem; /* 调整外边距以适应换行 */
+        }
+        
+        .tab-button.active {
+            background: rgba(255,255,255,0.95);
+            color: #667eea; /* 激活颜色与新主题匹配 */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .tab-button:hover:not(.active) {
+            background: rgba(255,255,255,0.25);
+        }
+
+        /* --- 内容区域 --- */
+        .grade-content { display: none; }
+        .grade-content.active { display: block; }
+        
+        /* --- 古诗文卡片网格 --- */
+        .poems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 调整最小宽度 */
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        /* --- 古诗文卡片样式 --- */
+        .poem-card {
+            background: rgba(255,255,255,0.98);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            transition: all 0.35s ease;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .poem-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            border-color: #667eea; /* 悬停边框颜色与新主题匹配 */
+        }
+        
+        .poem-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+            flex-grow: 1; /* 让标题区域填充以保持卡片高度一致 */
+        }
+        
+        .poem-author {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        .poem-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .poem-type {
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        /* --- 统计与搜索区域 --- */
+        .stats-section, .search-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-top: 3rem;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        .search-section { margin-bottom: 3rem; margin-top: 0; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-item { color: white; }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label { font-size: 1.1rem; opacity: 0.9; }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.4); /* 聚焦颜色与新主题匹配 */
+        }
+        
+        .search-button {
+            background: linear-gradient(135deg, #667eea, #764ba2); /* 按钮颜色与新主题匹配 */
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .search-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3); /* 悬停阴影颜色与新主题匹配 */
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .filter-button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-button.active {
+            background: rgba(255,255,255,0.9);
+            color: #667eea; /* 激活颜色与新主题匹配 */
+        }
+        
+        .filter-button:hover:not(.active) {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        /* --- 响应式设计 --- */
+        @media (max-width: 768px) {
+            .container { padding: 2rem 1rem; }
+            .page-title h1 { font-size: 2.5rem; }
+            .poems-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .search-box { flex-direction: column; }
+            .search-input { width: 100%; margin-bottom: 1rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .grade-tabs { border-radius: 20px; padding: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#">网站首页</a>
+            <a href="#" class="active">小中古诗文</a>
+            <a href="#">初中古诗文</a>
+            <a href="#">高中古诗文</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <!-- 页面主标题 -->
+        <div class="page-title">
+            <h1>🌱 小中古诗文</h1>
+            <p>童蒙养正，诗词启航，感受中华文化之美</p>
+        </div>
+        
+        <!-- 搜索与筛选 -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索诗词标题或作者...">
+                <button class="search-button" onclick="searchPoems()">🔍 搜索</button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-button active" onclick="filterByType('all')">全部</button>
+                <button class="filter-button" onclick="filterByType('shi')">诗</button>
+                <button class="filter-button" onclick="filterByType('ci')">词</button>
+                <button class="filter-button" onclick="filterByType('wen')">文</button>
+            </div>
+        </div>
+        
+        <!-- 年级切换 -->
+        <div class="grade-tabs">
+            <button class="tab-button active" onclick="showGrade('grade1')">一年级</button>
+            <button class="tab-button" onclick="showGrade('grade2')">二年级</button>
+            <button class="tab-button" onclick="showGrade('grade3')">三年级</button>
+            <button class="tab-button" onclick="showGrade('grade4')">四年级</button>
+            <button class="tab-button" onclick="showGrade('grade5')">五年级</button>
+            <button class="tab-button" onclick="showGrade('grade6')">六年级</button>
+        </div>
+        
+        <!-- 内容展示区 -->
+        <div id="grade1" class="grade-content active"><div class="poems-grid" id="grade1-poems"></div></div>
+        <div id="grade2" class="grade-content"><div class="poems-grid" id="grade2-poems"></div></div>
+        <div id="grade3" class="grade-content"><div class="poems-grid" id="grade3-poems"></div></div>
+        <div id="grade4" class="grade-content"><div class="poems-grid" id="grade4-poems"></div></div>
+        <div id="grade5" class="grade-content"><div class="poems-grid" id="grade5-poems"></div></div>
+        <div id="grade6" class="grade-content"><div class="poems-grid" id="grade6-poems"></div></div>
+        
+        <!-- 数据统计 -->
+        <div class="stats-section">
+            <h2 style="color: white; margin-bottom: 1rem;">📊 小中古诗文总览</h2>
+            <div class="stats-grid">
+                <div class="stat-item"><span class="stat-number" id="totalCount">0</span><span class="stat-label">总篇数</span></div>
+                <div class="stat-item"><span class="stat-number" id="shiCount">0</span><span class="stat-label">诗</span></div>
+                <div class="stat-item"><span class="stat-number" id="ciCount">0</span><span class="stat-label">词</span></div>
+                <div class="stat-item"><span class="stat-number" id="wenCount">0</span><span class="stat-label">文</span></div>
+                <div class="stat-item"><span class="stat-number" id="authorCount">0</span><span class="stat-label">作者数</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // --- 数据定义 ---
+        const primaryPoems = {
+            grade1: [
+                {id: 10133, title: "咏鹅", type: "shi", author: "骆宾王"},
+                {id: 12069, title: "江南", type: "shi", author: "两汉乐府"},
+                {id: 12445, title: "画", type: "shi", author: "王维"},
+                {id: 11003, title: "悯农（其二）", type: "shi", author: "李绅"},
+                {id: 11751, title: "古朗月行", type: "shi", author: "李白"},
+                {id: 85388, title: "风", type: "shi", author: "李峤"},
+                {id: 10078, title: "春晓", type: "shi", author: "孟浩然"},
+                {id: 10976, title: "赠汪伦", type: "shi", author: "李白"},
+                {id: 10156, title: "静夜思", type: "shi", author: "李白"},
+                {id: 10644, title: "寻隐者不遇", type: "shi", author: "贾岛"},
+                {id: 634484, title: "三字经", type: "wen", author: "王应麟"},
+                {id: 12383, title: "池上二绝", type: "shi", author: "白居易"},
+                {id: 11052, title: "小池", type: "shi", author: "杨万里"},
+                {id: 638347, title: "画鸡", type: "shi", author: "唐寅"},
+                {id: 10265, title: "梅花", type: "shi", author: "王安石"},
+                {id: 12083, title: "小儿垂钓", type: "shi", author: "胡令能"},
+                {id: 10351, title: "登鹳雀楼", type: "shi", author: "王之涣"},
+                {id: 10974, title: "望庐山瀑布", type: "shi", author: "李白"}
+            ],
+            grade2: [
+                {id: 10196, title: "江雪", type: "shi", author: "柳宗元"},
+                {id: 10972, title: "夜宿山寺", type: "shi", author: "李白"},
+                {id: 10965, title: "敕勒歌", type: "shi", author: "无名氏"},
+                {id: 11043, title: "村居", type: "shi", author: "高鼎"},
+                {id: 11173, title: "咏柳", type: "shi", author: "贺知章"},
+                {id: 10571, title: "赋得古原草送别", type: "shi", author: "白居易"},
+                {id: 11051, title: "晓出净慈寺送林子方", type: "shi", author: "杨万里"},
+                {id: 10099, title: "绝句四首（其三）", type: "shi", author: "杜甫"},
+                {id: 11004, title: "悯农（其一）", type: "shi", author: "李绅"},
+                {id: 367303, title: "舟夜书所见", type: "shi", author: "查慎行"},
+                {id: 11905, title: "所见", type: "shi", author: "袁枚"},
+                {id: 10429, title: "山行", type: "shi", author: "杜牧"},
+                {id: 630811, title: "赠刘景文", type: "shi", author: "苏轼"},
+                {id: 12003, title: "夜书所见", type: "shi", author: "叶绍翁"},
+                {id: 10977, title: "望天门山", type: "shi", author: "李白"},
+                {id: 11027, title: "饮湖上初晴后雨（其二）", type: "shi", author: "苏轼"},
+                {id: 11689, title: "望洞庭", type: "shi", author: "刘禹锡"},
+                {id: 10210, title: "早发白帝城", type: "shi", author: "李白"}
+            ],
+            grade3: [
+                {id: 11205, title: "采莲曲", type: "shi", author: "王昌龄"},
+                {id: 10983, title: "绝句二首（其一）", type: "shi", author: "杜甫"},
+                {id: 11028, title: "惠崇春江晚景（其一）", type: "shi", author: "苏轼"},
+                {id: 555752, title: "三衢道中", type: "shi", author: "曾几"},
+                {id: 11062, title: "忆江南三首", type: "ci", author: "白居易"},
+                {id: 643731, title: "守株待兔", type: "wen", author: "韩非"},
+                {id: 10266, title: "元日", type: "shi", author: "王安石"},
+                {id: 10428, title: "清明", type: "shi", author: "杜牧"},
+                {id: 10285, title: "九月九日忆山东兄弟", type: "shi", author: "王维"},
+                {id: 10443, title: "滁州西涧", type: "shi", author: "韦应物"},
+                {id: 11007, title: "大林寺桃花", type: "shi", author: "白居易"},
+                {id: 10631, title: "鹿柴", type: "shi", author: "王维"},
+                {id: 11006, title: "暮江吟", type: "shi", author: "白居易"},
+                {id: 10151, title: "题西林壁", type: "shi", author: "苏轼"},
+                {id: 11191, title: "雪梅（其一）", type: "shi", author: "卢钺"},
+                {id: 643732, title: "精卫填海", type: "wen", author: "无名氏"},
+                {id: 10077, title: "嫦娥", type: "shi", author: "李商隐"},
+                {id: 10185, title: "出塞", type: "shi", author: "王昌龄"}
+            ],
+            grade4: [
+                {id: 10411, title: "凉州词二首 · 其一", type: "shi", author: "王翰（子羽）"},
+                {id: 10137, title: "夏日绝句", type: "shi", author: "李清照"},
+                {id: 10982, title: "别董大（其一）", type: "shi", author: "高适"},
+                {id: 643733, title: "王戎不取道旁李", type: "wen", author: "无名氏"},
+                {id: 11047, title: "宿新市徐公店", type: "shi", author: "杨万里"},
+                {id: 11032, title: "四时田园杂兴 其二十五", type: "shi", author: "范成大"},
+                {id: 11074, title: "清平乐 · 村居", type: "ci", author: "辛弃疾"},
+                {id: 11124, title: "竹枝词（其一）", type: "ci", author: "刘禹锡"},
+                {id: 11687, title: "蜂", type: "shi", author: "罗隐"},
+                {id: 10212, title: "独坐敬亭山", type: "shi", author: "李白"},
+                {id: 10189, title: "芙蓉楼送辛渐二首", type: "shi", author: "王昌龄"},
+                {id: 10426, title: "塞下曲 其三", type: "shi", author: "卢纶"},
+                {id: 11039, title: "墨梅", type: "shi", author: "王冕"},
+                {id: 643734, title: "囊萤夜读", type: "wen", author: "无名氏"},
+                {id: 635789, title: "铁杵磨针", type: "wen", author: "祝穆"},
+                {id: 10657, title: "黄鹤楼送孟浩然之广陵", type: "shi", author: "李白"},
+                {id: 93241, title: "乞巧", type: "shi", author: "林杰"},
+                {id: 11031, title: "示儿", type: "shi", author: "陆游"}
+            ],
+            grade5: [
+                {id: 11034, title: "题临安邸", type: "shi", author: "林升"},
+                {id: 10309, title: "己亥杂诗", type: "shi", author: "龚自珍"},
+                {id: 10283, title: "山居秋暝", type: "shi", author: "王维"},
+                {id: 10270, title: "枫桥夜泊", type: "shi", author: "张继"},
+                {id: 10120, title: "长相思·山一程水一程", type: "ci", author: "纳兰性德"},
+                {id: 10191, title: "渔歌子 · 西塞山前白鹭飞", type: "ci", author: "张志和"},
+                {id: 643736, title: "读书有三到", type: "wen", author: "朱熹"},
+                {id: 643737, title: "谈读书", type: "wen", author: "曾国藩"},
+                {id: 10039, title: "观书有感", type: "shi", author: "朱熹"},
+                {id: 480849, title: "四时田园杂兴六十首", type: "shi", author: "范成大"},
+                {id: 571612, title: "稚子弄冰", type: "shi", author: "杨万里"},
+                {id: 581119, title: "村晚", type: "shi", author: "雷震"},
+                {id: 10394, title: "长歌行", type: "shi", author: "两汉乐府"},
+                {id: 10282, title: "鸟鸣涧", type: "shi", author: "王维"},
+                {id: 10352, title: "凉州词二首 · 其一", type: "shi", author: "王之涣"},
+                {id: 10287, title: "送元二使安西", type: "shi", author: "王维"},
+                {id: 11299, title: "秋夜将晓出篱门迎凉有感", type: "shi", author: "陆游"},
+                {id: 12067, title: "蝉", type: "shi", author: "虞世南"}
+            ],
+            grade6: [
+                {id: 635804, title: "矛与盾", type: "wen", author: "韩非"},
+                {id: 11036, title: "乡村四月", type: "shi", author: "翁卷"},
+                {id: 643738, title: "杨氏之子", type: "wen", author: "刘义庆"},
+                {id: 10079, title: "宿建德江", type: "shi", author: "孟浩然"},
+                {id: 11197, title: "六月二十七日望湖楼醉书", type: "shi", author: "苏轼"},
+                {id: 10031, title: "西江月 · 夜行黄沙道中", type: "ci", author: "辛弃疾"},
+                {id: 10551, title: "过故人庄", type: "shi", author: "孟浩然"},
+                {id: 11033, title: "春日", type: "shi", author: "朱熹"},
+                {id: 10654, title: "回乡偶书二首 · 其一", type: "shi", author: "贺知章"},
+                {id: 111337, title: "浪淘沙", type: "shi", author: "刘禹锡"},
+                {id: 10454, title: "江南春", type: "shi", author: "杜牧"},
+                {id: 10267, title: "书湖阴先生壁二首", type: "shi", author: "王安石"},
+                {id: 643740, title: "伯牙鼓琴", type: "wen", author: "吕不韦"},
+                {id: 643741, title: "书戴嵩画牛", type: "wen", author: "苏轼"},
+                {id: 10659, title: "寒食", type: "shi", author: "韩翃"},
+                {id: 10389, title: "迢迢牵牛星", type: "shi", author: "无名氏"},
+                {id: 10996, title: "十五夜望月", type: "shi", author: "王建"},
+                {id: 10085, title: "游子吟", type: "shi", author: "孟郊"}
+            ]
+        };
+        
+        // --- 状态变量 ---
+        let currentFilter = 'all';
+        let currentGrade = 'grade1';
+
+        // --- 辅助函数 ---
+        function getTypeLabel(type) {
+            const labels = {'shi': '诗', 'ci': '词', 'wen': '文', 'qu': '曲'};
+            return labels[type] || type;
+        }
+
+        function getTypeColor(type) {
+            const colors = {
+                'shi': 'linear-gradient(135deg, #ff8c69, #ff6b6b)',
+                'ci': 'linear-gradient(135deg, #81fbb8, #28c76f)',
+                'wen': 'linear-gradient(135deg, #30cfd0, #330867)',
+                'qu': 'linear-gradient(135deg, #f093fb, #f5576c)'
+            };
+            return colors[type] || 'linear-gradient(135deg, #4facfe, #00f2fe)';
+        }
+        
+        // --- 核心渲染函数 ---
+        function createPoemCard(poem) {
+            return `
+                <div class="poem-card" onclick="viewPoem(${poem.id})">
+                    <div class="poem-meta">
+                        <span class="poem-type" style="background: ${getTypeColor(poem.type)}">${getTypeLabel(poem.type)}</span>
+                    </div>
+                    <h3 class="poem-title">${poem.title}</h3>
+                    <p class="poem-author">${poem.author}</p>
+                </div>
+            `;
+        }
+        
+        function renderPoems(grade, searchTerm = '', typeFilter = 'all') {
+            const container = document.getElementById(`${grade}-poems`);
+            if (!container) return;
+
+            const poems = primaryPoems[grade] || [];
+            
+            const filteredPoems = poems.filter(poem => {
+                const matchesSearch = searchTerm ? 
+                    (poem.title.toLowerCase().includes(searchTerm) || poem.author.toLowerCase().includes(searchTerm)) : true;
+                const matchesType = typeFilter !== 'all' ? poem.type === typeFilter : true;
+                return matchesSearch && matchesType;
+            });
+            
+            if (filteredPoems.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: #7f8c8d; background: rgba(255,255,255,0.5); border-radius: 15px;">
+                        <h3>😔 哎呀，没找到呢...</h3>
+                        <p>请试试别的关键词，或更换筛选条件吧！</p>
+                    </div>`;
+            } else {
+                container.innerHTML = filteredPoems.map(createPoemCard).join('');
+            }
+            
+            // 每次渲染后初始化卡片动画
+            initCardAnimations(`#${grade}-poems .poem-card`);
+        }
+        
+        // --- 事件处理函数 ---
+        function showGrade(grade) {
+            currentGrade = grade;
+            
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`.tab-button[onclick="showGrade('${grade}')"]`).classList.add('active');
+            
+            document.querySelectorAll('.grade-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(grade).classList.add('active');
+            
+            applyFilters();
+        }
+
+        function filterByType(type) {
+            currentFilter = type;
+            document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`.filter-button[onclick="filterByType('${type}')"]`).classList.add('active');
+            applyFilters();
+        }
+        
+        function searchPoems() {
+            applyFilters();
+        }
+        
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            renderPoems(currentGrade, searchTerm, currentFilter);
+        }
+
+        function viewPoem(id) {
+            // 在新标签页中打开详情页
+            window.open(`detail/${id}.html`, '_blank');
+        }
+
+        // --- 统计与初始化 ---
+        function calculateStats() {
+            const allPoems = Object.values(primaryPoems).flat();
+            const uniqueAuthors = new Set(allPoems.map(p => p.author));
+            
+            const stats = {
+                total: allPoems.length,
+                shi: allPoems.filter(p => p.type === 'shi').length,
+                ci: allPoems.filter(p => p.type === 'ci').length,
+                wen: allPoems.filter(p => p.type === 'wen').length,
+                authors: uniqueAuthors.size
+            };
+            
+            document.getElementById('totalCount').textContent = stats.total;
+            document.getElementById('shiCount').textContent = stats.shi;
+            document.getElementById('ciCount').textContent = stats.ci;
+            document.getElementById('wenCount').textContent = stats.wen;
+            document.getElementById('authorCount').textContent = stats.authors;
+            
+            animateNumbers();
+        }
+        
+        // --- 动态效果 ---
+        function initCardAnimations(selector) {
+            const cards = document.querySelectorAll(selector);
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(40px)';
+                card.style.transition = `all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) ${index * 0.05}s`;
+            });
+            
+            setTimeout(() => {
+                cards.forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                });
+            }, 50);
+        }
+
+        function animateNumbers() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent, 10);
+                counter.textContent = '0'; // 从0开始
+                let current = 0;
+                const increment = Math.max(1, target / 50); // 50步完成
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        }
+        
+        // --- 事件监听 ---
+        document.addEventListener('DOMContentLoaded', function() {
+            // 默认显示一年级
+            renderPoems('grade1');
+            calculateStats();
+            
+            // 搜索框回车
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchPoems();
+                }
+            });
+
+            // 实时搜索 (带延迟)
+            let searchTimeout;
+            document.getElementById('searchInput').addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(searchPoems, 300);
+            });
+            
+            // 页面加载动画
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.8s ease';
+            setTimeout(() => { document.body.style.opacity = '1'; }, 100);
+        });
+
+    </script>
+</body>
+</html>
