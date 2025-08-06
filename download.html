@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载星雨古诗文App - 随时随地学习古诗文</title>
+    <meta name="description" content="下载星雨古诗文移动应用，支持iOS和Android系统，随时随地学习中华古典诗词文学。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: '华文楷体', '楷体', '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 50%, #f0f8ff 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* 背景装饰元素 - 与首页保持一致 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="20" fill="rgba(100,120,200,0.05)">诗</text><text x="30" y="30" font-size="15" fill="rgba(100,120,200,0.03)">文</text><text x="70" y="80" font-size="18" fill="rgba(100,120,200,0.04)">古</text></svg>') repeat;
+            z-index: -1;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        .header-style {
+            background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,255,0.95) 100%);
+            backdrop-filter: blur(10px);
+            color: #2c3e50;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            border-bottom: 3px solid #f39c12;
+        }
+
+        .header-style::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e74c3c, #f39c12, #f1c40f, #2ecc71, #3498db, #9b59b6);
+            animation: rainbow 3s ease-in-out infinite;
+        }
+
+        @keyframes rainbow {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 0.8; }
+        }
+
+        .card-style {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .card-style:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+        }
+
+        .download-btn-primary {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .download-btn-primary:hover {
+            background: linear-gradient(135deg, #2980b9, #1f618d);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(52, 152, 219, 0.4);
+        }
+
+        .download-btn-disabled {
+            background: linear-gradient(135deg, #bdc3c7, #95a5a6);
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header-style relative p-6 text-center">
+        <!-- 返回按钮 -->
+        <a href="index.html" 
+           class="absolute top-4 left-4 md:top-6 md:left-6 flex items-center gap-2 text-gray-600 hover:text-orange-500 transition-colors duration-300 group">
+            <svg class="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="font-medium hidden sm:inline">返回首页</span>
+        </a>
+
+        <!-- 右上角快速下载 -->
+        <!-- <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-2">
+            <a href="https://apps.apple.com/cn/app/id6748516053" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="flex items-center gap-1 px-3 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+                <span>🍎</span>
+                <span class="hidden sm:inline">iOS</span>
+            </a>
+            
+            <div class="flex items-center gap-1 px-3 py-2 bg-gray-400 text-white rounded-full text-sm font-semibold cursor-not-allowed relative">
+                <span>🤖</span>
+                <span class="hidden sm:inline">Android</span>
+                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">
+                    即将上架
+                </span>
+            </div>
+        </div> -->
+
+        <h1 class="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
+            星雨古诗文
+        </h1>
+        <p class="text-lg text-gray-600">传承千年文化，品味诗词之美</p>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <div class="container max-w-4xl mx-auto px-4 py-12">
+        <!-- App介绍卡片 -->
+        <div class="card-style p-8 mb-8 text-center transition-all duration-300">
+            <!-- App图标 -->
+            <div class="mb-6">
+                <div class="w-24 h-24 mx-auto rounded-2xl bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center shadow-2xl">
+                    <img src="img/icon.jpg" 
+                         alt="星雨古诗文App图标" 
+                         class="w-full h-full rounded-2xl object-cover" 
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden w-full h-full items-center justify-center text-4xl text-white">📚</div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">下载移动应用</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                随时随地学习古诗文，海量资源库，智能搜索，学段分类，让传统文化学习变得更加便捷高效。
+            </p>
+
+            <!-- 下载按钮组 -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-lg mx-auto">
+                <a href="https://apps.apple.com/cn/app/id6748516053" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="download-btn-primary w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 text-white rounded-2xl font-bold text-lg shadow-lg">
+                    <span class="text-2xl">🍎</span>
+                    <div class="text-left">
+                        <div class="text-sm opacity-90">在 App Store 下载</div>
+                        <div class="text-lg font-bold">iOS 版本</div>
+                    </div>
+                </a>
+                
+                <div class="download-btn-disabled w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 text-white rounded-2xl font-bold text-lg shadow-lg relative">
+                    <span class="text-2xl">🤖</span>
+                    <div class="text-left">
+                        <div class="text-sm opacity-90">即将上架</div>
+                        <div class="text-lg font-bold">Android 版本</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能特色 -->
+        <div class="card-style p-8 transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">✨ 应用特色</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="text-center p-4 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-100 hover:from-blue-100 hover:to-indigo-200 transition-all duration-300">
+                    <div class="text-2xl mb-2">📚</div>
+                    <div class="font-semibold text-gray-800">海量资源</div>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-gradient-to-br from-green-50 to-emerald-100 hover:from-green-100 hover:to-emerald-200 transition-all duration-300">
+                    <div class="text-2xl mb-2">🔍</div>
+                    <div class="font-semibold text-gray-800">智能搜索</div>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-gradient-to-br from-purple-50 to-violet-100 hover:from-purple-100 hover:to-violet-200 transition-all duration-300">
+                    <div class="text-2xl mb-2">📖</div>
+                    <div class="font-semibold text-gray-800">学段分类</div>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-gradient-to-br from-yellow-50 to-amber-100 hover:from-yellow-100 hover:to-amber-200 transition-all duration-300">
+                    <div class="text-2xl mb-2">✨</div>
+                    <div class="font-semibold text-gray-800">每日名句</div>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-gradient-to-br from-pink-50 to-rose-100 hover:from-pink-100 hover:to-rose-200 transition-all duration-300">
+                    <div class="text-2xl mb-2">🎨</div>
+                    <div class="font-semibold text-gray-800">精美分享</div>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-gradient-to-br from-gray-50 to-slate-100 hover:from-gray-100 hover:to-slate-200 transition-all duration-300">
+                    <div class="text-2xl mb-2">📱</div>
+                    <div class="font-semibold text-gray-800">离线阅读</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

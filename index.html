@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中学古诗文</title>
+    <title>星雨古诗文 - 专注中学生古诗文学习，助力中高考</title>
+    <meta name="description" content="星雨古诗文是专注于服务中学生的古诗文学习网站，提供小学、初中、高中各阶段必背古诗文，以及唐诗、宋词、元曲、古文观止等经典选读，助力学生高效提升文学素养，从容应对中高考。">
+    <meta name="keywords" content="古诗文, 中学古诗文, 高中古诗文, 初中古诗文, 小学古诗文, 古诗词, 文言文, 中考, 高考, 古文观止, 唐诗三百首, 宋词三百首, 星雨古诗文">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
             margin: 0;
@@ -96,6 +99,22 @@
             margin-top: 1.5rem;
             font-style: italic;
             opacity: 0.9;
+        }
+
+        .shimmer-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
         }
         
         .decorative-quote {
@@ -383,9 +402,17 @@
     </style>
 </head>
 <body>
+    <!-- 固定右上角app下载按钮 -->
+    <a href="download.html"
+       class="fixed top-4 right-4 z-50 flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[#3498db] text-[#3498db] bg-white font-bold shadow-md hover:bg-[#3498db] hover:text-white transition-all duration-200"
+       style="box-shadow:0 4px 16px rgba(52,152,219,0.08);"
+       title="下载星雨古诗文App">
+        <span class="text-lg">📱</span>
+        <span>App下载</span>
+    </a>
     <header class="header">
-        <h1>中学古诗文</h1>
-        <p>传承千年文化，品味诗词之美</p>
+        <h1>星雨古诗文</h1>
+        <p>专注中学生古诗文学习，助力中高考，高效提升文学素养</p>
         <div class="decorative-quote">
             腹有诗书气自华，最是书香能致远
         </div>
@@ -399,7 +426,7 @@
 
         <div class="primary-grid">
              <!-- 小学 -->
-            <a href="primary.html" class="category-card primary-school">
+            <a href="primary.html" class="category-card primary-school" title="学习小学阶段必背古诗文">
                 <div>
                     <div class="category-icon">🌱</div>
                     <h2>小学古诗文</h2>
@@ -415,7 +442,7 @@
             </a>
 
             <!-- 初中 -->
-            <a href="junior.html" class="category-card junior">
+            <a href="junior.html" class="category-card junior" title="学习初中阶段必背古诗文，备战中考">
                 <div>
                     <div class="category-icon">📚</div>
                     <h2>初中古诗文</h2>
@@ -431,7 +458,7 @@
             </a>
             
             <!-- 高中 -->
-            <a href="senior.html" class="category-card senior">
+            <a href="senior.html" class="category-card senior" title="学习高中阶段必背古诗文，备战高考">
                 <div>
                     <div class="category-icon">🏛️</div>
                     <h2>高中古诗文</h2>
@@ -450,7 +477,7 @@
         <h2 class="section-title">经典选读拓展</h2>
         <div class="secondary-grid">
             <!-- 唐诗三百首 -->
-            <a href="tangshi.html" class="category-card tangshi">
+            <a href="tangshi.html" class="category-card tangshi" title="阅读和学习唐诗三百首全集">
                 <div>
                     <div class="category-icon">🏮</div>
                     <h2>唐诗三百首</h2>
@@ -459,7 +486,7 @@
             </a>
             
             <!-- 宋词三百首 -->
-            <a href="songci.html" class="category-card songci">
+            <a href="songci.html" class="category-card songci" title="阅读和学习宋词三百首">
                 <div>
                     <div class="category-icon">🎶</div>
                     <h2>宋词三百首</h2>
@@ -468,7 +495,7 @@
             </a>
 
             <!-- 元曲三百首 -->
-            <a href="yuanqu.html" class="category-card yuanqu">
+            <a href="yuanqu.html" class="category-card yuanqu" title="阅读和学习元曲三百首">
                 <div>
                     <div class="category-icon">🎭</div>
                     <h2>元曲三百首</h2>
@@ -476,7 +503,7 @@
                 </div>
             </a>
             <!-- 古文观止 -->
-            <a href="guwenguanzhi.html" class="category-card guwen">
+            <a href="guwenguanzhi.html" class="category-card guwen" title="阅读和学习古文观止">
                 <div>
                     <div class="category-icon">📜</div>
                     <h2>古文观止</h2>
@@ -485,7 +512,7 @@
             </a>
             
             <!-- 世说新语 -->
-            <a href="shishuoxinyu.html" class="category-card shishuo">
+            <a href="shishuoxinyu.html" class="category-card shishuo" title="阅读和学习世说新语">
                 <div>
                     <div class="category-icon">🗣️</div>
                     <h2>世说新语</h2>
@@ -498,7 +525,7 @@
         <h2 class="section-title">备考与积累</h2>
         <div class="secondary-grid">
             <!-- 古文化常识 -->
-            <a href="culture.html" class="category-card culture">
+            <a href="culture.html" class="category-card culture" title="学习古文化常识">
                 <div>
                     <div class="category-icon">🏺</div>
                     <h2>古文化常识</h2>
@@ -507,7 +534,7 @@
             </a>
             
             <!-- 诗词名句 -->
-            <a href="quotes.html" class="category-card quotes">
+            <a href="quotes.html" class="category-card quotes" title="积累和运用诗词名句">
                 <div>
                     <div class="category-icon">✨</div>
                     <h2>诗词名句</h2>
@@ -516,7 +543,7 @@
             </a>
 
             <!-- 文言文常考实词 -->
-            <a href="wenyanshici.html" class="category-card words">
+            <a href="wenyanshici.html" class="category-card words" title="掌握文言文常考实词">
                 <div>
                     <div class="category-icon">🔎</div>
                     <h2>文言文实词</h2>
@@ -545,7 +572,7 @@
                 <a href="#help">使用帮助</a>
                 <a href="#feedback">意见反馈</a>
             </div>
-            <p>&copy; 2024 中华古诗文典藏. 传承经典，启迪智慧</p>
+            <p>&copy; 2025 星雨古诗文. 传承经典，启迪智慧</p>
         </div>
     </footer>
 </body>
