@@ -1,0 +1,25 @@
+# START ROBOTS.TXT
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Disallow theme and plugin files from being crawled
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-content/cache/
+
+# Disallow other WordPress-specific files and directories
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /readme.html
+Disallow: /xmlrpc.php
+Disallow: /trackback/
+Disallow: /author/
+
+# Disallow search results pages
+Disallow: /?s=
+Disallow: /search/
+
+# Add the location of your sitemap
+Sitemap: https://jiguwen.com/sitemap.xml
+# END ROBOTS.TXT
